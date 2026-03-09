@@ -1,54 +1,60 @@
 # Anime Guess Who
 
-Static browser game for guessing anime characters.
+Static browser guessing game for anime and game franchises.
 
-Home screen now includes category filter buttons generated from anime tags.
+This build is focused on these rosters only:
+
+- Naruto & Shippuden
+- One Piece
+- Haikyuu
+- My Hero Academia
+- Jujutsu Kaisen
+- Attack on Titan
+- One Punch Man
+- Demon Slayer
+- Solo Leveling
+- Blue Lock
+- Black Clover
+- Chainsaw Man
+- Dandadan
+- Kaiju No. 8
+- Genshin
+- Valorant
+
+Each roster is curated as one canonical entry per character or important entity where practical. That includes major non-human entries such as summons, tailed beasts, devils, curses, titans, mascots, ghosts, and similar franchise-specific entities.
 
 ## Image strategy
 
-This version uses one remote source only:
+This build uses a layered image approach instead of a single source:
 
-- AniList GraphQL by character id
+1. Curated direct image URLs already stored in `js/data.js`
+2. Local overrides in `images/character-image-dataset.json`
+3. AniList GraphQL character lookup by ID
+4. AniList GraphQL fallback by name search
+5. Emoji fallback in the card UI
 
-If AniList does not return an image for a character, the app does not silently switch to another API. Instead you can:
+Notes:
 
-- add `img: 'images/file.jpg'` in [js/data.js](/a:/Projects/anime-guess-who/js/data.js)
-- right-click a card in the game and upload a custom image for the current session
-- export the dataset JSON and fill missing images before using it for model training
+- Genshin is wired with direct Guess Who style icon URLs.
+- Valorant is wired with direct agent portrait URLs plus Gekko companion ability icons.
+- The admin page is the fastest way to fill missing images for entities AniList does not cover well.
 
-## Dataset export
+## Admin panel
 
-Inside the game, click `Export Dataset`.
+Open `admin.html` to:
 
-The exported JSON contains:
+- review all current roster entities
+- filter by franchise
+- show only visible missing images
+- hide unsupported entities from the game
+- restore built-in roster images
+- export an updated `character-image-dataset.json`
 
-- `animeId`
-- `animeName`
-- `id`
-- `provider`
-- `name`
-- `image`
-- `hasImage`
+## Dataset files
 
-This is the correct path if you want to train a model later. First build a clean dataset of `id + name + image`. Do not train on mixed or unreliable image sources.
-
-## Local image dataset for the webpage
-
-The app now loads `images/character-image-dataset.json` first, before live API calls.
-
-Rebuild this file from `js/data.js` with:
-
-```powershell
-node scripts/build-image-dataset.mjs
-```
-
-Export only unresolved entries:
-
-```powershell
-node scripts/export-missing-images.mjs
-```
-
-Open `admin.html` to fill missing images and export an updated dataset JSON.
+- `js/data.js` - main playable roster data
+- `images/character-image-dataset.json` - local image overrides and resolved image cache
+- `images/missing-images.json` - unresolved entries for manual filling
 
 ## Local run
 

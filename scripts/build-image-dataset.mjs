@@ -60,10 +60,12 @@ function isLikelyNameMatch(expected, actual) {
   const actualNorm = normalizeName(actual);
   if (!expectedNorm || !actualNorm) return false;
   if (expectedNorm === actualNorm) return true;
-  if (expectedNorm.includes(actualNorm) || actualNorm.includes(expectedNorm)) return true;
 
   const a = tokenSet(expectedNorm);
   const b = tokenSet(actualNorm);
+  if (a.size >= 2 && b.size >= 2 && (expectedNorm.includes(actualNorm) || actualNorm.includes(expectedNorm))) {
+    return true;
+  }
   const shared = [...a].filter(token => b.has(token)).length;
   if (shared >= 2) return true;
   if (shared >= 1 && a.size === 1 && b.size === 1) return true;
@@ -197,6 +199,85 @@ async function resolveByNameBatch(chars) {
   return results;
 }
 
+function getAnimeSearchTerms(animeName) {
+  const base = String(animeName || '').trim();
+  const terms = new Set([base]);
+  base.split('&').map(part => part.trim()).filter(Boolean).forEach(part => terms.add(part));
+  base.split(':').map(part => part.trim()).filter(Boolean).forEach(part => terms.add(part));
+  const withoutParens = base.replace(/\([^)]*\)/g, ' ').replace(/\s+/g, ' ').trim();
+  if (withoutParens) terms.add(withoutParens);
+  return [...terms].filter(Boolean);
+}
+
+async function resolveByAnimeRoster(chars) {
+  const results = new Map();
+  const cache = new Map();
+
+  for (const char of chars) {
+    const cacheKey = normalizeName(char.animeName);
+
+    if (!cache.has(cacheKey)) {
+      const terms = getAnimeSearchTerms(char.animeName);
+      const merged = [];
+
+      for (const term of terms) {
+        let page = 1;
+        let lastPage = 1;
+        const found = [];
+        let media = null;
+
+        do {
+          const query = `
+            query AnimeCharacters($search: String, $page: Int) {
+              Media(search: $search, type: ANIME) {
+                id
+                title { romaji english native }
+                characters(sort:[ROLE,RELEVANCE], page:$page, perPage:100) {
+                  pageInfo { currentPage lastPage hasNextPage }
+                  nodes {
+                    id
+                    name { full }
+                    image { large medium }
+                  }
+                }
+              }
+            }
+          `;
+          const payload = await postAniList(query, { search: term, page }).catch(() => null);
+          media = payload?.data?.Media || null;
+          const pageInfo = media?.characters?.pageInfo;
+          const pageNodes = media?.characters?.nodes || [];
+          if (!media || !pageNodes.length) break;
+
+          found.push(...pageNodes);
+          lastPage = pageInfo?.lastPage || page;
+          page += 1;
+        } while (page <= lastPage);
+
+        if (media && animeTitleMatch(char.animeName, [media])) {
+          merged.push(...found);
+        }
+      }
+
+      cache.set(cacheKey, [...new Map(merged.map(item => [item.id, item])).values()]);
+    }
+
+    const candidates = cache.get(cacheKey) || [];
+    const best = candidates.find(item => isLikelyNameMatch(char.name, item?.name?.full || ''));
+    const name = best?.name?.full || null;
+    const image = best?.image?.large || best?.image?.medium || null;
+
+    results.set(char.key, best?.id && image ? {
+      id: best.id,
+      name,
+      image,
+      source: 'anime',
+    } : null);
+  }
+
+  return results;
+}
+
 async function main() {
   const animes = await loadAnimes();
   const chars = animes.flatMap(anime =>
@@ -251,9 +332,10 @@ async function main() {
     unresolved.push(char);
   }
 
-  const byName = await resolveByNameBatch(unresolved);
+  const byAnimeRoster = await resolveByAnimeRoster(unresolved);
+  const byName = await resolveByNameBatch(unresolved.filter(char => !byAnimeRoster.get(char.key)?.image));
   unresolved.forEach(char => {
-    const found = byName.get(char.key);
+    const found = byAnimeRoster.get(char.key) || byName.get(char.key);
     items.push({
       animeId: char.animeId,
       animeName: char.animeName,

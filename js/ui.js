@@ -2,6 +2,23 @@
  * ui.js - DOM rendering helpers.
  */
 
+function escapeHtml(value) {
+  return String(value || '')
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;')
+    .replace(/'/g, '&#39;');
+}
+
+function getDisplayName(char) {
+  return char?.displayName || char?.name || 'Unknown';
+}
+
+function getBadgeAnimeName(char, anime) {
+  return char?._sourceAnimeName || anime?.name || '';
+}
+
 function showScreen(id) {
   document.getElementById('home').classList.remove('active');
   const game = document.getElementById('game');
@@ -29,9 +46,9 @@ function renderAnimeGrid(animes, onSelect) {
         <span style="font-size:38px;filter:drop-shadow(0 2px 8px ${anime.color}55)">${anime.emoji}</span>
       </div>
       <div class="ac-body">
-        <div class="ac-name" style="color:${anime.color}">${anime.name}</div>
-        <div class="ac-count">${anime.chars.length} characters</div>
-        <div class="ac-tags">${anime.tags.map(tag => `<span class="tag" style="color:${anime.color};border-color:${anime.color}44">${tag}</span>`).join('')}</div>
+        <div class="ac-name" style="color:${anime.color}">${escapeHtml(anime.name)}</div>
+        <div class="ac-count">${anime.chars.length} entities</div>
+        <div class="ac-tags">${(anime.tags || []).map(tag => `<span class="tag" style="color:${anime.color};border-color:${anime.color}44">${escapeHtml(tag)}</span>`).join('')}</div>
       </div>`;
     card.addEventListener('mouseenter', () => {
       card.style.borderColor = anime.color;
@@ -62,7 +79,7 @@ function renderCategoryBar(categories, activeCategory, onSelect) {
 
 function renderGameTitle(anime) {
   document.getElementById('gtitle').innerHTML =
-    `<span style="color:${anime.color}">${anime.emoji}</span> ${anime.name.toUpperCase()}`;
+    `<span style="color:${anime.color}">${anime.emoji}</span> ${escapeHtml(anime.name.toUpperCase())}`;
 }
 
 function renderStats(total, eliminated) {
@@ -75,11 +92,11 @@ function renderLoading(anime) {
     <div class="loading-screen">
       <div style="font-size:36px;margin-bottom:12px">Loading</div>
       <div style="font-family:'Bebas Neue',sans-serif;font-size:22px;letter-spacing:3px;color:var(--accent)">
-        Loading ${anime.chars.length} Characters...
+        Loading ${anime.chars.length} Entities...
       </div>
-      <div style="font-size:12px;margin-top:6px;color:var(--muted)">Single source: AniList GraphQL</div>
+      <div style="font-size:12px;margin-top:6px;color:var(--muted)">Sources: local dataset, curated direct links, and AniList</div>
       <div class="load-bar-wrap"><div class="load-bar" id="load-bar"></div></div>
-      <div id="load-label" style="font-size:11px;color:var(--muted);margin-top:8px">Connecting to AniList...</div>
+      <div id="load-label" style="font-size:11px;color:var(--muted);margin-top:8px">Preparing roster...</div>
     </div>`;
 }
 
@@ -100,15 +117,23 @@ function renderCharGrid(anime, flipped, onCardClick) {
     const card = document.createElement('div');
     card.className = 'fc' + (flipped.has(index) ? ' flipped' : '');
     card.style.cssText = `animation-delay:${Math.min(index * 0.016, 1.2)}s;--hc:${anime.color};--hg:${anime.color}38`;
+    card.title = 'Click to flip. Right-click to set a custom image.';
     card.innerHTML = buildCardHTML(char, anime, imgUrl);
-    card.onclick = () => onCardClick(index);
+    card.addEventListener('click', () => onCardClick(index));
+    card.addEventListener('contextmenu', event => {
+      event.preventDefault();
+      showUploadModal(char, index, anime);
+    });
     grid.appendChild(card);
   });
 }
 
 function buildCardHTML(char, anime, imgUrl) {
+  const displayName = escapeHtml(getDisplayName(char));
+  const baseName = escapeHtml(char?.name || 'Unknown');
+  const badgeName = escapeHtml(getBadgeAnimeName(char, anime));
   const imgTag = imgUrl
-    ? `<img class="cimg" src="${imgUrl}" alt="${char.name}" loading="lazy"
+    ? `<img class="cimg" src="${imgUrl}" alt="${baseName}" loading="lazy"
          onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">`
     : '';
   const fallbackStyle = imgUrl ? '' : 'display:flex;';
@@ -119,13 +144,13 @@ function buildCardHTML(char, anime, imgUrl) {
         <div class="imgw">
           ${imgTag}
           <div class="cfb" style="${fallbackStyle}background:linear-gradient(150deg,${anime.color}1a,#0a0a16)">
-            <span style="font-size:38px">${char.emoji || '*'}</span>
-            <span class="cfb-nm">${char.name}</span>
+            <span style="font-size:38px">${escapeHtml(char.emoji || '*')}</span>
+            <span class="cfb-nm">${displayName}</span>
           </div>
           <div class="ov"></div>
           <div class="ci">
-            <div class="cn">${char.name}</div>
-            <span class="cb" style="background:${anime.color}1e;color:${anime.color};border:1px solid ${anime.color}44">${anime.name}</span>
+            <div class="cn">${displayName}</div>
+            <span class="cb" style="background:${anime.color}1e;color:${anime.color};border:1px solid ${anime.color}44">${badgeName}</span>
           </div>
         </div>
       </div>
@@ -133,7 +158,7 @@ function buildCardHTML(char, anime, imgUrl) {
         <div class="bpat"></div>
         <div class="bx">X</div>
         <div class="bl">Eliminated</div>
-        <div class="bn">${char.name}</div>
+        <div class="bn">${displayName}</div>
       </div>
     </div>`;
 }
@@ -158,11 +183,11 @@ function renderDatasetStatus(anime) {
   const mismatches = getMismatchedCharacters(anime).length;
 
   if (!missing && !mismatches) {
-    status.textContent = `${withImages}/${dataset.length} characters resolved. Dataset export is ready.`;
+    status.textContent = `${withImages}/${dataset.length} entities resolved. Export is ready if you want to snapshot the roster dataset.`;
     return;
   }
 
-  status.textContent = `${withImages}/${dataset.length} characters resolved from AniList or local overrides. ${missing} still need manual images. ${mismatches} AniList IDs are mismatched and automatically bypassed via name search when possible.`;
+  status.textContent = `${withImages}/${dataset.length} entities resolved from curated links, the local dataset, or AniList. ${missing} still need manual images. ${mismatches} AniList IDs were mismatched and are automatically bypassed with name search when possible.`;
 }
 
 function showUploadModal(char, index, anime) {
@@ -174,8 +199,8 @@ function showUploadModal(char, index, anime) {
   modal.innerHTML = `
     <div class="modal-bg" onclick="closeUploadModal()"></div>
     <div class="modal-box">
-      <div class="modal-title">Set Image for ${char.name}</div>
-      <p class="modal-sub">Paste a direct image URL, or choose a local file.</p>
+      <div class="modal-title">Set Image for ${escapeHtml(getDisplayName(char))}</div>
+      <p class="modal-sub">Paste a direct image URL or choose a local file for this session.</p>
       <input id="url-input" class="modal-input" type="url" placeholder="https://example.com/image.jpg" />
       <div class="modal-or">or</div>
       <input id="file-input" type="file" accept="image/*" class="modal-file" />
@@ -192,6 +217,24 @@ function showUploadModal(char, index, anime) {
 function closeUploadModal() {
   const modal = document.getElementById('upload-modal');
   if (modal) modal.remove();
+}
+
+function syncCustomImageToSourceRosters(char, imgUrl) {
+  if (!char?._sourceAnimeId || !Array.isArray(ANIMES)) return;
+  const sourceAnime = ANIMES.find(item => item.id === char._sourceAnimeId);
+  if (!sourceAnime || !Array.isArray(sourceAnime.chars)) return;
+
+  const target = sourceAnime.chars.find(item => item.name === char.name);
+  if (!target) return;
+
+  target.img = imgUrl;
+  if (target.anilist) IMG_CACHE[target.anilist] = imgUrl;
+  if (typeof setNameImageCache === 'function') {
+    setNameImageCache(target.name, imgUrl);
+  }
+  if (typeof buildDataset === 'function') {
+    buildDataset(sourceAnime);
+  }
 }
 
 async function applyCustomImage(cardIndex) {
@@ -212,11 +255,16 @@ async function applyCustomImage(cardIndex) {
   if (!imgUrl || !window.GameState?.currentAnime) return;
 
   const char = GameState.currentAnime.chars[cardIndex];
+  if (!char) return;
+
+  char.img = imgUrl;
   if (char.anilist) IMG_CACHE[char.anilist] = imgUrl;
 
   if (typeof setNameImageCache === 'function') {
     setNameImageCache(char.name, imgUrl);
   }
+
+  syncCustomImageToSourceRosters(char, imgUrl);
 
   buildDataset(GameState.currentAnime);
 

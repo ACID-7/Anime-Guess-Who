@@ -1,0 +1,37 @@
+ChatGPT update summary
+======================
+
+Scope
+-----
+- Replaced the old mixed-anime roster with the requested franchise-only build.
+- Expanded key rosters with important non-human and special entities.
+- Removed Boruto-only bleed-through from Naruto.
+- Reworked the admin panel for large roster management.
+
+Included rosters
+----------------
+Naruto & Shippuden, One Piece, Haikyuu, My Hero Academia, Jujutsu Kaisen,
+Attack on Titan, One Punch Man, Demon Slayer, Solo Leveling, Blue Lock,
+Black Clover, Chainsaw Man, Dandadan, Kaiju No. 8, Genshin, Valorant.
+
+Major app fixes
+---------------
+- Added a real dataset status panel to the game page.
+- Wired right-click custom image upload on entity cards.
+- Cleaned API loading text and mixed-source wording.
+- Fixed aggregate A-Z mode so it keeps source franchise context on cards.
+- Rebuilt the local dataset and missing-images list for the new franchise set.
+- Updated the admin page to merge live rosters with dataset overrides.
+- Added roster summary cards, missing-only toggle, restore-roster-image action,
+  and export flow for the updated dataset.
+
+Generated data snapshot
+-----------------------
+- Total curated entities: 1153
+- Genshin direct-image entries: 106 playable roster images plus extra lore entities
+- Valorant direct-image entries: 28 agents plus Gekko companions
+
+Notes
+-----
+- Many non-human entities in anime rosters still need manual images because AniList
+  is character-focused. Those remain listed in images/missing-images.json for easy follow-up.

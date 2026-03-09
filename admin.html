@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width,initial-scale=1.0" />
-<title>Anime Dataset Admin</title>
+<title>Roster Dataset Admin</title>
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet" />
 <link rel="stylesheet" href="css/base.css" />
 <link rel="stylesheet" href="css/admin.css" />
@@ -12,7 +12,7 @@
   <div id="login-screen" class="login-wrap">
     <div class="login-box">
       <h1 class="login-title">Admin Login</h1>
-      <p class="login-sub">Enter your credentials to manage the image dataset.</p>
+      <p class="login-sub">Enter your credentials to manage the roster image dataset.</p>
       <form id="login-form" class="login-form">
         <input
           id="admin-username"
@@ -36,26 +36,33 @@
 
   <main id="admin-app" class="admin-wrap" style="display:none">
     <header class="admin-head">
-      <h1>Dataset Admin</h1>
-      <p>Manage characters per anime, fill or change images, and export an updated dataset JSON.</p>
+      <h1>Roster Admin</h1>
+      <p>Manage franchise rosters, fill missing images, hide unsupported entries, and export a clean dataset JSON for the game.</p>
       <div class="admin-actions">
         <a class="btn ghost" href="index.html">Back to Game</a>
-        <button class="btn" id="add-character-btn">Add Character</button>
+        <button class="btn ghost" id="rebuild-btn">Rebuild from Roster</button>
+        <button class="btn" id="add-character-btn">Add Entity</button>
         <button class="btn" id="export-btn">Export Updated Dataset</button>
       </div>
     </header>
 
     <section class="toolbar">
-      <input id="search" type="search" placeholder="Search anime or character..." />
+      <input id="search" type="search" placeholder="Search franchise, entity, or AniList ID..." />
       <select id="anime-filter" class="anime-filter">
-        <option value="all">All anime</option>
+        <option value="all">All rosters</option>
       </select>
+      <label class="toggle-chip">
+        <input id="missing-only-toggle" type="checkbox" />
+        Missing only
+      </label>
       <div class="stat" id="stats">Loading...</div>
     </section>
 
+    <section id="summary-grid" class="summary-grid"></section>
     <section id="list" class="list"></section>
   </main>
 
+  <script src="js/data.js"></script>
   <script src="js/admin.js"></script>
 </body>
 </html>

@@ -1,9 +1,36 @@
 {
   "version": 1,
-  "generatedAt": "2026-03-08T20:39:25.189Z",
+  "generatedAt": "2026-03-09T21:18:50.674Z",
   "sourceDataset": "images/character-image-dataset.json",
-  "totalMissing": 367,
+  "totalMissing": 371,
   "items": [
+    {
+      "animeId": "aot",
+      "animeName": "Attack on Titan",
+      "name": "Armored Titan",
+      "anilist": null,
+      "resolvedName": null,
+      "image": null,
+      "notes": ""
+    },
+    {
+      "animeId": "aot",
+      "animeName": "Attack on Titan",
+      "name": "Attack Titan",
+      "anilist": null,
+      "resolvedName": null,
+      "image": null,
+      "notes": ""
+    },
+    {
+      "animeId": "aot",
+      "animeName": "Attack on Titan",
+      "name": "Beast Titan",
+      "anilist": null,
+      "resolvedName": null,
+      "image": null,
+      "notes": ""
+    },
     {
       "animeId": "aot",
       "animeName": "Attack on Titan",
@@ -16,8 +43,26 @@
     {
       "animeId": "aot",
       "animeName": "Attack on Titan",
-      "name": "Dita Ness",
-      "anilist": 85403,
+      "name": "Cart Titan",
+      "anilist": null,
+      "resolvedName": null,
+      "image": null,
+      "notes": ""
+    },
+    {
+      "animeId": "aot",
+      "animeName": "Attack on Titan",
+      "name": "Colossal Titan",
+      "anilist": null,
+      "resolvedName": null,
+      "image": null,
+      "notes": ""
+    },
+    {
+      "animeId": "aot",
+      "animeName": "Attack on Titan",
+      "name": "Dina Fritz",
+      "anilist": 85384,
       "resolvedName": null,
       "image": null,
       "notes": ""
@@ -43,8 +88,53 @@
     {
       "animeId": "aot",
       "animeName": "Attack on Titan",
-      "name": "Eld Jinn (Sr)",
-      "anilist": 85405,
+      "name": "Eren Kruger / Owl",
+      "anilist": null,
+      "resolvedName": null,
+      "image": null,
+      "notes": ""
+    },
+    {
+      "animeId": "aot",
+      "animeName": "Attack on Titan",
+      "name": "Female Titan",
+      "anilist": null,
+      "resolvedName": null,
+      "image": null,
+      "notes": ""
+    },
+    {
+      "animeId": "aot",
+      "animeName": "Attack on Titan",
+      "name": "Floch Forster",
+      "anilist": 85370,
+      "resolvedName": null,
+      "image": null,
+      "notes": ""
+    },
+    {
+      "animeId": "aot",
+      "animeName": "Attack on Titan",
+      "name": "Founding Titan",
+      "anilist": null,
+      "resolvedName": null,
+      "image": null,
+      "notes": ""
+    },
+    {
+      "animeId": "aot",
+      "animeName": "Attack on Titan",
+      "name": "Frieda Reiss",
+      "anilist": null,
+      "resolvedName": null,
+      "image": null,
+      "notes": ""
+    },
+    {
+      "animeId": "aot",
+      "animeName": "Attack on Titan",
+      "name": "Furlan Church",
+      "anilist": 85390,
       "resolvedName": null,
       "image": null,
       "notes": ""
@@ -54,6 +144,42 @@
       "animeName": "Attack on Titan",
       "name": "Historia Reiss",
       "anilist": 40890,
+      "resolvedName": null,
+      "image": null,
+      "notes": ""
+    },
+    {
+      "animeId": "aot",
+      "animeName": "Attack on Titan",
+      "name": "Ilse Langnar",
+      "anilist": 85388,
+      "resolvedName": null,
+      "image": null,
+      "notes": ""
+    },
+    {
+      "animeId": "aot",
+      "animeName": "Attack on Titan",
+      "name": "Isabel Magnolia",
+      "anilist": 85389,
+      "resolvedName": null,
+      "image": null,
+      "notes": ""
+    },
+    {
+      "animeId": "aot",
+      "animeName": "Attack on Titan",
+      "name": "Jaw Titan",
+      "anilist": null,
+      "resolvedName": null,
+      "image": null,
+      "notes": ""
+    },
+    {
+      "animeId": "aot",
+      "animeName": "Attack on Titan",
+      "name": "Kenny Ackerman",
+      "anilist": 85383,
       "resolvedName": null,
       "image": null,
       "notes": ""
@@ -79,8 +205,8 @@
     {
       "animeId": "aot",
       "animeName": "Attack on Titan",
-      "name": "Mina Ashley",
-      "anilist": 85402,
+      "name": "Nifa",
+      "anilist": 85395,
       "resolvedName": null,
       "image": null,
       "notes": ""
@@ -97,6 +223,87 @@
     {
       "animeId": "aot",
       "animeName": "Attack on Titan",
+      "name": "Onyankopon",
+      "anilist": 85378,
+      "resolvedName": null,
+      "image": null,
+      "notes": ""
+    },
+    {
+      "animeId": "aot",
+      "animeName": "Attack on Titan",
+      "name": "Pure Titan",
+      "anilist": null,
+      "resolvedName": null,
+      "image": null,
+      "notes": ""
+    },
+    {
+      "animeId": "aot",
+      "animeName": "Attack on Titan",
+      "name": "Rod Reiss",
+      "anilist": 85382,
+      "resolvedName": null,
+      "image": null,
+      "notes": ""
+    },
+    {
+      "animeId": "aot",
+      "animeName": "Attack on Titan",
+      "name": "Smiling Titan",
+      "anilist": null,
+      "resolvedName": null,
+      "image": null,
+      "notes": ""
+    },
+    {
+      "animeId": "aot",
+      "animeName": "Attack on Titan",
+      "name": "Udo",
+      "anilist": 85407,
+      "resolvedName": null,
+      "image": null,
+      "notes": ""
+    },
+    {
+      "animeId": "aot",
+      "animeName": "Attack on Titan",
+      "name": "Uri Reiss",
+      "anilist": null,
+      "resolvedName": null,
+      "image": null,
+      "notes": ""
+    },
+    {
+      "animeId": "aot",
+      "animeName": "Attack on Titan",
+      "name": "War Hammer Titan",
+      "anilist": null,
+      "resolvedName": null,
+      "image": null,
+      "notes": ""
+    },
+    {
+      "animeId": "aot",
+      "animeName": "Attack on Titan",
+      "name": "Yelena",
+      "anilist": 85377,
+      "resolvedName": null,
+      "image": null,
+      "notes": ""
+    },
+    {
+      "animeId": "aot",
+      "animeName": "Attack on Titan",
+      "name": "Ymir Fritz",
+      "anilist": null,
+      "resolvedName": null,
+      "image": null,
+      "notes": ""
+    },
+    {
+      "animeId": "aot",
+      "animeName": "Attack on Titan",
       "name": "Zeke Yeager",
       "anilist": 85373,
       "resolvedName": null,
@@ -104,208 +311,10 @@
       "notes": ""
     },
     {
-      "animeId": "berserk",
-      "animeName": "Berserk",
-      "name": "Anna (Berserk)",
-      "anilist": 392,
-      "resolvedName": null,
-      "image": null,
-      "notes": ""
-    },
-    {
-      "animeId": "berserk",
-      "animeName": "Berserk",
-      "name": "Azan",
-      "anilist": 385,
-      "resolvedName": null,
-      "image": null,
-      "notes": ""
-    },
-    {
-      "animeId": "berserk",
-      "animeName": "Berserk",
-      "name": "Conrad",
-      "anilist": 383,
-      "resolvedName": null,
-      "image": null,
-      "notes": ""
-    },
-    {
-      "animeId": "berserk",
-      "animeName": "Berserk",
-      "name": "Count (Slug Baron)",
-      "anilist": 394,
-      "resolvedName": null,
-      "image": null,
-      "notes": ""
-    },
-    {
-      "animeId": "berserk",
-      "animeName": "Berserk",
-      "name": "Daiba",
-      "anilist": 389,
-      "resolvedName": null,
-      "image": null,
-      "notes": ""
-    },
-    {
-      "animeId": "berserk",
-      "animeName": "Berserk",
-      "name": "Gedfring",
-      "anilist": 388,
-      "resolvedName": null,
-      "image": null,
-      "notes": ""
-    },
-    {
-      "animeId": "berserk",
-      "animeName": "Berserk",
-      "name": "Griffith / Femto",
-      "anilist": 359,
-      "resolvedName": null,
-      "image": null,
-      "notes": ""
-    },
-    {
-      "animeId": "berserk",
-      "animeName": "Berserk",
-      "name": "Guts",
-      "anilist": 358,
-      "resolvedName": null,
-      "image": null,
-      "notes": ""
-    },
-    {
-      "animeId": "berserk",
-      "animeName": "Berserk",
-      "name": "Guts (Black Swordsman)",
-      "anilist": 390,
-      "resolvedName": null,
-      "image": null,
-      "notes": ""
-    },
-    {
-      "animeId": "berserk",
-      "animeName": "Berserk",
-      "name": "Irvine",
-      "anilist": 378,
-      "resolvedName": null,
-      "image": null,
-      "notes": ""
-    },
-    {
-      "animeId": "berserk",
-      "animeName": "Berserk",
-      "name": "Ivalera",
-      "anilist": 373,
-      "resolvedName": null,
-      "image": null,
-      "notes": ""
-    },
-    {
-      "animeId": "berserk",
-      "animeName": "Berserk",
-      "name": "Morda",
-      "anilist": 387,
-      "resolvedName": null,
-      "image": null,
-      "notes": ""
-    },
-    {
-      "animeId": "berserk",
-      "animeName": "Berserk",
-      "name": "Rakshas",
-      "anilist": 377,
-      "resolvedName": null,
-      "image": null,
-      "notes": ""
-    },
-    {
-      "animeId": "berserk",
-      "animeName": "Berserk",
-      "name": "Roderick",
-      "anilist": 386,
-      "resolvedName": null,
-      "image": null,
-      "notes": ""
-    },
-    {
-      "animeId": "berserk",
-      "animeName": "Berserk",
-      "name": "Silat",
-      "anilist": 384,
-      "resolvedName": null,
-      "image": null,
-      "notes": ""
-    },
-    {
-      "animeId": "berserk",
-      "animeName": "Berserk",
-      "name": "Slan",
-      "anilist": 381,
-      "resolvedName": null,
-      "image": null,
-      "notes": ""
-    },
-    {
-      "animeId": "berserk",
-      "animeName": "Berserk",
-      "name": "Theresia",
-      "anilist": 393,
-      "resolvedName": null,
-      "image": null,
-      "notes": ""
-    },
-    {
-      "animeId": "berserk",
-      "animeName": "Berserk",
-      "name": "Ubik",
-      "anilist": 380,
-      "resolvedName": null,
-      "image": null,
-      "notes": ""
-    },
-    {
-      "animeId": "berserk",
-      "animeName": "Berserk",
-      "name": "Vargas",
-      "anilist": 391,
-      "resolvedName": null,
-      "image": null,
-      "notes": ""
-    },
-    {
-      "animeId": "berserk",
-      "animeName": "Berserk",
-      "name": "Void",
-      "anilist": 382,
-      "resolvedName": null,
-      "image": null,
-      "notes": ""
-    },
-    {
-      "animeId": "blackclover",
-      "animeName": "Black Clover",
-      "name": "Asta",
-      "anilist": 130430,
-      "resolvedName": null,
-      "image": null,
-      "notes": ""
-    },
-    {
-      "animeId": "blackclover",
-      "animeName": "Black Clover",
-      "name": "Asta (Devil Union)",
-      "anilist": 167850,
-      "resolvedName": null,
-      "image": null,
-      "notes": ""
-    },
-    {
-      "animeId": "blackclover",
-      "animeName": "Black Clover",
-      "name": "Julius (Youth)",
-      "anilist": 167852,
+      "animeId": "aot",
+      "animeName": "Attack on Titan",
+      "name": "Zofia",
+      "anilist": 85406,
       "resolvedName": null,
       "image": null,
       "notes": ""
@@ -322,6 +331,15 @@
     {
       "animeId": "blackclover",
       "animeName": "Black Clover",
+      "name": "Morris Libardirt",
+      "anilist": null,
+      "resolvedName": null,
+      "image": null,
+      "notes": ""
+    },
+    {
+      "animeId": "blackclover",
+      "animeName": "Black Clover",
       "name": "Patolli / Patri",
       "anilist": 130458,
       "resolvedName": null,
@@ -331,368 +349,17 @@
     {
       "animeId": "blackclover",
       "animeName": "Black Clover",
+      "name": "Secre Swallowtail / Nero",
+      "anilist": null,
+      "resolvedName": null,
+      "image": null,
+      "notes": ""
+    },
+    {
+      "animeId": "blackclover",
+      "animeName": "Black Clover",
       "name": "Sister Lily",
       "anilist": 167854,
-      "resolvedName": null,
-      "image": null,
-      "notes": ""
-    },
-    {
-      "animeId": "blackclover",
-      "animeName": "Black Clover",
-      "name": "Yuno",
-      "anilist": 130431,
-      "resolvedName": null,
-      "image": null,
-      "notes": ""
-    },
-    {
-      "animeId": "blackclover",
-      "animeName": "Black Clover",
-      "name": "Yuno (Star Magic)",
-      "anilist": 167851,
-      "resolvedName": null,
-      "image": null,
-      "notes": ""
-    },
-    {
-      "animeId": "bleach",
-      "animeName": "Bleach",
-      "name": "Askin Nakk Le Vaar",
-      "anilist": 100859,
-      "resolvedName": null,
-      "image": null,
-      "notes": ""
-    },
-    {
-      "animeId": "bleach",
-      "animeName": "Bleach",
-      "name": "Barragan Louisenbairn",
-      "anilist": 21,
-      "resolvedName": null,
-      "image": null,
-      "notes": ""
-    },
-    {
-      "animeId": "bleach",
-      "animeName": "Bleach",
-      "name": "BG9",
-      "anilist": 100837,
-      "resolvedName": null,
-      "image": null,
-      "notes": ""
-    },
-    {
-      "animeId": "bleach",
-      "animeName": "Bleach",
-      "name": "Cang Du",
-      "anilist": 100838,
-      "resolvedName": null,
-      "image": null,
-      "notes": ""
-    },
-    {
-      "animeId": "bleach",
-      "animeName": "Bleach",
-      "name": "Chojiro Sasakibe",
-      "anilist": 100848,
-      "resolvedName": null,
-      "image": null,
-      "notes": ""
-    },
-    {
-      "animeId": "bleach",
-      "animeName": "Bleach",
-      "name": "Driscoll Berci",
-      "anilist": 100860,
-      "resolvedName": null,
-      "image": null,
-      "notes": ""
-    },
-    {
-      "animeId": "bleach",
-      "animeName": "Bleach",
-      "name": "Gerard Valkyrie",
-      "anilist": 100856,
-      "resolvedName": null,
-      "image": null,
-      "notes": ""
-    },
-    {
-      "animeId": "bleach",
-      "animeName": "Bleach",
-      "name": "Ginjo Kugo",
-      "anilist": 100866,
-      "resolvedName": null,
-      "image": null,
-      "notes": ""
-    },
-    {
-      "animeId": "bleach",
-      "animeName": "Bleach",
-      "name": "Hanataro Yamada",
-      "anilist": 100851,
-      "resolvedName": null,
-      "image": null,
-      "notes": ""
-    },
-    {
-      "animeId": "bleach",
-      "animeName": "Bleach",
-      "name": "Ichigo (Bankai)",
-      "anilist": 100861,
-      "resolvedName": null,
-      "image": null,
-      "notes": ""
-    },
-    {
-      "animeId": "bleach",
-      "animeName": "Bleach",
-      "name": "Jushiro Ukitake",
-      "anilist": 32,
-      "resolvedName": null,
-      "image": null,
-      "notes": ""
-    },
-    {
-      "animeId": "bleach",
-      "animeName": "Bleach",
-      "name": "Kaname Tosen",
-      "anilist": 28,
-      "resolvedName": null,
-      "image": null,
-      "notes": ""
-    },
-    {
-      "animeId": "bleach",
-      "animeName": "Bleach",
-      "name": "Kon",
-      "anilist": 44,
-      "resolvedName": null,
-      "image": null,
-      "notes": ""
-    },
-    {
-      "animeId": "bleach",
-      "animeName": "Bleach",
-      "name": "Kukaku Shiba",
-      "anilist": 100846,
-      "resolvedName": null,
-      "image": null,
-      "notes": ""
-    },
-    {
-      "animeId": "bleach",
-      "animeName": "Bleach",
-      "name": "Lille Barro",
-      "anilist": 100858,
-      "resolvedName": null,
-      "image": null,
-      "notes": ""
-    },
-    {
-      "animeId": "bleach",
-      "animeName": "Bleach",
-      "name": "Lisa Yadomaru",
-      "anilist": 100841,
-      "resolvedName": null,
-      "image": null,
-      "notes": ""
-    },
-    {
-      "animeId": "bleach",
-      "animeName": "Bleach",
-      "name": "Marechiyo Omaeda",
-      "anilist": 100849,
-      "resolvedName": null,
-      "image": null,
-      "notes": ""
-    },
-    {
-      "animeId": "bleach",
-      "animeName": "Bleach",
-      "name": "Masaki Kurosaki",
-      "anilist": 100865,
-      "resolvedName": null,
-      "image": null,
-      "notes": ""
-    },
-    {
-      "animeId": "bleach",
-      "animeName": "Bleach",
-      "name": "Nelliel Tu Odelschwanck",
-      "anilist": 19,
-      "resolvedName": null,
-      "image": null,
-      "notes": ""
-    },
-    {
-      "animeId": "bleach",
-      "animeName": "Bleach",
-      "name": "Nianzol Weizol",
-      "anilist": 100857,
-      "resolvedName": null,
-      "image": null,
-      "notes": ""
-    },
-    {
-      "animeId": "bleach",
-      "animeName": "Bleach",
-      "name": "Orihime (Final)",
-      "anilist": 100862,
-      "resolvedName": null,
-      "image": null,
-      "notes": ""
-    },
-    {
-      "animeId": "bleach",
-      "animeName": "Bleach",
-      "name": "Pernida Parnkgjas",
-      "anilist": 100855,
-      "resolvedName": null,
-      "image": null,
-      "notes": ""
-    },
-    {
-      "animeId": "bleach",
-      "animeName": "Bleach",
-      "name": "Quilge Opie",
-      "anilist": 100835,
-      "resolvedName": null,
-      "image": null,
-      "notes": ""
-    },
-    {
-      "animeId": "bleach",
-      "animeName": "Bleach",
-      "name": "Robert Accutrone",
-      "anilist": 100836,
-      "resolvedName": null,
-      "image": null,
-      "notes": ""
-    },
-    {
-      "animeId": "bleach",
-      "animeName": "Bleach",
-      "name": "Rose Otoribashi",
-      "anilist": 100839,
-      "resolvedName": null,
-      "image": null,
-      "notes": ""
-    },
-    {
-      "animeId": "bleach",
-      "animeName": "Bleach",
-      "name": "Ryuken Ishida",
-      "anilist": 100864,
-      "resolvedName": null,
-      "image": null,
-      "notes": ""
-    },
-    {
-      "animeId": "bleach",
-      "animeName": "Bleach",
-      "name": "Shuhei Hisagi",
-      "anilist": 39,
-      "resolvedName": null,
-      "image": null,
-      "notes": ""
-    },
-    {
-      "animeId": "bleach",
-      "animeName": "Bleach",
-      "name": "Shunsui Kyoraku",
-      "anilist": 31,
-      "resolvedName": null,
-      "image": null,
-      "notes": ""
-    },
-    {
-      "animeId": "bleach",
-      "animeName": "Bleach",
-      "name": "Sosuke Aizen",
-      "anilist": 13,
-      "resolvedName": null,
-      "image": null,
-      "notes": ""
-    },
-    {
-      "animeId": "bleach",
-      "animeName": "Bleach",
-      "name": "Szayelaporro Grantz",
-      "anilist": 24,
-      "resolvedName": null,
-      "image": null,
-      "notes": ""
-    },
-    {
-      "animeId": "bleach",
-      "animeName": "Bleach",
-      "name": "Toshiro Hitsugaya",
-      "anilist": 11,
-      "resolvedName": null,
-      "image": null,
-      "notes": ""
-    },
-    {
-      "animeId": "bleach",
-      "animeName": "Bleach",
-      "name": "Tsukishima Shukuro",
-      "anilist": 100867,
-      "resolvedName": null,
-      "image": null,
-      "notes": ""
-    },
-    {
-      "animeId": "bleach",
-      "animeName": "Bleach",
-      "name": "Uryu Ishida",
-      "anilist": 8,
-      "resolvedName": null,
-      "image": null,
-      "notes": ""
-    },
-    {
-      "animeId": "bleach",
-      "animeName": "Bleach",
-      "name": "Xcution Giriko",
-      "anilist": 100870,
-      "resolvedName": null,
-      "image": null,
-      "notes": ""
-    },
-    {
-      "animeId": "bleach",
-      "animeName": "Bleach",
-      "name": "Yhwach",
-      "anilist": 100819,
-      "resolvedName": null,
-      "image": null,
-      "notes": ""
-    },
-    {
-      "animeId": "bleach",
-      "animeName": "Bleach",
-      "name": "Yhwach (Released)",
-      "anilist": 100863,
-      "resolvedName": null,
-      "image": null,
-      "notes": ""
-    },
-    {
-      "animeId": "bleach",
-      "animeName": "Bleach",
-      "name": "Yoruichi Shihoin",
-      "anilist": 14,
-      "resolvedName": null,
-      "image": null,
-      "notes": ""
-    },
-    {
-      "animeId": "bleach",
-      "animeName": "Bleach",
-      "name": "Zennosuke Kurumadani",
-      "anilist": 43,
       "resolvedName": null,
       "image": null,
       "notes": ""
@@ -727,6 +394,15 @@
     {
       "animeId": "bluelock",
       "animeName": "Blue Lock",
+      "name": "Nijiro Nanase",
+      "anilist": null,
+      "resolvedName": null,
+      "image": null,
+      "notes": ""
+    },
+    {
+      "animeId": "bluelock",
+      "animeName": "Blue Lock",
       "name": "Okuhito Iemon",
       "anilist": null,
       "resolvedName": null,
@@ -736,7 +412,34 @@
     {
       "animeId": "bluelock",
       "animeName": "Blue Lock",
+      "name": "Pablo Cavasoz",
+      "anilist": null,
+      "resolvedName": null,
+      "image": null,
+      "notes": ""
+    },
+    {
+      "animeId": "bluelock",
+      "animeName": "Blue Lock",
+      "name": "Ryosuke Kira",
+      "anilist": null,
+      "resolvedName": null,
+      "image": null,
+      "notes": ""
+    },
+    {
+      "animeId": "bluelock",
+      "animeName": "Blue Lock",
       "name": "Seishiro Nagi",
+      "anilist": null,
+      "resolvedName": null,
+      "image": null,
+      "notes": ""
+    },
+    {
+      "animeId": "bluelock",
+      "animeName": "Blue Lock",
+      "name": "Shuto Sendou",
       "anilist": null,
       "resolvedName": null,
       "image": null,
@@ -763,6 +466,51 @@
     {
       "animeId": "chainsaw",
       "animeName": "Chainsaw Man",
+      "name": "Beam / Shark Fiend",
+      "anilist": 166242,
+      "resolvedName": null,
+      "image": null,
+      "notes": ""
+    },
+    {
+      "animeId": "chainsaw",
+      "animeName": "Chainsaw Man",
+      "name": "Bucky / Chicken Devil",
+      "anilist": null,
+      "resolvedName": null,
+      "image": null,
+      "notes": ""
+    },
+    {
+      "animeId": "chainsaw",
+      "animeName": "Chainsaw Man",
+      "name": "Chainsaw Man / Hero of Hell",
+      "anilist": null,
+      "resolvedName": null,
+      "image": null,
+      "notes": ""
+    },
+    {
+      "animeId": "chainsaw",
+      "animeName": "Chainsaw Man",
+      "name": "Control Devil",
+      "anilist": null,
+      "resolvedName": null,
+      "image": null,
+      "notes": ""
+    },
+    {
+      "animeId": "chainsaw",
+      "animeName": "Chainsaw Man",
+      "name": "Curse Devil",
+      "anilist": null,
+      "resolvedName": null,
+      "image": null,
+      "notes": ""
+    },
+    {
+      "animeId": "chainsaw",
+      "animeName": "Chainsaw Man",
       "name": "Darkness Devil",
       "anilist": 166252,
       "resolvedName": null,
@@ -772,8 +520,8 @@
     {
       "animeId": "chainsaw",
       "animeName": "Chainsaw Man",
-      "name": "Denji",
-      "anilist": 166230,
+      "name": "Eternity Devil",
+      "anilist": null,
       "resolvedName": null,
       "image": null,
       "notes": ""
@@ -781,8 +529,8 @@
     {
       "animeId": "chainsaw",
       "animeName": "Chainsaw Man",
-      "name": "Denji (Ascended)",
-      "anilist": 187320,
+      "name": "Falling Devil",
+      "anilist": null,
       "resolvedName": null,
       "image": null,
       "notes": ""
@@ -790,7 +538,7 @@
     {
       "animeId": "chainsaw",
       "animeName": "Chainsaw Man",
-      "name": "Fami",
+      "name": "Fami / Famine Devil",
       "anilist": 187308,
       "resolvedName": null,
       "image": null,
@@ -799,8 +547,8 @@
     {
       "animeId": "chainsaw",
       "animeName": "Chainsaw Man",
-      "name": "Flamethrower Devil",
-      "anilist": 187310,
+      "name": "Fox Devil",
+      "anilist": null,
       "resolvedName": null,
       "image": null,
       "notes": ""
@@ -817,8 +565,80 @@
     {
       "animeId": "chainsaw",
       "animeName": "Chainsaw Man",
-      "name": "Katana Man",
+      "name": "Ghost Devil",
+      "anilist": null,
+      "resolvedName": null,
+      "image": null,
+      "notes": ""
+    },
+    {
+      "animeId": "chainsaw",
+      "animeName": "Chainsaw Man",
+      "name": "Gun Devil",
+      "anilist": null,
+      "resolvedName": null,
+      "image": null,
+      "notes": ""
+    },
+    {
+      "animeId": "chainsaw",
+      "animeName": "Chainsaw Man",
+      "name": "Gun Fiend",
+      "anilist": null,
+      "resolvedName": null,
+      "image": null,
+      "notes": ""
+    },
+    {
+      "animeId": "chainsaw",
+      "animeName": "Chainsaw Man",
+      "name": "Hell Devil",
+      "anilist": null,
+      "resolvedName": null,
+      "image": null,
+      "notes": ""
+    },
+    {
+      "animeId": "chainsaw",
+      "animeName": "Chainsaw Man",
+      "name": "Justice Devil",
+      "anilist": null,
+      "resolvedName": null,
+      "image": null,
+      "notes": ""
+    },
+    {
+      "animeId": "chainsaw",
+      "animeName": "Chainsaw Man",
+      "name": "Katana Man / Samurai Sword",
       "anilist": 166247,
+      "resolvedName": null,
+      "image": null,
+      "notes": ""
+    },
+    {
+      "animeId": "chainsaw",
+      "animeName": "Chainsaw Man",
+      "name": "Leech Devil",
+      "anilist": null,
+      "resolvedName": null,
+      "image": null,
+      "notes": ""
+    },
+    {
+      "animeId": "chainsaw",
+      "animeName": "Chainsaw Man",
+      "name": "Long",
+      "anilist": 187317,
+      "resolvedName": null,
+      "image": null,
+      "notes": ""
+    },
+    {
+      "animeId": "chainsaw",
+      "animeName": "Chainsaw Man",
+      "name": "Miri Sugo / Sword Man",
+      "anilist": null,
       "resolvedName": null,
       "image": null,
       "notes": ""
@@ -835,7 +655,25 @@
     {
       "animeId": "chainsaw",
       "animeName": "Chainsaw Man",
-      "name": "Spider Devil",
+      "name": "Punishment Devil",
+      "anilist": null,
+      "resolvedName": null,
+      "image": null,
+      "notes": ""
+    },
+    {
+      "animeId": "chainsaw",
+      "animeName": "Chainsaw Man",
+      "name": "Sea Cucumber Devil",
+      "anilist": null,
+      "resolvedName": null,
+      "image": null,
+      "notes": ""
+    },
+    {
+      "animeId": "chainsaw",
+      "animeName": "Chainsaw Man",
+      "name": "Spider Devil / Princi",
       "anilist": 166244,
       "resolvedName": null,
       "image": null,
@@ -844,8 +682,8 @@
     {
       "animeId": "chainsaw",
       "animeName": "Chainsaw Man",
-      "name": "Tendo (Supervisor)",
-      "anilist": 187318,
+      "name": "Tomato Devil",
+      "anilist": null,
       "resolvedName": null,
       "image": null,
       "notes": ""
@@ -853,7 +691,16 @@
     {
       "animeId": "chainsaw",
       "animeName": "Chainsaw Man",
-      "name": "Violence Fiend",
+      "name": "Typhoon Devil",
+      "anilist": null,
+      "resolvedName": null,
+      "image": null,
+      "notes": ""
+    },
+    {
+      "animeId": "chainsaw",
+      "animeName": "Chainsaw Man",
+      "name": "Violence Fiend / Galgali",
       "anilist": 166243,
       "resolvedName": null,
       "image": null,
@@ -871,8 +718,107 @@
     {
       "animeId": "chainsaw",
       "animeName": "Chainsaw Man",
+      "name": "Yuko",
+      "anilist": null,
+      "resolvedName": null,
+      "image": null,
+      "notes": ""
+    },
+    {
+      "animeId": "chainsaw",
+      "animeName": "Chainsaw Man",
       "name": "Yutaro Kurose",
       "anilist": 166253,
+      "resolvedName": null,
+      "image": null,
+      "notes": ""
+    },
+    {
+      "animeId": "chainsaw",
+      "animeName": "Chainsaw Man",
+      "name": "Zombie Devil",
+      "anilist": null,
+      "resolvedName": null,
+      "image": null,
+      "notes": ""
+    },
+    {
+      "animeId": "dandadan",
+      "animeName": "Dandadan",
+      "name": "Acrobatic Silky",
+      "anilist": null,
+      "resolvedName": null,
+      "image": null,
+      "notes": ""
+    },
+    {
+      "animeId": "dandadan",
+      "animeName": "Dandadan",
+      "name": "Evil Eye",
+      "anilist": null,
+      "resolvedName": null,
+      "image": null,
+      "notes": ""
+    },
+    {
+      "animeId": "dandadan",
+      "animeName": "Dandadan",
+      "name": "Jin Enjoji / Jiji",
+      "anilist": null,
+      "resolvedName": null,
+      "image": null,
+      "notes": ""
+    },
+    {
+      "animeId": "dandadan",
+      "animeName": "Dandadan",
+      "name": "Mongolian Death Worm",
+      "anilist": null,
+      "resolvedName": null,
+      "image": null,
+      "notes": ""
+    },
+    {
+      "animeId": "dandadan",
+      "animeName": "Dandadan",
+      "name": "Mr. Mantis Shrimp / Peeny Weeny",
+      "anilist": null,
+      "resolvedName": null,
+      "image": null,
+      "notes": ""
+    },
+    {
+      "animeId": "dandadan",
+      "animeName": "Dandadan",
+      "name": "Serpoian",
+      "anilist": null,
+      "resolvedName": null,
+      "image": null,
+      "notes": ""
+    },
+    {
+      "animeId": "dandadan",
+      "animeName": "Dandadan",
+      "name": "Space Globalists",
+      "anilist": null,
+      "resolvedName": null,
+      "image": null,
+      "notes": ""
+    },
+    {
+      "animeId": "dandadan",
+      "animeName": "Dandadan",
+      "name": "Taro",
+      "anilist": null,
+      "resolvedName": null,
+      "image": null,
+      "notes": ""
+    },
+    {
+      "animeId": "dandadan",
+      "animeName": "Dandadan",
+      "name": "Turbo Granny",
+      "anilist": null,
       "resolvedName": null,
       "image": null,
       "notes": ""
@@ -889,26 +835,26 @@
     {
       "animeId": "demonslayer",
       "animeName": "Demon Slayer",
+      "name": "Chuntaro",
+      "anilist": null,
+      "resolvedName": null,
+      "image": null,
+      "notes": ""
+    },
+    {
+      "animeId": "demonslayer",
+      "animeName": "Demon Slayer",
+      "name": "Doma",
+      "anilist": 124719,
+      "resolvedName": null,
+      "image": null,
+      "notes": ""
+    },
+    {
+      "animeId": "demonslayer",
+      "animeName": "Demon Slayer",
       "name": "Giyu Tomioka",
       "anilist": 124705,
-      "resolvedName": null,
-      "image": null,
-      "notes": ""
-    },
-    {
-      "animeId": "demonslayer",
-      "animeName": "Demon Slayer",
-      "name": "Gyokko",
-      "anilist": 124722,
-      "resolvedName": null,
-      "image": null,
-      "notes": ""
-    },
-    {
-      "animeId": "demonslayer",
-      "animeName": "Demon Slayer",
-      "name": "Gyokko (Released)",
-      "anilist": 124765,
       "resolvedName": null,
       "image": null,
       "notes": ""
@@ -934,8 +880,8 @@
     {
       "animeId": "demonslayer",
       "animeName": "Demon Slayer",
-      "name": "Inosuke (Post-battle)",
-      "anilist": 124769,
+      "name": "Hand Demon",
+      "anilist": null,
       "resolvedName": null,
       "image": null,
       "notes": ""
@@ -952,6 +898,33 @@
     {
       "animeId": "demonslayer",
       "animeName": "Demon Slayer",
+      "name": "Karaku",
+      "anilist": 124755,
+      "resolvedName": null,
+      "image": null,
+      "notes": ""
+    },
+    {
+      "animeId": "demonslayer",
+      "animeName": "Demon Slayer",
+      "name": "Kasugai Crow",
+      "anilist": null,
+      "resolvedName": null,
+      "image": null,
+      "notes": ""
+    },
+    {
+      "animeId": "demonslayer",
+      "animeName": "Demon Slayer",
+      "name": "Kyogai",
+      "anilist": null,
+      "resolvedName": null,
+      "image": null,
+      "notes": ""
+    },
+    {
+      "animeId": "demonslayer",
+      "animeName": "Demon Slayer",
       "name": "Kyojuro Rengoku",
       "anilist": 124707,
       "resolvedName": null,
@@ -961,8 +934,8 @@
     {
       "animeId": "demonslayer",
       "animeName": "Demon Slayer",
-      "name": "Muichiro (Young)",
-      "anilist": 124758,
+      "name": "Muichiro Tokito",
+      "anilist": 124711,
       "resolvedName": null,
       "image": null,
       "notes": ""
@@ -970,8 +943,17 @@
     {
       "animeId": "demonslayer",
       "animeName": "Demon Slayer",
-      "name": "Muichiro Tokito",
-      "anilist": 124711,
+      "name": "Rokuro",
+      "anilist": 124763,
+      "resolvedName": null,
+      "image": null,
+      "notes": ""
+    },
+    {
+      "animeId": "demonslayer",
+      "animeName": "Demon Slayer",
+      "name": "Rui",
+      "anilist": 124728,
       "resolvedName": null,
       "image": null,
       "notes": ""
@@ -997,8 +979,26 @@
     {
       "animeId": "demonslayer",
       "animeName": "Demon Slayer",
-      "name": "Tanjiro (Demon)",
-      "anilist": 124766,
+      "name": "Spider Demon Father",
+      "anilist": null,
+      "resolvedName": null,
+      "image": null,
+      "notes": ""
+    },
+    {
+      "animeId": "demonslayer",
+      "animeName": "Demon Slayer",
+      "name": "Spider Demon Mother",
+      "anilist": null,
+      "resolvedName": null,
+      "image": null,
+      "notes": ""
+    },
+    {
+      "animeId": "demonslayer",
+      "animeName": "Demon Slayer",
+      "name": "Suma",
+      "anilist": 124738,
       "resolvedName": null,
       "image": null,
       "notes": ""
@@ -1015,8 +1015,8 @@
     {
       "animeId": "demonslayer",
       "animeName": "Demon Slayer",
-      "name": "Tomioka (Young)",
-      "anilist": 124767,
+      "name": "Urogi",
+      "anilist": 124754,
       "resolvedName": null,
       "image": null,
       "notes": ""
@@ -1024,8 +1024,8 @@
     {
       "animeId": "demonslayer",
       "animeName": "Demon Slayer",
-      "name": "Yuichiro Tokito",
-      "anilist": 124759,
+      "name": "Yoriichi Type Zero",
+      "anilist": null,
       "resolvedName": null,
       "image": null,
       "notes": ""
@@ -1033,566 +1033,188 @@
     {
       "animeId": "demonslayer",
       "animeName": "Demon Slayer",
-      "name": "Zenitsu (Thunder God)",
-      "anilist": 124768,
+      "name": "Yushiro",
+      "anilist": 124744,
       "resolvedName": null,
       "image": null,
       "notes": ""
     },
     {
-      "animeId": "dragonball",
-      "animeName": "Dragon Ball Z",
-      "name": "Android 16",
-      "anilist": 264,
+      "animeId": "demonslayer",
+      "animeName": "Demon Slayer",
+      "name": "Zohakuten",
+      "anilist": null,
       "resolvedName": null,
       "image": null,
       "notes": ""
     },
     {
-      "animeId": "dragonball",
-      "animeName": "Dragon Ball Z",
-      "name": "Android 17",
-      "anilist": 262,
+      "animeId": "genshin",
+      "animeName": "Genshin Impact",
+      "name": "Unknown God",
+      "anilist": null,
       "resolvedName": null,
       "image": null,
       "notes": ""
     },
     {
-      "animeId": "dragonball",
-      "animeName": "Dragon Ball Z",
-      "name": "Android 18",
-      "anilist": 263,
+      "animeId": "haikyuu",
+      "animeName": "Haikyuu!!",
+      "name": "Kenji Shirabu",
+      "anilist": null,
       "resolvedName": null,
       "image": null,
       "notes": ""
     },
     {
-      "animeId": "dragonball",
-      "animeName": "Dragon Ball Z",
-      "name": "Android 19",
-      "anilist": 281,
+      "animeId": "haikyuu",
+      "animeName": "Haikyuu!!",
+      "name": "Kentaro Kyotani",
+      "anilist": null,
       "resolvedName": null,
       "image": null,
       "notes": ""
     },
     {
-      "animeId": "dragonball",
-      "animeName": "Dragon Ball Z",
-      "name": "Broly (DBS)",
-      "anilist": 255,
+      "animeId": "haikyuu",
+      "animeName": "Haikyuu!!",
+      "name": "Korai Hoshiumi",
+      "anilist": null,
       "resolvedName": null,
       "image": null,
       "notes": ""
     },
     {
-      "animeId": "dragonball",
-      "animeName": "Dragon Ball Z",
-      "name": "Chi-Chi",
-      "anilist": 257,
+      "animeId": "haikyuu",
+      "animeName": "Haikyuu!!",
+      "name": "Koshi Sugawara",
+      "anilist": null,
       "resolvedName": null,
       "image": null,
       "notes": ""
     },
     {
-      "animeId": "dragonball",
-      "animeName": "Dragon Ball Z",
-      "name": "Chiaotzu",
-      "anilist": 260,
+      "animeId": "haikyuu",
+      "animeName": "Haikyuu!!",
+      "name": "Kotaro Bokuto",
+      "anilist": null,
       "resolvedName": null,
       "image": null,
       "notes": ""
     },
     {
-      "animeId": "dragonball",
-      "animeName": "Dragon Ball Z",
-      "name": "Elder Kai",
-      "anilist": 298,
+      "animeId": "haikyuu",
+      "animeName": "Haikyuu!!",
+      "name": "Ren Omimi",
+      "anilist": null,
       "resolvedName": null,
       "image": null,
       "notes": ""
     },
     {
-      "animeId": "dragonball",
-      "animeName": "Dragon Ball Z",
-      "name": "Frieza",
-      "anilist": 250,
+      "animeId": "haikyuu",
+      "animeName": "Haikyuu!!",
+      "name": "Reon Ohira",
+      "anilist": null,
       "resolvedName": null,
       "image": null,
       "notes": ""
     },
     {
-      "animeId": "dragonball",
-      "animeName": "Dragon Ball Z",
-      "name": "Gogeta",
-      "anilist": 268,
+      "animeId": "haikyuu",
+      "animeName": "Haikyuu!!",
+      "name": "Rintaro Suna",
+      "anilist": null,
       "resolvedName": null,
       "image": null,
       "notes": ""
     },
     {
-      "animeId": "dragonball",
-      "animeName": "Dragon Ball Z",
-      "name": "Gohan (Beast)",
-      "anilist": 300,
+      "animeId": "haikyuu",
+      "animeName": "Haikyuu!!",
+      "name": "Ryunosuke Tanaka",
+      "anilist": null,
       "resolvedName": null,
       "image": null,
       "notes": ""
     },
     {
-      "animeId": "dragonball",
-      "animeName": "Dragon Ball Z",
-      "name": "Gotenks",
-      "anilist": 287,
+      "animeId": "haikyuu",
+      "animeName": "Haikyuu!!",
+      "name": "Sachiro Hirugami",
+      "anilist": null,
       "resolvedName": null,
       "image": null,
       "notes": ""
     },
     {
-      "animeId": "dragonball",
-      "animeName": "Dragon Ball Z",
-      "name": "Kefla",
-      "anilist": 117493,
+      "animeId": "haikyuu",
+      "animeName": "Haikyuu!!",
+      "name": "Shohei Fukunaga",
+      "anilist": null,
       "resolvedName": null,
       "image": null,
       "notes": ""
     },
     {
-      "animeId": "dragonball",
-      "animeName": "Dragon Ball Z",
-      "name": "King Vegeta",
-      "anilist": 303,
+      "animeId": "haikyuu",
+      "animeName": "Haikyuu!!",
+      "name": "Shoyo Hinata",
+      "anilist": null,
       "resolvedName": null,
       "image": null,
       "notes": ""
     },
     {
-      "animeId": "dragonball",
-      "animeName": "Dragon Ball Z",
-      "name": "Krillin",
-      "anilist": 254,
+      "animeId": "haikyuu",
+      "animeName": "Haikyuu!!",
+      "name": "So Inuoka",
+      "anilist": null,
       "resolvedName": null,
       "image": null,
       "notes": ""
     },
     {
-      "animeId": "dragonball",
-      "animeName": "Dragon Ball Z",
-      "name": "Majin Buu",
-      "anilist": 252,
+      "animeId": "haikyuu",
+      "animeName": "Haikyuu!!",
+      "name": "Tetsuro Kuroo",
+      "anilist": null,
       "resolvedName": null,
       "image": null,
       "notes": ""
     },
     {
-      "animeId": "dragonball",
-      "animeName": "Dragon Ball Z",
-      "name": "Master Roshi",
-      "anilist": 261,
+      "animeId": "haikyuu",
+      "animeName": "Haikyuu!!",
+      "name": "Toru Oikawa",
+      "anilist": null,
       "resolvedName": null,
       "image": null,
       "notes": ""
     },
     {
-      "animeId": "dragonball",
-      "animeName": "Dragon Ball Z",
-      "name": "Nuova Shenron",
-      "anilist": 296,
+      "animeId": "haikyuu",
+      "animeName": "Haikyuu!!",
+      "name": "Yu Nishinoya",
+      "anilist": null,
       "resolvedName": null,
       "image": null,
       "notes": ""
     },
     {
-      "animeId": "dragonball",
-      "animeName": "Dragon Ball Z",
-      "name": "Omega Shenron",
-      "anilist": 295,
+      "animeId": "haikyuu",
+      "animeName": "Haikyuu!!",
+      "name": "Yuki Shibayama",
+      "anilist": null,
       "resolvedName": null,
       "image": null,
       "notes": ""
     },
     {
-      "animeId": "dragonball",
-      "animeName": "Dragon Ball Z",
-      "name": "Orange Piccolo",
-      "anilist": 301,
-      "resolvedName": null,
-      "image": null,
-      "notes": ""
-    },
-    {
-      "animeId": "dragonball",
-      "animeName": "Dragon Ball Z",
-      "name": "Pikkon",
-      "anilist": 288,
-      "resolvedName": null,
-      "image": null,
-      "notes": ""
-    },
-    {
-      "animeId": "dragonball",
-      "animeName": "Dragon Ball Z",
-      "name": "Super 17",
-      "anilist": 294,
-      "resolvedName": null,
-      "image": null,
-      "notes": ""
-    },
-    {
-      "animeId": "dragonball",
-      "animeName": "Dragon Ball Z",
-      "name": "Supreme Kai",
-      "anilist": 286,
-      "resolvedName": null,
-      "image": null,
-      "notes": ""
-    },
-    {
-      "animeId": "dragonball",
-      "animeName": "Dragon Ball Z",
-      "name": "Tien Shinhan",
-      "anilist": 259,
-      "resolvedName": null,
-      "image": null,
-      "notes": ""
-    },
-    {
-      "animeId": "dragonball",
-      "animeName": "Dragon Ball Z",
-      "name": "Vegito",
-      "anilist": 267,
-      "resolvedName": null,
-      "image": null,
-      "notes": ""
-    },
-    {
-      "animeId": "drstone",
-      "animeName": "Dr. Stone",
-      "name": "Minami Hokutozai",
-      "anilist": 131702,
-      "resolvedName": null,
-      "image": null,
-      "notes": ""
-    },
-    {
-      "animeId": "drstone",
-      "animeName": "Dr. Stone",
-      "name": "Ryusui Nanami",
-      "anilist": 131695,
-      "resolvedName": null,
-      "image": null,
-      "notes": ""
-    },
-    {
-      "animeId": "drstone",
-      "animeName": "Dr. Stone",
-      "name": "Sai Fujio",
-      "anilist": 131712,
-      "resolvedName": null,
-      "image": null,
-      "notes": ""
-    },
-    {
-      "animeId": "drstone",
-      "animeName": "Dr. Stone",
-      "name": "Senku Ishigami",
-      "anilist": 131681,
-      "resolvedName": null,
-      "image": null,
-      "notes": ""
-    },
-    {
-      "animeId": "drstone",
-      "animeName": "Dr. Stone",
-      "name": "Taiju Oki",
-      "anilist": 131682,
-      "resolvedName": null,
-      "image": null,
-      "notes": ""
-    },
-    {
-      "animeId": "drstone",
-      "animeName": "Dr. Stone",
-      "name": "Ukyo Saionji",
-      "anilist": 131700,
-      "resolvedName": null,
-      "image": null,
-      "notes": ""
-    },
-    {
-      "animeId": "drstone",
-      "animeName": "Dr. Stone",
-      "name": "Xeno Houston Wingfield",
-      "anilist": 131714,
-      "resolvedName": null,
-      "image": null,
-      "notes": ""
-    },
-    {
-      "animeId": "drstone",
-      "animeName": "Dr. Stone",
-      "name": "Yo Uei",
-      "anilist": 131701,
-      "resolvedName": null,
-      "image": null,
-      "notes": ""
-    },
-    {
-      "animeId": "fairytail",
-      "animeName": "Fairy Tail",
-      "name": "Angel / Sorano",
-      "anilist": 395,
-      "resolvedName": null,
-      "image": null,
-      "notes": ""
-    },
-    {
-      "animeId": "fairytail",
-      "animeName": "Fairy Tail",
-      "name": "Bisca Connell",
-      "anilist": 418,
-      "resolvedName": null,
-      "image": null,
-      "notes": ""
-    },
-    {
-      "animeId": "fairytail",
-      "animeName": "Fairy Tail",
-      "name": "Bixlow",
-      "anilist": 376,
-      "resolvedName": null,
-      "image": null,
-      "notes": ""
-    },
-    {
-      "animeId": "fairytail",
-      "animeName": "Fairy Tail",
-      "name": "Cana (Card Magic)",
-      "anilist": 416,
-      "resolvedName": null,
-      "image": null,
-      "notes": ""
-    },
-    {
-      "animeId": "fairytail",
-      "animeName": "Fairy Tail",
-      "name": "Cobra / Erik",
-      "anilist": 394,
-      "resolvedName": null,
-      "image": null,
-      "notes": ""
-    },
-    {
-      "animeId": "fairytail",
-      "animeName": "Fairy Tail",
-      "name": "Exceed Carla",
-      "anilist": 415,
-      "resolvedName": null,
-      "image": null,
-      "notes": ""
-    },
-    {
-      "animeId": "fairytail",
-      "animeName": "Fairy Tail",
-      "name": "Grandeeney",
-      "anilist": 409,
-      "resolvedName": null,
-      "image": null,
-      "notes": ""
-    },
-    {
-      "animeId": "fairytail",
-      "animeName": "Fairy Tail",
-      "name": "Midnight / Macbeth",
-      "anilist": 396,
-      "resolvedName": null,
-      "image": null,
-      "notes": ""
-    },
-    {
-      "animeId": "fairytail",
-      "animeName": "Fairy Tail",
-      "name": "Minerva Orlando",
-      "anilist": 388,
-      "resolvedName": null,
-      "image": null,
-      "notes": ""
-    },
-    {
-      "animeId": "fairytail",
-      "animeName": "Fairy Tail",
-      "name": "Mystogan / Jellal",
-      "anilist": 379,
-      "resolvedName": null,
-      "image": null,
-      "notes": ""
-    },
-    {
-      "animeId": "fairytail",
-      "animeName": "Fairy Tail",
-      "name": "Panther Lily",
-      "anilist": 412,
-      "resolvedName": null,
-      "image": null,
-      "notes": ""
-    },
-    {
-      "animeId": "fairytail",
-      "animeName": "Fairy Tail",
-      "name": "Wall Eehto",
-      "anilist": 406,
-      "resolvedName": null,
-      "image": null,
-      "notes": ""
-    },
-    {
-      "animeId": "fairytail",
-      "animeName": "Fairy Tail",
-      "name": "Yukino Agria",
-      "anilist": 387,
-      "resolvedName": null,
-      "image": null,
-      "notes": ""
-    },
-    {
-      "animeId": "fairytail",
-      "animeName": "Fairy Tail",
-      "name": "Zeref Dragneel",
-      "anilist": 381,
-      "resolvedName": null,
-      "image": null,
-      "notes": ""
-    },
-    {
-      "animeId": "fma",
-      "animeName": "Fullmetal Alchemist",
-      "name": "Ed (Gate)",
-      "anilist": 53,
-      "resolvedName": null,
-      "image": null,
-      "notes": ""
-    },
-    {
-      "animeId": "fma",
-      "animeName": "Fullmetal Alchemist",
-      "name": "Envy",
-      "anilist": 12,
-      "resolvedName": null,
-      "image": null,
-      "notes": ""
-    },
-    {
-      "animeId": "fma",
-      "animeName": "Fullmetal Alchemist",
-      "name": "Envy (true form)",
-      "anilist": 48,
-      "resolvedName": null,
-      "image": null,
-      "notes": ""
-    },
-    {
-      "animeId": "fma",
-      "animeName": "Fullmetal Alchemist",
-      "name": "Father",
-      "anilist": 9,
-      "resolvedName": null,
-      "image": null,
-      "notes": ""
-    },
-    {
-      "animeId": "fma",
-      "animeName": "Fullmetal Alchemist",
-      "name": "Father (God form)",
-      "anilist": 49,
-      "resolvedName": null,
-      "image": null,
-      "notes": ""
-    },
-    {
-      "animeId": "fma",
-      "animeName": "Fullmetal Alchemist",
-      "name": "Fu",
-      "anilist": 43,
-      "resolvedName": null,
-      "image": null,
-      "notes": ""
-    },
-    {
-      "animeId": "fma",
-      "animeName": "Fullmetal Alchemist",
-      "name": "Greed",
-      "anilist": 11,
-      "resolvedName": null,
-      "image": null,
-      "notes": ""
-    },
-    {
-      "animeId": "fma",
-      "animeName": "Fullmetal Alchemist",
-      "name": "Greed (Ling body)",
-      "anilist": 42,
-      "resolvedName": null,
-      "image": null,
-      "notes": ""
-    },
-    {
-      "animeId": "fma",
-      "animeName": "Fullmetal Alchemist",
-      "name": "Mrs. Bradley",
-      "anilist": 52,
-      "resolvedName": null,
-      "image": null,
-      "notes": ""
-    },
-    {
-      "animeId": "fma",
-      "animeName": "Fullmetal Alchemist",
-      "name": "Pride / Selim Bradley",
-      "anilist": 10,
-      "resolvedName": null,
-      "image": null,
-      "notes": ""
-    },
-    {
-      "animeId": "fma",
-      "animeName": "Fullmetal Alchemist",
-      "name": "Selim (post-series)",
-      "anilist": 44,
-      "resolvedName": null,
-      "image": null,
-      "notes": ""
-    },
-    {
-      "animeId": "fma",
-      "animeName": "Fullmetal Alchemist",
-      "name": "Wrath / King Bradley",
-      "anilist": 15,
-      "resolvedName": null,
-      "image": null,
-      "notes": ""
-    },
-    {
-      "animeId": "fma",
-      "animeName": "Fullmetal Alchemist",
-      "name": "Zolf J. Kimblee",
-      "anilist": 22,
-      "resolvedName": null,
-      "image": null,
-      "notes": ""
-    },
-    {
-      "animeId": "hxh",
-      "animeName": "Hunter x Hunter",
-      "name": "Gerreta",
-      "anilist": 76,
-      "resolvedName": null,
-      "image": null,
-      "notes": ""
-    },
-    {
-      "animeId": "hxh",
-      "animeName": "Hunter x Hunter",
-      "name": "Gon (Adult)",
-      "anilist": 97,
+      "animeId": "haikyuu",
+      "animeName": "Haikyuu!!",
+      "name": "Yutaro Kindaichi",
+      "anilist": null,
       "resolvedName": null,
       "image": null,
       "notes": ""
@@ -1609,8 +1231,8 @@
     {
       "animeId": "jjk",
       "animeName": "Jujutsu Kaisen",
-      "name": "Ijichi Akari",
-      "anilist": 209403,
+      "name": "Choso",
+      "anilist": 163908,
       "resolvedName": null,
       "image": null,
       "notes": ""
@@ -1618,7 +1240,88 @@
     {
       "animeId": "jjk",
       "animeName": "Jujutsu Kaisen",
-      "name": "Kokichi Muta",
+      "name": "Cursed Naoya",
+      "anilist": null,
+      "resolvedName": null,
+      "image": null,
+      "notes": ""
+    },
+    {
+      "animeId": "jjk",
+      "animeName": "Jujutsu Kaisen",
+      "name": "Divine Dog",
+      "anilist": null,
+      "resolvedName": null,
+      "image": null,
+      "notes": ""
+    },
+    {
+      "animeId": "jjk",
+      "animeName": "Jujutsu Kaisen",
+      "name": "Eso",
+      "anilist": null,
+      "resolvedName": null,
+      "image": null,
+      "notes": ""
+    },
+    {
+      "animeId": "jjk",
+      "animeName": "Jujutsu Kaisen",
+      "name": "Finger Bearer",
+      "anilist": null,
+      "resolvedName": null,
+      "image": null,
+      "notes": ""
+    },
+    {
+      "animeId": "jjk",
+      "animeName": "Jujutsu Kaisen",
+      "name": "Great Serpent",
+      "anilist": null,
+      "resolvedName": null,
+      "image": null,
+      "notes": ""
+    },
+    {
+      "animeId": "jjk",
+      "animeName": "Jujutsu Kaisen",
+      "name": "Hana Kurusu / Angel",
+      "anilist": 209399,
+      "resolvedName": null,
+      "image": null,
+      "notes": ""
+    },
+    {
+      "animeId": "jjk",
+      "animeName": "Jujutsu Kaisen",
+      "name": "Jiro Awasaka",
+      "anilist": null,
+      "resolvedName": null,
+      "image": null,
+      "notes": ""
+    },
+    {
+      "animeId": "jjk",
+      "animeName": "Jujutsu Kaisen",
+      "name": "Jogo",
+      "anilist": 163912,
+      "resolvedName": null,
+      "image": null,
+      "notes": ""
+    },
+    {
+      "animeId": "jjk",
+      "animeName": "Jujutsu Kaisen",
+      "name": "Judgeman",
+      "anilist": null,
+      "resolvedName": null,
+      "image": null,
+      "notes": ""
+    },
+    {
+      "animeId": "jjk",
+      "animeName": "Jujutsu Kaisen",
+      "name": "Kokichi Muta / Mechamaru",
       "anilist": 163923,
       "resolvedName": null,
       "image": null,
@@ -1627,8 +1330,8 @@
     {
       "animeId": "jjk",
       "animeName": "Jujutsu Kaisen",
-      "name": "Nobara (Suspended)",
-      "anilist": 209410,
+      "name": "Mahoraga",
+      "anilist": null,
       "resolvedName": null,
       "image": null,
       "notes": ""
@@ -1636,8 +1339,35 @@
     {
       "animeId": "jjk",
       "animeName": "Jujutsu Kaisen",
-      "name": "Okkotsu (0)",
-      "anilist": 138271,
+      "name": "Max Elephant",
+      "anilist": null,
+      "resolvedName": null,
+      "image": null,
+      "notes": ""
+    },
+    {
+      "animeId": "jjk",
+      "animeName": "Jujutsu Kaisen",
+      "name": "Nue",
+      "anilist": null,
+      "resolvedName": null,
+      "image": null,
+      "notes": ""
+    },
+    {
+      "animeId": "jjk",
+      "animeName": "Jujutsu Kaisen",
+      "name": "Ogami",
+      "anilist": 209397,
+      "resolvedName": null,
+      "image": null,
+      "notes": ""
+    },
+    {
+      "animeId": "jjk",
+      "animeName": "Jujutsu Kaisen",
+      "name": "Rabbit Escape",
+      "anilist": null,
       "resolvedName": null,
       "image": null,
       "notes": ""
@@ -1647,6 +1377,33 @@
       "animeName": "Jujutsu Kaisen",
       "name": "Ryomen Sukuna",
       "anilist": 138263,
+      "resolvedName": null,
+      "image": null,
+      "notes": ""
+    },
+    {
+      "animeId": "jjk",
+      "animeName": "Jujutsu Kaisen",
+      "name": "Shoko Ieiri",
+      "anilist": null,
+      "resolvedName": null,
+      "image": null,
+      "notes": ""
+    },
+    {
+      "animeId": "jjk",
+      "animeName": "Jujutsu Kaisen",
+      "name": "Smallpox Deity",
+      "anilist": null,
+      "resolvedName": null,
+      "image": null,
+      "notes": ""
+    },
+    {
+      "animeId": "jjk",
+      "animeName": "Jujutsu Kaisen",
+      "name": "Toad",
+      "anilist": null,
       "resolvedName": null,
       "image": null,
       "notes": ""
@@ -1672,6 +1429,15 @@
     {
       "animeId": "jjk",
       "animeName": "Jujutsu Kaisen",
+      "name": "Yu Haibara",
+      "anilist": 209411,
+      "resolvedName": null,
+      "image": null,
+      "notes": ""
+    },
+    {
+      "animeId": "jjk",
+      "animeName": "Jujutsu Kaisen",
       "name": "Yuji Itadori",
       "anilist": 138259,
       "resolvedName": null,
@@ -1688,19 +1454,100 @@
       "notes": ""
     },
     {
-      "animeId": "mha",
-      "animeName": "My Hero Academia",
-      "name": "AfO (True Form)",
-      "anilist": 93958,
+      "animeId": "kaiju8",
+      "animeName": "Kaiju No. 8",
+      "name": "Kaiju No. 10",
+      "anilist": null,
       "resolvedName": null,
       "image": null,
       "notes": ""
     },
     {
-      "animeId": "mha",
-      "animeName": "My Hero Academia",
-      "name": "All Might",
-      "anilist": 93884,
+      "animeId": "kaiju8",
+      "animeName": "Kaiju No. 8",
+      "name": "Kaiju No. 11",
+      "anilist": null,
+      "resolvedName": null,
+      "image": null,
+      "notes": ""
+    },
+    {
+      "animeId": "kaiju8",
+      "animeName": "Kaiju No. 8",
+      "name": "Kaiju No. 12",
+      "anilist": null,
+      "resolvedName": null,
+      "image": null,
+      "notes": ""
+    },
+    {
+      "animeId": "kaiju8",
+      "animeName": "Kaiju No. 8",
+      "name": "Kaiju No. 13",
+      "anilist": null,
+      "resolvedName": null,
+      "image": null,
+      "notes": ""
+    },
+    {
+      "animeId": "kaiju8",
+      "animeName": "Kaiju No. 8",
+      "name": "Kaiju No. 14",
+      "anilist": null,
+      "resolvedName": null,
+      "image": null,
+      "notes": ""
+    },
+    {
+      "animeId": "kaiju8",
+      "animeName": "Kaiju No. 8",
+      "name": "Kaiju No. 15",
+      "anilist": null,
+      "resolvedName": null,
+      "image": null,
+      "notes": ""
+    },
+    {
+      "animeId": "kaiju8",
+      "animeName": "Kaiju No. 8",
+      "name": "Kaiju No. 2",
+      "anilist": null,
+      "resolvedName": null,
+      "image": null,
+      "notes": ""
+    },
+    {
+      "animeId": "kaiju8",
+      "animeName": "Kaiju No. 8",
+      "name": "Kaiju No. 6",
+      "anilist": null,
+      "resolvedName": null,
+      "image": null,
+      "notes": ""
+    },
+    {
+      "animeId": "kaiju8",
+      "animeName": "Kaiju No. 8",
+      "name": "Kaiju No. 8",
+      "anilist": null,
+      "resolvedName": null,
+      "image": null,
+      "notes": ""
+    },
+    {
+      "animeId": "kaiju8",
+      "animeName": "Kaiju No. 8",
+      "name": "Kaiju No. 9",
+      "anilist": null,
+      "resolvedName": null,
+      "image": null,
+      "notes": ""
+    },
+    {
+      "animeId": "kaiju8",
+      "animeName": "Kaiju No. 8",
+      "name": "Soshiro Hoshina",
+      "anilist": null,
       "resolvedName": null,
       "image": null,
       "notes": ""
@@ -1717,6 +1564,15 @@
     {
       "animeId": "mha",
       "animeName": "My Hero Academia",
+      "name": "Bruce",
+      "anilist": null,
+      "resolvedName": null,
+      "image": null,
+      "notes": ""
+    },
+    {
+      "animeId": "mha",
+      "animeName": "My Hero Academia",
       "name": "Cementoss",
       "anilist": 93922,
       "resolvedName": null,
@@ -1726,8 +1582,35 @@
     {
       "animeId": "mha",
       "animeName": "My Hero Academia",
-      "name": "Deku (Final)",
-      "anilist": 93957,
+      "name": "Chronostasis / Hari Kurono",
+      "anilist": null,
+      "resolvedName": null,
+      "image": null,
+      "notes": ""
+    },
+    {
+      "animeId": "mha",
+      "animeName": "My Hero Academia",
+      "name": "Curious",
+      "anilist": null,
+      "resolvedName": null,
+      "image": null,
+      "notes": ""
+    },
+    {
+      "animeId": "mha",
+      "animeName": "My Hero Academia",
+      "name": "Daigoro Banjo",
+      "anilist": null,
+      "resolvedName": null,
+      "image": null,
+      "notes": ""
+    },
+    {
+      "animeId": "mha",
+      "animeName": "My Hero Academia",
+      "name": "Dark Shadow",
+      "anilist": null,
       "resolvedName": null,
       "image": null,
       "notes": ""
@@ -1746,6 +1629,24 @@
       "animeName": "My Hero Academia",
       "name": "Eijiro Kirishima",
       "anilist": 93888,
+      "resolvedName": null,
+      "image": null,
+      "notes": ""
+    },
+    {
+      "animeId": "mha",
+      "animeName": "My Hero Academia",
+      "name": "En",
+      "anilist": null,
+      "resolvedName": null,
+      "image": null,
+      "notes": ""
+    },
+    {
+      "animeId": "mha",
+      "animeName": "My Hero Academia",
+      "name": "Endeavor / Enji Todoroki",
+      "anilist": 93892,
       "resolvedName": null,
       "image": null,
       "notes": ""
@@ -1798,6 +1699,42 @@
     {
       "animeId": "mha",
       "animeName": "My Hero Academia",
+      "name": "Hawks / Keigo Takami",
+      "anilist": 118269,
+      "resolvedName": null,
+      "image": null,
+      "notes": ""
+    },
+    {
+      "animeId": "mha",
+      "animeName": "My Hero Academia",
+      "name": "Hood",
+      "anilist": null,
+      "resolvedName": null,
+      "image": null,
+      "notes": ""
+    },
+    {
+      "animeId": "mha",
+      "animeName": "My Hero Academia",
+      "name": "Hound Dog",
+      "anilist": null,
+      "resolvedName": null,
+      "image": null,
+      "notes": ""
+    },
+    {
+      "animeId": "mha",
+      "animeName": "My Hero Academia",
+      "name": "Jurota Shishida",
+      "anilist": 118280,
+      "resolvedName": null,
+      "image": null,
+      "notes": ""
+    },
+    {
+      "animeId": "mha",
+      "animeName": "My Hero Academia",
       "name": "Kamui Woods",
       "anilist": 93946,
       "resolvedName": null,
@@ -1807,8 +1744,26 @@
     {
       "animeId": "mha",
       "animeName": "My Hero Academia",
+      "name": "Kendo Rappa",
+      "anilist": 131699,
+      "resolvedName": null,
+      "image": null,
+      "notes": ""
+    },
+    {
+      "animeId": "mha",
+      "animeName": "My Hero Academia",
       "name": "Koji Koda",
       "anilist": 93914,
+      "resolvedName": null,
+      "image": null,
+      "notes": ""
+    },
+    {
+      "animeId": "mha",
+      "animeName": "My Hero Academia",
+      "name": "Kudo",
+      "anilist": null,
       "resolvedName": null,
       "image": null,
       "notes": ""
@@ -1843,8 +1798,8 @@
     {
       "animeId": "mha",
       "animeName": "My Hero Academia",
-      "name": "Mandalay",
-      "anilist": 93953,
+      "name": "Magne",
+      "anilist": 93934,
       "resolvedName": null,
       "image": null,
       "notes": ""
@@ -1854,6 +1809,15 @@
       "animeName": "My Hero Academia",
       "name": "Mezo Shoji",
       "anilist": 93908,
+      "resolvedName": null,
+      "image": null,
+      "notes": ""
+    },
+    {
+      "animeId": "mha",
+      "animeName": "My Hero Academia",
+      "name": "Mirko",
+      "anilist": 131698,
       "resolvedName": null,
       "image": null,
       "notes": ""
@@ -1888,17 +1852,8 @@
     {
       "animeId": "mha",
       "animeName": "My Hero Academia",
-      "name": "Overhaul",
+      "name": "Overhaul / Kai Chisaki",
       "anilist": 118274,
-      "resolvedName": null,
-      "image": null,
-      "notes": ""
-    },
-    {
-      "animeId": "mha",
-      "animeName": "My Hero Academia",
-      "name": "Pixie-Bob",
-      "anilist": 93951,
       "resolvedName": null,
       "image": null,
       "notes": ""
@@ -1908,15 +1863,6 @@
       "animeName": "My Hero Academia",
       "name": "Power Loader",
       "anilist": 93925,
-      "resolvedName": null,
-      "image": null,
-      "notes": ""
-    },
-    {
-      "animeId": "mha",
-      "animeName": "My Hero Academia",
-      "name": "Present Mic",
-      "anilist": 93894,
       "resolvedName": null,
       "image": null,
       "notes": ""
@@ -1960,7 +1906,7 @@
     {
       "animeId": "mha",
       "animeName": "My Hero Academia",
-      "name": "Shota Aizawa",
+      "name": "Shota Aizawa / Eraser Head",
       "anilist": 93893,
       "resolvedName": null,
       "image": null,
@@ -1978,6 +1924,24 @@
     {
       "animeId": "mha",
       "animeName": "My Hero Academia",
+      "name": "Sir Nighteye",
+      "anilist": null,
+      "resolvedName": null,
+      "image": null,
+      "notes": ""
+    },
+    {
+      "animeId": "mha",
+      "animeName": "My Hero Academia",
+      "name": "Skeptic",
+      "anilist": null,
+      "resolvedName": null,
+      "image": null,
+      "notes": ""
+    },
+    {
+      "animeId": "mha",
+      "animeName": "My Hero Academia",
       "name": "Spinner",
       "anilist": 93898,
       "resolvedName": null,
@@ -1987,8 +1951,8 @@
     {
       "animeId": "mha",
       "animeName": "My Hero Academia",
-      "name": "Spinner (Mutated)",
-      "anilist": 93959,
+      "name": "Stain",
+      "anilist": 93917,
       "resolvedName": null,
       "image": null,
       "notes": ""
@@ -1996,7 +1960,7 @@
     {
       "animeId": "mha",
       "animeName": "My Hero Academia",
-      "name": "Star and Stripe",
+      "name": "Star and Stripe / Cathleen Bate",
       "anilist": 93955,
       "resolvedName": null,
       "image": null,
@@ -2005,8 +1969,26 @@
     {
       "animeId": "mha",
       "animeName": "My Hero Academia",
-      "name": "Tiger (Pussycats)",
-      "anilist": 93954,
+      "name": "Toru Hagakure",
+      "anilist": null,
+      "resolvedName": null,
+      "image": null,
+      "notes": ""
+    },
+    {
+      "animeId": "mha",
+      "animeName": "My Hero Academia",
+      "name": "Twice",
+      "anilist": 93897,
+      "resolvedName": null,
+      "image": null,
+      "notes": ""
+    },
+    {
+      "animeId": "mha",
+      "animeName": "My Hero Academia",
+      "name": "USJ Nomu",
+      "anilist": null,
       "resolvedName": null,
       "image": null,
       "notes": ""
@@ -2039,98 +2021,8 @@
       "notes": ""
     },
     {
-      "animeId": "mob",
-      "animeName": "Mob Psycho 100",
-      "name": "Arataka Reigen",
-      "anilist": 110418,
-      "resolvedName": null,
-      "image": null,
-      "notes": ""
-    },
-    {
-      "animeId": "mob",
-      "animeName": "Mob Psycho 100",
-      "name": "Asagiri Joseph",
-      "anilist": 110439,
-      "resolvedName": null,
-      "image": null,
-      "notes": ""
-    },
-    {
-      "animeId": "mob",
-      "animeName": "Mob Psycho 100",
-      "name": "Ekubo / Dimple",
-      "anilist": 110419,
-      "resolvedName": null,
-      "image": null,
-      "notes": ""
-    },
-    {
-      "animeId": "mob",
-      "animeName": "Mob Psycho 100",
-      "name": "Inukawa Kaito",
-      "anilist": 110429,
-      "resolvedName": null,
-      "image": null,
-      "notes": ""
-    },
-    {
-      "animeId": "mob",
-      "animeName": "Mob Psycho 100",
-      "name": "Matsuo Ryohei",
-      "anilist": 110433,
-      "resolvedName": null,
-      "image": null,
-      "notes": ""
-    },
-    {
-      "animeId": "mob",
-      "animeName": "Mob Psycho 100",
-      "name": "Miwa Minori",
-      "anilist": 110431,
-      "resolvedName": null,
-      "image": null,
-      "notes": ""
-    },
-    {
-      "animeId": "mob",
-      "animeName": "Mob Psycho 100",
-      "name": "Ryo Shimazaki",
-      "anilist": 110442,
-      "resolvedName": null,
-      "image": null,
-      "notes": ""
-    },
-    {
-      "animeId": "mob",
-      "animeName": "Mob Psycho 100",
-      "name": "Shigeo Kageyama (Mob)",
-      "anilist": 110417,
-      "resolvedName": null,
-      "image": null,
-      "notes": ""
-    },
-    {
-      "animeId": "mob",
-      "animeName": "Mob Psycho 100",
-      "name": "Spiderman",
-      "anilist": 110446,
-      "resolvedName": null,
-      "image": null,
-      "notes": ""
-    },
-    {
-      "animeId": "mob",
-      "animeName": "Mob Psycho 100",
-      "name": "Touichirou Suzuki",
-      "anilist": 110423,
-      "resolvedName": null,
-      "image": null,
-      "notes": ""
-    },
-    {
       "animeId": "naruto",
-      "animeName": "Naruto Shippuden",
+      "animeName": "Naruto & Shippuden",
       "name": "Ao",
       "anilist": 159,
       "resolvedName": null,
@@ -2139,16 +2031,34 @@
     },
     {
       "animeId": "naruto",
-      "animeName": "Naruto Shippuden",
-      "name": "Chocho Akimichi",
-      "anilist": 142887,
+      "animeName": "Naruto & Shippuden",
+      "name": "Asura Otsutsuki",
+      "anilist": null,
       "resolvedName": null,
       "image": null,
       "notes": ""
     },
     {
       "animeId": "naruto",
-      "animeName": "Naruto Shippuden",
+      "animeName": "Naruto & Shippuden",
+      "name": "Black Zetsu",
+      "anilist": null,
+      "resolvedName": null,
+      "image": null,
+      "notes": ""
+    },
+    {
+      "animeId": "naruto",
+      "animeName": "Naruto & Shippuden",
+      "name": "Cee",
+      "anilist": null,
+      "resolvedName": null,
+      "image": null,
+      "notes": ""
+    },
+    {
+      "animeId": "naruto",
+      "animeName": "Naruto & Shippuden",
       "name": "Choji Akimichi",
       "anilist": 104,
       "resolvedName": null,
@@ -2157,52 +2067,70 @@
     },
     {
       "animeId": "naruto",
-      "animeName": "Naruto Shippuden",
-      "name": "Chojuro",
-      "anilist": 158,
+      "animeName": "Naruto & Shippuden",
+      "name": "Chomei",
+      "anilist": null,
       "resolvedName": null,
       "image": null,
       "notes": ""
     },
     {
       "animeId": "naruto",
-      "animeName": "Naruto Shippuden",
-      "name": "Chojuro (Mizukage)",
-      "anilist": 174,
+      "animeName": "Naruto & Shippuden",
+      "name": "Choza Akimichi",
+      "anilist": null,
       "resolvedName": null,
       "image": null,
       "notes": ""
     },
     {
       "animeId": "naruto",
-      "animeName": "Naruto Shippuden",
-      "name": "Darui",
-      "anilist": 119,
+      "animeName": "Naruto & Shippuden",
+      "name": "Danzo Shimura",
+      "anilist": null,
       "resolvedName": null,
       "image": null,
       "notes": ""
     },
     {
       "animeId": "naruto",
-      "animeName": "Naruto Shippuden",
-      "name": "Darui (Raikage)",
-      "anilist": 173,
+      "animeName": "Naruto & Shippuden",
+      "name": "Ebizo",
+      "anilist": null,
       "resolvedName": null,
       "image": null,
       "notes": ""
     },
     {
       "animeId": "naruto",
-      "animeName": "Naruto Shippuden",
-      "name": "Fu (Taki)",
-      "anilist": 157,
+      "animeName": "Naruto & Shippuden",
+      "name": "Fourth Raikage / A",
+      "anilist": 118,
       "resolvedName": null,
       "image": null,
       "notes": ""
     },
     {
       "animeId": "naruto",
-      "animeName": "Naruto Shippuden",
+      "animeName": "Naruto & Shippuden",
+      "name": "Fuu",
+      "anilist": 2143,
+      "resolvedName": null,
+      "image": null,
+      "notes": ""
+    },
+    {
+      "animeId": "naruto",
+      "animeName": "Naruto & Shippuden",
+      "name": "Gengetsu Hozuki",
+      "anilist": 2153,
+      "resolvedName": null,
+      "image": null,
+      "notes": ""
+    },
+    {
+      "animeId": "naruto",
+      "animeName": "Naruto & Shippuden",
       "name": "Hagoromo Otsutsuki",
       "anilist": 148,
       "resolvedName": null,
@@ -2211,7 +2139,7 @@
     },
     {
       "animeId": "naruto",
-      "animeName": "Naruto Shippuden",
+      "animeName": "Naruto & Shippuden",
       "name": "Hamura Otsutsuki",
       "anilist": 149,
       "resolvedName": null,
@@ -2220,7 +2148,7 @@
     },
     {
       "animeId": "naruto",
-      "animeName": "Naruto Shippuden",
+      "animeName": "Naruto & Shippuden",
       "name": "Han",
       "anilist": 153,
       "resolvedName": null,
@@ -2229,7 +2157,7 @@
     },
     {
       "animeId": "naruto",
-      "animeName": "Naruto Shippuden",
+      "animeName": "Naruto & Shippuden",
       "name": "Hanabi Hyuga",
       "anilist": 163,
       "resolvedName": null,
@@ -2238,7 +2166,25 @@
     },
     {
       "animeId": "naruto",
-      "animeName": "Naruto Shippuden",
+      "animeName": "Naruto & Shippuden",
+      "name": "Hanzo",
+      "anilist": null,
+      "resolvedName": null,
+      "image": null,
+      "notes": ""
+    },
+    {
+      "animeId": "naruto",
+      "animeName": "Naruto & Shippuden",
+      "name": "Hiashi Hyuga",
+      "anilist": null,
+      "resolvedName": null,
+      "image": null,
+      "notes": ""
+    },
+    {
+      "animeId": "naruto",
+      "animeName": "Naruto & Shippuden",
       "name": "Hinata Hyuga",
       "anilist": 87,
       "resolvedName": null,
@@ -2247,7 +2193,43 @@
     },
     {
       "animeId": "naruto",
-      "animeName": "Naruto Shippuden",
+      "animeName": "Naruto & Shippuden",
+      "name": "Hizashi Hyuga",
+      "anilist": null,
+      "resolvedName": null,
+      "image": null,
+      "notes": ""
+    },
+    {
+      "animeId": "naruto",
+      "animeName": "Naruto & Shippuden",
+      "name": "Indra Otsutsuki",
+      "anilist": null,
+      "resolvedName": null,
+      "image": null,
+      "notes": ""
+    },
+    {
+      "animeId": "naruto",
+      "animeName": "Naruto & Shippuden",
+      "name": "Jirobo",
+      "anilist": 2014,
+      "resolvedName": null,
+      "image": null,
+      "notes": ""
+    },
+    {
+      "animeId": "naruto",
+      "animeName": "Naruto & Shippuden",
+      "name": "Jugo",
+      "anilist": 122,
+      "resolvedName": null,
+      "image": null,
+      "notes": ""
+    },
+    {
+      "animeId": "naruto",
+      "animeName": "Naruto & Shippuden",
       "name": "Kaguya Otsutsuki",
       "anilist": 147,
       "resolvedName": null,
@@ -2256,7 +2238,34 @@
     },
     {
       "animeId": "naruto",
-      "animeName": "Naruto Shippuden",
+      "animeName": "Naruto & Shippuden",
+      "name": "Karin",
+      "anilist": 120,
+      "resolvedName": null,
+      "image": null,
+      "notes": ""
+    },
+    {
+      "animeId": "naruto",
+      "animeName": "Naruto & Shippuden",
+      "name": "Killer B / Killer Bee",
+      "anilist": 116,
+      "resolvedName": null,
+      "image": null,
+      "notes": ""
+    },
+    {
+      "animeId": "naruto",
+      "animeName": "Naruto & Shippuden",
+      "name": "Kokuo",
+      "anilist": null,
+      "resolvedName": null,
+      "image": null,
+      "notes": ""
+    },
+    {
+      "animeId": "naruto",
+      "animeName": "Naruto & Shippuden",
       "name": "Kurenai Yuhi",
       "anilist": 108,
       "resolvedName": null,
@@ -2265,25 +2274,16 @@
     },
     {
       "animeId": "naruto",
-      "animeName": "Naruto Shippuden",
-      "name": "Mitsuki",
-      "anilist": 142882,
+      "animeName": "Naruto & Shippuden",
+      "name": "Mu / Muu",
+      "anilist": 2152,
       "resolvedName": null,
       "image": null,
       "notes": ""
     },
     {
       "animeId": "naruto",
-      "animeName": "Naruto Shippuden",
-      "name": "Mitsuki (Sage)",
-      "anilist": 142888,
-      "resolvedName": null,
-      "image": null,
-      "notes": ""
-    },
-    {
-      "animeId": "naruto",
-      "animeName": "Naruto Shippuden",
+      "animeName": "Naruto & Shippuden",
       "name": "Neji Hyuga",
       "anilist": 90,
       "resolvedName": null,
@@ -2292,8 +2292,8 @@
     },
     {
       "animeId": "naruto",
-      "animeName": "Naruto Shippuden",
-      "name": "Obito Uchiha",
+      "animeName": "Naruto & Shippuden",
+      "name": "Obito Uchiha / Tobi",
       "anilist": 91,
       "resolvedName": null,
       "image": null,
@@ -2301,16 +2301,34 @@
     },
     {
       "animeId": "naruto",
-      "animeName": "Naruto Shippuden",
-      "name": "Pain / Nagato",
-      "anilist": 92,
+      "animeName": "Naruto & Shippuden",
+      "name": "Oonoki / Onoki",
+      "anilist": 176,
       "resolvedName": null,
       "image": null,
       "notes": ""
     },
     {
       "animeId": "naruto",
-      "animeName": "Naruto Shippuden",
+      "animeName": "Naruto & Shippuden",
+      "name": "Roshi",
+      "anilist": 154,
+      "resolvedName": null,
+      "image": null,
+      "notes": ""
+    },
+    {
+      "animeId": "naruto",
+      "animeName": "Naruto & Shippuden",
+      "name": "Shima",
+      "anilist": null,
+      "resolvedName": null,
+      "image": null,
+      "notes": ""
+    },
+    {
+      "animeId": "naruto",
+      "animeName": "Naruto & Shippuden",
       "name": "Suigetsu Hozuki",
       "anilist": 121,
       "resolvedName": null,
@@ -2319,7 +2337,16 @@
     },
     {
       "animeId": "naruto",
-      "animeName": "Naruto Shippuden",
+      "animeName": "Naruto & Shippuden",
+      "name": "Ten-Tails",
+      "anilist": null,
+      "resolvedName": null,
+      "image": null,
+      "notes": ""
+    },
+    {
+      "animeId": "naruto",
+      "animeName": "Naruto & Shippuden",
       "name": "Toneri Otsutsuki",
       "anilist": 150,
       "resolvedName": null,
@@ -2328,7 +2355,7 @@
     },
     {
       "animeId": "naruto",
-      "animeName": "Naruto Shippuden",
+      "animeName": "Naruto & Shippuden",
       "name": "Udon Ise",
       "anilist": 165,
       "resolvedName": null,
@@ -2337,7 +2364,16 @@
     },
     {
       "animeId": "naruto",
-      "animeName": "Naruto Shippuden",
+      "animeName": "Naruto & Shippuden",
+      "name": "White Zetsu",
+      "anilist": null,
+      "resolvedName": null,
+      "image": null,
+      "notes": ""
+    },
+    {
+      "animeId": "naruto",
+      "animeName": "Naruto & Shippuden",
       "name": "Yagura Karatachi",
       "anilist": 156,
       "resolvedName": null,
@@ -2345,10 +2381,10 @@
       "notes": ""
     },
     {
-      "animeId": "naruto",
-      "animeName": "Naruto Shippuden",
-      "name": "Yamato / Tenzo",
-      "anilist": 124,
+      "animeId": "onepiece",
+      "animeName": "One Piece",
+      "name": "Aramaki / Ryokugyu",
+      "anilist": 163876,
       "resolvedName": null,
       "image": null,
       "notes": ""
@@ -2356,8 +2392,8 @@
     {
       "animeId": "onepiece",
       "animeName": "One Piece",
-      "name": "Bartolomeo",
-      "anilist": 163846,
+      "name": "Avalo Pizarro",
+      "anilist": null,
       "resolvedName": null,
       "image": null,
       "notes": ""
@@ -2365,8 +2401,8 @@
     {
       "animeId": "onepiece",
       "animeName": "One Piece",
-      "name": "Big Mom (Young)",
-      "anilist": 163863,
+      "name": "Benn Beckman",
+      "anilist": null,
       "resolvedName": null,
       "image": null,
       "notes": ""
@@ -2374,16 +2410,7 @@
     {
       "animeId": "onepiece",
       "animeName": "One Piece",
-      "name": "Black Maria",
-      "anilist": 163862,
-      "resolvedName": null,
-      "image": null,
-      "notes": ""
-    },
-    {
-      "animeId": "onepiece",
-      "animeName": "One Piece",
-      "name": "Bon Clay / Mr. 2",
+      "name": "Bentham / Bon Clay / Mr. 2",
       "anilist": 163884,
       "resolvedName": null,
       "image": null,
@@ -2392,7 +2419,7 @@
     {
       "animeId": "onepiece",
       "animeName": "One Piece",
-      "name": "Borsalino (Kizaru)",
+      "name": "Borsalino / Kizaru",
       "anilist": 70,
       "resolvedName": null,
       "image": null,
@@ -2401,8 +2428,8 @@
     {
       "animeId": "onepiece",
       "animeName": "One Piece",
-      "name": "Cavendish",
-      "anilist": 163845,
+      "name": "Caesar Clown",
+      "anilist": 163836,
       "resolvedName": null,
       "image": null,
       "notes": ""
@@ -2410,8 +2437,8 @@
     {
       "animeId": "onepiece",
       "animeName": "One Piece",
-      "name": "Charlotte Cracker",
-      "anilist": 163853,
+      "name": "Camie",
+      "anilist": null,
       "resolvedName": null,
       "image": null,
       "notes": ""
@@ -2419,8 +2446,8 @@
     {
       "animeId": "onepiece",
       "animeName": "One Piece",
-      "name": "Charlotte Perospero",
-      "anilist": 163854,
+      "name": "Catarina Devon",
+      "anilist": null,
       "resolvedName": null,
       "image": null,
       "notes": ""
@@ -2428,8 +2455,8 @@
     {
       "animeId": "onepiece",
       "animeName": "One Piece",
-      "name": "Charlotte Smoothie",
-      "anilist": 163852,
+      "name": "Charlotte Linlin / Big Mom",
+      "anilist": 65,
       "resolvedName": null,
       "image": null,
       "notes": ""
@@ -2437,7 +2464,7 @@
     {
       "animeId": "onepiece",
       "animeName": "One Piece",
-      "name": "Crocodile",
+      "name": "Crocodile / Sir Crocodile",
       "anilist": 61,
       "resolvedName": null,
       "image": null,
@@ -2446,8 +2473,8 @@
     {
       "animeId": "onepiece",
       "animeName": "One Piece",
-      "name": "Crocodile (Alabasta)",
-      "anilist": 61,
+      "name": "Doc Q",
+      "anilist": null,
       "resolvedName": null,
       "image": null,
       "notes": ""
@@ -2455,8 +2482,8 @@
     {
       "animeId": "onepiece",
       "animeName": "One Piece",
-      "name": "Donquixote Corazon",
-      "anilist": 163835,
+      "name": "Donquixote Doflamingo",
+      "anilist": 62,
       "resolvedName": null,
       "image": null,
       "notes": ""
@@ -2464,8 +2491,8 @@
     {
       "animeId": "onepiece",
       "animeName": "One Piece",
-      "name": "Fujitora (Issho)",
-      "anilist": 163877,
+      "name": "Donquixote Rosinante / Corazon",
+      "anilist": null,
       "resolvedName": null,
       "image": null,
       "notes": ""
@@ -2473,7 +2500,34 @@
     {
       "animeId": "onepiece",
       "animeName": "One Piece",
-      "name": "Gol D. Roger",
+      "name": "Dr. Vegapunk / Stella",
+      "anilist": null,
+      "resolvedName": null,
+      "image": null,
+      "notes": ""
+    },
+    {
+      "animeId": "onepiece",
+      "animeName": "One Piece",
+      "name": "Edward Newgate / Whitebeard",
+      "anilist": 67,
+      "resolvedName": null,
+      "image": null,
+      "notes": ""
+    },
+    {
+      "animeId": "onepiece",
+      "animeName": "One Piece",
+      "name": "Going Merry",
+      "anilist": null,
+      "resolvedName": null,
+      "image": null,
+      "notes": ""
+    },
+    {
+      "animeId": "onepiece",
+      "animeName": "One Piece",
+      "name": "Gol D. Roger / Gold Roger",
       "anilist": 163872,
       "resolvedName": null,
       "image": null,
@@ -2482,8 +2536,26 @@
     {
       "animeId": "onepiece",
       "animeName": "One Piece",
-      "name": "Hiyori",
-      "anilist": 163868,
+      "name": "Hatchan / Hachi",
+      "anilist": null,
+      "resolvedName": null,
+      "image": null,
+      "notes": ""
+    },
+    {
+      "animeId": "onepiece",
+      "animeName": "One Piece",
+      "name": "Imu",
+      "anilist": 163874,
+      "resolvedName": null,
+      "image": null,
+      "notes": ""
+    },
+    {
+      "animeId": "onepiece",
+      "animeName": "One Piece",
+      "name": "Issho / Fujitora",
+      "anilist": 163877,
       "resolvedName": null,
       "image": null,
       "notes": ""
@@ -2493,6 +2565,60 @@
       "animeName": "One Piece",
       "name": "Jack",
       "anilist": 163858,
+      "resolvedName": null,
+      "image": null,
+      "notes": ""
+    },
+    {
+      "animeId": "onepiece",
+      "animeName": "One Piece",
+      "name": "Jesus Burgess",
+      "anilist": null,
+      "resolvedName": null,
+      "image": null,
+      "notes": ""
+    },
+    {
+      "animeId": "onepiece",
+      "animeName": "One Piece",
+      "name": "Jozu",
+      "anilist": null,
+      "resolvedName": null,
+      "image": null,
+      "notes": ""
+    },
+    {
+      "animeId": "onepiece",
+      "animeName": "One Piece",
+      "name": "Kaido",
+      "anilist": 64,
+      "resolvedName": null,
+      "image": null,
+      "notes": ""
+    },
+    {
+      "animeId": "onepiece",
+      "animeName": "One Piece",
+      "name": "Kaku",
+      "anilist": null,
+      "resolvedName": null,
+      "image": null,
+      "notes": ""
+    },
+    {
+      "animeId": "onepiece",
+      "animeName": "One Piece",
+      "name": "Karoo",
+      "anilist": null,
+      "resolvedName": null,
+      "image": null,
+      "notes": ""
+    },
+    {
+      "animeId": "onepiece",
+      "animeName": "One Piece",
+      "name": "Kikunojo / Kiku",
+      "anilist": null,
       "resolvedName": null,
       "image": null,
       "notes": ""
@@ -2527,8 +2653,8 @@
     {
       "animeId": "onepiece",
       "animeName": "One Piece",
-      "name": "Kizaru (Borsalino)",
-      "anilist": 163892,
+      "name": "Kozuki Hiyori / Komurasaki",
+      "anilist": null,
       "resolvedName": null,
       "image": null,
       "notes": ""
@@ -2536,7 +2662,16 @@
     {
       "animeId": "onepiece",
       "animeName": "One Piece",
-      "name": "Kuzan (Aokiji)",
+      "name": "Kozuki Oden",
+      "anilist": null,
+      "resolvedName": null,
+      "image": null,
+      "notes": ""
+    },
+    {
+      "animeId": "onepiece",
+      "animeName": "One Piece",
+      "name": "Kuzan / Aokiji",
       "anilist": 71,
       "resolvedName": null,
       "image": null,
@@ -2545,8 +2680,8 @@
     {
       "animeId": "onepiece",
       "animeName": "One Piece",
-      "name": "Kyros",
-      "anilist": 163848,
+      "name": "Lafitte",
+      "anilist": null,
       "resolvedName": null,
       "image": null,
       "notes": ""
@@ -2554,8 +2689,17 @@
     {
       "animeId": "onepiece",
       "animeName": "One Piece",
-      "name": "Luffy (Gear 5)",
-      "anilist": 163864,
+      "name": "Marco",
+      "anilist": null,
+      "resolvedName": null,
+      "image": null,
+      "notes": ""
+    },
+    {
+      "animeId": "onepiece",
+      "animeName": "One Piece",
+      "name": "Marshall D. Teach / Blackbeard",
+      "anilist": 66,
       "resolvedName": null,
       "image": null,
       "notes": ""
@@ -2565,15 +2709,6 @@
       "animeName": "One Piece",
       "name": "Momonosuke",
       "anilist": 163866,
-      "resolvedName": null,
-      "image": null,
-      "notes": ""
-    },
-    {
-      "animeId": "onepiece",
-      "animeName": "One Piece",
-      "name": "Monet",
-      "anilist": 163838,
       "resolvedName": null,
       "image": null,
       "notes": ""
@@ -2599,24 +2734,6 @@
     {
       "animeId": "onepiece",
       "animeName": "One Piece",
-      "name": "Nami",
-      "anilist": 39,
-      "resolvedName": null,
-      "image": null,
-      "notes": ""
-    },
-    {
-      "animeId": "onepiece",
-      "animeName": "One Piece",
-      "name": "Nami (Pre-skip)",
-      "anilist": 39,
-      "resolvedName": null,
-      "image": null,
-      "notes": ""
-    },
-    {
-      "animeId": "onepiece",
-      "animeName": "One Piece",
       "name": "Queen",
       "anilist": 163859,
       "resolvedName": null,
@@ -2626,8 +2743,8 @@
     {
       "animeId": "onepiece",
       "animeName": "One Piece",
-      "name": "Rayleigh (Young)",
-      "anilist": 163870,
+      "name": "Raizo",
+      "anilist": null,
       "resolvedName": null,
       "image": null,
       "notes": ""
@@ -2635,8 +2752,8 @@
     {
       "animeId": "onepiece",
       "animeName": "One Piece",
-      "name": "Rebecca",
-      "anilist": 163844,
+      "name": "S-Bear",
+      "anilist": null,
       "resolvedName": null,
       "image": null,
       "notes": ""
@@ -2644,8 +2761,8 @@
     {
       "animeId": "onepiece",
       "animeName": "One Piece",
-      "name": "Ryokugyu (Aramaki)",
-      "anilist": 163876,
+      "name": "S-Shark",
+      "anilist": null,
       "resolvedName": null,
       "image": null,
       "notes": ""
@@ -2653,7 +2770,7 @@
     {
       "animeId": "onepiece",
       "animeName": "One Piece",
-      "name": "Sakazuki (Akainu)",
+      "name": "Sakazuki / Akainu",
       "anilist": 72,
       "resolvedName": null,
       "image": null,
@@ -2662,8 +2779,8 @@
     {
       "animeId": "onepiece",
       "animeName": "One Piece",
-      "name": "Shanks",
-      "anilist": 53,
+      "name": "Sasaki",
+      "anilist": null,
       "resolvedName": null,
       "image": null,
       "notes": ""
@@ -2671,8 +2788,35 @@
     {
       "animeId": "onepiece",
       "animeName": "One Piece",
-      "name": "Shanks (Battle)",
-      "anilist": 163879,
+      "name": "Sentomaru",
+      "anilist": null,
+      "resolvedName": null,
+      "image": null,
+      "notes": ""
+    },
+    {
+      "animeId": "onepiece",
+      "animeName": "One Piece",
+      "name": "Shinobu",
+      "anilist": null,
+      "resolvedName": null,
+      "image": null,
+      "notes": ""
+    },
+    {
+      "animeId": "onepiece",
+      "animeName": "One Piece",
+      "name": "Shiryu",
+      "anilist": null,
+      "resolvedName": null,
+      "image": null,
+      "notes": ""
+    },
+    {
+      "animeId": "onepiece",
+      "animeName": "One Piece",
+      "name": "Stronger",
+      "anilist": null,
       "resolvedName": null,
       "image": null,
       "notes": ""
@@ -2698,6 +2842,15 @@
     {
       "animeId": "onepiece",
       "animeName": "One Piece",
+      "name": "Thousand Sunny",
+      "anilist": null,
+      "resolvedName": null,
+      "image": null,
+      "notes": ""
+    },
+    {
+      "animeId": "onepiece",
+      "animeName": "One Piece",
       "name": "Ulti",
       "anilist": 163821,
       "resolvedName": null,
@@ -2707,8 +2860,8 @@
     {
       "animeId": "onepiece",
       "animeName": "One Piece",
-      "name": "Vegapunk (Stella)",
-      "anilist": 163885,
+      "name": "Van Augur",
+      "anilist": null,
       "resolvedName": null,
       "image": null,
       "notes": ""
@@ -2716,8 +2869,8 @@
     {
       "animeId": "onepiece",
       "animeName": "One Piece",
-      "name": "Vegapunk Atlas",
-      "anilist": 163889,
+      "name": "Vista",
+      "anilist": null,
       "resolvedName": null,
       "image": null,
       "notes": ""
@@ -2725,8 +2878,8 @@
     {
       "animeId": "onepiece",
       "animeName": "One Piece",
-      "name": "Vegapunk Edison",
-      "anilist": 163887,
+      "name": "Wyper",
+      "anilist": null,
       "resolvedName": null,
       "image": null,
       "notes": ""
@@ -2734,251 +2887,332 @@
     {
       "animeId": "onepiece",
       "animeName": "One Piece",
-      "name": "Vegapunk Lilith",
-      "anilist": 163886,
+      "name": "York",
+      "anilist": null,
       "resolvedName": null,
       "image": null,
       "notes": ""
     },
     {
-      "animeId": "onepiece",
-      "animeName": "One Piece",
-      "name": "Vegapunk Pythagoras",
-      "anilist": 163888,
+      "animeId": "opm",
+      "animeName": "One Punch Man",
+      "name": "Atomic Samurai",
+      "anilist": null,
       "resolvedName": null,
       "image": null,
       "notes": ""
     },
     {
-      "animeId": "onepiece",
-      "animeName": "One Piece",
-      "name": "Vegapunk Shaka",
-      "anilist": 163891,
+      "animeId": "opm",
+      "animeName": "One Punch Man",
+      "name": "Beast King",
+      "anilist": null,
       "resolvedName": null,
       "image": null,
       "notes": ""
     },
     {
-      "animeId": "onepiece",
-      "animeName": "One Piece",
-      "name": "Vegapunk York",
-      "anilist": 163890,
+      "animeId": "opm",
+      "animeName": "One Punch Man",
+      "name": "Black Sperm",
+      "anilist": null,
       "resolvedName": null,
       "image": null,
       "notes": ""
     },
     {
-      "animeId": "onepiece",
-      "animeName": "One Piece",
-      "name": "Vinsmoke Reiju",
-      "anilist": 163856,
+      "animeId": "opm",
+      "animeName": "One Punch Man",
+      "name": "Bomb",
+      "anilist": null,
       "resolvedName": null,
       "image": null,
       "notes": ""
     },
     {
-      "animeId": "onepiece",
-      "animeName": "One Piece",
-      "name": "Vinsmoke Sanji",
-      "anilist": 41,
+      "animeId": "opm",
+      "animeName": "One Punch Man",
+      "name": "Boros",
+      "anilist": null,
       "resolvedName": null,
       "image": null,
       "notes": ""
     },
     {
-      "animeId": "onepiece",
-      "animeName": "One Piece",
-      "name": "Viola / Violet",
-      "anilist": 163843,
+      "animeId": "opm",
+      "animeName": "One Punch Man",
+      "name": "Bug God",
+      "anilist": null,
       "resolvedName": null,
       "image": null,
       "notes": ""
     },
     {
-      "animeId": "rezero",
-      "animeName": "Re:Zero",
-      "name": "Al",
-      "anilist": 99393,
+      "animeId": "opm",
+      "animeName": "One Punch Man",
+      "name": "Captain Mizuki",
+      "anilist": null,
       "resolvedName": null,
       "image": null,
       "notes": ""
     },
     {
-      "animeId": "rezero",
-      "animeName": "Re:Zero",
-      "name": "Cecils Segmunt",
-      "anilist": 99420,
+      "animeId": "opm",
+      "animeName": "One Punch Man",
+      "name": "Carnage Kabuto",
+      "anilist": null,
       "resolvedName": null,
       "image": null,
       "notes": ""
     },
     {
-      "animeId": "rezero",
-      "animeName": "Re:Zero",
-      "name": "Flugel / Shaula",
-      "anilist": 99415,
+      "animeId": "opm",
+      "animeName": "One Punch Man",
+      "name": "Child Emperor",
+      "anilist": null,
       "resolvedName": null,
       "image": null,
       "notes": ""
     },
     {
-      "animeId": "rezero",
-      "animeName": "Re:Zero",
-      "name": "Julius Juukulius",
-      "anilist": 99391,
+      "animeId": "opm",
+      "animeName": "One Punch Man",
+      "name": "Crablante",
+      "anilist": null,
       "resolvedName": null,
       "image": null,
       "notes": ""
     },
     {
-      "animeId": "rezero",
-      "animeName": "Re:Zero",
-      "name": "Ley Batenkaitos",
-      "anilist": 99412,
+      "animeId": "opm",
+      "animeName": "One Punch Man",
+      "name": "Deep Sea King",
+      "anilist": null,
       "resolvedName": null,
       "image": null,
       "notes": ""
     },
     {
-      "animeId": "rezero",
-      "animeName": "Re:Zero",
-      "name": "Ryuzu Meyer",
-      "anilist": 99409,
+      "animeId": "opm",
+      "animeName": "One Punch Man",
+      "name": "Drive Knight",
+      "anilist": null,
       "resolvedName": null,
       "image": null,
       "notes": ""
     },
     {
-      "animeId": "rezero",
-      "animeName": "Re:Zero",
-      "name": "Sirius Romanee-Conti",
-      "anilist": 99417,
+      "animeId": "opm",
+      "animeName": "One Punch Man",
+      "name": "Elder Centipede",
+      "anilist": null,
       "resolvedName": null,
       "image": null,
       "notes": ""
     },
     {
-      "animeId": "rezero",
-      "animeName": "Re:Zero",
-      "name": "Stride Volakia",
-      "anilist": 99418,
+      "animeId": "opm",
+      "animeName": "One Punch Man",
+      "name": "Evil Natural Water",
+      "anilist": null,
       "resolvedName": null,
       "image": null,
       "notes": ""
     },
     {
-      "animeId": "rezero",
-      "animeName": "Re:Zero",
-      "name": "Todd Fahlner",
-      "anilist": 99421,
+      "animeId": "opm",
+      "animeName": "One Punch Man",
+      "name": "Flashy Flash",
+      "anilist": null,
       "resolvedName": null,
       "image": null,
       "notes": ""
     },
     {
-      "animeId": "rezero",
-      "animeName": "Re:Zero",
-      "name": "Vincent Volakia",
-      "anilist": 99419,
+      "animeId": "opm",
+      "animeName": "One Punch Man",
+      "name": "Fuhrer Ugly",
+      "anilist": null,
       "resolvedName": null,
       "image": null,
       "notes": ""
     },
     {
-      "animeId": "sao",
-      "animeName": "Sword Art Online",
-      "name": "Administrator / Quinella",
-      "anilist": 36848,
+      "animeId": "opm",
+      "animeName": "One Punch Man",
+      "name": "Gale Wind",
+      "anilist": null,
       "resolvedName": null,
       "image": null,
       "notes": ""
     },
     {
-      "animeId": "sao",
-      "animeName": "Sword Art Online",
-      "name": "Agil / Andrew Gilbert",
-      "anilist": 36838,
+      "animeId": "opm",
+      "animeName": "One Punch Man",
+      "name": "Golden Ball",
+      "anilist": null,
       "resolvedName": null,
       "image": null,
       "notes": ""
     },
     {
-      "animeId": "sao",
-      "animeName": "Sword Art Online",
-      "name": "Death Gun",
-      "anilist": 36841,
+      "animeId": "opm",
+      "animeName": "One Punch Man",
+      "name": "Gums",
+      "anilist": null,
       "resolvedName": null,
       "image": null,
       "notes": ""
     },
     {
-      "animeId": "sao",
-      "animeName": "Sword Art Online",
-      "name": "Kirito / Kazuto Kirigaya",
-      "anilist": 36828,
+      "animeId": "opm",
+      "animeName": "One Punch Man",
+      "name": "Hammerhead",
+      "anilist": null,
       "resolvedName": null,
       "image": null,
       "notes": ""
     },
     {
-      "animeId": "sao",
-      "animeName": "Sword Art Online",
-      "name": "Klein / Ryoutarou Tsuboi",
-      "anilist": 36837,
+      "animeId": "opm",
+      "animeName": "One Punch Man",
+      "name": "Hellfire Flame",
+      "anilist": null,
       "resolvedName": null,
       "image": null,
       "notes": ""
     },
     {
-      "animeId": "sao",
-      "animeName": "Sword Art Online",
-      "name": "Leafa / Suguha Kirigaya",
-      "anilist": 36833,
+      "animeId": "opm",
+      "animeName": "One Punch Man",
+      "name": "Homeless Emperor",
+      "anilist": null,
       "resolvedName": null,
       "image": null,
       "notes": ""
     },
     {
-      "animeId": "sao",
-      "animeName": "Sword Art Online",
-      "name": "Lisbeth / Rika Shinozaki",
-      "anilist": 36834,
+      "animeId": "opm",
+      "animeName": "One Punch Man",
+      "name": "Lightning Max",
+      "anilist": null,
       "resolvedName": null,
       "image": null,
       "notes": ""
     },
     {
-      "animeId": "sao",
-      "animeName": "Sword Art Online",
-      "name": "Ronie Arabel",
-      "anilist": 36859,
+      "animeId": "opm",
+      "animeName": "One Punch Man",
+      "name": "Metal Bat",
+      "anilist": null,
       "resolvedName": null,
       "image": null,
       "notes": ""
     },
     {
-      "animeId": "sao",
-      "animeName": "Sword Art Online",
-      "name": "Silica / Keiko Ayano",
-      "anilist": 36835,
+      "animeId": "opm",
+      "animeName": "One Punch Man",
+      "name": "Mosquito Girl",
+      "anilist": null,
       "resolvedName": null,
       "image": null,
       "notes": ""
     },
     {
-      "animeId": "sao",
-      "animeName": "Sword Art Online",
-      "name": "Sinon / Shino Asada",
-      "anilist": 36830,
+      "animeId": "opm",
+      "animeName": "One Punch Man",
+      "name": "Mumen Rider",
+      "anilist": null,
       "resolvedName": null,
       "image": null,
       "notes": ""
     },
     {
-      "animeId": "sao",
-      "animeName": "Sword Art Online",
-      "name": "Stacia (Asuna)",
-      "anilist": 36854,
+      "animeId": "opm",
+      "animeName": "One Punch Man",
+      "name": "Nyan",
+      "anilist": null,
+      "resolvedName": null,
+      "image": null,
+      "notes": ""
+    },
+    {
+      "animeId": "opm",
+      "animeName": "One Punch Man",
+      "name": "Overgrown Rover",
+      "anilist": null,
+      "resolvedName": null,
+      "image": null,
+      "notes": ""
+    },
+    {
+      "animeId": "opm",
+      "animeName": "One Punch Man",
+      "name": "Phoenix Man",
+      "anilist": null,
+      "resolvedName": null,
+      "image": null,
+      "notes": ""
+    },
+    {
+      "animeId": "opm",
+      "animeName": "One Punch Man",
+      "name": "Pig God",
+      "anilist": null,
+      "resolvedName": null,
+      "image": null,
+      "notes": ""
+    },
+    {
+      "animeId": "opm",
+      "animeName": "One Punch Man",
+      "name": "Royal Ripper",
+      "anilist": null,
+      "resolvedName": null,
+      "image": null,
+      "notes": ""
+    },
+    {
+      "animeId": "opm",
+      "animeName": "One Punch Man",
+      "name": "Sage Centipede",
+      "anilist": null,
+      "resolvedName": null,
+      "image": null,
+      "notes": ""
+    },
+    {
+      "animeId": "opm",
+      "animeName": "One Punch Man",
+      "name": "Speed-o'-Sound Sonic",
+      "anilist": null,
+      "resolvedName": null,
+      "image": null,
+      "notes": ""
+    },
+    {
+      "animeId": "opm",
+      "animeName": "One Punch Man",
+      "name": "Spring Mustachio",
+      "anilist": null,
+      "resolvedName": null,
+      "image": null,
+      "notes": ""
+    },
+    {
+      "animeId": "opm",
+      "animeName": "One Punch Man",
+      "name": "Superalloy Darkshine",
+      "anilist": null,
+      "resolvedName": null,
+      "image": null,
+      "notes": ""
+    },
+    {
+      "animeId": "opm",
+      "animeName": "One Punch Man",
+      "name": "Watchdog Man",
+      "anilist": null,
       "resolvedName": null,
       "image": null,
       "notes": ""
@@ -2995,43 +3229,7 @@
     {
       "animeId": "sololeveling",
       "animeName": "Solo Leveling",
-      "name": "Go Gunhee",
-      "anilist": null,
-      "resolvedName": null,
-      "image": null,
-      "notes": ""
-    },
-    {
-      "animeId": "sololeveling",
-      "animeName": "Solo Leveling",
-      "name": "Greed (Hwang Dongsoo)",
-      "anilist": null,
-      "resolvedName": null,
-      "image": null,
-      "notes": ""
-    },
-    {
-      "animeId": "sololeveling",
-      "animeName": "Solo Leveling",
-      "name": "Hwang Dongsoo",
-      "anilist": null,
-      "resolvedName": null,
-      "image": null,
-      "notes": ""
-    },
-    {
-      "animeId": "sololeveling",
-      "animeName": "Solo Leveling",
-      "name": "Hwang Dongsuk",
-      "anilist": null,
-      "resolvedName": null,
-      "image": null,
-      "notes": ""
-    },
-    {
-      "animeId": "sololeveling",
-      "animeName": "Solo Leveling",
-      "name": "Iron (Kim Chul)",
+      "name": "Go Gun-Hee",
       "anilist": null,
       "resolvedName": null,
       "image": null,
@@ -3049,7 +3247,7 @@
     {
       "animeId": "sololeveling",
       "animeName": "Solo Leveling",
-      "name": "Kang Taeshik",
+      "name": "Kamish",
       "anilist": null,
       "resolvedName": null,
       "image": null,
@@ -3067,7 +3265,7 @@
     {
       "animeId": "sololeveling",
       "animeName": "Solo Leveling",
-      "name": "Siddharth Bachchan",
+      "name": "Querehsha / Plague Monarch",
       "anilist": null,
       "resolvedName": null,
       "image": null,
@@ -3076,7 +3274,7 @@
     {
       "animeId": "sololeveling",
       "animeName": "Solo Leveling",
-      "name": "Song Chiyul",
+      "name": "Rakan",
       "anilist": null,
       "resolvedName": null,
       "image": null,
@@ -3085,7 +3283,34 @@
     {
       "animeId": "sololeveling",
       "animeName": "Solo Leveling",
-      "name": "Sung Jinwoo",
+      "name": "Sillad / Frost Monarch",
+      "anilist": null,
+      "resolvedName": null,
+      "image": null,
+      "notes": ""
+    },
+    {
+      "animeId": "sololeveling",
+      "animeName": "Solo Leveling",
+      "name": "Statue of God",
+      "anilist": null,
+      "resolvedName": null,
+      "image": null,
+      "notes": ""
+    },
+    {
+      "animeId": "sololeveling",
+      "animeName": "Solo Leveling",
+      "name": "Sung Jin-Woo / Shun Mizushino",
+      "anilist": null,
+      "resolvedName": null,
+      "image": null,
+      "notes": ""
+    },
+    {
+      "animeId": "sololeveling",
+      "animeName": "Solo Leveling",
+      "name": "Tarnak / Iron Body Monarch",
       "anilist": null,
       "resolvedName": null,
       "image": null,
@@ -3103,206 +3328,17 @@
     {
       "animeId": "sololeveling",
       "animeName": "Solo Leveling",
-      "name": "Yoo Jinho",
+      "name": "Yogumunt / Monarch of Transfiguration",
       "anilist": null,
       "resolvedName": null,
       "image": null,
       "notes": ""
     },
     {
-      "animeId": "tokyoghoul",
-      "animeName": "Tokyo Ghoul",
-      "name": "Amon Kotaro",
-      "anilist": 2580,
-      "resolvedName": null,
-      "image": null,
-      "notes": ""
-    },
-    {
-      "animeId": "tokyoghoul",
-      "animeName": "Tokyo Ghoul",
-      "name": "Eto Yoshimura",
-      "anilist": 2571,
-      "resolvedName": null,
-      "image": null,
-      "notes": ""
-    },
-    {
-      "animeId": "tokyoghoul",
-      "animeName": "Tokyo Ghoul",
-      "name": "Hajime Hazuki",
-      "anilist": 2591,
-      "resolvedName": null,
-      "image": null,
-      "notes": ""
-    },
-    {
-      "animeId": "tokyoghoul",
-      "animeName": "Tokyo Ghoul",
-      "name": "Kaneki (Black Reaper)",
-      "anilist": 2593,
-      "resolvedName": null,
-      "image": null,
-      "notes": ""
-    },
-    {
-      "animeId": "tokyoghoul",
-      "animeName": "Tokyo Ghoul",
-      "name": "Kaneki (One-Eyed King)",
-      "anilist": 2594,
-      "resolvedName": null,
-      "image": null,
-      "notes": ""
-    },
-    {
-      "animeId": "tokyoghoul",
-      "animeName": "Tokyo Ghoul",
-      "name": "Kuki Urie (Final)",
-      "anilist": 2599,
-      "resolvedName": null,
-      "image": null,
-      "notes": ""
-    },
-    {
-      "animeId": "tokyoghoul",
-      "animeName": "Tokyo Ghoul",
-      "name": "Shachi / Tatara",
-      "anilist": 2595,
-      "resolvedName": null,
-      "image": null,
-      "notes": ""
-    },
-    {
-      "animeId": "tokyoghoul",
-      "animeName": "Tokyo Ghoul",
-      "name": "Takeomi Kuroiwa",
-      "anilist": 2598,
-      "resolvedName": null,
-      "image": null,
-      "notes": ""
-    },
-    {
-      "animeId": "tokyoghoul",
-      "animeName": "Tokyo Ghoul",
-      "name": "Yoshimura / Kuzen",
-      "anilist": 2570,
-      "resolvedName": null,
-      "image": null,
-      "notes": ""
-    },
-    {
-      "animeId": "tpn",
-      "animeName": "Promised Neverland",
-      "name": "Cristy",
-      "anilist": 120811,
-      "resolvedName": null,
-      "image": null,
-      "notes": ""
-    },
-    {
-      "animeId": "tpn",
-      "animeName": "Promised Neverland",
-      "name": "Emma",
-      "anilist": 120794,
-      "resolvedName": null,
-      "image": null,
-      "notes": ""
-    },
-    {
-      "animeId": "tpn",
-      "animeName": "Promised Neverland",
-      "name": "Emma (Adult)",
-      "anilist": 120826,
-      "resolvedName": null,
-      "image": null,
-      "notes": ""
-    },
-    {
-      "animeId": "tpn",
-      "animeName": "Promised Neverland",
-      "name": "Grace Field Emma",
-      "anilist": 120828,
-      "resolvedName": null,
-      "image": null,
-      "notes": ""
-    },
-    {
-      "animeId": "tpn",
-      "animeName": "Promised Neverland",
-      "name": "Norman",
-      "anilist": 120795,
-      "resolvedName": null,
-      "image": null,
-      "notes": ""
-    },
-    {
-      "animeId": "tpn",
-      "animeName": "Promised Neverland",
-      "name": "Norman (White One)",
-      "anilist": 120827,
-      "resolvedName": null,
-      "image": null,
-      "notes": ""
-    },
-    {
-      "animeId": "vinland",
-      "animeName": "Vinland Saga",
-      "name": "Badger",
-      "anilist": 117360,
-      "resolvedName": null,
-      "image": null,
-      "notes": ""
-    },
-    {
-      "animeId": "vinland",
-      "animeName": "Vinland Saga",
-      "name": "Emma (Vinland)",
-      "anilist": 117374,
-      "resolvedName": null,
-      "image": null,
-      "notes": ""
-    },
-    {
-      "animeId": "vinland",
-      "animeName": "Vinland Saga",
-      "name": "Hild",
-      "anilist": 117365,
-      "resolvedName": null,
-      "image": null,
-      "notes": ""
-    },
-    {
-      "animeId": "vinland",
-      "animeName": "Vinland Saga",
-      "name": "Iron Fist Ketil",
-      "anilist": 117367,
-      "resolvedName": null,
-      "image": null,
-      "notes": ""
-    },
-    {
-      "animeId": "vinland",
-      "animeName": "Vinland Saga",
-      "name": "Leif Ericson",
-      "anilist": 117346,
-      "resolvedName": null,
-      "image": null,
-      "notes": ""
-    },
-    {
-      "animeId": "vinland",
-      "animeName": "Vinland Saga",
-      "name": "Snake",
-      "anilist": 117357,
-      "resolvedName": null,
-      "image": null,
-      "notes": ""
-    },
-    {
-      "animeId": "vinland",
-      "animeName": "Vinland Saga",
-      "name": "Thorfinn (Child)",
-      "anilist": 117372,
+      "animeId": "sololeveling",
+      "animeName": "Solo Leveling",
+      "name": "Yoo Jinho / Kenta Morobishi",
+      "anilist": null,
       "resolvedName": null,
       "image": null,
       "notes": ""

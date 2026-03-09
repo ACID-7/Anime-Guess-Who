@@ -16,21 +16,21 @@ function buildAllCharactersAnime() {
     (anime.chars || []).forEach(char => {
       chars.push({
         ...char,
-        name: `${char.name} (${anime.name})`,
+        displayName: `${char.name} (${anime.name})`,
         _sourceAnimeId: anime.id,
         _sourceAnimeName: anime.name,
       });
     });
   });
 
-  chars.sort((a, b) => a.name.localeCompare(b.name));
+  chars.sort((a, b) => (a.displayName || a.name).localeCompare(b.displayName || b.name));
 
   return {
     id: 'allchars',
-    name: 'All Characters A–Z',
+    name: 'All Characters & Entities A-Z',
     emoji: '🧾',
     color: '#22c55e',
-    tags: ['All', 'Alphabetical'],
+    tags: ['All', 'A-Z'],
     chars,
   };
 }
@@ -50,7 +50,7 @@ async function startGame(anime) {
   renderLoading(anime);
 
   await loadImages(anime, (pct, label) => {
-    const safeLabel = label || (pct < 100 ? 'Fetching character images from AniList...' : 'Building dataset...');
+    const safeLabel = label || (pct < 100 ? 'Fetching entity images...' : 'Building dataset...');
     updateLoadBar(pct, safeLabel);
   });
 

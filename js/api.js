@@ -1,16 +1,18 @@
 /**
- * api.js - Single-source AniList image loader + dataset helpers.
+ * api.js - Image resolution and dataset helpers.
  *
  * Resolution order:
- * 1) Manual override (char.img)
- * 2) AniList by ID (batched)
- * 3) AniList by name search (for bad/missing IDs)
- * 4) Emoji fallback in UI
+ * 1) Curated image on the roster entry (char.img)
+ * 2) Local dataset override (images/character-image-dataset.json)
+ * 3) AniList by character ID (batched)
+ * 4) AniList by name search (skipped for the giant aggregate A-Z board)
+ * 5) Emoji fallback in the UI
  */
 
 const IMG_CACHE = {};
 const META_CACHE = {};
 const NAME_IMG_CACHE = {};
+const ANIME_CHAR_CACHE = {};
 const DATASET_CACHE = {};
 const BATCH_SIZE = 40;
 let LOCAL_DATASET_LOOKUP = null;
@@ -31,7 +33,7 @@ function normalizeName(value) {
 }
 
 function getNameVariants(name) {
-  const base = String(name || '');
+  const base = String(name || '').trim();
   const variants = new Set([base]);
 
   base.split('/').map(part => part.trim()).filter(Boolean).forEach(part => variants.add(part));
@@ -44,12 +46,15 @@ function getNameVariants(name) {
 }
 
 function getSearchTerms(name) {
-  const base = String(name || '');
-  const terms = new Set([base.trim()]);
+  const base = String(name || '').trim();
+  const terms = new Set([base]);
+
   base.split('/').map(part => part.trim()).filter(Boolean).forEach(part => terms.add(part));
   base.split(',').map(part => part.trim()).filter(Boolean).forEach(part => terms.add(part));
+
   const withoutParens = base.replace(/\([^)]*\)/g, ' ').replace(/\s+/g, ' ').trim();
   if (withoutParens) terms.add(withoutParens);
+
   return [...terms].filter(Boolean);
 }
 
@@ -66,6 +71,7 @@ function tokenSet(value) {
 function animeTitleMatch(animeName, mediaNodes) {
   const animeTokens = tokenSet(animeName);
   if (!animeTokens.size) return false;
+
   for (const node of mediaNodes || []) {
     const titles = [node?.title?.romaji, node?.title?.english, node?.title?.native].filter(Boolean);
     for (const title of titles) {
@@ -74,6 +80,7 @@ function animeTitleMatch(animeName, mediaNodes) {
       if (shared >= 1) return true;
     }
   }
+
   return false;
 }
 
@@ -85,12 +92,16 @@ function isLikelyNameMatch(expected, actual) {
   if (expectedVariants.includes(actualNorm)) return true;
 
   for (const variant of expectedVariants) {
-    if (variant.length >= 5 && (variant.includes(actualNorm) || actualNorm.includes(variant))) {
-      return true;
-    }
-
     const expectedTokens = tokenSet(variant);
     const actualTokens = tokenSet(actualNorm);
+    if (
+      expectedTokens.size >= 2 &&
+      actualTokens.size >= 2 &&
+      variant.length >= 5 &&
+      (variant.includes(actualNorm) || actualNorm.includes(variant))
+    ) {
+      return true;
+    }
     const shared = [...expectedTokens].filter(token => actualTokens.has(token)).length;
     if (shared >= 2) return true;
     if (shared >= 1 && expectedTokens.size === 1 && actualTokens.size === 1) return true;
@@ -107,6 +118,14 @@ function getCachedNameImage(charName) {
   return null;
 }
 
+function setNameImageCache(charName, url) {
+  if (!url) return;
+  const variants = getNameVariants(charName);
+  variants.forEach(variant => {
+    NAME_IMG_CACHE[variant] = url;
+  });
+}
+
 function localKey(animeId, charName) {
   return `${animeId}::${normalizeName(charName)}`;
 }
@@ -120,21 +139,25 @@ async function ensureLocalDatasetLoaded() {
       const res = await fetch('images/character-image-dataset.json', { cache: 'no-store' });
       if (!res.ok) {
         LOCAL_DATASET_LOOKUP = {};
+        LOCAL_DATASET_ITEMS = [];
         return LOCAL_DATASET_LOOKUP;
       }
 
       const payload = await res.json();
       const items = Array.isArray(payload?.items) ? payload.items : [];
       const map = {};
+
       items.forEach(item => {
         if (!item?.animeId || !item?.name || !item?.image) return;
         map[localKey(item.animeId, item.name)] = item.image;
       });
+
       LOCAL_DATASET_ITEMS = items;
       LOCAL_DATASET_LOOKUP = map;
       return LOCAL_DATASET_LOOKUP;
     } catch (_) {
       LOCAL_DATASET_LOOKUP = {};
+      LOCAL_DATASET_ITEMS = [];
       return LOCAL_DATASET_LOOKUP;
     }
   })();
@@ -142,22 +165,25 @@ async function ensureLocalDatasetLoaded() {
   return LOCAL_DATASET_LOADING;
 }
 
-function primeAnimeFromLocalDataset(anime) {
-  if (!LOCAL_DATASET_LOOKUP) return;
-  anime.chars.forEach(char => {
-    const url = LOCAL_DATASET_LOOKUP[localKey(anime.id, char.name)];
-    if (!url) return;
-    setNameImageCache(char.name, url);
-  });
-}
-
 function getDatasetEntriesForAnime(animeId) {
   if (!Array.isArray(LOCAL_DATASET_ITEMS)) return [];
   return LOCAL_DATASET_ITEMS.filter(item => item?.animeId === animeId);
 }
 
+function primeAnimeFromLocalDataset(anime) {
+  if (!LOCAL_DATASET_LOOKUP || !Array.isArray(anime?.chars)) return;
+
+  anime.chars.forEach(char => {
+    const sourceAnimeId = anime.id === 'allchars' && char._sourceAnimeId ? char._sourceAnimeId : anime.id;
+    const url = LOCAL_DATASET_LOOKUP[localKey(sourceAnimeId, char.name)];
+    if (!url) return;
+    if (!char.img) char.img = url;
+    setNameImageCache(char.name, url);
+  });
+}
+
 function applyDatasetOverridesToAnime(anime) {
-  if (!Array.isArray(anime.chars) || !anime.id) return;
+  if (!Array.isArray(anime?.chars) || !anime?.id || anime.id === 'allchars') return;
   if (!Array.isArray(LOCAL_DATASET_ITEMS)) return;
 
   const entries = getDatasetEntriesForAnime(anime.id);
@@ -174,17 +200,15 @@ function applyDatasetOverridesToAnime(anime) {
     const norm = normalizeName(char.name);
     const entry = entries.find(item => normalizeName(item.name) === norm);
 
-    if (entry?.hidden) {
-      return;
-    }
+    if (entry?.hidden) return;
 
     if (entry) {
-      if (entry.anilist && !char.anilist) {
+      if (entry.anilist) {
         char.anilist = entry.anilist;
       }
       if (entry.image) {
-        setNameImageCache(char.name, entry.image);
         char.img = entry.image;
+        setNameImageCache(char.name, entry.image);
       }
     }
 
@@ -203,17 +227,75 @@ function applyDatasetOverridesToAnime(anime) {
       mal: null,
       img: entry.image || undefined,
     });
+
+    if (entry.image) {
+      setNameImageCache(entry.name, entry.image);
+    }
   });
 
   anime.chars = updatedChars;
 }
 
-function setNameImageCache(charName, url) {
-  if (!url) return;
-  const variants = getNameVariants(charName);
-  variants.forEach(variant => {
-    NAME_IMG_CACHE[variant] = url;
+function baseCharacterName(name) {
+  return String(name || '')
+    .replace(/\([^)]*\)/g, ' ')
+    .replace(/\s+/g, ' ')
+    .trim();
+}
+
+function isBorutoCharacterName(name) {
+  const base = baseCharacterName(name).toLowerCase();
+  const borutoNames = new Set([
+    'boruto uzumaki',
+    'sarada uchiha',
+    'mitsuki',
+    'kawaki',
+    'himawari uzumaki',
+    'shikadai nara',
+    'inojin yamanaka',
+    'chocho akimichi',
+  ]);
+  return borutoNames.has(base);
+}
+
+function normalizeAnimeRoster(anime) {
+  if (!Array.isArray(anime?.chars) || anime.id === 'allchars') return;
+
+  let chars = anime.chars.slice();
+
+  if (anime.id === 'naruto') {
+    chars = chars.filter(char => !isBorutoCharacterName(char.name));
+  }
+
+  const byBase = new Map();
+
+  chars.forEach(char => {
+    const base = normalizeName(baseCharacterName(char.name));
+    if (!base) return;
+
+    const existing = byBase.get(base);
+    if (!existing) {
+      byBase.set(base, char);
+      return;
+    }
+
+    const existingHasId = Boolean(existing.anilist || existing.mal || existing.img);
+    const currentHasId = Boolean(char.anilist || char.mal || char.img);
+    const existingIsBase = normalizeName(existing.name) === base;
+    const currentIsBase = normalizeName(char.name) === base;
+
+    let winner = existing;
+
+    if (currentHasId && !existingHasId) {
+      winner = char;
+    } else if (currentIsBase && !existingIsBase) {
+      winner = char;
+    }
+
+    byBase.set(base, winner);
   });
+
+  anime.chars = Array.from(byBase.values());
 }
 
 async function postAniList(query, variables = null, retries = 6) {
@@ -222,7 +304,7 @@ async function postAniList(query, variables = null, retries = 6) {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
-        'Accept': 'application/json',
+        Accept: 'application/json',
       },
       body: JSON.stringify({ query, variables }),
     });
@@ -248,9 +330,11 @@ async function postAniList(query, variables = null, retries = 6) {
 }
 
 async function fetchAniListBatch(ids, onProgress) {
-  const missing = ids.filter(id => id && !IMG_CACHE[id]);
+  const uniqueIds = [...new Set(ids.filter(Boolean))];
+  const missing = uniqueIds.filter(id => !IMG_CACHE[id]);
+
   if (!missing.length) {
-    if (onProgress) onProgress(70, 'AniList ID fetch complete');
+    if (onProgress) onProgress(70, 'Roster IDs already cached');
     return;
   }
 
@@ -259,6 +343,7 @@ async function fetchAniListBatch(ids, onProgress) {
     const aliases = slice
       .map((id, index) => `c${index}: Character(id:${id}) { id name { full } image { large medium } }`)
       .join('\n');
+
     const payload = await postAniList(`{ ${aliases} }`);
 
     slice.forEach((id, index) => {
@@ -276,7 +361,7 @@ async function fetchAniListBatch(ids, onProgress) {
 
     if (onProgress) {
       const phase = Math.round(((i + slice.length) / missing.length) * 70);
-      onProgress(Math.min(70, phase), 'Fetching by AniList ID...');
+      onProgress(Math.min(70, phase), 'Resolving AniList IDs...');
     }
   }
 }
@@ -358,9 +443,28 @@ async function fetchAniListByNameBatch(chars) {
         filtered[0];
       const foundName = best?.name?.full || null;
       const url = best?.image?.large || best?.image?.medium || null;
+
       if (!foundName || !url) {
         unresolved.push(char);
         return;
+      }
+
+      if (best?.id) {
+        META_CACHE[best.id] = {
+          id: best.id,
+          name: foundName,
+          image: url,
+        };
+        IMG_CACHE[best.id] = url;
+      }
+
+      const target = char.ref || char;
+
+      if (
+        best?.id &&
+        (!target.anilist || !META_CACHE[target.anilist] || !isLikelyNameMatch(char.name, META_CACHE[target.anilist]?.name))
+      ) {
+        target.anilist = best.id;
       }
 
       setNameImageCache(char.name, url);
@@ -370,65 +474,128 @@ async function fetchAniListByNameBatch(chars) {
   return unresolved;
 }
 
-async function loadImages(anime, onProgress) {
-  await ensureLocalDatasetLoaded();
-  primeAnimeFromLocalDataset(anime);
-  applyDatasetOverridesToAnime(anime);
+function getAnimeSearchTerms(animeName) {
+  const base = String(animeName || '').trim();
+  const terms = new Set([base]);
 
-  const ids = anime.chars.map(char => char.anilist).filter(Boolean);
+  base.split('&').map(part => part.trim()).filter(Boolean).forEach(part => terms.add(part));
+  base.split(':').map(part => part.trim()).filter(Boolean).forEach(part => terms.add(part));
 
-  if (ids.length) {
-    try {
-      await fetchAniListBatch(ids, onProgress);
-    } catch (error) {
-      console.warn('AniList ID batch fetch failed', error);
+  const withoutParens = base.replace(/\([^)]*\)/g, ' ').replace(/\s+/g, ' ').trim();
+  if (withoutParens) terms.add(withoutParens);
+
+  return [...terms].filter(Boolean);
+}
+
+async function fetchAnimeCharactersByTitle(animeName) {
+  const cacheKey = normalizeName(animeName);
+  if (ANIME_CHAR_CACHE[cacheKey]) return ANIME_CHAR_CACHE[cacheKey];
+
+  const terms = getAnimeSearchTerms(animeName);
+  const merged = [];
+
+  for (const term of terms) {
+    const allNodes = [];
+    let page = 1;
+    let lastPage = 1;
+    let media = null;
+
+    do {
+      const query = `
+        query AnimeCharacters($search: String, $page: Int) {
+          Media(search: $search, type: ANIME) {
+            id
+            title { romaji english native }
+            characters(sort:[ROLE,RELEVANCE], page:$page, perPage:100) {
+              pageInfo { currentPage lastPage hasNextPage }
+              nodes {
+                id
+                name { full }
+                image { large medium }
+              }
+            }
+          }
+        }
+      `;
+
+      const payload = await postAniList(query, { search: term, page }).catch(() => null);
+      media = payload?.data?.Media || null;
+      const pageInfo = media?.characters?.pageInfo;
+      const pageNodes = media?.characters?.nodes || [];
+      if (!media || !pageNodes.length) break;
+
+      allNodes.push(...pageNodes);
+      lastPage = pageInfo?.lastPage || page;
+      page += 1;
+    } while (page <= lastPage);
+
+    if (media && animeTitleMatch(animeName, [media])) {
+      merged.push(...allNodes);
     }
-  } else if (onProgress) {
-    onProgress(70, 'Skipping ID lookup...');
   }
 
-  const unresolved = anime.chars
-    .filter(char => !resolveImage(char))
-    .map(char => ({ ...char, animeName: anime.name }));
-  const stillUnresolved = await fetchAniListByNameBatch(unresolved);
+  ANIME_CHAR_CACHE[cacheKey] = [...new Map(merged.map(item => [item.id, item])).values()];
+  return ANIME_CHAR_CACHE[cacheKey];
+}
 
-  let done = unresolved.length - stillUnresolved.length;
-  if (onProgress && unresolved.length) {
-    const phase = 70 + Math.round((done / unresolved.length) * 30);
-    onProgress(Math.min(100, phase), 'Recovering missing images by name...');
-  }
+async function fetchAniListByAnimeRoster(chars, onProgress) {
+  const unresolved = [];
+  const groups = new Map();
 
-  const concurrency = Math.min(2, stillUnresolved.length);
-  const queue = [...stillUnresolved];
-  const workers = Array.from({ length: concurrency }, async () => {
-    while (queue.length) {
-      const char = queue.pop();
-      if (!char) break;
-      await fetchAniListByName(char.name);
-      done += 1;
-      if (onProgress) {
-        const phase = 70 + Math.round((done / Math.max(unresolved.length, 1)) * 30);
-        onProgress(Math.min(100, phase), 'Recovering missing images by name...');
-      }
+  chars.forEach(char => {
+    const animeName = char.animeName || '';
+    if (!animeName) {
+      unresolved.push(char);
+      return;
     }
+
+    if (!groups.has(animeName)) groups.set(animeName, []);
+    groups.get(animeName).push(char);
   });
-  if (workers.length) {
-    await Promise.all(workers);
+
+  const entries = [...groups.entries()];
+
+  for (let index = 0; index < entries.length; index += 1) {
+    const [animeName, animeChars] = entries[index];
+    const candidates = await fetchAnimeCharactersByTitle(animeName);
+
+    animeChars.forEach(char => {
+      const target = char.ref || char;
+      const best = candidates.find(item => isLikelyNameMatch(char.name, item?.name?.full || ''));
+      const foundName = best?.name?.full || null;
+      const url = best?.image?.large || best?.image?.medium || null;
+
+      if (!best?.id || !foundName || !url || url.includes('default')) {
+        unresolved.push(char);
+        return;
+      }
+
+      META_CACHE[best.id] = {
+        id: best.id,
+        name: foundName,
+        image: url,
+      };
+      IMG_CACHE[best.id] = url;
+      target.anilist = best.id;
+      setNameImageCache(char.name, url);
+    });
+
+    if (onProgress) {
+      const phase = 70 + Math.round(((index + 1) / Math.max(entries.length, 1)) * 15);
+      onProgress(Math.min(85, phase), 'Checking anime-specific casts...');
+    }
   }
 
-  if (onProgress) onProgress(100, 'Building dataset...');
-  buildDataset(anime);
+  return unresolved;
 }
 
 function resolveImage(char) {
-  if (char.img) return char.img;
+  if (char?.img) return char.img;
 
-  const cachedByName = getCachedNameImage(char.name);
-  if (cachedByName) {
-    return cachedByName;
-  }
+  const cachedByName = getCachedNameImage(char?.name);
+  if (cachedByName) return cachedByName;
 
-  if (char.anilist && IMG_CACHE[char.anilist]) {
+  if (char?.anilist && IMG_CACHE[char.anilist]) {
     const meta = META_CACHE[char.anilist];
     if (!meta?.name || isLikelyNameMatch(char.name, meta.name)) {
       return IMG_CACHE[char.anilist];
@@ -442,17 +609,89 @@ function getCachedImage(char) {
   return resolveImage(char);
 }
 
+async function loadImages(anime, onProgress) {
+  await ensureLocalDatasetLoaded();
+  primeAnimeFromLocalDataset(anime);
+  applyDatasetOverridesToAnime(anime);
+  normalizeAnimeRoster(anime);
+
+  const ids = anime.chars.map(char => char.anilist).filter(Boolean);
+
+  if (ids.length) {
+    try {
+      await fetchAniListBatch(ids, onProgress);
+    } catch (error) {
+      console.warn('AniList ID batch fetch failed', error);
+    }
+  } else if (onProgress) {
+    onProgress(70, 'No AniList IDs to resolve');
+  }
+
+  if (anime.id === 'allchars') {
+    if (onProgress) onProgress(100, 'Aggregate board ready');
+    buildDataset(anime);
+    return;
+  }
+
+  const unresolved = anime.chars
+    .filter(char => !resolveImage(char))
+    .map(char => ({
+      ref: char,
+      name: char.name,
+      anilist: char.anilist || null,
+      animeName: anime.name,
+    }));
+
+  const afterAnimeRoster = await fetchAniListByAnimeRoster(unresolved, onProgress);
+  const stillUnresolved = await fetchAniListByNameBatch(afterAnimeRoster);
+  let done = unresolved.length - stillUnresolved.length;
+
+  if (onProgress && unresolved.length) {
+    const phase = 70 + Math.round((done / unresolved.length) * 30);
+    onProgress(Math.min(100, phase), 'Recovering unresolved names...');
+  }
+
+  const concurrency = Math.min(2, stillUnresolved.length);
+  const queue = [...stillUnresolved];
+  const workers = Array.from({ length: concurrency }, async () => {
+    while (queue.length) {
+      const char = queue.pop();
+      if (!char) break;
+      await fetchAniListByName(char.name);
+      done += 1;
+      if (onProgress) {
+        const phase = 70 + Math.round((done / Math.max(unresolved.length, 1)) * 30);
+        onProgress(Math.min(100, phase), 'Recovering unresolved names...');
+      }
+    }
+  });
+
+  if (workers.length) {
+    await Promise.all(workers);
+  }
+
+  if (onProgress) onProgress(100, 'Dataset ready');
+  buildDataset(anime);
+}
+
 function buildDataset(anime) {
   DATASET_CACHE[anime.id] = anime.chars.map(char => {
     const image = resolveImage(char);
+    const sourceAnimeId = char._sourceAnimeId || anime.id;
+    const sourceAnimeName = char._sourceAnimeName || anime.name;
+    const meta = char.anilist ? META_CACHE[char.anilist] : null;
     return {
-      animeId: anime.id,
-      animeName: anime.name,
+      animeId: sourceAnimeId,
+      animeName: sourceAnimeName,
       id: char.anilist || char.mal || null,
+      anilist: char.anilist || null,
       provider: char.anilist ? 'anilist' : (char.mal ? 'mal' : 'custom'),
       name: char.name,
+      displayName: char.displayName || char.name,
+      resolvedName: meta?.name || null,
       image,
       hasImage: Boolean(image),
+      source: char.img ? 'curated' : (char.anilist ? 'anilist' : 'custom'),
     };
   });
 
@@ -487,7 +726,7 @@ function exportDataset(anime) {
   const url = URL.createObjectURL(blob);
   const link = document.createElement('a');
   link.href = url;
-  link.download = `${anime.id}-characters-dataset.json`;
+  link.download = `${anime.id}-entities-dataset.json`;
   document.body.appendChild(link);
   link.click();
   link.remove();

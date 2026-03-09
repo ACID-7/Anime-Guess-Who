@@ -1,1551 +1,7340 @@
-/**
- * data.js — Complete character rosters
- * Each char: { name, emoji, anilist, mal, img? }
- * img = direct URL override (highest priority, use for fan wikis)
- */
 const ANIMES = [
-
-/* ══════════════════════════════════════
-   NARUTO / NARUTO SHIPPUDEN (extended)
-══════════════════════════════════════ */
-{ id:'naruto', name:'Naruto & Shippuden', emoji:'🍥', color:'#f4a261', tags:['Ninja','Shonen'], chars:[
-  {name:'Naruto Uzumaki',         emoji:'🍥', anilist:17,     mal:17},
-  {name:'Sasuke Uchiha',          emoji:'⚡', anilist:13,     mal:13},
-  {name:'Sakura Haruno',          emoji:'🌸', anilist:22,     mal:22},
-  {name:'Kakashi Hatake',         emoji:'📖', anilist:85,     mal:85},
-  {name:'Itachi Uchiha',          emoji:'🪶', anilist:84,     mal:84},
-  {name:'Gaara',                  emoji:'🏜️', anilist:82,     mal:82},
-  {name:'Rock Lee',               emoji:'💪', anilist:89,     mal:89},
-  {name:'Hinata Hyuga',           emoji:'💜', anilist:87,     mal:87},
-  {name:'Neji Hyuga',             emoji:'👁️', anilist:90,     mal:90},
-  {name:'Minato Namikaze',        emoji:'✨', anilist:94,     mal:94},
-  {name:'Tsunade',                emoji:'💊', anilist:83,     mal:83},
-  {name:'Orochimaru',             emoji:'🐍', anilist:86,     mal:86},
-  {name:'Jiraiya',                emoji:'📚', anilist:88,     mal:88},
-  {name:'Shikamaru Nara',         emoji:'💤', anilist:93,     mal:93},
-  {name:'Obito Uchiha',           emoji:'🎭', anilist:91,     mal:91},
-  {name:'Pain / Nagato',          emoji:'🔮', anilist:92,     mal:92},
-  {name:'Konan',                  emoji:'📜', anilist:95,     mal:95},
-  {name:'Kabuto Yakushi',         emoji:'🐍', anilist:99,     mal:99},
-  {name:'Temari',                 emoji:'🌪️', anilist:100,    mal:100},
-  {name:'Kankuro',                emoji:'🎪', anilist:101,    mal:101},
-  {name:'Tenten',                 emoji:'💫', anilist:102,    mal:102},
-  {name:'Ino Yamanaka',           emoji:'🌺', anilist:103,    mal:103},
-  {name:'Choji Akimichi',         emoji:'🍖', anilist:104,    mal:104},
-  {name:'Kiba Inuzuka',           emoji:'🐕', anilist:105,    mal:105},
-  {name:'Shino Aburame',          emoji:'🐛', anilist:106,    mal:106},
-  {name:'Anko Mitarashi',         emoji:'🍡', anilist:107,    mal:107},
-  {name:'Kurenai Yuhi',           emoji:'🌹', anilist:108,    mal:108},
-  {name:'Asuma Sarutobi',         emoji:'🚬', anilist:109,    mal:109},
-  {name:'Might Guy',              emoji:'🔥', anilist:110,    mal:110},
-  {name:'Hiruzen Sarutobi',       emoji:'🔱', anilist:111,    mal:111},
-  {name:'Hashirama Senju',        emoji:'🌲', anilist:112,    mal:112},
-  {name:'Tobirama Senju',         emoji:'💧', anilist:113,    mal:113},
-  {name:'Madara Uchiha',          emoji:'👁️', anilist:114,    mal:114},
-  {name:'Killer Bee',             emoji:'🐝', anilist:116,    mal:116},
-  {name:'Mei Terumi',             emoji:'💧', anilist:117,    mal:117},
-  {name:'Fourth Raikage (A)',     emoji:'⚡', anilist:118,    mal:118},
-  {name:'Darui',                  emoji:'⚡', anilist:119,    mal:119},
-  {name:'Karin',                  emoji:'❤️', anilist:120,    mal:120},
-  {name:'Suigetsu Hozuki',        emoji:'💧', anilist:121,    mal:121},
-  {name:'Jugo',                   emoji:'🔴', anilist:122,    mal:122},
-  {name:'Sai',                    emoji:'🎨', anilist:123,    mal:123},
-  {name:'Yamato / Tenzo',         emoji:'🪵', anilist:124,    mal:124},
-  {name:'Deidara',                emoji:'💥', anilist:126,    mal:126},
-  {name:'Sasori',                 emoji:'🪆', anilist:127,    mal:127},
-  {name:'Hidan',                  emoji:'☠️', anilist:128,    mal:128},
-  {name:'Kakuzu',                 emoji:'🪡', anilist:129,    mal:129},
-  {name:'Kisame Hoshigaki',       emoji:'🦈', anilist:130,    mal:130},
-  {name:'Zetsu',                  emoji:'🌿', anilist:131,    mal:131},
-  {name:'Konohamaru Sarutobi',    emoji:'🍥', anilist:132,    mal:132},
-  {name:'Iruka Umino',            emoji:'🎓', anilist:135,    mal:135},
-  {name:'Kushina Uzumaki',        emoji:'❤️', anilist:140,    mal:140},
-  {name:'Mikoto Uchiha',          emoji:'🌸', anilist:141,    mal:141},
-  {name:'Fugaku Uchiha',          emoji:'👁️', anilist:142,    mal:142},
-  {name:'Dan Kato',               emoji:'💚', anilist:143,    mal:143},
-  {name:'Shisui Uchiha',          emoji:'⚡', anilist:145,    mal:145},
-  {name:'Kaguya Otsutsuki',       emoji:'🐇', anilist:147,    mal:147},
-  {name:'Hagoromo Otsutsuki',     emoji:'☯️', anilist:148,    mal:148},
-  {name:'Hamura Otsutsuki',       emoji:'🌙', anilist:149,    mal:149},
-  {name:'Toneri Otsutsuki',       emoji:'🌙', anilist:150,    mal:150},
-  {name:'Izuna Uchiha',           emoji:'👁️', anilist:146,    mal:146},
-  {name:'Utakata',                emoji:'🫧', anilist:152,    mal:152},
-  {name:'Yugito Nii',             emoji:'🐱', anilist:155,    mal:155},
-  {name:'Yagura Karatachi',       emoji:'🌊', anilist:156,    mal:156},
-  {name:'Chojuro',                emoji:'💧', anilist:158,    mal:158},
-  {name:'Ao',                     emoji:'💧', anilist:159,    mal:159},
-  {name:'Omoi',                   emoji:'⚡', anilist:160,    mal:160},
-  {name:'Karui',                  emoji:'⚡', anilist:161,    mal:161},
-  {name:'Samui',                  emoji:'❄️', anilist:162,    mal:162},
-  {name:'Ibiki Morino',           emoji:'🎓', anilist:139,    mal:139},
-  {name:'Genma Shiranui',         emoji:'🗡️', anilist:138,    mal:138},
-  {name:'Izumo Kamizuki',         emoji:'🌊', anilist:136,    mal:136},
-  {name:'Boruto Uzumaki',         emoji:'⚡', anilist:142880,  mal:142880},
-  {name:'Sarada Uchiha',          emoji:'🌸', anilist:142881,  mal:142881},
-  {name:'Mitsuki',                emoji:'🐍', anilist:142882,  mal:142882},
-  {name:'Kawaki',                 emoji:'🔥', anilist:142883,  mal:142883},
-  {name:'Himawari Uzumaki',       emoji:'🌻', anilist:142884,  mal:142884},
-  {name:'Shikadai Nara',          emoji:'💤', anilist:142885,  mal:142885},
-  {name:'Inojin Yamanaka',        emoji:'🎨', anilist:142886,  mal:142886},
-  {name:'Chocho Akimichi',        emoji:'🌸', anilist:142887,  mal:142887},
-  {name:'Mitsuki (Sage)',         emoji:'🐍', anilist:142888,  mal:142888},
-  {name:'Hanabi Hyuga',           emoji:'💜', anilist:163,    mal:163},
-  {name:'Moegi Kazamatsuri',      emoji:'🌿', anilist:164,    mal:164},
-  {name:'Udon Ise',               emoji:'🍜', anilist:165,    mal:165},
-  {name:'Ebisu',                  emoji:'🎓', anilist:166,    mal:166},
-  {name:'Nawaki',                 emoji:'🌀', anilist:144,    mal:144},
-  {name:'Biwako Sarutobi',        emoji:'👵', anilist:167,    mal:167},
-  {name:'Pakura',                 emoji:'🔥', anilist:168,    mal:168},
-  {name:'Gari',                   emoji:'💥', anilist:169,    mal:169},
-  {name:'Torune Aburame',         emoji:'🐛', anilist:170,    mal:170},
-  {name:'Fu Yamanaka',            emoji:'🌿', anilist:171,    mal:171},
-  {name:'Han',                    emoji:'♨️', anilist:153,    mal:153},
-  {name:'Roshi',                  emoji:'🔥', anilist:154,    mal:154},
-  {name:'Fu (Taki)',               emoji:'💚', anilist:157,    mal:157},
-  {name:'Mifune',                 emoji:'⚔️', anilist:172,    mal:172},
-  {name:'Darui (Raikage)',        emoji:'⚡', anilist:173,    mal:173},
-  {name:'Chojuro (Mizukage)',     emoji:'💧', anilist:174,    mal:174},
-  {name:'Kurotsuchi',             emoji:'🪨', anilist:175,    mal:175},
-  {name:'Oonoki',                 emoji:'🪨', anilist:176,    mal:176},
-  {name:'Akatsuchi',              emoji:'🪨', anilist:177,    mal:177},
-  // Extra classic Naruto era characters
-  {name:'Zabuza Momochi',         emoji:'🗡️', anilist:1675,  mal:1675},
-  {name:'Haku',                   emoji:'❄️', anilist:1676,  mal:1676},
-  {name:'Kimimaro',               emoji:'💀', anilist:2013,  mal:2013},
-  {name:'Jirobo',                 emoji:'🧱', anilist:2014,  mal:2014},
-  {name:'Kidomaru',               emoji:'🕷️', anilist:2015,  mal:2015},
-  {name:'Tayuya',                 emoji:'🎻', anilist:2016,  mal:2016},
-  {name:'Sakon & Ukon',           emoji:'⚔️', anilist:2017,  mal:2017},
-  {name:'Hidan (Pre-Akatsuki)',   emoji:'☠️', anilist:128,   mal:128},
-  {name:'Konohamaru (Kid)',       emoji:'🍥', anilist:132,   mal:132},
-  {name:'Iruka (Pre-Shippuden)',  emoji:'🎓', anilist:135,   mal:135},
-  // Additional supporting & war arc characters
-  {name:'Yahiko',                 emoji:'🌧️', anilist:29829, mal:29829},
-  {name:'Nagato (Child)',         emoji:'🌀', anilist:29830, mal:29830},
-  {name:'Killer B (Eight-Tails)', emoji:'🐝', anilist:116,   mal:116},
-  {name:'Chiyo',                  emoji:'🧵', anilist:2119,  mal:2119},
-  {name:'Sasori (Hiruko)',        emoji:'🪆', anilist:127,   mal:127},
-  {name:'Fuu',                    emoji:'🪶', anilist:2143,  mal:2143},
-  {name:'Darui (Fourth War)',     emoji:'⚡', anilist:173,   mal:173},
-  {name:'Inoichi Yamanaka',       emoji:'🧠', anilist:2150,  mal:2150},
-  {name:'Shikaku Nara',           emoji:'🧠', anilist:2151,  mal:2151},
-  {name:'Ao (War Doctor)',        emoji:'💧', anilist:159,   mal:159},
-  {name:'Muu',                    emoji:'🪨', anilist:2152,  mal:2152},
-  {name:'Gengetsu Hozuki',        emoji:'💧', anilist:2153,  mal:2153},
-  {name:'A (Third Raikage)',      emoji:'⚡', anilist:2154,  mal:2154},
-  {name:'Second Mizukage',        emoji:'🐠', anilist:2155,  mal:2155},
-  {name:'Second Tsuchikage',      emoji:'🪨', anilist:2156,  mal:2156},
-  {name:'Fourth Kazekage',        emoji:'🏜️', anilist:2157,  mal:2157},
-  {name:'Gaara (Kazekage)',       emoji:'🏜️', anilist:82,    mal:82},
-  {name:'Sasuke (Hebi)',          emoji:'⚡', anilist:13,    mal:13},
-  {name:'Naruto (Sage Mode)',     emoji:'🍥', anilist:17,    mal:17},
-  {name:'Naruto (Kurama Mode)',   emoji:'🍥', anilist:17,    mal:17},
-  {name:'Madara (Ten-Tails)',     emoji:'👁️', anilist:114,  mal:114},
-  {name:'Obito (Ten-Tails)',      emoji:'🎭', anilist:91,   mal:91},
-  {name:'Kakashi (Double Sharingan)', emoji:'📖', anilist:85, mal:85},
-  {name:'Sakura (War Arc)',       emoji:'🌸', anilist:22,   mal:22},
-]},
-
-/* ══════════════════════════════════════
-   JUJUTSU KAISEN (extended)
-══════════════════════════════════════ */
-{ id:'jjk', name:'Jujutsu Kaisen', emoji:'👊', color:'#7ec8e3', tags:['Cursed','Shonen'], chars:[
-  {name:'Yuji Itadori',           emoji:'👊', anilist:138259, mal:178461},
-  {name:'Megumi Fushiguro',       emoji:'🐕', anilist:138261, mal:178463},
-  {name:'Nobara Kugisaki',        emoji:'🔨', anilist:138262, mal:178464},
-  {name:'Satoru Gojo',            emoji:'🕶️', anilist:138260, mal:178462},
-  {name:'Ryomen Sukuna',          emoji:'👁️', anilist:138263, mal:178465},
-  {name:'Kento Nanami',           emoji:'👔', anilist:138264, mal:178466},
-  {name:'Aoi Todo',               emoji:'💪', anilist:138265, mal:178467},
-  {name:'Maki Zenin',             emoji:'⚔️', anilist:138267, mal:178469},
-  {name:'Mai Zenin',              emoji:'🔫', anilist:138268, mal:178470},
-  {name:'Toge Inumaki',           emoji:'🎵', anilist:138266, mal:178468},
-  {name:'Suguru Geto',            emoji:'😈', anilist:138269, mal:178471},
-  {name:'Yuta Okkotsu',           emoji:'⭐', anilist:138270, mal:178472},
-  {name:'Toji Fushiguro',         emoji:'🗡️', anilist:163907, mal:185829},
-  {name:'Choso',                  emoji:'🩸', anilist:163908, mal:185830},
-  {name:'Junpei Yoshino',         emoji:'🐟', anilist:163910, mal:185831},
-  {name:'Hanami',                 emoji:'🌿', anilist:163911, mal:185832},
-  {name:'Jogo',                   emoji:'🌋', anilist:163912, mal:185833},
-  {name:'Mahito',                 emoji:'😶', anilist:163913, mal:185834},
-  {name:'Dagon',                  emoji:'🌊', anilist:163914, mal:185835},
-  {name:'Panda',                  emoji:'🐼', anilist:163915, mal:185836},
-  {name:'Kasumi Miwa',            emoji:'🔵', anilist:163916, mal:185837},
-  {name:'Noritoshi Kamo',         emoji:'🏹', anilist:163917, mal:185838},
-  {name:'Utahime Iori',           emoji:'🎤', anilist:163918, mal:185839},
-  {name:'Mei Mei',                emoji:'💰', anilist:163919, mal:185840},
-  {name:'Masamichi Yaga',         emoji:'🎎', anilist:163920, mal:185841},
-  {name:'Naobito Zenin',          emoji:'⚡', anilist:163921, mal:185842},
-  {name:'Naoya Zenin',            emoji:'💢', anilist:163922, mal:185843},
-  {name:'Hiromi Higuruma',        emoji:'⚖️', anilist:209385, mal:220741},
-  {name:'Hakari Kinji',           emoji:'🎰', anilist:209386, mal:220742},
-  {name:'Yuki Tsukumo',           emoji:'⭐', anilist:209387, mal:220743},
-  {name:'Fumihiko Takaba',        emoji:'😂', anilist:209388, mal:220744},
-  {name:'Kusakabe',               emoji:'🚬', anilist:209389, mal:220745},
-  {name:'Uro Takako',             emoji:'🐉', anilist:209390, mal:220746},
-  {name:'Ryu Ishigori',           emoji:'⚡', anilist:209391, mal:220747},
-  {name:'Kenjaku',                emoji:'🧠', anilist:209392, mal:220748},
-  {name:'Uraume',                 emoji:'❄️', anilist:209393, mal:220749},
-  {name:'Kirara Hoshi',           emoji:'✨', anilist:209394, mal:220750},
-  {name:'Rika Orimoto',           emoji:'👻', anilist:209395, mal:220751},
-  {name:'Tsumiki Fushiguro',      emoji:'🌸', anilist:209401, mal:220757},
-  {name:'Gakuganji',              emoji:'🎸', anilist:209402, mal:220758},
-  {name:'Ijichi Akari',           emoji:'📋', anilist:209403, mal:220759},
-  {name:'Hana Kurusu',            emoji:'✝️', anilist:209399, mal:220755},
-  {name:'Shiu Kong',              emoji:'🤝', anilist:209405, mal:220761},
-  {name:'Atsuya Kusakabe',        emoji:'🚬', anilist:209404, mal:220760},
-  {name:'Ogami',                  emoji:'💀', anilist:209397, mal:220753},
-  {name:'Reggie Star',            emoji:'📜', anilist:209406, mal:220762},
-  {name:'Iori Hazenoki',          emoji:'💣', anilist:209398, mal:220754},
-  {name:'Mimiko Hasaba',          emoji:'🩸', anilist:209407, mal:220763},
-  {name:'Nanako Hasaba',          emoji:'🩸', anilist:209408, mal:220764},
-  {name:'Ui Ui',                  emoji:'💰', anilist:209409, mal:220765},
-  {name:'Okkotsu (0)',            emoji:'⭐', anilist:138271, mal:178473},
-  {name:'Kokichi Muta',           emoji:'🤖', anilist:163923, mal:185844},
-  {name:'Arata Nitta',            emoji:'🩺', anilist:163924, mal:185845},
-  {name:'Niji Ebina',             emoji:'💧', anilist:163925, mal:185846},
-  {name:'Takuma Ino',             emoji:'🌸', anilist:163926, mal:185847},
-  {name:'Nobara (Suspended)',     emoji:'🔨', anilist:209410, mal:220766},
-  // Extra Kyoto & minor sorcerers / curses
-  {name:'Mai (Kyoto Uniform)',    emoji:'🔫', anilist:138268, mal:178470},
-  {name:'Momo Nishimiya',         emoji:'🧹', anilist:163927, mal:185848},
-  {name:'Aoi Todo (Exchange)',    emoji:'💪', anilist:138265, mal:178467},
-  {name:'Kasumi Miwa (Kyoto)',    emoji:'🔵', anilist:163916, mal:185837},
-  {name:'Noritoshi Kamo (Kyoto)', emoji:'🏹', anilist:163917, mal:185838},
-  {name:'Mei Mei (Bird Strike)',  emoji:'💰', anilist:163919, mal:185840},
-  {name:'Ui Ui (Escort)',         emoji:'💰', anilist:209409, mal:220765},
-  {name:'Nanami (Salaryman)',     emoji:'👔', anilist:138264, mal:178466},
-  {name:'Itadori (Black Flash)',  emoji:'👊', anilist:138259, mal:178461},
-  {name:'Gojo (Student)',         emoji:'🕶️', anilist:138260, mal:178462},
-  {name:'Geto (Student)',         emoji:'😈', anilist:138269, mal:178471},
-  {name:'Yu Haibara',             emoji:'😊', anilist:209411, mal:220767},
-  {name:'Jin Itadori',            emoji:'🧢', anilist:209412, mal:220768},
-  {name:'Kaori Itadori',          emoji:'🌸', anilist:209413, mal:220769},
-]},
-
-/* ══════════════════════════════════════
-   MY HERO ACADEMIA (extended)
-══════════════════════════════════════ */
-{ id:'mha', name:'My Hero Academia', emoji:'💥', color:'#e63946', tags:['Quirks','Shonen'], chars:[
-  {name:'Izuku Midoriya',         emoji:'💚', anilist:93881,  mal:152222},
-  {name:'Katsuki Bakugo',         emoji:'💥', anilist:93882,  mal:152223},
-  {name:'Shoto Todoroki',         emoji:'❄️', anilist:93883,  mal:152224},
-  {name:'All Might',              emoji:'💪', anilist:93884,  mal:152225},
-  {name:'Ochaco Uraraka',         emoji:'🌸', anilist:93885,  mal:152226},
-  {name:'Tenya Iida',             emoji:'⚙️', anilist:93886,  mal:152227},
-  {name:'Himiko Toga',            emoji:'🩸', anilist:93887,  mal:152228},
-  {name:'Eijiro Kirishima',       emoji:'🪨', anilist:93888,  mal:152229},
-  {name:'Momo Yaoyorozu',         emoji:'💎', anilist:93889,  mal:152230},
-  {name:'Denki Kaminari',         emoji:'⚡', anilist:93890,  mal:152231},
-  {name:'Tomura Shigaraki',       emoji:'🖐️', anilist:93891,  mal:152232},
-  {name:'Endeavor',               emoji:'🔥', anilist:93892,  mal:152233},
-  {name:'Hawks',                  emoji:'🦅', anilist:118269, mal:168492},
-  {name:'Shota Aizawa',           emoji:'🎀', anilist:93893,  mal:152234},
-  {name:'Hizashi Yamada',         emoji:'📢', anilist:93894,  mal:152235},
-  {name:'Dabi',                   emoji:'🔵', anilist:93896,  mal:152237},
-  {name:'Twice',                  emoji:'🃏', anilist:93897,  mal:152238},
-  {name:'Spinner',                emoji:'🦎', anilist:93898,  mal:152239},
-  {name:'Mr. Compress',           emoji:'🎩', anilist:93899,  mal:152240},
-  {name:'Gang Orca',              emoji:'🐋', anilist:93902,  mal:152243},
-  {name:'Midnight',               emoji:'🌙', anilist:93903,  mal:152244},
-  {name:'Fat Gum',                emoji:'🍬', anilist:93904,  mal:152245},
-  {name:'Mirio Togata',           emoji:'💛', anilist:118270, mal:168493},
-  {name:'Tamaki Amajiki',         emoji:'🐙', anilist:118271, mal:168494},
-  {name:'Nejire Hado',            emoji:'💙', anilist:118272, mal:168495},
-  {name:'Eri',                    emoji:'🦄', anilist:118273, mal:168496},
-  {name:'Overhaul',               emoji:'🦠', anilist:118274, mal:168497},
-  {name:'Re-Destro',              emoji:'😤', anilist:131697, mal:177341},
-  {name:'Mirko',                  emoji:'🐰', anilist:131698, mal:177342},
-  {name:'Fumikage Tokoyami',      emoji:'🐦', anilist:93905,  mal:152246},
-  {name:'Kyoka Jiro',             emoji:'🎵', anilist:93906,  mal:152247},
-  {name:'Tsuyu Asui',             emoji:'🐸', anilist:93907,  mal:152248},
-  {name:'Mezo Shoji',             emoji:'🐙', anilist:93908,  mal:152249},
-  {name:'Mashirao Ojiro',         emoji:'🐒', anilist:93909,  mal:152250},
-  {name:'Minoru Mineta',          emoji:'🍇', anilist:93910,  mal:152251},
-  {name:'Yuga Aoyama',            emoji:'✨', anilist:93911,  mal:152252},
-  {name:'Hanta Sero',             emoji:'🕷️', anilist:93912,  mal:152253},
-  {name:'Rikido Sato',            emoji:'🍰', anilist:93913,  mal:152254},
-  {name:'Koji Koda',              emoji:'🐾', anilist:93914,  mal:152255},
-  {name:'Tooru Hagakure',         emoji:'👻', anilist:93915,  mal:152256},
-  {name:'Hitoshi Shinso',         emoji:'💜', anilist:93916,  mal:152257},
-  {name:'Stain',                  emoji:'🗡️', anilist:93917,  mal:152258},
-  {name:'All For One',            emoji:'😈', anilist:93918,  mal:152259},
-  {name:'Gran Torino',            emoji:'👴', anilist:93919,  mal:152260},
-  {name:'Recovery Girl',          emoji:'💉', anilist:93921,  mal:152262},
-  {name:'Cementoss',              emoji:'🧱', anilist:93922,  mal:152263},
-  {name:'Vlad King',              emoji:'🩸', anilist:93923,  mal:152264},
-  {name:'Snipe',                  emoji:'🎯', anilist:93924,  mal:152265},
-  {name:'Power Loader',           emoji:'⚙️', anilist:93925,  mal:152266},
-  {name:'Thirteen',               emoji:'🌌', anilist:93926,  mal:152267},
-  {name:'Inasa Yoarashi',         emoji:'🌪️', anilist:93928,  mal:152269},
-  {name:'Camie Utsushimi',        emoji:'💋', anilist:93929,  mal:152270},
-  {name:'Seiji Shishikura',       emoji:'🍖', anilist:93930,  mal:152271},
-  {name:'Muscular',               emoji:'💪', anilist:93932,  mal:152273},
-  {name:'Moonfish',               emoji:'🌕', anilist:93933,  mal:152274},
-  {name:'Magne',                  emoji:'🧲', anilist:93934,  mal:152275},
-  {name:'Gentle Criminal',        emoji:'🫖', anilist:93936,  mal:152277},
-  {name:'La Brava',               emoji:'💕', anilist:93937,  mal:152278},
-  {name:'Gigantomachia',          emoji:'💪', anilist:93939,  mal:152280},
-  {name:'Kurogiri',               emoji:'🌫️', anilist:93940,  mal:152281},
-  {name:'Nana Shimura',           emoji:'💚', anilist:93942,  mal:152283},
-  {name:'Mei Hatsume',            emoji:'🔧', anilist:93943,  mal:152284},
-  {name:'Uwabami',                emoji:'🐍', anilist:93944,  mal:152285},
-  {name:'Mt. Lady',               emoji:'💅', anilist:93945,  mal:152286},
-  {name:'Kamui Woods',            emoji:'🌲', anilist:93946,  mal:152287},
-  {name:'Present Mic',            emoji:'📢', anilist:93894,  mal:152235},
-  {name:'Edgeshot',               emoji:'🌀', anilist:93947,  mal:152288},
-  {name:'Best Jeanist',           emoji:'👖', anilist:93948,  mal:152289},
-  {name:'Ryukyu',                 emoji:'🐉', anilist:93949,  mal:152290},
-  {name:'Wash',                   emoji:'👕', anilist:93950,  mal:152291},
-  {name:'Pixie-Bob',              emoji:'🐱', anilist:93951,  mal:152292},
-  {name:'Ragdoll',                emoji:'🐱', anilist:93952,  mal:152293},
-  {name:'Mandalay',               emoji:'🐱', anilist:93953,  mal:152294},
-  {name:'Tiger (Pussycats)',      emoji:'🐯', anilist:93954,  mal:152295},
-  {name:'Star and Stripe',        emoji:'🇺🇸', anilist:93955,  mal:152296},
-  {name:'Lady Nagant',            emoji:'🔫', anilist:93956,  mal:152297},
-  {name:'Deku (Final)',           emoji:'💚', anilist:93957,  mal:152298},
-  {name:'AfO (True Form)',        emoji:'😈', anilist:93958,  mal:152299},
-  {name:'Spinner (Mutated)',      emoji:'🦎', anilist:93959,  mal:152300},
-  // Extra Class 1-B, pros, and villains
-  {name:'Itsuka Kendo',           emoji:'🖐️', anilist:118275, mal:168498},
-  {name:'Tetsutetsu Tetsutetsu',  emoji:'🪨', anilist:118276, mal:168499},
-  {name:'Neito Monoma',           emoji:'🃏', anilist:118277, mal:168500},
-  {name:'Yosetsu Awase',          emoji:'🔧', anilist:118278, mal:168501},
-  {name:'Ibara Shiozaki',         emoji:'🌿', anilist:118279, mal:168502},
-  {name:'Jurota Shishida',        emoji:'🐻', anilist:118280, mal:168503},
-  {name:'Sen Kaibara',            emoji:'🌀', anilist:118281, mal:168504},
-  {name:'Reiko Yanagi',           emoji:'👻', anilist:118282, mal:168505},
-  {name:'Hitoshi Shinso (Hero Course)', emoji:'💜', anilist:93916, mal:152257},
-  {name:'Ragdoll (Quirkless)',    emoji:'🐱', anilist:93952,  mal:152293},
-  {name:'Kendo Rappa',            emoji:'🥊', anilist:131699, mal:177343},
-  {name:'Kurono Hari (Chronostasis)', emoji:'⌛', anilist:131700, mal:177344},
-  {name:'Gentle (Pre-Raid)',      emoji:'🫖', anilist:93936,  mal:152277},
-  {name:'La Brava (Final Arc)',   emoji:'💕', anilist:93937,  mal:152278},
-  {name:'Nine',                   emoji:'⚡', anilist:131701, mal:177345},
-  {name:'Mahoro Shimano',         emoji:'🎈', anilist:131702, mal:177346},
-  {name:'Katsuma Shimano',        emoji:'🌈', anilist:131703, mal:177347},
-  {name:'Star and Stripe (Final)',emoji:'🇺🇸', anilist:93955,  mal:152296},
-]},
-
-/* ══════════════════════════════════════
-   ATTACK ON TITAN (all 4 seasons)
-══════════════════════════════════════ */
-{ id:'aot', name:'Attack on Titan', emoji:'⚔️', color:'#8ecae6', tags:['Dark','Action'], chars:[
-  {name:'Eren Yeager',            emoji:'⚔️', anilist:40882, mal:40882},
-  {name:'Mikasa Ackerman',        emoji:'🧣', anilist:40881, mal:40881},
-  {name:'Levi Ackerman',          emoji:'🫡', anilist:40883, mal:40883},
-  {name:'Armin Arlert',           emoji:'💡', anilist:40884, mal:40884},
-  {name:'Erwin Smith',            emoji:'📜', anilist:40885, mal:40885},
-  {name:'Hange Zoë',              emoji:'🔬', anilist:40886, mal:40886},
-  {name:'Reiner Braun',           emoji:'🛡️', anilist:40887, mal:40887},
-  {name:'Annie Leonhart',         emoji:'❄️', anilist:40888, mal:40888},
-  {name:'Jean Kirstein',          emoji:'🐴', anilist:40889, mal:40889},
-  {name:'Historia Reiss',         emoji:'👑', anilist:40890, mal:40890},
-  {name:'Connie Springer',        emoji:'🌾', anilist:40891, mal:40891},
-  {name:'Sasha Blouse',           emoji:'🍖', anilist:40892, mal:40892},
-  {name:'Bertholdt Hoover',       emoji:'😰', anilist:40893, mal:40893},
-  {name:'Ymir',                   emoji:'🦴', anilist:40894, mal:40894},
-  {name:'Mike Zacharias',         emoji:'👃', anilist:40895, mal:40895},
-  {name:'Petra Ral',              emoji:'🌸', anilist:40896, mal:40896},
-  {name:'Oluo Bozado',            emoji:'😏', anilist:40897, mal:40897},
-  {name:'Gunther Schultz',        emoji:'⚔️', anilist:40898, mal:40898},
-  {name:'Eld Jinn',               emoji:'⚔️', anilist:40899, mal:40899},
-  {name:'Floch Forster',          emoji:'😡', anilist:85370, mal:85370},
-  {name:'Pieck Finger',           emoji:'🛒', anilist:85371, mal:85371},
-  {name:'Porco Galliard',         emoji:'😤', anilist:85372, mal:85372},
-  {name:'Zeke Yeager',            emoji:'⚾', anilist:85373, mal:85373},
-  {name:'Colt Grice',             emoji:'😟', anilist:85374, mal:85374},
-  {name:'Gabi Braun',             emoji:'🔫', anilist:85375, mal:85375},
-  {name:'Falco Grice',            emoji:'🦅', anilist:85376, mal:85376},
-  {name:'Yelena',                 emoji:'🌊', anilist:85377, mal:85377},
-  {name:'Onyankopon',             emoji:'🙏', anilist:85378, mal:85378},
-  {name:'Nile Dok',               emoji:'🎖️', anilist:85379, mal:85379},
-  {name:'Dot Pyxis',              emoji:'🥃', anilist:85380, mal:85380},
-  {name:'Keith Shadis',           emoji:'😤', anilist:85381, mal:85381},
-  {name:'Rod Reiss',              emoji:'👑', anilist:85382, mal:85382},
-  {name:'Kenny Ackerman',         emoji:'🔫', anilist:85383, mal:85383},
-  {name:'Dina Fritz',             emoji:'👑', anilist:85384, mal:85384},
-  {name:'Grisha Yeager',          emoji:'📖', anilist:85385, mal:85385},
-  {name:'Carla Yeager',           emoji:'🌸', anilist:85386, mal:85386},
-  {name:'Isabel Magnolia',        emoji:'🌻', anilist:85389, mal:85389},
-  {name:'Furlan Church',          emoji:'😎', anilist:85390, mal:85390},
-  {name:'Moblit Berner',          emoji:'📋', anilist:85391, mal:85391},
-  {name:'Louise',                 emoji:'💙', anilist:85392, mal:85392},
-  {name:'Hitch Dreyse',           emoji:'😊', anilist:85398, mal:85398},
-  {name:'Marlowe Freudenberg',    emoji:'😇', anilist:85399, mal:85399},
-  {name:'Daz',                    emoji:'💢', anilist:85393, mal:85393},
-  {name:'Samuel Linke-Jackson',   emoji:'😮', anilist:85394, mal:85394},
-  {name:'Nifa',                   emoji:'🧢', anilist:85395, mal:85395},
-  {name:'Ilse Langnar',           emoji:'📔', anilist:85388, mal:85388},
-  {name:'Thomas Wagner',          emoji:'😮', anilist:85401, mal:85401},
-  {name:'Mina Ashley',            emoji:'🌸', anilist:85402, mal:85402},
-  {name:'Dita Ness',              emoji:'⚙️', anilist:85403, mal:85403},
-  {name:'Surma',                  emoji:'💙', anilist:85404, mal:85404},
-  {name:'Eld Jinn (Sr)',          emoji:'⚔️', anilist:85405, mal:85405},
-  {name:'Zofia',                  emoji:'😐', anilist:85406, mal:85406},
-  {name:'Udo',                    emoji:'😅', anilist:85407, mal:85407},
-  {name:'Marcel Galliard',        emoji:'😇', anilist:85408, mal:85408},
-  {name:'Theo Magath',            emoji:'🎖️', anilist:85409, mal:85409},
-  {name:'Willy Tybur',            emoji:'🎭', anilist:85410, mal:85410},
-  {name:'Lara Tybur',             emoji:'🎭', anilist:85411, mal:85411},
-]},
-
-/* ══════════════════════════════════════
-   ONE PIECE (through Egghead)
-══════════════════════════════════════ */
-{ id:'onepiece', name:'One Piece', emoji:'🏴‍☠️', color:'#ffd166', tags:['Pirates','Adventure'], chars:[
-  {name:'Monkey D. Luffy',        emoji:'🍖', anilist:37,     mal:37},
-  {name:'Roronoa Zoro',           emoji:'🗡️', anilist:38,     mal:38},
-  {name:'Nami',                   emoji:'🍊', anilist:39,     mal:39},
-  {name:'Usopp',                  emoji:'🏹', anilist:40,     mal:40},
-  {name:'Vinsmoke Sanji',         emoji:'🦵', anilist:41,     mal:41},
-  {name:'Tony Tony Chopper',      emoji:'🦌', anilist:42,     mal:42},
-  {name:'Nico Robin',             emoji:'📚', anilist:43,     mal:43},
-  {name:'Franky',                 emoji:'🤖', anilist:44,     mal:44},
-  {name:'Brook',                  emoji:'💀', anilist:45,     mal:45},
-  {name:'Jinbe',                  emoji:'🐟', anilist:46,     mal:46},
-  {name:'Trafalgar Law',          emoji:'💊', anilist:50,     mal:50},
-  {name:'Portgas D. Ace',         emoji:'🔥', anilist:51,     mal:51},
-  {name:'Sabo',                   emoji:'🎩', anilist:52,     mal:52},
-  {name:'Shanks',                 emoji:'⚓', anilist:53,     mal:53},
-  {name:'Dracule Mihawk',         emoji:'🗡️', anilist:54,     mal:54},
-  {name:'Boa Hancock',            emoji:'🐍', anilist:55,     mal:55},
-  {name:'Monkey D. Garp',         emoji:'👴', anilist:56,     mal:56},
-  {name:'Silvers Rayleigh',       emoji:'⚡', anilist:57,     mal:57},
-  {name:'Coby',                   emoji:'🎖️', anilist:58,     mal:58},
-  {name:'Smoker',                 emoji:'💨', anilist:59,     mal:59},
-  {name:'Tashigi',                emoji:'🗡️', anilist:60,     mal:60},
-  {name:'Crocodile',              emoji:'🐊', anilist:61,     mal:61},
-  {name:'Donquixote Doflamingo',  emoji:'🕊️', anilist:62,     mal:62},
-  {name:'Charlotte Katakuri',     emoji:'🍩', anilist:63,     mal:63},
-  {name:'Kaido',                  emoji:'🐉', anilist:64,     mal:64},
-  {name:'Charlotte Linlin',       emoji:'👑', anilist:65,     mal:65},
-  {name:'Marshall D. Teach',      emoji:'😈', anilist:66,     mal:66},
-  {name:'Edward Newgate',         emoji:'🌊', anilist:67,     mal:67},
-  {name:'Enel',                   emoji:'⚡', anilist:68,     mal:68},
-  {name:'Rob Lucci',              emoji:'🐆', anilist:69,     mal:69},
-  {name:'Borsalino (Kizaru)',     emoji:'⚡', anilist:70,     mal:70},
-  {name:'Kuzan (Aokiji)',         emoji:'❄️', anilist:71,     mal:71},
-  {name:'Sakazuki (Akainu)',      emoji:'🌋', anilist:72,     mal:72},
-  {name:'Buggy',                  emoji:'🤡', anilist:73,     mal:73},
-  {name:'Arlong',                 emoji:'🦈', anilist:74,     mal:74},
-  {name:'Perona',                 emoji:'👻', anilist:75,     mal:75},
-  {name:'Nefertari Vivi',         emoji:'👑', anilist:76,     mal:76},
-  {name:'Carrot',                 emoji:'🥕', anilist:77,     mal:77},
-  {name:'Yamato',                 emoji:'🐉', anilist:163820, mal:163820},
-  {name:'Eustass Kid',            emoji:'🔩', anilist:163825, mal:163825},
-  {name:'Killer',                 emoji:'⚔️', anilist:163824, mal:163824},
-  {name:'Basil Hawkins',          emoji:'🃏', anilist:163826, mal:163826},
-  {name:'Jewelry Bonney',         emoji:'🍕', anilist:163829, mal:163829},
-  {name:'Capone Bege',            emoji:'🏰', anilist:163828, mal:163828},
-  {name:'X Drake',                emoji:'🦕', anilist:163823, mal:163823},
-  {name:'Scratchmen Apoo',        emoji:'🎵', anilist:163827, mal:163827},
-  {name:'Gecko Moria',            emoji:'🦇', anilist:163831, mal:163831},
-  {name:'Bartholomew Kuma',       emoji:'🐻', anilist:163832, mal:163832},
-  {name:'Emporio Ivankov',        emoji:'💉', anilist:163833, mal:163833},
-  {name:'Monkey D. Dragon',       emoji:'🐉', anilist:163834, mal:163834},
-  {name:'Donquixote Corazon',     emoji:'🚬', anilist:163835, mal:163835},
-  {name:'Caesar Clown',           emoji:'🧪', anilist:163836, mal:163836},
-  {name:'Monet',                  emoji:'❄️', anilist:163838, mal:163838},
-  {name:'Sugar',                  emoji:'🍬', anilist:163839, mal:163839},
-  {name:'Viola / Violet',         emoji:'💜', anilist:163843, mal:163843},
-  {name:'Rebecca',                emoji:'⚔️', anilist:163844, mal:163844},
-  {name:'Cavendish',              emoji:'🌹', anilist:163845, mal:163845},
-  {name:'Bartolomeo',             emoji:'🤘', anilist:163846, mal:163846},
-  {name:'Kyros',                  emoji:'⚔️', anilist:163848, mal:163848},
-  {name:'Charlotte Smoothie',     emoji:'🧃', anilist:163852, mal:163852},
-  {name:'Charlotte Cracker',      emoji:'🍪', anilist:163853, mal:163853},
-  {name:'Charlotte Perospero',    emoji:'🍭', anilist:163854, mal:163854},
-  {name:'Vinsmoke Reiju',         emoji:'🕷️', anilist:163856, mal:163856},
-  {name:'Jack',                   emoji:'🦷', anilist:163858, mal:163858},
-  {name:'Queen',                  emoji:'🎸', anilist:163859, mal:163859},
-  {name:'King',                   emoji:'🦅', anilist:163860, mal:163860},
-  {name:'Ulti',                   emoji:'🦕', anilist:163821, mal:163821},
-  {name:'Black Maria',            emoji:'🕷️', anilist:163862, mal:163862},
-  {name:'Kin\'emon',              emoji:'🦊', anilist:163865, mal:163865},
-  {name:'Momonosuke',             emoji:'🐉', anilist:163866, mal:163866},
-  {name:'Tama',                   emoji:'🍡', anilist:163867, mal:163867},
-  {name:'Hiyori',                 emoji:'🎻', anilist:163868, mal:163868},
-  {name:'Gol D. Roger',           emoji:'👑', anilist:163872, mal:163872},
-  {name:'Fujitora (Issho)',        emoji:'🎲', anilist:163877, mal:163877},
-  {name:'Ryokugyu (Aramaki)',      emoji:'🌿', anilist:163876, mal:163876},
-  {name:'Shanks (Battle)',        emoji:'⚔️', anilist:163879, mal:163879},
-  {name:'Nefertari Cobra',        emoji:'🐍', anilist:163880, mal:163880},
-  {name:'Bon Clay / Mr. 2',       emoji:'🦢', anilist:163884, mal:163884},
-  {name:'Helmeppo',               emoji:'⚔️', anilist:163871, mal:163871},
-  {name:'Imu',                    emoji:'👑', anilist:163874, mal:163874},
-  {name:'Pell',                   emoji:'🦅', anilist:163882, mal:163882},
-  {name:'Chaka',                  emoji:'🐺', anilist:163883, mal:163883},
-  {name:'Igaram',                 emoji:'🎺', anilist:163881, mal:163881},
-  {name:'Nami (Pre-skip)',        emoji:'🗺️', anilist:39,     mal:39},
-  {name:'Crocodile (Alabasta)',   emoji:'🐊', anilist:61,     mal:61},
-  {name:'Big Mom (Young)',        emoji:'🎂', anilist:163863, mal:163863},
-  {name:'Luffy (Gear 5)',         emoji:'☁️', anilist:163864, mal:163864},
-  {name:'Rayleigh (Young)',       emoji:'⚡', anilist:163870, mal:163870},
-  {name:'Buggy the Star Clown',   emoji:'🤡', anilist:163869, mal:163869},
-  {name:'Vegapunk (Stella)',       emoji:'🧠', anilist:163885, mal:163885},
-  {name:'Vegapunk Lilith',        emoji:'💀', anilist:163886, mal:163886},
-  {name:'Vegapunk Edison',        emoji:'💡', anilist:163887, mal:163887},
-  {name:'Vegapunk Pythagoras',    emoji:'🔢', anilist:163888, mal:163888},
-  {name:'Vegapunk Atlas',         emoji:'👊', anilist:163889, mal:163889},
-  {name:'Vegapunk York',          emoji:'😴', anilist:163890, mal:163890},
-  {name:'Vegapunk Shaka',         emoji:'🕊️', anilist:163891, mal:163891},
-  {name:'Kizaru (Borsalino)',     emoji:'⚡', anilist:163892, mal:163892},
-  {name:'Saint Jaygarcia Saturn', emoji:'🦂', anilist:163893, mal:163893},
-  {name:'Stussy',                 emoji:'👩', anilist:163894, mal:163894},
-]},
-
-/* ══════════════════════════════════════
-   DEMON SLAYER (all arcs)
-══════════════════════════════════════ */
-{ id:'demonslayer', name:'Demon Slayer', emoji:'🌸', color:'#ef476f', tags:['Demons','Taisho'], chars:[
-  {name:'Tanjiro Kamado',         emoji:'🌊', anilist:124701, mal:163268},
-  {name:'Nezuko Kamado',          emoji:'🎍', anilist:124702, mal:163269},
-  {name:'Zenitsu Agatsuma',       emoji:'⚡', anilist:124703, mal:163270},
-  {name:'Inosuke Hashibira',      emoji:'🐗', anilist:124704, mal:163271},
-  {name:'Giyu Tomioka',           emoji:'💧', anilist:124705, mal:163272},
-  {name:'Shinobu Kocho',          emoji:'🦋', anilist:124706, mal:163273},
-  {name:'Kyojuro Rengoku',        emoji:'🔥', anilist:124707, mal:163274},
-  {name:'Tengen Uzui',            emoji:'💎', anilist:124708, mal:163275},
-  {name:'Mitsuri Kanroji',        emoji:'💕', anilist:124709, mal:163276},
-  {name:'Obanai Iguro',           emoji:'🐍', anilist:124710, mal:163277},
-  {name:'Muichiro Tokito',        emoji:'🌫️', anilist:124711, mal:163278},
-  {name:'Sanemi Shinazugawa',     emoji:'💨', anilist:124712, mal:163279},
-  {name:'Gyomei Himejima',        emoji:'💪', anilist:124713, mal:163280},
-  {name:'Kanao Tsuyuri',          emoji:'🌸', anilist:124714, mal:163281},
-  {name:'Aoi Kanzaki',            emoji:'💧', anilist:124715, mal:163282},
-  {name:'Genya Shinazugawa',      emoji:'💢', anilist:124716, mal:163283},
-  {name:'Muzan Kibutsuji',        emoji:'🌙', anilist:124717, mal:163284},
-  {name:'Akaza',                  emoji:'🔴', anilist:124718, mal:163285},
-  {name:'Doma',                   emoji:'❄️', anilist:124719, mal:163286},
-  {name:'Kokushibo',              emoji:'☪️', anilist:124720, mal:163287},
-  {name:'Hantengu',               emoji:'😱', anilist:124721, mal:163288},
-  {name:'Gyokko',                 emoji:'🐟', anilist:124722, mal:163289},
-  {name:'Kaigaku',                emoji:'⚡', anilist:124723, mal:163290},
-  {name:'Nakime',                 emoji:'🎻', anilist:124724, mal:163291},
-  {name:'Daki',                   emoji:'💄', anilist:124725, mal:163292},
-  {name:'Gyutaro',                emoji:'☠️', anilist:124726, mal:163293},
-  {name:'Enmu',                   emoji:'😴', anilist:124727, mal:163294},
-  {name:'Rui',                    emoji:'🕷️', anilist:124728, mal:163295},
-  {name:'Yoriichi Tsugikuni',     emoji:'☀️', anilist:124729, mal:163296},
-  {name:'Kagaya Ubuyashiki',      emoji:'🌸', anilist:124730, mal:163297},
-  {name:'Sakonji Urokodaki',      emoji:'🦊', anilist:124731, mal:163298},
-  {name:'Jigoro Kuwajima',        emoji:'⚡', anilist:124732, mal:163299},
-  {name:'Makomo',                 emoji:'🌊', anilist:124733, mal:163300},
-  {name:'Sabito',                 emoji:'🐟', anilist:124734, mal:163301},
-  {name:'Kanae Kocho',            emoji:'🌸', anilist:124735, mal:163302},
-  {name:'Senjuro Rengoku',        emoji:'🔥', anilist:124736, mal:163303},
-  {name:'Shinjuro Rengoku',       emoji:'🔥', anilist:124737, mal:163304},
-  {name:'Suma',                   emoji:'💃', anilist:124738, mal:163305},
-  {name:'Makio',                  emoji:'💃', anilist:124739, mal:163306},
-  {name:'Hinatsuru',              emoji:'💃', anilist:124740, mal:163307},
-  {name:'Hotaru Haganezuka',      emoji:'🔨', anilist:124741, mal:163308},
-  {name:'Goto',                   emoji:'😊', anilist:124742, mal:163309},
-  {name:'Tamayo',                 emoji:'🌙', anilist:124743, mal:163310},
-  {name:'Yushiro',                emoji:'💜', anilist:124744, mal:163311},
-  {name:'Susamaru',               emoji:'🎱', anilist:124745, mal:163312},
-  {name:'Yahaba',                 emoji:'👁️', anilist:124746, mal:163313},
-  {name:'Aizetsu',                emoji:'😔', anilist:124752, mal:163319},
-  {name:'Sekido',                 emoji:'😡', anilist:124753, mal:163320},
-  {name:'Urogi',                  emoji:'🦅', anilist:124754, mal:163321},
-  {name:'Karaku',                 emoji:'😄', anilist:124755, mal:163322},
-  {name:'Muichiro (Young)',       emoji:'🌫️', anilist:124758, mal:163325},
-  {name:'Yuichiro Tokito',        emoji:'💢', anilist:124759, mal:163326},
-  {name:'Hairo',                  emoji:'💢', anilist:124760, mal:163327},
-  {name:'Wakuraba',               emoji:'💀', anilist:124761, mal:163328},
-  {name:'Mukago',                 emoji:'😨', anilist:124762, mal:163329},
-  {name:'Rokuro',                 emoji:'😰', anilist:124763, mal:163330},
-  {name:'Kamanue',                emoji:'😱', anilist:124764, mal:163331},
-  {name:'Gyokko (Released)',      emoji:'🐡', anilist:124765, mal:163332},
-  {name:'Tanjiro (Demon)',        emoji:'🌙', anilist:124766, mal:163333},
-  {name:'Tomioka (Young)',        emoji:'💧', anilist:124767, mal:163334},
-  {name:'Zenitsu (Thunder God)', emoji:'⚡', anilist:124768, mal:163335},
-  {name:'Inosuke (Post-battle)', emoji:'🐗', anilist:124769, mal:163336},
-]},
-
-/* ══════════════════════════════════════
-   DRAGON BALL Z / SUPER / GT
-══════════════════════════════════════ */
-{ id:'dragonball', name:'Dragon Ball Z', emoji:'🐉', color:'#ffc43d', tags:['Saiyan','Ki'], chars:[
-  {name:'Son Goku',               emoji:'🐉', anilist:246,    mal:246},
-  {name:'Vegeta',                 emoji:'👑', anilist:247,    mal:247},
-  {name:'Son Gohan',              emoji:'📚', anilist:248,    mal:248},
-  {name:'Piccolo',                emoji:'💚', anilist:249,    mal:249},
-  {name:'Frieza',                 emoji:'👑', anilist:250,    mal:250},
-  {name:'Cell',                   emoji:'🧬', anilist:251,    mal:251},
-  {name:'Majin Buu',              emoji:'🍬', anilist:252,    mal:252},
-  {name:'Future Trunks',          emoji:'⚔️', anilist:253,    mal:253},
-  {name:'Krillin',                emoji:'🥚', anilist:254,    mal:254},
-  {name:'Broly (DBS)',            emoji:'💎', anilist:255,    mal:255},
-  {name:'Bulma',                  emoji:'💙', anilist:256,    mal:256},
-  {name:'Chi-Chi',                emoji:'👊', anilist:257,    mal:257},
-  {name:'Yamcha',                 emoji:'⚾', anilist:258,    mal:258},
-  {name:'Tien Shinhan',           emoji:'👁️', anilist:259,    mal:259},
-  {name:'Chiaotzu',               emoji:'🤡', anilist:260,    mal:260},
-  {name:'Master Roshi',           emoji:'🐢', anilist:261,    mal:261},
-  {name:'Android 17',             emoji:'♾️', anilist:262,    mal:262},
-  {name:'Android 18',             emoji:'💛', anilist:263,    mal:263},
-  {name:'Android 16',             emoji:'🤖', anilist:264,    mal:264},
-  {name:'Goten',                  emoji:'😊', anilist:265,    mal:265},
-  {name:'Trunks (Kid)',           emoji:'⚔️', anilist:266,    mal:266},
-  {name:'Vegito',                 emoji:'⚡', anilist:267,    mal:267},
-  {name:'Gogeta',                 emoji:'🌟', anilist:268,    mal:268},
-  {name:'Beerus',                 emoji:'😴', anilist:117485, mal:117485},
-  {name:'Whis',                   emoji:'🏒', anilist:117486, mal:117486},
-  {name:'Pan',                    emoji:'💪', anilist:269,    mal:269},
-  {name:'Videl',                  emoji:'🥊', anilist:270,    mal:270},
-  {name:'Raditz',                 emoji:'😈', anilist:271,    mal:271},
-  {name:'Nappa',                  emoji:'👨‍🦲', anilist:272,    mal:272},
-  {name:'Captain Ginyu',          emoji:'🐸', anilist:273,    mal:273},
-  {name:'Recoome',                emoji:'💪', anilist:274,    mal:274},
-  {name:'Jeice',                  emoji:'🔴', anilist:275,    mal:275},
-  {name:'Burter',                 emoji:'💨', anilist:276,    mal:276},
-  {name:'Guldo',                  emoji:'⏸️', anilist:277,    mal:277},
-  {name:'Cooler',                 emoji:'❄️', anilist:278,    mal:278},
-  {name:'Zarbon',                 emoji:'💄', anilist:279,    mal:279},
-  {name:'Dodoria',                emoji:'🌸', anilist:280,    mal:280},
-  {name:'Android 19',             emoji:'🤖', anilist:281,    mal:281},
-  {name:'Dr. Gero',               emoji:'🔬', anilist:282,    mal:282},
-  {name:'Cell Jr.',               emoji:'🧬', anilist:283,    mal:283},
-  {name:'Babidi',                 emoji:'🧙', anilist:284,    mal:284},
-  {name:'Dabura',                 emoji:'😈', anilist:285,    mal:285},
-  {name:'Supreme Kai',            emoji:'💜', anilist:286,    mal:286},
-  {name:'Gotenks',                emoji:'😜', anilist:287,    mal:287},
-  {name:'Pikkon',                 emoji:'💚', anilist:288,    mal:288},
-  {name:'Tapion',                 emoji:'🎵', anilist:289,    mal:289},
-  {name:'Turles',                 emoji:'🍎', anilist:290,    mal:290},
-  {name:'Bojack',                 emoji:'🏴‍☠️', anilist:292,   mal:292},
-  {name:'Janemba',                emoji:'😈', anilist:293,    mal:293},
-  {name:'Super 17',               emoji:'♾️', anilist:294,    mal:294},
-  {name:'Omega Shenron',          emoji:'🐉', anilist:295,    mal:295},
-  {name:'Hit',                    emoji:'💨', anilist:117487, mal:117487},
-  {name:'Jiren',                  emoji:'😤', anilist:117488, mal:117488},
-  {name:'Toppo',                  emoji:'💪', anilist:117489, mal:117489},
-  {name:'Caulifla',               emoji:'⚡', anilist:117491, mal:117491},
-  {name:'Kale',                   emoji:'💚', anilist:117492, mal:117492},
-  {name:'Kefla',                  emoji:'⚡', anilist:117493, mal:117493},
-  {name:'Vados',                  emoji:'🏒', anilist:117497, mal:117497},
-  {name:'Champa',                 emoji:'🐱', anilist:117498, mal:117498},
-  {name:'Moro',                   emoji:'🐐', anilist:117500, mal:117500},
-  {name:'Granolah',               emoji:'👁️', anilist:117501, mal:117501},
-  {name:'Gas',                    emoji:'💢', anilist:117502, mal:117502},
-  {name:'Kibito',                 emoji:'💜', anilist:297,    mal:297},
-  {name:'Elder Kai',              emoji:'👴', anilist:298,    mal:298},
-  {name:'Giru',                   emoji:'🤖', anilist:299,    mal:299},
-  {name:'Nuova Shenron',          emoji:'🔥', anilist:296,    mal:296},
-  {name:'Gohan (Beast)',          emoji:'📚', anilist:300,    mal:300},
-  {name:'Orange Piccolo',         emoji:'💚', anilist:301,    mal:301},
-  {name:'Android 21',             emoji:'🍰', anilist:117499, mal:117499},
-  {name:'Bardock',                emoji:'🌌', anilist:302,    mal:302},
-  {name:'King Vegeta',            emoji:'👑', anilist:303,    mal:303},
-]},
-
-/* ══════════════════════════════════════
-   BLEACH (through TYBW)
-══════════════════════════════════════ */
-{ id:'bleach', name:'Bleach', emoji:'🌙', color:'#06d6a0', tags:['Soul','Shinigami'], chars:[
-  {name:'Ichigo Kurosaki',        emoji:'🌙', anilist:5,      mal:5},
-  {name:'Rukia Kuchiki',          emoji:'❄️', anilist:6,      mal:6},
-  {name:'Orihime Inoue',          emoji:'🌺', anilist:7,      mal:7},
-  {name:'Uryu Ishida',            emoji:'🏹', anilist:8,      mal:8},
-  {name:'Yasutora Sado',          emoji:'💪', anilist:9,      mal:9},
-  {name:'Byakuya Kuchiki',        emoji:'🌸', anilist:10,     mal:10},
-  {name:'Toshiro Hitsugaya',      emoji:'❄️', anilist:11,     mal:11},
-  {name:'Kisuke Urahara',         emoji:'🎩', anilist:12,     mal:12},
-  {name:'Sosuke Aizen',           emoji:'🪞', anilist:13,     mal:13},
-  {name:'Yoruichi Shihoin',       emoji:'⚡', anilist:14,     mal:14},
-  {name:'Renji Abarai',           emoji:'🦊', anilist:15,     mal:15},
-  {name:'Kenpachi Zaraki',        emoji:'💀', anilist:16,     mal:16},
-  {name:'Grimmjow Jaegerjaquez',  emoji:'🐾', anilist:17,     mal:17},
-  {name:'Ulquiorra Cifer',        emoji:'🖤', anilist:18,     mal:18},
-  {name:'Nelliel Tu Odelschwanck',emoji:'🟢', anilist:19,     mal:19},
-  {name:'Coyote Starrk',          emoji:'🐺', anilist:20,     mal:20},
-  {name:'Barragan Louisenbairn',  emoji:'💀', anilist:21,     mal:21},
-  {name:'Tier Harribel',          emoji:'💛', anilist:22,     mal:22},
-  {name:'Nnoitra Gilga',          emoji:'🌙', anilist:23,     mal:23},
-  {name:'Szayelaporro Grantz',    emoji:'🔬', anilist:24,     mal:24},
-  {name:'Gin Ichimaru',           emoji:'🦊', anilist:27,     mal:27},
-  {name:'Kaname Tosen',           emoji:'⚖️', anilist:28,     mal:28},
-  {name:'Rangiku Matsumoto',      emoji:'🍾', anilist:29,     mal:29},
-  {name:'Momo Hinamori',          emoji:'🍑', anilist:30,     mal:30},
-  {name:'Shunsui Kyoraku',        emoji:'🌸', anilist:31,     mal:31},
-  {name:'Jushiro Ukitake',        emoji:'🍬', anilist:32,     mal:32},
-  {name:'Retsu Unohana',          emoji:'🌿', anilist:33,     mal:33},
-  {name:'Sajin Komamura',         emoji:'🐺', anilist:34,     mal:34},
-  {name:'Mayuri Kurotsuchi',      emoji:'🔬', anilist:35,     mal:35},
-  {name:'Nemu Kurotsuchi',        emoji:'💜', anilist:36,     mal:36},
-  {name:'Isane Kotetsu',          emoji:'💚', anilist:37,     mal:37},
-  {name:'Yachiru Kusajishi',      emoji:'🌸', anilist:38,     mal:38},
-  {name:'Shuhei Hisagi',          emoji:'⛓️', anilist:39,     mal:39},
-  {name:'Izuru Kira',             emoji:'💛', anilist:40,     mal:40},
-  {name:'Ikkaku Madarame',        emoji:'⚔️', anilist:41,     mal:41},
-  {name:'Yumichika Ayasegawa',    emoji:'🌸', anilist:42,     mal:42},
-  {name:'Kon',                    emoji:'🦁', anilist:44,     mal:44},
-  {name:'Tessai Tsukabishi',      emoji:'💪', anilist:45,     mal:45},
-  {name:'Isshin Kurosaki',        emoji:'👨', anilist:48,     mal:48},
-  {name:'Yhwach',                 emoji:'👁️', anilist:100819, mal:100819},
-  {name:'Jugram Haschwalth',      emoji:'⚖️', anilist:100820, mal:100820},
-  {name:'Bambietta Basterbine',   emoji:'💣', anilist:100823, mal:100823},
-  {name:'Liltotto Lamperd',       emoji:'😋', anilist:100824, mal:100824},
-  {name:'Giselle Gewelle',        emoji:'🧟', anilist:100822, mal:100822},
-  {name:'Bazz-B',                 emoji:'🔥', anilist:100821, mal:100821},
-  {name:'Meninas McAllon',        emoji:'💪', anilist:100825, mal:100825},
-  {name:'Candice Catnipp',        emoji:'⚡', anilist:100826, mal:100826},
-  {name:'As Nodt',                emoji:'😱', anilist:100834, mal:100834},
-  {name:'Mask De Masculine',      emoji:'🦸', anilist:100833, mal:100833},
-  {name:'Pepe Waccabrada',        emoji:'❤️', anilist:100828, mal:100828},
-  {name:'Shinji Hirako',          emoji:'🙃', anilist:100844, mal:100844},
-  {name:'Love Aikawa',            emoji:'📖', anilist:100838, mal:100838},
-  {name:'Rose Otoribashi',        emoji:'🎸', anilist:100839, mal:100839},
-  {name:'Lisa Yadomaru',          emoji:'📚', anilist:100841, mal:100841},
-  {name:'Kensei Muguruma',        emoji:'💪', anilist:100842, mal:100842},
-  {name:'Mashiro Kuna',           emoji:'🟢', anilist:100843, mal:100843},
-  {name:'Kukaku Shiba',           emoji:'🎆', anilist:100846, mal:100846},
-  {name:'Ganju Shiba',            emoji:'🐗', anilist:100847, mal:100847},
-  {name:'Nanao Ise',              emoji:'📖', anilist:100850, mal:100850},
-  {name:'Hanataro Yamada',        emoji:'💊', anilist:100851, mal:100851},
-  {name:'Marechiyo Omaeda',       emoji:'💪', anilist:100849, mal:100849},
-  {name:'Zennosuke Kurumadani',   emoji:'🍀', anilist:43,     mal:43},
-  {name:'Chojiro Sasakibe',       emoji:'⚡', anilist:100848, mal:100848},
-  {name:'Pernida Parnkgjas',      emoji:'🖐️', anilist:100855, mal:100855},
-  {name:'Gerard Valkyrie',        emoji:'🛡️', anilist:100856, mal:100856},
-  {name:'Lille Barro',            emoji:'👁️', anilist:100858, mal:100858},
-  {name:'Askin Nakk Le Vaar',     emoji:'☠️', anilist:100859, mal:100859},
-  {name:'Quilge Opie',            emoji:'⚱️', anilist:100835, mal:100835},
-  {name:'Robert Accutrone',       emoji:'🔫', anilist:100836, mal:100836},
-  {name:'BG9',                    emoji:'🤖', anilist:100837, mal:100837},
-  {name:'Cang Du',                emoji:'❄️', anilist:100838, mal:100838},
-  {name:'Driscoll Berci',         emoji:'💥', anilist:100860, mal:100860},
-  {name:'Nianzol Weizol',         emoji:'👅', anilist:100857, mal:100857},
-  {name:'Ichigo (Bankai)',        emoji:'🌙', anilist:100861, mal:100861},
-  {name:'Orihime (Final)',        emoji:'🌺', anilist:100862, mal:100862},
-  {name:'Yhwach (Released)',      emoji:'👁️', anilist:100863, mal:100863},
-  {name:'Ryuken Ishida',          emoji:'🏹', anilist:100864, mal:100864},
-  {name:'Masaki Kurosaki',        emoji:'🌸', anilist:100865, mal:100865},
-  {name:'Ginjo Kugo',             emoji:'⚫', anilist:100866, mal:100866},
-  {name:'Tsukishima Shukuro',     emoji:'📖', anilist:100867, mal:100867},
-  {name:'Riruka Dokugamine',      emoji:'💕', anilist:100868, mal:100868},
-  {name:'Jackie Tristan',         emoji:'👢', anilist:100869, mal:100869},
-  {name:'Xcution Giriko',         emoji:'⏰', anilist:100870, mal:100870},
-]},
-
-/* ══════════════════════════════════════
-   HUNTER x HUNTER (all arcs)
-══════════════════════════════════════ */
-{ id:'hxh', name:'Hunter x Hunter', emoji:'⚡', color:'#a8ff78', tags:['Nen','Adventure'], chars:[
-  {name:'Gon Freecss',            emoji:'🌿', anilist:30,  mal:30},
-  {name:'Killua Zoldyck',         emoji:'⚡', anilist:31,  mal:31},
-  {name:'Kurapika',               emoji:'⛓️', anilist:32,  mal:32},
-  {name:'Leorio Paradinight',     emoji:'💼', anilist:33,  mal:33},
-  {name:'Hisoka Morow',           emoji:'🃏', anilist:34,  mal:34},
-  {name:'Chrollo Lucilfer',       emoji:'📖', anilist:35,  mal:35},
-  {name:'Illumi Zoldyck',         emoji:'🪡', anilist:36,  mal:36},
-  {name:'Meruem',                 emoji:'👑', anilist:37,  mal:37},
-  {name:'Neferpitou',             emoji:'🐱', anilist:38,  mal:38},
-  {name:'Shaiapouf',              emoji:'🦋', anilist:39,  mal:39},
-  {name:'Menthuthuyoupi',         emoji:'😡', anilist:40,  mal:40},
-  {name:'Ging Freecss',           emoji:'🌍', anilist:41,  mal:41},
-  {name:'Isaac Netero',           emoji:'🙏', anilist:42,  mal:42},
-  {name:'Biscuit Krueger',        emoji:'💎', anilist:43,  mal:43},
-  {name:'Knov',                   emoji:'🚪', anilist:45,  mal:45},
-  {name:'Morel Mackernasey',      emoji:'🌫️', anilist:46,  mal:46},
-  {name:'Knuckle Bine',           emoji:'🐻', anilist:47,  mal:47},
-  {name:'Shoot McMahon',          emoji:'🏀', anilist:48,  mal:48},
-  {name:'Palm Siberia',           emoji:'📔', anilist:49,  mal:49},
-  {name:'Meleoron',               emoji:'🦎', anilist:50,  mal:50},
-  {name:'Ikalgo',                 emoji:'🐙', anilist:51,  mal:51},
-  {name:'Cheadle Yorkshire',      emoji:'🐕', anilist:52,  mal:52},
-  {name:'Pariston Hill',          emoji:'😊', anilist:53,  mal:53},
-  {name:'Zeno Zoldyck',           emoji:'🐉', anilist:54,  mal:54},
-  {name:'Silva Zoldyck',          emoji:'💀', anilist:55,  mal:55},
-  {name:'Kalluto Zoldyck',        emoji:'🌸', anilist:56,  mal:56},
-  {name:'Alluka Zoldyck',         emoji:'⭐', anilist:57,  mal:57},
-  {name:'Machi Komacine',         emoji:'🧵', anilist:58,  mal:58},
-  {name:'Shalnark',               emoji:'📱', anilist:59,  mal:59},
-  {name:'Feitan Portor',          emoji:'⚡', anilist:60,  mal:60},
-  {name:'Nobunaga Hazama',        emoji:'🗡️', anilist:61,  mal:61},
-  {name:'Uvogin',                 emoji:'💪', anilist:62,  mal:62},
-  {name:'Phinks Magcub',          emoji:'🌀', anilist:63,  mal:63},
-  {name:'Pakunoda',               emoji:'🔫', anilist:64,  mal:64},
-  {name:'Kortopi',                emoji:'🖐️', anilist:65,  mal:65},
-  {name:'Franklin Bordeau',       emoji:'🔫', anilist:66,  mal:66},
-  {name:'Bonolenov Ndongo',       emoji:'🥁', anilist:67,  mal:67},
-  {name:'Goreinu',                emoji:'🐒', anilist:69,  mal:69},
-  {name:'Tonpa',                  emoji:'🧃', anilist:70,  mal:70},
-  {name:'Hanzo',                  emoji:'🥷', anilist:74,  mal:74},
-  {name:'Satotz',                 emoji:'🏃', anilist:77,  mal:77},
-  {name:'Menchi',                 emoji:'🍖', anilist:78,  mal:78},
-  {name:'Kite',                   emoji:'🔪', anilist:81,  mal:81},
-  {name:'Milluki Zoldyck',        emoji:'💻', anilist:82,  mal:82},
-  {name:'Kikyo Zoldyck',          emoji:'🎭', anilist:83,  mal:83},
-  {name:'Gotoh',                  emoji:'🪙', anilist:84,  mal:84},
-  {name:'Canary',                 emoji:'🐦', anilist:85,  mal:85},
-  {name:'Nanika',                 emoji:'✨', anilist:86,  mal:86},
-  {name:'Komugi',                 emoji:'♟️', anilist:87,  mal:87},
-  {name:'Neon Nostrade',          emoji:'💜', anilist:88,  mal:88},
-  {name:'Light Nostrade',         emoji:'🎰', anilist:89,  mal:89},
-  {name:'Rammot',                 emoji:'🐰', anilist:90,  mal:90},
-  {name:'Colt',                   emoji:'🐦', anilist:91,  mal:91},
-  {name:'Welfin',                 emoji:'🐺', anilist:92,  mal:92},
-  {name:'Flutter',                emoji:'🦋', anilist:94,  mal:94},
-  {name:'Zazan',                  emoji:'🦂', anilist:95,  mal:95},
-  {name:'Leol',                   emoji:'🦁', anilist:96,  mal:96},
-  {name:'Gon (Adult)',            emoji:'🌿', anilist:97,  mal:97},
-  {name:'Pokkle',                 emoji:'🏹', anilist:73,  mal:73},
-  {name:'Bodoro',                 emoji:'👴', anilist:75,  mal:75},
-  {name:'Gerreta',                emoji:'💀', anilist:76,  mal:76},
-  {name:'Beans',                  emoji:'🫘', anilist:80,  mal:80},
-]},
-
-/* ══════════════════════════════════════
-   FULLMETAL ALCHEMIST: BROTHERHOOD
-══════════════════════════════════════ */
-{ id:'fma', name:'Fullmetal Alchemist', emoji:'⚗️', color:'#e9c46a', tags:['Alchemy','Dark'], chars:[
-  {name:'Edward Elric',           emoji:'⚡', anilist:2,   mal:2},
-  {name:'Alphonse Elric',         emoji:'🛡️', anilist:3,   mal:3},
-  {name:'Roy Mustang',            emoji:'🔥', anilist:4,   mal:4},
-  {name:'Winry Rockbell',         emoji:'🔧', anilist:5,   mal:5},
-  {name:'Riza Hawkeye',           emoji:'🎯', anilist:6,   mal:6},
-  {name:'Alex Louis Armstrong',   emoji:'💪', anilist:7,   mal:7},
-  {name:'Van Hohenheim',          emoji:'☀️', anilist:8,   mal:8},
-  {name:'Father',                 emoji:'🌑', anilist:9,   mal:9},
-  {name:'Pride / Selim Bradley',  emoji:'😈', anilist:10,  mal:10},
-  {name:'Greed',                  emoji:'💰', anilist:11,  mal:11},
-  {name:'Envy',                   emoji:'😈', anilist:12,  mal:12},
-  {name:'Lust',                   emoji:'💜', anilist:13,  mal:13},
-  {name:'Gluttony',               emoji:'😋', anilist:14,  mal:14},
-  {name:'Wrath / King Bradley',   emoji:'⚔️', anilist:15,  mal:15},
-  {name:'Sloth',                  emoji:'💤', anilist:16,  mal:16},
-  {name:'Olivier Armstrong',      emoji:'❄️', anilist:17,  mal:17},
-  {name:'Ling Yao',               emoji:'👑', anilist:18,  mal:18},
-  {name:'Lan Fan',                emoji:'🌸', anilist:19,  mal:19},
-  {name:'May Chang',              emoji:'🐼', anilist:20,  mal:20},
-  {name:'Scar',                   emoji:'❌', anilist:21,  mal:21},
-  {name:'Zolf J. Kimblee',        emoji:'💣', anilist:22,  mal:22},
-  {name:'Izumi Curtis',           emoji:'🔥', anilist:23,  mal:23},
-  {name:'Sig Curtis',             emoji:'💪', anilist:24,  mal:24},
-  {name:'Maes Hughes',            emoji:'📸', anilist:25,  mal:25},
-  {name:'Jean Havoc',             emoji:'🚬', anilist:26,  mal:26},
-  {name:'Heymans Breda',          emoji:'♟️', anilist:27,  mal:27},
-  {name:'Vato Falman',            emoji:'📋', anilist:28,  mal:28},
-  {name:'Kain Fuery',             emoji:'🐕', anilist:29,  mal:29},
-  {name:'Barry the Chopper',      emoji:'🔪', anilist:30,  mal:30},
-  {name:'Tim Marcoh',             emoji:'💊', anilist:34,  mal:34},
-  {name:'Yoki',                   emoji:'🎩', anilist:35,  mal:35},
-  {name:'Maria Ross',             emoji:'🔫', anilist:36,  mal:36},
-  {name:'Denny Brosh',            emoji:'🎖️', anilist:37,  mal:37},
-  {name:'Trisha Elric',           emoji:'🌸', anilist:38,  mal:38},
-  {name:'Pinako Rockbell',        emoji:'🔧', anilist:39,  mal:39},
-  {name:'Paninya',                emoji:'🦾', anilist:40,  mal:40},
-  {name:'Russell Tringham',       emoji:'🌿', anilist:41,  mal:41},
-  {name:'Greed (Ling body)',      emoji:'😏', anilist:42,  mal:42},
-  {name:'Fu',                     emoji:'🥷', anilist:43,  mal:43},
-  {name:'Xiao-Mei',               emoji:'🐼', anilist:45,  mal:45},
-  {name:'Miles',                  emoji:'🎖️', anilist:46,  mal:46},
-  {name:'Buccaneer',              emoji:'🪝', anilist:31,  mal:31},
-  {name:'Darius',                 emoji:'💪', anilist:32,  mal:32},
-  {name:'Heinkel',                emoji:'🦁', anilist:33,  mal:33},
-  {name:'Envy (true form)',       emoji:'🐍', anilist:48,  mal:48},
-  {name:'Father (God form)',      emoji:'☀️', anilist:49,  mal:49},
-  {name:'Selim (post-series)',    emoji:'😇', anilist:44,  mal:44},
-  {name:'Elicia Hughes',          emoji:'👧', anilist:50,  mal:50},
-  {name:'Gracia Hughes',          emoji:'🌸', anilist:51,  mal:51},
-  {name:'Mrs. Bradley',           emoji:'👩', anilist:52,  mal:52},
-  {name:'Ed (Gate)',              emoji:'⚡', anilist:53,  mal:53},
-]},
-
-/* ══════════════════════════════════════
-   CHAINSAW MAN (parts 1 & 2)
-══════════════════════════════════════ */
-{ id:'chainsaw', name:'Chainsaw Man', emoji:'🔪', color:'#ff6b6b', tags:['Devils','Dark'], chars:[
-  {name:'Denji',                  emoji:'🔪', anilist:166230, mal:197539},
-  {name:'Power',                  emoji:'🩸', anilist:166231, mal:197540},
-  {name:'Aki Hayakawa',           emoji:'🪄', anilist:166232, mal:197541},
-  {name:'Makima',                 emoji:'🔴', anilist:166233, mal:197542},
-  {name:'Pochita',                emoji:'🐕', anilist:166234, mal:197543},
-  {name:'Himeno',                 emoji:'👁️', anilist:166235, mal:197544},
-  {name:'Kobeni Higashiyama',     emoji:'😰', anilist:166236, mal:197545},
-  {name:'Kishibe',                emoji:'🔪', anilist:166237, mal:197546},
-  {name:'Quanxi',                 emoji:'🏹', anilist:166238, mal:197547},
-  {name:'Santa Claus',            emoji:'🎅', anilist:166239, mal:197548},
-  {name:'Reze',                   emoji:'💣', anilist:166240, mal:197549},
-  {name:'Angel Devil',            emoji:'😇', anilist:166241, mal:197550},
-  {name:'Beam',                   emoji:'🦈', anilist:166242, mal:197551},
-  {name:'Violence Fiend',         emoji:'💪', anilist:166243, mal:197552},
-  {name:'Spider Devil',           emoji:'🕷️', anilist:166244, mal:197553},
-  {name:'Katana Man',             emoji:'🗡️', anilist:166247, mal:197556},
-  {name:'Akane Sawatari',         emoji:'🐍', anilist:166248, mal:197557},
-  {name:'Future Devil',           emoji:'🔮', anilist:166249, mal:197558},
-  {name:'Darkness Devil',         emoji:'🌑', anilist:166252, mal:197561},
-  {name:'Yutaro Kurose',          emoji:'🕵️', anilist:166253, mal:197562},
-  {name:'Michiko Tendo',          emoji:'🔫', anilist:166254, mal:197563},
-  {name:'Asa Mitaka',             emoji:'🐟', anilist:187302, mal:215729},
-  {name:'Yoru / War Devil',       emoji:'⚔️', anilist:187303, mal:215730},
-  {name:'Nayuta',                 emoji:'🔴', anilist:187304, mal:215731},
-  {name:'Haruka Iseumi',          emoji:'🏫', anilist:187305, mal:215732},
-  {name:'Yoshida Hirofumi',       emoji:'☂️', anilist:187306, mal:215733},
-  {name:'Fumiko Mifune',          emoji:'🔫', anilist:187307, mal:215734},
-  {name:'Fami',                   emoji:'🍴', anilist:187308, mal:215735},
-  {name:'Flamethrower Devil',     emoji:'🔥', anilist:187310, mal:215737},
-  {name:'Cosmo',                  emoji:'🌌', anilist:187312, mal:215739},
-  {name:'Tsugihagi',              emoji:'🧵', anilist:187313, mal:215740},
-  {name:'Pingtsi',                emoji:'🐱', anilist:187314, mal:215741},
-  {name:'Tolka',                  emoji:'💪', anilist:187315, mal:215742},
-  {name:'Princi',                 emoji:'🕷️', anilist:187316, mal:215743},
-  {name:'Long',                   emoji:'😎', anilist:187317, mal:215744},
-  {name:'Tendo (Supervisor)',     emoji:'👩', anilist:187318, mal:215745},
-  {name:'Octopus Devil',          emoji:'🐙', anilist:187319, mal:215746},
-  {name:'Denji (Ascended)',       emoji:'🔪', anilist:187320, mal:215747},
-]},
-
-/* ══════════════════════════════════════
-   RE:ZERO (through S3)
-══════════════════════════════════════ */
-{ id:'rezero', name:'Re:Zero', emoji:'🌹', color:'#e879f9', tags:['Isekai','Dark'], chars:[
-  {name:'Subaru Natsuki',         emoji:'🔄', anilist:99380,  mal:120946},
-  {name:'Emilia',                 emoji:'❄️', anilist:99381,  mal:120947},
-  {name:'Rem',                    emoji:'💙', anilist:99382,  mal:120948},
-  {name:'Ram',                    emoji:'🌸', anilist:99383,  mal:120949},
-  {name:'Beatrice',               emoji:'📚', anilist:99384,  mal:120950},
-  {name:'Roswaal L. Mathers',     emoji:'🤡', anilist:99385,  mal:120951},
-  {name:'Reinhard van Astrea',    emoji:'🌟', anilist:99386,  mal:120952},
-  {name:'Wilhelm van Astrea',     emoji:'🗡️', anilist:99387,  mal:120953},
-  {name:'Crusch Karsten',         emoji:'🦁', anilist:99388,  mal:120954},
-  {name:'Felix Argyle',           emoji:'🐱', anilist:99389,  mal:120955},
-  {name:'Anastasia Hoshin',       emoji:'🦊', anilist:99390,  mal:120956},
-  {name:'Julius Juukulius',       emoji:'✨', anilist:99391,  mal:120957},
-  {name:'Priscilla Barielle',     emoji:'☀️', anilist:99392,  mal:120958},
-  {name:'Al',                     emoji:'⛑️', anilist:99393,  mal:120959},
-  {name:'Felt',                   emoji:'⚡', anilist:99394,  mal:120960},
-  {name:'Aldebaran',              emoji:'💪', anilist:99395,  mal:120961},
-  {name:'Elsa Granhiert',         emoji:'🗡️', anilist:99396,  mal:120962},
-  {name:'Petelgeuse Romanee-Conti',emoji:'😱', anilist:99397, mal:120963},
-  {name:'Echidna',                emoji:'🕷️', anilist:99398,  mal:120964},
-  {name:'Satella',                emoji:'🖤', anilist:99399,  mal:120965},
-  {name:'Daphne',                 emoji:'😋', anilist:99400,  mal:120966},
-  {name:'Sekhmet',                emoji:'😴', anilist:99401,  mal:120967},
-  {name:'Typhon',                 emoji:'😊', anilist:99402,  mal:120968},
-  {name:'Minerva',                emoji:'💢', anilist:99403,  mal:120969},
-  {name:'Carmilla',               emoji:'💜', anilist:99404,  mal:120970},
-  {name:'Garfiel Tinsel',         emoji:'🐯', anilist:99405,  mal:120971},
-  {name:'Otto Suwen',             emoji:'💼', anilist:99406,  mal:120972},
-  {name:'Petra Leyte',            emoji:'🌸', anilist:99407,  mal:120973},
-  {name:'Frederica Baumann',      emoji:'🐆', anilist:99408,  mal:120974},
-  {name:'Ryuzu Meyer',            emoji:'⏳', anilist:99409,  mal:120975},
-  {name:'Ley Batenkaitos',        emoji:'😈', anilist:99412,  mal:120978},
-  {name:'Roy Alphard',            emoji:'🦁', anilist:99413,  mal:120979},
-  {name:'Louis Arneb',            emoji:'🌟', anilist:99414,  mal:120980},
-  {name:'Flugel / Shaula',        emoji:'🦂', anilist:99415,  mal:120981},
-  {name:'Meili Portroute',        emoji:'🐺', anilist:99416,  mal:120982},
-  {name:'Capella Emerada',        emoji:'😈', anilist:99411,  mal:120977},
-  {name:'Sirius Romanee-Conti',   emoji:'😊', anilist:99417,  mal:120983},
-  {name:'Stride Volakia',         emoji:'⚔️', anilist:99418,  mal:120984},
-  {name:'Vincent Volakia',        emoji:'🐉', anilist:99419,  mal:120985},
-  {name:'Cecils Segmunt',         emoji:'⚔️', anilist:99420,  mal:120986},
-  {name:'Todd Fahlner',           emoji:'😈', anilist:99421,  mal:120987},
-  {name:'Arakiya',                emoji:'🌸', anilist:99422,  mal:120988},
-]},
-
-/* ══════════════════════════════════════
-   FAIRY TAIL (all arcs)
-══════════════════════════════════════ */
-{ id:'fairytail', name:'Fairy Tail', emoji:'🧚', color:'#f72585', tags:['Magic','Guild'], chars:[
-  {name:'Natsu Dragneel',         emoji:'🔥', anilist:359, mal:359},
-  {name:'Lucy Heartfilia',        emoji:'⭐', anilist:360, mal:360},
-  {name:'Gray Fullbuster',        emoji:'❄️', anilist:361, mal:361},
-  {name:'Erza Scarlet',           emoji:'⚔️', anilist:362, mal:362},
-  {name:'Wendy Marvell',          emoji:'💙', anilist:363, mal:363},
-  {name:'Happy',                  emoji:'🐱', anilist:364, mal:364},
-  {name:'Makarov Dreyar',         emoji:'✊', anilist:365, mal:365},
-  {name:'Mirajane Strauss',       emoji:'😇', anilist:366, mal:366},
-  {name:'Elfman Strauss',         emoji:'💪', anilist:367, mal:367},
-  {name:'Lisanna Strauss',        emoji:'🐾', anilist:368, mal:368},
-  {name:'Cana Alberona',          emoji:'🍺', anilist:369, mal:369},
-  {name:'Jet',                    emoji:'💨', anilist:370, mal:370},
-  {name:'Droy',                   emoji:'🌿', anilist:371, mal:371},
-  {name:'Levy McGarden',          emoji:'📖', anilist:372, mal:372},
-  {name:'Gajeel Redfox',          emoji:'⛓️', anilist:373, mal:373},
-  {name:'Juvia Lockser',          emoji:'💧', anilist:374, mal:374},
-  {name:'Freed Justine',          emoji:'⚡', anilist:375, mal:375},
-  {name:'Bixlow',                 emoji:'🎭', anilist:376, mal:376},
-  {name:'Evergreen',              emoji:'🧚', anilist:377, mal:377},
-  {name:'Laxus Dreyar',           emoji:'⚡', anilist:378, mal:378},
-  {name:'Mystogan / Jellal',      emoji:'💙', anilist:379, mal:379},
-  {name:'Jellal Fernandes',       emoji:'💙', anilist:380, mal:380},
-  {name:'Zeref Dragneel',         emoji:'🖤', anilist:381, mal:381},
-  {name:'Mavis Vermillion',       emoji:'🌸', anilist:382, mal:382},
-  {name:'Ultear Milkovich',       emoji:'⏳', anilist:383, mal:383},
-  {name:'Meredy',                 emoji:'🔗', anilist:384, mal:384},
-  {name:'Kagura Mikazuchi',       emoji:'⚖️', anilist:385, mal:385},
-  {name:'Millianna',              emoji:'🐱', anilist:386, mal:386},
-  {name:'Yukino Agria',           emoji:'⭐', anilist:387, mal:387},
-  {name:'Minerva Orlando',        emoji:'🐯', anilist:388, mal:388},
-  {name:'Rogue Cheney',           emoji:'🌑', anilist:389, mal:389},
-  {name:'Sting Eucliffe',         emoji:'☀️', anilist:390, mal:390},
-  {name:'Orga Nanagear',          emoji:'⚡', anilist:391, mal:391},
-  {name:'Rufus Lore',             emoji:'📚', anilist:392, mal:392},
-  {name:'Obra',                   emoji:'😈', anilist:393, mal:393},
-  {name:'Cobra / Erik',           emoji:'🐍', anilist:394, mal:394},
-  {name:'Angel / Sorano',         emoji:'😇', anilist:395, mal:395},
-  {name:'Midnight / Macbeth',     emoji:'🌙', anilist:396, mal:396},
-  {name:'Racer',                  emoji:'💨', anilist:397, mal:397},
-  {name:'Hoteye',                 emoji:'💧', anilist:398, mal:398},
-  {name:'Brandish μ',             emoji:'📏', anilist:399, mal:399},
-  {name:'Irene Belserion',        emoji:'🧙', anilist:400, mal:400},
-  {name:'Larcade Dragneel',       emoji:'😴', anilist:401, mal:401},
-  {name:'August',                 emoji:'🧙', anilist:402, mal:402},
-  {name:'Invel Yura',             emoji:'❄️', anilist:403, mal:403},
-  {name:'DiMaria Yesta',          emoji:'⏸️', anilist:404, mal:404},
-  {name:'Jacob Lessio',           emoji:'🙈', anilist:405, mal:405},
-  {name:'Wall Eehto',             emoji:'🤖', anilist:406, mal:406},
-  {name:'Acnologia',              emoji:'🐉', anilist:407, mal:407},
-  {name:'Igneel',                 emoji:'🔥', anilist:408, mal:408},
-  {name:'Grandeeney',             emoji:'💙', anilist:409, mal:409},
-  {name:'Metalicana',             emoji:'⛓️', anilist:410, mal:410},
-  {name:'Charle',                 emoji:'🐱', anilist:411, mal:411},
-  {name:'Panther Lily',           emoji:'🐱', anilist:412, mal:412},
-  {name:'Frosch',                 emoji:'🐸', anilist:413, mal:413},
-  {name:'Lector',                 emoji:'🐱', anilist:414, mal:414},
-  {name:'Exceed Carla',           emoji:'🐱', anilist:415, mal:415},
-  {name:'Cana (Card Magic)',      emoji:'🃏', anilist:416, mal:416},
-  {name:'Gildarts Clive',         emoji:'💥', anilist:417, mal:417},
-  {name:'Bisca Connell',          emoji:'🔫', anilist:418, mal:418},
-  {name:'Alzack Connell',         emoji:'🔫', anilist:419, mal:419},
-]},
-
-/* ══════════════════════════════════════
-   BLACK CLOVER (all arcs)
-══════════════════════════════════════ */
-{ id:'blackclover', name:'Black Clover', emoji:'🍀', color:'#38b000', tags:['Magic','Shonen'], chars:[
-  {name:'Asta',                   emoji:'💪', anilist:130430, mal:170830},
-  {name:'Yuno',                   emoji:'🌬️', anilist:130431, mal:170831},
-  {name:'Noelle Silva',           emoji:'💧', anilist:130432, mal:170832},
-  {name:'Yami Sukehiro',          emoji:'🌑', anilist:130433, mal:170833},
-  {name:'Julius Novachrono',      emoji:'⏰', anilist:130434, mal:170834},
-  {name:'Fuegoleon Vermillion',   emoji:'🔥', anilist:130435, mal:170835},
-  {name:'Mereoleona Vermillion',  emoji:'🦁', anilist:130436, mal:170836},
-  {name:'Leopold Vermillion',     emoji:'🔥', anilist:130437, mal:170837},
-  {name:'Mimosa Vermillion',      emoji:'🌺', anilist:130438, mal:170838},
-  {name:'Luck Voltia',            emoji:'⚡', anilist:130439, mal:170839},
-  {name:'Magna Swing',            emoji:'🔥', anilist:130440, mal:170840},
-  {name:'Gauche Adlai',           emoji:'🪞', anilist:130441, mal:170841},
-  {name:'Grey',                   emoji:'🔄', anilist:130442, mal:170842},
-  {name:'Gordon Agrippa',         emoji:'☠️', anilist:130443, mal:170843},
-  {name:'Henry Legolant',         emoji:'🏚️', anilist:130444, mal:170844},
-  {name:'Vanessa Enoteca',        emoji:'🧵', anilist:130445, mal:170845},
-  {name:'Finral Roulacase',       emoji:'🚪', anilist:130446, mal:170846},
-  {name:'Zora Ideale',            emoji:'🌪️', anilist:130447, mal:170847},
-  {name:'Charmy Pappitson',       emoji:'🍖', anilist:130448, mal:170848},
-  {name:'Rill Boismortier',       emoji:'🎨', anilist:130449, mal:170849},
-  {name:'Charlotte Roselei',      emoji:'🌹', anilist:130450, mal:170850},
-  {name:'Sol Marron',             emoji:'🌍', anilist:130451, mal:170851},
-  {name:'Dorothy Unsworth',       emoji:'💤', anilist:130452, mal:170852},
-  {name:'Jack the Ripper',        emoji:'🗡️', anilist:130453, mal:170853},
-  {name:'Nozel Silva',            emoji:'🪄', anilist:130454, mal:170854},
-  {name:'Solid Silva',            emoji:'💧', anilist:130455, mal:170855},
-  {name:'Nebra Silva',            emoji:'🌫️', anilist:130456, mal:170856},
-  {name:'William Vangeance',      emoji:'🌿', anilist:130457, mal:170857},
-  {name:'Patolli / Patri',        emoji:'😈', anilist:130458, mal:170858},
-  {name:'Licht',                  emoji:'✨', anilist:130459, mal:170859},
-  {name:'Rhya',                   emoji:'🔄', anilist:130460, mal:170860},
-  {name:'Vetto',                  emoji:'💪', anilist:130461, mal:170861},
-  {name:'Fana',                   emoji:'🔥', anilist:130462, mal:170862},
-  {name:'Langris Vaude',          emoji:'💛', anilist:130463, mal:170863},
-  {name:'Sekke Bronzazza',        emoji:'🤡', anilist:130464, mal:170864},
-  {name:'Liebe',                  emoji:'😈', anilist:167840, mal:196740},
-  {name:'Nacht Faust',            emoji:'🌑', anilist:167841, mal:196741},
-  {name:'Zenon Zogratis',         emoji:'🦴', anilist:167842, mal:196742},
-  {name:'Dante Zogratis',         emoji:'👑', anilist:167843, mal:196743},
-  {name:'Vanica Zogratis',        emoji:'🌸', anilist:167844, mal:196744},
-  {name:'Megicula',               emoji:'😈', anilist:167846, mal:196746},
-  {name:'Lucifero',               emoji:'😈', anilist:167847, mal:196747},
-  {name:'Beelzebub',              emoji:'🐝', anilist:167848, mal:196748},
-  {name:'Astaroth',               emoji:'😈', anilist:167849, mal:196749},
-  {name:'Asta (Devil Union)',     emoji:'💪', anilist:167850, mal:196750},
-  {name:'Yuno (Star Magic)',      emoji:'⭐', anilist:167851, mal:196751},
-  {name:'Julius (Youth)',         emoji:'⏰', anilist:167852, mal:196752},
-  {name:'Lucius Zogratis',        emoji:'😇', anilist:167853, mal:196753},
-  {name:'Sister Lily',            emoji:'⚜️', anilist:167854, mal:196754},
-]},
-
-/* ══════════════════════════════════════
-   VINLAND SAGA (all arcs)
-══════════════════════════════════════ */
-{ id:'vinland', name:'Vinland Saga', emoji:'🪓', color:'#a0c4ff', tags:['Viking','Historical'], chars:[
-  {name:'Thorfinn Karlsefni',     emoji:'⚔️', anilist:117340, mal:152617},
-  {name:'Askeladd',               emoji:'🦊', anilist:117341, mal:152618},
-  {name:'Bjorn',                  emoji:'🐻', anilist:117342, mal:152619},
-  {name:'Thors',                  emoji:'⚓', anilist:117343, mal:152620},
-  {name:'Canute',                 emoji:'👑', anilist:117344, mal:152621},
-  {name:'Ragnar',                 emoji:'🛡️', anilist:117345, mal:152622},
-  {name:'Leif Ericson',           emoji:'🚢', anilist:117346, mal:152623},
-  {name:'Willibald',              emoji:'🍷', anilist:117347, mal:152624},
-  {name:'Floki',                  emoji:'😈', anilist:117348, mal:152625},
-  {name:'Thorkell',               emoji:'🪓', anilist:117349, mal:152626},
-  {name:'Helga',                  emoji:'🌸', anilist:117350, mal:152627},
-  {name:'Ylva',                   emoji:'💪', anilist:117351, mal:152628},
-  {name:'Anne',                   emoji:'😊', anilist:117352, mal:152629},
-  {name:'Pater',                  emoji:'⛪', anilist:117353, mal:152630},
-  {name:'Gardar',                 emoji:'⛓️', anilist:117354, mal:152631},
-  {name:'Arnheid',                emoji:'🌸', anilist:117355, mal:152632},
-  {name:'Einar',                  emoji:'🌾', anilist:117356, mal:152633},
-  {name:'Snake',                  emoji:'🐍', anilist:117357, mal:152634},
-  {name:'Ketil',                  emoji:'⚔️', anilist:117358, mal:152635},
-  {name:'Wulf',                   emoji:'🐺', anilist:117359, mal:152636},
-  {name:'Badger',                 emoji:'🦡', anilist:117360, mal:152637},
-  {name:'Fox',                    emoji:'🦊', anilist:117361, mal:152638},
-  {name:'Olmar',                  emoji:'👦', anilist:117362, mal:152639},
-  {name:'Sverkel',                emoji:'👴', anilist:117363, mal:152640},
-  {name:'Gudrid',                 emoji:'🧭', anilist:117364, mal:152641},
-  {name:'Hild',                   emoji:'🏹', anilist:117365, mal:152642},
-  {name:'Bug-Eyes',               emoji:'👀', anilist:117366, mal:152643},
-  {name:'Iron Fist Ketil',        emoji:'✊', anilist:117367, mal:152644},
-  {name:'Sigurd',                 emoji:'😤', anilist:117368, mal:152645},
-  {name:'Halfdan',                emoji:'💰', anilist:117369, mal:152646},
-  {name:'Ivar',                   emoji:'😈', anilist:117370, mal:152647},
-  {name:'Garm',                   emoji:'🐺', anilist:117371, mal:152648},
-  {name:'Thorfinn (Child)',       emoji:'⚔️', anilist:117372, mal:152649},
-  {name:'King Sweyn',             emoji:'👑', anilist:117373, mal:152650},
-  {name:'Emma (Vinland)',         emoji:'🌸', anilist:117374, mal:152651},
-]},
-
-/* ══════════════════════════════════════
-   BERSERK (full manga arcs)
-══════════════════════════════════════ */
-{ id:'berserk', name:'Berserk', emoji:'🗡️', color:'#8b0000', tags:['Dark Fantasy','Mature'], chars:[
-  {name:'Guts',                   emoji:'🗡️', anilist:358, mal:358},
-  {name:'Griffith / Femto',       emoji:'🕊️', anilist:359, mal:359},
-  {name:'Casca',                  emoji:'⚔️', anilist:360, mal:360},
-  {name:'Judeau',                 emoji:'🔪', anilist:361, mal:361},
-  {name:'Corkus',                 emoji:'😤', anilist:362, mal:362},
-  {name:'Pippin',                 emoji:'💪', anilist:363, mal:363},
-  {name:'Rickert',                emoji:'🔧', anilist:364, mal:364},
-  {name:'Charlotte',              emoji:'👑', anilist:365, mal:365},
-  {name:'Zodd the Immortal',      emoji:'🐂', anilist:366, mal:366},
-  {name:'Skull Knight',           emoji:'💀', anilist:367, mal:367},
-  {name:'Puck',                   emoji:'🧚', anilist:368, mal:368},
-  {name:'Isidro',                 emoji:'🔥', anilist:369, mal:369},
-  {name:'Farnese',                emoji:'⛪', anilist:370, mal:370},
-  {name:'Serpico',                emoji:'💨', anilist:371, mal:371},
-  {name:'Schierke',               emoji:'🧙', anilist:372, mal:372},
-  {name:'Ivalera',                emoji:'🧚', anilist:373, mal:373},
-  {name:'Mozgus',                 emoji:'😠', anilist:374, mal:374},
-  {name:'Locus',                  emoji:'🐴', anilist:375, mal:375},
-  {name:'Grunbeld',               emoji:'🐉', anilist:376, mal:376},
-  {name:'Rakshas',                emoji:'🌙', anilist:377, mal:377},
-  {name:'Irvine',                 emoji:'🏹', anilist:378, mal:378},
-  {name:'Ubik',                   emoji:'🎲', anilist:380, mal:380},
-  {name:'Slan',                   emoji:'😈', anilist:381, mal:381},
-  {name:'Void',                   emoji:'🌀', anilist:382, mal:382},
-  {name:'Conrad',                 emoji:'🪲', anilist:383, mal:383},
-  {name:'Silat',                  emoji:'🥷', anilist:384, mal:384},
-  {name:'Azan',                   emoji:'🛡️', anilist:385, mal:385},
-  {name:'Roderick',               emoji:'⚓', anilist:386, mal:386},
-  {name:'Morda',                  emoji:'🧙', anilist:387, mal:387},
-  {name:'Gedfring',               emoji:'🧙', anilist:388, mal:388},
-  {name:'Daiba',                  emoji:'🐘', anilist:389, mal:389},
-  {name:'Guts (Black Swordsman)', emoji:'🗡️', anilist:390, mal:390},
-  {name:'Vargas',                 emoji:'😭', anilist:391, mal:391},
-  {name:'Anna (Berserk)',         emoji:'🌸', anilist:392, mal:392},
-  {name:'Theresia',               emoji:'😱', anilist:393, mal:393},
-  {name:'Count (Slug Baron)',     emoji:'🐌', anilist:394, mal:394},
-]},
-
-/* ══════════════════════════════════════
-   MOB PSYCHO 100 (all 3 seasons)
-══════════════════════════════════════ */
-{ id:'mob', name:'Mob Psycho 100', emoji:'💫', color:'#818cf8', tags:['Psychic','Comedy'], chars:[
-  {name:'Shigeo Kageyama (Mob)',  emoji:'😐', anilist:110417, mal:151174},
-  {name:'Arataka Reigen',         emoji:'🕴️', anilist:110418, mal:151175},
-  {name:'Ekubo / Dimple',         emoji:'😊', anilist:110419, mal:151176},
-  {name:'Ritsu Kageyama',         emoji:'😤', anilist:110420, mal:151177},
-  {name:'Teruki Hanazawa',        emoji:'💛', anilist:110421, mal:151178},
-  {name:'Shou Suzuki',            emoji:'🌟', anilist:110422, mal:151179},
-  {name:'Touichirou Suzuki',      emoji:'😤', anilist:110423, mal:151180},
-  {name:'Serizawa Katsuya',       emoji:'☂️', anilist:110424, mal:151181},
-  {name:'Musashi Gouda',          emoji:'💪', anilist:110425, mal:151182},
-  {name:'Tome Kurata',            emoji:'👽', anilist:110426, mal:151183},
-  {name:'Mezato Ichi',            emoji:'📷', anilist:110427, mal:151184},
-  {name:'Rei Kurosaki',           emoji:'⚡', anilist:110428, mal:151185},
-  {name:'Inukawa Kaito',          emoji:'🐕', anilist:110429, mal:151186},
-  {name:'Onigawara Tenga',        emoji:'🦁', anilist:110430, mal:151187},
-  {name:'Miwa Minori',            emoji:'💜', anilist:110431, mal:151188},
-  {name:'Tsubomi Takane',         emoji:'🌸', anilist:110432, mal:151189},
-  {name:'Matsuo Ryohei',          emoji:'🐸', anilist:110433, mal:151190},
-  {name:'Muraki',                 emoji:'💢', anilist:110434, mal:151191},
-  {name:'Minegishi',              emoji:'🌿', anilist:110435, mal:151192},
-  {name:'Hatori',                 emoji:'🌀', anilist:110436, mal:151193},
-  {name:'Sakurai',                emoji:'💥', anilist:110437, mal:151194},
-  {name:'Tsuchiya',               emoji:'💪', anilist:110438, mal:151195},
-  {name:'Asagiri Joseph',         emoji:'💼', anilist:110439, mal:151196},
-  {name:'Shimazaki',              emoji:'😎', anilist:110440, mal:151197},
-  {name:'Mogami',                 emoji:'😈', anilist:110441, mal:151198},
-  {name:'Ryo Shimazaki',          emoji:'💨', anilist:110442, mal:151199},
-  {name:'Mob (100%)',             emoji:'💥', anilist:110443, mal:151200},
-  {name:'Mob (?%)',               emoji:'❓', anilist:110444, mal:151201},
-  {name:'Clam',                   emoji:'🐚', anilist:110445, mal:151202},
-  {name:'Spiderman',              emoji:'🕷️', anilist:110446, mal:151203},
-]},
-
-/* ══════════════════════════════════════
-   DR. STONE (all arcs)
-══════════════════════════════════════ */
-{ id:'drstone', name:'Dr. Stone', emoji:'🧪', color:'#84cc16', tags:['Science','Shonen'], chars:[
-  {name:'Senku Ishigami',         emoji:'🧪', anilist:131681, mal:175387},
-  {name:'Taiju Oki',              emoji:'🌻', anilist:131682, mal:175388},
-  {name:'Yuzuriha Ogawa',         emoji:'🌸', anilist:131683, mal:175389},
-  {name:'Tsukasa Shishio',        emoji:'🦁', anilist:131684, mal:175390},
-  {name:'Kohaku',                 emoji:'🦁', anilist:131685, mal:175391},
-  {name:'Chrome',                 emoji:'🔬', anilist:131686, mal:175392},
-  {name:'Ruri',                   emoji:'💙', anilist:131687, mal:175393},
-  {name:'Gen Asagiri',            emoji:'🎭', anilist:131688, mal:175394},
-  {name:'Magma',                  emoji:'💢', anilist:131689, mal:175395},
-  {name:'Kinro',                  emoji:'⚔️', anilist:131690, mal:175396},
-  {name:'Ginro',                  emoji:'😰', anilist:131691, mal:175397},
-  {name:'Kaseki',                 emoji:'🔨', anilist:131692, mal:175398},
-  {name:'Suika',                  emoji:'🍉', anilist:131693, mal:175399},
-  {name:'Francois',               emoji:'👨‍🍳', anilist:131694, mal:175400},
-  {name:'Ryusui Nanami',          emoji:'⛵', anilist:131695, mal:175401},
-  {name:'Nikki Hanada',           emoji:'💪', anilist:131696, mal:175402},
-  {name:'Homura Momiji',          emoji:'🔥', anilist:131697, mal:175403},
-  {name:'Hyoga',                  emoji:'❄️', anilist:131698, mal:175404},
-  {name:'Mozu',                   emoji:'😈', anilist:131699, mal:175405},
-  {name:'Ukyo Saionji',           emoji:'🏹', anilist:131700, mal:175406},
-  {name:'Yo Uei',                 emoji:'🔫', anilist:131701, mal:175407},
-  {name:'Minami Hokutozai',       emoji:'📰', anilist:131702, mal:175408},
-  {name:'Amaryllis',              emoji:'🌺', anilist:131703, mal:175409},
-  {name:'Oarashi',                emoji:'🌪️', anilist:131704, mal:175410},
-  {name:'Ibara',                  emoji:'🌿', anilist:131705, mal:175411},
-  {name:'Stanley Snyder',         emoji:'🔫', anilist:131706, mal:175412},
-  {name:'Max',                    emoji:'😊', anilist:131707, mal:175413},
-  {name:'Luna Wright',            emoji:'💕', anilist:131708, mal:175414},
-  {name:'Carlos Barrios',         emoji:'🥊', anilist:131709, mal:175415},
-  {name:'Chelsea',                emoji:'🗺️', anilist:131710, mal:175416},
-  {name:'Matsukaze',              emoji:'💨', anilist:131711, mal:175417},
-  {name:'Sai Fujio',              emoji:'🧮', anilist:131712, mal:175418},
-  {name:'Brody Dudley',           emoji:'💪', anilist:131713, mal:175419},
-  {name:'Xeno Houston Wingfield', emoji:'🧪', anilist:131714, mal:175420},
-  {name:'Joel',                   emoji:'🎵', anilist:131715, mal:175421},
-]},
-
-/* ══════════════════════════════════════
-   TOKYO GHOUL (all seasons)
-══════════════════════════════════════ */
-{ id:'tokyoghoul', name:'Tokyo Ghoul', emoji:'👁️', color:'#9d0208', tags:['Ghoul','Dark'], chars:[
-  {name:'Ken Kaneki',             emoji:'⚪', anilist:2560, mal:56545},
-  {name:'Touka Kirishima',        emoji:'🐰', anilist:2561, mal:56546},
-  {name:'Rize Kamishiro',         emoji:'📚', anilist:2562, mal:56547},
-  {name:'Hideyoshi Nagachika',    emoji:'😄', anilist:2563, mal:56548},
-  {name:'Juuzou Suzuya',          emoji:'⚔️', anilist:2564, mal:56549},
-  {name:'Arima Kishou',           emoji:'👓', anilist:2565, mal:56550},
-  {name:'Nishiki Nishio',         emoji:'🌿', anilist:2566, mal:56551},
-  {name:'Hinami Fueguchi',        emoji:'🌸', anilist:2567, mal:56552},
-  {name:'Ayato Kirishima',        emoji:'🐰', anilist:2568, mal:56553},
-  {name:'Uta',                    emoji:'🎭', anilist:2569, mal:56554},
-  {name:'Yoshimura / Kuzen',      emoji:'☕', anilist:2570, mal:56555},
-  {name:'Eto Yoshimura',          emoji:'📗', anilist:2571, mal:56556},
-  {name:'Tatara',                 emoji:'🌡️', anilist:2572, mal:56557},
-  {name:'Yomo Renji',             emoji:'🎧', anilist:2574, mal:56559},
-  {name:'Roma Hoito',             emoji:'😊', anilist:2575, mal:56560},
-  {name:'Kurona Yasuhisa',        emoji:'⚪', anilist:2577, mal:56562},
-  {name:'Nashiro Yasuhisa',       emoji:'⚫', anilist:2578, mal:56563},
-  {name:'Mado Akira',             emoji:'🔫', anilist:2579, mal:56564},
-  {name:'Amon Kotaro',            emoji:'💪', anilist:2580, mal:56565},
-  {name:'Mougan Tanakamaru',      emoji:'⚔️', anilist:2581, mal:56566},
-  {name:'Tsuneyoshi Washuu',      emoji:'🐢', anilist:2582, mal:56567},
-  {name:'Matsuri Washuu',         emoji:'😈', anilist:2583, mal:56568},
-  {name:'Urie Kuki',              emoji:'🔪', anilist:2584, mal:56569},
-  {name:'Shirazu Ginshi',         emoji:'🐟', anilist:2585, mal:56570},
-  {name:'Saiko Yonebayashi',      emoji:'🎮', anilist:2586, mal:56571},
-  {name:'Mutsuki Tooru',          emoji:'🔪', anilist:2587, mal:56572},
-  {name:'Kanou Akihiro',          emoji:'🔬', anilist:2588, mal:56573},
-  {name:'Nimura Furuta',          emoji:'🃏', anilist:2589, mal:56574},
-  {name:'Ui Koori',               emoji:'🕊️', anilist:2590, mal:56575},
-  {name:'Hajime Hazuki',          emoji:'😡', anilist:2591, mal:56576},
-  {name:'Big Madam',              emoji:'💄', anilist:2592, mal:56577},
-  {name:'Kaneki (Black Reaper)',  emoji:'⚫', anilist:2593, mal:56578},
-  {name:'Kaneki (One-Eyed King)', emoji:'👑', anilist:2594, mal:56579},
-  {name:'Shachi / Tatara',        emoji:'🌊', anilist:2595, mal:56580},
-  {name:'Donato Porpora',         emoji:'⛪', anilist:2596, mal:56581},
-  {name:'Iwao Kuroiwa',           emoji:'⚔️', anilist:2597, mal:56582},
-  {name:'Takeomi Kuroiwa',        emoji:'⚔️', anilist:2598, mal:56583},
-  {name:'Kuki Urie (Final)',      emoji:'🔪', anilist:2599, mal:56584},
-]},
-
-/* ══════════════════════════════════════
-   THE PROMISED NEVERLAND
-══════════════════════════════════════ */
-{ id:'tpn', name:'Promised Neverland', emoji:'🌿', color:'#86efac', tags:['Escape','Thriller'], chars:[
-  {name:'Emma',                   emoji:'🍀', anilist:120794, mal:162409},
-  {name:'Norman',                 emoji:'🧠', anilist:120795, mal:162410},
-  {name:'Ray',                    emoji:'📖', anilist:120796, mal:162411},
-  {name:'Isabella',               emoji:'🌹', anilist:120797, mal:162412},
-  {name:'Phil',                   emoji:'😊', anilist:120798, mal:162413},
-  {name:'Don',                    emoji:'💪', anilist:120799, mal:162414},
-  {name:'Gilda',                  emoji:'🎀', anilist:120800, mal:162415},
-  {name:'Nat',                    emoji:'🎵', anilist:120801, mal:162416},
-  {name:'Anna',                   emoji:'🌸', anilist:120802, mal:162417},
-  {name:'Lannion',                emoji:'😴', anilist:120803, mal:162418},
-  {name:'Thoma',                  emoji:'😁', anilist:120804, mal:162419},
-  {name:'Alicia',                 emoji:'🌸', anilist:120805, mal:162420},
-  {name:'Dominic',                emoji:'🐑', anilist:120806, mal:162421},
-  {name:'Conny',                  emoji:'🧸', anilist:120807, mal:162422},
-  {name:'Carol',                  emoji:'🌸', anilist:120808, mal:162423},
-  {name:'Yvette',                 emoji:'😊', anilist:120809, mal:162424},
-  {name:'Nigel',                  emoji:'😎', anilist:120810, mal:162425},
-  {name:'Cristy',                 emoji:'🌸', anilist:120811, mal:162426},
-  {name:'Peter Ratri',            emoji:'😈', anilist:120812, mal:162427},
-  {name:'Andrew',                 emoji:'😡', anilist:120813, mal:162428},
-  {name:'Zazie',                  emoji:'🔇', anilist:120814, mal:162429},
-  {name:'Sonju',                  emoji:'🏹', anilist:120815, mal:162430},
-  {name:'Mujika',                 emoji:'🌿', anilist:120816, mal:162431},
-  {name:'Lucas',                  emoji:'✊', anilist:120817, mal:162432},
-  {name:'Yugo',                   emoji:'😤', anilist:120818, mal:162433},
-  {name:'Violet',                 emoji:'💜', anilist:120819, mal:162434},
-  {name:'Zack',                   emoji:'⚡', anilist:120820, mal:162435},
-  {name:'Sandy',                  emoji:'😊', anilist:120821, mal:162436},
-  {name:'Hayato',                 emoji:'🌸', anilist:120822, mal:162437},
-  {name:'Barbara',                emoji:'💉', anilist:120823, mal:162438},
-  {name:'Cislo',                  emoji:'🔧', anilist:120824, mal:162439},
-  {name:'Oliver',                 emoji:'🌿', anilist:120825, mal:162440},
-  {name:'Emma (Adult)',           emoji:'🍀', anilist:120826, mal:162441},
-  {name:'Norman (White One)',     emoji:'🧠', anilist:120827, mal:162442},
-  {name:'Grace Field Emma',       emoji:'🌿', anilist:120828, mal:162443},
-]},
-
-/* ══════════════════════════════════════
-   SWORD ART ONLINE (all arcs)
-══════════════════════════════════════ */
-{ id:'sao', name:'Sword Art Online', emoji:'🗡️', color:'#00b4d8', tags:['Isekai','GameRPG'], chars:[
-  {name:'Kirito / Kazuto Kirigaya',emoji:'🗡️', anilist:36828, mal:36828},
-  {name:'Asuna Yuuki',            emoji:'⚡', anilist:36829, mal:36829},
-  {name:'Sinon / Shino Asada',    emoji:'🏹', anilist:36830, mal:36830},
-  {name:'Alice Zuberg',           emoji:'💛', anilist:36831, mal:36831},
-  {name:'Eugeo',                  emoji:'❄️', anilist:36832, mal:36832},
-  {name:'Leafa / Suguha Kirigaya',emoji:'💚', anilist:36833, mal:36833},
-  {name:'Lisbeth / Rika Shinozaki',emoji:'🔨', anilist:36834, mal:36834},
-  {name:'Silica / Keiko Ayano',   emoji:'🐉', anilist:36835, mal:36835},
-  {name:'Yui',                    emoji:'💚', anilist:36836, mal:36836},
-  {name:'Klein / Ryoutarou Tsuboi',emoji:'🔴', anilist:36837, mal:36837},
-  {name:'Agil / Andrew Gilbert',  emoji:'🪓', anilist:36838, mal:36838},
-  {name:'Akihiko Kayaba',         emoji:'🏰', anilist:36839, mal:36839},
-  {name:'Nobuyuki Sugou',         emoji:'😈', anilist:36840, mal:36840},
-  {name:'Yuuki Konno',            emoji:'💜', anilist:36842, mal:36842},
-  {name:'Siune',                  emoji:'💙', anilist:36843, mal:36843},
-  {name:'Rain',                   emoji:'💧', anilist:36844, mal:36844},
-  {name:'Nori',                   emoji:'🌿', anilist:36845, mal:36845},
-  {name:'Administrator / Quinella',emoji:'⚪', anilist:36848, mal:36848},
-  {name:'Cardinal',               emoji:'🔴', anilist:36849, mal:36849},
-  {name:'Bercouli',               emoji:'🧊', anilist:36850, mal:36850},
-  {name:'Fanatio',                emoji:'♟️', anilist:36851, mal:36851},
-  {name:'Deusolbert',             emoji:'🔥', anilist:36852, mal:36852},
-  {name:'Eldrie Woolsburg',       emoji:'💜', anilist:36853, mal:36853},
-  {name:'Stacia (Asuna)',         emoji:'⚡', anilist:36854, mal:36854},
-  {name:'Death Gun',              emoji:'💀', anilist:36841, mal:36841},
-  {name:'Rinko Koujiro',          emoji:'👩', anilist:36855, mal:36855},
-  {name:'Kikuoka Seijirou',       emoji:'🕵️', anilist:36856, mal:36856},
-  {name:'Selka Zuberg',           emoji:'✝️', anilist:36857, mal:36857},
-  {name:'Tiese Shtolienen',       emoji:'🌸', anilist:36858, mal:36858},
-  {name:'Ronie Arabel',           emoji:'🌸', anilist:36859, mal:36859},
-]},
-
-/* SOLO LEVELING */
-{ id:'sololeveling', name:'Solo Leveling', emoji:'⚔️', color:'#4f46e5', tags:['Action','Fantasy'], chars:[
-  {name:'Sung Jinwoo',            emoji:'⚔️'},
-  {name:'Cha Hae-In',             emoji:'✨'},
-  {name:'Yoo Jinho',              emoji:'💰'},
-  {name:'Go Gunhee',              emoji:'👑'},
-  {name:'Baek Yoonho',            emoji:'🐺'},
-  {name:'Choi Jong-In',           emoji:'🔥'},
-  {name:'Woo Jinchul',            emoji:'🛡️'},
-  {name:'Hwang Dongsoo',          emoji:'💢'},
-  {name:'Hwang Dongsuk',          emoji:'🪓'},
-  {name:'Lee Joohee',             emoji:'⛑️'},
-  {name:'Song Chiyul',            emoji:'⚔️'},
-  {name:'Kang Taeshik',           emoji:'🗡️'},
-  {name:'Liu Zhigang',            emoji:'🐉'},
-  {name:'Thomas Andre',           emoji:'💪'},
-  {name:'Christopher Reed',       emoji:'🔥'},
-  {name:'Siddharth Bachchan',     emoji:'🌀'},
-  {name:'Antares',                emoji:'🐉'},
-  {name:'Ashborn',                emoji:'🌙'},
-  {name:'Beru',                   emoji:'🐜'},
-  {name:'Igris',                  emoji:'🏇'},
-  {name:'Bellion',                emoji:'⚔️'},
-  {name:'Iron (Kim Chul)',        emoji:'🛡️'},
-  {name:'Tusk',                   emoji:'🔥'},
-  {name:'Greed (Hwang Dongsoo)',  emoji:'⚫'},
-  {name:'Jinah Sung',             emoji:'🌸'},
-]},
-
-/* BLUE LOCK */
-{ id:'bluelock', name:'Blue Lock', emoji:'⚽', color:'#2563eb', tags:['Sports','Shonen'], chars:[
-  {name:'Yoichi Isagi',           emoji:'⚽'},
-  {name:'Meguru Bachira',         emoji:'🐝'},
-  {name:'Rin Itoshi',             emoji:'🏹'},
-  {name:'Sae Itoshi',             emoji:'✨'},
-  {name:'Seishiro Nagi',          emoji:'🧊'},
-  {name:'Reo Mikage',             emoji:'💎'},
-  {name:'Rensuke Kunigami',       emoji:'🔥'},
-  {name:'Hyoma Chigiri',          emoji:'💨'},
-  {name:'Gin Gagamaru',           emoji:'🐻'},
-  {name:'Jingo Raichi',           emoji:'💢'},
-  {name:'Asahi Naruhaya',         emoji:'⚡'},
-  {name:'Okuhito Iemon',          emoji:'🧤'},
-  {name:'Wataru Kuon',            emoji:'🎯'},
-  {name:'Gurimu Igarashi',        emoji:'🙏'},
-  {name:'Shouei Barou',           emoji:'👑'},
-  {name:'Ikki Niko',              emoji:'👁️'},
-  {name:'Jyubei Aryu',            emoji:'💫'},
-  {name:'Aoshi Tokimitsu',        emoji:'🫨'},
-  {name:'Oliver Aiku',            emoji:'🛡️'},
-  {name:'Tabito Karasu',          emoji:'🐦'},
-  {name:'Eita Otoya',             emoji:'🎭'},
-  {name:'Kenyu Yukimiya',         emoji:'🖶️'},
-  {name:'Ranze Kurona',           emoji:'🐉'},
-  {name:'Yo Hiori',               emoji:'🌊'},
-  {name:'Jin Kiyora',             emoji:'🌪️'},
-  {name:'Alexis Ness',            emoji:'♟️'},
-  {name:'Michael Kaiser',         emoji:'👑'},
-  {name:'Julian Loki',            emoji:'🐆'},
-  {name:'Lavinho',                emoji:'🍃'},
-  {name:'Jinpachi Ego',           emoji:'🧠'},
-]},
-
-/* HAIKYUU (extended) */
-{ id:'haikyuu', name:'Haikyuu!!', emoji:'🏐', color:'#f97316', tags:['Sports','Shonen'], chars:[
-  {name:'Shoyo Hinata',           emoji:'🏐'},
-  {name:'Tobio Kageyama',         emoji:'⚡'},
-  {name:'Daichi Sawamura',        emoji:'🛡️'},
-  {name:'Koshi Sugawara',         emoji:'🎯'},
-  {name:'Asahi Azumane',          emoji:'💥'},
-  {name:'Yu Nishinoya',           emoji:'🐆'},
-  {name:'Ryunosuke Tanaka',       emoji:'🔥'},
-  {name:'Kei Tsukishima',         emoji:'🧊'},
-  {name:'Tadashi Yamaguchi',      emoji:'🍀'},
-  {name:'Chikara Ennoshita',      emoji:'🧭'},
-  {name:'Kiyoko Shimizu',         emoji:'✨'},
-  {name:'Ittetsu Takeda',         emoji:'📘'},
-  {name:'Keishin Ukai',           emoji:'☕'},
-  {name:'Toru Oikawa',            emoji:'👑'},
-  {name:'Hajime Iwaizumi',        emoji:'💪'},
-  {name:'Issei Matsukawa',        emoji:'🧱'},
-  {name:'Takahiro Hanamaki',      emoji:'🌪️'},
-  {name:'Kentaro Kyotani',        emoji:'🐺'},
-  {name:'Yutaro Kindaichi',       emoji:'📏'},
-  {name:'Tetsuro Kuroo',          emoji:'🐈‍⬛'},
-  {name:'Kenma Kozume',           emoji:'🎮'},
-  {name:'Morisuke Yaku',          emoji:'🛡️'},
-  {name:'Levon Haiba',            emoji:'🗼'},
-  {name:'Kotaro Bokuto',          emoji:'🦉'},
-  {name:'Keiji Akaashi',          emoji:'📝'},
-  {name:'Akinori Konoha',         emoji:'🌿'},
-  {name:'Wakatoshi Ushijima',     emoji:'🦬'},
-  {name:'Satori Tendo',           emoji:'👹'},
-  {name:'Tsutomu Goshiki',        emoji:'⭐'},
-  {name:'Tooru Tendou',           emoji:'🎭'},
-  {name:'Kiyoomi Sakusa',         emoji:'😷'},
-  {name:'Atsumu Miya',            emoji:'⚡'},
-  {name:'Osamu Miya',             emoji:'🍙'},
-  {name:'Shinsuke Kita',          emoji:'🌾'},
-  {name:'Rintaro Suna',           emoji:'🦂'},
-  // Extra captains, setters, and rivals
-  {name:'Kuroo (Captain)',        emoji:'🐈‍⬛'},
-  {name:'Kenma (Gamer)',          emoji:'🎮'},
-  {name:'Bokuto (Wing Spiker)',   emoji:'🦉'},
-  {name:'Akaashi (Setter)',       emoji:'📝'},
-  {name:'Oikawa (Server)',        emoji:'👑'},
-  {name:'Ushijima (Ace)',         emoji:'🦬'},
-  {name:'Sakusa (Top Ace)',       emoji:'😷'},
-  {name:'Atsumu (MSBY)',          emoji:'⚡'},
-  {name:'Osamu (Onigiri Miya)',   emoji:'🍙'},
-  {name:'Tendo (Guess Blocker)',  emoji:'🎭'},
-  {name:'Kita (Captain)',         emoji:'🌾'},
-  {name:'Iwaizumi (Ace)',         emoji:'💪'},
-  {name:'Yaku (Libero)',          emoji:'🛡️'},
-  {name:'Lev (Middle Blocker)',   emoji:'🗼'},
-]},
-
-/* Kuroko's Basketball */
-{ id:'kuroko', name:"Kuroko's Basketball", emoji:'🏀', color:'#0ea5e9', tags:['Sports','Shonen'], chars:[
-  {name:'Tetsuya Kuroko',         emoji:'🏀'},
-  {name:'Taiga Kagami',           emoji:'🔥'},
-  {name:'Junpei Hyuga',           emoji:'🎯'},
-  {name:'Shun Izuki',             emoji:'👁️'},
-  {name:'Rinnosuke Mitobe',       emoji:'🧱'},
-  {name:'Teppei Kiyoshi',         emoji:'🛡️'},
-  {name:'Satsuki Momoi',          emoji:'📊'},
-  {name:'Riko Aida',              emoji:'📋'},
-  {name:'Ryota Kise',             emoji:'✨'},
-  {name:'Shintaro Midorima',      emoji:'🍀'},
-  {name:'Kazunari Takao',         emoji:'🦅'},
-  {name:'Daiki Aomine',           emoji:'🌊'},
-  {name:'Atsushi Murasakibara',   emoji:'🍭'},
-  {name:'Tatsuya Himuro',         emoji:'❄️'},
-  {name:'Alexandra Garcia',       emoji:'🥊'},
-  {name:'Makoto Hanamiya',        emoji:'🕷️'},
-  {name:'Kiyoshi Miyaji',         emoji:'🚴'},
-  {name:'Yukio Kasamatsu',        emoji:'📣'},
-  {name:'Yoshitaka Moriyama',     emoji:'🎩'},
-  {name:'Soichiro Jin',           emoji:'🏹'},
-  {name:'Shogo Haizaki',          emoji:'⚫'},
-  {name:'Seijuro Akashi',         emoji:'👑'},
-  {name:'Reo Mibuchi',            emoji:'💎'},
-  {name:'Eikichi Nebuya',         emoji:'🦬'},
-  {name:'Kotaro Hayama',          emoji:'🐆'},
-  {name:'Chihiro Mayuzumi',       emoji:'🌫️'},
-  {name:'Kensuke Fukui',          emoji:'🧠'},
-  {name:'Kenichi Okamura',        emoji:'🗿'},
-  {name:'Shoichi Imayoshi',       emoji:'😼'},
-  {name:'Kazuya Hara',            emoji:'💢'},
-]},
-
-/* JOJO'S BIZARRE ADVENTURE */
-{ id:'jojo', name:"JoJo's Bizarre Adventure", emoji:'⭐', color:'#ef4444', tags:['Action','Adventure'], chars:[
-  {name:'Jonathan Joestar',       emoji:'⭐'},
-  {name:'Dio Brando',             emoji:'🩸'},
-  {name:'Will A. Zeppeli',        emoji:'🎩'},
-  {name:'Robert E. O. Speedwagon',emoji:'🔥'},
-  {name:'Joseph Joestar',         emoji:'🧠'},
-  {name:'Caesar Anthonio Zeppeli',emoji:'🫧'},
-  {name:'Lisa Lisa',              emoji:'🌹'},
-  {name:'Rudol von Stroheim',     emoji:'⚙️'},
-  {name:'Kars',                   emoji:'🪶'},
-  {name:'Esidisi',                emoji:'🌋'},
-  {name:'Wamuu',                  emoji:'🌪️'},
-  {name:'Jotaro Kujo',            emoji:'🧢'},
-  {name:'Noriaki Kakyoin',        emoji:'🍒'},
-  {name:'Muhammad Avdol',         emoji:'🔥'},
-  {name:'Jean Pierre Polnareff',  emoji:'⚔️'},
-  {name:'Iggy',                   emoji:'🐶'},
-  {name:'Hol Horse',              emoji:'🔫'},
-  {name:'Vanilla Ice',            emoji:'🕳️'},
-  {name:'Josuke Higashikata',     emoji:'💗'},
-  {name:'Koichi Hirose',          emoji:'🔊'},
-  {name:'Okuyasu Nijimura',       emoji:'✋'},
-  {name:'Rohan Kishibe',          emoji:'✒️'},
-  {name:'Yukako Yamagishi',       emoji:'💜'},
-  {name:'Jotaro (Part 4)',        emoji:'🐬'},
-  {name:'Giorno Giovanna',        emoji:'🌼'},
-  {name:'Bruno Bucciarati',       emoji:'🧷'},
-  {name:'Guido Mista',            emoji:'🔫'},
-  {name:'Narancia Ghirga',        emoji:'🛩️'},
-  {name:'Leone Abbacchio',        emoji:'🍷'},
-  {name:'Pannacotta Fugo',        emoji:'🦠'},
-  {name:'Trish Una',              emoji:'🎀'},
-  {name:'Diavolo',                emoji:'👑'},
-  {name:'Doppio',                 emoji:'📱'},
-  {name:'Jolyne Cujoh',           emoji:'🦋'},
-  {name:'Enrico Pucci',           emoji:'⛪'},
-]},
-
-]; // end ANIMES
-
-/* ──────────────────────────────────────
-   CUSTOM IMAGE UPLOAD SUPPORT
-   Users can drop images into /images/ folder
-   and reference them here with img: field
-   Example:
-   { name:'Custom Char', emoji:'⭐', anilist:0, mal:0,
-     img:'images/my_character.jpg' }
-────────────────────────────────────── */
+  {
+    "id": "naruto",
+    "name": "Naruto & Shippuden",
+    "emoji": "🍥",
+    "color": "#f97316",
+    "tags": [
+      "Shonen",
+      "Action"
+    ],
+    "chars": [
+      {
+        "name": "Naruto Uzumaki",
+        "emoji": "🍥",
+        "anilist": 17,
+        "mal": 17
+      },
+      {
+        "name": "Sasuke Uchiha",
+        "emoji": "🍥",
+        "anilist": 13,
+        "mal": 13
+      },
+      {
+        "name": "Sakura Haruno",
+        "emoji": "🍥",
+        "anilist": 145,
+        "mal": 22
+      },
+      {
+        "name": "Kakashi Hatake",
+        "emoji": "🍥",
+        "anilist": 85,
+        "mal": 85
+      },
+      {
+        "name": "Sai",
+        "emoji": "🍥",
+        "anilist": 1901,
+        "mal": 123
+      },
+      {
+        "name": "Yamato / Tenzo",
+        "emoji": "🍥",
+        "anilist": 2006,
+        "mal": 124
+      },
+      {
+        "name": "Iruka Umino",
+        "emoji": "🍥",
+        "anilist": 2011,
+        "mal": 135
+      },
+      {
+        "name": "Konohamaru Sarutobi",
+        "emoji": "🍥",
+        "anilist": 3889,
+        "mal": 132
+      },
+      {
+        "name": "Moegi Kazamatsuri",
+        "emoji": "🍥",
+        "anilist": 13454,
+        "mal": 164
+      },
+      {
+        "name": "Udon Ise",
+        "emoji": "🍥",
+        "anilist": 165,
+        "mal": 165
+      },
+      {
+        "name": "Hinata Hyuga",
+        "emoji": "🍥",
+        "anilist": 87,
+        "mal": 87
+      },
+      {
+        "name": "Kiba Inuzuka",
+        "emoji": "🍥",
+        "anilist": 3495,
+        "mal": 105
+      },
+      {
+        "name": "Shino Aburame",
+        "emoji": "🍥",
+        "anilist": 3428,
+        "mal": 106
+      },
+      {
+        "name": "Akamaru",
+        "emoji": "🍥",
+        "anilist": 4799,
+        "mal": null
+      },
+      {
+        "name": "Kurenai Yuhi",
+        "emoji": "🍥",
+        "anilist": 108,
+        "mal": 108
+      },
+      {
+        "name": "Shikamaru Nara",
+        "emoji": "🍥",
+        "anilist": 2007,
+        "mal": 93
+      },
+      {
+        "name": "Ino Yamanaka",
+        "emoji": "🍥",
+        "anilist": 2009,
+        "mal": 103
+      },
+      {
+        "name": "Choji Akimichi",
+        "emoji": "🍥",
+        "anilist": 104,
+        "mal": 104
+      },
+      {
+        "name": "Asuma Sarutobi",
+        "emoji": "🍥",
+        "anilist": 4775,
+        "mal": 109
+      },
+      {
+        "name": "Rock Lee",
+        "emoji": "🍥",
+        "anilist": 306,
+        "mal": 89
+      },
+      {
+        "name": "Neji Hyuga",
+        "emoji": "🍥",
+        "anilist": 90,
+        "mal": 90
+      },
+      {
+        "name": "Tenten",
+        "emoji": "🍥",
+        "anilist": 3710,
+        "mal": 102
+      },
+      {
+        "name": "Might Guy",
+        "emoji": "🍥",
+        "anilist": 307,
+        "mal": 110
+      },
+      {
+        "name": "Tsunade",
+        "emoji": "🍥",
+        "anilist": 155934,
+        "mal": 83
+      },
+      {
+        "name": "Jiraiya",
+        "emoji": "🍥",
+        "anilist": 2423,
+        "mal": 88
+      },
+      {
+        "name": "Orochimaru",
+        "emoji": "🍥",
+        "anilist": 2455,
+        "mal": 86
+      },
+      {
+        "name": "Kabuto Yakushi",
+        "emoji": "🍥",
+        "anilist": 2405,
+        "mal": 99
+      },
+      {
+        "name": "Shizune",
+        "emoji": "🍥",
+        "anilist": 4643,
+        "mal": null
+      },
+      {
+        "name": "TonTon",
+        "emoji": "🍥",
+        "anilist": 192707,
+        "mal": null
+      },
+      {
+        "name": "Anko Mitarashi",
+        "emoji": "🍥",
+        "anilist": 809,
+        "mal": 107
+      },
+      {
+        "name": "Hiruzen Sarutobi",
+        "emoji": "🍥",
+        "anilist": 7571,
+        "mal": 111
+      },
+      {
+        "name": "Danzo Shimura",
+        "emoji": "🍥",
+        "anilist": null,
+        "mal": null
+      },
+      {
+        "name": "Homura Mitokado",
+        "emoji": "🍥",
+        "anilist": 22648,
+        "mal": null
+      },
+      {
+        "name": "Koharu Utatane",
+        "emoji": "🍥",
+        "anilist": 22649,
+        "mal": null
+      },
+      {
+        "name": "Ebisu",
+        "emoji": "🍥",
+        "anilist": 10791,
+        "mal": 166
+      },
+      {
+        "name": "Ibiki Morino",
+        "emoji": "🍥",
+        "anilist": 22923,
+        "mal": 139
+      },
+      {
+        "name": "Genma Shiranui",
+        "emoji": "🍥",
+        "anilist": 3735,
+        "mal": 138
+      },
+      {
+        "name": "Aoba Yamashiro",
+        "emoji": "🍥",
+        "anilist": 17553,
+        "mal": null
+      },
+      {
+        "name": "Hayate Gekko",
+        "emoji": "🍥",
+        "anilist": 7738,
+        "mal": null
+      },
+      {
+        "name": "Yugao Uzuki",
+        "emoji": "🍥",
+        "anilist": 15045,
+        "mal": null
+      },
+      {
+        "name": "Kotetsu Hagane",
+        "emoji": "🍥",
+        "anilist": 16304,
+        "mal": null
+      },
+      {
+        "name": "Izumo Kamizuki",
+        "emoji": "🍥",
+        "anilist": 14032,
+        "mal": 136
+      },
+      {
+        "name": "Hashirama Senju",
+        "emoji": "🍥",
+        "anilist": 12464,
+        "mal": 112
+      },
+      {
+        "name": "Tobirama Senju",
+        "emoji": "🍥",
+        "anilist": 12465,
+        "mal": 113
+      },
+      {
+        "name": "Minato Namikaze",
+        "emoji": "🍥",
+        "anilist": 2535,
+        "mal": 94
+      },
+      {
+        "name": "Kushina Uzumaki",
+        "emoji": "🍥",
+        "anilist": 7302,
+        "mal": 140
+      },
+      {
+        "name": "Mito Uzumaki",
+        "emoji": "🍥",
+        "anilist": 56691,
+        "mal": null
+      },
+      {
+        "name": "Dan Kato",
+        "emoji": "🍥",
+        "anilist": 22876,
+        "mal": 143
+      },
+      {
+        "name": "Nawaki",
+        "emoji": "🍥",
+        "anilist": 22884,
+        "mal": 144
+      },
+      {
+        "name": "Rin Nohara",
+        "emoji": "🍥",
+        "anilist": 14082,
+        "mal": null
+      },
+      {
+        "name": "Obito Uchiha / Tobi",
+        "emoji": "🍥",
+        "anilist": 91,
+        "mal": 91
+      },
+      {
+        "name": "Itachi Uchiha",
+        "emoji": "🍥",
+        "anilist": 14,
+        "mal": 84
+      },
+      {
+        "name": "Madara Uchiha",
+        "emoji": "🍥",
+        "anilist": 53901,
+        "mal": 114
+      },
+      {
+        "name": "Shisui Uchiha",
+        "emoji": "🍥",
+        "anilist": 22893,
+        "mal": 145
+      },
+      {
+        "name": "Fugaku Uchiha",
+        "emoji": "🍥",
+        "anilist": 16973,
+        "mal": 142
+      },
+      {
+        "name": "Mikoto Uchiha",
+        "emoji": "🍥",
+        "anilist": 21122,
+        "mal": 141
+      },
+      {
+        "name": "Izuna Uchiha",
+        "emoji": "🍥",
+        "anilist": 16406,
+        "mal": 146
+      },
+      {
+        "name": "Gaara",
+        "emoji": "🍥",
+        "anilist": 1662,
+        "mal": 82
+      },
+      {
+        "name": "Temari",
+        "emoji": "🍥",
+        "anilist": 2174,
+        "mal": 100
+      },
+      {
+        "name": "Kankuro",
+        "emoji": "🍥",
+        "anilist": 4694,
+        "mal": 101
+      },
+      {
+        "name": "Chiyo",
+        "emoji": "🍥",
+        "anilist": 124091,
+        "mal": 2119
+      },
+      {
+        "name": "Ebizo",
+        "emoji": "🍥",
+        "anilist": null,
+        "mal": null
+      },
+      {
+        "name": "Rasa",
+        "emoji": "🍥",
+        "anilist": 22920,
+        "mal": null
+      },
+      {
+        "name": "Baki",
+        "emoji": "🍥",
+        "anilist": 15081,
+        "mal": null
+      },
+      {
+        "name": "Yashamaru",
+        "emoji": "🍥",
+        "anilist": 13017,
+        "mal": null
+      },
+      {
+        "name": "Pakura",
+        "emoji": "🍥",
+        "anilist": 63791,
+        "mal": 168
+      },
+      {
+        "name": "Mei Terumi",
+        "emoji": "🍥",
+        "anilist": 23478,
+        "mal": 117
+      },
+      {
+        "name": "Ao",
+        "emoji": "🍥",
+        "anilist": 159,
+        "mal": 159
+      },
+      {
+        "name": "Chojuro",
+        "emoji": "🍥",
+        "anilist": 23418,
+        "mal": 158
+      },
+      {
+        "name": "Zabuza Momochi",
+        "emoji": "🍥",
+        "anilist": 728,
+        "mal": 1675
+      },
+      {
+        "name": "Haku",
+        "emoji": "🍥",
+        "anilist": 2039,
+        "mal": 1676
+      },
+      {
+        "name": "Kisame Hoshigaki",
+        "emoji": "🍥",
+        "anilist": 2672,
+        "mal": 130
+      },
+      {
+        "name": "Suigetsu Hozuki",
+        "emoji": "🍥",
+        "anilist": 121,
+        "mal": 121
+      },
+      {
+        "name": "Mangetsu Hozuki",
+        "emoji": "🍥",
+        "anilist": 62775,
+        "mal": null
+      },
+      {
+        "name": "Gengetsu Hozuki",
+        "emoji": "🍥",
+        "anilist": 2153,
+        "mal": 2153
+      },
+      {
+        "name": "Ameyuri Ringo",
+        "emoji": "🍥",
+        "anilist": 64459,
+        "mal": null
+      },
+      {
+        "name": "Jinin Akebino",
+        "emoji": "🍥",
+        "anilist": 64461,
+        "mal": null
+      },
+      {
+        "name": "Jinpachi Munashi",
+        "emoji": "🍥",
+        "anilist": 64457,
+        "mal": null
+      },
+      {
+        "name": "Kushimaru Kuriarare",
+        "emoji": "🍥",
+        "anilist": 64455,
+        "mal": null
+      },
+      {
+        "name": "Fuguki Suikazan",
+        "emoji": "🍥",
+        "anilist": 40785,
+        "mal": null
+      },
+      {
+        "name": "Fourth Raikage / A",
+        "emoji": "🍥",
+        "anilist": 118,
+        "mal": 118
+      },
+      {
+        "name": "Killer B / Killer Bee",
+        "emoji": "🍥",
+        "anilist": 116,
+        "mal": 116
+      },
+      {
+        "name": "Darui",
+        "emoji": "🍥",
+        "anilist": 23476,
+        "mal": 119
+      },
+      {
+        "name": "Omoi",
+        "emoji": "🍥",
+        "anilist": 22872,
+        "mal": 160
+      },
+      {
+        "name": "Karui",
+        "emoji": "🍥",
+        "anilist": 22874,
+        "mal": 161
+      },
+      {
+        "name": "Samui",
+        "emoji": "🍥",
+        "anilist": 22873,
+        "mal": 162
+      },
+      {
+        "name": "Mabui",
+        "emoji": "🍥",
+        "anilist": 33736,
+        "mal": null
+      },
+      {
+        "name": "Dodai",
+        "emoji": "🍥",
+        "anilist": 77437,
+        "mal": null
+      },
+      {
+        "name": "Cee",
+        "emoji": "🍥",
+        "anilist": null,
+        "mal": null
+      },
+      {
+        "name": "Yugito Nii",
+        "emoji": "🍥",
+        "anilist": 15362,
+        "mal": 155
+      },
+      {
+        "name": "Third Raikage / A",
+        "emoji": "🍥",
+        "anilist": 65133,
+        "mal": 2154
+      },
+      {
+        "name": "Oonoki / Onoki",
+        "emoji": "🍥",
+        "anilist": 176,
+        "mal": 176
+      },
+      {
+        "name": "Kurotsuchi",
+        "emoji": "🍥",
+        "anilist": 23474,
+        "mal": 175
+      },
+      {
+        "name": "Akatsuchi",
+        "emoji": "🍥",
+        "anilist": 23473,
+        "mal": 177
+      },
+      {
+        "name": "Deidara",
+        "emoji": "🍥",
+        "anilist": 1902,
+        "mal": 126
+      },
+      {
+        "name": "Mu / Muu",
+        "emoji": "🍥",
+        "anilist": 2152,
+        "mal": 2152
+      },
+      {
+        "name": "Han",
+        "emoji": "🍥",
+        "anilist": 153,
+        "mal": 153
+      },
+      {
+        "name": "Roshi",
+        "emoji": "🍥",
+        "anilist": 154,
+        "mal": 154
+      },
+      {
+        "name": "Kitsuchi",
+        "emoji": "🍥",
+        "anilist": 62641,
+        "mal": null
+      },
+      {
+        "name": "Hanzo",
+        "emoji": "🍥",
+        "anilist": null,
+        "mal": null
+      },
+      {
+        "name": "Nagato / Pain",
+        "emoji": "🍥",
+        "anilist": 3180,
+        "mal": 92
+      },
+      {
+        "name": "Konan",
+        "emoji": "🍥",
+        "anilist": 3179,
+        "mal": 95
+      },
+      {
+        "name": "Yahiko",
+        "emoji": "🍥",
+        "anilist": 23050,
+        "mal": 29829
+      },
+      {
+        "name": "Sasori",
+        "emoji": "🍥",
+        "anilist": 1900,
+        "mal": 127
+      },
+      {
+        "name": "Hidan",
+        "emoji": "🍥",
+        "anilist": 2792,
+        "mal": 128
+      },
+      {
+        "name": "Kakuzu",
+        "emoji": "🍥",
+        "anilist": 3178,
+        "mal": 129
+      },
+      {
+        "name": "Zetsu",
+        "emoji": "🍥",
+        "anilist": 3150,
+        "mal": 131
+      },
+      {
+        "name": "Black Zetsu",
+        "emoji": "🍥",
+        "anilist": null,
+        "mal": null
+      },
+      {
+        "name": "White Zetsu",
+        "emoji": "🍥",
+        "anilist": null,
+        "mal": null
+      },
+      {
+        "name": "Jugo",
+        "emoji": "🍥",
+        "anilist": 122,
+        "mal": 122
+      },
+      {
+        "name": "Karin",
+        "emoji": "🍥",
+        "anilist": 120,
+        "mal": 120
+      },
+      {
+        "name": "Kimimaro",
+        "emoji": "🍥",
+        "anilist": 53649,
+        "mal": 2013
+      },
+      {
+        "name": "Tayuya",
+        "emoji": "🍥",
+        "anilist": 3052,
+        "mal": 2016
+      },
+      {
+        "name": "Sakon",
+        "emoji": "🍥",
+        "anilist": 8760,
+        "mal": null
+      },
+      {
+        "name": "Ukon",
+        "emoji": "🍥",
+        "anilist": 41366,
+        "mal": null
+      },
+      {
+        "name": "Kidomaru",
+        "emoji": "🍥",
+        "anilist": 28928,
+        "mal": 2015
+      },
+      {
+        "name": "Jirobo",
+        "emoji": "🍥",
+        "anilist": 2014,
+        "mal": 2014
+      },
+      {
+        "name": "Dosu Kinuta",
+        "emoji": "🍥",
+        "anilist": 9244,
+        "mal": null
+      },
+      {
+        "name": "Zaku Abumi",
+        "emoji": "🍥",
+        "anilist": 8997,
+        "mal": null
+      },
+      {
+        "name": "Kin Tsuchi",
+        "emoji": "🍥",
+        "anilist": 9680,
+        "mal": null
+      },
+      {
+        "name": "Guren",
+        "emoji": "🍥",
+        "anilist": 20013,
+        "mal": null
+      },
+      {
+        "name": "Yukimaru",
+        "emoji": "🍥",
+        "anilist": 20621,
+        "mal": null
+      },
+      {
+        "name": "Mifune",
+        "emoji": "🍥",
+        "anilist": 12982,
+        "mal": 172
+      },
+      {
+        "name": "Hagoromo Otsutsuki",
+        "emoji": "🍥",
+        "anilist": 148,
+        "mal": 148
+      },
+      {
+        "name": "Hamura Otsutsuki",
+        "emoji": "🍥",
+        "anilist": 149,
+        "mal": 149
+      },
+      {
+        "name": "Kaguya Otsutsuki",
+        "emoji": "🍥",
+        "anilist": 147,
+        "mal": 147
+      },
+      {
+        "name": "Indra Otsutsuki",
+        "emoji": "🍥",
+        "anilist": null,
+        "mal": null
+      },
+      {
+        "name": "Asura Otsutsuki",
+        "emoji": "🍥",
+        "anilist": null,
+        "mal": null
+      },
+      {
+        "name": "Toneri Otsutsuki",
+        "emoji": "🍥",
+        "anilist": 150,
+        "mal": 150
+      },
+      {
+        "name": "Fuu",
+        "emoji": "🍥",
+        "anilist": 2143,
+        "mal": 2143
+      },
+      {
+        "name": "Yagura Karatachi",
+        "emoji": "🍥",
+        "anilist": 156,
+        "mal": 156
+      },
+      {
+        "name": "Utakata",
+        "emoji": "🍥",
+        "anilist": 23219,
+        "mal": 152
+      },
+      {
+        "name": "Hiashi Hyuga",
+        "emoji": "🍥",
+        "anilist": null,
+        "mal": null
+      },
+      {
+        "name": "Hizashi Hyuga",
+        "emoji": "🍥",
+        "anilist": null,
+        "mal": null
+      },
+      {
+        "name": "Hanabi Hyuga",
+        "emoji": "🍥",
+        "anilist": 163,
+        "mal": 163
+      },
+      {
+        "name": "Shikaku Nara",
+        "emoji": "🍥",
+        "anilist": 18056,
+        "mal": 2151
+      },
+      {
+        "name": "Inoichi Yamanaka",
+        "emoji": "🍥",
+        "anilist": 15072,
+        "mal": 2150
+      },
+      {
+        "name": "Choza Akimichi",
+        "emoji": "🍥",
+        "anilist": null,
+        "mal": null
+      },
+      {
+        "name": "Tsume Inuzuka",
+        "emoji": "🍥",
+        "anilist": 15074,
+        "mal": null
+      },
+      {
+        "name": "Hana Inuzuka",
+        "emoji": "🍥",
+        "anilist": 15073,
+        "mal": null
+      },
+      {
+        "name": "Shibi Aburame",
+        "emoji": "🍥",
+        "anilist": 10697,
+        "mal": null
+      },
+      {
+        "name": "Torune Aburame",
+        "emoji": "🍥",
+        "anilist": 23647,
+        "mal": 170
+      },
+      {
+        "name": "Fu Yamanaka",
+        "emoji": "🍥",
+        "anilist": 40403,
+        "mal": 171
+      },
+      {
+        "name": "Gamabunta",
+        "emoji": "🍥",
+        "anilist": 4223,
+        "mal": null
+      },
+      {
+        "name": "Gamakichi",
+        "emoji": "🍥",
+        "anilist": 16999,
+        "mal": null
+      },
+      {
+        "name": "Gamatatsu",
+        "emoji": "🍥",
+        "anilist": 16952,
+        "mal": null
+      },
+      {
+        "name": "Gamaken",
+        "emoji": "🍥",
+        "anilist": 26933,
+        "mal": null
+      },
+      {
+        "name": "Fukasaku",
+        "emoji": "🍥",
+        "anilist": 24486,
+        "mal": null
+      },
+      {
+        "name": "Shima",
+        "emoji": "🍥",
+        "anilist": null,
+        "mal": null
+      },
+      {
+        "name": "Katsuyu",
+        "emoji": "🍥",
+        "anilist": 7608,
+        "mal": null
+      },
+      {
+        "name": "Manda",
+        "emoji": "🍥",
+        "anilist": 37929,
+        "mal": null
+      },
+      {
+        "name": "Aoda",
+        "emoji": "🍥",
+        "anilist": 80581,
+        "mal": null
+      },
+      {
+        "name": "Enma",
+        "emoji": "🍥",
+        "anilist": 15757,
+        "mal": null
+      },
+      {
+        "name": "Pakkun",
+        "emoji": "🍥",
+        "anilist": 2766,
+        "mal": null
+      },
+      {
+        "name": "Kurama",
+        "emoji": "🍥",
+        "anilist": 7407,
+        "mal": null
+      },
+      {
+        "name": "Shukaku",
+        "emoji": "🍥",
+        "anilist": 11813,
+        "mal": null
+      },
+      {
+        "name": "Matatabi",
+        "emoji": "🍥",
+        "anilist": 57871,
+        "mal": null
+      },
+      {
+        "name": "Isobu",
+        "emoji": "🍥",
+        "anilist": 57873,
+        "mal": null
+      },
+      {
+        "name": "Son Goku",
+        "emoji": "🍥",
+        "anilist": 57877,
+        "mal": null
+      },
+      {
+        "name": "Kokuo",
+        "emoji": "🍥",
+        "anilist": null,
+        "mal": null
+      },
+      {
+        "name": "Saiken",
+        "emoji": "🍥",
+        "anilist": 57875,
+        "mal": null
+      },
+      {
+        "name": "Chomei",
+        "emoji": "🍥",
+        "anilist": null,
+        "mal": null
+      },
+      {
+        "name": "Gyuki",
+        "emoji": "🍥",
+        "anilist": 16601,
+        "mal": null
+      },
+      {
+        "name": "Ten-Tails",
+        "emoji": "🍥",
+        "anilist": null,
+        "mal": null
+      }
+    ]
+  },
+  {
+    "id": "onepiece",
+    "name": "One Piece",
+    "emoji": "🏴‍☠️",
+    "color": "#facc15",
+    "tags": [
+      "Shonen",
+      "Adventure"
+    ],
+    "chars": [
+      {
+        "name": "Monkey D. Luffy",
+        "emoji": "🏴‍☠️",
+        "anilist": 40,
+        "mal": 37
+      },
+      {
+        "name": "Roronoa Zoro",
+        "emoji": "🏴‍☠️",
+        "anilist": 62,
+        "mal": 38
+      },
+      {
+        "name": "Nami",
+        "emoji": "🏴‍☠️",
+        "anilist": 723,
+        "mal": 39
+      },
+      {
+        "name": "Usopp",
+        "emoji": "🏴‍☠️",
+        "anilist": 724,
+        "mal": 40
+      },
+      {
+        "name": "Sanji",
+        "emoji": "🏴‍☠️",
+        "anilist": 305,
+        "mal": null
+      },
+      {
+        "name": "Tony Tony Chopper",
+        "emoji": "🏴‍☠️",
+        "anilist": 309,
+        "mal": 42
+      },
+      {
+        "name": "Nico Robin",
+        "emoji": "🏴‍☠️",
+        "anilist": 61,
+        "mal": 43
+      },
+      {
+        "name": "Franky",
+        "emoji": "🏴‍☠️",
+        "anilist": 64,
+        "mal": 44
+      },
+      {
+        "name": "Brook",
+        "emoji": "🏴‍☠️",
+        "anilist": 5627,
+        "mal": 45
+      },
+      {
+        "name": "Jinbe",
+        "emoji": "🏴‍☠️",
+        "anilist": 18938,
+        "mal": 46
+      },
+      {
+        "name": "Going Merry",
+        "emoji": "🏴‍☠️",
+        "anilist": null,
+        "mal": null
+      },
+      {
+        "name": "Thousand Sunny",
+        "emoji": "🏴‍☠️",
+        "anilist": null,
+        "mal": null
+      },
+      {
+        "name": "Monkey D. Garp",
+        "emoji": "🏴‍☠️",
+        "anilist": 56,
+        "mal": 56
+      },
+      {
+        "name": "Monkey D. Dragon",
+        "emoji": "🏴‍☠️",
+        "anilist": 163834,
+        "mal": 163834
+      },
+      {
+        "name": "Portgas D. Ace",
+        "emoji": "🏴‍☠️",
+        "anilist": 2072,
+        "mal": 51
+      },
+      {
+        "name": "Sabo",
+        "emoji": "🏴‍☠️",
+        "anilist": 32893,
+        "mal": 52
+      },
+      {
+        "name": "Shanks",
+        "emoji": "🏴‍☠️",
+        "anilist": 727,
+        "mal": 53
+      },
+      {
+        "name": "Benn Beckman",
+        "emoji": "🏴‍☠️",
+        "anilist": null,
+        "mal": null
+      },
+      {
+        "name": "Yasopp",
+        "emoji": "🏴‍☠️",
+        "anilist": 9562,
+        "mal": null
+      },
+      {
+        "name": "Lucky Roux",
+        "emoji": "🏴‍☠️",
+        "anilist": 4885,
+        "mal": null
+      },
+      {
+        "name": "Buggy",
+        "emoji": "🏴‍☠️",
+        "anilist": 725,
+        "mal": 73
+      },
+      {
+        "name": "Alvida",
+        "emoji": "🏴‍☠️",
+        "anilist": 4899,
+        "mal": null
+      },
+      {
+        "name": "Koby",
+        "emoji": "🏴‍☠️",
+        "anilist": 12361,
+        "mal": null
+      },
+      {
+        "name": "Helmeppo",
+        "emoji": "🏴‍☠️",
+        "anilist": 12362,
+        "mal": 163871
+      },
+      {
+        "name": "Dracule Mihawk",
+        "emoji": "🏴‍☠️",
+        "anilist": 2064,
+        "mal": 54
+      },
+      {
+        "name": "Smoker",
+        "emoji": "🏴‍☠️",
+        "anilist": 2753,
+        "mal": 59
+      },
+      {
+        "name": "Tashigi",
+        "emoji": "🏴‍☠️",
+        "anilist": 2750,
+        "mal": 60
+      },
+      {
+        "name": "Arlong",
+        "emoji": "🏴‍☠️",
+        "anilist": 4887,
+        "mal": 74
+      },
+      {
+        "name": "Hatchan / Hachi",
+        "emoji": "🏴‍☠️",
+        "anilist": null,
+        "mal": null
+      },
+      {
+        "name": "Nojiko",
+        "emoji": "🏴‍☠️",
+        "anilist": 4888,
+        "mal": null
+      },
+      {
+        "name": "Genzo",
+        "emoji": "🏴‍☠️",
+        "anilist": 4892,
+        "mal": null
+      },
+      {
+        "name": "Nefertari Vivi",
+        "emoji": "🏴‍☠️",
+        "anilist": 726,
+        "mal": 76
+      },
+      {
+        "name": "Karoo",
+        "emoji": "🏴‍☠️",
+        "anilist": null,
+        "mal": null
+      },
+      {
+        "name": "Igaram",
+        "emoji": "🏴‍☠️",
+        "anilist": 5415,
+        "mal": 163881
+      },
+      {
+        "name": "Pell",
+        "emoji": "🏴‍☠️",
+        "anilist": 9098,
+        "mal": 163882
+      },
+      {
+        "name": "Chaka",
+        "emoji": "🏴‍☠️",
+        "anilist": 21220,
+        "mal": 163883
+      },
+      {
+        "name": "Crocodile / Sir Crocodile",
+        "emoji": "🏴‍☠️",
+        "anilist": 61,
+        "mal": 61
+      },
+      {
+        "name": "Bentham / Bon Clay / Mr. 2",
+        "emoji": "🏴‍☠️",
+        "anilist": 163884,
+        "mal": 163884
+      },
+      {
+        "name": "Emporio Ivankov",
+        "emoji": "🏴‍☠️",
+        "anilist": 22646,
+        "mal": 163833
+      },
+      {
+        "name": "Inazuma",
+        "emoji": "🏴‍☠️",
+        "anilist": 22647,
+        "mal": null
+      },
+      {
+        "name": "Gecko Moria",
+        "emoji": "🏴‍☠️",
+        "anilist": 7454,
+        "mal": 163831
+      },
+      {
+        "name": "Perona",
+        "emoji": "🏴‍☠️",
+        "anilist": 7467,
+        "mal": 75
+      },
+      {
+        "name": "Bartholomew Kuma",
+        "emoji": "🏴‍☠️",
+        "anilist": 7453,
+        "mal": 163832
+      },
+      {
+        "name": "Jewelry Bonney",
+        "emoji": "🏴‍☠️",
+        "anilist": 20295,
+        "mal": 163829
+      },
+      {
+        "name": "Silvers Rayleigh",
+        "emoji": "🏴‍☠️",
+        "anilist": 17142,
+        "mal": 57
+      },
+      {
+        "name": "Boa Hancock",
+        "emoji": "🏴‍☠️",
+        "anilist": 16342,
+        "mal": 55
+      },
+      {
+        "name": "Sengoku",
+        "emoji": "🏴‍☠️",
+        "anilist": 13018,
+        "mal": null
+      },
+      {
+        "name": "Sakazuki / Akainu",
+        "emoji": "🏴‍☠️",
+        "anilist": 72,
+        "mal": 72
+      },
+      {
+        "name": "Kuzan / Aokiji",
+        "emoji": "🏴‍☠️",
+        "anilist": 71,
+        "mal": 71
+      },
+      {
+        "name": "Borsalino / Kizaru",
+        "emoji": "🏴‍☠️",
+        "anilist": 70,
+        "mal": 70
+      },
+      {
+        "name": "Issho / Fujitora",
+        "emoji": "🏴‍☠️",
+        "anilist": 163877,
+        "mal": 163877
+      },
+      {
+        "name": "Aramaki / Ryokugyu",
+        "emoji": "🏴‍☠️",
+        "anilist": 163876,
+        "mal": 163876
+      },
+      {
+        "name": "Rob Lucci",
+        "emoji": "🏴‍☠️",
+        "anilist": 5677,
+        "mal": 69
+      },
+      {
+        "name": "Kaku",
+        "emoji": "🏴‍☠️",
+        "anilist": null,
+        "mal": null
+      },
+      {
+        "name": "Kalifa",
+        "emoji": "🏴‍☠️",
+        "anilist": 5910,
+        "mal": null
+      },
+      {
+        "name": "Blueno",
+        "emoji": "🏴‍☠️",
+        "anilist": 11394,
+        "mal": null
+      },
+      {
+        "name": "Spandam",
+        "emoji": "🏴‍☠️",
+        "anilist": 6551,
+        "mal": null
+      },
+      {
+        "name": "Trafalgar Law",
+        "emoji": "🏴‍☠️",
+        "anilist": 13767,
+        "mal": 50
+      },
+      {
+        "name": "Bepo",
+        "emoji": "🏴‍☠️",
+        "anilist": 17492,
+        "mal": null
+      },
+      {
+        "name": "Eustass Kid",
+        "emoji": "🏴‍☠️",
+        "anilist": 14989,
+        "mal": 163825
+      },
+      {
+        "name": "Killer",
+        "emoji": "🏴‍☠️",
+        "anilist": 163824,
+        "mal": 163824
+      },
+      {
+        "name": "Basil Hawkins",
+        "emoji": "🏴‍☠️",
+        "anilist": 20293,
+        "mal": 163826
+      },
+      {
+        "name": "Scratchmen Apoo",
+        "emoji": "🏴‍☠️",
+        "anilist": 20288,
+        "mal": 163827
+      },
+      {
+        "name": "X Drake",
+        "emoji": "🏴‍☠️",
+        "anilist": 20289,
+        "mal": 163823
+      },
+      {
+        "name": "Capone Bege",
+        "emoji": "🏴‍☠️",
+        "anilist": 20292,
+        "mal": 163828
+      },
+      {
+        "name": "Urouge",
+        "emoji": "🏴‍☠️",
+        "anilist": 20294,
+        "mal": null
+      },
+      {
+        "name": "Charlotte Linlin / Big Mom",
+        "emoji": "🏴‍☠️",
+        "anilist": 65,
+        "mal": 65
+      },
+      {
+        "name": "Charlotte Katakuri",
+        "emoji": "🏴‍☠️",
+        "anilist": 124077,
+        "mal": 63
+      },
+      {
+        "name": "Charlotte Smoothie",
+        "emoji": "🏴‍☠️",
+        "anilist": 136036,
+        "mal": 163852
+      },
+      {
+        "name": "Charlotte Cracker",
+        "emoji": "🏴‍☠️",
+        "anilist": 136035,
+        "mal": 163853
+      },
+      {
+        "name": "Charlotte Perospero",
+        "emoji": "🏴‍☠️",
+        "anilist": 181760,
+        "mal": 163854
+      },
+      {
+        "name": "Zeus",
+        "emoji": "🏴‍☠️",
+        "anilist": 233909,
+        "mal": null
+      },
+      {
+        "name": "Prometheus",
+        "emoji": "🏴‍☠️",
+        "anilist": 233910,
+        "mal": null
+      },
+      {
+        "name": "Napoleon",
+        "emoji": "🏴‍☠️",
+        "anilist": 332667,
+        "mal": null
+      },
+      {
+        "name": "Kaido",
+        "emoji": "🏴‍☠️",
+        "anilist": 64,
+        "mal": 64
+      },
+      {
+        "name": "King",
+        "emoji": "🏴‍☠️",
+        "anilist": 163860,
+        "mal": 163860
+      },
+      {
+        "name": "Queen",
+        "emoji": "🏴‍☠️",
+        "anilist": 163859,
+        "mal": 163859
+      },
+      {
+        "name": "Jack",
+        "emoji": "🏴‍☠️",
+        "anilist": 163858,
+        "mal": 163858
+      },
+      {
+        "name": "Yamato",
+        "emoji": "🏴‍☠️",
+        "anilist": 176840,
+        "mal": 163820
+      },
+      {
+        "name": "Ulti",
+        "emoji": "🏴‍☠️",
+        "anilist": 163821,
+        "mal": 163821
+      },
+      {
+        "name": "Page One",
+        "emoji": "🏴‍☠️",
+        "anilist": 172132,
+        "mal": null
+      },
+      {
+        "name": "Black Maria",
+        "emoji": "🏴‍☠️",
+        "anilist": 172136,
+        "mal": 163862
+      },
+      {
+        "name": "Who's-Who",
+        "emoji": "🏴‍☠️",
+        "anilist": 172133,
+        "mal": null
+      },
+      {
+        "name": "Sasaki",
+        "emoji": "🏴‍☠️",
+        "anilist": null,
+        "mal": null
+      },
+      {
+        "name": "Kozuki Oden",
+        "emoji": "🏴‍☠️",
+        "anilist": null,
+        "mal": null
+      },
+      {
+        "name": "Kin'emon",
+        "emoji": "🏴‍☠️",
+        "anilist": 163865,
+        "mal": 163865
+      },
+      {
+        "name": "Momonosuke",
+        "emoji": "🏴‍☠️",
+        "anilist": 163866,
+        "mal": 163866
+      },
+      {
+        "name": "Kikunojo / Kiku",
+        "emoji": "🏴‍☠️",
+        "anilist": null,
+        "mal": null
+      },
+      {
+        "name": "Raizo",
+        "emoji": "🏴‍☠️",
+        "anilist": null,
+        "mal": null
+      },
+      {
+        "name": "Shinobu",
+        "emoji": "🏴‍☠️",
+        "anilist": null,
+        "mal": null
+      },
+      {
+        "name": "Kozuki Hiyori / Komurasaki",
+        "emoji": "🏴‍☠️",
+        "anilist": null,
+        "mal": null
+      },
+      {
+        "name": "Tama",
+        "emoji": "🏴‍☠️",
+        "anilist": 163867,
+        "mal": 163867
+      },
+      {
+        "name": "Marco",
+        "emoji": "🏴‍☠️",
+        "anilist": null,
+        "mal": null
+      },
+      {
+        "name": "Edward Newgate / Whitebeard",
+        "emoji": "🏴‍☠️",
+        "anilist": 67,
+        "mal": 67
+      },
+      {
+        "name": "Jozu",
+        "emoji": "🏴‍☠️",
+        "anilist": null,
+        "mal": null
+      },
+      {
+        "name": "Vista",
+        "emoji": "🏴‍☠️",
+        "anilist": null,
+        "mal": null
+      },
+      {
+        "name": "Marshall D. Teach / Blackbeard",
+        "emoji": "🏴‍☠️",
+        "anilist": 66,
+        "mal": 66
+      },
+      {
+        "name": "Shiryu",
+        "emoji": "🏴‍☠️",
+        "anilist": null,
+        "mal": null
+      },
+      {
+        "name": "Van Augur",
+        "emoji": "🏴‍☠️",
+        "anilist": null,
+        "mal": null
+      },
+      {
+        "name": "Jesus Burgess",
+        "emoji": "🏴‍☠️",
+        "anilist": null,
+        "mal": null
+      },
+      {
+        "name": "Avalo Pizarro",
+        "emoji": "🏴‍☠️",
+        "anilist": null,
+        "mal": null
+      },
+      {
+        "name": "Catarina Devon",
+        "emoji": "🏴‍☠️",
+        "anilist": null,
+        "mal": null
+      },
+      {
+        "name": "Lafitte",
+        "emoji": "🏴‍☠️",
+        "anilist": null,
+        "mal": null
+      },
+      {
+        "name": "Doc Q",
+        "emoji": "🏴‍☠️",
+        "anilist": null,
+        "mal": null
+      },
+      {
+        "name": "Stronger",
+        "emoji": "🏴‍☠️",
+        "anilist": null,
+        "mal": null
+      },
+      {
+        "name": "Caesar Clown",
+        "emoji": "🏴‍☠️",
+        "anilist": 163836,
+        "mal": 163836
+      },
+      {
+        "name": "Donquixote Doflamingo",
+        "emoji": "🏴‍☠️",
+        "anilist": 62,
+        "mal": 62
+      },
+      {
+        "name": "Donquixote Rosinante / Corazon",
+        "emoji": "🏴‍☠️",
+        "anilist": null,
+        "mal": null
+      },
+      {
+        "name": "Trebol",
+        "emoji": "🏴‍☠️",
+        "anilist": 189714,
+        "mal": null
+      },
+      {
+        "name": "Pica",
+        "emoji": "🏴‍☠️",
+        "anilist": 191779,
+        "mal": null
+      },
+      {
+        "name": "Diamante",
+        "emoji": "🏴‍☠️",
+        "anilist": 228731,
+        "mal": null
+      },
+      {
+        "name": "Vergo",
+        "emoji": "🏴‍☠️",
+        "anilist": 67347,
+        "mal": null
+      },
+      {
+        "name": "Monet",
+        "emoji": "🏴‍☠️",
+        "anilist": 59641,
+        "mal": 163838
+      },
+      {
+        "name": "Sugar",
+        "emoji": "🏴‍☠️",
+        "anilist": 163839,
+        "mal": 163839
+      },
+      {
+        "name": "Rebecca",
+        "emoji": "🏴‍☠️",
+        "anilist": 85651,
+        "mal": 163844
+      },
+      {
+        "name": "Kyros",
+        "emoji": "🏴‍☠️",
+        "anilist": 126109,
+        "mal": 163848
+      },
+      {
+        "name": "Viola",
+        "emoji": "🏴‍☠️",
+        "anilist": 132922,
+        "mal": 163843
+      },
+      {
+        "name": "Bartolomeo",
+        "emoji": "🏴‍☠️",
+        "anilist": 85647,
+        "mal": 163846
+      },
+      {
+        "name": "Cavendish",
+        "emoji": "🏴‍☠️",
+        "anilist": 85649,
+        "mal": 163845
+      },
+      {
+        "name": "Koala",
+        "emoji": "🏴‍☠️",
+        "anilist": 43093,
+        "mal": null
+      },
+      {
+        "name": "Stussy",
+        "emoji": "🏴‍☠️",
+        "anilist": 135948,
+        "mal": 163894
+      },
+      {
+        "name": "Dr. Vegapunk / Stella",
+        "emoji": "🏴‍☠️",
+        "anilist": null,
+        "mal": null
+      },
+      {
+        "name": "Shaka",
+        "emoji": "🏴‍☠️",
+        "anilist": 326792,
+        "mal": null
+      },
+      {
+        "name": "Lilith",
+        "emoji": "🏴‍☠️",
+        "anilist": 181690,
+        "mal": null
+      },
+      {
+        "name": "Edison",
+        "emoji": "🏴‍☠️",
+        "anilist": 326793,
+        "mal": null
+      },
+      {
+        "name": "Pythagoras",
+        "emoji": "🏴‍☠️",
+        "anilist": 326794,
+        "mal": null
+      },
+      {
+        "name": "Atlas",
+        "emoji": "🏴‍☠️",
+        "anilist": 290689,
+        "mal": null
+      },
+      {
+        "name": "York",
+        "emoji": "🏴‍☠️",
+        "anilist": null,
+        "mal": null
+      },
+      {
+        "name": "Sentomaru",
+        "emoji": "🏴‍☠️",
+        "anilist": null,
+        "mal": null
+      },
+      {
+        "name": "Saint Jaygarcia Saturn",
+        "emoji": "🏴‍☠️",
+        "anilist": 299038,
+        "mal": 163893
+      },
+      {
+        "name": "Imu",
+        "emoji": "🏴‍☠️",
+        "anilist": 163874,
+        "mal": 163874
+      },
+      {
+        "name": "Nefertari Cobra",
+        "emoji": "🏴‍☠️",
+        "anilist": 9344,
+        "mal": 163880
+      },
+      {
+        "name": "Laboon",
+        "emoji": "🏴‍☠️",
+        "anilist": 5413,
+        "mal": null
+      },
+      {
+        "name": "Crocus",
+        "emoji": "🏴‍☠️",
+        "anilist": 21366,
+        "mal": null
+      },
+      {
+        "name": "Duval",
+        "emoji": "🏴‍☠️",
+        "anilist": 19168,
+        "mal": null
+      },
+      {
+        "name": "Camie",
+        "emoji": "🏴‍☠️",
+        "anilist": null,
+        "mal": null
+      },
+      {
+        "name": "Shirahoshi",
+        "emoji": "🏴‍☠️",
+        "anilist": 40273,
+        "mal": null
+      },
+      {
+        "name": "Enel",
+        "emoji": "🏴‍☠️",
+        "anilist": 1541,
+        "mal": 68
+      },
+      {
+        "name": "Wyper",
+        "emoji": "🏴‍☠️",
+        "anilist": null,
+        "mal": null
+      },
+      {
+        "name": "Carrot",
+        "emoji": "🏴‍☠️",
+        "anilist": 126179,
+        "mal": 77
+      },
+      {
+        "name": "Pedro",
+        "emoji": "🏴‍☠️",
+        "anilist": 126180,
+        "mal": null
+      },
+      {
+        "name": "Inuarashi",
+        "emoji": "🏴‍☠️",
+        "anilist": 126182,
+        "mal": null
+      },
+      {
+        "name": "Nekomamushi",
+        "emoji": "🏴‍☠️",
+        "anilist": 126181,
+        "mal": null
+      },
+      {
+        "name": "Kawamatsu",
+        "emoji": "🏴‍☠️",
+        "anilist": 128125,
+        "mal": null
+      },
+      {
+        "name": "S-Snake",
+        "emoji": "🏴‍☠️",
+        "anilist": 340682,
+        "mal": null
+      },
+      {
+        "name": "S-Hawk",
+        "emoji": "🏴‍☠️",
+        "anilist": 365031,
+        "mal": null
+      },
+      {
+        "name": "S-Shark",
+        "emoji": "🏴‍☠️",
+        "anilist": null,
+        "mal": null
+      },
+      {
+        "name": "S-Bear",
+        "emoji": "🏴‍☠️",
+        "anilist": null,
+        "mal": null
+      },
+      {
+        "name": "Zunesha",
+        "emoji": "🏴‍☠️",
+        "anilist": 318197,
+        "mal": null
+      },
+      {
+        "name": "Gol D. Roger / Gold Roger",
+        "emoji": "🏴‍☠️",
+        "anilist": 163872,
+        "mal": 163872
+      }
+    ]
+  },
+  {
+    "id": "haikyuu",
+    "name": "Haikyuu!!",
+    "emoji": "🏐",
+    "color": "#fb923c",
+    "tags": [
+      "Sports"
+    ],
+    "chars": [
+      {
+        "name": "Shoyo Hinata",
+        "emoji": "🏐",
+        "anilist": null,
+        "mal": null
+      },
+      {
+        "name": "Tobio Kageyama",
+        "emoji": "🏐",
+        "anilist": 64771,
+        "mal": null
+      },
+      {
+        "name": "Daichi Sawamura",
+        "emoji": "🏐",
+        "anilist": 67323,
+        "mal": null
+      },
+      {
+        "name": "Koshi Sugawara",
+        "emoji": "🏐",
+        "anilist": null,
+        "mal": null
+      },
+      {
+        "name": "Asahi Azumane",
+        "emoji": "🏐",
+        "anilist": 67333,
+        "mal": null
+      },
+      {
+        "name": "Yu Nishinoya",
+        "emoji": "🏐",
+        "anilist": null,
+        "mal": null
+      },
+      {
+        "name": "Ryunosuke Tanaka",
+        "emoji": "🏐",
+        "anilist": null,
+        "mal": null
+      },
+      {
+        "name": "Kei Tsukishima",
+        "emoji": "🏐",
+        "anilist": 67329,
+        "mal": null
+      },
+      {
+        "name": "Tadashi Yamaguchi",
+        "emoji": "🏐",
+        "anilist": 71609,
+        "mal": null
+      },
+      {
+        "name": "Chikara Ennoshita",
+        "emoji": "🏐",
+        "anilist": 67331,
+        "mal": null
+      },
+      {
+        "name": "Kiyoko Shimizu",
+        "emoji": "🏐",
+        "anilist": 67689,
+        "mal": null
+      },
+      {
+        "name": "Hitoka Yachi",
+        "emoji": "🏐",
+        "anilist": 89124,
+        "mal": null
+      },
+      {
+        "name": "Ittetsu Takeda",
+        "emoji": "🏐",
+        "anilist": 73679,
+        "mal": null
+      },
+      {
+        "name": "Keishin Ukai",
+        "emoji": "🏐",
+        "anilist": 70861,
+        "mal": null
+      },
+      {
+        "name": "Toru Oikawa",
+        "emoji": "🏐",
+        "anilist": null,
+        "mal": null
+      },
+      {
+        "name": "Hajime Iwaizumi",
+        "emoji": "🏐",
+        "anilist": 75636,
+        "mal": null
+      },
+      {
+        "name": "Issei Matsukawa",
+        "emoji": "🏐",
+        "anilist": 137468,
+        "mal": null
+      },
+      {
+        "name": "Takahiro Hanamaki",
+        "emoji": "🏐",
+        "anilist": 137470,
+        "mal": null
+      },
+      {
+        "name": "Kentaro Kyotani",
+        "emoji": "🏐",
+        "anilist": null,
+        "mal": null
+      },
+      {
+        "name": "Yutaro Kindaichi",
+        "emoji": "🏐",
+        "anilist": null,
+        "mal": null
+      },
+      {
+        "name": "Akira Kunimi",
+        "emoji": "🏐",
+        "anilist": 89508,
+        "mal": null
+      },
+      {
+        "name": "Shinji Watari",
+        "emoji": "🏐",
+        "anilist": 137469,
+        "mal": null
+      },
+      {
+        "name": "Tetsuro Kuroo",
+        "emoji": "🏐",
+        "anilist": null,
+        "mal": null
+      },
+      {
+        "name": "Kenma Kozume",
+        "emoji": "🏐",
+        "anilist": 71267,
+        "mal": null
+      },
+      {
+        "name": "Morisuke Yaku",
+        "emoji": "🏐",
+        "anilist": 74033,
+        "mal": null
+      },
+      {
+        "name": "Lev Haiba",
+        "emoji": "🏐",
+        "anilist": 89517,
+        "mal": null
+      },
+      {
+        "name": "Nobuyuki Kai",
+        "emoji": "🏐",
+        "anilist": 74029,
+        "mal": null
+      },
+      {
+        "name": "Shohei Fukunaga",
+        "emoji": "🏐",
+        "anilist": null,
+        "mal": null
+      },
+      {
+        "name": "Taketora Yamamoto",
+        "emoji": "🏐",
+        "anilist": 73673,
+        "mal": null
+      },
+      {
+        "name": "So Inuoka",
+        "emoji": "🏐",
+        "anilist": null,
+        "mal": null
+      },
+      {
+        "name": "Yuki Shibayama",
+        "emoji": "🏐",
+        "anilist": null,
+        "mal": null
+      },
+      {
+        "name": "Kotaro Bokuto",
+        "emoji": "🏐",
+        "anilist": null,
+        "mal": null
+      },
+      {
+        "name": "Keiji Akaashi",
+        "emoji": "🏐",
+        "anilist": 88938,
+        "mal": null
+      },
+      {
+        "name": "Akinori Konoha",
+        "emoji": "🏐",
+        "anilist": 137480,
+        "mal": null
+      },
+      {
+        "name": "Haruki Komi",
+        "emoji": "🏐",
+        "anilist": 137477,
+        "mal": null
+      },
+      {
+        "name": "Wataru Onaga",
+        "emoji": "🏐",
+        "anilist": 137479,
+        "mal": null
+      },
+      {
+        "name": "Tatsuki Washio",
+        "emoji": "🏐",
+        "anilist": 137474,
+        "mal": null
+      },
+      {
+        "name": "Yamato Sarukui",
+        "emoji": "🏐",
+        "anilist": 137475,
+        "mal": null
+      },
+      {
+        "name": "Wakatoshi Ushijima",
+        "emoji": "🏐",
+        "anilist": 76816,
+        "mal": null
+      },
+      {
+        "name": "Satori Tendo",
+        "emoji": "🏐",
+        "anilist": 126073,
+        "mal": null
+      },
+      {
+        "name": "Tsutomu Goshiki",
+        "emoji": "🏐",
+        "anilist": 137534,
+        "mal": null
+      },
+      {
+        "name": "Hayato Yamagata",
+        "emoji": "🏐",
+        "anilist": 137540,
+        "mal": null
+      },
+      {
+        "name": "Eita Semi",
+        "emoji": "🏐",
+        "anilist": 137535,
+        "mal": null
+      },
+      {
+        "name": "Reon Ohira",
+        "emoji": "🏐",
+        "anilist": null,
+        "mal": null
+      },
+      {
+        "name": "Taichi Kawanishi",
+        "emoji": "🏐",
+        "anilist": 137538,
+        "mal": null
+      },
+      {
+        "name": "Kenji Shirabu",
+        "emoji": "🏐",
+        "anilist": null,
+        "mal": null
+      },
+      {
+        "name": "Tanji Washijo",
+        "emoji": "🏐",
+        "anilist": 137539,
+        "mal": null
+      },
+      {
+        "name": "Atsumu Miya",
+        "emoji": "🏐",
+        "anilist": 139486,
+        "mal": null
+      },
+      {
+        "name": "Osamu Miya",
+        "emoji": "🏐",
+        "anilist": 139492,
+        "mal": null
+      },
+      {
+        "name": "Shinsuke Kita",
+        "emoji": "🏐",
+        "anilist": 167515,
+        "mal": null
+      },
+      {
+        "name": "Rintaro Suna",
+        "emoji": "🏐",
+        "anilist": null,
+        "mal": null
+      },
+      {
+        "name": "Aran Ojiro",
+        "emoji": "🏐",
+        "anilist": 139485,
+        "mal": null
+      },
+      {
+        "name": "Michinari Akagi",
+        "emoji": "🏐",
+        "anilist": 139491,
+        "mal": null
+      },
+      {
+        "name": "Ren Omimi",
+        "emoji": "🏐",
+        "anilist": null,
+        "mal": null
+      },
+      {
+        "name": "Sakusa Kiyoomi",
+        "emoji": "🏐",
+        "anilist": 139475,
+        "mal": null
+      },
+      {
+        "name": "Korai Hoshiumi",
+        "emoji": "🏐",
+        "anilist": null,
+        "mal": null
+      },
+      {
+        "name": "Motoya Komori",
+        "emoji": "🏐",
+        "anilist": 139476,
+        "mal": null
+      },
+      {
+        "name": "Wakatsu Kiryu",
+        "emoji": "🏐",
+        "anilist": 139506,
+        "mal": null
+      },
+      {
+        "name": "Sachiro Hirugami",
+        "emoji": "🏐",
+        "anilist": null,
+        "mal": null
+      }
+    ]
+  },
+  {
+    "id": "mha",
+    "name": "My Hero Academia",
+    "emoji": "🦸",
+    "color": "#22c55e",
+    "tags": [
+      "Shonen",
+      "Superhero"
+    ],
+    "chars": [
+      {
+        "name": "Izuku Midoriya / Deku",
+        "emoji": "🦸",
+        "anilist": 89028,
+        "mal": 152222
+      },
+      {
+        "name": "Katsuki Bakugo",
+        "emoji": "🦸",
+        "anilist": 88892,
+        "mal": 152223
+      },
+      {
+        "name": "Shoto Todoroki",
+        "emoji": "🦸",
+        "anilist": 93883,
+        "mal": 152224
+      },
+      {
+        "name": "Ochaco Uraraka",
+        "emoji": "🦸",
+        "anilist": 93885,
+        "mal": 152226
+      },
+      {
+        "name": "Tenya Iida",
+        "emoji": "🦸",
+        "anilist": 89222,
+        "mal": 152227
+      },
+      {
+        "name": "Tsuyu Asui",
+        "emoji": "🦸",
+        "anilist": 89223,
+        "mal": 152248
+      },
+      {
+        "name": "Momo Yaoyorozu",
+        "emoji": "🦸",
+        "anilist": 89241,
+        "mal": 152230
+      },
+      {
+        "name": "Eijiro Kirishima",
+        "emoji": "🦸",
+        "anilist": 93888,
+        "mal": 152229
+      },
+      {
+        "name": "Denki Kaminari",
+        "emoji": "🦸",
+        "anilist": 89249,
+        "mal": 152231
+      },
+      {
+        "name": "Kyoka Jiro",
+        "emoji": "🦸",
+        "anilist": 93906,
+        "mal": 152247
+      },
+      {
+        "name": "Fumikage Tokoyami",
+        "emoji": "🦸",
+        "anilist": 89898,
+        "mal": 152246
+      },
+      {
+        "name": "Mashirao Ojiro",
+        "emoji": "🦸",
+        "anilist": 89896,
+        "mal": 152250
+      },
+      {
+        "name": "Mezo Shoji",
+        "emoji": "🦸",
+        "anilist": 93908,
+        "mal": 152249
+      },
+      {
+        "name": "Minoru Mineta",
+        "emoji": "🦸",
+        "anilist": 89244,
+        "mal": 152251
+      },
+      {
+        "name": "Yuga Aoyama",
+        "emoji": "🦸",
+        "anilist": 93911,
+        "mal": 152252
+      },
+      {
+        "name": "Hanta Sero",
+        "emoji": "🦸",
+        "anilist": 89895,
+        "mal": 152253
+      },
+      {
+        "name": "Rikido Sato",
+        "emoji": "🦸",
+        "anilist": 93913,
+        "mal": 152254
+      },
+      {
+        "name": "Koji Koda",
+        "emoji": "🦸",
+        "anilist": 93914,
+        "mal": 152255
+      },
+      {
+        "name": "Toru Hagakure",
+        "emoji": "🦸",
+        "anilist": null,
+        "mal": null
+      },
+      {
+        "name": "Mina Ashido",
+        "emoji": "🦸",
+        "anilist": 89247,
+        "mal": null
+      },
+      {
+        "name": "All Might / Toshinori Yagi",
+        "emoji": "🦸",
+        "anilist": 89224,
+        "mal": 152225
+      },
+      {
+        "name": "Shota Aizawa / Eraser Head",
+        "emoji": "🦸",
+        "anilist": 93893,
+        "mal": 152234
+      },
+      {
+        "name": "Present Mic / Hizashi Yamada",
+        "emoji": "🦸",
+        "anilist": 127425,
+        "mal": 152235
+      },
+      {
+        "name": "Midnight / Nemuri Kayama",
+        "emoji": "🦸",
+        "anilist": 127427,
+        "mal": 152244
+      },
+      {
+        "name": "Cementoss",
+        "emoji": "🦸",
+        "anilist": 93922,
+        "mal": 152263
+      },
+      {
+        "name": "Snipe",
+        "emoji": "🦸",
+        "anilist": 191596,
+        "mal": 152265
+      },
+      {
+        "name": "Power Loader",
+        "emoji": "🦸",
+        "anilist": 93925,
+        "mal": 152266
+      },
+      {
+        "name": "Thirteen",
+        "emoji": "🦸",
+        "anilist": 143542,
+        "mal": 152267
+      },
+      {
+        "name": "Hound Dog",
+        "emoji": "🦸",
+        "anilist": null,
+        "mal": null
+      },
+      {
+        "name": "Nezu",
+        "emoji": "🦸",
+        "anilist": 143539,
+        "mal": null
+      },
+      {
+        "name": "Recovery Girl",
+        "emoji": "🦸",
+        "anilist": 93921,
+        "mal": 152262
+      },
+      {
+        "name": "Ectoplasm",
+        "emoji": "🦸",
+        "anilist": 150853,
+        "mal": null
+      },
+      {
+        "name": "Vlad King",
+        "emoji": "🦸",
+        "anilist": 93923,
+        "mal": 152264
+      },
+      {
+        "name": "Gran Torino",
+        "emoji": "🦸",
+        "anilist": 93919,
+        "mal": 152260
+      },
+      {
+        "name": "Endeavor / Enji Todoroki",
+        "emoji": "🦸",
+        "anilist": 93892,
+        "mal": 152233
+      },
+      {
+        "name": "Hawks / Keigo Takami",
+        "emoji": "🦸",
+        "anilist": 118269,
+        "mal": 168492
+      },
+      {
+        "name": "Best Jeanist",
+        "emoji": "🦸",
+        "anilist": 93948,
+        "mal": 152289
+      },
+      {
+        "name": "Edgeshot",
+        "emoji": "🦸",
+        "anilist": 93947,
+        "mal": 152288
+      },
+      {
+        "name": "Mirko",
+        "emoji": "🦸",
+        "anilist": 131698,
+        "mal": 177342
+      },
+      {
+        "name": "Ryukyu",
+        "emoji": "🦸",
+        "anilist": 93949,
+        "mal": 152290
+      },
+      {
+        "name": "Gang Orca",
+        "emoji": "🦸",
+        "anilist": 93902,
+        "mal": 152243
+      },
+      {
+        "name": "Fat Gum",
+        "emoji": "🦸",
+        "anilist": 93904,
+        "mal": 152245
+      },
+      {
+        "name": "Mt. Lady",
+        "emoji": "🦸",
+        "anilist": 93945,
+        "mal": 152286
+      },
+      {
+        "name": "Kamui Woods",
+        "emoji": "🦸",
+        "anilist": 93946,
+        "mal": 152287
+      },
+      {
+        "name": "Wash",
+        "emoji": "🦸",
+        "anilist": 93950,
+        "mal": 152291
+      },
+      {
+        "name": "Uwabami",
+        "emoji": "🦸",
+        "anilist": 210092,
+        "mal": 152285
+      },
+      {
+        "name": "Mirio Togata",
+        "emoji": "🦸",
+        "anilist": 123527,
+        "mal": 168493
+      },
+      {
+        "name": "Tamaki Amajiki",
+        "emoji": "🦸",
+        "anilist": 125934,
+        "mal": 168494
+      },
+      {
+        "name": "Nejire Hado",
+        "emoji": "🦸",
+        "anilist": 126843,
+        "mal": 168495
+      },
+      {
+        "name": "Sir Nighteye",
+        "emoji": "🦸",
+        "anilist": null,
+        "mal": null
+      },
+      {
+        "name": "Eri",
+        "emoji": "🦸",
+        "anilist": 118273,
+        "mal": 168496
+      },
+      {
+        "name": "Mei Hatsume",
+        "emoji": "🦸",
+        "anilist": 89248,
+        "mal": 152284
+      },
+      {
+        "name": "Hitoshi Shinso",
+        "emoji": "🦸",
+        "anilist": 89242,
+        "mal": 152257
+      },
+      {
+        "name": "Itsuka Kendo",
+        "emoji": "🦸",
+        "anilist": 126064,
+        "mal": 168498
+      },
+      {
+        "name": "Neito Monoma",
+        "emoji": "🦸",
+        "anilist": 125450,
+        "mal": 168500
+      },
+      {
+        "name": "Tetsutetsu Tetsutetsu",
+        "emoji": "🦸",
+        "anilist": 127043,
+        "mal": 168499
+      },
+      {
+        "name": "Ibara Shiozaki",
+        "emoji": "🦸",
+        "anilist": 127426,
+        "mal": 168502
+      },
+      {
+        "name": "Jurota Shishida",
+        "emoji": "🦸",
+        "anilist": 118280,
+        "mal": 168503
+      },
+      {
+        "name": "Yosetsu Awase",
+        "emoji": "🦸",
+        "anilist": 208147,
+        "mal": 168501
+      },
+      {
+        "name": "Pony Tsunotori",
+        "emoji": "🦸",
+        "anilist": 145387,
+        "mal": null
+      },
+      {
+        "name": "Setsuna Tokage",
+        "emoji": "🦸",
+        "anilist": 149179,
+        "mal": null
+      },
+      {
+        "name": "Inasa Yoarashi",
+        "emoji": "🦸",
+        "anilist": 126855,
+        "mal": 152269
+      },
+      {
+        "name": "Camie Utsushimi",
+        "emoji": "🦸",
+        "anilist": 126734,
+        "mal": 152270
+      },
+      {
+        "name": "Seiji Shishikura",
+        "emoji": "🦸",
+        "anilist": 131155,
+        "mal": 152271
+      },
+      {
+        "name": "Tomura Shigaraki",
+        "emoji": "🦸",
+        "anilist": 89226,
+        "mal": 152232
+      },
+      {
+        "name": "All For One",
+        "emoji": "🦸",
+        "anilist": 125956,
+        "mal": 152259
+      },
+      {
+        "name": "Kurogiri",
+        "emoji": "🦸",
+        "anilist": 137506,
+        "mal": 152281
+      },
+      {
+        "name": "Gigantomachia",
+        "emoji": "🦸",
+        "anilist": 143540,
+        "mal": 152280
+      },
+      {
+        "name": "Himiko Toga",
+        "emoji": "🦸",
+        "anilist": 125619,
+        "mal": 152228
+      },
+      {
+        "name": "Dabi",
+        "emoji": "🦸",
+        "anilist": 126378,
+        "mal": 152237
+      },
+      {
+        "name": "Twice",
+        "emoji": "🦸",
+        "anilist": 93897,
+        "mal": 152238
+      },
+      {
+        "name": "Spinner",
+        "emoji": "🦸",
+        "anilist": 93898,
+        "mal": 152239
+      },
+      {
+        "name": "Mr. Compress",
+        "emoji": "🦸",
+        "anilist": 93899,
+        "mal": 152240
+      },
+      {
+        "name": "Magne",
+        "emoji": "🦸",
+        "anilist": 93934,
+        "mal": 152275
+      },
+      {
+        "name": "Muscular",
+        "emoji": "🦸",
+        "anilist": 141750,
+        "mal": 152273
+      },
+      {
+        "name": "Moonfish",
+        "emoji": "🦸",
+        "anilist": 141751,
+        "mal": 152274
+      },
+      {
+        "name": "Stain",
+        "emoji": "🦸",
+        "anilist": 93917,
+        "mal": 152258
+      },
+      {
+        "name": "Overhaul / Kai Chisaki",
+        "emoji": "🦸",
+        "anilist": 118274,
+        "mal": 168497
+      },
+      {
+        "name": "Chronostasis / Hari Kurono",
+        "emoji": "🦸",
+        "anilist": null,
+        "mal": null
+      },
+      {
+        "name": "Kendo Rappa",
+        "emoji": "🦸",
+        "anilist": 131699,
+        "mal": 177343
+      },
+      {
+        "name": "Gentle Criminal",
+        "emoji": "🦸",
+        "anilist": 93936,
+        "mal": 152277
+      },
+      {
+        "name": "La Brava",
+        "emoji": "🦸",
+        "anilist": 93937,
+        "mal": 152278
+      },
+      {
+        "name": "Re-Destro",
+        "emoji": "🦸",
+        "anilist": 131697,
+        "mal": 177341
+      },
+      {
+        "name": "Geten",
+        "emoji": "🦸",
+        "anilist": 160441,
+        "mal": null
+      },
+      {
+        "name": "Skeptic",
+        "emoji": "🦸",
+        "anilist": null,
+        "mal": null
+      },
+      {
+        "name": "Curious",
+        "emoji": "🦸",
+        "anilist": null,
+        "mal": null
+      },
+      {
+        "name": "Trumpet",
+        "emoji": "🦸",
+        "anilist": 61283,
+        "mal": null
+      },
+      {
+        "name": "Nine",
+        "emoji": "🦸",
+        "anilist": 88094,
+        "mal": 177345
+      },
+      {
+        "name": "Star and Stripe / Cathleen Bate",
+        "emoji": "🦸",
+        "anilist": 93955,
+        "mal": 152296
+      },
+      {
+        "name": "Lady Nagant",
+        "emoji": "🦸",
+        "anilist": 93956,
+        "mal": 152297
+      },
+      {
+        "name": "Nana Shimura",
+        "emoji": "🦸",
+        "anilist": 126319,
+        "mal": 152283
+      },
+      {
+        "name": "Yoichi Shigaraki",
+        "emoji": "🦸",
+        "anilist": 216391,
+        "mal": null
+      },
+      {
+        "name": "Kudo",
+        "emoji": "🦸",
+        "anilist": null,
+        "mal": null
+      },
+      {
+        "name": "Bruce",
+        "emoji": "🦸",
+        "anilist": null,
+        "mal": null
+      },
+      {
+        "name": "Hikage Shinomori",
+        "emoji": "🦸",
+        "anilist": 297937,
+        "mal": null
+      },
+      {
+        "name": "Daigoro Banjo",
+        "emoji": "🦸",
+        "anilist": null,
+        "mal": null
+      },
+      {
+        "name": "En",
+        "emoji": "🦸",
+        "anilist": null,
+        "mal": null
+      },
+      {
+        "name": "Dark Shadow",
+        "emoji": "🦸",
+        "anilist": null,
+        "mal": null
+      },
+      {
+        "name": "Nomu",
+        "emoji": "🦸",
+        "anilist": 89240,
+        "mal": null
+      },
+      {
+        "name": "USJ Nomu",
+        "emoji": "🦸",
+        "anilist": null,
+        "mal": null
+      },
+      {
+        "name": "Hood",
+        "emoji": "🦸",
+        "anilist": null,
+        "mal": null
+      }
+    ]
+  },
+  {
+    "id": "jjk",
+    "name": "Jujutsu Kaisen",
+    "emoji": "👹",
+    "color": "#8b5cf6",
+    "tags": [
+      "Shonen",
+      "Supernatural"
+    ],
+    "chars": [
+      {
+        "name": "Yuji Itadori",
+        "emoji": "👹",
+        "anilist": 138259,
+        "mal": 178461
+      },
+      {
+        "name": "Megumi Fushiguro",
+        "emoji": "👹",
+        "anilist": 126635,
+        "mal": 178463
+      },
+      {
+        "name": "Nobara Kugisaki",
+        "emoji": "👹",
+        "anilist": 133700,
+        "mal": 178464
+      },
+      {
+        "name": "Satoru Gojo",
+        "emoji": "👹",
+        "anilist": 127691,
+        "mal": 178462
+      },
+      {
+        "name": "Ryomen Sukuna",
+        "emoji": "👹",
+        "anilist": 138263,
+        "mal": 178465
+      },
+      {
+        "name": "Yuta Okkotsu",
+        "emoji": "👹",
+        "anilist": 138270,
+        "mal": 178472
+      },
+      {
+        "name": "Rika Orimoto",
+        "emoji": "👹",
+        "anilist": 208533,
+        "mal": 220751
+      },
+      {
+        "name": "Maki Zenin",
+        "emoji": "👹",
+        "anilist": 134167,
+        "mal": 178469
+      },
+      {
+        "name": "Mai Zenin",
+        "emoji": "👹",
+        "anilist": 134168,
+        "mal": 178470
+      },
+      {
+        "name": "Toge Inumaki",
+        "emoji": "👹",
+        "anilist": 157115,
+        "mal": 178468
+      },
+      {
+        "name": "Panda",
+        "emoji": "👹",
+        "anilist": 137974,
+        "mal": 185836
+      },
+      {
+        "name": "Kento Nanami",
+        "emoji": "👹",
+        "anilist": 133704,
+        "mal": 178466
+      },
+      {
+        "name": "Aoi Todo",
+        "emoji": "👹",
+        "anilist": 138265,
+        "mal": 178467
+      },
+      {
+        "name": "Kasumi Miwa",
+        "emoji": "👹",
+        "anilist": 156848,
+        "mal": 185837
+      },
+      {
+        "name": "Momo Nishimiya",
+        "emoji": "👹",
+        "anilist": 157868,
+        "mal": 185848
+      },
+      {
+        "name": "Noritoshi Kamo",
+        "emoji": "👹",
+        "anilist": 157866,
+        "mal": 185838
+      },
+      {
+        "name": "Kokichi Muta / Mechamaru",
+        "emoji": "👹",
+        "anilist": 163923,
+        "mal": 185844
+      },
+      {
+        "name": "Utahime Iori",
+        "emoji": "👹",
+        "anilist": 157864,
+        "mal": 185839
+      },
+      {
+        "name": "Mei Mei",
+        "emoji": "👹",
+        "anilist": 157215,
+        "mal": 185840
+      },
+      {
+        "name": "Ui Ui",
+        "emoji": "👹",
+        "anilist": 209409,
+        "mal": 220765
+      },
+      {
+        "name": "Masamichi Yaga",
+        "emoji": "👹",
+        "anilist": 189237,
+        "mal": 185841
+      },
+      {
+        "name": "Yoshinobu Gakuganji",
+        "emoji": "👹",
+        "anilist": 157867,
+        "mal": null
+      },
+      {
+        "name": "Shoko Ieiri",
+        "emoji": "👹",
+        "anilist": null,
+        "mal": null
+      },
+      {
+        "name": "Kiyotaka Ijichi",
+        "emoji": "👹",
+        "anilist": 189238,
+        "mal": null
+      },
+      {
+        "name": "Takuma Ino",
+        "emoji": "👹",
+        "anilist": 157865,
+        "mal": 185847
+      },
+      {
+        "name": "Atsuya Kusakabe",
+        "emoji": "👹",
+        "anilist": 205234,
+        "mal": 220760
+      },
+      {
+        "name": "Suguru Geto",
+        "emoji": "👹",
+        "anilist": 133699,
+        "mal": 178471
+      },
+      {
+        "name": "Kenjaku",
+        "emoji": "👹",
+        "anilist": 289584,
+        "mal": 220748
+      },
+      {
+        "name": "Mahito",
+        "emoji": "👹",
+        "anilist": 133702,
+        "mal": 185834
+      },
+      {
+        "name": "Jogo",
+        "emoji": "👹",
+        "anilist": 163912,
+        "mal": 185833
+      },
+      {
+        "name": "Hanami",
+        "emoji": "👹",
+        "anilist": 172743,
+        "mal": 185832
+      },
+      {
+        "name": "Dagon",
+        "emoji": "👹",
+        "anilist": 204383,
+        "mal": 185835
+      },
+      {
+        "name": "Choso",
+        "emoji": "👹",
+        "anilist": 163908,
+        "mal": 185830
+      },
+      {
+        "name": "Eso",
+        "emoji": "👹",
+        "anilist": null,
+        "mal": null
+      },
+      {
+        "name": "Kechizu",
+        "emoji": "👹",
+        "anilist": 210832,
+        "mal": null
+      },
+      {
+        "name": "Junpei Yoshino",
+        "emoji": "👹",
+        "anilist": 157214,
+        "mal": 185831
+      },
+      {
+        "name": "Toji Fushiguro",
+        "emoji": "👹",
+        "anilist": 163907,
+        "mal": 185829
+      },
+      {
+        "name": "Naobito Zenin",
+        "emoji": "👹",
+        "anilist": 188432,
+        "mal": 185842
+      },
+      {
+        "name": "Naoya Zenin",
+        "emoji": "👹",
+        "anilist": 208204,
+        "mal": 185843
+      },
+      {
+        "name": "Yuki Tsukumo",
+        "emoji": "👹",
+        "anilist": 196502,
+        "mal": 220743
+      },
+      {
+        "name": "Tengen",
+        "emoji": "👹",
+        "anilist": 217291,
+        "mal": null
+      },
+      {
+        "name": "Hiromi Higuruma",
+        "emoji": "👹",
+        "anilist": 248818,
+        "mal": 220741
+      },
+      {
+        "name": "Kinji Hakari",
+        "emoji": "👹",
+        "anilist": 197584,
+        "mal": null
+      },
+      {
+        "name": "Kirara Hoshi",
+        "emoji": "👹",
+        "anilist": 243828,
+        "mal": 220750
+      },
+      {
+        "name": "Hana Kurusu / Angel",
+        "emoji": "👹",
+        "anilist": 209399,
+        "mal": 220755
+      },
+      {
+        "name": "Takako Uro",
+        "emoji": "👹",
+        "anilist": 283136,
+        "mal": null
+      },
+      {
+        "name": "Ryu Ishigori",
+        "emoji": "👹",
+        "anilist": 280468,
+        "mal": 220747
+      },
+      {
+        "name": "Fumihiko Takaba",
+        "emoji": "👹",
+        "anilist": 280467,
+        "mal": 220744
+      },
+      {
+        "name": "Reggie Star",
+        "emoji": "👹",
+        "anilist": 306194,
+        "mal": 220762
+      },
+      {
+        "name": "Iori Hazenoki",
+        "emoji": "👹",
+        "anilist": 306243,
+        "mal": 220754
+      },
+      {
+        "name": "Charles Bernard",
+        "emoji": "👹",
+        "anilist": 274304,
+        "mal": null
+      },
+      {
+        "name": "Uraume",
+        "emoji": "👹",
+        "anilist": 210830,
+        "mal": 220749
+      },
+      {
+        "name": "Tsumiki Fushiguro",
+        "emoji": "👹",
+        "anilist": 193479,
+        "mal": 220757
+      },
+      {
+        "name": "Haruta Shigemo",
+        "emoji": "👹",
+        "anilist": 209694,
+        "mal": null
+      },
+      {
+        "name": "Jiro Awasaka",
+        "emoji": "👹",
+        "anilist": null,
+        "mal": null
+      },
+      {
+        "name": "Ogami",
+        "emoji": "👹",
+        "anilist": 209397,
+        "mal": 220753
+      },
+      {
+        "name": "Mimiko Hasaba",
+        "emoji": "👹",
+        "anilist": 228986,
+        "mal": 220763
+      },
+      {
+        "name": "Nanako Hasaba",
+        "emoji": "👹",
+        "anilist": 228987,
+        "mal": 220764
+      },
+      {
+        "name": "Shiu Kong",
+        "emoji": "👹",
+        "anilist": 303313,
+        "mal": 220761
+      },
+      {
+        "name": "Yu Haibara",
+        "emoji": "👹",
+        "anilist": 209411,
+        "mal": 220767
+      },
+      {
+        "name": "Riko Amanai",
+        "emoji": "👹",
+        "anilist": 203015,
+        "mal": null
+      },
+      {
+        "name": "Misato Kuroi",
+        "emoji": "👹",
+        "anilist": 255175,
+        "mal": null
+      },
+      {
+        "name": "Jin Itadori",
+        "emoji": "👹",
+        "anilist": 283137,
+        "mal": 220768
+      },
+      {
+        "name": "Kaori Itadori",
+        "emoji": "👹",
+        "anilist": 380084,
+        "mal": 220769
+      },
+      {
+        "name": "Mahoraga",
+        "emoji": "👹",
+        "anilist": null,
+        "mal": null
+      },
+      {
+        "name": "Nue",
+        "emoji": "👹",
+        "anilist": null,
+        "mal": null
+      },
+      {
+        "name": "Divine Dog",
+        "emoji": "👹",
+        "anilist": null,
+        "mal": null
+      },
+      {
+        "name": "Rabbit Escape",
+        "emoji": "👹",
+        "anilist": null,
+        "mal": null
+      },
+      {
+        "name": "Max Elephant",
+        "emoji": "👹",
+        "anilist": null,
+        "mal": null
+      },
+      {
+        "name": "Toad",
+        "emoji": "👹",
+        "anilist": null,
+        "mal": null
+      },
+      {
+        "name": "Great Serpent",
+        "emoji": "👹",
+        "anilist": null,
+        "mal": null
+      },
+      {
+        "name": "Garuda",
+        "emoji": "👹",
+        "anilist": 322043,
+        "mal": null
+      },
+      {
+        "name": "Judgeman",
+        "emoji": "👹",
+        "anilist": null,
+        "mal": null
+      },
+      {
+        "name": "Smallpox Deity",
+        "emoji": "👹",
+        "anilist": null,
+        "mal": null
+      },
+      {
+        "name": "Kurourushi",
+        "emoji": "👹",
+        "anilist": 276133,
+        "mal": null
+      },
+      {
+        "name": "Cursed Naoya",
+        "emoji": "👹",
+        "anilist": null,
+        "mal": null
+      },
+      {
+        "name": "Finger Bearer",
+        "emoji": "👹",
+        "anilist": null,
+        "mal": null
+      }
+    ]
+  },
+  {
+    "id": "aot",
+    "name": "Attack on Titan",
+    "emoji": "🪽",
+    "color": "#64748b",
+    "tags": [
+      "Action",
+      "Dark Fantasy"
+    ],
+    "chars": [
+      {
+        "name": "Eren Yeager",
+        "emoji": "🪽",
+        "anilist": 40882,
+        "mal": 40882
+      },
+      {
+        "name": "Mikasa Ackerman",
+        "emoji": "🪽",
+        "anilist": 40881,
+        "mal": 40881
+      },
+      {
+        "name": "Armin Arlert",
+        "emoji": "🪽",
+        "anilist": 46494,
+        "mal": 40884
+      },
+      {
+        "name": "Levi Ackerman",
+        "emoji": "🪽",
+        "anilist": 40883,
+        "mal": 40883
+      },
+      {
+        "name": "Erwin Smith",
+        "emoji": "🪽",
+        "anilist": 46496,
+        "mal": 40885
+      },
+      {
+        "name": "Hange Zoe",
+        "emoji": "🪽",
+        "anilist": 71121,
+        "mal": null
+      },
+      {
+        "name": "Jean Kirstein",
+        "emoji": "🪽",
+        "anilist": 46498,
+        "mal": 40889
+      },
+      {
+        "name": "Connie Springer",
+        "emoji": "🪽",
+        "anilist": 46486,
+        "mal": 40891
+      },
+      {
+        "name": "Sasha Blouse",
+        "emoji": "🪽",
+        "anilist": 45887,
+        "mal": 40892
+      },
+      {
+        "name": "Historia Reiss",
+        "emoji": "🪽",
+        "anilist": 40890,
+        "mal": 40890
+      },
+      {
+        "name": "Ymir",
+        "emoji": "🪽",
+        "anilist": 71479,
+        "mal": 40894
+      },
+      {
+        "name": "Reiner Braun",
+        "emoji": "🪽",
+        "anilist": 46484,
+        "mal": 40887
+      },
+      {
+        "name": "Bertholdt Hoover",
+        "emoji": "🪽",
+        "anilist": 40893,
+        "mal": 40893
+      },
+      {
+        "name": "Annie Leonhart",
+        "emoji": "🪽",
+        "anilist": 46490,
+        "mal": 40888
+      },
+      {
+        "name": "Zeke Yeager",
+        "emoji": "🪽",
+        "anilist": 85373,
+        "mal": 85373
+      },
+      {
+        "name": "Pieck Finger",
+        "emoji": "🪽",
+        "anilist": 125603,
+        "mal": 85371
+      },
+      {
+        "name": "Porco Galliard",
+        "emoji": "🪽",
+        "anilist": 125662,
+        "mal": 85372
+      },
+      {
+        "name": "Marcel Galliard",
+        "emoji": "🪽",
+        "anilist": 127683,
+        "mal": 85408
+      },
+      {
+        "name": "Gabi Braun",
+        "emoji": "🪽",
+        "anilist": 125659,
+        "mal": 85375
+      },
+      {
+        "name": "Falco Grice",
+        "emoji": "🪽",
+        "anilist": 125660,
+        "mal": 85376
+      },
+      {
+        "name": "Colt Grice",
+        "emoji": "🪽",
+        "anilist": 125665,
+        "mal": 85374
+      },
+      {
+        "name": "Theo Magath",
+        "emoji": "🪽",
+        "anilist": 131763,
+        "mal": 85409
+      },
+      {
+        "name": "Willy Tybur",
+        "emoji": "🪽",
+        "anilist": 131762,
+        "mal": 85410
+      },
+      {
+        "name": "Lara Tybur",
+        "emoji": "🪽",
+        "anilist": 205015,
+        "mal": 85411
+      },
+      {
+        "name": "Grisha Yeager",
+        "emoji": "🪽",
+        "anilist": 62477,
+        "mal": 85385
+      },
+      {
+        "name": "Carla Yeager",
+        "emoji": "🪽",
+        "anilist": 62475,
+        "mal": 85386
+      },
+      {
+        "name": "Dina Fritz",
+        "emoji": "🪽",
+        "anilist": 85384,
+        "mal": 85384
+      },
+      {
+        "name": "Kenny Ackerman",
+        "emoji": "🪽",
+        "anilist": 85383,
+        "mal": 85383
+      },
+      {
+        "name": "Rod Reiss",
+        "emoji": "🪽",
+        "anilist": 85382,
+        "mal": 85382
+      },
+      {
+        "name": "Keith Shadis",
+        "emoji": "🪽",
+        "anilist": 84305,
+        "mal": 85381
+      },
+      {
+        "name": "Dot Pyxis",
+        "emoji": "🪽",
+        "anilist": 85380,
+        "mal": 85380
+      },
+      {
+        "name": "Nile Dok",
+        "emoji": "🪽",
+        "anilist": 71123,
+        "mal": 85379
+      },
+      {
+        "name": "Onyankopon",
+        "emoji": "🪽",
+        "anilist": 85378,
+        "mal": 85378
+      },
+      {
+        "name": "Yelena",
+        "emoji": "🪽",
+        "anilist": 85377,
+        "mal": 85377
+      },
+      {
+        "name": "Floch Forster",
+        "emoji": "🪽",
+        "anilist": 85370,
+        "mal": 85370
+      },
+      {
+        "name": "Hitch Dreyse",
+        "emoji": "🪽",
+        "anilist": 86017,
+        "mal": 85398
+      },
+      {
+        "name": "Marlowe Freudenberg",
+        "emoji": "🪽",
+        "anilist": 85399,
+        "mal": 85399
+      },
+      {
+        "name": "Moblit Berner",
+        "emoji": "🪽",
+        "anilist": 127573,
+        "mal": 85391
+      },
+      {
+        "name": "Mike Zacharias",
+        "emoji": "🪽",
+        "anilist": 71119,
+        "mal": 40895
+      },
+      {
+        "name": "Petra Ral",
+        "emoji": "🪽",
+        "anilist": 62501,
+        "mal": 40896
+      },
+      {
+        "name": "Oluo Bozado",
+        "emoji": "🪽",
+        "anilist": 40897,
+        "mal": 40897
+      },
+      {
+        "name": "Eld Jinn",
+        "emoji": "🪽",
+        "anilist": 40899,
+        "mal": 40899
+      },
+      {
+        "name": "Gunther Schultz",
+        "emoji": "🪽",
+        "anilist": 71691,
+        "mal": 40898
+      },
+      {
+        "name": "Isabel Magnolia",
+        "emoji": "🪽",
+        "anilist": 85389,
+        "mal": 85389
+      },
+      {
+        "name": "Furlan Church",
+        "emoji": "🪽",
+        "anilist": 85390,
+        "mal": 85390
+      },
+      {
+        "name": "Nifa",
+        "emoji": "🪽",
+        "anilist": 85395,
+        "mal": 85395
+      },
+      {
+        "name": "Louise",
+        "emoji": "🪽",
+        "anilist": 209870,
+        "mal": 85392
+      },
+      {
+        "name": "Daz",
+        "emoji": "🪽",
+        "anilist": 84321,
+        "mal": 85393
+      },
+      {
+        "name": "Samuel Linke-Jackson",
+        "emoji": "🪽",
+        "anilist": 84315,
+        "mal": 85394
+      },
+      {
+        "name": "Zofia",
+        "emoji": "🪽",
+        "anilist": 85406,
+        "mal": 85406
+      },
+      {
+        "name": "Udo",
+        "emoji": "🪽",
+        "anilist": 85407,
+        "mal": 85407
+      },
+      {
+        "name": "Ilse Langnar",
+        "emoji": "🪽",
+        "anilist": 85388,
+        "mal": 85388
+      },
+      {
+        "name": "Ymir Fritz",
+        "emoji": "🪽",
+        "anilist": null,
+        "mal": null
+      },
+      {
+        "name": "Frieda Reiss",
+        "emoji": "🪽",
+        "anilist": null,
+        "mal": null
+      },
+      {
+        "name": "Uri Reiss",
+        "emoji": "🪽",
+        "anilist": null,
+        "mal": null
+      },
+      {
+        "name": "Hannes",
+        "emoji": "🪽",
+        "anilist": 46492,
+        "mal": null
+      },
+      {
+        "name": "Eren Kruger / Owl",
+        "emoji": "🪽",
+        "anilist": null,
+        "mal": null
+      },
+      {
+        "name": "Attack Titan",
+        "emoji": "🪽",
+        "anilist": null,
+        "mal": null
+      },
+      {
+        "name": "Founding Titan",
+        "emoji": "🪽",
+        "anilist": null,
+        "mal": null
+      },
+      {
+        "name": "Colossal Titan",
+        "emoji": "🪽",
+        "anilist": null,
+        "mal": null
+      },
+      {
+        "name": "Armored Titan",
+        "emoji": "🪽",
+        "anilist": null,
+        "mal": null
+      },
+      {
+        "name": "Female Titan",
+        "emoji": "🪽",
+        "anilist": null,
+        "mal": null
+      },
+      {
+        "name": "Beast Titan",
+        "emoji": "🪽",
+        "anilist": null,
+        "mal": null
+      },
+      {
+        "name": "Jaw Titan",
+        "emoji": "🪽",
+        "anilist": null,
+        "mal": null
+      },
+      {
+        "name": "Cart Titan",
+        "emoji": "🪽",
+        "anilist": null,
+        "mal": null
+      },
+      {
+        "name": "War Hammer Titan",
+        "emoji": "🪽",
+        "anilist": null,
+        "mal": null
+      },
+      {
+        "name": "Pure Titan",
+        "emoji": "🪽",
+        "anilist": null,
+        "mal": null
+      },
+      {
+        "name": "Smiling Titan",
+        "emoji": "🪽",
+        "anilist": null,
+        "mal": null
+      }
+    ]
+  },
+  {
+    "id": "opm",
+    "name": "One Punch Man",
+    "emoji": "👊",
+    "color": "#ef4444",
+    "tags": [
+      "Superhero",
+      "Comedy"
+    ],
+    "chars": [
+      {
+        "name": "Saitama",
+        "emoji": "👊",
+        "anilist": 73935,
+        "mal": null
+      },
+      {
+        "name": "Genos",
+        "emoji": "👊",
+        "anilist": 73979,
+        "mal": null
+      },
+      {
+        "name": "King",
+        "emoji": "👊",
+        "anilist": 88907,
+        "mal": null
+      },
+      {
+        "name": "Mumen Rider",
+        "emoji": "👊",
+        "anilist": null,
+        "mal": null
+      },
+      {
+        "name": "Fubuki",
+        "emoji": "👊",
+        "anilist": 81931,
+        "mal": null
+      },
+      {
+        "name": "Tatsumaki",
+        "emoji": "👊",
+        "anilist": 81929,
+        "mal": null
+      },
+      {
+        "name": "Bang / Silver Fang",
+        "emoji": "👊",
+        "anilist": 81141,
+        "mal": null
+      },
+      {
+        "name": "Bomb",
+        "emoji": "👊",
+        "anilist": null,
+        "mal": null
+      },
+      {
+        "name": "Atomic Samurai",
+        "emoji": "👊",
+        "anilist": null,
+        "mal": null
+      },
+      {
+        "name": "Child Emperor",
+        "emoji": "👊",
+        "anilist": null,
+        "mal": null
+      },
+      {
+        "name": "Metal Bat",
+        "emoji": "👊",
+        "anilist": null,
+        "mal": null
+      },
+      {
+        "name": "Tanktop Master",
+        "emoji": "👊",
+        "anilist": 156125,
+        "mal": null
+      },
+      {
+        "name": "Puri-Puri Prisoner",
+        "emoji": "👊",
+        "anilist": 86029,
+        "mal": null
+      },
+      {
+        "name": "Superalloy Darkshine",
+        "emoji": "👊",
+        "anilist": null,
+        "mal": null
+      },
+      {
+        "name": "Watchdog Man",
+        "emoji": "👊",
+        "anilist": null,
+        "mal": null
+      },
+      {
+        "name": "Pig God",
+        "emoji": "👊",
+        "anilist": null,
+        "mal": null
+      },
+      {
+        "name": "Zombieman",
+        "emoji": "👊",
+        "anilist": 133835,
+        "mal": null
+      },
+      {
+        "name": "Flashy Flash",
+        "emoji": "👊",
+        "anilist": null,
+        "mal": null
+      },
+      {
+        "name": "Amai Mask / Sweet Mask",
+        "emoji": "👊",
+        "anilist": 86031,
+        "mal": null
+      },
+      {
+        "name": "Drive Knight",
+        "emoji": "👊",
+        "anilist": null,
+        "mal": null
+      },
+      {
+        "name": "Metal Knight / Bofoi",
+        "emoji": "👊",
+        "anilist": 81933,
+        "mal": null
+      },
+      {
+        "name": "Blast",
+        "emoji": "👊",
+        "anilist": 206581,
+        "mal": null
+      },
+      {
+        "name": "Garou",
+        "emoji": "👊",
+        "anilist": 89277,
+        "mal": null
+      },
+      {
+        "name": "Speed-o'-Sound Sonic",
+        "emoji": "👊",
+        "anilist": null,
+        "mal": null
+      },
+      {
+        "name": "Boros",
+        "emoji": "👊",
+        "anilist": null,
+        "mal": null
+      },
+      {
+        "name": "Melzargard",
+        "emoji": "👊",
+        "anilist": 156124,
+        "mal": null
+      },
+      {
+        "name": "Geryuganshoop",
+        "emoji": "👊",
+        "anilist": 208320,
+        "mal": null
+      },
+      {
+        "name": "Groribas",
+        "emoji": "👊",
+        "anilist": 247693,
+        "mal": null
+      },
+      {
+        "name": "Mosquito Girl",
+        "emoji": "👊",
+        "anilist": null,
+        "mal": null
+      },
+      {
+        "name": "Carnage Kabuto",
+        "emoji": "👊",
+        "anilist": null,
+        "mal": null
+      },
+      {
+        "name": "Beast King",
+        "emoji": "👊",
+        "anilist": null,
+        "mal": null
+      },
+      {
+        "name": "Deep Sea King",
+        "emoji": "👊",
+        "anilist": null,
+        "mal": null
+      },
+      {
+        "name": "Vaccine Man",
+        "emoji": "👊",
+        "anilist": 13125,
+        "mal": null
+      },
+      {
+        "name": "Crablante",
+        "emoji": "👊",
+        "anilist": null,
+        "mal": null
+      },
+      {
+        "name": "Hammerhead",
+        "emoji": "👊",
+        "anilist": null,
+        "mal": null
+      },
+      {
+        "name": "Suiryu",
+        "emoji": "👊",
+        "anilist": 132939,
+        "mal": null
+      },
+      {
+        "name": "Gouketsu",
+        "emoji": "👊",
+        "anilist": 327339,
+        "mal": null
+      },
+      {
+        "name": "Bakuzan",
+        "emoji": "👊",
+        "anilist": 327350,
+        "mal": null
+      },
+      {
+        "name": "Psykos",
+        "emoji": "👊",
+        "anilist": 165607,
+        "mal": null
+      },
+      {
+        "name": "Orochi",
+        "emoji": "👊",
+        "anilist": 195425,
+        "mal": null
+      },
+      {
+        "name": "Black Sperm",
+        "emoji": "👊",
+        "anilist": null,
+        "mal": null
+      },
+      {
+        "name": "Homeless Emperor",
+        "emoji": "👊",
+        "anilist": null,
+        "mal": null
+      },
+      {
+        "name": "Fuhrer Ugly",
+        "emoji": "👊",
+        "anilist": null,
+        "mal": null
+      },
+      {
+        "name": "Gums",
+        "emoji": "👊",
+        "anilist": null,
+        "mal": null
+      },
+      {
+        "name": "Nyan",
+        "emoji": "👊",
+        "anilist": null,
+        "mal": null
+      },
+      {
+        "name": "Evil Natural Water",
+        "emoji": "👊",
+        "anilist": null,
+        "mal": null
+      },
+      {
+        "name": "Overgrown Rover",
+        "emoji": "👊",
+        "anilist": null,
+        "mal": null
+      },
+      {
+        "name": "Phoenix Man",
+        "emoji": "👊",
+        "anilist": null,
+        "mal": null
+      },
+      {
+        "name": "Royal Ripper",
+        "emoji": "👊",
+        "anilist": null,
+        "mal": null
+      },
+      {
+        "name": "Bug God",
+        "emoji": "👊",
+        "anilist": null,
+        "mal": null
+      },
+      {
+        "name": "Sage Centipede",
+        "emoji": "👊",
+        "anilist": null,
+        "mal": null
+      },
+      {
+        "name": "Elder Centipede",
+        "emoji": "👊",
+        "anilist": null,
+        "mal": null
+      },
+      {
+        "name": "Manako",
+        "emoji": "👊",
+        "anilist": 208572,
+        "mal": null
+      },
+      {
+        "name": "Hellfire Flame",
+        "emoji": "👊",
+        "anilist": null,
+        "mal": null
+      },
+      {
+        "name": "Gale Wind",
+        "emoji": "👊",
+        "anilist": null,
+        "mal": null
+      },
+      {
+        "name": "Choze",
+        "emoji": "👊",
+        "anilist": 126978,
+        "mal": null
+      },
+      {
+        "name": "Captain Mizuki",
+        "emoji": "👊",
+        "anilist": null,
+        "mal": null
+      },
+      {
+        "name": "Sekingar",
+        "emoji": "👊",
+        "anilist": 307003,
+        "mal": null
+      },
+      {
+        "name": "Iaian",
+        "emoji": "👊",
+        "anilist": 165855,
+        "mal": null
+      },
+      {
+        "name": "Okamaitachi",
+        "emoji": "👊",
+        "anilist": 377194,
+        "mal": null
+      },
+      {
+        "name": "Bushidrill",
+        "emoji": "👊",
+        "anilist": 377195,
+        "mal": null
+      },
+      {
+        "name": "Death Gatling",
+        "emoji": "👊",
+        "anilist": 203397,
+        "mal": null
+      },
+      {
+        "name": "Stinger",
+        "emoji": "👊",
+        "anilist": 86033,
+        "mal": null
+      },
+      {
+        "name": "Smile Man",
+        "emoji": "👊",
+        "anilist": 326813,
+        "mal": null
+      },
+      {
+        "name": "Lightning Max",
+        "emoji": "👊",
+        "anilist": null,
+        "mal": null
+      },
+      {
+        "name": "Golden Ball",
+        "emoji": "👊",
+        "anilist": null,
+        "mal": null
+      },
+      {
+        "name": "Spring Mustachio",
+        "emoji": "👊",
+        "anilist": null,
+        "mal": null
+      },
+      {
+        "name": "Blue Fire",
+        "emoji": "👊",
+        "anilist": 326805,
+        "mal": null
+      }
+    ]
+  },
+  {
+    "id": "demonslayer",
+    "name": "Demon Slayer",
+    "emoji": "🗡️",
+    "color": "#ec4899",
+    "tags": [
+      "Shonen",
+      "Supernatural"
+    ],
+    "chars": [
+      {
+        "name": "Tanjiro Kamado",
+        "emoji": "🗡️",
+        "anilist": 124701,
+        "mal": 163268
+      },
+      {
+        "name": "Nezuko Kamado",
+        "emoji": "🗡️",
+        "anilist": 127518,
+        "mal": 163269
+      },
+      {
+        "name": "Zenitsu Agatsuma",
+        "emoji": "🗡️",
+        "anilist": 129131,
+        "mal": 163270
+      },
+      {
+        "name": "Inosuke Hashibira",
+        "emoji": "🗡️",
+        "anilist": 129130,
+        "mal": 163271
+      },
+      {
+        "name": "Kanao Tsuyuri",
+        "emoji": "🗡️",
+        "anilist": 139038,
+        "mal": 163281
+      },
+      {
+        "name": "Genya Shinazugawa",
+        "emoji": "🗡️",
+        "anilist": 137776,
+        "mal": 163283
+      },
+      {
+        "name": "Giyu Tomioka",
+        "emoji": "🗡️",
+        "anilist": 124705,
+        "mal": 163272
+      },
+      {
+        "name": "Shinobu Kocho",
+        "emoji": "🗡️",
+        "anilist": 136070,
+        "mal": 163273
+      },
+      {
+        "name": "Kyojuro Rengoku",
+        "emoji": "🗡️",
+        "anilist": 124707,
+        "mal": 163274
+      },
+      {
+        "name": "Tengen Uzui",
+        "emoji": "🗡️",
+        "anilist": 136071,
+        "mal": 163275
+      },
+      {
+        "name": "Mitsuri Kanroji",
+        "emoji": "🗡️",
+        "anilist": 136072,
+        "mal": 163276
+      },
+      {
+        "name": "Muichiro Tokito",
+        "emoji": "🗡️",
+        "anilist": 124711,
+        "mal": 163278
+      },
+      {
+        "name": "Obanai Iguro",
+        "emoji": "🗡️",
+        "anilist": 137777,
+        "mal": 163277
+      },
+      {
+        "name": "Sanemi Shinazugawa",
+        "emoji": "🗡️",
+        "anilist": 137774,
+        "mal": 163279
+      },
+      {
+        "name": "Gyomei Himejima",
+        "emoji": "🗡️",
+        "anilist": 124713,
+        "mal": 163280
+      },
+      {
+        "name": "Aoi Kanzaki",
+        "emoji": "🗡️",
+        "anilist": 145288,
+        "mal": 163282
+      },
+      {
+        "name": "Tamayo",
+        "emoji": "🗡️",
+        "anilist": 138847,
+        "mal": 163310
+      },
+      {
+        "name": "Yushiro",
+        "emoji": "🗡️",
+        "anilist": 124744,
+        "mal": 163311
+      },
+      {
+        "name": "Muzan Kibutsuji",
+        "emoji": "🗡️",
+        "anilist": 129132,
+        "mal": 163284
+      },
+      {
+        "name": "Kokushibo",
+        "emoji": "🗡️",
+        "anilist": 141918,
+        "mal": 163287
+      },
+      {
+        "name": "Doma",
+        "emoji": "🗡️",
+        "anilist": 124719,
+        "mal": 163286
+      },
+      {
+        "name": "Akaza",
+        "emoji": "🗡️",
+        "anilist": 141694,
+        "mal": 163285
+      },
+      {
+        "name": "Kaigaku",
+        "emoji": "🗡️",
+        "anilist": 165862,
+        "mal": 163290
+      },
+      {
+        "name": "Gyutaro",
+        "emoji": "🗡️",
+        "anilist": 124726,
+        "mal": 163293
+      },
+      {
+        "name": "Daki",
+        "emoji": "🗡️",
+        "anilist": 139734,
+        "mal": 163292
+      },
+      {
+        "name": "Hantengu",
+        "emoji": "🗡️",
+        "anilist": 260323,
+        "mal": 163288
+      },
+      {
+        "name": "Sekido",
+        "emoji": "🗡️",
+        "anilist": 53579,
+        "mal": 163320
+      },
+      {
+        "name": "Karaku",
+        "emoji": "🗡️",
+        "anilist": 124755,
+        "mal": 163322
+      },
+      {
+        "name": "Aizetsu",
+        "emoji": "🗡️",
+        "anilist": 124752,
+        "mal": 163319
+      },
+      {
+        "name": "Urogi",
+        "emoji": "🗡️",
+        "anilist": 124754,
+        "mal": 163321
+      },
+      {
+        "name": "Zohakuten",
+        "emoji": "🗡️",
+        "anilist": null,
+        "mal": null
+      },
+      {
+        "name": "Gyokko",
+        "emoji": "🗡️",
+        "anilist": 205590,
+        "mal": 163289
+      },
+      {
+        "name": "Nakime",
+        "emoji": "🗡️",
+        "anilist": 139736,
+        "mal": 163291
+      },
+      {
+        "name": "Enmu",
+        "emoji": "🗡️",
+        "anilist": 139737,
+        "mal": 163294
+      },
+      {
+        "name": "Rui",
+        "emoji": "🗡️",
+        "anilist": 124728,
+        "mal": 163295
+      },
+      {
+        "name": "Spider Demon Mother",
+        "emoji": "🗡️",
+        "anilist": null,
+        "mal": null
+      },
+      {
+        "name": "Spider Demon Father",
+        "emoji": "🗡️",
+        "anilist": null,
+        "mal": null
+      },
+      {
+        "name": "Hand Demon",
+        "emoji": "🗡️",
+        "anilist": null,
+        "mal": null
+      },
+      {
+        "name": "Susamaru",
+        "emoji": "🗡️",
+        "anilist": 138810,
+        "mal": 163312
+      },
+      {
+        "name": "Yahaba",
+        "emoji": "🗡️",
+        "anilist": 138811,
+        "mal": 163313
+      },
+      {
+        "name": "Kyogai",
+        "emoji": "🗡️",
+        "anilist": null,
+        "mal": null
+      },
+      {
+        "name": "Rokuro",
+        "emoji": "🗡️",
+        "anilist": 124763,
+        "mal": 163330
+      },
+      {
+        "name": "Wakuraba",
+        "emoji": "🗡️",
+        "anilist": 306224,
+        "mal": 163328
+      },
+      {
+        "name": "Mukago",
+        "emoji": "🗡️",
+        "anilist": 207959,
+        "mal": 163329
+      },
+      {
+        "name": "Kamanue",
+        "emoji": "🗡️",
+        "anilist": 207958,
+        "mal": 163331
+      },
+      {
+        "name": "Sakonji Urokodaki",
+        "emoji": "🗡️",
+        "anilist": 137773,
+        "mal": 163298
+      },
+      {
+        "name": "Sabito",
+        "emoji": "🗡️",
+        "anilist": 137809,
+        "mal": 163301
+      },
+      {
+        "name": "Makomo",
+        "emoji": "🗡️",
+        "anilist": 137806,
+        "mal": 163300
+      },
+      {
+        "name": "Jigoro Kuwajima",
+        "emoji": "🗡️",
+        "anilist": 124732,
+        "mal": 163299
+      },
+      {
+        "name": "Kanae Kocho",
+        "emoji": "🗡️",
+        "anilist": 139039,
+        "mal": 163302
+      },
+      {
+        "name": "Kagaya Ubuyashiki",
+        "emoji": "🗡️",
+        "anilist": 137808,
+        "mal": 163297
+      },
+      {
+        "name": "Amane Ubuyashiki",
+        "emoji": "🗡️",
+        "anilist": 221375,
+        "mal": null
+      },
+      {
+        "name": "Hinaki Ubuyashiki",
+        "emoji": "🗡️",
+        "anilist": 167549,
+        "mal": null
+      },
+      {
+        "name": "Nichika Ubuyashiki",
+        "emoji": "🗡️",
+        "anilist": 167548,
+        "mal": null
+      },
+      {
+        "name": "Kiriya Ubuyashiki",
+        "emoji": "🗡️",
+        "anilist": 139460,
+        "mal": null
+      },
+      {
+        "name": "Senjuro Rengoku",
+        "emoji": "🗡️",
+        "anilist": 124736,
+        "mal": 163303
+      },
+      {
+        "name": "Shinjuro Rengoku",
+        "emoji": "🗡️",
+        "anilist": 124737,
+        "mal": 163304
+      },
+      {
+        "name": "Suma",
+        "emoji": "🗡️",
+        "anilist": 124738,
+        "mal": 163305
+      },
+      {
+        "name": "Makio",
+        "emoji": "🗡️",
+        "anilist": 250554,
+        "mal": 163306
+      },
+      {
+        "name": "Hinatsuru",
+        "emoji": "🗡️",
+        "anilist": 250556,
+        "mal": 163307
+      },
+      {
+        "name": "Hotaru Haganezuka",
+        "emoji": "🗡️",
+        "anilist": 138990,
+        "mal": 163308
+      },
+      {
+        "name": "Kotetsu",
+        "emoji": "🗡️",
+        "anilist": 171768,
+        "mal": null
+      },
+      {
+        "name": "Murata",
+        "emoji": "🗡️",
+        "anilist": 171150,
+        "mal": null
+      },
+      {
+        "name": "Chachamaru",
+        "emoji": "🗡️",
+        "anilist": 268212,
+        "mal": null
+      },
+      {
+        "name": "Kaburamaru",
+        "emoji": "🗡️",
+        "anilist": 310304,
+        "mal": null
+      },
+      {
+        "name": "Chuntaro",
+        "emoji": "🗡️",
+        "anilist": null,
+        "mal": null
+      },
+      {
+        "name": "Kasugai Crow",
+        "emoji": "🗡️",
+        "anilist": null,
+        "mal": null
+      },
+      {
+        "name": "Yoriichi Tsugikuni",
+        "emoji": "🗡️",
+        "anilist": 149220,
+        "mal": 163296
+      },
+      {
+        "name": "Yoriichi Type Zero",
+        "emoji": "🗡️",
+        "anilist": null,
+        "mal": null
+      }
+    ]
+  },
+  {
+    "id": "sololeveling",
+    "name": "Solo Leveling",
+    "emoji": "⚔️",
+    "color": "#0ea5e9",
+    "tags": [
+      "Fantasy",
+      "Action"
+    ],
+    "chars": [
+      {
+        "name": "Sung Jin-Woo / Shun Mizushino",
+        "emoji": "⚔️",
+        "anilist": null,
+        "mal": null
+      },
+      {
+        "name": "Cha Hae-In / Shizuku Kosaka",
+        "emoji": "⚔️",
+        "anilist": 138789,
+        "mal": null
+      },
+      {
+        "name": "Yoo Jinho / Kenta Morobishi",
+        "emoji": "⚔️",
+        "anilist": null,
+        "mal": null
+      },
+      {
+        "name": "Go Gun-Hee",
+        "emoji": "⚔️",
+        "anilist": null,
+        "mal": null
+      },
+      {
+        "name": "Baek Yoonho",
+        "emoji": "⚔️",
+        "anilist": null,
+        "mal": null
+      },
+      {
+        "name": "Choi Jong-In",
+        "emoji": "⚔️",
+        "anilist": 138794,
+        "mal": null
+      },
+      {
+        "name": "Woo Jinchul",
+        "emoji": "⚔️",
+        "anilist": null,
+        "mal": null
+      },
+      {
+        "name": "Lee Joohee",
+        "emoji": "⚔️",
+        "anilist": null,
+        "mal": null
+      },
+      {
+        "name": "Song Chi-Yul",
+        "emoji": "⚔️",
+        "anilist": 136073,
+        "mal": null
+      },
+      {
+        "name": "Kang Tae-Shik",
+        "emoji": "⚔️",
+        "anilist": 181155,
+        "mal": null
+      },
+      {
+        "name": "Hwang Dong-Suk",
+        "emoji": "⚔️",
+        "anilist": 306666,
+        "mal": null
+      },
+      {
+        "name": "Hwang Dong-Soo",
+        "emoji": "⚔️",
+        "anilist": 306666,
+        "mal": null
+      },
+      {
+        "name": "Yuri Orloff",
+        "emoji": "⚔️",
+        "anilist": 306507,
+        "mal": null
+      },
+      {
+        "name": "Goto Ryuji",
+        "emoji": "⚔️",
+        "anilist": 181154,
+        "mal": null
+      },
+      {
+        "name": "Liu Zhigang",
+        "emoji": "⚔️",
+        "anilist": 184553,
+        "mal": null
+      },
+      {
+        "name": "Thomas Andre",
+        "emoji": "⚔️",
+        "anilist": 184540,
+        "mal": null
+      },
+      {
+        "name": "Christopher Reed",
+        "emoji": "⚔️",
+        "anilist": 208458,
+        "mal": null
+      },
+      {
+        "name": "Sung Il-Hwan",
+        "emoji": "⚔️",
+        "anilist": 138790,
+        "mal": null
+      },
+      {
+        "name": "Jinah Sung",
+        "emoji": "⚔️",
+        "anilist": null,
+        "mal": null
+      },
+      {
+        "name": "Beru",
+        "emoji": "⚔️",
+        "anilist": 159849,
+        "mal": null
+      },
+      {
+        "name": "Igris",
+        "emoji": "⚔️",
+        "anilist": 145722,
+        "mal": null
+      },
+      {
+        "name": "Bellion",
+        "emoji": "⚔️",
+        "anilist": 249400,
+        "mal": null
+      },
+      {
+        "name": "Iron / Kim Chul",
+        "emoji": "⚔️",
+        "anilist": 184956,
+        "mal": null
+      },
+      {
+        "name": "Tusk",
+        "emoji": "⚔️",
+        "anilist": 184957,
+        "mal": null
+      },
+      {
+        "name": "Greed / Hwang Dong-Soo",
+        "emoji": "⚔️",
+        "anilist": 306666,
+        "mal": null
+      },
+      {
+        "name": "Tank",
+        "emoji": "⚔️",
+        "anilist": 184545,
+        "mal": null
+      },
+      {
+        "name": "Kaisel",
+        "emoji": "⚔️",
+        "anilist": 184546,
+        "mal": null
+      },
+      {
+        "name": "Ashborn",
+        "emoji": "⚔️",
+        "anilist": 198257,
+        "mal": null
+      },
+      {
+        "name": "Antares",
+        "emoji": "⚔️",
+        "anilist": 253680,
+        "mal": null
+      },
+      {
+        "name": "Baran",
+        "emoji": "⚔️",
+        "anilist": 155917,
+        "mal": null
+      },
+      {
+        "name": "Rakan",
+        "emoji": "⚔️",
+        "anilist": null,
+        "mal": null
+      },
+      {
+        "name": "Sillad / Frost Monarch",
+        "emoji": "⚔️",
+        "anilist": null,
+        "mal": null
+      },
+      {
+        "name": "Querehsha / Plague Monarch",
+        "emoji": "⚔️",
+        "anilist": null,
+        "mal": null
+      },
+      {
+        "name": "Legia",
+        "emoji": "⚔️",
+        "anilist": 209184,
+        "mal": null
+      },
+      {
+        "name": "Tarnak / Iron Body Monarch",
+        "emoji": "⚔️",
+        "anilist": null,
+        "mal": null
+      },
+      {
+        "name": "Yogumunt / Monarch of Transfiguration",
+        "emoji": "⚔️",
+        "anilist": null,
+        "mal": null
+      },
+      {
+        "name": "Architect",
+        "emoji": "⚔️",
+        "anilist": 121481,
+        "mal": null
+      },
+      {
+        "name": "Statue of God",
+        "emoji": "⚔️",
+        "anilist": null,
+        "mal": null
+      },
+      {
+        "name": "Kamish",
+        "emoji": "⚔️",
+        "anilist": null,
+        "mal": null
+      },
+      {
+        "name": "Esil Radiru",
+        "emoji": "⚔️",
+        "anilist": 164675,
+        "mal": null
+      },
+      {
+        "name": "Cerberus",
+        "emoji": "⚔️",
+        "anilist": 2897,
+        "mal": null
+      }
+    ]
+  },
+  {
+    "id": "bluelock",
+    "name": "Blue Lock",
+    "emoji": "⚽",
+    "color": "#2563eb",
+    "tags": [
+      "Sports"
+    ],
+    "chars": [
+      {
+        "name": "Yoichi Isagi",
+        "emoji": "⚽",
+        "anilist": 140856,
+        "mal": null
+      },
+      {
+        "name": "Meguru Bachira",
+        "emoji": "⚽",
+        "anilist": 162213,
+        "mal": null
+      },
+      {
+        "name": "Rin Itoshi",
+        "emoji": "⚽",
+        "anilist": 169395,
+        "mal": null
+      },
+      {
+        "name": "Sae Itoshi",
+        "emoji": "⚽",
+        "anilist": 169397,
+        "mal": null
+      },
+      {
+        "name": "Seishiro Nagi",
+        "emoji": "⚽",
+        "anilist": null,
+        "mal": null
+      },
+      {
+        "name": "Reo Mikage",
+        "emoji": "⚽",
+        "anilist": 169394,
+        "mal": null
+      },
+      {
+        "name": "Rensuke Kunigami",
+        "emoji": "⚽",
+        "anilist": 162214,
+        "mal": null
+      },
+      {
+        "name": "Hyoma Chigiri",
+        "emoji": "⚽",
+        "anilist": null,
+        "mal": null
+      },
+      {
+        "name": "Gin Gagamaru",
+        "emoji": "⚽",
+        "anilist": 169404,
+        "mal": null
+      },
+      {
+        "name": "Jingo Raichi",
+        "emoji": "⚽",
+        "anilist": 169402,
+        "mal": null
+      },
+      {
+        "name": "Asahi Naruhaya",
+        "emoji": "⚽",
+        "anilist": 179957,
+        "mal": null
+      },
+      {
+        "name": "Okuhito Iemon",
+        "emoji": "⚽",
+        "anilist": null,
+        "mal": null
+      },
+      {
+        "name": "Wataru Kuon",
+        "emoji": "⚽",
+        "anilist": 169392,
+        "mal": null
+      },
+      {
+        "name": "Gurimu Igarashi",
+        "emoji": "⚽",
+        "anilist": 169398,
+        "mal": null
+      },
+      {
+        "name": "Shouei Barou",
+        "emoji": "⚽",
+        "anilist": 169401,
+        "mal": null
+      },
+      {
+        "name": "Ikki Niko",
+        "emoji": "⚽",
+        "anilist": 169403,
+        "mal": null
+      },
+      {
+        "name": "Jyubei Aryu",
+        "emoji": "⚽",
+        "anilist": null,
+        "mal": null
+      },
+      {
+        "name": "Aoshi Tokimitsu",
+        "emoji": "⚽",
+        "anilist": 169396,
+        "mal": null
+      },
+      {
+        "name": "Tabito Karasu",
+        "emoji": "⚽",
+        "anilist": 187524,
+        "mal": null
+      },
+      {
+        "name": "Eita Otoya",
+        "emoji": "⚽",
+        "anilist": 187523,
+        "mal": null
+      },
+      {
+        "name": "Oliver Aiku",
+        "emoji": "⚽",
+        "anilist": 206571,
+        "mal": null
+      },
+      {
+        "name": "Kenyu Yukimiya",
+        "emoji": "⚽",
+        "anilist": 191409,
+        "mal": null
+      },
+      {
+        "name": "Yo Hiori",
+        "emoji": "⚽",
+        "anilist": null,
+        "mal": null
+      },
+      {
+        "name": "Ranze Kurona",
+        "emoji": "⚽",
+        "anilist": 290887,
+        "mal": null
+      },
+      {
+        "name": "Jin Kiyora",
+        "emoji": "⚽",
+        "anilist": 301260,
+        "mal": null
+      },
+      {
+        "name": "Nijiro Nanase",
+        "emoji": "⚽",
+        "anilist": null,
+        "mal": null
+      },
+      {
+        "name": "Zantetsu Tsurugi",
+        "emoji": "⚽",
+        "anilist": 169406,
+        "mal": null
+      },
+      {
+        "name": "Ryosuke Kira",
+        "emoji": "⚽",
+        "anilist": null,
+        "mal": null
+      },
+      {
+        "name": "Anri Teieri",
+        "emoji": "⚽",
+        "anilist": 169405,
+        "mal": null
+      },
+      {
+        "name": "Jinpachi Ego",
+        "emoji": "⚽",
+        "anilist": 140857,
+        "mal": null
+      },
+      {
+        "name": "Noel Noa",
+        "emoji": "⚽",
+        "anilist": 268966,
+        "mal": null
+      },
+      {
+        "name": "Chris Prince",
+        "emoji": "⚽",
+        "anilist": 269063,
+        "mal": null
+      },
+      {
+        "name": "Marc Snuffy",
+        "emoji": "⚽",
+        "anilist": 308139,
+        "mal": null
+      },
+      {
+        "name": "Julian Loki",
+        "emoji": "⚽",
+        "anilist": 269064,
+        "mal": null
+      },
+      {
+        "name": "Lavinho",
+        "emoji": "⚽",
+        "anilist": null,
+        "mal": null
+      },
+      {
+        "name": "Leonardo Luna",
+        "emoji": "⚽",
+        "anilist": 300811,
+        "mal": null
+      },
+      {
+        "name": "Adam Blake",
+        "emoji": "⚽",
+        "anilist": 269065,
+        "mal": null
+      },
+      {
+        "name": "Pablo Cavasoz",
+        "emoji": "⚽",
+        "anilist": null,
+        "mal": null
+      },
+      {
+        "name": "Dada Silva",
+        "emoji": "⚽",
+        "anilist": 300790,
+        "mal": null
+      },
+      {
+        "name": "Michael Kaiser",
+        "emoji": "⚽",
+        "anilist": 268963,
+        "mal": null
+      },
+      {
+        "name": "Alexis Ness",
+        "emoji": "⚽",
+        "anilist": 269388,
+        "mal": null
+      },
+      {
+        "name": "Don Lorenzo",
+        "emoji": "⚽",
+        "anilist": 300793,
+        "mal": null
+      },
+      {
+        "name": "Shuto Sendou",
+        "emoji": "⚽",
+        "anilist": null,
+        "mal": null
+      },
+      {
+        "name": "Gen Fukaku",
+        "emoji": "⚽",
+        "anilist": 348627,
+        "mal": null
+      }
+    ]
+  },
+  {
+    "id": "blackclover",
+    "name": "Black Clover",
+    "emoji": "🍀",
+    "color": "#22c55e",
+    "tags": [
+      "Shonen",
+      "Fantasy"
+    ],
+    "chars": [
+      {
+        "name": "Asta",
+        "emoji": "🍀",
+        "anilist": 123285,
+        "mal": 170830
+      },
+      {
+        "name": "Yuno",
+        "emoji": "🍀",
+        "anilist": 123284,
+        "mal": 170831
+      },
+      {
+        "name": "Noelle Silva",
+        "emoji": "🍀",
+        "anilist": 123283,
+        "mal": 170832
+      },
+      {
+        "name": "Yami Sukehiro",
+        "emoji": "🍀",
+        "anilist": 124440,
+        "mal": 170833
+      },
+      {
+        "name": "Nacht Faust",
+        "emoji": "🍀",
+        "anilist": 187268,
+        "mal": 196741
+      },
+      {
+        "name": "Liebe",
+        "emoji": "🍀",
+        "anilist": 192196,
+        "mal": 196740
+      },
+      {
+        "name": "Julius Novachrono",
+        "emoji": "🍀",
+        "anilist": 124435,
+        "mal": 170834
+      },
+      {
+        "name": "Lucius Zogratis",
+        "emoji": "🍀",
+        "anilist": 167853,
+        "mal": 196753
+      },
+      {
+        "name": "Fuegoleon Vermillion",
+        "emoji": "🍀",
+        "anilist": 124521,
+        "mal": 170835
+      },
+      {
+        "name": "Mereoleona Vermillion",
+        "emoji": "🍀",
+        "anilist": 124522,
+        "mal": 170836
+      },
+      {
+        "name": "Leopold Vermillion",
+        "emoji": "🍀",
+        "anilist": 137881,
+        "mal": 170837
+      },
+      {
+        "name": "Mimosa Vermillion",
+        "emoji": "🍀",
+        "anilist": 124438,
+        "mal": 170838
+      },
+      {
+        "name": "Nozel Silva",
+        "emoji": "🍀",
+        "anilist": 124442,
+        "mal": 170854
+      },
+      {
+        "name": "Solid Silva",
+        "emoji": "🍀",
+        "anilist": 124974,
+        "mal": 170855
+      },
+      {
+        "name": "Nebra Silva",
+        "emoji": "🍀",
+        "anilist": 124973,
+        "mal": 170856
+      },
+      {
+        "name": "Finral Roulacase",
+        "emoji": "🍀",
+        "anilist": 124433,
+        "mal": 170846
+      },
+      {
+        "name": "Langris Vaude",
+        "emoji": "🍀",
+        "anilist": 124975,
+        "mal": 170863
+      },
+      {
+        "name": "Luck Voltia",
+        "emoji": "🍀",
+        "anilist": 124449,
+        "mal": 170839
+      },
+      {
+        "name": "Magna Swing",
+        "emoji": "🍀",
+        "anilist": 124439,
+        "mal": 170840
+      },
+      {
+        "name": "Vanessa Enoteca",
+        "emoji": "🍀",
+        "anilist": 124436,
+        "mal": 170845
+      },
+      {
+        "name": "Charmy Pappitson",
+        "emoji": "🍀",
+        "anilist": 124447,
+        "mal": 170848
+      },
+      {
+        "name": "Gauche Adlai",
+        "emoji": "🍀",
+        "anilist": 124446,
+        "mal": 170841
+      },
+      {
+        "name": "Grey",
+        "emoji": "🍀",
+        "anilist": 124444,
+        "mal": 170842
+      },
+      {
+        "name": "Gordon Agrippa",
+        "emoji": "🍀",
+        "anilist": 124448,
+        "mal": 170843
+      },
+      {
+        "name": "Henry Legolant",
+        "emoji": "🍀",
+        "anilist": 124690,
+        "mal": 170844
+      },
+      {
+        "name": "Zora Ideale",
+        "emoji": "🍀",
+        "anilist": 124459,
+        "mal": 170847
+      },
+      {
+        "name": "Secre Swallowtail / Nero",
+        "emoji": "🍀",
+        "anilist": null,
+        "mal": null
+      },
+      {
+        "name": "William Vangeance",
+        "emoji": "🍀",
+        "anilist": 124441,
+        "mal": 170857
+      },
+      {
+        "name": "Charlotte Roselei",
+        "emoji": "🍀",
+        "anilist": 124434,
+        "mal": 170850
+      },
+      {
+        "name": "Rill Boismortier",
+        "emoji": "🍀",
+        "anilist": 124457,
+        "mal": 170849
+      },
+      {
+        "name": "Dorothy Unsworth",
+        "emoji": "🍀",
+        "anilist": 124458,
+        "mal": 170852
+      },
+      {
+        "name": "Jack the Ripper",
+        "emoji": "🍀",
+        "anilist": 124456,
+        "mal": 170853
+      },
+      {
+        "name": "Kaiser Granvorka",
+        "emoji": "🍀",
+        "anilist": 182008,
+        "mal": null
+      },
+      {
+        "name": "Marx Francois",
+        "emoji": "🍀",
+        "anilist": 124454,
+        "mal": null
+      },
+      {
+        "name": "Sekke Bronzazza",
+        "emoji": "🍀",
+        "anilist": 124460,
+        "mal": 170864
+      },
+      {
+        "name": "Patolli / Patri",
+        "emoji": "🍀",
+        "anilist": 130458,
+        "mal": 170858
+      },
+      {
+        "name": "Licht",
+        "emoji": "🍀",
+        "anilist": 124472,
+        "mal": 170859
+      },
+      {
+        "name": "Rhya",
+        "emoji": "🍀",
+        "anilist": 124473,
+        "mal": 170860
+      },
+      {
+        "name": "Vetto",
+        "emoji": "🍀",
+        "anilist": 124475,
+        "mal": 170861
+      },
+      {
+        "name": "Fana",
+        "emoji": "🍀",
+        "anilist": 124479,
+        "mal": 170862
+      },
+      {
+        "name": "Rades Spirito",
+        "emoji": "🍀",
+        "anilist": 124477,
+        "mal": null
+      },
+      {
+        "name": "Sally",
+        "emoji": "🍀",
+        "anilist": 124519,
+        "mal": null
+      },
+      {
+        "name": "Valtos",
+        "emoji": "🍀",
+        "anilist": 124480,
+        "mal": null
+      },
+      {
+        "name": "Mars",
+        "emoji": "🍀",
+        "anilist": 124462,
+        "mal": null
+      },
+      {
+        "name": "Ladros",
+        "emoji": "🍀",
+        "anilist": 124995,
+        "mal": null
+      },
+      {
+        "name": "Zenon Zogratis",
+        "emoji": "🍀",
+        "anilist": 167952,
+        "mal": 196742
+      },
+      {
+        "name": "Dante Zogratis",
+        "emoji": "🍀",
+        "anilist": 163782,
+        "mal": 196743
+      },
+      {
+        "name": "Vanica Zogratis",
+        "emoji": "🍀",
+        "anilist": 168300,
+        "mal": 196744
+      },
+      {
+        "name": "Megicula",
+        "emoji": "🍀",
+        "anilist": 179901,
+        "mal": 196746
+      },
+      {
+        "name": "Lucifero",
+        "emoji": "🍀",
+        "anilist": 181846,
+        "mal": 196747
+      },
+      {
+        "name": "Beelzebub",
+        "emoji": "🍀",
+        "anilist": 135595,
+        "mal": 196748
+      },
+      {
+        "name": "Astaroth",
+        "emoji": "🍀",
+        "anilist": 215442,
+        "mal": 196749
+      },
+      {
+        "name": "Lilith",
+        "emoji": "🍀",
+        "anilist": 181690,
+        "mal": null
+      },
+      {
+        "name": "Naamah",
+        "emoji": "🍀",
+        "anilist": 216711,
+        "mal": null
+      },
+      {
+        "name": "Adrammelech",
+        "emoji": "🍀",
+        "anilist": 288931,
+        "mal": null
+      },
+      {
+        "name": "Morris Libardirt",
+        "emoji": "🍀",
+        "anilist": null,
+        "mal": null
+      },
+      {
+        "name": "Undine",
+        "emoji": "🍀",
+        "anilist": 174446,
+        "mal": null
+      },
+      {
+        "name": "Sylph / Bell",
+        "emoji": "🍀",
+        "anilist": 125025,
+        "mal": null
+      },
+      {
+        "name": "Salamander",
+        "emoji": "🍀",
+        "anilist": 185539,
+        "mal": null
+      },
+      {
+        "name": "Dryad",
+        "emoji": "🍀",
+        "anilist": 258201,
+        "mal": null
+      },
+      {
+        "name": "Gadjah",
+        "emoji": "🍀",
+        "anilist": 174452,
+        "mal": null
+      },
+      {
+        "name": "Lolopechka",
+        "emoji": "🍀",
+        "anilist": 174449,
+        "mal": null
+      },
+      {
+        "name": "Kahono",
+        "emoji": "🍀",
+        "anilist": 124993,
+        "mal": null
+      },
+      {
+        "name": "Kiato",
+        "emoji": "🍀",
+        "anilist": 124994,
+        "mal": null
+      },
+      {
+        "name": "Revchi Salik",
+        "emoji": "🍀",
+        "anilist": 124463,
+        "mal": null
+      },
+      {
+        "name": "Sister Lily",
+        "emoji": "🍀",
+        "anilist": 167854,
+        "mal": 196754
+      },
+      {
+        "name": "Damnatio Kira",
+        "emoji": "🍀",
+        "anilist": 174448,
+        "mal": null
+      },
+      {
+        "name": "Acier Silva",
+        "emoji": "🍀",
+        "anilist": 124972,
+        "mal": null
+      },
+      {
+        "name": "Licita",
+        "emoji": "🍀",
+        "anilist": 192588,
+        "mal": null
+      },
+      {
+        "name": "Morgen Faust",
+        "emoji": "🍀",
+        "anilist": 214748,
+        "mal": null
+      }
+    ]
+  },
+  {
+    "id": "chainsaw",
+    "name": "Chainsaw Man",
+    "emoji": "🪚",
+    "color": "#ef4444",
+    "tags": [
+      "Shonen",
+      "Supernatural"
+    ],
+    "chars": [
+      {
+        "name": "Denji",
+        "emoji": "🪚",
+        "anilist": 130102,
+        "mal": 197539
+      },
+      {
+        "name": "Pochita",
+        "emoji": "🪚",
+        "anilist": 170266,
+        "mal": 197543
+      },
+      {
+        "name": "Chainsaw Man / Hero of Hell",
+        "emoji": "🪚",
+        "anilist": null,
+        "mal": null
+      },
+      {
+        "name": "Power",
+        "emoji": "🪚",
+        "anilist": 137079,
+        "mal": 197540
+      },
+      {
+        "name": "Aki Hayakawa",
+        "emoji": "🪚",
+        "anilist": 137081,
+        "mal": 197541
+      },
+      {
+        "name": "Makima",
+        "emoji": "🪚",
+        "anilist": 137080,
+        "mal": 197542
+      },
+      {
+        "name": "Himeno",
+        "emoji": "🪚",
+        "anilist": 144596,
+        "mal": 197544
+      },
+      {
+        "name": "Kobeni Higashiyama",
+        "emoji": "🪚",
+        "anilist": 144594,
+        "mal": 197545
+      },
+      {
+        "name": "Kishibe",
+        "emoji": "🪚",
+        "anilist": 144593,
+        "mal": 197546
+      },
+      {
+        "name": "Quanxi",
+        "emoji": "🪚",
+        "anilist": 162123,
+        "mal": 197547
+      },
+      {
+        "name": "Reze",
+        "emoji": "🪚",
+        "anilist": 148740,
+        "mal": 197549
+      },
+      {
+        "name": "Asa Mitaka",
+        "emoji": "🪚",
+        "anilist": 282389,
+        "mal": 215729
+      },
+      {
+        "name": "Yoru / War Devil",
+        "emoji": "🪚",
+        "anilist": 187303,
+        "mal": 215730
+      },
+      {
+        "name": "Nayuta",
+        "emoji": "🪚",
+        "anilist": 199767,
+        "mal": 215731
+      },
+      {
+        "name": "Fami / Famine Devil",
+        "emoji": "🪚",
+        "anilist": 187308,
+        "mal": 215735
+      },
+      {
+        "name": "Yoshida Hirofumi",
+        "emoji": "🪚",
+        "anilist": 162080,
+        "mal": 215733
+      },
+      {
+        "name": "Fumiko Mifune",
+        "emoji": "🪚",
+        "anilist": 311954,
+        "mal": 215734
+      },
+      {
+        "name": "Haruka Iseumi",
+        "emoji": "🪚",
+        "anilist": 294718,
+        "mal": 215732
+      },
+      {
+        "name": "Barem Bridge",
+        "emoji": "🪚",
+        "anilist": 306235,
+        "mal": null
+      },
+      {
+        "name": "Miri Sugo / Sword Man",
+        "emoji": "🪚",
+        "anilist": null,
+        "mal": null
+      },
+      {
+        "name": "Katana Man / Samurai Sword",
+        "emoji": "🪚",
+        "anilist": 166247,
+        "mal": 197556
+      },
+      {
+        "name": "Akane Sawatari",
+        "emoji": "🪚",
+        "anilist": 174264,
+        "mal": 197557
+      },
+      {
+        "name": "Angel Devil",
+        "emoji": "🪚",
+        "anilist": 166241,
+        "mal": 197550
+      },
+      {
+        "name": "Beam / Shark Fiend",
+        "emoji": "🪚",
+        "anilist": 166242,
+        "mal": 197551
+      },
+      {
+        "name": "Violence Fiend / Galgali",
+        "emoji": "🪚",
+        "anilist": 166243,
+        "mal": 197552
+      },
+      {
+        "name": "Spider Devil / Princi",
+        "emoji": "🪚",
+        "anilist": 166244,
+        "mal": 197553
+      },
+      {
+        "name": "Future Devil",
+        "emoji": "🪚",
+        "anilist": 166249,
+        "mal": 197558
+      },
+      {
+        "name": "Ghost Devil",
+        "emoji": "🪚",
+        "anilist": null,
+        "mal": null
+      },
+      {
+        "name": "Fox Devil",
+        "emoji": "🪚",
+        "anilist": null,
+        "mal": null
+      },
+      {
+        "name": "Curse Devil",
+        "emoji": "🪚",
+        "anilist": null,
+        "mal": null
+      },
+      {
+        "name": "Gun Devil",
+        "emoji": "🪚",
+        "anilist": null,
+        "mal": null
+      },
+      {
+        "name": "Gun Fiend",
+        "emoji": "🪚",
+        "anilist": null,
+        "mal": null
+      },
+      {
+        "name": "Darkness Devil",
+        "emoji": "🪚",
+        "anilist": 166252,
+        "mal": 197561
+      },
+      {
+        "name": "Hell Devil",
+        "emoji": "🪚",
+        "anilist": null,
+        "mal": null
+      },
+      {
+        "name": "Zombie Devil",
+        "emoji": "🪚",
+        "anilist": null,
+        "mal": null
+      },
+      {
+        "name": "Bat Devil",
+        "emoji": "🪚",
+        "anilist": 31334,
+        "mal": null
+      },
+      {
+        "name": "Leech Devil",
+        "emoji": "🪚",
+        "anilist": null,
+        "mal": null
+      },
+      {
+        "name": "Typhoon Devil",
+        "emoji": "🪚",
+        "anilist": null,
+        "mal": null
+      },
+      {
+        "name": "Eternity Devil",
+        "emoji": "🪚",
+        "anilist": null,
+        "mal": null
+      },
+      {
+        "name": "Control Devil",
+        "emoji": "🪚",
+        "anilist": null,
+        "mal": null
+      },
+      {
+        "name": "Falling Devil",
+        "emoji": "🪚",
+        "anilist": null,
+        "mal": null
+      },
+      {
+        "name": "Justice Devil",
+        "emoji": "🪚",
+        "anilist": null,
+        "mal": null
+      },
+      {
+        "name": "Punishment Devil",
+        "emoji": "🪚",
+        "anilist": null,
+        "mal": null
+      },
+      {
+        "name": "Sea Cucumber Devil",
+        "emoji": "🪚",
+        "anilist": null,
+        "mal": null
+      },
+      {
+        "name": "Bucky / Chicken Devil",
+        "emoji": "🪚",
+        "anilist": null,
+        "mal": null
+      },
+      {
+        "name": "Cosmo",
+        "emoji": "🪚",
+        "anilist": 172890,
+        "mal": 215739
+      },
+      {
+        "name": "Long",
+        "emoji": "🪚",
+        "anilist": 187317,
+        "mal": 215744
+      },
+      {
+        "name": "Tsugihagi",
+        "emoji": "🪚",
+        "anilist": 199766,
+        "mal": 215740
+      },
+      {
+        "name": "Pingtsi",
+        "emoji": "🪚",
+        "anilist": 172891,
+        "mal": 215741
+      },
+      {
+        "name": "Santa Claus",
+        "emoji": "🪚",
+        "anilist": 174268,
+        "mal": 197548
+      },
+      {
+        "name": "Tolka",
+        "emoji": "🪚",
+        "anilist": 174279,
+        "mal": 215742
+      },
+      {
+        "name": "Yutaro Kurose",
+        "emoji": "🪚",
+        "anilist": 166253,
+        "mal": 197562
+      },
+      {
+        "name": "Michiko Tendo",
+        "emoji": "🪚",
+        "anilist": 144595,
+        "mal": 197563
+      },
+      {
+        "name": "Octopus Devil",
+        "emoji": "🪚",
+        "anilist": 187319,
+        "mal": 215746
+      },
+      {
+        "name": "Tomato Devil",
+        "emoji": "🪚",
+        "anilist": null,
+        "mal": null
+      },
+      {
+        "name": "Yuko",
+        "emoji": "🪚",
+        "anilist": null,
+        "mal": null
+      }
+    ]
+  },
+  {
+    "id": "dandadan",
+    "name": "Dandadan",
+    "emoji": "👽",
+    "color": "#a855f7",
+    "tags": [
+      "Supernatural",
+      "Sci-Fi"
+    ],
+    "chars": [
+      {
+        "name": "Momo Ayase",
+        "emoji": "👽",
+        "anilist": 222594,
+        "mal": null
+      },
+      {
+        "name": "Ken Takakura / Okarun",
+        "emoji": "👽",
+        "anilist": 222593,
+        "mal": null
+      },
+      {
+        "name": "Seiko Ayase",
+        "emoji": "👽",
+        "anilist": 234824,
+        "mal": null
+      },
+      {
+        "name": "Turbo Granny",
+        "emoji": "👽",
+        "anilist": null,
+        "mal": null
+      },
+      {
+        "name": "Aira Shiratori",
+        "emoji": "👽",
+        "anilist": 245466,
+        "mal": null
+      },
+      {
+        "name": "Acrobatic Silky",
+        "emoji": "👽",
+        "anilist": null,
+        "mal": null
+      },
+      {
+        "name": "Jin Enjoji / Jiji",
+        "emoji": "👽",
+        "anilist": null,
+        "mal": null
+      },
+      {
+        "name": "Evil Eye",
+        "emoji": "👽",
+        "anilist": null,
+        "mal": null
+      },
+      {
+        "name": "Kinta Sakata",
+        "emoji": "👽",
+        "anilist": 289257,
+        "mal": null
+      },
+      {
+        "name": "Vamola",
+        "emoji": "👽",
+        "anilist": 289256,
+        "mal": null
+      },
+      {
+        "name": "Rokuro Serpo",
+        "emoji": "👽",
+        "anilist": 347078,
+        "mal": null
+      },
+      {
+        "name": "Serpoian",
+        "emoji": "👽",
+        "anilist": null,
+        "mal": null
+      },
+      {
+        "name": "Mr. Mantis Shrimp / Peeny Weeny",
+        "emoji": "👽",
+        "anilist": null,
+        "mal": null
+      },
+      {
+        "name": "Dover Demon / Nessie",
+        "emoji": "👽",
+        "anilist": 309817,
+        "mal": null
+      },
+      {
+        "name": "Chiquitita",
+        "emoji": "👽",
+        "anilist": 270706,
+        "mal": null
+      },
+      {
+        "name": "Taro",
+        "emoji": "👽",
+        "anilist": null,
+        "mal": null
+      },
+      {
+        "name": "Hana",
+        "emoji": "👽",
+        "anilist": 270703,
+        "mal": null
+      },
+      {
+        "name": "Reiko Kashima",
+        "emoji": "👽",
+        "anilist": 309829,
+        "mal": null
+      },
+      {
+        "name": "Mongolian Death Worm",
+        "emoji": "👽",
+        "anilist": null,
+        "mal": null
+      },
+      {
+        "name": "Count Saint-Germain",
+        "emoji": "👽",
+        "anilist": 319531,
+        "mal": null
+      },
+      {
+        "name": "Space Globalists",
+        "emoji": "👽",
+        "anilist": null,
+        "mal": null
+      }
+    ]
+  },
+  {
+    "id": "kaiju8",
+    "name": "Kaiju No. 8",
+    "emoji": "🦖",
+    "color": "#14b8a6",
+    "tags": [
+      "Action",
+      "Sci-Fi"
+    ],
+    "chars": [
+      {
+        "name": "Kafka Hibino",
+        "emoji": "🦖",
+        "anilist": 180692,
+        "mal": null
+      },
+      {
+        "name": "Kaiju No. 8",
+        "emoji": "🦖",
+        "anilist": null,
+        "mal": null
+      },
+      {
+        "name": "Mina Ashiro",
+        "emoji": "🦖",
+        "anilist": 180693,
+        "mal": null
+      },
+      {
+        "name": "Reno Ichikawa",
+        "emoji": "🦖",
+        "anilist": 180694,
+        "mal": null
+      },
+      {
+        "name": "Kikoru Shinomiya",
+        "emoji": "🦖",
+        "anilist": 183889,
+        "mal": null
+      },
+      {
+        "name": "Soshiro Hoshina",
+        "emoji": "🦖",
+        "anilist": null,
+        "mal": null
+      },
+      {
+        "name": "Gen Narumi",
+        "emoji": "🦖",
+        "anilist": 241577,
+        "mal": null
+      },
+      {
+        "name": "Isao Shinomiya",
+        "emoji": "🦖",
+        "anilist": 257340,
+        "mal": null
+      },
+      {
+        "name": "Hikari Shinomiya",
+        "emoji": "🦖",
+        "anilist": 305720,
+        "mal": null
+      },
+      {
+        "name": "Iharu Furuhashi",
+        "emoji": "🦖",
+        "anilist": 308020,
+        "mal": null
+      },
+      {
+        "name": "Haruichi Izumo",
+        "emoji": "🦖",
+        "anilist": 308023,
+        "mal": null
+      },
+      {
+        "name": "Aoi Kaguragi",
+        "emoji": "🦖",
+        "anilist": 308014,
+        "mal": null
+      },
+      {
+        "name": "Konomi Okonogi",
+        "emoji": "🦖",
+        "anilist": 308027,
+        "mal": null
+      },
+      {
+        "name": "Hakua Igarashi",
+        "emoji": "🦖",
+        "anilist": 311264,
+        "mal": null
+      },
+      {
+        "name": "Eiji Hasegawa",
+        "emoji": "🦖",
+        "anilist": 305764,
+        "mal": null
+      },
+      {
+        "name": "Kaiju No. 9",
+        "emoji": "🦖",
+        "anilist": null,
+        "mal": null
+      },
+      {
+        "name": "Kaiju No. 10",
+        "emoji": "🦖",
+        "anilist": null,
+        "mal": null
+      },
+      {
+        "name": "Kaiju No. 2",
+        "emoji": "🦖",
+        "anilist": null,
+        "mal": null
+      },
+      {
+        "name": "Kaiju No. 6",
+        "emoji": "🦖",
+        "anilist": null,
+        "mal": null
+      },
+      {
+        "name": "Kaiju No. 11",
+        "emoji": "🦖",
+        "anilist": null,
+        "mal": null
+      },
+      {
+        "name": "Kaiju No. 12",
+        "emoji": "🦖",
+        "anilist": null,
+        "mal": null
+      },
+      {
+        "name": "Kaiju No. 13",
+        "emoji": "🦖",
+        "anilist": null,
+        "mal": null
+      },
+      {
+        "name": "Kaiju No. 14",
+        "emoji": "🦖",
+        "anilist": null,
+        "mal": null
+      },
+      {
+        "name": "Kaiju No. 15",
+        "emoji": "🦖",
+        "anilist": null,
+        "mal": null
+      }
+    ]
+  },
+  {
+    "id": "genshin",
+    "name": "Genshin Impact",
+    "emoji": "✨",
+    "color": "#06b6d4",
+    "tags": [
+      "Game",
+      "Fantasy"
+    ],
+    "chars": [
+      {
+        "name": "Aether",
+        "emoji": "✨",
+        "anilist": null,
+        "mal": null,
+        "img": "https://genshin-guess-who.com/genshin/char_icons_5star/Aether.webp"
+      },
+      {
+        "name": "Aino",
+        "emoji": "✨",
+        "anilist": null,
+        "mal": null,
+        "img": "https://genshin-guess-who.com/genshin/char_icons_4star/Aino.webp"
+      },
+      {
+        "name": "Albedo",
+        "emoji": "✨",
+        "anilist": null,
+        "mal": null,
+        "img": "https://genshin-guess-who.com/genshin/char_icons_5star/Albedo.webp"
+      },
+      {
+        "name": "Alhaitham",
+        "emoji": "✨",
+        "anilist": null,
+        "mal": null,
+        "img": "https://genshin-guess-who.com/genshin/char_icons_5star/Alhaitham.webp"
+      },
+      {
+        "name": "Aloy",
+        "emoji": "✨",
+        "anilist": null,
+        "mal": null,
+        "img": "https://genshin-guess-who.com/genshin/char_icons_5star/Aloy.webp"
+      },
+      {
+        "name": "Amber",
+        "emoji": "✨",
+        "anilist": null,
+        "mal": null,
+        "img": "https://genshin-guess-who.com/genshin/char_icons_4star/Amber.webp"
+      },
+      {
+        "name": "Arataki Itto",
+        "emoji": "✨",
+        "anilist": null,
+        "mal": null,
+        "img": "https://genshin-guess-who.com/genshin/char_icons_5star/Arataki%20Itto.webp"
+      },
+      {
+        "name": "Arlecchino",
+        "emoji": "✨",
+        "anilist": null,
+        "mal": null,
+        "img": "https://genshin-guess-who.com/genshin/char_icons_5star/Arlecchino.webp"
+      },
+      {
+        "name": "Baizhu",
+        "emoji": "✨",
+        "anilist": null,
+        "mal": null,
+        "img": "https://genshin-guess-who.com/genshin/char_icons_5star/Baizhu.webp"
+      },
+      {
+        "name": "Barbara",
+        "emoji": "✨",
+        "anilist": null,
+        "mal": null,
+        "img": "https://genshin-guess-who.com/genshin/char_icons_4star/Barbara.webp"
+      },
+      {
+        "name": "Beidou",
+        "emoji": "✨",
+        "anilist": null,
+        "mal": null,
+        "img": "https://genshin-guess-who.com/genshin/char_icons_4star/Beidou.webp"
+      },
+      {
+        "name": "Bennett",
+        "emoji": "✨",
+        "anilist": null,
+        "mal": null,
+        "img": "https://genshin-guess-who.com/genshin/char_icons_4star/Bennett.webp"
+      },
+      {
+        "name": "Candace",
+        "emoji": "✨",
+        "anilist": null,
+        "mal": null,
+        "img": "https://genshin-guess-who.com/genshin/char_icons_4star/Candace.webp"
+      },
+      {
+        "name": "Charlotte",
+        "emoji": "✨",
+        "anilist": null,
+        "mal": null,
+        "img": "https://genshin-guess-who.com/genshin/char_icons_4star/Charlotte.webp"
+      },
+      {
+        "name": "Chasca",
+        "emoji": "✨",
+        "anilist": null,
+        "mal": null,
+        "img": "https://genshin-guess-who.com/genshin/char_icons_5star/Chasca.webp"
+      },
+      {
+        "name": "Chevreuse",
+        "emoji": "✨",
+        "anilist": null,
+        "mal": null,
+        "img": "https://genshin-guess-who.com/genshin/char_icons_4star/Chevreuse.webp"
+      },
+      {
+        "name": "Chiori",
+        "emoji": "✨",
+        "anilist": null,
+        "mal": null,
+        "img": "https://genshin-guess-who.com/genshin/char_icons_5star/Chiori.webp"
+      },
+      {
+        "name": "Chongyun",
+        "emoji": "✨",
+        "anilist": null,
+        "mal": null,
+        "img": "https://genshin-guess-who.com/genshin/char_icons_4star/Chongyun.webp"
+      },
+      {
+        "name": "Citlali",
+        "emoji": "✨",
+        "anilist": null,
+        "mal": null,
+        "img": "https://genshin-guess-who.com/genshin/char_icons_5star/Citlali.webp"
+      },
+      {
+        "name": "Clorinde",
+        "emoji": "✨",
+        "anilist": null,
+        "mal": null,
+        "img": "https://genshin-guess-who.com/genshin/char_icons_5star/Clorinde.webp"
+      },
+      {
+        "name": "Collei",
+        "emoji": "✨",
+        "anilist": null,
+        "mal": null,
+        "img": "https://genshin-guess-who.com/genshin/char_icons_4star/Collei.webp"
+      },
+      {
+        "name": "Columbina",
+        "emoji": "✨",
+        "img": "https://i2.wp.com/images.genshin-builds.com/genshin/characters/columbina/image.png?strip=all&quality=100&w=160"
+      },
+      {
+        "name": "Cyno",
+        "emoji": "✨",
+        "anilist": null,
+        "mal": null,
+        "img": "https://genshin-guess-who.com/genshin/char_icons_5star/Cyno.webp"
+      },
+      {
+        "name": "Dahlia",
+        "emoji": "✨",
+        "anilist": null,
+        "mal": null,
+        "img": "https://genshin-guess-who.com/genshin/char_icons_4star/Dahlia.webp"
+      },
+      {
+        "name": "Dehya",
+        "emoji": "✨",
+        "anilist": null,
+        "mal": null,
+        "img": "https://genshin-guess-who.com/genshin/char_icons_5star/Dehya.webp"
+      },
+      {
+        "name": "Diluc",
+        "emoji": "✨",
+        "anilist": null,
+        "mal": null,
+        "img": "https://genshin-guess-who.com/genshin/char_icons_5star/Diluc.webp"
+      },
+      {
+        "name": "Diona",
+        "emoji": "✨",
+        "anilist": null,
+        "mal": null,
+        "img": "https://genshin-guess-who.com/genshin/char_icons_4star/Diona.webp"
+      },
+      {
+        "name": "Dori",
+        "emoji": "✨",
+        "anilist": null,
+        "mal": null,
+        "img": "https://genshin-guess-who.com/genshin/char_icons_4star/Dori.webp"
+      },
+      {
+        "name": "Durin",
+        "emoji": "✨",
+        "img": "https://i2.wp.com/images.genshin-builds.com/genshin/characters/durin/image.png?strip=all&quality=100&w=160"
+      },
+      {
+        "name": "Emilie",
+        "emoji": "✨",
+        "anilist": null,
+        "mal": null,
+        "img": "https://genshin-guess-who.com/genshin/char_icons_5star/Emilie.webp"
+      },
+      {
+        "name": "Escoffier",
+        "emoji": "✨",
+        "anilist": null,
+        "mal": null,
+        "img": "https://genshin-guess-who.com/genshin/char_icons_5star/Escoffier.webp"
+      },
+      {
+        "name": "Eula",
+        "emoji": "✨",
+        "anilist": null,
+        "mal": null,
+        "img": "https://genshin-guess-who.com/genshin/char_icons_5star/Eula.webp"
+      },
+      {
+        "name": "Faruzan",
+        "emoji": "✨",
+        "anilist": null,
+        "mal": null,
+        "img": "https://genshin-guess-who.com/genshin/char_icons_4star/Faruzan.webp"
+      },
+      {
+        "name": "Fischl",
+        "emoji": "✨",
+        "anilist": null,
+        "mal": null,
+        "img": "https://genshin-guess-who.com/genshin/char_icons_4star/Fischl.webp"
+      },
+      {
+        "name": "Flins",
+        "emoji": "✨",
+        "anilist": null,
+        "mal": null,
+        "img": "https://genshin-guess-who.com/genshin/char_icons_5star/Flins.webp"
+      },
+      {
+        "name": "Freminet",
+        "emoji": "✨",
+        "anilist": null,
+        "mal": null,
+        "img": "https://genshin-guess-who.com/genshin/char_icons_4star/Freminet.webp"
+      },
+      {
+        "name": "Furina",
+        "emoji": "✨",
+        "anilist": null,
+        "mal": null,
+        "img": "https://genshin-guess-who.com/genshin/char_icons_5star/Furina.webp"
+      },
+      {
+        "name": "Gaming",
+        "emoji": "✨",
+        "anilist": null,
+        "mal": null,
+        "img": "https://genshin-guess-who.com/genshin/char_icons_4star/Gaming.webp"
+      },
+      {
+        "name": "Ganyu",
+        "emoji": "✨",
+        "anilist": null,
+        "mal": null,
+        "img": "https://genshin-guess-who.com/genshin/char_icons_5star/Ganyu.webp"
+      },
+      {
+        "name": "Gorou",
+        "emoji": "✨",
+        "anilist": null,
+        "mal": null,
+        "img": "https://genshin-guess-who.com/genshin/char_icons_4star/Gorou.webp"
+      },
+      {
+        "name": "Hu Tao",
+        "emoji": "✨",
+        "anilist": null,
+        "mal": null,
+        "img": "https://genshin-guess-who.com/genshin/char_icons_5star/Hu%20Tao.webp"
+      },
+      {
+        "name": "Iansan",
+        "emoji": "✨",
+        "anilist": null,
+        "mal": null,
+        "img": "https://genshin-guess-who.com/genshin/char_icons_4star/Iansan.webp"
+      },
+      {
+        "name": "Ifa",
+        "emoji": "✨",
+        "anilist": null,
+        "mal": null,
+        "img": "https://genshin-guess-who.com/genshin/char_icons_4star/Ifa.webp"
+      },
+      {
+        "name": "Illuga",
+        "emoji": "✨",
+        "img": "https://i2.wp.com/images.genshin-builds.com/genshin/characters/illuga/image.png?strip=all&quality=100&w=160"
+      },
+      {
+        "name": "Ineffa",
+        "emoji": "✨",
+        "anilist": null,
+        "mal": null,
+        "img": "https://genshin-guess-who.com/genshin/char_icons_5star/Ineffa.webp"
+      },
+      {
+        "name": "Jahoda",
+        "emoji": "✨",
+        "img": "https://i2.wp.com/images.genshin-builds.com/genshin/characters/jahoda/image.png?strip=all&quality=100&w=160"
+      },
+      {
+        "name": "Jean",
+        "emoji": "✨",
+        "anilist": null,
+        "mal": null,
+        "img": "https://genshin-guess-who.com/genshin/char_icons_5star/Jean.webp"
+      },
+      {
+        "name": "Kachina",
+        "emoji": "✨",
+        "anilist": null,
+        "mal": null,
+        "img": "https://genshin-guess-who.com/genshin/char_icons_4star/Kachina.webp"
+      },
+      {
+        "name": "Kaedehara Kazuha",
+        "emoji": "✨",
+        "anilist": null,
+        "mal": null,
+        "img": "https://genshin-guess-who.com/genshin/char_icons_5star/Kaedehara%20Kazuha.webp"
+      },
+      {
+        "name": "Kaeya",
+        "emoji": "✨",
+        "anilist": null,
+        "mal": null,
+        "img": "https://genshin-guess-who.com/genshin/char_icons_4star/Kaeya.webp"
+      },
+      {
+        "name": "Kamisato Ayaka",
+        "emoji": "✨",
+        "anilist": null,
+        "mal": null,
+        "img": "https://genshin-guess-who.com/genshin/char_icons_5star/Kamisato%20Ayaka.webp"
+      },
+      {
+        "name": "Kamisato Ayato",
+        "emoji": "✨",
+        "anilist": null,
+        "mal": null,
+        "img": "https://genshin-guess-who.com/genshin/char_icons_5star/Kamisato%20Ayato.webp"
+      },
+      {
+        "name": "Kaveh",
+        "emoji": "✨",
+        "anilist": null,
+        "mal": null,
+        "img": "https://genshin-guess-who.com/genshin/char_icons_4star/Kaveh.webp"
+      },
+      {
+        "name": "Keqing",
+        "emoji": "✨",
+        "anilist": null,
+        "mal": null,
+        "img": "https://genshin-guess-who.com/genshin/char_icons_5star/Keqing.webp"
+      },
+      {
+        "name": "Kinich",
+        "emoji": "✨",
+        "anilist": null,
+        "mal": null,
+        "img": "https://genshin-guess-who.com/genshin/char_icons_5star/Kinich.webp"
+      },
+      {
+        "name": "Kirara",
+        "emoji": "✨",
+        "anilist": null,
+        "mal": null,
+        "img": "https://genshin-guess-who.com/genshin/char_icons_4star/Kirara.webp"
+      },
+      {
+        "name": "Klee",
+        "emoji": "✨",
+        "anilist": null,
+        "mal": null,
+        "img": "https://genshin-guess-who.com/genshin/char_icons_5star/Klee.webp"
+      },
+      {
+        "name": "Kujou Sara",
+        "emoji": "✨",
+        "anilist": null,
+        "mal": null,
+        "img": "https://genshin-guess-who.com/genshin/char_icons_4star/Kujou%20Sara.webp"
+      },
+      {
+        "name": "Kuki Shinobu",
+        "emoji": "✨",
+        "anilist": null,
+        "mal": null,
+        "img": "https://genshin-guess-who.com/genshin/char_icons_4star/Kuki%20Shinobu.webp"
+      },
+      {
+        "name": "Lan Yan",
+        "emoji": "✨",
+        "anilist": null,
+        "mal": null,
+        "img": "https://genshin-guess-who.com/genshin/char_icons_4star/Lan%20Yan.webp"
+      },
+      {
+        "name": "Lauma",
+        "emoji": "✨",
+        "anilist": null,
+        "mal": null,
+        "img": "https://genshin-guess-who.com/genshin/char_icons_5star/Lauma.webp"
+      },
+      {
+        "name": "Layla",
+        "emoji": "✨",
+        "anilist": null,
+        "mal": null,
+        "img": "https://genshin-guess-who.com/genshin/char_icons_4star/Layla.webp"
+      },
+      {
+        "name": "Lisa",
+        "emoji": "✨",
+        "anilist": null,
+        "mal": null,
+        "img": "https://genshin-guess-who.com/genshin/char_icons_4star/Lisa.webp"
+      },
+      {
+        "name": "Lumine",
+        "emoji": "✨",
+        "anilist": null,
+        "mal": null,
+        "img": "https://genshin-guess-who.com/genshin/char_icons_5star/Lumine.webp"
+      },
+      {
+        "name": "Lynette",
+        "emoji": "✨",
+        "anilist": null,
+        "mal": null,
+        "img": "https://genshin-guess-who.com/genshin/char_icons_4star/Lynette.webp"
+      },
+      {
+        "name": "Lyney",
+        "emoji": "✨",
+        "anilist": null,
+        "mal": null,
+        "img": "https://genshin-guess-who.com/genshin/char_icons_5star/Lyney.webp"
+      },
+      {
+        "name": "Manekin",
+        "emoji": "✨",
+        "img": "https://i2.wp.com/images.genshin-builds.com/genshin/characters/manekin/image.png?strip=all&quality=100&w=160"
+      },
+      {
+        "name": "Manekina",
+        "emoji": "✨",
+        "img": "https://i2.wp.com/images.genshin-builds.com/genshin/characters/manekina/image.png?strip=all&quality=100&w=160"
+      },
+      {
+        "name": "Mavuika",
+        "emoji": "✨",
+        "anilist": null,
+        "mal": null,
+        "img": "https://genshin-guess-who.com/genshin/char_icons_5star/Mavuika.webp"
+      },
+      {
+        "name": "Mika",
+        "emoji": "✨",
+        "anilist": null,
+        "mal": null,
+        "img": "https://genshin-guess-who.com/genshin/char_icons_4star/Mika.webp"
+      },
+      {
+        "name": "Mona",
+        "emoji": "✨",
+        "anilist": null,
+        "mal": null,
+        "img": "https://genshin-guess-who.com/genshin/char_icons_5star/Mona.webp"
+      },
+      {
+        "name": "Mualani",
+        "emoji": "✨",
+        "anilist": null,
+        "mal": null,
+        "img": "https://genshin-guess-who.com/genshin/char_icons_5star/Mualani.webp"
+      },
+      {
+        "name": "Nahida",
+        "emoji": "✨",
+        "anilist": null,
+        "mal": null,
+        "img": "https://genshin-guess-who.com/genshin/char_icons_5star/Nahida.webp"
+      },
+      {
+        "name": "Navia",
+        "emoji": "✨",
+        "anilist": null,
+        "mal": null,
+        "img": "https://genshin-guess-who.com/genshin/char_icons_5star/Navia.webp"
+      },
+      {
+        "name": "Nefer",
+        "emoji": "✨",
+        "img": "https://i2.wp.com/images.genshin-builds.com/genshin/characters/nefer/image.png?strip=all&quality=100&w=160"
+      },
+      {
+        "name": "Neuvillette",
+        "emoji": "✨",
+        "anilist": null,
+        "mal": null,
+        "img": "https://genshin-guess-who.com/genshin/char_icons_5star/Neuvillette.webp"
+      },
+      {
+        "name": "Nilou",
+        "emoji": "✨",
+        "anilist": null,
+        "mal": null,
+        "img": "https://genshin-guess-who.com/genshin/char_icons_5star/Nilou.webp"
+      },
+      {
+        "name": "Ningguang",
+        "emoji": "✨",
+        "anilist": null,
+        "mal": null,
+        "img": "https://genshin-guess-who.com/genshin/char_icons_4star/Ningguang.webp"
+      },
+      {
+        "name": "Noelle",
+        "emoji": "✨",
+        "anilist": null,
+        "mal": null,
+        "img": "https://genshin-guess-who.com/genshin/char_icons_4star/Noelle.webp"
+      },
+      {
+        "name": "Ororon",
+        "emoji": "✨",
+        "anilist": null,
+        "mal": null,
+        "img": "https://genshin-guess-who.com/genshin/char_icons_4star/Ororon.webp"
+      },
+      {
+        "name": "Qiqi",
+        "emoji": "✨",
+        "anilist": null,
+        "mal": null,
+        "img": "https://genshin-guess-who.com/genshin/char_icons_5star/Qiqi.webp"
+      },
+      {
+        "name": "Raiden Shogun",
+        "emoji": "✨",
+        "anilist": null,
+        "mal": null,
+        "img": "https://genshin-guess-who.com/genshin/char_icons_5star/Raiden%20Shogun.webp"
+      },
+      {
+        "name": "Razor",
+        "emoji": "✨",
+        "anilist": null,
+        "mal": null,
+        "img": "https://genshin-guess-who.com/genshin/char_icons_4star/Razor.webp"
+      },
+      {
+        "name": "Rosaria",
+        "emoji": "✨",
+        "anilist": null,
+        "mal": null,
+        "img": "https://genshin-guess-who.com/genshin/char_icons_4star/Rosaria.webp"
+      },
+      {
+        "name": "Sangonomiya Kokomi",
+        "emoji": "✨",
+        "anilist": null,
+        "mal": null,
+        "img": "https://genshin-guess-who.com/genshin/char_icons_5star/Sangonomiya%20Kokomi.webp"
+      },
+      {
+        "name": "Sayu",
+        "emoji": "✨",
+        "anilist": null,
+        "mal": null,
+        "img": "https://genshin-guess-who.com/genshin/char_icons_4star/Sayu.webp"
+      },
+      {
+        "name": "Sethos",
+        "emoji": "✨",
+        "anilist": null,
+        "mal": null,
+        "img": "https://genshin-guess-who.com/genshin/char_icons_4star/Sethos.webp"
+      },
+      {
+        "name": "Shenhe",
+        "emoji": "✨",
+        "anilist": null,
+        "mal": null,
+        "img": "https://genshin-guess-who.com/genshin/char_icons_5star/Shenhe.webp"
+      },
+      {
+        "name": "Shikanoin Heizou",
+        "emoji": "✨",
+        "anilist": null,
+        "mal": null,
+        "img": "https://genshin-guess-who.com/genshin/char_icons_4star/Shikanoin%20Heizou.webp"
+      },
+      {
+        "name": "Sigewinne",
+        "emoji": "✨",
+        "anilist": null,
+        "mal": null,
+        "img": "https://genshin-guess-who.com/genshin/char_icons_5star/Sigewinne.webp"
+      },
+      {
+        "name": "Skirk",
+        "emoji": "✨",
+        "anilist": null,
+        "mal": null,
+        "img": "https://genshin-guess-who.com/genshin/char_icons_5star/Skirk.webp"
+      },
+      {
+        "name": "Sucrose",
+        "emoji": "✨",
+        "anilist": null,
+        "mal": null,
+        "img": "https://genshin-guess-who.com/genshin/char_icons_4star/Sucrose.webp"
+      },
+      {
+        "name": "Tartaglia",
+        "emoji": "✨",
+        "anilist": null,
+        "mal": null,
+        "img": "https://genshin-guess-who.com/genshin/char_icons_5star/Tartaglia.webp"
+      },
+      {
+        "name": "Thoma",
+        "emoji": "✨",
+        "anilist": null,
+        "mal": null,
+        "img": "https://genshin-guess-who.com/genshin/char_icons_4star/Thoma.webp"
+      },
+      {
+        "name": "Tighnari",
+        "emoji": "✨",
+        "anilist": null,
+        "mal": null,
+        "img": "https://genshin-guess-who.com/genshin/char_icons_5star/Tighnari.webp"
+      },
+      {
+        "name": "Varesa",
+        "emoji": "✨",
+        "anilist": null,
+        "mal": null,
+        "img": "https://genshin-guess-who.com/genshin/char_icons_5star/Varesa.webp"
+      },
+      {
+        "name": "Varka",
+        "emoji": "✨",
+        "img": "https://i2.wp.com/images.genshin-builds.com/genshin/characters/varka/image.png?strip=all&quality=100&w=160"
+      },
+      {
+        "name": "Venti",
+        "emoji": "✨",
+        "anilist": null,
+        "mal": null,
+        "img": "https://genshin-guess-who.com/genshin/char_icons_5star/Venti.webp"
+      },
+      {
+        "name": "Wanderer",
+        "emoji": "✨",
+        "anilist": null,
+        "mal": null,
+        "img": "https://genshin-guess-who.com/genshin/char_icons_5star/Wanderer.webp"
+      },
+      {
+        "name": "Wriothesley",
+        "emoji": "✨",
+        "anilist": null,
+        "mal": null,
+        "img": "https://genshin-guess-who.com/genshin/char_icons_5star/Wriothesley.webp"
+      },
+      {
+        "name": "Xiangling",
+        "emoji": "✨",
+        "anilist": null,
+        "mal": null,
+        "img": "https://genshin-guess-who.com/genshin/char_icons_4star/Xiangling.webp"
+      },
+      {
+        "name": "Xianyun",
+        "emoji": "✨",
+        "anilist": null,
+        "mal": null,
+        "img": "https://genshin-guess-who.com/genshin/char_icons_5star/Xianyun.webp"
+      },
+      {
+        "name": "Xiao",
+        "emoji": "✨",
+        "anilist": null,
+        "mal": null,
+        "img": "https://genshin-guess-who.com/genshin/char_icons_5star/Xiao.webp"
+      },
+      {
+        "name": "Xilonen",
+        "emoji": "✨",
+        "anilist": null,
+        "mal": null,
+        "img": "https://genshin-guess-who.com/genshin/char_icons_5star/Xilonen.webp"
+      },
+      {
+        "name": "Xingqiu",
+        "emoji": "✨",
+        "anilist": null,
+        "mal": null,
+        "img": "https://genshin-guess-who.com/genshin/char_icons_4star/Xingqiu.webp"
+      },
+      {
+        "name": "Xinyan",
+        "emoji": "✨",
+        "anilist": null,
+        "mal": null,
+        "img": "https://genshin-guess-who.com/genshin/char_icons_4star/Xinyan.webp"
+      },
+      {
+        "name": "Yae Miko",
+        "emoji": "✨",
+        "anilist": null,
+        "mal": null,
+        "img": "https://genshin-guess-who.com/genshin/char_icons_5star/Yae%20Miko.webp"
+      },
+      {
+        "name": "Yanfei",
+        "emoji": "✨",
+        "anilist": null,
+        "mal": null,
+        "img": "https://genshin-guess-who.com/genshin/char_icons_4star/Yanfei.webp"
+      },
+      {
+        "name": "Yaoyao",
+        "emoji": "✨",
+        "anilist": null,
+        "mal": null,
+        "img": "https://genshin-guess-who.com/genshin/char_icons_4star/Yaoyao.webp"
+      },
+      {
+        "name": "Yelan",
+        "emoji": "✨",
+        "anilist": null,
+        "mal": null,
+        "img": "https://genshin-guess-who.com/genshin/char_icons_5star/Yelan.webp"
+      },
+      {
+        "name": "Yoimiya",
+        "emoji": "✨",
+        "anilist": null,
+        "mal": null,
+        "img": "https://genshin-guess-who.com/genshin/char_icons_5star/Yoimiya.webp"
+      },
+      {
+        "name": "Yumemizuki Mizuki",
+        "emoji": "✨",
+        "anilist": null,
+        "mal": null,
+        "img": "https://genshin-guess-who.com/genshin/char_icons_5star/Yumemizuki%20Mizuki.webp"
+      },
+      {
+        "name": "Yun Jin",
+        "emoji": "✨",
+        "anilist": null,
+        "mal": null,
+        "img": "https://genshin-guess-who.com/genshin/char_icons_4star/Yun%20Jin.webp"
+      },
+      {
+        "name": "Zhongli",
+        "emoji": "✨",
+        "anilist": null,
+        "mal": null,
+        "img": "https://genshin-guess-who.com/genshin/char_icons_5star/Zhongli.webp"
+      },
+      {
+        "name": "Zibai",
+        "emoji": "✨",
+        "img": "https://i2.wp.com/images.genshin-builds.com/genshin/characters/zibai/image.png?strip=all&quality=100&w=160"
+      },
+      {
+        "name": "Paimon",
+        "emoji": "✨",
+        "anilist": 203317,
+        "mal": null
+      },
+      {
+        "name": "Dainsleif",
+        "emoji": "✨",
+        "anilist": 350308,
+        "mal": null
+      },
+      {
+        "name": "Unknown God",
+        "emoji": "✨",
+        "anilist": null,
+        "mal": null
+      }
+    ]
+  },
+  {
+    "id": "valorant",
+    "name": "VALORANT",
+    "emoji": "🎯",
+    "color": "#ff4655",
+    "tags": [
+      "Game",
+      "Shooter"
+    ],
+    "chars": [
+      {
+        "name": "Astra",
+        "emoji": "🎯",
+        "anilist": null,
+        "mal": null,
+        "img": "https://trackercdn.com/cdn/tracker.gg/valorant/db/agents/astra_portrait.png"
+      },
+      {
+        "name": "Breach",
+        "emoji": "🎯",
+        "anilist": null,
+        "mal": null,
+        "img": "https://trackercdn.com/cdn/tracker.gg/valorant/db/agents/breach_portrait.png"
+      },
+      {
+        "name": "Brimstone",
+        "emoji": "🎯",
+        "anilist": null,
+        "mal": null,
+        "img": "https://trackercdn.com/cdn/tracker.gg/valorant/db/agents/brimstone_portrait.png"
+      },
+      {
+        "name": "Chamber",
+        "emoji": "🎯",
+        "anilist": null,
+        "mal": null,
+        "img": "https://trackercdn.com/cdn/tracker.gg/valorant/db/agents/chamber_portrait.png"
+      },
+      {
+        "name": "Clove",
+        "emoji": "🎯",
+        "anilist": null,
+        "mal": null,
+        "img": "https://trackercdn.com/cdn/tracker.gg/valorant/db/agents/clove_portrait.png"
+      },
+      {
+        "name": "Cypher",
+        "emoji": "🎯",
+        "anilist": null,
+        "mal": null,
+        "img": "https://trackercdn.com/cdn/tracker.gg/valorant/db/agents/cypher_portrait.png"
+      },
+      {
+        "name": "Deadlock",
+        "emoji": "🎯",
+        "anilist": null,
+        "mal": null,
+        "img": "https://trackercdn.com/cdn/tracker.gg/valorant/db/agents/deadlock_portrait.png"
+      },
+      {
+        "name": "Fade",
+        "emoji": "🎯",
+        "anilist": null,
+        "mal": null,
+        "img": "https://trackercdn.com/cdn/tracker.gg/valorant/db/agents/fade_portrait.png"
+      },
+      {
+        "name": "Gekko",
+        "emoji": "🎯",
+        "anilist": null,
+        "mal": null,
+        "img": "https://trackercdn.com/cdn/tracker.gg/valorant/db/agents/gekko_portrait.png"
+      },
+      {
+        "name": "Harbor",
+        "emoji": "🎯",
+        "anilist": null,
+        "mal": null,
+        "img": "https://trackercdn.com/cdn/tracker.gg/valorant/db/agents/harbor_portrait.png"
+      },
+      {
+        "name": "Iso",
+        "emoji": "🎯",
+        "anilist": null,
+        "mal": null,
+        "img": "https://trackercdn.com/cdn/tracker.gg/valorant/db/agents/iso_portrait.png"
+      },
+      {
+        "name": "Jett",
+        "emoji": "🎯",
+        "anilist": null,
+        "mal": null,
+        "img": "https://trackercdn.com/cdn/tracker.gg/valorant/db/agents/jett_portrait.png"
+      },
+      {
+        "name": "KAY/O",
+        "emoji": "🎯",
+        "anilist": null,
+        "mal": null,
+        "img": "https://trackercdn.com/cdn/tracker.gg/valorant/db/agents/kayo_portrait.png"
+      },
+      {
+        "name": "Killjoy",
+        "emoji": "🎯",
+        "anilist": null,
+        "mal": null,
+        "img": "https://trackercdn.com/cdn/tracker.gg/valorant/db/agents/killjoy_portrait.png"
+      },
+      {
+        "name": "Neon",
+        "emoji": "🎯",
+        "anilist": null,
+        "mal": null,
+        "img": "https://trackercdn.com/cdn/tracker.gg/valorant/db/agents/neon_portrait.png"
+      },
+      {
+        "name": "Omen",
+        "emoji": "🎯",
+        "anilist": null,
+        "mal": null,
+        "img": "https://trackercdn.com/cdn/tracker.gg/valorant/db/agents/omen_portrait.png"
+      },
+      {
+        "name": "Phoenix",
+        "emoji": "🎯",
+        "anilist": null,
+        "mal": null,
+        "img": "https://trackercdn.com/cdn/tracker.gg/valorant/db/agents/phoenix_portrait.png"
+      },
+      {
+        "name": "Raze",
+        "emoji": "🎯",
+        "anilist": null,
+        "mal": null,
+        "img": "https://trackercdn.com/cdn/tracker.gg/valorant/db/agents/raze_portrait.png"
+      },
+      {
+        "name": "Reyna",
+        "emoji": "🎯",
+        "anilist": null,
+        "mal": null,
+        "img": "https://trackercdn.com/cdn/tracker.gg/valorant/db/agents/reyna_portrait.png"
+      },
+      {
+        "name": "Sage",
+        "emoji": "🎯",
+        "anilist": null,
+        "mal": null,
+        "img": "https://trackercdn.com/cdn/tracker.gg/valorant/db/agents/sage_portrait.png"
+      },
+      {
+        "name": "Skye",
+        "emoji": "🎯",
+        "anilist": null,
+        "mal": null,
+        "img": "https://trackercdn.com/cdn/tracker.gg/valorant/db/agents/skye_portrait.png"
+      },
+      {
+        "name": "Sova",
+        "emoji": "🎯",
+        "anilist": null,
+        "mal": null,
+        "img": "https://trackercdn.com/cdn/tracker.gg/valorant/db/agents/sova_portrait.png"
+      },
+      {
+        "name": "Tejo",
+        "emoji": "🎯",
+        "anilist": null,
+        "mal": null,
+        "img": "https://trackercdn.com/cdn/tracker.gg/valorant/db/agents/tejo_portrait.png"
+      },
+      {
+        "name": "Veto",
+        "emoji": "🎯",
+        "anilist": null,
+        "mal": null,
+        "img": "https://trackercdn.com/cdn/tracker.gg/valorant/db/agents/veto_portrait.png"
+      },
+      {
+        "name": "Viper",
+        "emoji": "🎯",
+        "anilist": null,
+        "mal": null,
+        "img": "https://trackercdn.com/cdn/tracker.gg/valorant/db/agents/viper_portrait.png"
+      },
+      {
+        "name": "Vyse",
+        "emoji": "🎯",
+        "anilist": null,
+        "mal": null,
+        "img": "https://trackercdn.com/cdn/tracker.gg/valorant/db/agents/vyse_portrait.png"
+      },
+      {
+        "name": "Waylay",
+        "emoji": "🎯",
+        "anilist": null,
+        "mal": null,
+        "img": "https://trackercdn.com/cdn/tracker.gg/valorant/db/agents/waylay_portrait.png"
+      },
+      {
+        "name": "Yoru",
+        "emoji": "🎯",
+        "anilist": null,
+        "mal": null,
+        "img": "https://trackercdn.com/cdn/tracker.gg/valorant/db/agents/yoru_portrait.png"
+      },
+      {
+        "name": "Alarmbot",
+        "emoji": "🎯",
+        "img": "https://media.valorant-api.com/agents/1e58de9c-4950-5125-93e9-a0aee9f98746/abilities/ability1/displayicon.png"
+      },
+      {
+        "name": "Boom Bot",
+        "emoji": "🎯",
+        "img": "https://media.valorant-api.com/agents/f94c3b30-42be-e959-889c-5aa313dba261/abilities/grenade/displayicon.png"
+      },
+      {
+        "name": "Dizzy",
+        "emoji": "🎯",
+        "img": "https://media.valorant-api.com/agents/e370fa57-4757-3604-3648-499e1f642d3f/abilities/ability2/displayicon.png"
+      },
+      {
+        "name": "Lockdown",
+        "emoji": "🎯",
+        "img": "https://media.valorant-api.com/agents/1e58de9c-4950-5125-93e9-a0aee9f98746/abilities/ultimate/displayicon.png"
+      },
+      {
+        "name": "Mosh",
+        "emoji": "🎯",
+        "img": "https://media.valorant-api.com/agents/e370fa57-4757-3604-3648-499e1f642d3f/abilities/grenade/displayicon.png"
+      },
+      {
+        "name": "Owl Drone",
+        "emoji": "🎯",
+        "img": "https://media.valorant-api.com/agents/320b2a48-4d9b-a075-30f1-1f93a9b638fa/abilities/grenade/displayicon.png"
+      },
+      {
+        "name": "Prowler",
+        "emoji": "🎯",
+        "img": "https://media.valorant-api.com/agents/dade69b4-4f5a-8528-247b-219e5a1facd6/abilities/grenade/displayicon.png"
+      },
+      {
+        "name": "Seekers",
+        "emoji": "🎯",
+        "img": "https://media.valorant-api.com/agents/6f2a04ca-43e0-be17-7f36-b3908627744d/abilities/ultimate/displayicon.png"
+      },
+      {
+        "name": "Spycam",
+        "emoji": "🎯",
+        "img": "https://media.valorant-api.com/agents/117ed9e3-49f3-6512-3ccf-0cada7e3823b/abilities/ability2/displayicon.png"
+      },
+      {
+        "name": "Thrash",
+        "emoji": "🎯",
+        "img": "https://media.valorant-api.com/agents/e370fa57-4757-3604-3648-499e1f642d3f/abilities/ultimate/displayicon.png"
+      },
+      {
+        "name": "Trademark",
+        "emoji": "🎯",
+        "img": "https://media.valorant-api.com/agents/22697a3d-45bf-8dd7-4fec-84a9e28c69d7/abilities/grenade/displayicon.png"
+      },
+      {
+        "name": "Trailblazer",
+        "emoji": "🎯",
+        "img": "https://media.valorant-api.com/agents/6f2a04ca-43e0-be17-7f36-b3908627744d/abilities/ability1/displayicon.png"
+      },
+      {
+        "name": "Trapwire",
+        "emoji": "🎯",
+        "img": "https://media.valorant-api.com/agents/117ed9e3-49f3-6512-3ccf-0cada7e3823b/abilities/grenade/displayicon.png"
+      },
+      {
+        "name": "Turret",
+        "emoji": "🎯",
+        "img": "https://media.valorant-api.com/agents/1e58de9c-4950-5125-93e9-a0aee9f98746/abilities/ability2/displayicon.png"
+      },
+      {
+        "name": "Wingman",
+        "emoji": "🎯",
+        "img": "https://media.valorant-api.com/agents/e370fa57-4757-3604-3648-499e1f642d3f/abilities/ability1/displayicon.png"
+      }
+    ]
+  }
+];
