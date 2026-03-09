@@ -83,13 +83,32 @@ function rowHtml(item) {
   const previewStyle = currentImage ? `background-image:url('${currentImage.replace(/'/g, "\\'")}');` : '';
   const emptyClass = currentImage ? '' : 'empty';
   const emptyText = currentImage ? '' : 'No image';
+  const hidden = Boolean(datasetItem?.hidden);
 
   return `
     <article class="row" data-key="${keyOf(item)}">
       <div class="row-head">
-        <div>
-          <div class="name">${item.name}</div>
-          <div class="anime">${item.animeName} ${item.anilist ? `| AniList ${item.anilist}` : ''}</div>
+        <div class="row-meta">
+          <div class="meta-line">
+            <label>Character</label>
+            <input class="name-edit" type="text" value="${item.name || ''}" />
+          </div>
+          <div class="meta-line">
+            <label>Anime ID</label>
+            <input class="anime-id-edit" type="text" value="${item.animeId || ''}" />
+          </div>
+          <div class="meta-line">
+            <label>Anime Name</label>
+            <input class="anime-name-edit" type="text" value="${item.animeName || ''}" />
+          </div>
+          <div class="meta-line">
+            <label>AniList ID</label>
+            <input class="anilist-edit" type="number" value="${item.anilist || ''}" />
+          </div>
+          <label class="flag">
+            <input class="hidden-toggle" type="checkbox" ${hidden ? 'checked' : ''} />
+            Hide character
+          </label>
         </div>
       </div>
       <div class="preview ${emptyClass}" style="${previewStyle}">${emptyText}</div>
@@ -108,9 +127,57 @@ function renderList() {
   rows.forEach(item => {
     const row = list.querySelector(`[data-key="${CSS.escape(keyOf(item))}"]`);
     if (!row) return;
+    const nameInput = row.querySelector('.name-edit');
+    const animeIdInput = row.querySelector('.anime-id-edit');
+    const animeNameInput = row.querySelector('.anime-name-edit');
+    const anilistInput = row.querySelector('.anilist-edit');
+    const hiddenToggle = row.querySelector('.hidden-toggle');
     const urlInput = row.querySelector('.url-input');
     const fileInput = row.querySelector('.file-input');
     const saveBtn = row.querySelector('.save');
+
+    const target = findDatasetItem(item) || item;
+
+    if (nameInput) {
+      nameInput.addEventListener('input', event => {
+        const value = String(event.target.value || '').trim();
+        target.name = value;
+        item.name = value;
+      });
+    }
+
+    if (animeIdInput) {
+      animeIdInput.addEventListener('input', event => {
+        const value = String(event.target.value || '').trim();
+        target.animeId = value;
+        item.animeId = value;
+      });
+    }
+
+    if (animeNameInput) {
+      animeNameInput.addEventListener('input', event => {
+        const value = String(event.target.value || '').trim();
+        target.animeName = value;
+        item.animeName = value;
+      });
+    }
+
+    if (anilistInput) {
+      anilistInput.addEventListener('input', event => {
+        const raw = event.target.value;
+        const num = raw === '' ? null : Number(raw);
+        target.anilist = Number.isFinite(num) ? num : null;
+        item.anilist = target.anilist;
+      });
+    }
+
+    if (hiddenToggle) {
+      hiddenToggle.addEventListener('change', event => {
+        const checked = Boolean(event.target.checked);
+        target.hidden = checked;
+        item.hidden = checked;
+      });
+    }
 
     saveBtn.addEventListener('click', async () => {
       let imageUrl = urlInput.value.trim();
@@ -143,6 +210,30 @@ function exportDataset() {
   URL.revokeObjectURL(url);
 }
 
+function addCharacter() {
+  if (!state.dataset) return;
+
+  const animeOptions = getAnimeOptions();
+  const firstAnime = animeOptions[0] || ['custom', 'Custom Anime'];
+
+  const newItem = {
+    animeId: firstAnime[0],
+    animeName: firstAnime[1],
+    name: 'New Character',
+    anilist: null,
+    image: '',
+    hasImage: false,
+    source: 'manual',
+    hidden: false,
+  };
+
+  state.dataset.items.push(newItem);
+  state.missing = state.dataset.items;
+  updateStats();
+  renderAnimeFilter();
+  renderList();
+}
+
 async function init() {
   state.dataset = await loadJson('images/character-image-dataset.json');
   state.missing = state.dataset.items || [];
@@ -156,6 +247,11 @@ async function init() {
   });
 
   document.getElementById('export-btn').addEventListener('click', exportDataset);
+
+  const addBtn = document.getElementById('add-character-btn');
+  if (addBtn) {
+    addBtn.addEventListener('click', addCharacter);
+  }
 
   const animeFilter = document.getElementById('anime-filter');
   if (animeFilter) {

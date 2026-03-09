@@ -9,6 +9,37 @@ const GameState = {
 
 window.GameState = GameState;
 
+function buildAllCharactersAnime() {
+  const chars = [];
+
+  ANIMES.forEach(anime => {
+    (anime.chars || []).forEach(char => {
+      chars.push({
+        ...char,
+        name: `${char.name} (${anime.name})`,
+        _sourceAnimeId: anime.id,
+        _sourceAnimeName: anime.name,
+      });
+    });
+  });
+
+  chars.sort((a, b) => a.name.localeCompare(b.name));
+
+  return {
+    id: 'allchars',
+    name: 'All Characters A–Z',
+    emoji: '🧾',
+    color: '#22c55e',
+    tags: ['All', 'Alphabetical'],
+    chars,
+  };
+}
+
+function startAllCharactersMode() {
+  const aggregateAnime = buildAllCharactersAnime();
+  startGame(aggregateAnime);
+}
+
 async function startGame(anime) {
   GameState.currentAnime = anime;
   GameState.flipped = new Set();
@@ -53,16 +84,3 @@ function downloadCurrentDataset() {
   if (!GameState.currentAnime) return;
   exportDataset(GameState.currentAnime);
 }
-
-document.addEventListener('contextmenu', event => {
-  const card = event.target.closest('.fc');
-  if (!card || !GameState.currentAnime) return;
-
-  event.preventDefault();
-  const cards = [...document.querySelectorAll('.fc')];
-  const index = cards.indexOf(card);
-
-  if (index >= 0) {
-    showUploadModal(GameState.currentAnime.chars[index], index, GameState.currentAnime);
-  }
-});

@@ -15,6 +15,7 @@ const DATASET_CACHE = {};
 const BATCH_SIZE = 40;
 let LOCAL_DATASET_LOOKUP = null;
 let LOCAL_DATASET_LOADING = null;
+let LOCAL_DATASET_ITEMS = null;
 
 function sleep(ms) {
   return new Promise(resolve => setTimeout(resolve, ms));
@@ -129,6 +130,7 @@ async function ensureLocalDatasetLoaded() {
         if (!item?.animeId || !item?.name || !item?.image) return;
         map[localKey(item.animeId, item.name)] = item.image;
       });
+      LOCAL_DATASET_ITEMS = items;
       LOCAL_DATASET_LOOKUP = map;
       return LOCAL_DATASET_LOOKUP;
     } catch (_) {
@@ -147,6 +149,63 @@ function primeAnimeFromLocalDataset(anime) {
     if (!url) return;
     setNameImageCache(char.name, url);
   });
+}
+
+function getDatasetEntriesForAnime(animeId) {
+  if (!Array.isArray(LOCAL_DATASET_ITEMS)) return [];
+  return LOCAL_DATASET_ITEMS.filter(item => item?.animeId === animeId);
+}
+
+function applyDatasetOverridesToAnime(anime) {
+  if (!Array.isArray(anime.chars) || !anime.id) return;
+  if (!Array.isArray(LOCAL_DATASET_ITEMS)) return;
+
+  const entries = getDatasetEntriesForAnime(anime.id);
+  if (!entries.length) return;
+
+  const byName = new Map();
+  anime.chars.forEach(char => {
+    byName.set(normalizeName(char.name), char);
+  });
+
+  const updatedChars = [];
+
+  anime.chars.forEach(char => {
+    const norm = normalizeName(char.name);
+    const entry = entries.find(item => normalizeName(item.name) === norm);
+
+    if (entry?.hidden) {
+      return;
+    }
+
+    if (entry) {
+      if (entry.anilist && !char.anilist) {
+        char.anilist = entry.anilist;
+      }
+      if (entry.image) {
+        setNameImageCache(char.name, entry.image);
+        char.img = entry.image;
+      }
+    }
+
+    updatedChars.push(char);
+  });
+
+  entries.forEach(entry => {
+    const norm = normalizeName(entry.name);
+    if (byName.has(norm)) return;
+    if (entry.hidden) return;
+
+    updatedChars.push({
+      name: entry.name,
+      emoji: anime.emoji || '*',
+      anilist: entry.anilist || null,
+      mal: null,
+      img: entry.image || undefined,
+    });
+  });
+
+  anime.chars = updatedChars;
 }
 
 function setNameImageCache(charName, url) {
@@ -314,6 +373,7 @@ async function fetchAniListByNameBatch(chars) {
 async function loadImages(anime, onProgress) {
   await ensureLocalDatasetLoaded();
   primeAnimeFromLocalDataset(anime);
+  applyDatasetOverridesToAnime(anime);
 
   const ids = anime.chars.map(char => char.anilist).filter(Boolean);
 

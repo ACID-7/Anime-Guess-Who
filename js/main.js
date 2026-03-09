@@ -32,6 +32,13 @@ function renderHome(animes) {
 document.addEventListener('DOMContentLoaded', () => {
   renderHome(ANIMES);
   document.getElementById('back-btn').addEventListener('click', goHome);
-  document.getElementById('export-btn').addEventListener('click', downloadCurrentDataset);
   document.getElementById('reset-btn').addEventListener('click', resetBoard);
+  const allCharsBtn = document.getElementById('allchars-btn');
+  if (allCharsBtn) {
+    allCharsBtn.addEventListener('click', () => {
+      if (typeof startAllCharactersMode === 'function') {
+        startAllCharactersMode();
+      }
+    });
+  }
 });

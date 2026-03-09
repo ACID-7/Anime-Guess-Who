@@ -6,10 +6,9 @@
 const ANIMES = [
 
 /* ══════════════════════════════════════
-   NARUTO SHIPPUDEN
-   ~100 characters covering all arcs
+   NARUTO / NARUTO SHIPPUDEN (extended)
 ══════════════════════════════════════ */
-{ id:'naruto', name:'Naruto Shippuden', emoji:'🍥', color:'#f4a261', tags:['Ninja','Shonen'], chars:[
+{ id:'naruto', name:'Naruto & Shippuden', emoji:'🍥', color:'#f4a261', tags:['Ninja','Shonen'], chars:[
   {name:'Naruto Uzumaki',         emoji:'🍥', anilist:17,     mal:17},
   {name:'Sasuke Uchiha',          emoji:'⚡', anilist:13,     mal:13},
   {name:'Sakura Haruno',          emoji:'🌸', anilist:22,     mal:22},
@@ -109,10 +108,46 @@ const ANIMES = [
   {name:'Kurotsuchi',             emoji:'🪨', anilist:175,    mal:175},
   {name:'Oonoki',                 emoji:'🪨', anilist:176,    mal:176},
   {name:'Akatsuchi',              emoji:'🪨', anilist:177,    mal:177},
+  // Extra classic Naruto era characters
+  {name:'Zabuza Momochi',         emoji:'🗡️', anilist:1675,  mal:1675},
+  {name:'Haku',                   emoji:'❄️', anilist:1676,  mal:1676},
+  {name:'Kimimaro',               emoji:'💀', anilist:2013,  mal:2013},
+  {name:'Jirobo',                 emoji:'🧱', anilist:2014,  mal:2014},
+  {name:'Kidomaru',               emoji:'🕷️', anilist:2015,  mal:2015},
+  {name:'Tayuya',                 emoji:'🎻', anilist:2016,  mal:2016},
+  {name:'Sakon & Ukon',           emoji:'⚔️', anilist:2017,  mal:2017},
+  {name:'Hidan (Pre-Akatsuki)',   emoji:'☠️', anilist:128,   mal:128},
+  {name:'Konohamaru (Kid)',       emoji:'🍥', anilist:132,   mal:132},
+  {name:'Iruka (Pre-Shippuden)',  emoji:'🎓', anilist:135,   mal:135},
+  // Additional supporting & war arc characters
+  {name:'Yahiko',                 emoji:'🌧️', anilist:29829, mal:29829},
+  {name:'Nagato (Child)',         emoji:'🌀', anilist:29830, mal:29830},
+  {name:'Killer B (Eight-Tails)', emoji:'🐝', anilist:116,   mal:116},
+  {name:'Chiyo',                  emoji:'🧵', anilist:2119,  mal:2119},
+  {name:'Sasori (Hiruko)',        emoji:'🪆', anilist:127,   mal:127},
+  {name:'Fuu',                    emoji:'🪶', anilist:2143,  mal:2143},
+  {name:'Darui (Fourth War)',     emoji:'⚡', anilist:173,   mal:173},
+  {name:'Inoichi Yamanaka',       emoji:'🧠', anilist:2150,  mal:2150},
+  {name:'Shikaku Nara',           emoji:'🧠', anilist:2151,  mal:2151},
+  {name:'Ao (War Doctor)',        emoji:'💧', anilist:159,   mal:159},
+  {name:'Muu',                    emoji:'🪨', anilist:2152,  mal:2152},
+  {name:'Gengetsu Hozuki',        emoji:'💧', anilist:2153,  mal:2153},
+  {name:'A (Third Raikage)',      emoji:'⚡', anilist:2154,  mal:2154},
+  {name:'Second Mizukage',        emoji:'🐠', anilist:2155,  mal:2155},
+  {name:'Second Tsuchikage',      emoji:'🪨', anilist:2156,  mal:2156},
+  {name:'Fourth Kazekage',        emoji:'🏜️', anilist:2157,  mal:2157},
+  {name:'Gaara (Kazekage)',       emoji:'🏜️', anilist:82,    mal:82},
+  {name:'Sasuke (Hebi)',          emoji:'⚡', anilist:13,    mal:13},
+  {name:'Naruto (Sage Mode)',     emoji:'🍥', anilist:17,    mal:17},
+  {name:'Naruto (Kurama Mode)',   emoji:'🍥', anilist:17,    mal:17},
+  {name:'Madara (Ten-Tails)',     emoji:'👁️', anilist:114,  mal:114},
+  {name:'Obito (Ten-Tails)',      emoji:'🎭', anilist:91,   mal:91},
+  {name:'Kakashi (Double Sharingan)', emoji:'📖', anilist:85, mal:85},
+  {name:'Sakura (War Arc)',       emoji:'🌸', anilist:22,   mal:22},
 ]},
 
 /* ══════════════════════════════════════
-   JUJUTSU KAISEN (through Culling Game)
+   JUJUTSU KAISEN (extended)
 ══════════════════════════════════════ */
 { id:'jjk', name:'Jujutsu Kaisen', emoji:'👊', color:'#7ec8e3', tags:['Cursed','Shonen'], chars:[
   {name:'Yuji Itadori',           emoji:'👊', anilist:138259, mal:178461},
@@ -171,10 +206,25 @@ const ANIMES = [
   {name:'Niji Ebina',             emoji:'💧', anilist:163925, mal:185846},
   {name:'Takuma Ino',             emoji:'🌸', anilist:163926, mal:185847},
   {name:'Nobara (Suspended)',     emoji:'🔨', anilist:209410, mal:220766},
+  // Extra Kyoto & minor sorcerers / curses
+  {name:'Mai (Kyoto Uniform)',    emoji:'🔫', anilist:138268, mal:178470},
+  {name:'Momo Nishimiya',         emoji:'🧹', anilist:163927, mal:185848},
+  {name:'Aoi Todo (Exchange)',    emoji:'💪', anilist:138265, mal:178467},
+  {name:'Kasumi Miwa (Kyoto)',    emoji:'🔵', anilist:163916, mal:185837},
+  {name:'Noritoshi Kamo (Kyoto)', emoji:'🏹', anilist:163917, mal:185838},
+  {name:'Mei Mei (Bird Strike)',  emoji:'💰', anilist:163919, mal:185840},
+  {name:'Ui Ui (Escort)',         emoji:'💰', anilist:209409, mal:220765},
+  {name:'Nanami (Salaryman)',     emoji:'👔', anilist:138264, mal:178466},
+  {name:'Itadori (Black Flash)',  emoji:'👊', anilist:138259, mal:178461},
+  {name:'Gojo (Student)',         emoji:'🕶️', anilist:138260, mal:178462},
+  {name:'Geto (Student)',         emoji:'😈', anilist:138269, mal:178471},
+  {name:'Yu Haibara',             emoji:'😊', anilist:209411, mal:220767},
+  {name:'Jin Itadori',            emoji:'🧢', anilist:209412, mal:220768},
+  {name:'Kaori Itadori',          emoji:'🌸', anilist:209413, mal:220769},
 ]},
 
 /* ══════════════════════════════════════
-   MY HERO ACADEMIA (all classes + villains)
+   MY HERO ACADEMIA (extended)
 ══════════════════════════════════════ */
 { id:'mha', name:'My Hero Academia', emoji:'💥', color:'#e63946', tags:['Quirks','Shonen'], chars:[
   {name:'Izuku Midoriya',         emoji:'💚', anilist:93881,  mal:152222},
@@ -256,6 +306,25 @@ const ANIMES = [
   {name:'Deku (Final)',           emoji:'💚', anilist:93957,  mal:152298},
   {name:'AfO (True Form)',        emoji:'😈', anilist:93958,  mal:152299},
   {name:'Spinner (Mutated)',      emoji:'🦎', anilist:93959,  mal:152300},
+  // Extra Class 1-B, pros, and villains
+  {name:'Itsuka Kendo',           emoji:'🖐️', anilist:118275, mal:168498},
+  {name:'Tetsutetsu Tetsutetsu',  emoji:'🪨', anilist:118276, mal:168499},
+  {name:'Neito Monoma',           emoji:'🃏', anilist:118277, mal:168500},
+  {name:'Yosetsu Awase',          emoji:'🔧', anilist:118278, mal:168501},
+  {name:'Ibara Shiozaki',         emoji:'🌿', anilist:118279, mal:168502},
+  {name:'Jurota Shishida',        emoji:'🐻', anilist:118280, mal:168503},
+  {name:'Sen Kaibara',            emoji:'🌀', anilist:118281, mal:168504},
+  {name:'Reiko Yanagi',           emoji:'👻', anilist:118282, mal:168505},
+  {name:'Hitoshi Shinso (Hero Course)', emoji:'💜', anilist:93916, mal:152257},
+  {name:'Ragdoll (Quirkless)',    emoji:'🐱', anilist:93952,  mal:152293},
+  {name:'Kendo Rappa',            emoji:'🥊', anilist:131699, mal:177343},
+  {name:'Kurono Hari (Chronostasis)', emoji:'⌛', anilist:131700, mal:177344},
+  {name:'Gentle (Pre-Raid)',      emoji:'🫖', anilist:93936,  mal:152277},
+  {name:'La Brava (Final Arc)',   emoji:'💕', anilist:93937,  mal:152278},
+  {name:'Nine',                   emoji:'⚡', anilist:131701, mal:177345},
+  {name:'Mahoro Shimano',         emoji:'🎈', anilist:131702, mal:177346},
+  {name:'Katsuma Shimano',        emoji:'🌈', anilist:131703, mal:177347},
+  {name:'Star and Stripe (Final)',emoji:'🇺🇸', anilist:93955,  mal:152296},
 ]},
 
 /* ══════════════════════════════════════
@@ -1343,7 +1412,7 @@ const ANIMES = [
   {name:'Jinpachi Ego',           emoji:'🧠'},
 ]},
 
-/* HAIKYUU */
+/* HAIKYUU (extended) */
 { id:'haikyuu', name:'Haikyuu!!', emoji:'🏐', color:'#f97316', tags:['Sports','Shonen'], chars:[
   {name:'Shoyo Hinata',           emoji:'🏐'},
   {name:'Tobio Kageyama',         emoji:'⚡'},
@@ -1380,6 +1449,21 @@ const ANIMES = [
   {name:'Osamu Miya',             emoji:'🍙'},
   {name:'Shinsuke Kita',          emoji:'🌾'},
   {name:'Rintaro Suna',           emoji:'🦂'},
+  // Extra captains, setters, and rivals
+  {name:'Kuroo (Captain)',        emoji:'🐈‍⬛'},
+  {name:'Kenma (Gamer)',          emoji:'🎮'},
+  {name:'Bokuto (Wing Spiker)',   emoji:'🦉'},
+  {name:'Akaashi (Setter)',       emoji:'📝'},
+  {name:'Oikawa (Server)',        emoji:'👑'},
+  {name:'Ushijima (Ace)',         emoji:'🦬'},
+  {name:'Sakusa (Top Ace)',       emoji:'😷'},
+  {name:'Atsumu (MSBY)',          emoji:'⚡'},
+  {name:'Osamu (Onigiri Miya)',   emoji:'🍙'},
+  {name:'Tendo (Guess Blocker)',  emoji:'🎭'},
+  {name:'Kita (Captain)',         emoji:'🌾'},
+  {name:'Iwaizumi (Ace)',         emoji:'💪'},
+  {name:'Yaku (Libero)',          emoji:'🛡️'},
+  {name:'Lev (Middle Blocker)',   emoji:'🗼'},
 ]},
 
 /* Kuroko's Basketball */
