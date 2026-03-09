@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0" />
+<title>Anime Guess Who</title>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Outfit:wght@300;400;600;700&family=Noto+Sans+JP:wght@700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="css/base.css" />
+<link rel="stylesheet" href="css/home.css" />
+<link rel="stylesheet" href="css/game.css" />
+<link rel="stylesheet" href="css/card.css" />
+</head>
+<body>
+
+<div id="home" class="screen active">
+  <div class="hglow"></div>
+  <div class="hero">
+    <span class="jp">Anime Character Guessing Game</span>
+    <div class="title">ANIME<br />GUESS WHO</div>
+    <div class="subtitle">CHARACTER DEDUCTION GAME</div>
+    <div class="rule"></div>
+    <p class="desc">Open on two devices. Both pick the same anime, secretly pick a character, then ask yes/no questions. Tap cards to flip eliminated characters face-down. First to guess wins.</p>
+  </div>
+  <div class="how">
+    <div class="step" data-n="01"><div class="step-i">1</div><div class="step-t">Open on two separate devices</div></div>
+    <div class="step" data-n="02"><div class="step-i">2</div><div class="step-t">Both pick the same anime</div></div>
+    <div class="step" data-n="03"><div class="step-i">3</div><div class="step-t">Each secretly pick one character</div></div>
+    <div class="step" data-n="04"><div class="step-i">4</div><div class="step-t">Ask questions and tap to eliminate</div></div>
+  </div>
+  <div class="sec">CHOOSE AN <span>ANIME</span></div>
+  <div class="catbar" id="catbar"></div>
+  <div class="agrid" id="agrid"></div>
+</div>
+
+<div id="game" class="screen">
+  <div class="ghead">
+    <div class="ghl">
+      <button class="back" id="back-btn">Back</button>
+      <div class="gtitle" id="gtitle"></div>
+    </div>
+    <div class="stats">
+      <div class="pill">Active: <b id="sa">0</b></div>
+      <div class="pill">Eliminated: <b id="se">0</b></div>
+    </div>
+    <div class="gactions">
+      <button class="rbtn" id="export-btn">Export Dataset</button>
+      <button class="rbtn" id="reset-btn">Reset</button>
+    </div>
+  </div>
+  <div class="board">
+    <div class="tip">
+      <span style="font-size:18px">Play</span>
+      <div class="tip-t">
+        <strong>Remember your secret character.</strong>
+        Tap any card to flip it face-down.
+        <span class="tip-hint">Right-click any card to upload a custom image for that character.</span>
+      </div>
+    </div>
+    <div class="dataset-status" id="dataset-status"></div>
+    <div class="cgrid" id="cgrid"></div>
+  </div>
+</div>
+
+<script src="js/data.js"></script>
+<script src="js/api.js"></script>
+<script src="js/ui.js"></script>
+<script src="js/game.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

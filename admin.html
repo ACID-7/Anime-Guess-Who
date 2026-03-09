@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1.0" />
+<title>Anime Dataset Admin</title>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="css/base.css" />
+<link rel="stylesheet" href="css/admin.css" />
+</head>
+<body>
+  <div id="login-screen" class="login-wrap">
+    <div class="login-box">
+      <h1 class="login-title">Admin Login</h1>
+      <p class="login-sub">Enter your credentials to manage the image dataset.</p>
+      <form id="login-form" class="login-form">
+        <input
+          id="admin-username"
+          class="login-input"
+          type="text"
+          autocomplete="username"
+          placeholder="Username"
+        />
+        <input
+          id="admin-password"
+          class="login-input"
+          type="password"
+          autocomplete="current-password"
+          placeholder="Password"
+        />
+        <div id="login-error" class="login-error" aria-live="polite"></div>
+        <button type="submit" class="btn login-btn">Log In</button>
+      </form>
+    </div>
+  </div>
+
+  <main id="admin-app" class="admin-wrap" style="display:none">
+    <header class="admin-head">
+      <h1>Dataset Admin</h1>
+      <p>Fill missing character images and export an updated dataset JSON.</p>
+      <div class="admin-actions">
+        <a class="btn ghost" href="index.html">Back to Game</a>
+        <button class="btn" id="export-btn">Export Updated Dataset</button>
+      </div>
+    </header>
+
+    <section class="toolbar">
+      <input id="search" type="search" placeholder="Search anime or character..." />
+      <select id="anime-filter" class="anime-filter">
+        <option value="all">All anime</option>
+      </select>
+      <div class="stat" id="stats">Loading...</div>
+    </section>
+
+    <section id="list" class="list"></section>
+  </main>
+
+  <script src="js/admin.js"></script>
+</body>
+</html>

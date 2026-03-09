@@ -1,0 +1,233 @@
+/**
+ * ui.js - DOM rendering helpers.
+ */
+
+function showScreen(id) {
+  document.getElementById('home').classList.remove('active');
+  const game = document.getElementById('game');
+  game.style.display = 'none';
+
+  if (id === 'home') {
+    document.getElementById('home').classList.add('active');
+    return;
+  }
+
+  game.style.display = 'block';
+  window.scrollTo(0, 0);
+}
+
+function renderAnimeGrid(animes, onSelect) {
+  const grid = document.getElementById('agrid');
+  grid.innerHTML = '';
+
+  animes.forEach((anime, index) => {
+    const card = document.createElement('div');
+    card.className = 'ac';
+    card.style.animationDelay = `${index * 0.035}s`;
+    card.innerHTML = `
+      <div class="ac-ban" style="background:linear-gradient(135deg,${anime.color}1a,${anime.color}06)">
+        <span style="font-size:38px;filter:drop-shadow(0 2px 8px ${anime.color}55)">${anime.emoji}</span>
+      </div>
+      <div class="ac-body">
+        <div class="ac-name" style="color:${anime.color}">${anime.name}</div>
+        <div class="ac-count">${anime.chars.length} characters</div>
+        <div class="ac-tags">${anime.tags.map(tag => `<span class="tag" style="color:${anime.color};border-color:${anime.color}44">${tag}</span>`).join('')}</div>
+      </div>`;
+    card.addEventListener('mouseenter', () => {
+      card.style.borderColor = anime.color;
+      card.style.boxShadow = `0 0 20px ${anime.color}38`;
+    });
+    card.addEventListener('mouseleave', () => {
+      card.style.borderColor = '';
+      card.style.boxShadow = '';
+    });
+    card.onclick = () => onSelect(anime);
+    grid.appendChild(card);
+  });
+}
+
+function renderCategoryBar(categories, activeCategory, onSelect) {
+  const bar = document.getElementById('catbar');
+  if (!bar) return;
+  bar.innerHTML = '';
+
+  categories.forEach(category => {
+    const button = document.createElement('button');
+    button.className = 'catbtn' + (category === activeCategory ? ' active' : '');
+    button.textContent = category;
+    button.onclick = () => onSelect(category);
+    bar.appendChild(button);
+  });
+}
+
+function renderGameTitle(anime) {
+  document.getElementById('gtitle').innerHTML =
+    `<span style="color:${anime.color}">${anime.emoji}</span> ${anime.name.toUpperCase()}`;
+}
+
+function renderStats(total, eliminated) {
+  document.getElementById('sa').textContent = total - eliminated;
+  document.getElementById('se').textContent = eliminated;
+}
+
+function renderLoading(anime) {
+  document.getElementById('cgrid').innerHTML = `
+    <div class="loading-screen">
+      <div style="font-size:36px;margin-bottom:12px">Loading</div>
+      <div style="font-family:'Bebas Neue',sans-serif;font-size:22px;letter-spacing:3px;color:var(--accent)">
+        Loading ${anime.chars.length} Characters...
+      </div>
+      <div style="font-size:12px;margin-top:6px;color:var(--muted)">Single source: AniList GraphQL</div>
+      <div class="load-bar-wrap"><div class="load-bar" id="load-bar"></div></div>
+      <div id="load-label" style="font-size:11px;color:var(--muted);margin-top:8px">Connecting to AniList...</div>
+    </div>`;
+}
+
+function updateLoadBar(pct, label) {
+  const bar = document.getElementById('load-bar');
+  const text = document.getElementById('load-label');
+
+  if (bar) bar.style.width = `${pct}%`;
+  if (text && label) text.textContent = label;
+}
+
+function renderCharGrid(anime, flipped, onCardClick) {
+  const grid = document.getElementById('cgrid');
+  grid.innerHTML = '';
+
+  anime.chars.forEach((char, index) => {
+    const imgUrl = getCachedImage(char);
+    const card = document.createElement('div');
+    card.className = 'fc' + (flipped.has(index) ? ' flipped' : '');
+    card.style.cssText = `animation-delay:${Math.min(index * 0.016, 1.2)}s;--hc:${anime.color};--hg:${anime.color}38`;
+    card.innerHTML = buildCardHTML(char, anime, imgUrl);
+    card.onclick = () => onCardClick(index);
+    grid.appendChild(card);
+  });
+}
+
+function buildCardHTML(char, anime, imgUrl) {
+  const imgTag = imgUrl
+    ? `<img class="cimg" src="${imgUrl}" alt="${char.name}" loading="lazy"
+         onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">`
+    : '';
+  const fallbackStyle = imgUrl ? '' : 'display:flex;';
+
+  return `
+    <div class="fci">
+      <div class="ff">
+        <div class="imgw">
+          ${imgTag}
+          <div class="cfb" style="${fallbackStyle}background:linear-gradient(150deg,${anime.color}1a,#0a0a16)">
+            <span style="font-size:38px">${char.emoji || '*'}</span>
+            <span class="cfb-nm">${char.name}</span>
+          </div>
+          <div class="ov"></div>
+          <div class="ci">
+            <div class="cn">${char.name}</div>
+            <span class="cb" style="background:${anime.color}1e;color:${anime.color};border:1px solid ${anime.color}44">${anime.name}</span>
+          </div>
+        </div>
+      </div>
+      <div class="fb">
+        <div class="bpat"></div>
+        <div class="bx">X</div>
+        <div class="bl">Eliminated</div>
+        <div class="bn">${char.name}</div>
+      </div>
+    </div>`;
+}
+
+function toggleCardFlip(index) {
+  const cards = document.querySelectorAll('.fc');
+  if (cards[index]) cards[index].classList.toggle('flipped');
+}
+
+function renderDatasetStatus(anime) {
+  const status = document.getElementById('dataset-status');
+  if (!status) return;
+
+  if (!anime) {
+    status.textContent = '';
+    return;
+  }
+
+  const dataset = getDataset(anime);
+  const withImages = dataset.filter(entry => entry.hasImage).length;
+  const missing = dataset.length - withImages;
+  const mismatches = getMismatchedCharacters(anime).length;
+
+  if (!missing && !mismatches) {
+    status.textContent = `${withImages}/${dataset.length} characters resolved. Dataset export is ready.`;
+    return;
+  }
+
+  status.textContent = `${withImages}/${dataset.length} characters resolved from AniList or local overrides. ${missing} still need manual images. ${mismatches} AniList IDs are mismatched and automatically bypassed via name search when possible.`;
+}
+
+function showUploadModal(char, index, anime) {
+  const oldModal = document.getElementById('upload-modal');
+  if (oldModal) oldModal.remove();
+
+  const modal = document.createElement('div');
+  modal.id = 'upload-modal';
+  modal.innerHTML = `
+    <div class="modal-bg" onclick="closeUploadModal()"></div>
+    <div class="modal-box">
+      <div class="modal-title">Set Image for ${char.name}</div>
+      <p class="modal-sub">Paste a direct image URL, or choose a local file.</p>
+      <input id="url-input" class="modal-input" type="url" placeholder="https://example.com/image.jpg" />
+      <div class="modal-or">or</div>
+      <input id="file-input" type="file" accept="image/*" class="modal-file" />
+      <div class="modal-btns">
+        <button class="modal-btn cancel" onclick="closeUploadModal()">Cancel</button>
+        <button class="modal-btn confirm" onclick="applyCustomImage(${index})">Apply</button>
+      </div>
+    </div>`;
+  document.body.appendChild(modal);
+  modal.dataset.charIndex = index;
+  modal.dataset.animeId = anime.id;
+}
+
+function closeUploadModal() {
+  const modal = document.getElementById('upload-modal');
+  if (modal) modal.remove();
+}
+
+async function applyCustomImage(cardIndex) {
+  const urlInput = document.getElementById('url-input');
+  const fileInput = document.getElementById('file-input');
+  let imgUrl = null;
+
+  if (fileInput.files && fileInput.files[0]) {
+    imgUrl = await new Promise(resolve => {
+      const reader = new FileReader();
+      reader.onload = event => resolve(event.target.result);
+      reader.readAsDataURL(fileInput.files[0]);
+    });
+  } else if (urlInput.value.trim()) {
+    imgUrl = urlInput.value.trim();
+  }
+
+  if (!imgUrl || !window.GameState?.currentAnime) return;
+
+  const char = GameState.currentAnime.chars[cardIndex];
+  if (char.anilist) IMG_CACHE[char.anilist] = imgUrl;
+
+  if (typeof setNameImageCache === 'function') {
+    setNameImageCache(char.name, imgUrl);
+  }
+
+  buildDataset(GameState.currentAnime);
+
+  const cards = document.querySelectorAll('.fc');
+  const card = cards[cardIndex];
+  if (card) {
+    const isFlipped = card.classList.contains('flipped');
+    card.innerHTML = buildCardHTML(char, GameState.currentAnime, imgUrl);
+    if (isFlipped) card.classList.add('flipped');
+  }
+
+  renderDatasetStatus(GameState.currentAnime);
+  closeUploadModal();
+}

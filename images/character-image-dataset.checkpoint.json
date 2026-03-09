@@ -1,0 +1,1975 @@
+{
+  "savedAt": "2026-03-08T19:48:49.117Z",
+  "items": [
+    {
+      "animeId": "naruto",
+      "animeName": "Naruto Shippuden",
+      "name": "Naruto Uzumaki",
+      "anilist": 17,
+      "resolvedName": "Naruto Uzumaki",
+      "image": "https://s4.anilist.co/file/anilistcdn/character/large/b17-phjcWCkRuIhu.png",
+      "hasImage": true,
+      "source": "id"
+    },
+    {
+      "animeId": "naruto",
+      "animeName": "Naruto Shippuden",
+      "name": "Sasuke Uchiha",
+      "anilist": 13,
+      "resolvedName": "Sasuke Uchiha",
+      "image": "https://s4.anilist.co/file/anilistcdn/character/large/b13-SISLEw1oAD7a.png",
+      "hasImage": true,
+      "source": "id"
+    },
+    {
+      "animeId": "naruto",
+      "animeName": "Naruto Shippuden",
+      "name": "Sakura Haruno",
+      "anilist": 145,
+      "resolvedName": "Sakura Haruno",
+      "image": "https://s4.anilist.co/file/anilistcdn/character/large/b145-IorfpI8arxeX.png",
+      "hasImage": true,
+      "source": "search"
+    },
+    {
+      "animeId": "naruto",
+      "animeName": "Naruto Shippuden",
+      "name": "Kakashi Hatake",
+      "anilist": 85,
+      "resolvedName": "Kakashi Hatake",
+      "image": "https://s4.anilist.co/file/anilistcdn/character/large/b85-mkVBh2yjxjmx.png",
+      "hasImage": true,
+      "source": "id"
+    },
+    {
+      "animeId": "naruto",
+      "animeName": "Naruto Shippuden",
+      "name": "Itachi Uchiha",
+      "anilist": 14,
+      "resolvedName": "Itachi Uchiha",
+      "image": "https://s4.anilist.co/file/anilistcdn/character/large/b14-9Kb1E5oel1ke.png",
+      "hasImage": true,
+      "source": "search"
+    },
+    {
+      "animeId": "naruto",
+      "animeName": "Naruto Shippuden",
+      "name": "Gaara",
+      "anilist": 1662,
+      "resolvedName": "Gaara",
+      "image": "https://s4.anilist.co/file/anilistcdn/character/large/b1662-4E5J0LX9jZKZ.png",
+      "hasImage": true,
+      "source": "search"
+    },
+    {
+      "animeId": "naruto",
+      "animeName": "Naruto Shippuden",
+      "name": "Rock Lee",
+      "anilist": 306,
+      "resolvedName": "Rock Lee",
+      "image": "https://s4.anilist.co/file/anilistcdn/character/large/b306-oUTOO45xInXt.png",
+      "hasImage": true,
+      "source": "search"
+    },
+    {
+      "animeId": "naruto",
+      "animeName": "Naruto Shippuden",
+      "name": "Hinata Hyuga",
+      "anilist": 87,
+      "resolvedName": null,
+      "image": null,
+      "hasImage": false,
+      "source": "none"
+    },
+    {
+      "animeId": "naruto",
+      "animeName": "Naruto Shippuden",
+      "name": "Neji Hyuga",
+      "anilist": 90,
+      "resolvedName": null,
+      "image": null,
+      "hasImage": false,
+      "source": "none"
+    },
+    {
+      "animeId": "naruto",
+      "animeName": "Naruto Shippuden",
+      "name": "Minato Namikaze",
+      "anilist": 2535,
+      "resolvedName": "Minato Namikaze",
+      "image": "https://s4.anilist.co/file/anilistcdn/character/large/b2535-Xq9WKNPJQEt3.png",
+      "hasImage": true,
+      "source": "search"
+    },
+    {
+      "animeId": "naruto",
+      "animeName": "Naruto Shippuden",
+      "name": "Tsunade",
+      "anilist": 2767,
+      "resolvedName": "Tsunade Senju",
+      "image": "https://s4.anilist.co/file/anilistcdn/character/large/b2767-r61Cj9v8I0wl.png",
+      "hasImage": true,
+      "source": "search"
+    },
+    {
+      "animeId": "naruto",
+      "animeName": "Naruto Shippuden",
+      "name": "Orochimaru",
+      "anilist": 2455,
+      "resolvedName": "Orochimaru",
+      "image": "https://s4.anilist.co/file/anilistcdn/character/large/n2455-V9tLMS3TIgJW.png",
+      "hasImage": true,
+      "source": "search"
+    },
+    {
+      "animeId": "naruto",
+      "animeName": "Naruto Shippuden",
+      "name": "Jiraiya",
+      "anilist": 2423,
+      "resolvedName": "Jiraiya",
+      "image": "https://s4.anilist.co/file/anilistcdn/character/large/b2423-RO5MyoXSA9OL.png",
+      "hasImage": true,
+      "source": "search"
+    },
+    {
+      "animeId": "naruto",
+      "animeName": "Naruto Shippuden",
+      "name": "Shikamaru Nara",
+      "anilist": 2007,
+      "resolvedName": "Shikamaru Nara",
+      "image": "https://s4.anilist.co/file/anilistcdn/character/large/b2007-QaesJlIZDifj.jpg",
+      "hasImage": true,
+      "source": "search"
+    },
+    {
+      "animeId": "naruto",
+      "animeName": "Naruto Shippuden",
+      "name": "Obito Uchiha",
+      "anilist": 91,
+      "resolvedName": null,
+      "image": null,
+      "hasImage": false,
+      "source": "none"
+    },
+    {
+      "animeId": "naruto",
+      "animeName": "Naruto Shippuden",
+      "name": "Pain / Nagato",
+      "anilist": 3180,
+      "resolvedName": "Pain",
+      "image": "https://s4.anilist.co/file/anilistcdn/character/large/b3180-ITMGBLWNBOgV.png",
+      "hasImage": true,
+      "source": "search"
+    },
+    {
+      "animeId": "naruto",
+      "animeName": "Naruto Shippuden",
+      "name": "Konan",
+      "anilist": 3179,
+      "resolvedName": "Konan",
+      "image": "https://s4.anilist.co/file/anilistcdn/character/large/3179-YVD5zJSYrnPg.jpg",
+      "hasImage": true,
+      "source": "search"
+    },
+    {
+      "animeId": "naruto",
+      "animeName": "Naruto Shippuden",
+      "name": "Kabuto Yakushi",
+      "anilist": 2405,
+      "resolvedName": "Kabuto Yakushi",
+      "image": "https://s4.anilist.co/file/anilistcdn/character/large/b2405-CqbcGW2tfaMV.png",
+      "hasImage": true,
+      "source": "search"
+    },
+    {
+      "animeId": "naruto",
+      "animeName": "Naruto Shippuden",
+      "name": "Temari",
+      "anilist": 2174,
+      "resolvedName": "Temari",
+      "image": "https://s4.anilist.co/file/anilistcdn/character/large/b2174-XTX0TtzkZCnO.png",
+      "hasImage": true,
+      "source": "search"
+    },
+    {
+      "animeId": "naruto",
+      "animeName": "Naruto Shippuden",
+      "name": "Kankuro",
+      "anilist": 4694,
+      "resolvedName": "Kankuro",
+      "image": "https://s4.anilist.co/file/anilistcdn/character/large/n4694-2brvNKpdqARU.png",
+      "hasImage": true,
+      "source": "search"
+    },
+    {
+      "animeId": "naruto",
+      "animeName": "Naruto Shippuden",
+      "name": "Tenten",
+      "anilist": 3710,
+      "resolvedName": "Tenten",
+      "image": "https://s4.anilist.co/file/anilistcdn/character/large/b3710-OmDNYKi0Xfjk.png",
+      "hasImage": true,
+      "source": "search"
+    },
+    {
+      "animeId": "naruto",
+      "animeName": "Naruto Shippuden",
+      "name": "Ino Yamanaka",
+      "anilist": 2009,
+      "resolvedName": "Ino Yamanaka",
+      "image": "https://s4.anilist.co/file/anilistcdn/character/large/b2009-H7n38Ns1fr0Y.jpg",
+      "hasImage": true,
+      "source": "search"
+    },
+    {
+      "animeId": "naruto",
+      "animeName": "Naruto Shippuden",
+      "name": "Choji Akimichi",
+      "anilist": 104,
+      "resolvedName": null,
+      "image": null,
+      "hasImage": false,
+      "source": "none"
+    },
+    {
+      "animeId": "naruto",
+      "animeName": "Naruto Shippuden",
+      "name": "Kiba Inuzuka",
+      "anilist": 3495,
+      "resolvedName": "Kiba Inuzuka",
+      "image": "https://s4.anilist.co/file/anilistcdn/character/large/n3495-dtw0gHa5SOo6.png",
+      "hasImage": true,
+      "source": "search"
+    },
+    {
+      "animeId": "naruto",
+      "animeName": "Naruto Shippuden",
+      "name": "Shino Aburame",
+      "anilist": 3428,
+      "resolvedName": "Shino Aburame",
+      "image": "https://s4.anilist.co/file/anilistcdn/character/large/n3428-KVeHMgx0xMqO.png",
+      "hasImage": true,
+      "source": "search"
+    },
+    {
+      "animeId": "naruto",
+      "animeName": "Naruto Shippuden",
+      "name": "Anko Mitarashi",
+      "anilist": 809,
+      "resolvedName": "Anko Mitarashi",
+      "image": "https://s4.anilist.co/file/anilistcdn/character/large/b809-FhWTN0LFVzRa.png",
+      "hasImage": true,
+      "source": "search"
+    },
+    {
+      "animeId": "naruto",
+      "animeName": "Naruto Shippuden",
+      "name": "Kurenai Yuhi",
+      "anilist": 108,
+      "resolvedName": null,
+      "image": null,
+      "hasImage": false,
+      "source": "none"
+    },
+    {
+      "animeId": "naruto",
+      "animeName": "Naruto Shippuden",
+      "name": "Asuma Sarutobi",
+      "anilist": 4775,
+      "resolvedName": "Asuma Sarutobi",
+      "image": "https://s4.anilist.co/file/anilistcdn/character/large/b4775-skviHvjIQHiE.png",
+      "hasImage": true,
+      "source": "search"
+    },
+    {
+      "animeId": "naruto",
+      "animeName": "Naruto Shippuden",
+      "name": "Might Guy",
+      "anilist": 307,
+      "resolvedName": "Might Guy",
+      "image": "https://s4.anilist.co/file/anilistcdn/character/large/b307-xieUEdhdTVwQ.png",
+      "hasImage": true,
+      "source": "search"
+    },
+    {
+      "animeId": "naruto",
+      "animeName": "Naruto Shippuden",
+      "name": "Hiruzen Sarutobi",
+      "anilist": 7571,
+      "resolvedName": "Hiruzen Sarutobi",
+      "image": "https://s4.anilist.co/file/anilistcdn/character/large/n7571-fKldLuBWUtCO.png",
+      "hasImage": true,
+      "source": "search"
+    },
+    {
+      "animeId": "naruto",
+      "animeName": "Naruto Shippuden",
+      "name": "Hashirama Senju",
+      "anilist": 12464,
+      "resolvedName": "Hashirama Senju",
+      "image": "https://s4.anilist.co/file/anilistcdn/character/large/n12464-fcgqkCPZoREw.png",
+      "hasImage": true,
+      "source": "search"
+    },
+    {
+      "animeId": "naruto",
+      "animeName": "Naruto Shippuden",
+      "name": "Tobirama Senju",
+      "anilist": 12465,
+      "resolvedName": "Tobirama Senju",
+      "image": "https://s4.anilist.co/file/anilistcdn/character/large/n12465-y8ByDAvzC5cA.png",
+      "hasImage": true,
+      "source": "search"
+    },
+    {
+      "animeId": "naruto",
+      "animeName": "Naruto Shippuden",
+      "name": "Madara Uchiha",
+      "anilist": 53901,
+      "resolvedName": "Madara Uchiha",
+      "image": "https://s4.anilist.co/file/anilistcdn/character/large/b53901-HnRKSoHMG5Vg.png",
+      "hasImage": true,
+      "source": "search"
+    },
+    {
+      "animeId": "naruto",
+      "animeName": "Naruto Shippuden",
+      "name": "Killer Bee",
+      "anilist": 18473,
+      "resolvedName": "Killer Bee",
+      "image": "https://s4.anilist.co/file/anilistcdn/character/large/b18473-AiI3mk28a1Nm.png",
+      "hasImage": true,
+      "source": "search"
+    },
+    {
+      "animeId": "naruto",
+      "animeName": "Naruto Shippuden",
+      "name": "Mei Terumi",
+      "anilist": 23478,
+      "resolvedName": "Mei Terumi",
+      "image": "https://s4.anilist.co/file/anilistcdn/character/large/b23478-U7n8YUe2gFDW.png",
+      "hasImage": true,
+      "source": "search"
+    },
+    {
+      "animeId": "naruto",
+      "animeName": "Naruto Shippuden",
+      "name": "Fourth Raikage (A)",
+      "anilist": 22894,
+      "resolvedName": "A",
+      "image": "https://s4.anilist.co/file/anilistcdn/character/large/b22894-KZQFgbnqUFrZ.png",
+      "hasImage": true,
+      "source": "search"
+    },
+    {
+      "animeId": "naruto",
+      "animeName": "Naruto Shippuden",
+      "name": "Darui",
+      "anilist": 23476,
+      "resolvedName": "Darui",
+      "image": "https://s4.anilist.co/file/anilistcdn/character/large/b23476-f71q8pESrKjk.png",
+      "hasImage": true,
+      "source": "search"
+    },
+    {
+      "animeId": "naruto",
+      "animeName": "Naruto Shippuden",
+      "name": "Karin",
+      "anilist": 120,
+      "resolvedName": null,
+      "image": null,
+      "hasImage": false,
+      "source": "none"
+    },
+    {
+      "animeId": "naruto",
+      "animeName": "Naruto Shippuden",
+      "name": "Suigetsu Hozuki",
+      "anilist": 121,
+      "resolvedName": null,
+      "image": null,
+      "hasImage": false,
+      "source": "none"
+    },
+    {
+      "animeId": "naruto",
+      "animeName": "Naruto Shippuden",
+      "name": "Jugo",
+      "anilist": 122,
+      "resolvedName": null,
+      "image": null,
+      "hasImage": false,
+      "source": "none"
+    },
+    {
+      "animeId": "naruto",
+      "animeName": "Naruto Shippuden",
+      "name": "Sai",
+      "anilist": 123,
+      "resolvedName": null,
+      "image": null,
+      "hasImage": false,
+      "source": "none"
+    },
+    {
+      "animeId": "naruto",
+      "animeName": "Naruto Shippuden",
+      "name": "Yamato / Tenzo",
+      "anilist": 176840,
+      "resolvedName": "Yamato",
+      "image": "https://s4.anilist.co/file/anilistcdn/character/large/b176840-8KRqXXLJeLOg.png",
+      "hasImage": true,
+      "source": "search"
+    },
+    {
+      "animeId": "naruto",
+      "animeName": "Naruto Shippuden",
+      "name": "Deidara",
+      "anilist": 1902,
+      "resolvedName": "Deidara",
+      "image": "https://s4.anilist.co/file/anilistcdn/character/large/b1902-JsEFRFwjmtZJ.png",
+      "hasImage": true,
+      "source": "search"
+    },
+    {
+      "animeId": "naruto",
+      "animeName": "Naruto Shippuden",
+      "name": "Sasori",
+      "anilist": 1900,
+      "resolvedName": "Sasori",
+      "image": "https://s4.anilist.co/file/anilistcdn/character/large/b1900-Dpd9wVWtlvIx.png",
+      "hasImage": true,
+      "source": "search"
+    },
+    {
+      "animeId": "naruto",
+      "animeName": "Naruto Shippuden",
+      "name": "Hidan",
+      "anilist": 2792,
+      "resolvedName": "Hidan",
+      "image": "https://s4.anilist.co/file/anilistcdn/character/large/b2792-lyvtbiT4COp0.jpg",
+      "hasImage": true,
+      "source": "search"
+    },
+    {
+      "animeId": "naruto",
+      "animeName": "Naruto Shippuden",
+      "name": "Kakuzu",
+      "anilist": 3178,
+      "resolvedName": "Kakuzu",
+      "image": "https://s4.anilist.co/file/anilistcdn/character/large/b3178-fCqs5wyV0dlJ.jpg",
+      "hasImage": true,
+      "source": "search"
+    },
+    {
+      "animeId": "naruto",
+      "animeName": "Naruto Shippuden",
+      "name": "Kisame Hoshigaki",
+      "anilist": 2672,
+      "resolvedName": "Kisame Hoshigaki",
+      "image": "https://s4.anilist.co/file/anilistcdn/character/large/2672-oxbHx8n3N7WY.jpg",
+      "hasImage": true,
+      "source": "search"
+    },
+    {
+      "animeId": "naruto",
+      "animeName": "Naruto Shippuden",
+      "name": "Zetsu",
+      "anilist": 131,
+      "resolvedName": null,
+      "image": null,
+      "hasImage": false,
+      "source": "none"
+    },
+    {
+      "animeId": "naruto",
+      "animeName": "Naruto Shippuden",
+      "name": "Konohamaru Sarutobi",
+      "anilist": 3889,
+      "resolvedName": "Konohamaru Sarutobi",
+      "image": "https://s4.anilist.co/file/anilistcdn/character/large/n3889-gCUewPsRY2kD.png",
+      "hasImage": true,
+      "source": "search"
+    },
+    {
+      "animeId": "naruto",
+      "animeName": "Naruto Shippuden",
+      "name": "Iruka Umino",
+      "anilist": 2011,
+      "resolvedName": "Iruka Umino",
+      "image": "https://s4.anilist.co/file/anilistcdn/character/large/b2011-WUBm7wMCA6cE.png",
+      "hasImage": true,
+      "source": "search"
+    },
+    {
+      "animeId": "naruto",
+      "animeName": "Naruto Shippuden",
+      "name": "Kushina Uzumaki",
+      "anilist": 7302,
+      "resolvedName": "Kushina Uzumaki",
+      "image": "https://s4.anilist.co/file/anilistcdn/character/large/b7302-KQ6ddZtOkvUf.png",
+      "hasImage": true,
+      "source": "search"
+    },
+    {
+      "animeId": "naruto",
+      "animeName": "Naruto Shippuden",
+      "name": "Mikoto Uchiha",
+      "anilist": 21122,
+      "resolvedName": "Mikoto Uchiha",
+      "image": "https://s4.anilist.co/file/anilistcdn/character/large/n21122-blSqxSAMDwXf.png",
+      "hasImage": true,
+      "source": "search"
+    },
+    {
+      "animeId": "naruto",
+      "animeName": "Naruto Shippuden",
+      "name": "Fugaku Uchiha",
+      "anilist": 16973,
+      "resolvedName": "Fugaku Uchiha",
+      "image": "https://s4.anilist.co/file/anilistcdn/character/large/n16973-xTr9vfvx8QBR.png",
+      "hasImage": true,
+      "source": "search"
+    },
+    {
+      "animeId": "naruto",
+      "animeName": "Naruto Shippuden",
+      "name": "Dan Kato",
+      "anilist": 22876,
+      "resolvedName": "Dan Katou",
+      "image": "https://s4.anilist.co/file/anilistcdn/character/large/n22876-k5juKBlTHdBu.png",
+      "hasImage": true,
+      "source": "search"
+    },
+    {
+      "animeId": "naruto",
+      "animeName": "Naruto Shippuden",
+      "name": "Shisui Uchiha",
+      "anilist": 22893,
+      "resolvedName": "Shisui Uchiha",
+      "image": "https://s4.anilist.co/file/anilistcdn/character/large/b22893-j0SxfY656SKv.jpg",
+      "hasImage": true,
+      "source": "search"
+    },
+    {
+      "animeId": "naruto",
+      "animeName": "Naruto Shippuden",
+      "name": "Kaguya Otsutsuki",
+      "anilist": 147,
+      "resolvedName": null,
+      "image": null,
+      "hasImage": false,
+      "source": "none"
+    },
+    {
+      "animeId": "naruto",
+      "animeName": "Naruto Shippuden",
+      "name": "Hagoromo Otsutsuki",
+      "anilist": 148,
+      "resolvedName": null,
+      "image": null,
+      "hasImage": false,
+      "source": "none"
+    },
+    {
+      "animeId": "naruto",
+      "animeName": "Naruto Shippuden",
+      "name": "Hamura Otsutsuki",
+      "anilist": 149,
+      "resolvedName": null,
+      "image": null,
+      "hasImage": false,
+      "source": "none"
+    },
+    {
+      "animeId": "naruto",
+      "animeName": "Naruto Shippuden",
+      "name": "Toneri Otsutsuki",
+      "anilist": 150,
+      "resolvedName": null,
+      "image": null,
+      "hasImage": false,
+      "source": "none"
+    },
+    {
+      "animeId": "naruto",
+      "animeName": "Naruto Shippuden",
+      "name": "Izuna Uchiha",
+      "anilist": 16406,
+      "resolvedName": "Izuna Uchiha",
+      "image": "https://s4.anilist.co/file/anilistcdn/character/large/16406.jpg",
+      "hasImage": true,
+      "source": "search"
+    },
+    {
+      "animeId": "naruto",
+      "animeName": "Naruto Shippuden",
+      "name": "Utakata",
+      "anilist": 23219,
+      "resolvedName": "Utakata",
+      "image": "https://s4.anilist.co/file/anilistcdn/character/large/b23219-eEWDh3idJwit.jpg",
+      "hasImage": true,
+      "source": "search"
+    },
+    {
+      "animeId": "naruto",
+      "animeName": "Naruto Shippuden",
+      "name": "Yugito Nii",
+      "anilist": 15362,
+      "resolvedName": "Yugito Nii",
+      "image": "https://s4.anilist.co/file/anilistcdn/character/large/15362.jpg",
+      "hasImage": true,
+      "source": "search"
+    },
+    {
+      "animeId": "naruto",
+      "animeName": "Naruto Shippuden",
+      "name": "Yagura Karatachi",
+      "anilist": 156,
+      "resolvedName": null,
+      "image": null,
+      "hasImage": false,
+      "source": "none"
+    },
+    {
+      "animeId": "naruto",
+      "animeName": "Naruto Shippuden",
+      "name": "Chojuro",
+      "anilist": 23418,
+      "resolvedName": "Chojuro",
+      "image": "https://s4.anilist.co/file/anilistcdn/character/large/23418.jpg",
+      "hasImage": true,
+      "source": "search"
+    },
+    {
+      "animeId": "naruto",
+      "animeName": "Naruto Shippuden",
+      "name": "Ao",
+      "anilist": 159,
+      "resolvedName": null,
+      "image": null,
+      "hasImage": false,
+      "source": "none"
+    },
+    {
+      "animeId": "naruto",
+      "animeName": "Naruto Shippuden",
+      "name": "Omoi",
+      "anilist": 160,
+      "resolvedName": null,
+      "image": null,
+      "hasImage": false,
+      "source": "none"
+    },
+    {
+      "animeId": "naruto",
+      "animeName": "Naruto Shippuden",
+      "name": "Karui",
+      "anilist": 141122,
+      "resolvedName": "Kei Karuizawa",
+      "image": "https://s4.anilist.co/file/anilistcdn/character/large/b141122-6Zk52eU3VK3O.png",
+      "hasImage": true,
+      "source": "search"
+    },
+    {
+      "animeId": "naruto",
+      "animeName": "Naruto Shippuden",
+      "name": "Samui",
+      "anilist": 22873,
+      "resolvedName": "Samui",
+      "image": "https://s4.anilist.co/file/anilistcdn/character/large/b22873-xiuMAVpFZqrH.png",
+      "hasImage": true,
+      "source": "search"
+    },
+    {
+      "animeId": "naruto",
+      "animeName": "Naruto Shippuden",
+      "name": "Ibiki Morino",
+      "anilist": 22923,
+      "resolvedName": "Ibiki Morino",
+      "image": "https://s4.anilist.co/file/anilistcdn/character/large/n22923-oevCrDnszrEa.png",
+      "hasImage": true,
+      "source": "search"
+    },
+    {
+      "animeId": "naruto",
+      "animeName": "Naruto Shippuden",
+      "name": "Genma Shiranui",
+      "anilist": 3735,
+      "resolvedName": "Genma Shiranui",
+      "image": "https://s4.anilist.co/file/anilistcdn/character/large/n3735-IRx14wSYNVSE.png",
+      "hasImage": true,
+      "source": "search"
+    },
+    {
+      "animeId": "naruto",
+      "animeName": "Naruto Shippuden",
+      "name": "Izumo Kamizuki",
+      "anilist": 14032,
+      "resolvedName": "Izumo Kamizuki",
+      "image": "https://s4.anilist.co/file/anilistcdn/character/large/n14032-STqzPykXVWB3.png",
+      "hasImage": true,
+      "source": "search"
+    },
+    {
+      "animeId": "naruto",
+      "animeName": "Naruto Shippuden",
+      "name": "Boruto Uzumaki",
+      "anilist": 121439,
+      "resolvedName": "Boruto Uzumaki",
+      "image": "https://s4.anilist.co/file/anilistcdn/character/large/b121439-iQhKwYau18dK.jpg",
+      "hasImage": true,
+      "source": "search"
+    },
+    {
+      "animeId": "naruto",
+      "animeName": "Naruto Shippuden",
+      "name": "Sarada Uchiha",
+      "anilist": 121440,
+      "resolvedName": "Sarada Uchiha",
+      "image": "https://s4.anilist.co/file/anilistcdn/character/large/b121440-gaUIBrChR9Wo.png",
+      "hasImage": true,
+      "source": "search"
+    },
+    {
+      "animeId": "naruto",
+      "animeName": "Naruto Shippuden",
+      "name": "Mitsuki",
+      "anilist": 282094,
+      "resolvedName": "Mitsuki Koga",
+      "image": "https://s4.anilist.co/file/anilistcdn/character/large/b282094-vAr5cHPwyCIY.jpg",
+      "hasImage": true,
+      "source": "search"
+    },
+    {
+      "animeId": "naruto",
+      "animeName": "Naruto Shippuden",
+      "name": "Kawaki",
+      "anilist": 130426,
+      "resolvedName": "Kawaki",
+      "image": "https://s4.anilist.co/file/anilistcdn/character/large/b130426-umQ1G1MjtYJ9.png",
+      "hasImage": true,
+      "source": "search"
+    },
+    {
+      "animeId": "naruto",
+      "animeName": "Naruto Shippuden",
+      "name": "Himawari Uzumaki",
+      "anilist": 121445,
+      "resolvedName": "Himawari Uzumaki",
+      "image": "https://s4.anilist.co/file/anilistcdn/character/large/b121445-XvIaaLrd82O6.png",
+      "hasImage": true,
+      "source": "search"
+    },
+    {
+      "animeId": "naruto",
+      "animeName": "Naruto Shippuden",
+      "name": "Shikadai Nara",
+      "anilist": 121442,
+      "resolvedName": "Shikadai Nara",
+      "image": "https://s4.anilist.co/file/anilistcdn/character/large/121442-mWU38debEYsQ.jpg",
+      "hasImage": true,
+      "source": "search"
+    },
+    {
+      "animeId": "naruto",
+      "animeName": "Naruto Shippuden",
+      "name": "Inojin Yamanaka",
+      "anilist": 121441,
+      "resolvedName": "Inojin Yamanaka",
+      "image": "https://s4.anilist.co/file/anilistcdn/character/large/b121441-75mrucTuKv3D.jpg",
+      "hasImage": true,
+      "source": "search"
+    },
+    {
+      "animeId": "naruto",
+      "animeName": "Naruto Shippuden",
+      "name": "Chocho Akimichi",
+      "anilist": 142887,
+      "resolvedName": null,
+      "image": null,
+      "hasImage": false,
+      "source": "none"
+    },
+    {
+      "animeId": "naruto",
+      "animeName": "Naruto Shippuden",
+      "name": "Hanabi Hyuga",
+      "anilist": 163,
+      "resolvedName": null,
+      "image": null,
+      "hasImage": false,
+      "source": "none"
+    },
+    {
+      "animeId": "naruto",
+      "animeName": "Naruto Shippuden",
+      "name": "Moegi Kazamatsuri",
+      "anilist": 13454,
+      "resolvedName": "Moegi Kazamatsuri",
+      "image": "https://s4.anilist.co/file/anilistcdn/character/large/n13454-1vA2oHYalYIe.png",
+      "hasImage": true,
+      "source": "search"
+    },
+    {
+      "animeId": "naruto",
+      "animeName": "Naruto Shippuden",
+      "name": "Udon Ise",
+      "anilist": 165,
+      "resolvedName": null,
+      "image": null,
+      "hasImage": false,
+      "source": "none"
+    },
+    {
+      "animeId": "naruto",
+      "animeName": "Naruto Shippuden",
+      "name": "Ebisu",
+      "anilist": 88241,
+      "resolvedName": "Kofuku Ebisu",
+      "image": "https://s4.anilist.co/file/anilistcdn/character/large/b88241-3NQSKNgaQRNC.png",
+      "hasImage": true,
+      "source": "search"
+    },
+    {
+      "animeId": "naruto",
+      "animeName": "Naruto Shippuden",
+      "name": "Nawaki",
+      "anilist": 22884,
+      "resolvedName": "Nawaki",
+      "image": "https://s4.anilist.co/file/anilistcdn/character/large/n22884-JFSLDfwpdakg.png",
+      "hasImage": true,
+      "source": "search"
+    },
+    {
+      "animeId": "naruto",
+      "animeName": "Naruto Shippuden",
+      "name": "Biwako Sarutobi",
+      "anilist": 56693,
+      "resolvedName": "Biwako Sarutobi",
+      "image": "https://s4.anilist.co/file/anilistcdn/character/large/56693.jpg",
+      "hasImage": true,
+      "source": "search"
+    },
+    {
+      "animeId": "naruto",
+      "animeName": "Naruto Shippuden",
+      "name": "Pakura",
+      "anilist": 63791,
+      "resolvedName": "Pakura",
+      "image": "https://s4.anilist.co/file/anilistcdn/character/large/63791.jpg",
+      "hasImage": true,
+      "source": "search"
+    },
+    {
+      "animeId": "naruto",
+      "animeName": "Naruto Shippuden",
+      "name": "Gari",
+      "anilist": 169,
+      "resolvedName": null,
+      "image": null,
+      "hasImage": false,
+      "source": "none"
+    },
+    {
+      "animeId": "naruto",
+      "animeName": "Naruto Shippuden",
+      "name": "Torune Aburame",
+      "anilist": 23647,
+      "resolvedName": "Torune Aburame",
+      "image": "https://s4.anilist.co/file/anilistcdn/character/large/23647.jpg",
+      "hasImage": true,
+      "source": "search"
+    },
+    {
+      "animeId": "naruto",
+      "animeName": "Naruto Shippuden",
+      "name": "Fu Yamanaka",
+      "anilist": 40403,
+      "resolvedName": "Fu Yamanaka",
+      "image": "https://s4.anilist.co/file/anilistcdn/character/large/40403.jpg",
+      "hasImage": true,
+      "source": "search"
+    },
+    {
+      "animeId": "naruto",
+      "animeName": "Naruto Shippuden",
+      "name": "Han",
+      "anilist": 153,
+      "resolvedName": null,
+      "image": null,
+      "hasImage": false,
+      "source": "none"
+    },
+    {
+      "animeId": "naruto",
+      "animeName": "Naruto Shippuden",
+      "name": "Roshi",
+      "anilist": 154,
+      "resolvedName": null,
+      "image": null,
+      "hasImage": false,
+      "source": "none"
+    },
+    {
+      "animeId": "naruto",
+      "animeName": "Naruto Shippuden",
+      "name": "Fu (Taki)",
+      "anilist": 157,
+      "resolvedName": null,
+      "image": null,
+      "hasImage": false,
+      "source": "none"
+    },
+    {
+      "animeId": "naruto",
+      "animeName": "Naruto Shippuden",
+      "name": "Mifune",
+      "anilist": 12982,
+      "resolvedName": "Mifune",
+      "image": "https://s4.anilist.co/file/anilistcdn/character/large/b12982-oqu0ldRYGmCZ.png",
+      "hasImage": true,
+      "source": "search"
+    },
+    {
+      "animeId": "naruto",
+      "animeName": "Naruto Shippuden",
+      "name": "Kurotsuchi",
+      "anilist": 1168,
+      "resolvedName": "Mayuri Kurotsuchi",
+      "image": "https://s4.anilist.co/file/anilistcdn/character/large/b1168-y2jsGtlJVv4z.png",
+      "hasImage": true,
+      "source": "search"
+    },
+    {
+      "animeId": "naruto",
+      "animeName": "Naruto Shippuden",
+      "name": "Oonoki",
+      "anilist": 23475,
+      "resolvedName": "Oonoki",
+      "image": "https://s4.anilist.co/file/anilistcdn/character/large/b23475-OXJU3W3rmDQZ.png",
+      "hasImage": true,
+      "source": "search"
+    },
+    {
+      "animeId": "naruto",
+      "animeName": "Naruto Shippuden",
+      "name": "Akatsuchi",
+      "anilist": 23473,
+      "resolvedName": "Akatsuchi",
+      "image": "https://s4.anilist.co/file/anilistcdn/character/large/b23473-l6TMcki5yyF9.png",
+      "hasImage": true,
+      "source": "search"
+    },
+    {
+      "animeId": "jjk",
+      "animeName": "Jujutsu Kaisen",
+      "name": "Yuji Itadori",
+      "anilist": 138259,
+      "resolvedName": null,
+      "image": null,
+      "hasImage": false,
+      "source": "none"
+    },
+    {
+      "animeId": "jjk",
+      "animeName": "Jujutsu Kaisen",
+      "name": "Megumi Fushiguro",
+      "anilist": 126635,
+      "resolvedName": "Megumi Fushiguro",
+      "image": "https://s4.anilist.co/file/anilistcdn/character/large/b126635-L0y3I92JSUkN.png",
+      "hasImage": true,
+      "source": "search"
+    },
+    {
+      "animeId": "jjk",
+      "animeName": "Jujutsu Kaisen",
+      "name": "Nobara Kugisaki",
+      "anilist": 133700,
+      "resolvedName": "Nobara Kugisaki",
+      "image": "https://s4.anilist.co/file/anilistcdn/character/large/b133700-f6sOO3TcgLV6.png",
+      "hasImage": true,
+      "source": "search"
+    },
+    {
+      "animeId": "jjk",
+      "animeName": "Jujutsu Kaisen",
+      "name": "Satoru Gojo",
+      "anilist": 127691,
+      "resolvedName": "Satoru Gojou",
+      "image": "https://s4.anilist.co/file/anilistcdn/character/large/b127691-9zqh1xpIubn7.png",
+      "hasImage": true,
+      "source": "search"
+    },
+    {
+      "animeId": "jjk",
+      "animeName": "Jujutsu Kaisen",
+      "name": "Ryomen Sukuna",
+      "anilist": 138263,
+      "resolvedName": null,
+      "image": null,
+      "hasImage": false,
+      "source": "none"
+    },
+    {
+      "animeId": "jjk",
+      "animeName": "Jujutsu Kaisen",
+      "name": "Kento Nanami",
+      "anilist": 133704,
+      "resolvedName": "Kento Nanami",
+      "image": "https://s4.anilist.co/file/anilistcdn/character/large/b133704-8wLTGjc234q2.png",
+      "hasImage": true,
+      "source": "search"
+    },
+    {
+      "animeId": "jjk",
+      "animeName": "Jujutsu Kaisen",
+      "name": "Aoi Todo",
+      "anilist": 138265,
+      "resolvedName": null,
+      "image": null,
+      "hasImage": false,
+      "source": "none"
+    },
+    {
+      "animeId": "jjk",
+      "animeName": "Jujutsu Kaisen",
+      "name": "Maki Zenin",
+      "anilist": 134167,
+      "resolvedName": "Maki Zenin",
+      "image": "https://s4.anilist.co/file/anilistcdn/character/large/b134167-5TCytk45YByD.png",
+      "hasImage": true,
+      "source": "search"
+    },
+    {
+      "animeId": "jjk",
+      "animeName": "Jujutsu Kaisen",
+      "name": "Mai Zenin",
+      "anilist": 134168,
+      "resolvedName": "Mai Zenin",
+      "image": "https://s4.anilist.co/file/anilistcdn/character/large/b134168-FdWz5w2LqpeF.jpg",
+      "hasImage": true,
+      "source": "search"
+    },
+    {
+      "animeId": "jjk",
+      "animeName": "Jujutsu Kaisen",
+      "name": "Toge Inumaki",
+      "anilist": 157115,
+      "resolvedName": "Toge Inumaki",
+      "image": "https://s4.anilist.co/file/anilistcdn/character/large/b157115-kdhRYQdVhH95.png",
+      "hasImage": true,
+      "source": "search"
+    },
+    {
+      "animeId": "jjk",
+      "animeName": "Jujutsu Kaisen",
+      "name": "Suguru Geto",
+      "anilist": 133699,
+      "resolvedName": "Suguru Getou",
+      "image": "https://s4.anilist.co/file/anilistcdn/character/large/b133699-FCnXaISgazAi.png",
+      "hasImage": true,
+      "source": "search"
+    },
+    {
+      "animeId": "jjk",
+      "animeName": "Jujutsu Kaisen",
+      "name": "Yuta Okkotsu",
+      "anilist": 138270,
+      "resolvedName": null,
+      "image": null,
+      "hasImage": false,
+      "source": "none"
+    },
+    {
+      "animeId": "jjk",
+      "animeName": "Jujutsu Kaisen",
+      "name": "Toji Fushiguro",
+      "anilist": 163907,
+      "resolvedName": null,
+      "image": null,
+      "hasImage": false,
+      "source": "none"
+    },
+    {
+      "animeId": "jjk",
+      "animeName": "Jujutsu Kaisen",
+      "name": "Choso",
+      "anilist": 163908,
+      "resolvedName": null,
+      "image": null,
+      "hasImage": false,
+      "source": "none"
+    },
+    {
+      "animeId": "jjk",
+      "animeName": "Jujutsu Kaisen",
+      "name": "Junpei Yoshino",
+      "anilist": 157214,
+      "resolvedName": "Junpei Yoshino",
+      "image": "https://s4.anilist.co/file/anilistcdn/character/large/b157214-ROBNoXVEXRNy.jpg",
+      "hasImage": true,
+      "source": "search"
+    },
+    {
+      "animeId": "jjk",
+      "animeName": "Jujutsu Kaisen",
+      "name": "Hanami",
+      "anilist": 310,
+      "resolvedName": "Hanamichi Sakuragi",
+      "image": "https://s4.anilist.co/file/anilistcdn/character/large/b310-3GLKM2I3EiRf.png",
+      "hasImage": true,
+      "source": "search"
+    },
+    {
+      "animeId": "jjk",
+      "animeName": "Jujutsu Kaisen",
+      "name": "Jogo",
+      "anilist": 163912,
+      "resolvedName": null,
+      "image": null,
+      "hasImage": false,
+      "source": "none"
+    },
+    {
+      "animeId": "jjk",
+      "animeName": "Jujutsu Kaisen",
+      "name": "Mahito",
+      "anilist": 133702,
+      "resolvedName": "Mahito",
+      "image": "https://s4.anilist.co/file/anilistcdn/character/large/b133702-Y7JRG5vAvjIL.png",
+      "hasImage": true,
+      "source": "search"
+    },
+    {
+      "animeId": "jjk",
+      "animeName": "Jujutsu Kaisen",
+      "name": "Dagon",
+      "anilist": 204383,
+      "resolvedName": "Dagon",
+      "image": "https://s4.anilist.co/file/anilistcdn/character/large/b204383-5oTlVPpaCnM2.jpg",
+      "hasImage": true,
+      "source": "search"
+    },
+    {
+      "animeId": "jjk",
+      "animeName": "Jujutsu Kaisen",
+      "name": "Panda",
+      "anilist": 137974,
+      "resolvedName": "Panda",
+      "image": "https://s4.anilist.co/file/anilistcdn/character/large/b137974-9qnK3DPrvLKh.jpg",
+      "hasImage": true,
+      "source": "search"
+    },
+    {
+      "animeId": "jjk",
+      "animeName": "Jujutsu Kaisen",
+      "name": "Kasumi Miwa",
+      "anilist": 156848,
+      "resolvedName": "Kasumi Miwa",
+      "image": "https://s4.anilist.co/file/anilistcdn/character/large/b156848-Rf0tuoQCNyZV.png",
+      "hasImage": true,
+      "source": "search"
+    },
+    {
+      "animeId": "jjk",
+      "animeName": "Jujutsu Kaisen",
+      "name": "Noritoshi Kamo",
+      "anilist": 157866,
+      "resolvedName": "Noritoshi  Kamo",
+      "image": "https://s4.anilist.co/file/anilistcdn/character/large/b157866-UWDtYBoG71PD.png",
+      "hasImage": true,
+      "source": "search"
+    },
+    {
+      "animeId": "jjk",
+      "animeName": "Jujutsu Kaisen",
+      "name": "Utahime Iori",
+      "anilist": 157864,
+      "resolvedName": "Utahime Iori",
+      "image": "https://s4.anilist.co/file/anilistcdn/character/large/b157864-rejVYNx0kQZr.jpg",
+      "hasImage": true,
+      "source": "search"
+    },
+    {
+      "animeId": "jjk",
+      "animeName": "Jujutsu Kaisen",
+      "name": "Mei Mei",
+      "anilist": 163919,
+      "resolvedName": null,
+      "image": null,
+      "hasImage": false,
+      "source": "none"
+    },
+    {
+      "animeId": "jjk",
+      "animeName": "Jujutsu Kaisen",
+      "name": "Masamichi Yaga",
+      "anilist": 189237,
+      "resolvedName": "Masamichi Yaga",
+      "image": "https://s4.anilist.co/file/anilistcdn/character/large/b189237-ZxNJwVPL8DvW.png",
+      "hasImage": true,
+      "source": "search"
+    },
+    {
+      "animeId": "jjk",
+      "animeName": "Jujutsu Kaisen",
+      "name": "Naobito Zenin",
+      "anilist": 188432,
+      "resolvedName": "Naobito Zenin",
+      "image": "https://s4.anilist.co/file/anilistcdn/character/large/b188432-WePQBJsEuSts.png",
+      "hasImage": true,
+      "source": "search"
+    },
+    {
+      "animeId": "jjk",
+      "animeName": "Jujutsu Kaisen",
+      "name": "Naoya Zenin",
+      "anilist": 208204,
+      "resolvedName": "Naoya Zenin",
+      "image": "https://s4.anilist.co/file/anilistcdn/character/large/b208204-1CoWbBOC2Jqr.jpg",
+      "hasImage": true,
+      "source": "search"
+    },
+    {
+      "animeId": "jjk",
+      "animeName": "Jujutsu Kaisen",
+      "name": "Hiromi Higuruma",
+      "anilist": 248818,
+      "resolvedName": "Hiromi Higuruma",
+      "image": "https://s4.anilist.co/file/anilistcdn/character/large/b248818-G9R6TqqElpvG.png",
+      "hasImage": true,
+      "source": "search"
+    },
+    {
+      "animeId": "jjk",
+      "animeName": "Jujutsu Kaisen",
+      "name": "Hakari Kinji",
+      "anilist": 197584,
+      "resolvedName": "Kinji Hakari",
+      "image": "https://s4.anilist.co/file/anilistcdn/character/large/b197584-fK7Jc6DLfx7e.jpg",
+      "hasImage": true,
+      "source": "search"
+    },
+    {
+      "animeId": "jjk",
+      "animeName": "Jujutsu Kaisen",
+      "name": "Yuki Tsukumo",
+      "anilist": 196502,
+      "resolvedName": "Yuki Tsukumo",
+      "image": "https://s4.anilist.co/file/anilistcdn/character/large/b196502-aBvtPFr9lGm2.png",
+      "hasImage": true,
+      "source": "search"
+    },
+    {
+      "animeId": "jjk",
+      "animeName": "Jujutsu Kaisen",
+      "name": "Fumihiko Takaba",
+      "anilist": 280467,
+      "resolvedName": "Fumihiko Takaba",
+      "image": "https://s4.anilist.co/file/anilistcdn/character/large/b280467-w8N3PAfEJmnc.png",
+      "hasImage": true,
+      "source": "search"
+    },
+    {
+      "animeId": "jjk",
+      "animeName": "Jujutsu Kaisen",
+      "name": "Kusakabe",
+      "anilist": 120462,
+      "resolvedName": "Shinra Kusakabe",
+      "image": "https://s4.anilist.co/file/anilistcdn/character/large/n120462-oSWdz2MhkbDE.png",
+      "hasImage": true,
+      "source": "search"
+    },
+    {
+      "animeId": "jjk",
+      "animeName": "Jujutsu Kaisen",
+      "name": "Uro Takako",
+      "anilist": 283136,
+      "resolvedName": "Takako Uro",
+      "image": "https://s4.anilist.co/file/anilistcdn/character/large/b283136-NvWh6wRYmFnn.jpg",
+      "hasImage": true,
+      "source": "search"
+    },
+    {
+      "animeId": "jjk",
+      "animeName": "Jujutsu Kaisen",
+      "name": "Ryu Ishigori",
+      "anilist": 280468,
+      "resolvedName": "Ryu Ishigori",
+      "image": "https://s4.anilist.co/file/anilistcdn/character/large/b280468-FKEIVFFwPmJ7.png",
+      "hasImage": true,
+      "source": "search"
+    },
+    {
+      "animeId": "jjk",
+      "animeName": "Jujutsu Kaisen",
+      "name": "Kenjaku",
+      "anilist": 289584,
+      "resolvedName": "Kenjaku",
+      "image": "https://s4.anilist.co/file/anilistcdn/character/large/b289584-KndGudJZm5Ik.jpg",
+      "hasImage": true,
+      "source": "search"
+    },
+    {
+      "animeId": "jjk",
+      "animeName": "Jujutsu Kaisen",
+      "name": "Uraume",
+      "anilist": 210830,
+      "resolvedName": "Uraume",
+      "image": "https://s4.anilist.co/file/anilistcdn/character/large/b210830-rJ8LVEvLUqjE.jpg",
+      "hasImage": true,
+      "source": "search"
+    },
+    {
+      "animeId": "jjk",
+      "animeName": "Jujutsu Kaisen",
+      "name": "Kirara Hoshi",
+      "anilist": 243828,
+      "resolvedName": "Kirara Hoshi",
+      "image": "https://s4.anilist.co/file/anilistcdn/character/large/b243828-YGzd637cKhDp.png",
+      "hasImage": true,
+      "source": "search"
+    },
+    {
+      "animeId": "jjk",
+      "animeName": "Jujutsu Kaisen",
+      "name": "Rika Orimoto",
+      "anilist": 208533,
+      "resolvedName": "Rika Orimoto",
+      "image": "https://s4.anilist.co/file/anilistcdn/character/large/b208533-EXiA1hR5l585.jpg",
+      "hasImage": true,
+      "source": "search"
+    },
+    {
+      "animeId": "jjk",
+      "animeName": "Jujutsu Kaisen",
+      "name": "Tsumiki Fushiguro",
+      "anilist": 193479,
+      "resolvedName": "Tsumiki Fushiguro",
+      "image": "https://s4.anilist.co/file/anilistcdn/character/large/b193479-aGNRmbU5jNwR.png",
+      "hasImage": true,
+      "source": "search"
+    },
+    {
+      "animeId": "jjk",
+      "animeName": "Jujutsu Kaisen",
+      "name": "Gakuganji",
+      "anilist": 157867,
+      "resolvedName": "Yoshinobu Gakuganji",
+      "image": "https://s4.anilist.co/file/anilistcdn/character/large/b157867-dHdd8ZECuzHx.png",
+      "hasImage": true,
+      "source": "search"
+    },
+    {
+      "animeId": "jjk",
+      "animeName": "Jujutsu Kaisen",
+      "name": "Ijichi Akari",
+      "anilist": 209403,
+      "resolvedName": null,
+      "image": null,
+      "hasImage": false,
+      "source": "none"
+    },
+    {
+      "animeId": "jjk",
+      "animeName": "Jujutsu Kaisen",
+      "name": "Hana Kurusu",
+      "anilist": 220724,
+      "resolvedName": "Hana Kurusu",
+      "image": "https://s4.anilist.co/file/anilistcdn/character/large/b220724-PiTAVLDqbWQn.png",
+      "hasImage": true,
+      "source": "search"
+    },
+    {
+      "animeId": "jjk",
+      "animeName": "Jujutsu Kaisen",
+      "name": "Shiu Kong",
+      "anilist": 303313,
+      "resolvedName": "Shiu Kong",
+      "image": "https://s4.anilist.co/file/anilistcdn/character/large/b303313-5ELI3hDVjNwP.jpg",
+      "hasImage": true,
+      "source": "search"
+    },
+    {
+      "animeId": "jjk",
+      "animeName": "Jujutsu Kaisen",
+      "name": "Atsuya Kusakabe",
+      "anilist": 205234,
+      "resolvedName": "Atsuya Kusakabe",
+      "image": "https://s4.anilist.co/file/anilistcdn/character/large/b205234-nrush17kFWaE.jpg",
+      "hasImage": true,
+      "source": "search"
+    },
+    {
+      "animeId": "jjk",
+      "animeName": "Jujutsu Kaisen",
+      "name": "Ogami",
+      "anilist": 65259,
+      "resolvedName": "Tooka Yatogami",
+      "image": "https://s4.anilist.co/file/anilistcdn/character/large/b65259-rKR5JNNWyRC0.jpg",
+      "hasImage": true,
+      "source": "search"
+    },
+    {
+      "animeId": "jjk",
+      "animeName": "Jujutsu Kaisen",
+      "name": "Reggie Star",
+      "anilist": 306194,
+      "resolvedName": "Reggie Star",
+      "image": "https://s4.anilist.co/file/anilistcdn/character/large/b306194-Ndnj1bqwzVxD.png",
+      "hasImage": true,
+      "source": "search"
+    },
+    {
+      "animeId": "jjk",
+      "animeName": "Jujutsu Kaisen",
+      "name": "Iori Hazenoki",
+      "anilist": 306243,
+      "resolvedName": "Iori Hazenoki",
+      "image": "https://s4.anilist.co/file/anilistcdn/character/large/b306243-dasZXinQ1gBx.png",
+      "hasImage": true,
+      "source": "search"
+    },
+    {
+      "animeId": "jjk",
+      "animeName": "Jujutsu Kaisen",
+      "name": "Mimiko Hasaba",
+      "anilist": 228986,
+      "resolvedName": "Mimiko Hasaba",
+      "image": "https://s4.anilist.co/file/anilistcdn/character/large/b228986-TXJuABOhrxRA.jpg",
+      "hasImage": true,
+      "source": "search"
+    },
+    {
+      "animeId": "jjk",
+      "animeName": "Jujutsu Kaisen",
+      "name": "Nanako Hasaba",
+      "anilist": 228987,
+      "resolvedName": "Nanako Hasaba",
+      "image": "https://s4.anilist.co/file/anilistcdn/character/large/b228987-Su63YTP33b6W.jpg",
+      "hasImage": true,
+      "source": "search"
+    },
+    {
+      "animeId": "jjk",
+      "animeName": "Jujutsu Kaisen",
+      "name": "Ui Ui",
+      "anilist": 209409,
+      "resolvedName": null,
+      "image": null,
+      "hasImage": false,
+      "source": "none"
+    },
+    {
+      "animeId": "jjk",
+      "animeName": "Jujutsu Kaisen",
+      "name": "Okkotsu (0)",
+      "anilist": 129571,
+      "resolvedName": "Yuuta Okkotsu",
+      "image": "https://s4.anilist.co/file/anilistcdn/character/large/b129571-GHJk7gviHOOw.jpg",
+      "hasImage": true,
+      "source": "search"
+    },
+    {
+      "animeId": "jjk",
+      "animeName": "Jujutsu Kaisen",
+      "name": "Kokichi Muta",
+      "anilist": 163923,
+      "resolvedName": null,
+      "image": null,
+      "hasImage": false,
+      "source": "none"
+    },
+    {
+      "animeId": "jjk",
+      "animeName": "Jujutsu Kaisen",
+      "name": "Arata Nitta",
+      "anilist": 320325,
+      "resolvedName": "Arata Nitta",
+      "image": "https://s4.anilist.co/file/anilistcdn/character/large/b320325-uGhurK5IhUeO.png",
+      "hasImage": true,
+      "source": "search"
+    },
+    {
+      "animeId": "jjk",
+      "animeName": "Jujutsu Kaisen",
+      "name": "Niji Ebina",
+      "anilist": 306250,
+      "resolvedName": "Niji Ebina",
+      "image": "https://s4.anilist.co/file/anilistcdn/character/large/b306250-JBBTTynIbY7r.png",
+      "hasImage": true,
+      "source": "search"
+    },
+    {
+      "animeId": "jjk",
+      "animeName": "Jujutsu Kaisen",
+      "name": "Takuma Ino",
+      "anilist": 157865,
+      "resolvedName": "Takuma Ino",
+      "image": "https://s4.anilist.co/file/anilistcdn/character/large/b157865-X9ENX9OzWevS.jpg",
+      "hasImage": true,
+      "source": "search"
+    },
+    {
+      "animeId": "jjk",
+      "animeName": "Jujutsu Kaisen",
+      "name": "Nobara (Suspended)",
+      "anilist": 133700,
+      "resolvedName": "Nobara Kugisaki",
+      "image": "https://s4.anilist.co/file/anilistcdn/character/large/b133700-f6sOO3TcgLV6.png",
+      "hasImage": true,
+      "source": "search"
+    },
+    {
+      "animeId": "mha",
+      "animeName": "My Hero Academia",
+      "name": "Izuku Midoriya",
+      "anilist": 89028,
+      "resolvedName": "Izuku Midoriya",
+      "image": "https://s4.anilist.co/file/anilistcdn/character/large/b89028-8w1I9o1ISHMg.png",
+      "hasImage": true,
+      "source": "search"
+    },
+    {
+      "animeId": "mha",
+      "animeName": "My Hero Academia",
+      "name": "Katsuki Bakugo",
+      "anilist": 88892,
+      "resolvedName": "Katsuki Bakugou",
+      "image": "https://s4.anilist.co/file/anilistcdn/character/large/b88892-bdOha3lNcaN6.png",
+      "hasImage": true,
+      "source": "search"
+    },
+    {
+      "animeId": "mha",
+      "animeName": "My Hero Academia",
+      "name": "Shoto Todoroki",
+      "anilist": 93883,
+      "resolvedName": null,
+      "image": null,
+      "hasImage": false,
+      "source": "none"
+    },
+    {
+      "animeId": "mha",
+      "animeName": "My Hero Academia",
+      "name": "All Might",
+      "anilist": 93884,
+      "resolvedName": null,
+      "image": null,
+      "hasImage": false,
+      "source": "none"
+    },
+    {
+      "animeId": "mha",
+      "animeName": "My Hero Academia",
+      "name": "Ochaco Uraraka",
+      "anilist": 93885,
+      "resolvedName": null,
+      "image": null,
+      "hasImage": false,
+      "source": "none"
+    },
+    {
+      "animeId": "mha",
+      "animeName": "My Hero Academia",
+      "name": "Tenya Iida",
+      "anilist": 89222,
+      "resolvedName": "Tenya Iida",
+      "image": "https://s4.anilist.co/file/anilistcdn/character/large/b89222-TL8MQM3wJgEB.png",
+      "hasImage": true,
+      "source": "search"
+    },
+    {
+      "animeId": "mha",
+      "animeName": "My Hero Academia",
+      "name": "Himiko Toga",
+      "anilist": 125619,
+      "resolvedName": "Himiko Toga",
+      "image": "https://s4.anilist.co/file/anilistcdn/character/large/b125619-iQxQoGHJvjRJ.png",
+      "hasImage": true,
+      "source": "search"
+    },
+    {
+      "animeId": "mha",
+      "animeName": "My Hero Academia",
+      "name": "Eijiro Kirishima",
+      "anilist": 93888,
+      "resolvedName": null,
+      "image": null,
+      "hasImage": false,
+      "source": "none"
+    },
+    {
+      "animeId": "mha",
+      "animeName": "My Hero Academia",
+      "name": "Momo Yaoyorozu",
+      "anilist": 89241,
+      "resolvedName": "Momo Yaoyorozu",
+      "image": "https://s4.anilist.co/file/anilistcdn/character/large/b89241-Q8KzAfX4Qe2y.png",
+      "hasImage": true,
+      "source": "search"
+    },
+    {
+      "animeId": "mha",
+      "animeName": "My Hero Academia",
+      "name": "Denki Kaminari",
+      "anilist": 89249,
+      "resolvedName": "Denki Kaminari",
+      "image": "https://s4.anilist.co/file/anilistcdn/character/large/b89249-Ygc30RlYoFta.png",
+      "hasImage": true,
+      "source": "search"
+    },
+    {
+      "animeId": "mha",
+      "animeName": "My Hero Academia",
+      "name": "Tomura Shigaraki",
+      "anilist": 89226,
+      "resolvedName": "Tomura Shigaraki",
+      "image": "https://s4.anilist.co/file/anilistcdn/character/large/b89226-C1ZKm2U3bR4T.png",
+      "hasImage": true,
+      "source": "search"
+    },
+    {
+      "animeId": "mha",
+      "animeName": "My Hero Academia",
+      "name": "Endeavor",
+      "anilist": 93892,
+      "resolvedName": null,
+      "image": null,
+      "hasImage": false,
+      "source": "none"
+    },
+    {
+      "animeId": "mha",
+      "animeName": "My Hero Academia",
+      "name": "Hawks",
+      "anilist": 118269,
+      "resolvedName": null,
+      "image": null,
+      "hasImage": false,
+      "source": "none"
+    },
+    {
+      "animeId": "mha",
+      "animeName": "My Hero Academia",
+      "name": "Shota Aizawa",
+      "anilist": 93893,
+      "resolvedName": null,
+      "image": null,
+      "hasImage": false,
+      "source": "none"
+    },
+    {
+      "animeId": "mha",
+      "animeName": "My Hero Academia",
+      "name": "Hizashi Yamada",
+      "anilist": 127425,
+      "resolvedName": "Hizashi Yamada",
+      "image": "https://s4.anilist.co/file/anilistcdn/character/large/b127425-POL7I9NC4emH.png",
+      "hasImage": true,
+      "source": "search"
+    },
+    {
+      "animeId": "mha",
+      "animeName": "My Hero Academia",
+      "name": "Dabi",
+      "anilist": 126378,
+      "resolvedName": "Dabi",
+      "image": "https://s4.anilist.co/file/anilistcdn/character/large/b126378-RFSljq5koy5U.png",
+      "hasImage": true,
+      "source": "search"
+    },
+    {
+      "animeId": "mha",
+      "animeName": "My Hero Academia",
+      "name": "Twice",
+      "anilist": 93897,
+      "resolvedName": null,
+      "image": null,
+      "hasImage": false,
+      "source": "none"
+    },
+    {
+      "animeId": "mha",
+      "animeName": "My Hero Academia",
+      "name": "Spinner",
+      "anilist": 93898,
+      "resolvedName": null,
+      "image": null,
+      "hasImage": false,
+      "source": "none"
+    },
+    {
+      "animeId": "mha",
+      "animeName": "My Hero Academia",
+      "name": "Mr. Compress",
+      "anilist": 93899,
+      "resolvedName": null,
+      "image": null,
+      "hasImage": false,
+      "source": "none"
+    },
+    {
+      "animeId": "mha",
+      "animeName": "My Hero Academia",
+      "name": "Gang Orca",
+      "anilist": 93902,
+      "resolvedName": null,
+      "image": null,
+      "hasImage": false,
+      "source": "none"
+    },
+    {
+      "animeId": "mha",
+      "animeName": "My Hero Academia",
+      "name": "Midnight",
+      "anilist": 93903,
+      "resolvedName": null,
+      "image": null,
+      "hasImage": false,
+      "source": "none"
+    },
+    {
+      "animeId": "mha",
+      "animeName": "My Hero Academia",
+      "name": "Fat Gum",
+      "anilist": 93904,
+      "resolvedName": null,
+      "image": null,
+      "hasImage": false,
+      "source": "none"
+    },
+    {
+      "animeId": "mha",
+      "animeName": "My Hero Academia",
+      "name": "Mirio Togata",
+      "anilist": 123527,
+      "resolvedName": "Mirio Togata",
+      "image": "https://s4.anilist.co/file/anilistcdn/character/large/b123527-rz0OotcLY0E4.png",
+      "hasImage": true,
+      "source": "search"
+    },
+    {
+      "animeId": "mha",
+      "animeName": "My Hero Academia",
+      "name": "Tamaki Amajiki",
+      "anilist": 125934,
+      "resolvedName": "Tamaki Amajiki",
+      "image": "https://s4.anilist.co/file/anilistcdn/character/large/b125934-luh5LqQ6NnJF.png",
+      "hasImage": true,
+      "source": "search"
+    },
+    {
+      "animeId": "mha",
+      "animeName": "My Hero Academia",
+      "name": "Nejire Hado",
+      "anilist": 126843,
+      "resolvedName": "Nejire Hadou",
+      "image": "https://s4.anilist.co/file/anilistcdn/character/large/b126843-Er6fBr1zk5vo.png",
+      "hasImage": true,
+      "source": "search"
+    },
+    {
+      "animeId": "mha",
+      "animeName": "My Hero Academia",
+      "name": "Eri",
+      "anilist": 126093,
+      "resolvedName": "Eri",
+      "image": "https://s4.anilist.co/file/anilistcdn/character/large/126093-1SuOurVJnRla.jpg",
+      "hasImage": true,
+      "source": "search"
+    },
+    {
+      "animeId": "mha",
+      "animeName": "My Hero Academia",
+      "name": "Overhaul",
+      "anilist": 118274,
+      "resolvedName": null,
+      "image": null,
+      "hasImage": false,
+      "source": "none"
+    },
+    {
+      "animeId": "mha",
+      "animeName": "My Hero Academia",
+      "name": "Re-Destro",
+      "anilist": 131697,
+      "resolvedName": null,
+      "image": null,
+      "hasImage": false,
+      "source": "none"
+    },
+    {
+      "animeId": "mha",
+      "animeName": "My Hero Academia",
+      "name": "Mirko",
+      "anilist": 131698,
+      "resolvedName": null,
+      "image": null,
+      "hasImage": false,
+      "source": "none"
+    },
+    {
+      "animeId": "mha",
+      "animeName": "My Hero Academia",
+      "name": "Fumikage Tokoyami",
+      "anilist": 89898,
+      "resolvedName": "Fumikage Tokoyami",
+      "image": "https://s4.anilist.co/file/anilistcdn/character/large/b89898-yAYDmPQPSOTV.png",
+      "hasImage": true,
+      "source": "search"
+    },
+    {
+      "animeId": "mha",
+      "animeName": "My Hero Academia",
+      "name": "Kyoka Jiro",
+      "anilist": 93906,
+      "resolvedName": null,
+      "image": null,
+      "hasImage": false,
+      "source": "none"
+    },
+    {
+      "animeId": "mha",
+      "animeName": "My Hero Academia",
+      "name": "Tsuyu Asui",
+      "anilist": 89223,
+      "resolvedName": "Tsuyu Asui",
+      "image": "https://s4.anilist.co/file/anilistcdn/character/large/b89223-5762vburxnlz.png",
+      "hasImage": true,
+      "source": "search"
+    },
+    {
+      "animeId": "mha",
+      "animeName": "My Hero Academia",
+      "name": "Mezo Shoji",
+      "anilist": 93908,
+      "resolvedName": null,
+      "image": null,
+      "hasImage": false,
+      "source": "none"
+    },
+    {
+      "animeId": "mha",
+      "animeName": "My Hero Academia",
+      "name": "Mashirao Ojiro",
+      "anilist": 89896,
+      "resolvedName": "Mashirao Ojiro",
+      "image": "https://s4.anilist.co/file/anilistcdn/character/large/b89896-3QzT5nSEPjcr.png",
+      "hasImage": true,
+      "source": "search"
+    },
+    {
+      "animeId": "mha",
+      "animeName": "My Hero Academia",
+      "name": "Minoru Mineta",
+      "anilist": 89244,
+      "resolvedName": "Minoru Mineta",
+      "image": "https://s4.anilist.co/file/anilistcdn/character/large/b89244-VVwK9loDHeTV.png",
+      "hasImage": true,
+      "source": "search"
+    },
+    {
+      "animeId": "mha",
+      "animeName": "My Hero Academia",
+      "name": "Yuga Aoyama",
+      "anilist": 93911,
+      "resolvedName": null,
+      "image": null,
+      "hasImage": false,
+      "source": "none"
+    },
+    {
+      "animeId": "mha",
+      "animeName": "My Hero Academia",
+      "name": "Hanta Sero",
+      "anilist": 89895,
+      "resolvedName": "Hanta Sero",
+      "image": "https://s4.anilist.co/file/anilistcdn/character/large/b89895-DpFrgTelc9Qx.png",
+      "hasImage": true,
+      "source": "search"
+    },
+    {
+      "animeId": "mha",
+      "animeName": "My Hero Academia",
+      "name": "Rikido Sato",
+      "anilist": 93913,
+      "resolvedName": null,
+      "image": null,
+      "hasImage": false,
+      "source": "none"
+    },
+    {
+      "animeId": "mha",
+      "animeName": "My Hero Academia",
+      "name": "Koji Koda",
+      "anilist": 93914,
+      "resolvedName": null,
+      "image": null,
+      "hasImage": false,
+      "source": "none"
+    },
+    {
+      "animeId": "mha",
+      "animeName": "My Hero Academia",
+      "name": "Tooru Hagakure",
+      "anilist": 89900,
+      "resolvedName": "Tooru Hagakure",
+      "image": "https://s4.anilist.co/file/anilistcdn/character/large/b89900-QOH8tvJgtFVj.png",
+      "hasImage": true,
+      "source": "search"
+    },
+    {
+      "animeId": "mha",
+      "animeName": "My Hero Academia",
+      "name": "Hitoshi Shinso",
+      "anilist": 89242,
+      "resolvedName": "Hitoshi Shinsou",
+      "image": "https://s4.anilist.co/file/anilistcdn/character/large/b89242-0m30Li19ZxXR.png",
+      "hasImage": true,
+      "source": "search"
+    },
+    {
+      "animeId": "mha",
+      "animeName": "My Hero Academia",
+      "name": "Stain",
+      "anilist": 93917,
+      "resolvedName": null,
+      "image": null,
+      "hasImage": false,
+      "source": "none"
+    },
+    {
+      "animeId": "mha",
+      "animeName": "My Hero Academia",
+      "name": "All For One",
+      "anilist": 125956,
+      "resolvedName": "All For One",
+      "image": "https://s4.anilist.co/file/anilistcdn/character/large/125956-jzhb8Z4peLb8.jpg",
+      "hasImage": true,
+      "source": "search"
+    },
+    {
+      "animeId": "mha",
+      "animeName": "My Hero Academia",
+      "name": "Gran Torino",
+      "anilist": 93919,
+      "resolvedName": null,
+      "image": null,
+      "hasImage": false,
+      "source": "none"
+    },
+    {
+      "animeId": "mha",
+      "animeName": "My Hero Academia",
+      "name": "Recovery Girl",
+      "anilist": 93921,
+      "resolvedName": null,
+      "image": null,
+      "hasImage": false,
+      "source": "none"
+    }
+  ]
+}

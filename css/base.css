@@ -1,0 +1,17 @@
+/* base.css — Variables, reset, animations */
+:root {
+  --bg:#07070f; --surface:#0d0d1b; --card:#10101e;
+  --border:#1a1a2c; --text:#eeeeff; --muted:#52526b;
+  --accent:#ff3557; --gold:#ffaa33; --radius:13px;
+  --font-d:'Bebas Neue',sans-serif; --font-b:'Outfit',sans-serif;
+}
+*,*::before,*::after { box-sizing:border-box; margin:0; padding:0; }
+html,body { width:100%; min-height:100vh; background:var(--bg); color:var(--text); font-family:var(--font-b); overflow-x:hidden; }
+.screen { display:none; }
+.screen.active { display:block; }
+#home.active { display:flex; flex-direction:column; align-items:center; }
+@keyframes cin { from{opacity:0;transform:translateY(12px)} to{opacity:1;transform:none} }
+::-webkit-scrollbar{width:5px} ::-webkit-scrollbar-track{background:var(--bg)} ::-webkit-scrollbar-thumb{background:var(--border);border-radius:3px}
+.loading-screen { grid-column:1/-1; text-align:center; padding:70px 20px; }
+.load-bar-wrap { width:260px; height:4px; background:var(--border); border-radius:2px; margin:14px auto 0; overflow:hidden; }
+.load-bar { height:100%; background:var(--accent); border-radius:2px; width:0%; transition:width .3s; }

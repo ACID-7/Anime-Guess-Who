@@ -1,0 +1,21 @@
+/* card.css — Flip card */
+.fc { perspective:1000px; cursor:pointer; aspect-ratio:2/3; opacity:0; animation:cin .3s ease forwards; }
+.fci { position:relative; width:100%; height:100%; transform-style:preserve-3d; transition:transform .46s cubic-bezier(.4,0,.2,1); border-radius:var(--radius); }
+.fc.flipped .fci { transform:rotateY(180deg); }
+.ff,.fb { position:absolute; inset:0; backface-visibility:hidden; border-radius:var(--radius); overflow:hidden; }
+.ff { background:var(--card); border:1.5px solid var(--border); display:flex; flex-direction:column; transition:border-color .2s,box-shadow .2s; }
+.fc:hover:not(.flipped) .ff { border-color:var(--hc,#ffaa33); box-shadow:0 0 16px var(--hg,rgba(255,170,51,.25)); }
+.imgw { flex:1; position:relative; overflow:hidden; background:#080814; min-height:0; }
+.cimg { width:100%; height:100%; object-fit:cover; object-position:top center; display:block; transition:transform .3s; }
+.fc:hover:not(.flipped) .cimg { transform:scale(1.07); }
+.cfb { display:none; width:100%; height:100%; position:absolute; inset:0; align-items:center; justify-content:center; flex-direction:column; gap:5px; }
+.cfb-nm { font-size:9.5px; color:var(--muted); text-align:center; padding:0 5px; line-height:1.3; }
+.ov { position:absolute; bottom:0; left:0; right:0; height:60%; background:linear-gradient(transparent,rgba(7,7,15,.97)); }
+.ci { position:absolute; bottom:0; left:0; right:0; padding:6px 7px 7px; }
+.cn { font-weight:700; font-size:10.5px; line-height:1.25; margin-bottom:3px; text-shadow:0 1px 5px rgba(0,0,0,.95); }
+.cb { font-size:8px; font-weight:700; letter-spacing:.3px; padding:1px 5px; border-radius:5px; display:inline-block; }
+.fb { transform:rotateY(180deg); background:var(--card); border:1.5px solid rgba(255,53,87,.2); display:flex; flex-direction:column; align-items:center; justify-content:center; gap:6px; padding:8px; }
+.bpat { position:absolute; inset:0; background:repeating-linear-gradient(45deg,transparent,transparent 8px,rgba(255,53,87,.03) 8px,rgba(255,53,87,.03) 9px); }
+.bx { font-size:32px; color:var(--accent); opacity:.35; line-height:1; position:relative; z-index:1; }
+.bl { font-size:8.5px; color:var(--muted); letter-spacing:2px; text-transform:uppercase; position:relative; z-index:1; }
+.bn { font-size:8.5px; color:var(--muted); text-align:center; position:relative; z-index:1; line-height:1.3; }

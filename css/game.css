@@ -1,0 +1,35 @@
+/* game.css — Sticky header, board, grid */
+#game { min-height:100vh; }
+.ghead { background:var(--surface); border-bottom:1px solid var(--border); padding:10px 14px; display:flex; align-items:center; justify-content:space-between; gap:8px; flex-wrap:wrap; position:sticky; top:0; z-index:100; }
+.ghl { display:flex; align-items:center; gap:9px; }
+.gactions { display:flex; gap:8px; }
+.back,.rbtn { background:none; border:1px solid var(--border); color:var(--muted); border-radius:7px; padding:5px 11px; font-family:var(--font-b); font-size:12px; cursor:pointer; transition:all .2s; }
+.back:hover { border-color:var(--accent); color:var(--accent); }
+.rbtn:hover { border-color:#00e5cc; color:#00e5cc; }
+.gtitle { font-family:var(--font-d); font-size:19px; letter-spacing:3px; }
+.stats { display:flex; gap:6px; }
+.pill { font-size:11px; padding:4px 10px; border-radius:16px; border:1px solid var(--border); color:var(--muted); background:var(--card); font-weight:600; }
+.pill b { color:var(--text); }
+.board { padding:16px 12px 60px; max-width:1800px; margin:0 auto; }
+.tip { background:linear-gradient(135deg,rgba(255,53,87,.06),rgba(255,170,51,.03)); border:1px solid rgba(255,53,87,.17); border-radius:10px; padding:10px 13px; display:flex; align-items:center; gap:9px; margin-bottom:16px; flex-wrap:wrap; }
+.tip-t { font-size:12.5px; color:var(--muted); line-height:1.5; }
+.tip-t strong { color:var(--accent); }
+.tip-hint { font-size:11px; color:var(--muted); opacity:.6; margin-top:2px; display:block; }
+.dataset-status { margin:0 0 16px; padding:10px 13px; border-radius:10px; border:1px solid var(--border); background:var(--card); color:var(--muted); font-size:12px; line-height:1.5; }
+.cgrid { display:grid; grid-template-columns:repeat(auto-fill,minmax(115px,1fr)); gap:9px; }
+@media(max-width:480px) { .cgrid { grid-template-columns:repeat(3,1fr); gap:7px; } }
+
+/* upload modal */
+#upload-modal { position:fixed; inset:0; z-index:999; display:flex; align-items:center; justify-content:center; }
+.modal-bg { position:absolute; inset:0; background:rgba(0,0,0,.75); backdrop-filter:blur(4px); }
+.modal-box { position:relative; z-index:1; background:var(--surface); border:1px solid var(--border); border-radius:16px; padding:24px; width:min(380px,92vw); box-shadow:0 20px 60px rgba(0,0,0,.5); }
+.modal-title { font-family:var(--font-d); font-size:20px; letter-spacing:2px; color:var(--accent); margin-bottom:8px; }
+.modal-sub { font-size:13px; color:var(--muted); margin-bottom:14px; line-height:1.5; }
+.modal-input { width:100%; background:var(--card); border:1px solid var(--border); border-radius:8px; padding:9px 12px; color:var(--text); font-family:var(--font-b); font-size:13px; margin-bottom:10px; outline:none; }
+.modal-input:focus { border-color:var(--accent); }
+.modal-or { text-align:center; font-size:12px; color:var(--muted); margin-bottom:10px; }
+.modal-file { width:100%; color:var(--muted); font-size:12px; margin-bottom:16px; }
+.modal-btns { display:flex; gap:8px; justify-content:flex-end; }
+.modal-btn { border-radius:8px; padding:7px 16px; font-family:var(--font-b); font-size:13px; cursor:pointer; border:none; }
+.modal-btn.cancel { background:var(--card); border:1px solid var(--border); color:var(--muted); }
+.modal-btn.confirm { background:var(--accent); color:#fff; font-weight:600; }
