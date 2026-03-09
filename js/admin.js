@@ -145,8 +145,7 @@ function exportDataset() {
 
 async function init() {
   state.dataset = await loadJson('images/character-image-dataset.json');
-  const missing = await loadJson('images/missing-images.json');
-  state.missing = missing.items || [];
+  state.missing = state.dataset.items || [];
   updateStats();
   renderAnimeFilter();
   renderList();
