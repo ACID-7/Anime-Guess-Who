@@ -108,6 +108,113 @@ function updateLoadBar(pct, label) {
   if (text && label) text.textContent = label;
 }
 
+function renderBoardTools(anime) {
+  renderSecretCardPanel(anime);
+  renderBoardOptions(anime);
+}
+
+function renderSecretCardPanel(anime) {
+  const panel = document.getElementById('secret-card-panel');
+  if (!panel) return;
+
+  const selected = typeof getSelectedCard === 'function' ? getSelectedCard(anime) : null;
+  const preview = selected
+    ? `
+      <div class="secret-card-preview">
+        <div class="fc secret-preview-card secret-selected">
+          ${buildCardHTML(selected, anime, getCachedImage(selected))}
+        </div>
+      </div>`
+    : `
+      <div class="secret-placeholder">
+        <div class="secret-kicker">${window.GameState?.pickMode ? 'Pick Mode Active' : 'Secret Card'}</div>
+        <div class="secret-name">${window.GameState?.pickMode ? 'Click any card to select it' : 'No card selected yet'}</div>
+        <div class="secret-meta">Drag a card here or click Choose Card.</div>
+      </div>`;
+
+  panel.className = `secret-card-panel${selected ? ' has-card' : ''}${window.GameState?.pickMode ? ' is-armed' : ''}`;
+  panel.innerHTML = `
+    <div class="secret-card-dropzone${selected ? ' has-card' : ''}">
+      ${preview}
+    </div>
+    <div class="secret-card-actions">
+      <button type="button" class="rbtn secret-btn choose">${selected ? 'Change Card' : 'Choose Card'}</button>
+      <button type="button" class="rbtn secret-btn clear"${selected ? '' : ' disabled'}>Clear</button>
+    </div>`;
+
+  const dropzone = panel.querySelector('.secret-card-dropzone');
+  if (dropzone) {
+    dropzone.addEventListener('dragover', event => {
+      event.preventDefault();
+      panel.classList.add('is-drop-target');
+    });
+    dropzone.addEventListener('dragleave', () => {
+      panel.classList.remove('is-drop-target');
+    });
+    dropzone.addEventListener('drop', event => {
+      event.preventDefault();
+      panel.classList.remove('is-drop-target');
+      const rawIndex = event.dataTransfer?.getData('text/plain');
+      const index = Number(rawIndex);
+      if (!Number.isInteger(index)) return;
+      const char = anime?.chars?.[index];
+      if (char && typeof setSelectedCard === 'function') {
+        setSelectedCard(char, anime);
+      }
+    });
+  }
+
+  const chooseBtn = panel.querySelector('.choose');
+  if (chooseBtn) {
+    chooseBtn.addEventListener('click', () => {
+      if (typeof beginCardPickMode === 'function') {
+        beginCardPickMode();
+      }
+    });
+  }
+
+  const clearBtn = panel.querySelector('.clear');
+  if (clearBtn) {
+    clearBtn.addEventListener('click', () => {
+      if (typeof clearSelectedCard === 'function') {
+        clearSelectedCard();
+      }
+    });
+  }
+}
+
+function renderBoardOptions(anime) {
+  const wrap = document.getElementById('board-options');
+  if (!wrap) return;
+
+  if (anime?.id !== 'valorant') {
+    wrap.innerHTML = '';
+    wrap.style.display = 'none';
+    return;
+  }
+
+  wrap.style.display = 'flex';
+  const checked = window.GameState?.showValorantAbilities ? 'checked' : '';
+  wrap.innerHTML = `
+    <label class="option-toggle">
+      <input id="valorant-abilities-toggle" type="checkbox" ${checked} />
+      <span class="option-toggle-ui" aria-hidden="true"></span>
+      <span class="option-copy">
+        <strong>Show Abilities</strong>
+        <span>Valorant only</span>
+      </span>
+    </label>`;
+
+  const input = document.getElementById('valorant-abilities-toggle');
+  if (input) {
+    input.addEventListener('change', async event => {
+      if (!window.GameState?.currentSourceAnime || typeof startGame !== 'function') return;
+      window.GameState.showValorantAbilities = Boolean(event.target.checked);
+      await startGame(window.GameState.currentSourceAnime, { preserveSelection: true });
+    });
+  }
+}
+
 function renderCharGrid(anime, flipped, onCardClick) {
   const grid = document.getElementById('cgrid');
   grid.innerHTML = '';
@@ -115,11 +222,20 @@ function renderCharGrid(anime, flipped, onCardClick) {
   anime.chars.forEach((char, index) => {
     const imgUrl = getCachedImage(char);
     const card = document.createElement('div');
-    card.className = 'fc' + (flipped.has(index) ? ' flipped' : '');
+    const selectedKey = window.GameState?.selectedCardKey || null;
+    const cardKey = typeof getCardKey === 'function' ? getCardKey(char, anime) : null;
+    card.className = 'fc board-card' + (flipped.has(index) ? ' flipped' : '') + (selectedKey && selectedKey === cardKey ? ' secret-selected' : '');
     card.style.cssText = `animation-delay:${Math.min(index * 0.016, 1.2)}s;--hc:${anime.color};--hg:${anime.color}38`;
-    card.title = 'Click to flip. Right-click to set a custom image.';
+    card.title = window.GameState?.pickMode
+      ? 'Click to choose this as your secret card.'
+      : 'Click to flip. Drag to the secret-card dock or right-click to set a custom image.';
+    card.draggable = true;
     card.innerHTML = buildCardHTML(char, anime, imgUrl);
     card.addEventListener('click', () => onCardClick(index));
+    card.addEventListener('dragstart', event => {
+      event.dataTransfer?.setData('text/plain', String(index));
+      event.dataTransfer.effectAllowed = 'move';
+    });
     card.addEventListener('contextmenu', event => {
       event.preventDefault();
       showUploadModal(char, index, anime);
@@ -164,7 +280,7 @@ function buildCardHTML(char, anime, imgUrl) {
 }
 
 function toggleCardFlip(index) {
-  const cards = document.querySelectorAll('.fc');
+  const cards = document.querySelectorAll('#cgrid .board-card');
   if (cards[index]) cards[index].classList.toggle('flipped');
 }
 
@@ -269,7 +385,8 @@ async function applyCustomImage(cardIndex) {
   buildDataset(GameState.currentAnime);
 
   const cards = document.querySelectorAll('.fc');
-  const card = cards[cardIndex];
+  const boardCards = document.querySelectorAll('#cgrid .board-card');
+  const card = boardCards[cardIndex];
   if (card) {
     const isFlipped = card.classList.contains('flipped');
     card.innerHTML = buildCardHTML(char, GameState.currentAnime, imgUrl);

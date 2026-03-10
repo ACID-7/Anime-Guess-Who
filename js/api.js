@@ -26,6 +26,14 @@ function sleep(ms) {
 function normalizeName(value) {
   return String(value || '')
     .toLowerCase()
+    .replace(/\bhyuuga\b/g, 'hyuga')
+    .replace(/\bdanzou\b/g, 'danzo')
+    .replace(/\bchouji\b/g, 'choji')
+    .replace(/\bjuugo\b/g, 'jugo')
+    .replace(/\boonoki\b/g, 'onoki')
+    .replace(/\bmuu\b/g, 'mu')
+    .replace(/\bfuu\b/g, 'fu')
+    .replace(/\byuuhi\b/g, 'yuhi')
     .replace(/\([^)]*\)/g, ' ')
     .replace(/[^a-z0-9\s]/g, ' ')
     .replace(/\s+/g, ' ')
@@ -627,22 +635,22 @@ async function loadImages(anime, onProgress) {
     onProgress(70, 'No AniList IDs to resolve');
   }
 
-  if (anime.id === 'allchars') {
-    if (onProgress) onProgress(100, 'Aggregate board ready');
-    buildDataset(anime);
-    return;
-  }
-
   const unresolved = anime.chars
     .filter(char => !resolveImage(char))
     .map(char => ({
       ref: char,
       name: char.name,
       anilist: char.anilist || null,
-      animeName: anime.name,
+      animeName: char._sourceAnimeName || anime.name,
     }));
 
   const afterAnimeRoster = await fetchAniListByAnimeRoster(unresolved, onProgress);
+  if (anime.id === 'allchars') {
+    if (onProgress) onProgress(100, 'Aggregate board ready');
+    buildDataset(anime);
+    return;
+  }
+
   const stillUnresolved = await fetchAniListByNameBatch(afterAnimeRoster);
   let done = unresolved.length - stillUnresolved.length;
 

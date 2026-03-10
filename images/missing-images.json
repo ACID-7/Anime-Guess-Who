@@ -1,8 +1,8 @@
 {
   "version": 1,
-  "generatedAt": "2026-03-09T21:18:50.674Z",
+  "generatedAt": "2026-03-10T18:07:36.361Z",
   "sourceDataset": "images/character-image-dataset.json",
-  "totalMissing": 371,
+  "totalMissing": 328,
   "items": [
     {
       "animeId": "aot",
@@ -466,15 +466,6 @@
     {
       "animeId": "chainsaw",
       "animeName": "Chainsaw Man",
-      "name": "Beam / Shark Fiend",
-      "anilist": 166242,
-      "resolvedName": null,
-      "image": null,
-      "notes": ""
-    },
-    {
-      "animeId": "chainsaw",
-      "animeName": "Chainsaw Man",
       "name": "Bucky / Chicken Devil",
       "anilist": null,
       "resolvedName": null,
@@ -603,15 +594,6 @@
       "animeName": "Chainsaw Man",
       "name": "Justice Devil",
       "anilist": null,
-      "resolvedName": null,
-      "image": null,
-      "notes": ""
-    },
-    {
-      "animeId": "chainsaw",
-      "animeName": "Chainsaw Man",
-      "name": "Katana Man / Samurai Sword",
-      "anilist": 166247,
       "resolvedName": null,
       "image": null,
       "notes": ""
@@ -1043,15 +1025,6 @@
       "animeId": "demonslayer",
       "animeName": "Demon Slayer",
       "name": "Zohakuten",
-      "anilist": null,
-      "resolvedName": null,
-      "image": null,
-      "notes": ""
-    },
-    {
-      "animeId": "genshin",
-      "animeName": "Genshin Impact",
-      "name": "Unknown God",
       "anilist": null,
       "resolvedName": null,
       "image": null,
@@ -2023,15 +1996,6 @@
     {
       "animeId": "naruto",
       "animeName": "Naruto & Shippuden",
-      "name": "Ao",
-      "anilist": 159,
-      "resolvedName": null,
-      "image": null,
-      "notes": ""
-    },
-    {
-      "animeId": "naruto",
-      "animeName": "Naruto & Shippuden",
       "name": "Asura Otsutsuki",
       "anilist": null,
       "resolvedName": null,
@@ -2059,15 +2023,6 @@
     {
       "animeId": "naruto",
       "animeName": "Naruto & Shippuden",
-      "name": "Choji Akimichi",
-      "anilist": 104,
-      "resolvedName": null,
-      "image": null,
-      "notes": ""
-    },
-    {
-      "animeId": "naruto",
-      "animeName": "Naruto & Shippuden",
       "name": "Chomei",
       "anilist": null,
       "resolvedName": null,
@@ -2086,35 +2041,8 @@
     {
       "animeId": "naruto",
       "animeName": "Naruto & Shippuden",
-      "name": "Danzo Shimura",
-      "anilist": null,
-      "resolvedName": null,
-      "image": null,
-      "notes": ""
-    },
-    {
-      "animeId": "naruto",
-      "animeName": "Naruto & Shippuden",
       "name": "Ebizo",
       "anilist": null,
-      "resolvedName": null,
-      "image": null,
-      "notes": ""
-    },
-    {
-      "animeId": "naruto",
-      "animeName": "Naruto & Shippuden",
-      "name": "Fourth Raikage / A",
-      "anilist": 118,
-      "resolvedName": null,
-      "image": null,
-      "notes": ""
-    },
-    {
-      "animeId": "naruto",
-      "animeName": "Naruto & Shippuden",
-      "name": "Fuu",
-      "anilist": 2143,
       "resolvedName": null,
       "image": null,
       "notes": ""
@@ -2149,52 +2077,7 @@
     {
       "animeId": "naruto",
       "animeName": "Naruto & Shippuden",
-      "name": "Han",
-      "anilist": 153,
-      "resolvedName": null,
-      "image": null,
-      "notes": ""
-    },
-    {
-      "animeId": "naruto",
-      "animeName": "Naruto & Shippuden",
-      "name": "Hanabi Hyuga",
-      "anilist": 163,
-      "resolvedName": null,
-      "image": null,
-      "notes": ""
-    },
-    {
-      "animeId": "naruto",
-      "animeName": "Naruto & Shippuden",
       "name": "Hanzo",
-      "anilist": null,
-      "resolvedName": null,
-      "image": null,
-      "notes": ""
-    },
-    {
-      "animeId": "naruto",
-      "animeName": "Naruto & Shippuden",
-      "name": "Hiashi Hyuga",
-      "anilist": null,
-      "resolvedName": null,
-      "image": null,
-      "notes": ""
-    },
-    {
-      "animeId": "naruto",
-      "animeName": "Naruto & Shippuden",
-      "name": "Hinata Hyuga",
-      "anilist": 87,
-      "resolvedName": null,
-      "image": null,
-      "notes": ""
-    },
-    {
-      "animeId": "naruto",
-      "animeName": "Naruto & Shippuden",
-      "name": "Hizashi Hyuga",
       "anilist": null,
       "resolvedName": null,
       "image": null,
@@ -2221,35 +2104,8 @@
     {
       "animeId": "naruto",
       "animeName": "Naruto & Shippuden",
-      "name": "Jugo",
-      "anilist": 122,
-      "resolvedName": null,
-      "image": null,
-      "notes": ""
-    },
-    {
-      "animeId": "naruto",
-      "animeName": "Naruto & Shippuden",
       "name": "Kaguya Otsutsuki",
       "anilist": 147,
-      "resolvedName": null,
-      "image": null,
-      "notes": ""
-    },
-    {
-      "animeId": "naruto",
-      "animeName": "Naruto & Shippuden",
-      "name": "Karin",
-      "anilist": 120,
-      "resolvedName": null,
-      "image": null,
-      "notes": ""
-    },
-    {
-      "animeId": "naruto",
-      "animeName": "Naruto & Shippuden",
-      "name": "Killer B / Killer Bee",
-      "anilist": 116,
       "resolvedName": null,
       "image": null,
       "notes": ""
@@ -2266,62 +2122,8 @@
     {
       "animeId": "naruto",
       "animeName": "Naruto & Shippuden",
-      "name": "Kurenai Yuhi",
-      "anilist": 108,
-      "resolvedName": null,
-      "image": null,
-      "notes": ""
-    },
-    {
-      "animeId": "naruto",
-      "animeName": "Naruto & Shippuden",
-      "name": "Mu / Muu",
-      "anilist": 2152,
-      "resolvedName": null,
-      "image": null,
-      "notes": ""
-    },
-    {
-      "animeId": "naruto",
-      "animeName": "Naruto & Shippuden",
-      "name": "Neji Hyuga",
-      "anilist": 90,
-      "resolvedName": null,
-      "image": null,
-      "notes": ""
-    },
-    {
-      "animeId": "naruto",
-      "animeName": "Naruto & Shippuden",
-      "name": "Obito Uchiha / Tobi",
-      "anilist": 91,
-      "resolvedName": null,
-      "image": null,
-      "notes": ""
-    },
-    {
-      "animeId": "naruto",
-      "animeName": "Naruto & Shippuden",
-      "name": "Oonoki / Onoki",
-      "anilist": 176,
-      "resolvedName": null,
-      "image": null,
-      "notes": ""
-    },
-    {
-      "animeId": "naruto",
-      "animeName": "Naruto & Shippuden",
       "name": "Roshi",
       "anilist": 154,
-      "resolvedName": null,
-      "image": null,
-      "notes": ""
-    },
-    {
-      "animeId": "naruto",
-      "animeName": "Naruto & Shippuden",
-      "name": "Shima",
-      "anilist": null,
       "resolvedName": null,
       "image": null,
       "notes": ""
@@ -2383,24 +2185,6 @@
     {
       "animeId": "onepiece",
       "animeName": "One Piece",
-      "name": "Aramaki / Ryokugyu",
-      "anilist": 163876,
-      "resolvedName": null,
-      "image": null,
-      "notes": ""
-    },
-    {
-      "animeId": "onepiece",
-      "animeName": "One Piece",
-      "name": "Avalo Pizarro",
-      "anilist": null,
-      "resolvedName": null,
-      "image": null,
-      "notes": ""
-    },
-    {
-      "animeId": "onepiece",
-      "animeName": "One Piece",
       "name": "Benn Beckman",
       "anilist": null,
       "resolvedName": null,
@@ -2419,15 +2203,6 @@
     {
       "animeId": "onepiece",
       "animeName": "One Piece",
-      "name": "Borsalino / Kizaru",
-      "anilist": 70,
-      "resolvedName": null,
-      "image": null,
-      "notes": ""
-    },
-    {
-      "animeId": "onepiece",
-      "animeName": "One Piece",
       "name": "Caesar Clown",
       "anilist": 163836,
       "resolvedName": null,
@@ -2438,15 +2213,6 @@
       "animeId": "onepiece",
       "animeName": "One Piece",
       "name": "Camie",
-      "anilist": null,
-      "resolvedName": null,
-      "image": null,
-      "notes": ""
-    },
-    {
-      "animeId": "onepiece",
-      "animeName": "One Piece",
-      "name": "Catarina Devon",
       "anilist": null,
       "resolvedName": null,
       "image": null,
@@ -2473,26 +2239,8 @@
     {
       "animeId": "onepiece",
       "animeName": "One Piece",
-      "name": "Doc Q",
-      "anilist": null,
-      "resolvedName": null,
-      "image": null,
-      "notes": ""
-    },
-    {
-      "animeId": "onepiece",
-      "animeName": "One Piece",
       "name": "Donquixote Doflamingo",
       "anilist": 62,
-      "resolvedName": null,
-      "image": null,
-      "notes": ""
-    },
-    {
-      "animeId": "onepiece",
-      "animeName": "One Piece",
-      "name": "Donquixote Rosinante / Corazon",
-      "anilist": null,
       "resolvedName": null,
       "image": null,
       "notes": ""
@@ -2545,26 +2293,8 @@
     {
       "animeId": "onepiece",
       "animeName": "One Piece",
-      "name": "Imu",
-      "anilist": 163874,
-      "resolvedName": null,
-      "image": null,
-      "notes": ""
-    },
-    {
-      "animeId": "onepiece",
-      "animeName": "One Piece",
       "name": "Issho / Fujitora",
       "anilist": 163877,
-      "resolvedName": null,
-      "image": null,
-      "notes": ""
-    },
-    {
-      "animeId": "onepiece",
-      "animeName": "One Piece",
-      "name": "Jack",
-      "anilist": 163858,
       "resolvedName": null,
       "image": null,
       "notes": ""
@@ -2581,26 +2311,8 @@
     {
       "animeId": "onepiece",
       "animeName": "One Piece",
-      "name": "Jozu",
-      "anilist": null,
-      "resolvedName": null,
-      "image": null,
-      "notes": ""
-    },
-    {
-      "animeId": "onepiece",
-      "animeName": "One Piece",
       "name": "Kaido",
       "anilist": 64,
-      "resolvedName": null,
-      "image": null,
-      "notes": ""
-    },
-    {
-      "animeId": "onepiece",
-      "animeName": "One Piece",
-      "name": "Kaku",
-      "anilist": null,
       "resolvedName": null,
       "image": null,
       "notes": ""
@@ -2644,24 +2356,6 @@
     {
       "animeId": "onepiece",
       "animeName": "One Piece",
-      "name": "King",
-      "anilist": 163860,
-      "resolvedName": null,
-      "image": null,
-      "notes": ""
-    },
-    {
-      "animeId": "onepiece",
-      "animeName": "One Piece",
-      "name": "Kozuki Hiyori / Komurasaki",
-      "anilist": null,
-      "resolvedName": null,
-      "image": null,
-      "notes": ""
-    },
-    {
-      "animeId": "onepiece",
-      "animeName": "One Piece",
       "name": "Kozuki Oden",
       "anilist": null,
       "resolvedName": null,
@@ -2673,15 +2367,6 @@
       "animeName": "One Piece",
       "name": "Kuzan / Aokiji",
       "anilist": 71,
-      "resolvedName": null,
-      "image": null,
-      "notes": ""
-    },
-    {
-      "animeId": "onepiece",
-      "animeName": "One Piece",
-      "name": "Lafitte",
-      "anilist": null,
       "resolvedName": null,
       "image": null,
       "notes": ""
@@ -2727,15 +2412,6 @@
       "animeName": "One Piece",
       "name": "Monkey D. Garp",
       "anilist": 56,
-      "resolvedName": null,
-      "image": null,
-      "notes": ""
-    },
-    {
-      "animeId": "onepiece",
-      "animeName": "One Piece",
-      "name": "Queen",
-      "anilist": 163859,
       "resolvedName": null,
       "image": null,
       "notes": ""
@@ -2797,15 +2473,6 @@
     {
       "animeId": "onepiece",
       "animeName": "One Piece",
-      "name": "Shinobu",
-      "anilist": null,
-      "resolvedName": null,
-      "image": null,
-      "notes": ""
-    },
-    {
-      "animeId": "onepiece",
-      "animeName": "One Piece",
       "name": "Shiryu",
       "anilist": null,
       "resolvedName": null,
@@ -2824,24 +2491,6 @@
     {
       "animeId": "onepiece",
       "animeName": "One Piece",
-      "name": "Sugar",
-      "anilist": 163839,
-      "resolvedName": null,
-      "image": null,
-      "notes": ""
-    },
-    {
-      "animeId": "onepiece",
-      "animeName": "One Piece",
-      "name": "Tama",
-      "anilist": 163867,
-      "resolvedName": null,
-      "image": null,
-      "notes": ""
-    },
-    {
-      "animeId": "onepiece",
-      "animeName": "One Piece",
       "name": "Thousand Sunny",
       "anilist": null,
       "resolvedName": null,
@@ -2851,43 +2500,7 @@
     {
       "animeId": "onepiece",
       "animeName": "One Piece",
-      "name": "Ulti",
-      "anilist": 163821,
-      "resolvedName": null,
-      "image": null,
-      "notes": ""
-    },
-    {
-      "animeId": "onepiece",
-      "animeName": "One Piece",
-      "name": "Van Augur",
-      "anilist": null,
-      "resolvedName": null,
-      "image": null,
-      "notes": ""
-    },
-    {
-      "animeId": "onepiece",
-      "animeName": "One Piece",
-      "name": "Vista",
-      "anilist": null,
-      "resolvedName": null,
-      "image": null,
-      "notes": ""
-    },
-    {
-      "animeId": "onepiece",
-      "animeName": "One Piece",
       "name": "Wyper",
-      "anilist": null,
-      "resolvedName": null,
-      "image": null,
-      "notes": ""
-    },
-    {
-      "animeId": "onepiece",
-      "animeName": "One Piece",
-      "name": "York",
       "anilist": null,
       "resolvedName": null,
       "image": null,

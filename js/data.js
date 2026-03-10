@@ -40,10 +40,11 @@ const ANIMES = [
         "mal": 123
       },
       {
-        "name": "Yamato / Tenzo",
+        "name": "Yamato",
         "emoji": "🍥",
         "anilist": 2006,
-        "mal": 124
+        "mal": 124,
+        "displayName": "Yamato / Tenzo"
       },
       {
         "name": "Iruka Umino",
@@ -70,10 +71,11 @@ const ANIMES = [
         "mal": 165
       },
       {
-        "name": "Hinata Hyuga",
+        "name": "Hinata Hyuuga",
         "emoji": "🍥",
-        "anilist": 87,
-        "mal": 87
+        "anilist": 1555,
+        "mal": 87,
+        "displayName": "Hinata Hyuga"
       },
       {
         "name": "Kiba Inuzuka",
@@ -94,10 +96,11 @@ const ANIMES = [
         "mal": null
       },
       {
-        "name": "Kurenai Yuhi",
+        "name": "Kurenai Yuuhi",
         "emoji": "🍥",
-        "anilist": 108,
-        "mal": 108
+        "anilist": 4773,
+        "mal": 108,
+        "displayName": "Kurenai Yuhi"
       },
       {
         "name": "Shikamaru Nara",
@@ -112,10 +115,11 @@ const ANIMES = [
         "mal": 103
       },
       {
-        "name": "Choji Akimichi",
+        "name": "Chouji Akimichi",
         "emoji": "🍥",
-        "anilist": 104,
-        "mal": 104
+        "anilist": 2008,
+        "mal": 104,
+        "displayName": "Choji Akimichi"
       },
       {
         "name": "Asuma Sarutobi",
@@ -130,10 +134,11 @@ const ANIMES = [
         "mal": 89
       },
       {
-        "name": "Neji Hyuga",
+        "name": "Neji Hyuuga",
         "emoji": "🍥",
-        "anilist": 90,
-        "mal": 90
+        "anilist": 1694,
+        "mal": 90,
+        "displayName": "Neji Hyuga"
       },
       {
         "name": "Tenten",
@@ -178,10 +183,11 @@ const ANIMES = [
         "mal": null
       },
       {
-        "name": "TonTon",
+        "name": "Tonton",
         "emoji": "🍥",
         "anilist": 192707,
-        "mal": null
+        "mal": null,
+        "displayName": "TonTon"
       },
       {
         "name": "Anko Mitarashi",
@@ -196,10 +202,11 @@ const ANIMES = [
         "mal": 111
       },
       {
-        "name": "Danzo Shimura",
+        "name": "Danzou Shimura",
         "emoji": "🍥",
-        "anilist": null,
-        "mal": null
+        "anilist": 23424,
+        "mal": null,
+        "displayName": "Danzo Shimura"
       },
       {
         "name": "Homura Mitokado",
@@ -238,7 +245,7 @@ const ANIMES = [
         "mal": null
       },
       {
-        "name": "Hayate Gekko",
+        "name": "Hayate Gekkou",
         "emoji": "🍥",
         "anilist": 7738,
         "mal": null
@@ -292,7 +299,7 @@ const ANIMES = [
         "mal": null
       },
       {
-        "name": "Dan Kato",
+        "name": "Dan Katou",
         "emoji": "🍥",
         "anilist": 22876,
         "mal": 143
@@ -310,10 +317,11 @@ const ANIMES = [
         "mal": null
       },
       {
-        "name": "Obito Uchiha / Tobi",
+        "name": "Tobi",
         "emoji": "🍥",
-        "anilist": 91,
-        "mal": 91
+        "anilist": 3149,
+        "mal": 91,
+        "displayName": "Obito Uchiha / Tobi"
       },
       {
         "name": "Itachi Uchiha",
@@ -414,7 +422,7 @@ const ANIMES = [
       {
         "name": "Ao",
         "emoji": "🍥",
-        "anilist": 159,
+        "anilist": 23420,
         "mal": 159
       },
       {
@@ -490,16 +498,18 @@ const ANIMES = [
         "mal": null
       },
       {
-        "name": "Fourth Raikage / A",
+        "name": "A",
         "emoji": "🍥",
-        "anilist": 118,
-        "mal": 118
+        "anilist": 22894,
+        "mal": 118,
+        "displayName": "Third Raikage / A"
       },
       {
-        "name": "Killer B / Killer Bee",
+        "name": "Killer Bee",
         "emoji": "🍥",
-        "anilist": 116,
-        "mal": 116
+        "anilist": 18473,
+        "mal": 116,
+        "displayName": "Killer B / Killer Bee"
       },
       {
         "name": "Darui",
@@ -550,16 +560,18 @@ const ANIMES = [
         "mal": 155
       },
       {
-        "name": "Third Raikage / A",
+        "name": "Third Raikage",
         "emoji": "🍥",
         "anilist": 65133,
-        "mal": 2154
+        "mal": 2154,
+        "displayName": "Third Raikage / A"
       },
       {
-        "name": "Oonoki / Onoki",
+        "name": "Oonoki",
         "emoji": "🍥",
-        "anilist": 176,
-        "mal": 176
+        "anilist": 23475,
+        "mal": 176,
+        "displayName": "Oonoki / Onoki"
       },
       {
         "name": "Kurotsuchi",
@@ -580,15 +592,16 @@ const ANIMES = [
         "mal": 126
       },
       {
-        "name": "Mu / Muu",
+        "name": "Muu",
         "emoji": "🍥",
-        "anilist": 2152,
-        "mal": 2152
+        "anilist": 64453,
+        "mal": 2152,
+        "displayName": "Mu / Muu"
       },
       {
         "name": "Han",
         "emoji": "🍥",
-        "anilist": 153,
+        "anilist": 23223,
         "mal": 153
       },
       {
@@ -610,10 +623,11 @@ const ANIMES = [
         "mal": null
       },
       {
-        "name": "Nagato / Pain",
+        "name": "Pain",
         "emoji": "🍥",
         "anilist": 3180,
-        "mal": 92
+        "mal": 92,
+        "displayName": "Nagato / Pain"
       },
       {
         "name": "Konan",
@@ -664,15 +678,16 @@ const ANIMES = [
         "mal": null
       },
       {
-        "name": "Jugo",
+        "name": "Juugo",
         "emoji": "🍥",
-        "anilist": 122,
-        "mal": 122
+        "anilist": 3152,
+        "mal": 122,
+        "displayName": "Jugo"
       },
       {
         "name": "Karin",
         "emoji": "🍥",
-        "anilist": 120,
+        "anilist": 3151,
         "mal": 120
       },
       {
@@ -786,7 +801,7 @@ const ANIMES = [
       {
         "name": "Fuu",
         "emoji": "🍥",
-        "anilist": 2143,
+        "anilist": 23220,
         "mal": 2143
       },
       {
@@ -802,22 +817,25 @@ const ANIMES = [
         "mal": 152
       },
       {
-        "name": "Hiashi Hyuga",
+        "name": "Hiashi Hyuuga",
         "emoji": "🍥",
-        "anilist": null,
-        "mal": null
+        "anilist": 15039,
+        "mal": null,
+        "displayName": "Hiashi Hyuga"
       },
       {
-        "name": "Hizashi Hyuga",
+        "name": "Hizashi Hyuuga",
         "emoji": "🍥",
-        "anilist": null,
-        "mal": null
+        "anilist": 22880,
+        "mal": null,
+        "displayName": "Hizashi Hyuga"
       },
       {
-        "name": "Hanabi Hyuga",
+        "name": "Hanabi Hyuuga",
         "emoji": "🍥",
-        "anilist": 163,
-        "mal": 163
+        "anilist": 12563,
+        "mal": 163,
+        "displayName": "Hanabi Hyuga"
       },
       {
         "name": "Shikaku Nara",
@@ -900,7 +918,7 @@ const ANIMES = [
       {
         "name": "Shima",
         "emoji": "🍥",
-        "anilist": null,
+        "anilist": 24487,
         "mal": null
       },
       {
@@ -1006,16 +1024,17 @@ const ANIMES = [
     ],
     "chars": [
       {
-        "name": "Monkey D. Luffy",
+        "name": "Luffy Monkey",
         "emoji": "🏴‍☠️",
         "anilist": 40,
         "mal": 37
       },
       {
-        "name": "Roronoa Zoro",
+        "name": "Zoro Roronoa",
         "emoji": "🏴‍☠️",
         "anilist": 62,
-        "mal": 38
+        "mal": 38,
+        "displayName": "Roronoa Zoro"
       },
       {
         "name": "Nami",
@@ -1036,16 +1055,18 @@ const ANIMES = [
         "mal": null
       },
       {
-        "name": "Tony Tony Chopper",
+        "name": "Chopper Tony Tony",
         "emoji": "🏴‍☠️",
         "anilist": 309,
-        "mal": 42
+        "mal": 42,
+        "displayName": "Tony Tony Chopper"
       },
       {
-        "name": "Nico Robin",
+        "name": "Robin Nico",
         "emoji": "🏴‍☠️",
         "anilist": 61,
-        "mal": 43
+        "mal": 43,
+        "displayName": "Nico Robin"
       },
       {
         "name": "Franky",
@@ -1090,7 +1111,7 @@ const ANIMES = [
         "mal": 163834
       },
       {
-        "name": "Portgas D. Ace",
+        "name": "Ace Portgas",
         "emoji": "🏴‍☠️",
         "anilist": 2072,
         "mal": 51
@@ -1192,10 +1213,11 @@ const ANIMES = [
         "mal": null
       },
       {
-        "name": "Nefertari Vivi",
+        "name": "Vivi Nefertari",
         "emoji": "🏴‍☠️",
         "anilist": 726,
-        "mal": 76
+        "mal": 76,
+        "displayName": "Nefertari Vivi"
       },
       {
         "name": "Karoo",
@@ -1234,10 +1256,11 @@ const ANIMES = [
         "mal": 163884
       },
       {
-        "name": "Emporio Ivankov",
+        "name": "Ivankov Emporio",
         "emoji": "🏴‍☠️",
         "anilist": 22646,
-        "mal": 163833
+        "mal": 163833,
+        "displayName": "Emporio Ivankov"
       },
       {
         "name": "Inazuma",
@@ -1246,10 +1269,11 @@ const ANIMES = [
         "mal": null
       },
       {
-        "name": "Gecko Moria",
+        "name": "Moria Gecko",
         "emoji": "🏴‍☠️",
         "anilist": 7454,
-        "mal": 163831
+        "mal": 163831,
+        "displayName": "Gecko Moria"
       },
       {
         "name": "Perona",
@@ -1258,10 +1282,11 @@ const ANIMES = [
         "mal": 75
       },
       {
-        "name": "Bartholomew Kuma",
+        "name": "Kuma Bartholomew",
         "emoji": "🏴‍☠️",
         "anilist": 7453,
-        "mal": 163832
+        "mal": 163832,
+        "displayName": "Bartholomew Kuma"
       },
       {
         "name": "Jewelry Bonney",
@@ -1270,16 +1295,18 @@ const ANIMES = [
         "mal": 163829
       },
       {
-        "name": "Silvers Rayleigh",
+        "name": "Rayleigh Silvers",
         "emoji": "🏴‍☠️",
         "anilist": 17142,
-        "mal": 57
+        "mal": 57,
+        "displayName": "Silvers Rayleigh"
       },
       {
-        "name": "Boa Hancock",
+        "name": "Hancock Boa",
         "emoji": "🏴‍☠️",
         "anilist": 16342,
-        "mal": 55
+        "mal": 55,
+        "displayName": "Boa Hancock"
       },
       {
         "name": "Sengoku",
@@ -1300,10 +1327,11 @@ const ANIMES = [
         "mal": 71
       },
       {
-        "name": "Borsalino / Kizaru",
+        "name": "Borsalino",
         "emoji": "🏴‍☠️",
-        "anilist": 70,
-        "mal": 70
+        "anilist": 21093,
+        "mal": 70,
+        "displayName": "Borsalino / Kizaru"
       },
       {
         "name": "Issho / Fujitora",
@@ -1312,21 +1340,23 @@ const ANIMES = [
         "mal": 163877
       },
       {
-        "name": "Aramaki / Ryokugyu",
+        "name": "Aramaki",
         "emoji": "🏴‍☠️",
-        "anilist": 163876,
-        "mal": 163876
+        "anilist": 271788,
+        "mal": 163876,
+        "displayName": "Aramaki / Ryokugyu"
       },
       {
-        "name": "Rob Lucci",
+        "name": "Lucci Rob",
         "emoji": "🏴‍☠️",
         "anilist": 5677,
-        "mal": 69
+        "mal": 69,
+        "displayName": "Rob Lucci"
       },
       {
         "name": "Kaku",
         "emoji": "🏴‍☠️",
-        "anilist": null,
+        "anilist": 131431,
         "mal": null
       },
       {
@@ -1348,10 +1378,11 @@ const ANIMES = [
         "mal": null
       },
       {
-        "name": "Trafalgar Law",
+        "name": "Law Trafalgar",
         "emoji": "🏴‍☠️",
         "anilist": 13767,
-        "mal": 50
+        "mal": 50,
+        "displayName": "Trafalgar Law"
       },
       {
         "name": "Bepo",
@@ -1360,10 +1391,11 @@ const ANIMES = [
         "mal": null
       },
       {
-        "name": "Eustass Kid",
+        "name": "Kid Eustass",
         "emoji": "🏴‍☠️",
         "anilist": 14989,
-        "mal": 163825
+        "mal": 163825,
+        "displayName": "Eustass Kid"
       },
       {
         "name": "Killer",
@@ -1378,22 +1410,25 @@ const ANIMES = [
         "mal": 163826
       },
       {
-        "name": "Scratchmen Apoo",
+        "name": "Apoo Scratchmen",
         "emoji": "🏴‍☠️",
         "anilist": 20288,
-        "mal": 163827
+        "mal": 163827,
+        "displayName": "Scratchmen Apoo"
       },
       {
-        "name": "X Drake",
+        "name": "Drake X.",
         "emoji": "🏴‍☠️",
         "anilist": 20289,
-        "mal": 163823
+        "mal": 163823,
+        "displayName": "X Drake"
       },
       {
-        "name": "Capone Bege",
+        "name": "Bege Capone",
         "emoji": "🏴‍☠️",
         "anilist": 20292,
-        "mal": 163828
+        "mal": 163828,
+        "displayName": "Capone Bege"
       },
       {
         "name": "Urouge",
@@ -1408,28 +1443,32 @@ const ANIMES = [
         "mal": 65
       },
       {
-        "name": "Charlotte Katakuri",
+        "name": "Katakuri Charlotte",
         "emoji": "🏴‍☠️",
         "anilist": 124077,
-        "mal": 63
+        "mal": 63,
+        "displayName": "Charlotte Katakuri"
       },
       {
-        "name": "Charlotte Smoothie",
+        "name": "Smoothie Charlotte",
         "emoji": "🏴‍☠️",
         "anilist": 136036,
-        "mal": 163852
+        "mal": 163852,
+        "displayName": "Charlotte Smoothie"
       },
       {
-        "name": "Charlotte Cracker",
+        "name": "Cracker Charlotte",
         "emoji": "🏴‍☠️",
         "anilist": 136035,
-        "mal": 163853
+        "mal": 163853,
+        "displayName": "Charlotte Cracker"
       },
       {
-        "name": "Charlotte Perospero",
+        "name": "Perospero Charlotte",
         "emoji": "🏴‍☠️",
         "anilist": 181760,
-        "mal": 163854
+        "mal": 163854,
+        "displayName": "Charlotte Perospero"
       },
       {
         "name": "Zeus",
@@ -1458,19 +1497,19 @@ const ANIMES = [
       {
         "name": "King",
         "emoji": "🏴‍☠️",
-        "anilist": 163860,
+        "anilist": 130416,
         "mal": 163860
       },
       {
         "name": "Queen",
         "emoji": "🏴‍☠️",
-        "anilist": 163859,
+        "anilist": 131427,
         "mal": 163859
       },
       {
         "name": "Jack",
         "emoji": "🏴‍☠️",
-        "anilist": 163858,
+        "anilist": 135949,
         "mal": 163858
       },
       {
@@ -1482,7 +1521,7 @@ const ANIMES = [
       {
         "name": "Ulti",
         "emoji": "🏴‍☠️",
-        "anilist": 163821,
+        "anilist": 172135,
         "mal": 163821
       },
       {
@@ -1542,19 +1581,20 @@ const ANIMES = [
       {
         "name": "Shinobu",
         "emoji": "🏴‍☠️",
-        "anilist": null,
+        "anilist": 128126,
         "mal": null
       },
       {
-        "name": "Kozuki Hiyori / Komurasaki",
+        "name": "Komurasaki",
         "emoji": "🏴‍☠️",
-        "anilist": null,
-        "mal": null
+        "anilist": 131435,
+        "mal": null,
+        "displayName": "Kozuki Hiyori / Komurasaki"
       },
       {
         "name": "Tama",
         "emoji": "🏴‍☠️",
-        "anilist": 163867,
+        "anilist": 127908,
         "mal": 163867
       },
       {
@@ -1572,13 +1612,13 @@ const ANIMES = [
       {
         "name": "Jozu",
         "emoji": "🏴‍☠️",
-        "anilist": null,
+        "anilist": 21559,
         "mal": null
       },
       {
         "name": "Vista",
         "emoji": "🏴‍☠️",
-        "anilist": null,
+        "anilist": 27202,
         "mal": null
       },
       {
@@ -1594,10 +1634,11 @@ const ANIMES = [
         "mal": null
       },
       {
-        "name": "Van Augur",
+        "name": "Augur Van",
         "emoji": "🏴‍☠️",
-        "anilist": null,
-        "mal": null
+        "anilist": 9325,
+        "mal": null,
+        "displayName": "Van Augur"
       },
       {
         "name": "Jesus Burgess",
@@ -1608,26 +1649,27 @@ const ANIMES = [
       {
         "name": "Avalo Pizarro",
         "emoji": "🏴‍☠️",
-        "anilist": null,
+        "anilist": 31182,
         "mal": null
       },
       {
         "name": "Catarina Devon",
         "emoji": "🏴‍☠️",
-        "anilist": null,
+        "anilist": 31181,
         "mal": null
       },
       {
         "name": "Lafitte",
         "emoji": "🏴‍☠️",
-        "anilist": null,
+        "anilist": 9327,
         "mal": null
       },
       {
-        "name": "Doc Q",
+        "name": "Q Doc",
         "emoji": "🏴‍☠️",
-        "anilist": null,
-        "mal": null
+        "anilist": 9326,
+        "mal": null,
+        "displayName": "Doc Q"
       },
       {
         "name": "Stronger",
@@ -1648,10 +1690,11 @@ const ANIMES = [
         "mal": 62
       },
       {
-        "name": "Donquixote Rosinante / Corazon",
+        "name": "Rosinante Donquixote",
         "emoji": "🏴‍☠️",
-        "anilist": null,
-        "mal": null
+        "anilist": 120536,
+        "mal": null,
+        "displayName": "Donquixote Rosinante / Corazon"
       },
       {
         "name": "Trebol",
@@ -1686,7 +1729,7 @@ const ANIMES = [
       {
         "name": "Sugar",
         "emoji": "🏴‍☠️",
-        "anilist": 163839,
+        "anilist": 88957,
         "mal": 163839
       },
       {
@@ -1770,7 +1813,7 @@ const ANIMES = [
       {
         "name": "York",
         "emoji": "🏴‍☠️",
-        "anilist": null,
+        "anilist": 326791,
         "mal": null
       },
       {
@@ -1780,7 +1823,7 @@ const ANIMES = [
         "mal": null
       },
       {
-        "name": "Saint Jaygarcia Saturn",
+        "name": "Jaygarcia Saturn Sei",
         "emoji": "🏴‍☠️",
         "anilist": 299038,
         "mal": 163893
@@ -1788,14 +1831,15 @@ const ANIMES = [
       {
         "name": "Imu",
         "emoji": "🏴‍☠️",
-        "anilist": 163874,
+        "anilist": 128130,
         "mal": 163874
       },
       {
-        "name": "Nefertari Cobra",
+        "name": "Cobra Nefertari",
         "emoji": "🏴‍☠️",
         "anilist": 9344,
-        "mal": 163880
+        "mal": 163880,
+        "displayName": "Nefertari Cobra"
       },
       {
         "name": "Laboon",
@@ -2151,7 +2195,7 @@ const ANIMES = [
         "mal": null
       },
       {
-        "name": "Satori Tendo",
+        "name": "Satori Tendou",
         "emoji": "🏐",
         "anilist": 126073,
         "mal": null
@@ -2193,7 +2237,7 @@ const ANIMES = [
         "mal": null
       },
       {
-        "name": "Tanji Washijo",
+        "name": "Tanji Washijou",
         "emoji": "🏐",
         "anilist": 137539,
         "mal": null
@@ -2241,10 +2285,11 @@ const ANIMES = [
         "mal": null
       },
       {
-        "name": "Sakusa Kiyoomi",
+        "name": "Kiyoomi Sakusa",
         "emoji": "🏐",
         "anilist": 139475,
-        "mal": null
+        "mal": null,
+        "displayName": "Sakusa Kiyoomi"
       },
       {
         "name": "Korai Hoshiumi",
@@ -2259,7 +2304,7 @@ const ANIMES = [
         "mal": null
       },
       {
-        "name": "Wakatsu Kiryu",
+        "name": "Wakatsu Kiryuu",
         "emoji": "🏐",
         "anilist": 139506,
         "mal": null
@@ -2283,13 +2328,14 @@ const ANIMES = [
     ],
     "chars": [
       {
-        "name": "Izuku Midoriya / Deku",
+        "name": "Izuku Midoriya",
         "emoji": "🦸",
         "anilist": 89028,
-        "mal": 152222
+        "mal": 152222,
+        "displayName": "Izuku Midoriya / Deku"
       },
       {
-        "name": "Katsuki Bakugo",
+        "name": "Katsuki Bakugou",
         "emoji": "🦸",
         "anilist": 88892,
         "mal": 152223
@@ -2403,10 +2449,11 @@ const ANIMES = [
         "mal": null
       },
       {
-        "name": "All Might / Toshinori Yagi",
+        "name": "Toshinori Yagi",
         "emoji": "🦸",
         "anilist": 89224,
-        "mal": 152225
+        "mal": 152225,
+        "displayName": "All Might / Toshinori Yagi"
       },
       {
         "name": "Shota Aizawa / Eraser Head",
@@ -2415,16 +2462,18 @@ const ANIMES = [
         "mal": 152234
       },
       {
-        "name": "Present Mic / Hizashi Yamada",
+        "name": "Hizashi Yamada",
         "emoji": "🦸",
         "anilist": 127425,
-        "mal": 152235
+        "mal": 152235,
+        "displayName": "Present Mic / Hizashi Yamada"
       },
       {
-        "name": "Midnight / Nemuri Kayama",
+        "name": "Nemuri Kayama",
         "emoji": "🦸",
         "anilist": 127427,
-        "mal": 152244
+        "mal": 152244,
+        "displayName": "Midnight / Nemuri Kayama"
       },
       {
         "name": "Cementoss",
@@ -2571,7 +2620,7 @@ const ANIMES = [
         "mal": 168494
       },
       {
-        "name": "Nejire Hado",
+        "name": "Nejire Hadou",
         "emoji": "🦸",
         "anilist": 126843,
         "mal": 168495
@@ -2595,13 +2644,13 @@ const ANIMES = [
         "mal": 152284
       },
       {
-        "name": "Hitoshi Shinso",
+        "name": "Hitoshi Shinsou",
         "emoji": "🦸",
         "anilist": 89242,
         "mal": 152257
       },
       {
-        "name": "Itsuka Kendo",
+        "name": "Itsuka Kendou",
         "emoji": "🦸",
         "anilist": 126064,
         "mal": 168498
@@ -2637,10 +2686,11 @@ const ANIMES = [
         "mal": 168501
       },
       {
-        "name": "Pony Tsunotori",
+        "name": "Pony  Tsunotori",
         "emoji": "🦸",
         "anilist": 145387,
-        "mal": null
+        "mal": null,
+        "displayName": "Pony Tsunotori"
       },
       {
         "name": "Setsuna Tokage",
@@ -2871,10 +2921,11 @@ const ANIMES = [
         "mal": null
       },
       {
-        "name": "Nomu",
+        "name": "Nomu (U.S.J.)",
         "emoji": "🦸",
         "anilist": 89240,
-        "mal": null
+        "mal": null,
+        "displayName": "Nomu"
       },
       {
         "name": "USJ Nomu",
@@ -2919,7 +2970,7 @@ const ANIMES = [
         "mal": 178464
       },
       {
-        "name": "Satoru Gojo",
+        "name": "Satoru Gojou",
         "emoji": "👹",
         "anilist": 127691,
         "mal": 178462
@@ -2991,10 +3042,11 @@ const ANIMES = [
         "mal": 185848
       },
       {
-        "name": "Noritoshi Kamo",
+        "name": "Noritoshi  Kamo",
         "emoji": "👹",
         "anilist": 157866,
-        "mal": 185838
+        "mal": 185838,
+        "displayName": "Noritoshi Kamo"
       },
       {
         "name": "Kokichi Muta / Mechamaru",
@@ -3057,7 +3109,7 @@ const ANIMES = [
         "mal": 220760
       },
       {
-        "name": "Suguru Geto",
+        "name": "Suguru Getou",
         "emoji": "👹",
         "anilist": 133699,
         "mal": 178471
@@ -3663,10 +3715,11 @@ const ANIMES = [
         "mal": 85393
       },
       {
-        "name": "Samuel Linke-Jackson",
+        "name": "Samuel Linke-Jackson ",
         "emoji": "🪽",
         "anilist": 84315,
-        "mal": 85394
+        "mal": 85394,
+        "displayName": "Samuel Linke-Jackson"
       },
       {
         "name": "Zofia",
@@ -3831,10 +3884,11 @@ const ANIMES = [
         "mal": null
       },
       {
-        "name": "Bang / Silver Fang",
+        "name": "Bang ",
         "emoji": "👊",
         "anilist": 81141,
-        "mal": null
+        "mal": null,
+        "displayName": "Bang / Silver Fang"
       },
       {
         "name": "Bomb",
@@ -3903,7 +3957,7 @@ const ANIMES = [
         "mal": null
       },
       {
-        "name": "Amai Mask / Sweet Mask",
+        "name": "Ikemen Kamen Amai Mask",
         "emoji": "👊",
         "anilist": 86031,
         "mal": null
@@ -3915,10 +3969,11 @@ const ANIMES = [
         "mal": null
       },
       {
-        "name": "Metal Knight / Bofoi",
+        "name": "Bofoi",
         "emoji": "👊",
         "anilist": 81933,
-        "mal": null
+        "mal": null,
+        "displayName": "Metal Knight / Bofoi"
       },
       {
         "name": "Blast",
@@ -4029,10 +4084,11 @@ const ANIMES = [
         "mal": null
       },
       {
-        "name": "Orochi",
+        "name": "Orochi ",
         "emoji": "👊",
         "anilist": 195425,
-        "mal": null
+        "mal": null,
+        "displayName": "Orochi"
       },
       {
         "name": "Black Sperm",
@@ -4257,7 +4313,7 @@ const ANIMES = [
         "mal": 163272
       },
       {
-        "name": "Shinobu Kocho",
+        "name": "Shinobu Kochou",
         "emoji": "🗡️",
         "anilist": 136070,
         "mal": 163273
@@ -4509,7 +4565,7 @@ const ANIMES = [
         "mal": 163299
       },
       {
-        "name": "Kanae Kocho",
+        "name": "Kanae Kochou",
         "emoji": "🗡️",
         "anilist": 139039,
         "mal": 163302
@@ -4647,10 +4703,11 @@ const ANIMES = [
         "mal": null
       },
       {
-        "name": "Cha Hae-In / Shizuku Kosaka",
+        "name": "Hae-In Cha",
         "emoji": "⚔️",
         "anilist": 138789,
-        "mal": null
+        "mal": null,
+        "displayName": "Cha Hae-In / Shizuku Kosaka"
       },
       {
         "name": "Yoo Jinho / Kenta Morobishi",
@@ -4671,10 +4728,11 @@ const ANIMES = [
         "mal": null
       },
       {
-        "name": "Choi Jong-In",
+        "name": "Jong-In Choi",
         "emoji": "⚔️",
         "anilist": 138794,
-        "mal": null
+        "mal": null,
+        "displayName": "Choi Jong-In"
       },
       {
         "name": "Woo Jinchul",
@@ -4689,28 +4747,32 @@ const ANIMES = [
         "mal": null
       },
       {
-        "name": "Song Chi-Yul",
+        "name": "Chi-Yul Song",
         "emoji": "⚔️",
         "anilist": 136073,
-        "mal": null
+        "mal": null,
+        "displayName": "Song Chi-Yul"
       },
       {
-        "name": "Kang Tae-Shik",
+        "name": "Tae-Shik Kang",
         "emoji": "⚔️",
         "anilist": 181155,
-        "mal": null
+        "mal": null,
+        "displayName": "Kang Tae-Shik"
       },
       {
-        "name": "Hwang Dong-Suk",
+        "name": "Dong-Suk Hwang",
         "emoji": "⚔️",
         "anilist": 306666,
-        "mal": null
+        "mal": null,
+        "displayName": "Hwang Dong-Suk"
       },
       {
-        "name": "Hwang Dong-Soo",
+        "name": "Dong-Suk Hwang",
         "emoji": "⚔️",
         "anilist": 306666,
-        "mal": null
+        "mal": null,
+        "displayName": "Hwang Dong-Suk"
       },
       {
         "name": "Yuri Orloff",
@@ -4725,10 +4787,11 @@ const ANIMES = [
         "mal": null
       },
       {
-        "name": "Liu Zhigang",
+        "name": "Zhigang Liu",
         "emoji": "⚔️",
         "anilist": 184553,
-        "mal": null
+        "mal": null,
+        "displayName": "Liu Zhigang"
       },
       {
         "name": "Thomas Andre",
@@ -4743,7 +4806,7 @@ const ANIMES = [
         "mal": null
       },
       {
-        "name": "Sung Il-Hwan",
+        "name": "Il-Hwan Seong",
         "emoji": "⚔️",
         "anilist": 138790,
         "mal": null
@@ -4755,10 +4818,11 @@ const ANIMES = [
         "mal": null
       },
       {
-        "name": "Beru",
+        "name": "Beru ",
         "emoji": "⚔️",
         "anilist": 159849,
-        "mal": null
+        "mal": null,
+        "displayName": "Beru"
       },
       {
         "name": "Igris",
@@ -4773,10 +4837,11 @@ const ANIMES = [
         "mal": null
       },
       {
-        "name": "Iron / Kim Chul",
+        "name": "Iron",
         "emoji": "⚔️",
         "anilist": 184956,
-        "mal": null
+        "mal": null,
+        "displayName": "Iron / Kim Chul"
       },
       {
         "name": "Tusk",
@@ -4785,10 +4850,11 @@ const ANIMES = [
         "mal": null
       },
       {
-        "name": "Greed / Hwang Dong-Soo",
+        "name": "Dong-Suk Hwang",
         "emoji": "⚔️",
         "anilist": 306666,
-        "mal": null
+        "mal": null,
+        "displayName": "Hwang Dong-Suk"
       },
       {
         "name": "Tank",
@@ -5516,10 +5582,11 @@ const ANIMES = [
         "mal": null
       },
       {
-        "name": "Sylph / Bell",
+        "name": "Sylph",
         "emoji": "🍀",
         "anilist": 125025,
-        "mal": null
+        "mal": null,
+        "displayName": "Sylph / Bell"
       },
       {
         "name": "Salamander",
@@ -5570,10 +5637,11 @@ const ANIMES = [
         "mal": 196754
       },
       {
-        "name": "Damnatio Kira",
+        "name": "Damnatio  Kira",
         "emoji": "🍀",
         "anilist": 174448,
-        "mal": null
+        "mal": null,
+        "displayName": "Damnatio Kira"
       },
       {
         "name": "Acier Silva",
@@ -5696,10 +5764,11 @@ const ANIMES = [
         "mal": 215735
       },
       {
-        "name": "Yoshida Hirofumi",
+        "name": "Hirofumi Yoshida",
         "emoji": "🪚",
         "anilist": 162080,
-        "mal": 215733
+        "mal": 215733,
+        "displayName": "Yoshida Hirofumi"
       },
       {
         "name": "Fumiko Mifune",
@@ -5726,16 +5795,18 @@ const ANIMES = [
         "mal": null
       },
       {
-        "name": "Katana Man / Samurai Sword",
+        "name": "Samurai Sword",
         "emoji": "🪚",
-        "anilist": 166247,
-        "mal": 197556
+        "anilist": 157241,
+        "mal": 197556,
+        "displayName": "Katana Man / Samurai Sword"
       },
       {
-        "name": "Akane Sawatari",
+        "name": "Akane Sawatari ",
         "emoji": "🪚",
         "anilist": 174264,
-        "mal": 197557
+        "mal": 197557,
+        "displayName": "Akane Sawatari"
       },
       {
         "name": "Angel Devil",
@@ -5744,10 +5815,11 @@ const ANIMES = [
         "mal": 197550
       },
       {
-        "name": "Beam / Shark Fiend",
+        "name": "Beam",
         "emoji": "🪚",
-        "anilist": 166242,
-        "mal": 197551
+        "anilist": 157232,
+        "mal": 197551,
+        "displayName": "Beam / Shark Fiend"
       },
       {
         "name": "Violence Fiend / Galgali",
@@ -5816,10 +5888,11 @@ const ANIMES = [
         "mal": null
       },
       {
-        "name": "Bat Devil",
+        "name": "Devil Bat",
         "emoji": "🪚",
         "anilist": 31334,
-        "mal": null
+        "mal": null,
+        "displayName": "Bat Devil"
       },
       {
         "name": "Leech Devil",
@@ -5900,7 +5973,7 @@ const ANIMES = [
         "mal": 215741
       },
       {
-        "name": "Santa Claus",
+        "name": "Doitsu no Santa Claus ",
         "emoji": "🪚",
         "anilist": 174268,
         "mal": 197548
@@ -5918,7 +5991,7 @@ const ANIMES = [
         "mal": 197562
       },
       {
-        "name": "Michiko Tendo",
+        "name": "Michiko Tendou",
         "emoji": "🪚",
         "anilist": 144595,
         "mal": 197563
@@ -5960,10 +6033,11 @@ const ANIMES = [
         "mal": null
       },
       {
-        "name": "Ken Takakura / Okarun",
+        "name": "Ken Takakura",
         "emoji": "👽",
         "anilist": 222593,
-        "mal": null
+        "mal": null,
+        "displayName": "Ken Takakura / Okarun"
       },
       {
         "name": "Seiko Ayase",
@@ -6032,7 +6106,7 @@ const ANIMES = [
         "mal": null
       },
       {
-        "name": "Dover Demon / Nessie",
+        "name": "Serpod Dover Demon Nessie",
         "emoji": "👽",
         "anilist": 309817,
         "mal": null
@@ -6068,7 +6142,7 @@ const ANIMES = [
         "mal": null
       },
       {
-        "name": "Count Saint-Germain",
+        "name": "Saint-Germain Hakushaku",
         "emoji": "👽",
         "anilist": 319531,
         "mal": null
@@ -7050,7 +7124,8 @@ const ANIMES = [
         "name": "Unknown God",
         "emoji": "✨",
         "anilist": null,
-        "mal": null
+        "mal": null,
+        "img": "https://static.wikia.nocookie.net/gensin-impact/images/1/1f/Wanderer%27s_Trail_Battle_Against_Asmoday.png/revision/latest/scale-to-width-down/185?cb=20260126142834"
       }
     ]
   },
@@ -7067,273 +7142,1120 @@ const ANIMES = [
       {
         "name": "Astra",
         "emoji": "🎯",
-        "anilist": null,
-        "mal": null,
-        "img": "https://trackercdn.com/cdn/tracker.gg/valorant/db/agents/astra_portrait.png"
+        "img": "https://trackercdn.com/cdn/tracker.gg/valorant/db/agents/astra_portrait.png",
+        "type": "agent"
       },
       {
         "name": "Breach",
         "emoji": "🎯",
-        "anilist": null,
-        "mal": null,
-        "img": "https://trackercdn.com/cdn/tracker.gg/valorant/db/agents/breach_portrait.png"
+        "img": "https://trackercdn.com/cdn/tracker.gg/valorant/db/agents/breach_portrait.png",
+        "type": "agent"
       },
       {
         "name": "Brimstone",
         "emoji": "🎯",
-        "anilist": null,
-        "mal": null,
-        "img": "https://trackercdn.com/cdn/tracker.gg/valorant/db/agents/brimstone_portrait.png"
+        "img": "https://trackercdn.com/cdn/tracker.gg/valorant/db/agents/brimstone_portrait.png",
+        "type": "agent"
       },
       {
         "name": "Chamber",
         "emoji": "🎯",
-        "anilist": null,
-        "mal": null,
-        "img": "https://trackercdn.com/cdn/tracker.gg/valorant/db/agents/chamber_portrait.png"
+        "img": "https://trackercdn.com/cdn/tracker.gg/valorant/db/agents/chamber_portrait.png",
+        "type": "agent"
       },
       {
         "name": "Clove",
         "emoji": "🎯",
-        "anilist": null,
-        "mal": null,
-        "img": "https://trackercdn.com/cdn/tracker.gg/valorant/db/agents/clove_portrait.png"
+        "img": "https://trackercdn.com/cdn/tracker.gg/valorant/db/agents/clove_portrait.png",
+        "type": "agent"
       },
       {
         "name": "Cypher",
         "emoji": "🎯",
-        "anilist": null,
-        "mal": null,
-        "img": "https://trackercdn.com/cdn/tracker.gg/valorant/db/agents/cypher_portrait.png"
+        "img": "https://trackercdn.com/cdn/tracker.gg/valorant/db/agents/cypher_portrait.png",
+        "type": "agent"
       },
       {
         "name": "Deadlock",
         "emoji": "🎯",
-        "anilist": null,
-        "mal": null,
-        "img": "https://trackercdn.com/cdn/tracker.gg/valorant/db/agents/deadlock_portrait.png"
+        "img": "https://trackercdn.com/cdn/tracker.gg/valorant/db/agents/deadlock_portrait.png",
+        "type": "agent"
       },
       {
         "name": "Fade",
         "emoji": "🎯",
-        "anilist": null,
-        "mal": null,
-        "img": "https://trackercdn.com/cdn/tracker.gg/valorant/db/agents/fade_portrait.png"
+        "img": "https://trackercdn.com/cdn/tracker.gg/valorant/db/agents/fade_portrait.png",
+        "type": "agent"
       },
       {
         "name": "Gekko",
         "emoji": "🎯",
-        "anilist": null,
-        "mal": null,
-        "img": "https://trackercdn.com/cdn/tracker.gg/valorant/db/agents/gekko_portrait.png"
+        "img": "https://trackercdn.com/cdn/tracker.gg/valorant/db/agents/gekko_portrait.png",
+        "type": "agent"
       },
       {
         "name": "Harbor",
         "emoji": "🎯",
-        "anilist": null,
-        "mal": null,
-        "img": "https://trackercdn.com/cdn/tracker.gg/valorant/db/agents/harbor_portrait.png"
+        "img": "https://trackercdn.com/cdn/tracker.gg/valorant/db/agents/harbor_portrait.png",
+        "type": "agent"
       },
       {
         "name": "Iso",
         "emoji": "🎯",
-        "anilist": null,
-        "mal": null,
-        "img": "https://trackercdn.com/cdn/tracker.gg/valorant/db/agents/iso_portrait.png"
+        "img": "https://trackercdn.com/cdn/tracker.gg/valorant/db/agents/iso_portrait.png",
+        "type": "agent"
       },
       {
         "name": "Jett",
         "emoji": "🎯",
-        "anilist": null,
-        "mal": null,
-        "img": "https://trackercdn.com/cdn/tracker.gg/valorant/db/agents/jett_portrait.png"
+        "img": "https://trackercdn.com/cdn/tracker.gg/valorant/db/agents/jett_portrait.png",
+        "type": "agent"
       },
       {
         "name": "KAY/O",
         "emoji": "🎯",
-        "anilist": null,
-        "mal": null,
-        "img": "https://trackercdn.com/cdn/tracker.gg/valorant/db/agents/kayo_portrait.png"
+        "img": "https://trackercdn.com/cdn/tracker.gg/valorant/db/agents/kayo_portrait.png",
+        "type": "agent"
       },
       {
         "name": "Killjoy",
         "emoji": "🎯",
-        "anilist": null,
-        "mal": null,
-        "img": "https://trackercdn.com/cdn/tracker.gg/valorant/db/agents/killjoy_portrait.png"
+        "img": "https://trackercdn.com/cdn/tracker.gg/valorant/db/agents/killjoy_portrait.png",
+        "type": "agent"
       },
       {
         "name": "Neon",
         "emoji": "🎯",
-        "anilist": null,
-        "mal": null,
-        "img": "https://trackercdn.com/cdn/tracker.gg/valorant/db/agents/neon_portrait.png"
+        "img": "https://trackercdn.com/cdn/tracker.gg/valorant/db/agents/neon_portrait.png",
+        "type": "agent"
       },
       {
         "name": "Omen",
         "emoji": "🎯",
-        "anilist": null,
-        "mal": null,
-        "img": "https://trackercdn.com/cdn/tracker.gg/valorant/db/agents/omen_portrait.png"
+        "img": "https://trackercdn.com/cdn/tracker.gg/valorant/db/agents/omen_portrait.png",
+        "type": "agent"
       },
       {
         "name": "Phoenix",
         "emoji": "🎯",
-        "anilist": null,
-        "mal": null,
-        "img": "https://trackercdn.com/cdn/tracker.gg/valorant/db/agents/phoenix_portrait.png"
+        "img": "https://trackercdn.com/cdn/tracker.gg/valorant/db/agents/phoenix_portrait.png",
+        "type": "agent"
       },
       {
         "name": "Raze",
         "emoji": "🎯",
-        "anilist": null,
-        "mal": null,
-        "img": "https://trackercdn.com/cdn/tracker.gg/valorant/db/agents/raze_portrait.png"
+        "img": "https://trackercdn.com/cdn/tracker.gg/valorant/db/agents/raze_portrait.png",
+        "type": "agent"
       },
       {
         "name": "Reyna",
         "emoji": "🎯",
-        "anilist": null,
-        "mal": null,
-        "img": "https://trackercdn.com/cdn/tracker.gg/valorant/db/agents/reyna_portrait.png"
+        "img": "https://trackercdn.com/cdn/tracker.gg/valorant/db/agents/reyna_portrait.png",
+        "type": "agent"
       },
       {
         "name": "Sage",
         "emoji": "🎯",
-        "anilist": null,
-        "mal": null,
-        "img": "https://trackercdn.com/cdn/tracker.gg/valorant/db/agents/sage_portrait.png"
+        "img": "https://trackercdn.com/cdn/tracker.gg/valorant/db/agents/sage_portrait.png",
+        "type": "agent"
       },
       {
         "name": "Skye",
         "emoji": "🎯",
-        "anilist": null,
-        "mal": null,
-        "img": "https://trackercdn.com/cdn/tracker.gg/valorant/db/agents/skye_portrait.png"
+        "img": "https://trackercdn.com/cdn/tracker.gg/valorant/db/agents/skye_portrait.png",
+        "type": "agent"
       },
       {
         "name": "Sova",
         "emoji": "🎯",
-        "anilist": null,
-        "mal": null,
-        "img": "https://trackercdn.com/cdn/tracker.gg/valorant/db/agents/sova_portrait.png"
+        "img": "https://trackercdn.com/cdn/tracker.gg/valorant/db/agents/sova_portrait.png",
+        "type": "agent"
       },
       {
         "name": "Tejo",
         "emoji": "🎯",
-        "anilist": null,
-        "mal": null,
-        "img": "https://trackercdn.com/cdn/tracker.gg/valorant/db/agents/tejo_portrait.png"
+        "img": "https://trackercdn.com/cdn/tracker.gg/valorant/db/agents/tejo_portrait.png",
+        "type": "agent"
       },
       {
         "name": "Veto",
         "emoji": "🎯",
-        "anilist": null,
-        "mal": null,
-        "img": "https://trackercdn.com/cdn/tracker.gg/valorant/db/agents/veto_portrait.png"
+        "img": "https://trackercdn.com/cdn/tracker.gg/valorant/db/agents/veto_portrait.png",
+        "type": "agent"
       },
       {
         "name": "Viper",
         "emoji": "🎯",
-        "anilist": null,
-        "mal": null,
-        "img": "https://trackercdn.com/cdn/tracker.gg/valorant/db/agents/viper_portrait.png"
+        "img": "https://trackercdn.com/cdn/tracker.gg/valorant/db/agents/viper_portrait.png",
+        "type": "agent"
       },
       {
         "name": "Vyse",
         "emoji": "🎯",
-        "anilist": null,
-        "mal": null,
-        "img": "https://trackercdn.com/cdn/tracker.gg/valorant/db/agents/vyse_portrait.png"
+        "img": "https://trackercdn.com/cdn/tracker.gg/valorant/db/agents/vyse_portrait.png",
+        "type": "agent"
       },
       {
         "name": "Waylay",
         "emoji": "🎯",
-        "anilist": null,
-        "mal": null,
-        "img": "https://trackercdn.com/cdn/tracker.gg/valorant/db/agents/waylay_portrait.png"
+        "img": "https://trackercdn.com/cdn/tracker.gg/valorant/db/agents/waylay_portrait.png",
+        "type": "agent"
       },
       {
         "name": "Yoru",
         "emoji": "🎯",
-        "anilist": null,
-        "mal": null,
-        "img": "https://trackercdn.com/cdn/tracker.gg/valorant/db/agents/yoru_portrait.png"
+        "img": "https://trackercdn.com/cdn/tracker.gg/valorant/db/agents/yoru_portrait.png",
+        "type": "agent"
       },
       {
-        "name": "Alarmbot",
+        "name": "Nova Pulse (Astra)",
         "emoji": "🎯",
-        "img": "https://media.valorant-api.com/agents/1e58de9c-4950-5125-93e9-a0aee9f98746/abilities/ability1/displayicon.png"
+        "img": "https://media.valorant-api.com/agents/41fb69c1-4189-7b37-f117-bcaf1e96f1bf/abilities/ability1/displayicon.png",
+        "type": "ability",
+        "owner": "Astra",
+        "abilitySlot": "Ability1"
       },
       {
-        "name": "Boom Bot",
+        "name": "Nebula  / Dissipate (Astra)",
         "emoji": "🎯",
-        "img": "https://media.valorant-api.com/agents/f94c3b30-42be-e959-889c-5aa313dba261/abilities/grenade/displayicon.png"
+        "img": "https://media.valorant-api.com/agents/41fb69c1-4189-7b37-f117-bcaf1e96f1bf/abilities/ability2/displayicon.png",
+        "type": "ability",
+        "owner": "Astra",
+        "abilitySlot": "Ability2"
       },
       {
-        "name": "Dizzy",
+        "name": "Gravity Well (Astra)",
         "emoji": "🎯",
-        "img": "https://media.valorant-api.com/agents/e370fa57-4757-3604-3648-499e1f642d3f/abilities/ability2/displayicon.png"
+        "img": "https://media.valorant-api.com/agents/41fb69c1-4189-7b37-f117-bcaf1e96f1bf/abilities/grenade/displayicon.png",
+        "type": "ability",
+        "owner": "Astra",
+        "abilitySlot": "Grenade"
       },
       {
-        "name": "Lockdown",
+        "name": "Astral Form / Cosmic Divide (Astra)",
         "emoji": "🎯",
-        "img": "https://media.valorant-api.com/agents/1e58de9c-4950-5125-93e9-a0aee9f98746/abilities/ultimate/displayicon.png"
+        "img": "https://media.valorant-api.com/agents/41fb69c1-4189-7b37-f117-bcaf1e96f1bf/abilities/ultimate/displayicon.png",
+        "type": "ability",
+        "owner": "Astra",
+        "abilitySlot": "Ultimate"
       },
       {
-        "name": "Mosh",
+        "name": "Astral Form (Astra)",
         "emoji": "🎯",
-        "img": "https://media.valorant-api.com/agents/e370fa57-4757-3604-3648-499e1f642d3f/abilities/grenade/displayicon.png"
+        "img": "https://media.valorant-api.com/agents/41fb69c1-4189-7b37-f117-bcaf1e96f1bf/abilities/passive/displayicon.png",
+        "type": "ability",
+        "owner": "Astra",
+        "abilitySlot": "Passive"
       },
       {
-        "name": "Owl Drone",
+        "name": "Flashpoint (Breach)",
         "emoji": "🎯",
-        "img": "https://media.valorant-api.com/agents/320b2a48-4d9b-a075-30f1-1f93a9b638fa/abilities/grenade/displayicon.png"
+        "img": "https://media.valorant-api.com/agents/5f8d3a7f-467b-97f3-062c-13acf203c006/abilities/ability1/displayicon.png",
+        "type": "ability",
+        "owner": "Breach",
+        "abilitySlot": "Ability1"
       },
       {
-        "name": "Prowler",
+        "name": "Fault Line (Breach)",
         "emoji": "🎯",
-        "img": "https://media.valorant-api.com/agents/dade69b4-4f5a-8528-247b-219e5a1facd6/abilities/grenade/displayicon.png"
+        "img": "https://media.valorant-api.com/agents/5f8d3a7f-467b-97f3-062c-13acf203c006/abilities/ability2/displayicon.png",
+        "type": "ability",
+        "owner": "Breach",
+        "abilitySlot": "Ability2"
       },
       {
-        "name": "Seekers",
+        "name": "Aftershock (Breach)",
         "emoji": "🎯",
-        "img": "https://media.valorant-api.com/agents/6f2a04ca-43e0-be17-7f36-b3908627744d/abilities/ultimate/displayicon.png"
+        "img": "https://media.valorant-api.com/agents/5f8d3a7f-467b-97f3-062c-13acf203c006/abilities/grenade/displayicon.png",
+        "type": "ability",
+        "owner": "Breach",
+        "abilitySlot": "Grenade"
       },
       {
-        "name": "Spycam",
+        "name": "Rolling Thunder (Breach)",
         "emoji": "🎯",
-        "img": "https://media.valorant-api.com/agents/117ed9e3-49f3-6512-3ccf-0cada7e3823b/abilities/ability2/displayicon.png"
+        "img": "https://media.valorant-api.com/agents/5f8d3a7f-467b-97f3-062c-13acf203c006/abilities/ultimate/displayicon.png",
+        "type": "ability",
+        "owner": "Breach",
+        "abilitySlot": "Ultimate"
       },
       {
-        "name": "Thrash",
+        "name": "Stim Beacon (Brimstone)",
         "emoji": "🎯",
-        "img": "https://media.valorant-api.com/agents/e370fa57-4757-3604-3648-499e1f642d3f/abilities/ultimate/displayicon.png"
+        "img": "https://media.valorant-api.com/agents/9f0d8ba9-4140-b941-57d3-a7ad57c6b417/abilities/grenade/displayicon.png",
+        "type": "ability",
+        "owner": "Brimstone",
+        "abilitySlot": "Grenade"
       },
       {
-        "name": "Trademark",
+        "name": "Incendiary (Brimstone)",
         "emoji": "🎯",
-        "img": "https://media.valorant-api.com/agents/22697a3d-45bf-8dd7-4fec-84a9e28c69d7/abilities/grenade/displayicon.png"
+        "img": "https://media.valorant-api.com/agents/9f0d8ba9-4140-b941-57d3-a7ad57c6b417/abilities/ability1/displayicon.png",
+        "type": "ability",
+        "owner": "Brimstone",
+        "abilitySlot": "Ability1"
       },
       {
-        "name": "Trailblazer",
+        "name": "Sky Smoke (Brimstone)",
         "emoji": "🎯",
-        "img": "https://media.valorant-api.com/agents/6f2a04ca-43e0-be17-7f36-b3908627744d/abilities/ability1/displayicon.png"
+        "img": "https://media.valorant-api.com/agents/9f0d8ba9-4140-b941-57d3-a7ad57c6b417/abilities/ability2/displayicon.png",
+        "type": "ability",
+        "owner": "Brimstone",
+        "abilitySlot": "Ability2"
       },
       {
-        "name": "Trapwire",
+        "name": "Orbital Strike (Brimstone)",
         "emoji": "🎯",
-        "img": "https://media.valorant-api.com/agents/117ed9e3-49f3-6512-3ccf-0cada7e3823b/abilities/grenade/displayicon.png"
+        "img": "https://media.valorant-api.com/agents/9f0d8ba9-4140-b941-57d3-a7ad57c6b417/abilities/ultimate/displayicon.png",
+        "type": "ability",
+        "owner": "Brimstone",
+        "abilitySlot": "Ultimate"
       },
       {
-        "name": "Turret",
+        "name": "Rendezvous (Chamber)",
         "emoji": "🎯",
-        "img": "https://media.valorant-api.com/agents/1e58de9c-4950-5125-93e9-a0aee9f98746/abilities/ability2/displayicon.png"
+        "img": "https://media.valorant-api.com/agents/22697a3d-45bf-8dd7-4fec-84a9e28c69d7/abilities/ability2/displayicon.png",
+        "type": "ability",
+        "owner": "Chamber",
+        "abilitySlot": "Ability2"
       },
       {
-        "name": "Wingman",
+        "name": "Trademark (Chamber)",
         "emoji": "🎯",
-        "img": "https://media.valorant-api.com/agents/e370fa57-4757-3604-3648-499e1f642d3f/abilities/ability1/displayicon.png"
+        "img": "https://media.valorant-api.com/agents/22697a3d-45bf-8dd7-4fec-84a9e28c69d7/abilities/grenade/displayicon.png",
+        "type": "ability",
+        "owner": "Chamber",
+        "abilitySlot": "Grenade",
+        "displayName": "Trademark"
+      },
+      {
+        "name": "Headhunter (Chamber)",
+        "emoji": "🎯",
+        "img": "https://media.valorant-api.com/agents/22697a3d-45bf-8dd7-4fec-84a9e28c69d7/abilities/ability1/displayicon.png",
+        "type": "ability",
+        "owner": "Chamber",
+        "abilitySlot": "Ability1"
+      },
+      {
+        "name": "Tour De Force (Chamber)",
+        "emoji": "🎯",
+        "img": "https://media.valorant-api.com/agents/22697a3d-45bf-8dd7-4fec-84a9e28c69d7/abilities/ultimate/displayicon.png",
+        "type": "ability",
+        "owner": "Chamber",
+        "abilitySlot": "Ultimate"
+      },
+      {
+        "name": "Pick-me-up (Clove)",
+        "emoji": "🎯",
+        "img": "https://media.valorant-api.com/agents/1dbf2edd-4729-0984-3115-daa5eed44993/abilities/grenade/displayicon.png",
+        "type": "ability",
+        "owner": "Clove",
+        "abilitySlot": "Grenade"
+      },
+      {
+        "name": "Ruse (Clove)",
+        "emoji": "🎯",
+        "img": "https://media.valorant-api.com/agents/1dbf2edd-4729-0984-3115-daa5eed44993/abilities/ability2/displayicon.png",
+        "type": "ability",
+        "owner": "Clove",
+        "abilitySlot": "Ability2"
+      },
+      {
+        "name": "Not Dead Yet (Clove)",
+        "emoji": "🎯",
+        "img": "https://media.valorant-api.com/agents/1dbf2edd-4729-0984-3115-daa5eed44993/abilities/ultimate/displayicon.png",
+        "type": "ability",
+        "owner": "Clove",
+        "abilitySlot": "Ultimate"
+      },
+      {
+        "name": "Meddle (Clove)",
+        "emoji": "🎯",
+        "img": "https://media.valorant-api.com/agents/1dbf2edd-4729-0984-3115-daa5eed44993/abilities/ability1/displayicon.png",
+        "type": "ability",
+        "owner": "Clove",
+        "abilitySlot": "Ability1"
+      },
+      {
+        "name": "Cyber Cage (Cypher)",
+        "emoji": "🎯",
+        "img": "https://media.valorant-api.com/agents/117ed9e3-49f3-6512-3ccf-0cada7e3823b/abilities/ability1/displayicon.png",
+        "type": "ability",
+        "owner": "Cypher",
+        "abilitySlot": "Ability1"
+      },
+      {
+        "name": "Spycam (Cypher)",
+        "emoji": "🎯",
+        "img": "https://media.valorant-api.com/agents/117ed9e3-49f3-6512-3ccf-0cada7e3823b/abilities/ability2/displayicon.png",
+        "type": "ability",
+        "owner": "Cypher",
+        "abilitySlot": "Ability2",
+        "displayName": "Spycam"
+      },
+      {
+        "name": "Trapwire (Cypher)",
+        "emoji": "🎯",
+        "img": "https://media.valorant-api.com/agents/117ed9e3-49f3-6512-3ccf-0cada7e3823b/abilities/grenade/displayicon.png",
+        "type": "ability",
+        "owner": "Cypher",
+        "abilitySlot": "Grenade",
+        "displayName": "Trapwire"
+      },
+      {
+        "name": "Neural Theft (Cypher)",
+        "emoji": "🎯",
+        "img": "https://media.valorant-api.com/agents/117ed9e3-49f3-6512-3ccf-0cada7e3823b/abilities/ultimate/displayicon.png",
+        "type": "ability",
+        "owner": "Cypher",
+        "abilitySlot": "Ultimate"
+      },
+      {
+        "name": "Sonic Sensor (Deadlock)",
+        "emoji": "🎯",
+        "img": "https://media.valorant-api.com/agents/cc8b64c8-4b25-4ff9-6e7f-37b4da43d235/abilities/ability1/displayicon.png",
+        "type": "ability",
+        "owner": "Deadlock",
+        "abilitySlot": "Ability1"
+      },
+      {
+        "name": "Barrier Mesh (Deadlock)",
+        "emoji": "🎯",
+        "img": "https://media.valorant-api.com/agents/cc8b64c8-4b25-4ff9-6e7f-37b4da43d235/abilities/grenade/displayicon.png",
+        "type": "ability",
+        "owner": "Deadlock",
+        "abilitySlot": "Grenade"
+      },
+      {
+        "name": "GravNet (Deadlock)",
+        "emoji": "🎯",
+        "img": "https://media.valorant-api.com/agents/cc8b64c8-4b25-4ff9-6e7f-37b4da43d235/abilities/ability2/displayicon.png",
+        "type": "ability",
+        "owner": "Deadlock",
+        "abilitySlot": "Ability2"
+      },
+      {
+        "name": "Annihilation (Deadlock)",
+        "emoji": "🎯",
+        "img": "https://media.valorant-api.com/agents/cc8b64c8-4b25-4ff9-6e7f-37b4da43d235/abilities/ultimate/displayicon.png",
+        "type": "ability",
+        "owner": "Deadlock",
+        "abilitySlot": "Ultimate"
+      },
+      {
+        "name": "Seize (Fade)",
+        "emoji": "🎯",
+        "img": "https://media.valorant-api.com/agents/dade69b4-4f5a-8528-247b-219e5a1facd6/abilities/ability1/displayicon.png",
+        "type": "ability",
+        "owner": "Fade",
+        "abilitySlot": "Ability1"
+      },
+      {
+        "name": "Haunt (Fade)",
+        "emoji": "🎯",
+        "img": "https://media.valorant-api.com/agents/dade69b4-4f5a-8528-247b-219e5a1facd6/abilities/ability2/displayicon.png",
+        "type": "ability",
+        "owner": "Fade",
+        "abilitySlot": "Ability2"
+      },
+      {
+        "name": "Prowler (Fade)",
+        "emoji": "🎯",
+        "img": "https://media.valorant-api.com/agents/dade69b4-4f5a-8528-247b-219e5a1facd6/abilities/grenade/displayicon.png",
+        "type": "ability",
+        "owner": "Fade",
+        "abilitySlot": "Grenade",
+        "displayName": "Prowler"
+      },
+      {
+        "name": "Nightfall (Fade)",
+        "emoji": "🎯",
+        "img": "https://media.valorant-api.com/agents/dade69b4-4f5a-8528-247b-219e5a1facd6/abilities/ultimate/displayicon.png",
+        "type": "ability",
+        "owner": "Fade",
+        "abilitySlot": "Ultimate"
+      },
+      {
+        "name": "Wingman (Gekko)",
+        "emoji": "🎯",
+        "img": "https://media.valorant-api.com/agents/e370fa57-4757-3604-3648-499e1f642d3f/abilities/ability1/displayicon.png",
+        "type": "ability",
+        "owner": "Gekko",
+        "abilitySlot": "Ability1",
+        "displayName": "Wingman"
+      },
+      {
+        "name": "Dizzy (Gekko)",
+        "emoji": "🎯",
+        "img": "https://media.valorant-api.com/agents/e370fa57-4757-3604-3648-499e1f642d3f/abilities/ability2/displayicon.png",
+        "type": "ability",
+        "owner": "Gekko",
+        "abilitySlot": "Ability2",
+        "displayName": "Dizzy"
+      },
+      {
+        "name": "Mosh Pit (Gekko)",
+        "emoji": "🎯",
+        "img": "https://media.valorant-api.com/agents/e370fa57-4757-3604-3648-499e1f642d3f/abilities/grenade/displayicon.png",
+        "type": "ability",
+        "owner": "Gekko",
+        "abilitySlot": "Grenade"
+      },
+      {
+        "name": "Thrash (Gekko)",
+        "emoji": "🎯",
+        "img": "https://media.valorant-api.com/agents/e370fa57-4757-3604-3648-499e1f642d3f/abilities/ultimate/displayicon.png",
+        "type": "ability",
+        "owner": "Gekko",
+        "abilitySlot": "Ultimate",
+        "displayName": "Thrash"
+      },
+      {
+        "name": "High Tide (Harbor)",
+        "emoji": "🎯",
+        "img": "https://media.valorant-api.com/agents/95b78ed7-4637-86d9-7e41-71ba8c293152/abilities/ability1/displayicon.png",
+        "type": "ability",
+        "owner": "Harbor",
+        "abilitySlot": "Ability1"
+      },
+      {
+        "name": "Storm Surge (Harbor)",
+        "emoji": "🎯",
+        "img": "https://media.valorant-api.com/agents/95b78ed7-4637-86d9-7e41-71ba8c293152/abilities/grenade/displayicon.png",
+        "type": "ability",
+        "owner": "Harbor",
+        "abilitySlot": "Grenade"
+      },
+      {
+        "name": "Cove (Harbor)",
+        "emoji": "🎯",
+        "img": "https://media.valorant-api.com/agents/95b78ed7-4637-86d9-7e41-71ba8c293152/abilities/ability2/displayicon.png",
+        "type": "ability",
+        "owner": "Harbor",
+        "abilitySlot": "Ability2"
+      },
+      {
+        "name": "Reckoning (Harbor)",
+        "emoji": "🎯",
+        "img": "https://media.valorant-api.com/agents/95b78ed7-4637-86d9-7e41-71ba8c293152/abilities/ultimate/displayicon.png",
+        "type": "ability",
+        "owner": "Harbor",
+        "abilitySlot": "Ultimate"
+      },
+      {
+        "name": "Undercut (Iso)",
+        "emoji": "🎯",
+        "img": "https://media.valorant-api.com/agents/0e38b510-41a8-5780-5e8f-568b2a4f2d6c/abilities/ability1/displayicon.png",
+        "type": "ability",
+        "owner": "Iso",
+        "abilitySlot": "Ability1"
+      },
+      {
+        "name": "Kill Contract (Iso)",
+        "emoji": "🎯",
+        "img": "https://media.valorant-api.com/agents/0e38b510-41a8-5780-5e8f-568b2a4f2d6c/abilities/ultimate/displayicon.png",
+        "type": "ability",
+        "owner": "Iso",
+        "abilitySlot": "Ultimate"
+      },
+      {
+        "name": "Double Tap (Iso)",
+        "emoji": "🎯",
+        "img": "https://media.valorant-api.com/agents/0e38b510-41a8-5780-5e8f-568b2a4f2d6c/abilities/ability2/displayicon.png",
+        "type": "ability",
+        "owner": "Iso",
+        "abilitySlot": "Ability2"
+      },
+      {
+        "name": "Contingency (Iso)",
+        "emoji": "🎯",
+        "img": "https://media.valorant-api.com/agents/0e38b510-41a8-5780-5e8f-568b2a4f2d6c/abilities/grenade/displayicon.png",
+        "type": "ability",
+        "owner": "Iso",
+        "abilitySlot": "Grenade"
+      },
+      {
+        "name": "Updraft (Jett)",
+        "emoji": "🎯",
+        "img": "https://media.valorant-api.com/agents/add6443a-41bd-e414-f6ad-e58d267f4e95/abilities/ability1/displayicon.png",
+        "type": "ability",
+        "owner": "Jett",
+        "abilitySlot": "Ability1"
+      },
+      {
+        "name": "Tailwind (Jett)",
+        "emoji": "🎯",
+        "img": "https://media.valorant-api.com/agents/add6443a-41bd-e414-f6ad-e58d267f4e95/abilities/ability2/displayicon.png",
+        "type": "ability",
+        "owner": "Jett",
+        "abilitySlot": "Ability2"
+      },
+      {
+        "name": "Cloudburst (Jett)",
+        "emoji": "🎯",
+        "img": "https://media.valorant-api.com/agents/add6443a-41bd-e414-f6ad-e58d267f4e95/abilities/grenade/displayicon.png",
+        "type": "ability",
+        "owner": "Jett",
+        "abilitySlot": "Grenade"
+      },
+      {
+        "name": "Blade Storm (Jett)",
+        "emoji": "🎯",
+        "img": "https://media.valorant-api.com/agents/add6443a-41bd-e414-f6ad-e58d267f4e95/abilities/ultimate/displayicon.png",
+        "type": "ability",
+        "owner": "Jett",
+        "abilitySlot": "Ultimate"
+      },
+      {
+        "name": "Drift (Jett)",
+        "emoji": "🎯",
+        "img": "https://media.valorant-api.com/agents/add6443a-41bd-e414-f6ad-e58d267f4e95/abilities/passive/displayicon.png",
+        "type": "ability",
+        "owner": "Jett",
+        "abilitySlot": "Passive"
+      },
+      {
+        "name": "FRAG/ment (KAY/O)",
+        "emoji": "🎯",
+        "img": "https://media.valorant-api.com/agents/601dbbe7-43ce-be57-2a40-4abd24953621/abilities/grenade/displayicon.png",
+        "type": "ability",
+        "owner": "KAY/O",
+        "abilitySlot": "Grenade"
+      },
+      {
+        "name": "FLASH/drive (KAY/O)",
+        "emoji": "🎯",
+        "img": "https://media.valorant-api.com/agents/601dbbe7-43ce-be57-2a40-4abd24953621/abilities/ability1/displayicon.png",
+        "type": "ability",
+        "owner": "KAY/O",
+        "abilitySlot": "Ability1"
+      },
+      {
+        "name": "ZERO/point (KAY/O)",
+        "emoji": "🎯",
+        "img": "https://media.valorant-api.com/agents/601dbbe7-43ce-be57-2a40-4abd24953621/abilities/ability2/displayicon.png",
+        "type": "ability",
+        "owner": "KAY/O",
+        "abilitySlot": "Ability2"
+      },
+      {
+        "name": "NULL/cmd (KAY/O)",
+        "emoji": "🎯",
+        "img": "https://media.valorant-api.com/agents/601dbbe7-43ce-be57-2a40-4abd24953621/abilities/ultimate/displayicon.png",
+        "type": "ability",
+        "owner": "KAY/O",
+        "abilitySlot": "Ultimate"
+      },
+      {
+        "name": "Nanoswarm (Killjoy)",
+        "emoji": "🎯",
+        "img": "https://media.valorant-api.com/agents/1e58de9c-4950-5125-93e9-a0aee9f98746/abilities/grenade/displayicon.png",
+        "type": "ability",
+        "owner": "Killjoy",
+        "abilitySlot": "Grenade"
+      },
+      {
+        "name": "ALARMBOT (Killjoy)",
+        "emoji": "🎯",
+        "img": "https://media.valorant-api.com/agents/1e58de9c-4950-5125-93e9-a0aee9f98746/abilities/ability1/displayicon.png",
+        "type": "ability",
+        "owner": "Killjoy",
+        "abilitySlot": "Ability1",
+        "displayName": "Alarmbot"
+      },
+      {
+        "name": "TURRET (Killjoy)",
+        "emoji": "🎯",
+        "img": "https://media.valorant-api.com/agents/1e58de9c-4950-5125-93e9-a0aee9f98746/abilities/ability2/displayicon.png",
+        "type": "ability",
+        "owner": "Killjoy",
+        "abilitySlot": "Ability2",
+        "displayName": "Turret"
+      },
+      {
+        "name": "Lockdown (Killjoy)",
+        "emoji": "🎯",
+        "img": "https://media.valorant-api.com/agents/1e58de9c-4950-5125-93e9-a0aee9f98746/abilities/ultimate/displayicon.png",
+        "type": "ability",
+        "owner": "Killjoy",
+        "abilitySlot": "Ultimate",
+        "displayName": "Lockdown"
+      },
+      {
+        "name": "High Gear (Neon)",
+        "emoji": "🎯",
+        "img": "https://media.valorant-api.com/agents/bb2a4828-46eb-8cd1-e765-15848195d751/abilities/ability2/displayicon.png",
+        "type": "ability",
+        "owner": "Neon",
+        "abilitySlot": "Ability2"
+      },
+      {
+        "name": "Relay Bolt (Neon)",
+        "emoji": "🎯",
+        "img": "https://media.valorant-api.com/agents/bb2a4828-46eb-8cd1-e765-15848195d751/abilities/ability1/displayicon.png",
+        "type": "ability",
+        "owner": "Neon",
+        "abilitySlot": "Ability1"
+      },
+      {
+        "name": "Fast Lane (Neon)",
+        "emoji": "🎯",
+        "img": "https://media.valorant-api.com/agents/bb2a4828-46eb-8cd1-e765-15848195d751/abilities/grenade/displayicon.png",
+        "type": "ability",
+        "owner": "Neon",
+        "abilitySlot": "Grenade"
+      },
+      {
+        "name": "Overdrive (Neon)",
+        "emoji": "🎯",
+        "img": "https://media.valorant-api.com/agents/bb2a4828-46eb-8cd1-e765-15848195d751/abilities/ultimate/displayicon.png",
+        "type": "ability",
+        "owner": "Neon",
+        "abilitySlot": "Ultimate"
+      },
+      {
+        "name": "Paranoia (Omen)",
+        "emoji": "🎯",
+        "img": "https://media.valorant-api.com/agents/8e253930-4c05-31dd-1b6c-968525494517/abilities/ability1/displayicon.png",
+        "type": "ability",
+        "owner": "Omen",
+        "abilitySlot": "Ability1"
+      },
+      {
+        "name": "Dark Cover (Omen)",
+        "emoji": "🎯",
+        "img": "https://media.valorant-api.com/agents/8e253930-4c05-31dd-1b6c-968525494517/abilities/ability2/displayicon.png",
+        "type": "ability",
+        "owner": "Omen",
+        "abilitySlot": "Ability2"
+      },
+      {
+        "name": "Shrouded Step (Omen)",
+        "emoji": "🎯",
+        "img": "https://media.valorant-api.com/agents/8e253930-4c05-31dd-1b6c-968525494517/abilities/grenade/displayicon.png",
+        "type": "ability",
+        "owner": "Omen",
+        "abilitySlot": "Grenade"
+      },
+      {
+        "name": "From the Shadows (Omen)",
+        "emoji": "🎯",
+        "img": "https://media.valorant-api.com/agents/8e253930-4c05-31dd-1b6c-968525494517/abilities/ultimate/displayicon.png",
+        "type": "ability",
+        "owner": "Omen",
+        "abilitySlot": "Ultimate"
+      },
+      {
+        "name": "Blaze (Phoenix)",
+        "emoji": "🎯",
+        "img": "https://media.valorant-api.com/agents/eb93336a-449b-9c1b-0a54-a891f7921d69/abilities/grenade/displayicon.png",
+        "type": "ability",
+        "owner": "Phoenix",
+        "abilitySlot": "Grenade"
+      },
+      {
+        "name": "Hot Hands (Phoenix)",
+        "emoji": "🎯",
+        "img": "https://media.valorant-api.com/agents/eb93336a-449b-9c1b-0a54-a891f7921d69/abilities/ability1/displayicon.png",
+        "type": "ability",
+        "owner": "Phoenix",
+        "abilitySlot": "Ability1"
+      },
+      {
+        "name": "Curveball (Phoenix)",
+        "emoji": "🎯",
+        "img": "https://media.valorant-api.com/agents/eb93336a-449b-9c1b-0a54-a891f7921d69/abilities/ability2/displayicon.png",
+        "type": "ability",
+        "owner": "Phoenix",
+        "abilitySlot": "Ability2"
+      },
+      {
+        "name": "Run it Back (Phoenix)",
+        "emoji": "🎯",
+        "img": "https://media.valorant-api.com/agents/eb93336a-449b-9c1b-0a54-a891f7921d69/abilities/ultimate/displayicon.png",
+        "type": "ability",
+        "owner": "Phoenix",
+        "abilitySlot": "Ultimate"
+      },
+      {
+        "name": "Heating Up (Phoenix)",
+        "emoji": "🎯",
+        "img": "https://media.valorant-api.com/agents/eb93336a-449b-9c1b-0a54-a891f7921d69/displayicon.png",
+        "type": "ability",
+        "owner": "Phoenix",
+        "abilitySlot": "Passive"
+      },
+      {
+        "name": "Blast Pack (Raze)",
+        "emoji": "🎯",
+        "img": "https://media.valorant-api.com/agents/f94c3b30-42be-e959-889c-5aa313dba261/abilities/ability1/displayicon.png",
+        "type": "ability",
+        "owner": "Raze",
+        "abilitySlot": "Ability1"
+      },
+      {
+        "name": "Paint Shells (Raze)",
+        "emoji": "🎯",
+        "img": "https://media.valorant-api.com/agents/f94c3b30-42be-e959-889c-5aa313dba261/abilities/ability2/displayicon.png",
+        "type": "ability",
+        "owner": "Raze",
+        "abilitySlot": "Ability2"
+      },
+      {
+        "name": "Boom Bot (Raze)",
+        "emoji": "🎯",
+        "img": "https://media.valorant-api.com/agents/f94c3b30-42be-e959-889c-5aa313dba261/abilities/grenade/displayicon.png",
+        "type": "ability",
+        "owner": "Raze",
+        "abilitySlot": "Grenade",
+        "displayName": "Boom Bot"
+      },
+      {
+        "name": "Showstopper (Raze)",
+        "emoji": "🎯",
+        "img": "https://media.valorant-api.com/agents/f94c3b30-42be-e959-889c-5aa313dba261/abilities/ultimate/displayicon.png",
+        "type": "ability",
+        "owner": "Raze",
+        "abilitySlot": "Ultimate"
+      },
+      {
+        "name": "Devour (Reyna)",
+        "emoji": "🎯",
+        "img": "https://media.valorant-api.com/agents/a3bfb853-43b2-7238-a4f1-ad90e9e46bcc/abilities/ability1/displayicon.png",
+        "type": "ability",
+        "owner": "Reyna",
+        "abilitySlot": "Ability1"
+      },
+      {
+        "name": "Dismiss (Reyna)",
+        "emoji": "🎯",
+        "img": "https://media.valorant-api.com/agents/a3bfb853-43b2-7238-a4f1-ad90e9e46bcc/abilities/ability2/displayicon.png",
+        "type": "ability",
+        "owner": "Reyna",
+        "abilitySlot": "Ability2"
+      },
+      {
+        "name": "Leer (Reyna)",
+        "emoji": "🎯",
+        "img": "https://media.valorant-api.com/agents/a3bfb853-43b2-7238-a4f1-ad90e9e46bcc/abilities/grenade/displayicon.png",
+        "type": "ability",
+        "owner": "Reyna",
+        "abilitySlot": "Grenade"
+      },
+      {
+        "name": "Empress (Reyna)",
+        "emoji": "🎯",
+        "img": "https://media.valorant-api.com/agents/a3bfb853-43b2-7238-a4f1-ad90e9e46bcc/abilities/ultimate/displayicon.png",
+        "type": "ability",
+        "owner": "Reyna",
+        "abilitySlot": "Ultimate"
+      },
+      {
+        "name": "Slow Orb (Sage)",
+        "emoji": "🎯",
+        "img": "https://media.valorant-api.com/agents/569fdd95-4d10-43ab-ca70-79becc718b46/abilities/ability1/displayicon.png",
+        "type": "ability",
+        "owner": "Sage",
+        "abilitySlot": "Ability1"
+      },
+      {
+        "name": "Healing Orb (Sage)",
+        "emoji": "🎯",
+        "img": "https://media.valorant-api.com/agents/569fdd95-4d10-43ab-ca70-79becc718b46/abilities/ability2/displayicon.png",
+        "type": "ability",
+        "owner": "Sage",
+        "abilitySlot": "Ability2"
+      },
+      {
+        "name": "Barrier Orb (Sage)",
+        "emoji": "🎯",
+        "img": "https://media.valorant-api.com/agents/569fdd95-4d10-43ab-ca70-79becc718b46/abilities/grenade/displayicon.png",
+        "type": "ability",
+        "owner": "Sage",
+        "abilitySlot": "Grenade"
+      },
+      {
+        "name": "Resurrection (Sage)",
+        "emoji": "🎯",
+        "img": "https://media.valorant-api.com/agents/569fdd95-4d10-43ab-ca70-79becc718b46/abilities/ultimate/displayicon.png",
+        "type": "ability",
+        "owner": "Sage",
+        "abilitySlot": "Ultimate"
+      },
+      {
+        "name": "Trailblazer (Skye)",
+        "emoji": "🎯",
+        "img": "https://media.valorant-api.com/agents/6f2a04ca-43e0-be17-7f36-b3908627744d/abilities/ability1/displayicon.png",
+        "type": "ability",
+        "owner": "Skye",
+        "abilitySlot": "Ability1",
+        "displayName": "Trailblazer"
+      },
+      {
+        "name": "Guiding Light (Skye)",
+        "emoji": "🎯",
+        "img": "https://media.valorant-api.com/agents/6f2a04ca-43e0-be17-7f36-b3908627744d/abilities/ability2/displayicon.png",
+        "type": "ability",
+        "owner": "Skye",
+        "abilitySlot": "Ability2"
+      },
+      {
+        "name": "Regrowth (Skye)",
+        "emoji": "🎯",
+        "img": "https://media.valorant-api.com/agents/6f2a04ca-43e0-be17-7f36-b3908627744d/abilities/grenade/displayicon.png",
+        "type": "ability",
+        "owner": "Skye",
+        "abilitySlot": "Grenade"
+      },
+      {
+        "name": "Seekers (Skye)",
+        "emoji": "🎯",
+        "img": "https://media.valorant-api.com/agents/6f2a04ca-43e0-be17-7f36-b3908627744d/abilities/ultimate/displayicon.png",
+        "type": "ability",
+        "owner": "Skye",
+        "abilitySlot": "Ultimate",
+        "displayName": "Seekers"
+      },
+      {
+        "name": "Shock Bolt (Sova)",
+        "emoji": "🎯",
+        "img": "https://media.valorant-api.com/agents/320b2a48-4d9b-a075-30f1-1f93a9b638fa/abilities/ability1/displayicon.png",
+        "type": "ability",
+        "owner": "Sova",
+        "abilitySlot": "Ability1"
+      },
+      {
+        "name": "Recon Bolt (Sova)",
+        "emoji": "🎯",
+        "img": "https://media.valorant-api.com/agents/320b2a48-4d9b-a075-30f1-1f93a9b638fa/abilities/ability2/displayicon.png",
+        "type": "ability",
+        "owner": "Sova",
+        "abilitySlot": "Ability2"
+      },
+      {
+        "name": "Owl Drone (Sova)",
+        "emoji": "🎯",
+        "img": "https://media.valorant-api.com/agents/320b2a48-4d9b-a075-30f1-1f93a9b638fa/abilities/grenade/displayicon.png",
+        "type": "ability",
+        "owner": "Sova",
+        "abilitySlot": "Grenade",
+        "displayName": "Owl Drone"
+      },
+      {
+        "name": "Hunter's Fury (Sova)",
+        "emoji": "🎯",
+        "img": "https://media.valorant-api.com/agents/320b2a48-4d9b-a075-30f1-1f93a9b638fa/abilities/ultimate/displayicon.png",
+        "type": "ability",
+        "owner": "Sova",
+        "abilitySlot": "Ultimate"
+      },
+      {
+        "name": "Uncanny Marksman (Sova)",
+        "emoji": "🎯",
+        "img": "https://media.valorant-api.com/agents/320b2a48-4d9b-a075-30f1-1f93a9b638fa/displayicon.png",
+        "type": "ability",
+        "owner": "Sova",
+        "abilitySlot": "Passive"
+      },
+      {
+        "name": "Guided Salvo (Tejo)",
+        "emoji": "🎯",
+        "img": "https://media.valorant-api.com/agents/b444168c-4e35-8076-db47-ef9bf368f384/abilities/ability2/displayicon.png",
+        "type": "ability",
+        "owner": "Tejo",
+        "abilitySlot": "Ability2"
+      },
+      {
+        "name": "Special Delivery (Tejo)",
+        "emoji": "🎯",
+        "img": "https://media.valorant-api.com/agents/b444168c-4e35-8076-db47-ef9bf368f384/abilities/ability1/displayicon.png",
+        "type": "ability",
+        "owner": "Tejo",
+        "abilitySlot": "Ability1"
+      },
+      {
+        "name": "Armageddon (Tejo)",
+        "emoji": "🎯",
+        "img": "https://media.valorant-api.com/agents/b444168c-4e35-8076-db47-ef9bf368f384/abilities/ultimate/displayicon.png",
+        "type": "ability",
+        "owner": "Tejo",
+        "abilitySlot": "Ultimate"
+      },
+      {
+        "name": "Stealth Drone (Tejo)",
+        "emoji": "🎯",
+        "img": "https://media.valorant-api.com/agents/b444168c-4e35-8076-db47-ef9bf368f384/abilities/grenade/displayicon.png",
+        "type": "ability",
+        "owner": "Tejo",
+        "abilitySlot": "Grenade"
+      },
+      {
+        "name": "Interceptor (Veto)",
+        "emoji": "🎯",
+        "img": "https://media.valorant-api.com/agents/92eeef5d-43b5-1d4a-8d03-b3927a09034b/abilities/ability2/displayicon.png",
+        "type": "ability",
+        "owner": "Veto",
+        "abilitySlot": "Ability2"
+      },
+      {
+        "name": "Crosscut (Veto)",
+        "emoji": "🎯",
+        "img": "https://media.valorant-api.com/agents/92eeef5d-43b5-1d4a-8d03-b3927a09034b/abilities/grenade/displayicon.png",
+        "type": "ability",
+        "owner": "Veto",
+        "abilitySlot": "Grenade"
+      },
+      {
+        "name": "Evolution (Veto)",
+        "emoji": "🎯",
+        "img": "https://media.valorant-api.com/agents/92eeef5d-43b5-1d4a-8d03-b3927a09034b/abilities/ultimate/displayicon.png",
+        "type": "ability",
+        "owner": "Veto",
+        "abilitySlot": "Ultimate"
+      },
+      {
+        "name": "Chokehold (Veto)",
+        "emoji": "🎯",
+        "img": "https://media.valorant-api.com/agents/92eeef5d-43b5-1d4a-8d03-b3927a09034b/abilities/ability1/displayicon.png",
+        "type": "ability",
+        "owner": "Veto",
+        "abilitySlot": "Ability1"
+      },
+      {
+        "name": "Poison Cloud (Viper)",
+        "emoji": "🎯",
+        "img": "https://media.valorant-api.com/agents/707eab51-4836-f488-046a-cda6bf494859/abilities/ability1/displayicon.png",
+        "type": "ability",
+        "owner": "Viper",
+        "abilitySlot": "Ability1"
+      },
+      {
+        "name": "Toxic Screen (Viper)",
+        "emoji": "🎯",
+        "img": "https://media.valorant-api.com/agents/707eab51-4836-f488-046a-cda6bf494859/abilities/ability2/displayicon.png",
+        "type": "ability",
+        "owner": "Viper",
+        "abilitySlot": "Ability2"
+      },
+      {
+        "name": "Snake Bite (Viper)",
+        "emoji": "🎯",
+        "img": "https://media.valorant-api.com/agents/707eab51-4836-f488-046a-cda6bf494859/abilities/grenade/displayicon.png",
+        "type": "ability",
+        "owner": "Viper",
+        "abilitySlot": "Grenade"
+      },
+      {
+        "name": "Viper's Pit (Viper)",
+        "emoji": "🎯",
+        "img": "https://media.valorant-api.com/agents/707eab51-4836-f488-046a-cda6bf494859/abilities/ultimate/displayicon.png",
+        "type": "ability",
+        "owner": "Viper",
+        "abilitySlot": "Ultimate"
+      },
+      {
+        "name": "Toxic (Viper)",
+        "emoji": "🎯",
+        "img": "https://media.valorant-api.com/agents/707eab51-4836-f488-046a-cda6bf494859/displayicon.png",
+        "type": "ability",
+        "owner": "Viper",
+        "abilitySlot": "Passive"
+      },
+      {
+        "name": "Shear (Vyse)",
+        "emoji": "🎯",
+        "img": "https://media.valorant-api.com/agents/efba5359-4016-a1e5-7626-b1ae76895940/abilities/ability1/displayicon.png",
+        "type": "ability",
+        "owner": "Vyse",
+        "abilitySlot": "Ability1"
+      },
+      {
+        "name": "Arc Rose (Vyse)",
+        "emoji": "🎯",
+        "img": "https://media.valorant-api.com/agents/efba5359-4016-a1e5-7626-b1ae76895940/abilities/ability2/displayicon.png",
+        "type": "ability",
+        "owner": "Vyse",
+        "abilitySlot": "Ability2"
+      },
+      {
+        "name": "Razorvine (Vyse)",
+        "emoji": "🎯",
+        "img": "https://media.valorant-api.com/agents/efba5359-4016-a1e5-7626-b1ae76895940/abilities/grenade/displayicon.png",
+        "type": "ability",
+        "owner": "Vyse",
+        "abilitySlot": "Grenade"
+      },
+      {
+        "name": "Steel Garden (Vyse)",
+        "emoji": "🎯",
+        "img": "https://media.valorant-api.com/agents/efba5359-4016-a1e5-7626-b1ae76895940/abilities/ultimate/displayicon.png",
+        "type": "ability",
+        "owner": "Vyse",
+        "abilitySlot": "Ultimate"
+      },
+      {
+        "name": "Refract (Waylay)",
+        "emoji": "🎯",
+        "img": "https://media.valorant-api.com/agents/df1cb487-4902-002e-5c17-d28e83e78588/abilities/ability2/displayicon.png",
+        "type": "ability",
+        "owner": "Waylay",
+        "abilitySlot": "Ability2"
+      },
+      {
+        "name": "Saturate (Waylay)",
+        "emoji": "🎯",
+        "img": "https://media.valorant-api.com/agents/df1cb487-4902-002e-5c17-d28e83e78588/abilities/grenade/displayicon.png",
+        "type": "ability",
+        "owner": "Waylay",
+        "abilitySlot": "Grenade"
+      },
+      {
+        "name": "Lightspeed (Waylay)",
+        "emoji": "🎯",
+        "img": "https://media.valorant-api.com/agents/df1cb487-4902-002e-5c17-d28e83e78588/abilities/ability1/displayicon.png",
+        "type": "ability",
+        "owner": "Waylay",
+        "abilitySlot": "Ability1"
+      },
+      {
+        "name": "Convergent Paths (Waylay)",
+        "emoji": "🎯",
+        "img": "https://media.valorant-api.com/agents/df1cb487-4902-002e-5c17-d28e83e78588/abilities/ultimate/displayicon.png",
+        "type": "ability",
+        "owner": "Waylay",
+        "abilitySlot": "Ultimate"
+      },
+      {
+        "name": "FAKEOUT (Yoru)",
+        "emoji": "🎯",
+        "img": "https://media.valorant-api.com/agents/7f94d92c-4234-0a36-9646-3a87eb8b5c89/abilities/grenade/displayicon.png",
+        "type": "ability",
+        "owner": "Yoru",
+        "abilitySlot": "Grenade"
+      },
+      {
+        "name": "BLINDSIDE (Yoru)",
+        "emoji": "🎯",
+        "img": "https://media.valorant-api.com/agents/7f94d92c-4234-0a36-9646-3a87eb8b5c89/abilities/ability1/displayicon.png",
+        "type": "ability",
+        "owner": "Yoru",
+        "abilitySlot": "Ability1"
+      },
+      {
+        "name": "GATECRASH (Yoru)",
+        "emoji": "🎯",
+        "img": "https://media.valorant-api.com/agents/7f94d92c-4234-0a36-9646-3a87eb8b5c89/abilities/ability2/displayicon.png",
+        "type": "ability",
+        "owner": "Yoru",
+        "abilitySlot": "Ability2"
+      },
+      {
+        "name": "DIMENSIONAL DRIFT (Yoru)",
+        "emoji": "🎯",
+        "img": "https://media.valorant-api.com/agents/7f94d92c-4234-0a36-9646-3a87eb8b5c89/abilities/ultimate/displayicon.png",
+        "type": "ability",
+        "owner": "Yoru",
+        "abilitySlot": "Ultimate"
       }
     ]
   }
