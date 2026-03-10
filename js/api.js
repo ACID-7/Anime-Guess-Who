@@ -227,6 +227,15 @@ function applyDatasetOverridesToAnime(anime) {
     const norm = normalizeName(entry.name);
     if (byName.has(norm)) return;
     if (entry.hidden) return;
+    if (
+      anime.id === 'valorant' &&
+      !window.GameState?.showValorantAbilities &&
+      Array.isArray(ANIMES)
+    ) {
+      const sourceAnime = ANIMES.find(item => item.id === anime.id);
+      const sourceChar = sourceAnime?.chars?.find(item => normalizeName(item.name) === norm);
+      if (sourceChar?.type === 'ability') return;
+    }
 
     updatedChars.push({
       name: entry.name,

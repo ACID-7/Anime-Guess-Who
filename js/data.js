@@ -6368,7 +6368,7 @@ const ANIMES = [
         "emoji": "✨",
         "anilist": null,
         "mal": null,
-        "img": "https://genshin-guess-who.com/genshin/char_icons_5star/Arataki%20Itto.webp"
+        "img": "https://genshin-guess-who.com/genshin/char_icons_5star/Arataki_Itto.webp"
       },
       {
         "name": "Arlecchino",
@@ -6602,7 +6602,7 @@ const ANIMES = [
         "emoji": "✨",
         "anilist": null,
         "mal": null,
-        "img": "https://genshin-guess-who.com/genshin/char_icons_5star/Hu%20Tao.webp"
+        "img": "https://genshin-guess-who.com/genshin/char_icons_5star/Hu_Tao.webp"
       },
       {
         "name": "Iansan",
@@ -6654,7 +6654,7 @@ const ANIMES = [
         "emoji": "✨",
         "anilist": null,
         "mal": null,
-        "img": "https://genshin-guess-who.com/genshin/char_icons_5star/Kaedehara%20Kazuha.webp"
+        "img": "https://genshin-guess-who.com/genshin/char_icons_5star/Kaedehara_Kazuha.webp"
       },
       {
         "name": "Kaeya",
@@ -6668,14 +6668,14 @@ const ANIMES = [
         "emoji": "✨",
         "anilist": null,
         "mal": null,
-        "img": "https://genshin-guess-who.com/genshin/char_icons_5star/Kamisato%20Ayaka.webp"
+        "img": "https://genshin-guess-who.com/genshin/char_icons_5star/Kamisato_Ayaka.webp"
       },
       {
         "name": "Kamisato Ayato",
         "emoji": "✨",
         "anilist": null,
         "mal": null,
-        "img": "https://genshin-guess-who.com/genshin/char_icons_5star/Kamisato%20Ayato.webp"
+        "img": "https://genshin-guess-who.com/genshin/char_icons_5star/Kamisato_Ayato.webp"
       },
       {
         "name": "Kaveh",
@@ -6717,21 +6717,21 @@ const ANIMES = [
         "emoji": "✨",
         "anilist": null,
         "mal": null,
-        "img": "https://genshin-guess-who.com/genshin/char_icons_4star/Kujou%20Sara.webp"
+        "img": "https://genshin-guess-who.com/genshin/char_icons_4star/Kujou_Sara.webp"
       },
       {
         "name": "Kuki Shinobu",
         "emoji": "✨",
         "anilist": null,
         "mal": null,
-        "img": "https://genshin-guess-who.com/genshin/char_icons_4star/Kuki%20Shinobu.webp"
+        "img": "https://genshin-guess-who.com/genshin/char_icons_4star/Kuki_Shinobu.webp"
       },
       {
         "name": "Lan Yan",
         "emoji": "✨",
         "anilist": null,
         "mal": null,
-        "img": "https://genshin-guess-who.com/genshin/char_icons_4star/Lan%20Yan.webp"
+        "img": "https://genshin-guess-who.com/genshin/char_icons_4star/Lan_Yan.webp"
       },
       {
         "name": "Lauma",
@@ -6879,7 +6879,7 @@ const ANIMES = [
         "emoji": "✨",
         "anilist": null,
         "mal": null,
-        "img": "https://genshin-guess-who.com/genshin/char_icons_5star/Raiden%20Shogun.webp"
+        "img": "https://genshin-guess-who.com/genshin/char_icons_5star/Raiden_Shogun.webp"
       },
       {
         "name": "Razor",
@@ -6900,7 +6900,7 @@ const ANIMES = [
         "emoji": "✨",
         "anilist": null,
         "mal": null,
-        "img": "https://genshin-guess-who.com/genshin/char_icons_5star/Sangonomiya%20Kokomi.webp"
+        "img": "https://genshin-guess-who.com/genshin/char_icons_5star/Sangonomiya_Kokomi.webp"
       },
       {
         "name": "Sayu",
@@ -6928,7 +6928,7 @@ const ANIMES = [
         "emoji": "✨",
         "anilist": null,
         "mal": null,
-        "img": "https://genshin-guess-who.com/genshin/char_icons_4star/Shikanoin%20Heizou.webp"
+        "img": "https://genshin-guess-who.com/genshin/char_icons_4star/Shikanoin_Heizou.webp"
       },
       {
         "name": "Sigewinne",
@@ -7052,7 +7052,7 @@ const ANIMES = [
         "emoji": "✨",
         "anilist": null,
         "mal": null,
-        "img": "https://genshin-guess-who.com/genshin/char_icons_5star/Yae%20Miko.webp"
+        "img": "https://genshin-guess-who.com/genshin/char_icons_5star/Yae_Miko.webp"
       },
       {
         "name": "Yanfei",
@@ -7087,14 +7087,14 @@ const ANIMES = [
         "emoji": "✨",
         "anilist": null,
         "mal": null,
-        "img": "https://genshin-guess-who.com/genshin/char_icons_5star/Yumemizuki%20Mizuki.webp"
+        "img": "https://genshin-guess-who.com/genshin/char_icons_5star/Yumemizuki_Mizuki.webp"
       },
       {
         "name": "Yun Jin",
         "emoji": "✨",
         "anilist": null,
         "mal": null,
-        "img": "https://genshin-guess-who.com/genshin/char_icons_4star/Yun%20Jin.webp"
+        "img": "https://genshin-guess-who.com/genshin/char_icons_4star/Yun_Jin.webp"
       },
       {
         "name": "Zhongli",
@@ -7112,20 +7112,22 @@ const ANIMES = [
         "name": "Paimon",
         "emoji": "✨",
         "anilist": 203317,
-        "mal": null
+        "mal": null,
+        "img": "https://s4.anilist.co/file/anilistcdn/character/large/b203317-tqwY7CKQrZsG.png"
       },
       {
         "name": "Dainsleif",
         "emoji": "✨",
         "anilist": 350308,
-        "mal": null
+        "mal": null,
+        "img": "https://s4.anilist.co/file/anilistcdn/character/large/b350308-gSehKXpdEb4e.png"
       },
       {
         "name": "Unknown God",
         "emoji": "✨",
         "anilist": null,
         "mal": null,
-        "img": "https://static.wikia.nocookie.net/gensin-impact/images/1/1f/Wanderer%27s_Trail_Battle_Against_Asmoday.png/revision/latest/scale-to-width-down/185?cb=20260126142834"
+        "img": "https://img.gamewith.net/article/thumbnail/rectangle/29914.png"
       }
     ]
   },

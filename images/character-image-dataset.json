@@ -1,28 +1,28 @@
 {
   "version": 1,
-  "generatedAt": "2026-03-10T18:07:30.148Z",
+  "generatedAt": "2026-03-10T19:26:08.749Z",
   "totals": {
-    "total": 1290,
-    "withImages": 962,
-    "missing": 328,
+    "total": 1275,
+    "withImages": 958,
+    "missing": 317,
     "source": {
-      "id": 3,
-      "search": 356,
-      "manual": 158
+      "id": 346,
+      "search": 238,
+      "manual": 263
     }
   },
   "byAnime": {
     "aot": {
       "animeName": "Attack on Titan",
       "total": 68,
-      "withImage": 33,
-      "missing": 35
+      "withImage": 47,
+      "missing": 21
     },
     "blackclover": {
       "animeName": "Black Clover",
       "total": 70,
-      "withImage": 64,
-      "missing": 6
+      "withImage": 65,
+      "missing": 5
     },
     "bluelock": {
       "animeName": "Blue Lock",
@@ -33,8 +33,8 @@
     "chainsaw": {
       "animeName": "Chainsaw Man",
       "total": 56,
-      "withImage": 24,
-      "missing": 32
+      "withImage": 26,
+      "missing": 30
     },
     "dandadan": {
       "animeName": "Dandadan",
@@ -51,8 +51,8 @@
     "genshin": {
       "animeName": "Genshin Impact",
       "total": 118,
-      "withImage": 117,
-      "missing": 1
+      "withImage": 118,
+      "missing": 0
     },
     "haikyuu": {
       "animeName": "Haikyuu!!",
@@ -81,31 +81,31 @@
     "naruto": {
       "animeName": "Naruto & Shippuden",
       "total": 164,
-      "withImage": 121,
-      "missing": 43
+      "withImage": 143,
+      "missing": 21
     },
     "onepiece": {
       "animeName": "One Piece",
       "total": 150,
-      "withImage": 93,
-      "missing": 57
+      "withImage": 111,
+      "missing": 39
     },
     "opm": {
       "animeName": "One Punch Man",
       "total": 68,
-      "withImage": 28,
-      "missing": 40
+      "withImage": 32,
+      "missing": 36
     },
     "sololeveling": {
       "animeName": "Solo Leveling",
       "total": 41,
-      "withImage": 26,
-      "missing": 15
+      "withImage": 27,
+      "missing": 14
     },
     "valorant": {
       "animeName": "VALORANT",
-      "total": 43,
-      "withImage": 43,
+      "total": 145,
+      "withImage": 145,
       "missing": 0
     }
   },
@@ -234,11 +234,11 @@
       "animeId": "aot",
       "animeName": "Attack on Titan",
       "name": "Dina Fritz",
-      "anilist": 85384,
-      "resolvedName": null,
-      "image": null,
-      "hasImage": false,
-      "source": "none"
+      "anilist": 133215,
+      "resolvedName": "Dina Fritz",
+      "image": "https://s4.anilist.co/file/anilistcdn/character/large/b133215-ifxjiTHsEGNl.png",
+      "hasImage": true,
+      "source": "search"
     },
     {
       "animeId": "aot",
@@ -314,11 +314,11 @@
       "animeId": "aot",
       "animeName": "Attack on Titan",
       "name": "Floch Forster",
-      "anilist": 85370,
-      "resolvedName": null,
-      "image": null,
-      "hasImage": false,
-      "source": "none"
+      "anilist": 127703,
+      "resolvedName": "Floch Forster",
+      "image": "https://s4.anilist.co/file/anilistcdn/character/large/b127703-qNIccR0yPZKu.png",
+      "hasImage": true,
+      "source": "search"
     },
     {
       "animeId": "aot",
@@ -334,21 +334,21 @@
       "animeId": "aot",
       "animeName": "Attack on Titan",
       "name": "Frieda Reiss",
-      "anilist": null,
-      "resolvedName": null,
-      "image": null,
-      "hasImage": false,
-      "source": "none"
+      "anilist": 127624,
+      "resolvedName": "Frieda Reiss",
+      "image": "https://s4.anilist.co/file/anilistcdn/character/large/n127624-mmQqGCYRW69r.jpg",
+      "hasImage": true,
+      "source": "search"
     },
     {
       "animeId": "aot",
       "animeName": "Attack on Titan",
       "name": "Furlan Church",
-      "anilist": 85390,
-      "resolvedName": null,
-      "image": null,
-      "hasImage": false,
-      "source": "none"
+      "anilist": 87928,
+      "resolvedName": "Furlan Church",
+      "image": "https://s4.anilist.co/file/anilistcdn/character/large/n87928-Dfg1T9uJBZ4s.jpg",
+      "hasImage": true,
+      "source": "search"
     },
     {
       "animeId": "aot",
@@ -424,21 +424,21 @@
       "animeId": "aot",
       "animeName": "Attack on Titan",
       "name": "Ilse Langnar",
-      "anilist": 85388,
-      "resolvedName": null,
-      "image": null,
-      "hasImage": false,
-      "source": "none"
+      "anilist": 62487,
+      "resolvedName": "Ilse Langnar",
+      "image": "https://s4.anilist.co/file/anilistcdn/character/large/62487-XnpqXJq5Vig7.jpg",
+      "hasImage": true,
+      "source": "search"
     },
     {
       "animeId": "aot",
       "animeName": "Attack on Titan",
       "name": "Isabel Magnolia",
-      "anilist": 85389,
-      "resolvedName": null,
-      "image": null,
-      "hasImage": false,
-      "source": "none"
+      "anilist": 87929,
+      "resolvedName": "Isabel Magnolia",
+      "image": "https://s4.anilist.co/file/anilistcdn/character/large/n87929-FobmgcjvYLJI.jpg",
+      "hasImage": true,
+      "source": "search"
     },
     {
       "animeId": "aot",
@@ -474,11 +474,11 @@
       "animeId": "aot",
       "animeName": "Attack on Titan",
       "name": "Kenny Ackerman",
-      "anilist": 85383,
-      "resolvedName": null,
-      "image": null,
-      "hasImage": false,
-      "source": "none"
+      "anilist": 127443,
+      "resolvedName": "Kenny Ackerman",
+      "image": "https://s4.anilist.co/file/anilistcdn/character/large/127443-aVMXGOchpsvj.png",
+      "hasImage": true,
+      "source": "search"
     },
     {
       "animeId": "aot",
@@ -564,11 +564,11 @@
       "animeId": "aot",
       "animeName": "Attack on Titan",
       "name": "Nifa",
-      "anilist": 85395,
-      "resolvedName": null,
-      "image": null,
-      "hasImage": false,
-      "source": "none"
+      "anilist": 126849,
+      "resolvedName": "Nifa",
+      "image": "https://s4.anilist.co/file/anilistcdn/character/large/126849-jH0gw54UpbDQ.jpg",
+      "hasImage": true,
+      "source": "search"
     },
     {
       "animeId": "aot",
@@ -594,11 +594,11 @@
       "animeId": "aot",
       "animeName": "Attack on Titan",
       "name": "Onyankopon",
-      "anilist": 85378,
-      "resolvedName": null,
-      "image": null,
-      "hasImage": false,
-      "source": "none"
+      "anilist": 192909,
+      "resolvedName": "Onyankopon",
+      "image": "https://s4.anilist.co/file/anilistcdn/character/large/b192909-81EoCndP0uEH.png",
+      "hasImage": true,
+      "source": "search"
     },
     {
       "animeId": "aot",
@@ -654,11 +654,11 @@
       "animeId": "aot",
       "animeName": "Attack on Titan",
       "name": "Rod Reiss",
-      "anilist": 85382,
-      "resolvedName": null,
-      "image": null,
-      "hasImage": false,
-      "source": "none"
+      "anilist": 127360,
+      "resolvedName": "Rod Reiss",
+      "image": "https://s4.anilist.co/file/anilistcdn/character/large/127360-UgSpq6e0DAYz.jpg",
+      "hasImage": true,
+      "source": "search"
     },
     {
       "animeId": "aot",
@@ -714,11 +714,11 @@
       "animeId": "aot",
       "animeName": "Attack on Titan",
       "name": "Uri Reiss",
-      "anilist": null,
-      "resolvedName": null,
-      "image": null,
-      "hasImage": false,
-      "source": "none"
+      "anilist": 127570,
+      "resolvedName": "Uri Reiss",
+      "image": "https://s4.anilist.co/file/anilistcdn/character/large/127570-b7zpa6DSq2iA.png",
+      "hasImage": true,
+      "source": "search"
     },
     {
       "animeId": "aot",
@@ -744,11 +744,11 @@
       "animeId": "aot",
       "animeName": "Attack on Titan",
       "name": "Yelena",
-      "anilist": 85377,
-      "resolvedName": null,
-      "image": null,
-      "hasImage": false,
-      "source": "none"
+      "anilist": 133216,
+      "resolvedName": "Yelena",
+      "image": "https://s4.anilist.co/file/anilistcdn/character/large/b133216-HKl61n4F7eYv.png",
+      "hasImage": true,
+      "source": "search"
     },
     {
       "animeId": "aot",
@@ -764,11 +764,11 @@
       "animeId": "aot",
       "animeName": "Attack on Titan",
       "name": "Ymir Fritz",
-      "anilist": null,
-      "resolvedName": null,
-      "image": null,
-      "hasImage": false,
-      "source": "none"
+      "anilist": 199551,
+      "resolvedName": "Ymir Fritz",
+      "image": "https://s4.anilist.co/file/anilistcdn/character/large/b199551-UNzb9vgcbOIx.png",
+      "hasImage": true,
+      "source": "search"
     },
     {
       "animeId": "aot",
@@ -784,11 +784,11 @@
       "animeId": "aot",
       "animeName": "Attack on Titan",
       "name": "Zofia",
-      "anilist": 85406,
-      "resolvedName": null,
-      "image": null,
-      "hasImage": false,
-      "source": "none"
+      "anilist": 125664,
+      "resolvedName": "Zofia",
+      "image": "https://s4.anilist.co/file/anilistcdn/character/large/b125664-e6U9YCj9f7R7.png",
+      "hasImage": true,
+      "source": "search"
     },
     {
       "animeId": "blackclover",
@@ -808,7 +808,7 @@
       "resolvedName": "Adrammelech",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/b288931-6ekYqqCDnkQt.jpg",
       "hasImage": true,
-      "source": "search"
+      "source": "id"
     },
     {
       "animeId": "blackclover",
@@ -818,7 +818,7 @@
       "resolvedName": "Asta",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/b123285-tKijiuQErDS0.png",
       "hasImage": true,
-      "source": "anime"
+      "source": "id"
     },
     {
       "animeId": "blackclover",
@@ -828,7 +828,7 @@
       "resolvedName": "Astaroth",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/b215442-UwEDOGHjMmOR.png",
       "hasImage": true,
-      "source": "search"
+      "source": "id"
     },
     {
       "animeId": "blackclover",
@@ -838,7 +838,7 @@
       "resolvedName": "Beelzebub",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/b135595-Yc4YofE291nh.png",
       "hasImage": true,
-      "source": "search"
+      "source": "id"
     },
     {
       "animeId": "blackclover",
@@ -858,7 +858,7 @@
       "resolvedName": "Charmy Pappitson",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/b124447-2J1PKMgWETNT.png",
       "hasImage": true,
-      "source": "anime"
+      "source": "id"
     },
     {
       "animeId": "blackclover",
@@ -878,7 +878,7 @@
       "resolvedName": "Dante Zogratis",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/b163782-lbNzUCyy4lk0.png",
       "hasImage": true,
-      "source": "anime"
+      "source": "id"
     },
     {
       "animeId": "blackclover",
@@ -898,7 +898,7 @@
       "resolvedName": "Dryad",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/b258201-oplwBf6PU7Ml.png",
       "hasImage": true,
-      "source": "search"
+      "source": "id"
     },
     {
       "animeId": "blackclover",
@@ -918,7 +918,7 @@
       "resolvedName": "Finral Roulacase",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/b124433-QyoZrgIUsSpd.png",
       "hasImage": true,
-      "source": "anime"
+      "source": "id"
     },
     {
       "animeId": "blackclover",
@@ -928,7 +928,7 @@
       "resolvedName": "Fuegoleon Vermillion",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/b124521-MqX5KT2tGSa8.png",
       "hasImage": true,
-      "source": "anime"
+      "source": "id"
     },
     {
       "animeId": "blackclover",
@@ -938,7 +938,7 @@
       "resolvedName": "Gadjah",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/b174452-t8GszGzwxklu.png",
       "hasImage": true,
-      "source": "anime"
+      "source": "id"
     },
     {
       "animeId": "blackclover",
@@ -948,7 +948,7 @@
       "resolvedName": "Gauche Adlai",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/b124446-4YXFoCIllCKh.png",
       "hasImage": true,
-      "source": "anime"
+      "source": "id"
     },
     {
       "animeId": "blackclover",
@@ -998,7 +998,7 @@
       "resolvedName": "Julius Novachrono",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/b124435-gXFVXWrCcieK.jpg",
       "hasImage": true,
-      "source": "anime"
+      "source": "id"
     },
     {
       "animeId": "blackclover",
@@ -1008,7 +1008,7 @@
       "resolvedName": "Kahono",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/124993-ThlqIaQV2se3.png",
       "hasImage": true,
-      "source": "anime"
+      "source": "id"
     },
     {
       "animeId": "blackclover",
@@ -1028,7 +1028,7 @@
       "resolvedName": "Kiato",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/124994-PJ7bSrZXb9k2.png",
       "hasImage": true,
-      "source": "anime"
+      "source": "id"
     },
     {
       "animeId": "blackclover",
@@ -1038,7 +1038,7 @@
       "resolvedName": "Ladros",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/b124995-nGV1j21kzQRA.png",
       "hasImage": true,
-      "source": "anime"
+      "source": "id"
     },
     {
       "animeId": "blackclover",
@@ -1048,7 +1048,7 @@
       "resolvedName": "Langris Vaude",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/b124975-vRUxV3oIOle7.png",
       "hasImage": true,
-      "source": "anime"
+      "source": "id"
     },
     {
       "animeId": "blackclover",
@@ -1058,7 +1058,7 @@
       "resolvedName": "Leopold Vermillion",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/b137881-fQLQZce8CTsY.png",
       "hasImage": true,
-      "source": "anime"
+      "source": "id"
     },
     {
       "animeId": "blackclover",
@@ -1088,7 +1088,7 @@
       "resolvedName": "Liebe",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/b192196-giZLzC1Xj9Hp.png",
       "hasImage": true,
-      "source": "anime"
+      "source": "id"
     },
     {
       "animeId": "blackclover",
@@ -1108,7 +1108,7 @@
       "resolvedName": "Lolopechka",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/b174449-10WzJnmxemEm.png",
       "hasImage": true,
-      "source": "anime"
+      "source": "id"
     },
     {
       "animeId": "blackclover",
@@ -1118,7 +1118,7 @@
       "resolvedName": "Lucifero",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/b181846-xm7ss9ZCWENV.png",
       "hasImage": true,
-      "source": "anime"
+      "source": "id"
     },
     {
       "animeId": "blackclover",
@@ -1138,7 +1138,7 @@
       "resolvedName": "Luck Voltia",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/124449-M67Ex2GcxmYM.jpg",
       "hasImage": true,
-      "source": "anime"
+      "source": "id"
     },
     {
       "animeId": "blackclover",
@@ -1148,7 +1148,7 @@
       "resolvedName": "Magna Swing",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/b124439-EqjbyC8GOKW0.jpg",
       "hasImage": true,
-      "source": "anime"
+      "source": "id"
     },
     {
       "animeId": "blackclover",
@@ -1158,7 +1158,7 @@
       "resolvedName": "Mars",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/b124462-6yGm80Um4Gbc.png",
       "hasImage": true,
-      "source": "anime"
+      "source": "id"
     },
     {
       "animeId": "blackclover",
@@ -1178,7 +1178,7 @@
       "resolvedName": "Megicula",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/b179901-iF5YUuYzdtWX.png",
       "hasImage": true,
-      "source": "anime"
+      "source": "id"
     },
     {
       "animeId": "blackclover",
@@ -1188,7 +1188,7 @@
       "resolvedName": "Mereoleona Vermillion",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/b124522-lJK4Hy6Aokie.png",
       "hasImage": true,
-      "source": "anime"
+      "source": "id"
     },
     {
       "animeId": "blackclover",
@@ -1198,7 +1198,7 @@
       "resolvedName": "Mimosa Vermillion",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/b124438-nTvKfJaMD4d5.jpg",
       "hasImage": true,
-      "source": "anime"
+      "source": "id"
     },
     {
       "animeId": "blackclover",
@@ -1228,7 +1228,7 @@
       "resolvedName": "Naamah",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/b216711-Pwq0LwG1OwE7.jpg",
       "hasImage": true,
-      "source": "search"
+      "source": "id"
     },
     {
       "animeId": "blackclover",
@@ -1238,7 +1238,7 @@
       "resolvedName": "Nacht Faust",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/b187268-vkcrcTvjNSrA.png",
       "hasImage": true,
-      "source": "anime"
+      "source": "id"
     },
     {
       "animeId": "blackclover",
@@ -1248,7 +1248,7 @@
       "resolvedName": "Nebra Silva",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/b124973-HvnLqyFzheFS.png",
       "hasImage": true,
-      "source": "anime"
+      "source": "id"
     },
     {
       "animeId": "blackclover",
@@ -1258,7 +1258,7 @@
       "resolvedName": "Noelle Silva",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/b123283-7nJHtKha0LSm.png",
       "hasImage": true,
-      "source": "anime"
+      "source": "id"
     },
     {
       "animeId": "blackclover",
@@ -1268,7 +1268,7 @@
       "resolvedName": "Nozel Silva",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/b124442-KpZhHmhjw2EG.png",
       "hasImage": true,
-      "source": "anime"
+      "source": "id"
     },
     {
       "animeId": "blackclover",
@@ -1298,7 +1298,7 @@
       "resolvedName": "Revchi Salik",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/124463-AfAruHzKBsZd.jpg",
       "hasImage": true,
-      "source": "anime"
+      "source": "id"
     },
     {
       "animeId": "blackclover",
@@ -1328,7 +1328,7 @@
       "resolvedName": "Salamander",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/b185539-9B0g7yzuwmVn.png",
       "hasImage": true,
-      "source": "anime"
+      "source": "id"
     },
     {
       "animeId": "blackclover",
@@ -1378,7 +1378,7 @@
       "resolvedName": "Solid Silva",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/b124974-Fidlk7tYFper.png",
       "hasImage": true,
-      "source": "anime"
+      "source": "id"
     },
     {
       "animeId": "blackclover",
@@ -1388,7 +1388,7 @@
       "resolvedName": "Sylph",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/b125025-sRhjEh0ZUsNh.png",
       "hasImage": true,
-      "source": "anime"
+      "source": "id"
     },
     {
       "animeId": "blackclover",
@@ -1398,7 +1398,7 @@
       "resolvedName": "Undine",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/b174446-uRQDIrqSvDqp.png",
       "hasImage": true,
-      "source": "anime"
+      "source": "id"
     },
     {
       "animeId": "blackclover",
@@ -1418,7 +1418,7 @@
       "resolvedName": "Vanessa Enoteca",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/b124436-dES6CtprlZNy.png",
       "hasImage": true,
-      "source": "anime"
+      "source": "id"
     },
     {
       "animeId": "blackclover",
@@ -1428,7 +1428,7 @@
       "resolvedName": "Vanica Zogratis",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/b168300-xpKqucVqnd7j.png",
       "hasImage": true,
-      "source": "anime"
+      "source": "id"
     },
     {
       "animeId": "blackclover",
@@ -1458,7 +1458,7 @@
       "resolvedName": "Yami Sukehiro",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/b124440-Lpdo6y8cljV6.png",
       "hasImage": true,
-      "source": "anime"
+      "source": "id"
     },
     {
       "animeId": "blackclover",
@@ -1468,7 +1468,7 @@
       "resolvedName": "Yuno",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/b123284-w6kIFYnTclMd.png",
       "hasImage": true,
-      "source": "anime"
+      "source": "id"
     },
     {
       "animeId": "blackclover",
@@ -1478,7 +1478,7 @@
       "resolvedName": "Zenon Zogratis",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/b167952-Giy7Os8XrOKM.jpg",
       "hasImage": true,
-      "source": "anime"
+      "source": "id"
     },
     {
       "animeId": "blackclover",
@@ -1498,7 +1498,7 @@
       "resolvedName": "Adam Blake",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/b269065-Ofvc4btZNih1.jpg",
       "hasImage": true,
-      "source": "anime"
+      "source": "id"
     },
     {
       "animeId": "bluelock",
@@ -1508,7 +1508,7 @@
       "resolvedName": "Alexis Ness",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/b269388-edMS5WWZzVgB.png",
       "hasImage": true,
-      "source": "search"
+      "source": "id"
     },
     {
       "animeId": "bluelock",
@@ -1518,7 +1518,7 @@
       "resolvedName": "Anri Teieri",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/b169405-RFVC95ooQp13.png",
       "hasImage": true,
-      "source": "anime"
+      "source": "id"
     },
     {
       "animeId": "bluelock",
@@ -1528,7 +1528,7 @@
       "resolvedName": "Aoshi Tokimitsu",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/b169396-H7Te5t4JXfRU.png",
       "hasImage": true,
-      "source": "anime"
+      "source": "id"
     },
     {
       "animeId": "bluelock",
@@ -1538,7 +1538,7 @@
       "resolvedName": "Asahi Naruhaya",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/b179957-IjUVBSDq8tWc.png",
       "hasImage": true,
-      "source": "anime"
+      "source": "id"
     },
     {
       "animeId": "bluelock",
@@ -1548,7 +1548,7 @@
       "resolvedName": "Chris Prince",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/b269063-DclrLrQzacWm.png",
       "hasImage": true,
-      "source": "search"
+      "source": "id"
     },
     {
       "animeId": "bluelock",
@@ -1558,7 +1558,7 @@
       "resolvedName": "Dada Silva",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/b300790-OxPfdP6WIOOp.jpg",
       "hasImage": true,
-      "source": "anime"
+      "source": "id"
     },
     {
       "animeId": "bluelock",
@@ -1568,7 +1568,7 @@
       "resolvedName": "Don Lorenzo",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/b300793-cR0bB3MReZXx.png",
       "hasImage": true,
-      "source": "search"
+      "source": "id"
     },
     {
       "animeId": "bluelock",
@@ -1578,7 +1578,7 @@
       "resolvedName": "Eita Otoya",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/b187523-84UYaB9Xtg8O.png",
       "hasImage": true,
-      "source": "anime"
+      "source": "id"
     },
     {
       "animeId": "bluelock",
@@ -1588,7 +1588,7 @@
       "resolvedName": "Gen Fukaku",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/b348627-I2apKvinBI0n.png",
       "hasImage": true,
-      "source": "search"
+      "source": "id"
     },
     {
       "animeId": "bluelock",
@@ -1598,7 +1598,7 @@
       "resolvedName": "Gin Gagamaru",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/b169404-90OF8t2ukD9H.jpg",
       "hasImage": true,
-      "source": "anime"
+      "source": "id"
     },
     {
       "animeId": "bluelock",
@@ -1608,7 +1608,7 @@
       "resolvedName": "Gurimu Igarashi",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/b169398-jGTUsTkP7z4H.png",
       "hasImage": true,
-      "source": "anime"
+      "source": "id"
     },
     {
       "animeId": "bluelock",
@@ -1628,7 +1628,7 @@
       "resolvedName": "Ikki Niko",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/b169403-x8h2FGUA5eya.png",
       "hasImage": true,
-      "source": "anime"
+      "source": "id"
     },
     {
       "animeId": "bluelock",
@@ -1638,7 +1638,7 @@
       "resolvedName": "Jin Kiyora",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/b301260-XLslixhrhjXx.png",
       "hasImage": true,
-      "source": "anime"
+      "source": "id"
     },
     {
       "animeId": "bluelock",
@@ -1648,7 +1648,7 @@
       "resolvedName": "Jingo Raichi",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/b169402-JlISsoEunCxH.png",
       "hasImage": true,
-      "source": "anime"
+      "source": "id"
     },
     {
       "animeId": "bluelock",
@@ -1658,7 +1658,7 @@
       "resolvedName": "Jinpachi Ego",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/b140857-DOTyKBCufon9.png",
       "hasImage": true,
-      "source": "anime"
+      "source": "id"
     },
     {
       "animeId": "bluelock",
@@ -1668,7 +1668,7 @@
       "resolvedName": "Julian Loki",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/b269064-h21qmRQjaek6.jpg",
       "hasImage": true,
-      "source": "anime"
+      "source": "id"
     },
     {
       "animeId": "bluelock",
@@ -1688,7 +1688,7 @@
       "resolvedName": "Kenyu Yukimiya",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/b191409-qU7sRhVmpgRQ.png",
       "hasImage": true,
-      "source": "anime"
+      "source": "id"
     },
     {
       "animeId": "bluelock",
@@ -1708,7 +1708,7 @@
       "resolvedName": "Leonardo Luna",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/b300811-znoRRICcQKiL.jpg",
       "hasImage": true,
-      "source": "anime"
+      "source": "id"
     },
     {
       "animeId": "bluelock",
@@ -1718,7 +1718,7 @@
       "resolvedName": "Marc Snuffy",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/b308139-r0276L8xZpjm.png",
       "hasImage": true,
-      "source": "search"
+      "source": "id"
     },
     {
       "animeId": "bluelock",
@@ -1728,7 +1728,7 @@
       "resolvedName": "Meguru Bachira",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/b162213-4czykzdxmWG6.png",
       "hasImage": true,
-      "source": "anime"
+      "source": "id"
     },
     {
       "animeId": "bluelock",
@@ -1738,7 +1738,7 @@
       "resolvedName": "Michael Kaiser",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/b268963-0i8SgRcs6ibf.png",
       "hasImage": true,
-      "source": "search"
+      "source": "id"
     },
     {
       "animeId": "bluelock",
@@ -1758,7 +1758,7 @@
       "resolvedName": "Noel Noa",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/b268966-obcuMQxnKJSq.jpg",
       "hasImage": true,
-      "source": "anime"
+      "source": "id"
     },
     {
       "animeId": "bluelock",
@@ -1778,7 +1778,7 @@
       "resolvedName": "Oliver Aiku",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/b206571-DhDhOUxff0jV.png",
       "hasImage": true,
-      "source": "search"
+      "source": "id"
     },
     {
       "animeId": "bluelock",
@@ -1798,7 +1798,7 @@
       "resolvedName": "Ranze Kurona",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/b290887-0J5y1MgB21PX.png",
       "hasImage": true,
-      "source": "anime"
+      "source": "id"
     },
     {
       "animeId": "bluelock",
@@ -1808,7 +1808,7 @@
       "resolvedName": "Rensuke Kunigami",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/b162214-9x9Q3A9rxpx8.png",
       "hasImage": true,
-      "source": "anime"
+      "source": "id"
     },
     {
       "animeId": "bluelock",
@@ -1818,7 +1818,7 @@
       "resolvedName": "Reo Mikage",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/b169394-8KDqHUN1VyGC.png",
       "hasImage": true,
-      "source": "anime"
+      "source": "id"
     },
     {
       "animeId": "bluelock",
@@ -1828,7 +1828,7 @@
       "resolvedName": "Rin Itoshi",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/b169395-7xUFV2mINMZu.png",
       "hasImage": true,
-      "source": "anime"
+      "source": "id"
     },
     {
       "animeId": "bluelock",
@@ -1848,7 +1848,7 @@
       "resolvedName": "Sae Itoshi",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/b169397-wC55onsv5u8t.jpg",
       "hasImage": true,
-      "source": "anime"
+      "source": "id"
     },
     {
       "animeId": "bluelock",
@@ -1868,7 +1868,7 @@
       "resolvedName": "Shouei Barou",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/b169401-jeepvEsqW4Ns.png",
       "hasImage": true,
-      "source": "anime"
+      "source": "id"
     },
     {
       "animeId": "bluelock",
@@ -1888,7 +1888,7 @@
       "resolvedName": "Tabito Karasu",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/b187524-HlZ4yDd2eGcT.png",
       "hasImage": true,
-      "source": "anime"
+      "source": "id"
     },
     {
       "animeId": "bluelock",
@@ -1898,7 +1898,7 @@
       "resolvedName": "Wataru Kuon",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/b169392-IWGJIFHcBsLa.png",
       "hasImage": true,
-      "source": "anime"
+      "source": "id"
     },
     {
       "animeId": "bluelock",
@@ -1918,7 +1918,7 @@
       "resolvedName": "Yoichi Isagi",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/b140856-wVzKSyvU7R5B.png",
       "hasImage": true,
-      "source": "anime"
+      "source": "id"
     },
     {
       "animeId": "bluelock",
@@ -1928,7 +1928,7 @@
       "resolvedName": "Zantetsu Tsurugi",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/b169406-wTagOOkC7fi5.jpg",
       "hasImage": true,
-      "source": "anime"
+      "source": "id"
     },
     {
       "animeId": "chainsaw",
@@ -1988,7 +1988,7 @@
       "resolvedName": "Beam",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/b157232-5GuWeqoFN9Kq.jpg",
       "hasImage": true,
-      "source": "anime"
+      "source": "search"
     },
     {
       "animeId": "chainsaw",
@@ -2378,7 +2378,7 @@
       "resolvedName": "Samurai Sword",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/b157241-GkgQVzkFrmUD.jpg",
       "hasImage": true,
-      "source": "anime"
+      "source": "search"
     },
     {
       "animeId": "chainsaw",
@@ -2728,7 +2728,7 @@
       "resolvedName": "Amane Ubuyashiki",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/b221375-cMlefDNTlcD6.jpg",
       "hasImage": true,
-      "source": "search"
+      "source": "id"
     },
     {
       "animeId": "demonslayer",
@@ -2748,7 +2748,7 @@
       "resolvedName": "Chachamaru",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/b268212-cdX6j5xYomyU.jpg",
       "hasImage": true,
-      "source": "search"
+      "source": "id"
     },
     {
       "animeId": "demonslayer",
@@ -2868,7 +2868,7 @@
       "resolvedName": "Hinaki Ubuyashiki",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/b167549-1fG4eh5KkmZg.png",
       "hasImage": true,
-      "source": "search"
+      "source": "id"
     },
     {
       "animeId": "demonslayer",
@@ -2878,7 +2878,7 @@
       "resolvedName": "Hinatsuru",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/b250556-tZ6egykZTk4Y.jpg",
       "hasImage": true,
-      "source": "search"
+      "source": "id"
     },
     {
       "animeId": "demonslayer",
@@ -2888,7 +2888,7 @@
       "resolvedName": "Hotaru Haganezuka",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/b138990-E5kiUoLigpyX.jpg",
       "hasImage": true,
-      "source": "search"
+      "source": "id"
     },
     {
       "animeId": "demonslayer",
@@ -2918,7 +2918,7 @@
       "resolvedName": "Kaburamaru",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/b310304-5cCfTJq9vRWS.jpg",
       "hasImage": true,
-      "source": "search"
+      "source": "id"
     },
     {
       "animeId": "demonslayer",
@@ -2928,7 +2928,7 @@
       "resolvedName": "Kagaya Ubuyashiki",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/b137808-4yA8XQUDrAho.png",
       "hasImage": true,
-      "source": "search"
+      "source": "id"
     },
     {
       "animeId": "demonslayer",
@@ -2958,7 +2958,7 @@
       "resolvedName": "Kanae Kochou",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/b139039-YmIZQzx1HdvY.png",
       "hasImage": true,
-      "source": "search"
+      "source": "id"
     },
     {
       "animeId": "demonslayer",
@@ -2998,7 +2998,7 @@
       "resolvedName": "Kiriya Ubuyashiki",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/b139460-jA7lAHb17aLL.png",
       "hasImage": true,
-      "source": "search"
+      "source": "id"
     },
     {
       "animeId": "demonslayer",
@@ -3018,7 +3018,7 @@
       "resolvedName": "Kotetsu",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/b171768-1bj6sdEUO61e.jpg",
       "hasImage": true,
-      "source": "search"
+      "source": "id"
     },
     {
       "animeId": "demonslayer",
@@ -3048,7 +3048,7 @@
       "resolvedName": "Makio",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/b250554-tPaaPn3oAwNf.jpg",
       "hasImage": true,
-      "source": "search"
+      "source": "id"
     },
     {
       "animeId": "demonslayer",
@@ -3058,7 +3058,7 @@
       "resolvedName": "Makomo",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/b137806-43Lqae34Vzqu.png",
       "hasImage": true,
-      "source": "search"
+      "source": "id"
     },
     {
       "animeId": "demonslayer",
@@ -3098,7 +3098,7 @@
       "resolvedName": "Murata",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/b171150-3Ju2DXBVq41F.png",
       "hasImage": true,
-      "source": "search"
+      "source": "id"
     },
     {
       "animeId": "demonslayer",
@@ -3128,7 +3128,7 @@
       "resolvedName": "Nezuko Kamado",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/b127518-NRlq1CQ1v1ro.png",
       "hasImage": true,
-      "source": "search"
+      "source": "id"
     },
     {
       "animeId": "demonslayer",
@@ -3138,7 +3138,7 @@
       "resolvedName": "Nichika Ubuyashiki",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/b167548-2bPBlCKBiIBY.png",
       "hasImage": true,
-      "source": "search"
+      "source": "id"
     },
     {
       "animeId": "demonslayer",
@@ -3348,7 +3348,7 @@
       "resolvedName": "Yoriichi Tsugikuni",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/b149220-OuBk7B3O6WD6.jpg",
       "hasImage": true,
-      "source": "search"
+      "source": "id"
     },
     {
       "animeId": "demonslayer",
@@ -3456,7 +3456,7 @@
       "name": "Arataki Itto",
       "anilist": null,
       "resolvedName": "Arataki Itto",
-      "image": "https://genshin-guess-who.com/genshin/char_icons_5star/Arataki%20Itto.webp",
+      "image": "https://genshin-guess-who.com/genshin/char_icons_5star/Arataki_Itto.webp",
       "hasImage": true,
       "source": "manual"
     },
@@ -3638,7 +3638,7 @@
       "resolvedName": "Dainsleif",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/b350308-gSehKXpdEb4e.png",
       "hasImage": true,
-      "source": "search"
+      "source": "manual"
     },
     {
       "animeId": "genshin",
@@ -3806,7 +3806,7 @@
       "name": "Hu Tao",
       "anilist": null,
       "resolvedName": "Hu Tao",
-      "image": "https://genshin-guess-who.com/genshin/char_icons_5star/Hu%20Tao.webp",
+      "image": "https://genshin-guess-who.com/genshin/char_icons_5star/Hu_Tao.webp",
       "hasImage": true,
       "source": "manual"
     },
@@ -3886,7 +3886,7 @@
       "name": "Kaedehara Kazuha",
       "anilist": null,
       "resolvedName": "Kaedehara Kazuha",
-      "image": "https://genshin-guess-who.com/genshin/char_icons_5star/Kaedehara%20Kazuha.webp",
+      "image": "https://genshin-guess-who.com/genshin/char_icons_5star/Kaedehara_Kazuha.webp",
       "hasImage": true,
       "source": "manual"
     },
@@ -3906,7 +3906,7 @@
       "name": "Kamisato Ayaka",
       "anilist": null,
       "resolvedName": "Kamisato Ayaka",
-      "image": "https://genshin-guess-who.com/genshin/char_icons_5star/Kamisato%20Ayaka.webp",
+      "image": "https://genshin-guess-who.com/genshin/char_icons_5star/Kamisato_Ayaka.webp",
       "hasImage": true,
       "source": "manual"
     },
@@ -3916,7 +3916,7 @@
       "name": "Kamisato Ayato",
       "anilist": null,
       "resolvedName": "Kamisato Ayato",
-      "image": "https://genshin-guess-who.com/genshin/char_icons_5star/Kamisato%20Ayato.webp",
+      "image": "https://genshin-guess-who.com/genshin/char_icons_5star/Kamisato_Ayato.webp",
       "hasImage": true,
       "source": "manual"
     },
@@ -3976,7 +3976,7 @@
       "name": "Kujou Sara",
       "anilist": null,
       "resolvedName": "Kujou Sara",
-      "image": "https://genshin-guess-who.com/genshin/char_icons_4star/Kujou%20Sara.webp",
+      "image": "https://genshin-guess-who.com/genshin/char_icons_4star/Kujou_Sara.webp",
       "hasImage": true,
       "source": "manual"
     },
@@ -3986,7 +3986,7 @@
       "name": "Kuki Shinobu",
       "anilist": null,
       "resolvedName": "Kuki Shinobu",
-      "image": "https://genshin-guess-who.com/genshin/char_icons_4star/Kuki%20Shinobu.webp",
+      "image": "https://genshin-guess-who.com/genshin/char_icons_4star/Kuki_Shinobu.webp",
       "hasImage": true,
       "source": "manual"
     },
@@ -3996,7 +3996,7 @@
       "name": "Lan Yan",
       "anilist": null,
       "resolvedName": "Lan Yan",
-      "image": "https://genshin-guess-who.com/genshin/char_icons_4star/Lan%20Yan.webp",
+      "image": "https://genshin-guess-who.com/genshin/char_icons_4star/Lan_Yan.webp",
       "hasImage": true,
       "source": "manual"
     },
@@ -4208,7 +4208,7 @@
       "resolvedName": "Paimon",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/b203317-tqwY7CKQrZsG.png",
       "hasImage": true,
-      "source": "anime"
+      "source": "manual"
     },
     {
       "animeId": "genshin",
@@ -4226,7 +4226,7 @@
       "name": "Raiden Shogun",
       "anilist": null,
       "resolvedName": "Raiden Shogun",
-      "image": "https://genshin-guess-who.com/genshin/char_icons_5star/Raiden%20Shogun.webp",
+      "image": "https://genshin-guess-who.com/genshin/char_icons_5star/Raiden_Shogun.webp",
       "hasImage": true,
       "source": "manual"
     },
@@ -4256,7 +4256,7 @@
       "name": "Sangonomiya Kokomi",
       "anilist": null,
       "resolvedName": "Sangonomiya Kokomi",
-      "image": "https://genshin-guess-who.com/genshin/char_icons_5star/Sangonomiya%20Kokomi.webp",
+      "image": "https://genshin-guess-who.com/genshin/char_icons_5star/Sangonomiya_Kokomi.webp",
       "hasImage": true,
       "source": "manual"
     },
@@ -4296,7 +4296,7 @@
       "name": "Shikanoin Heizou",
       "anilist": null,
       "resolvedName": "Shikanoin Heizou",
-      "image": "https://genshin-guess-who.com/genshin/char_icons_4star/Shikanoin%20Heizou.webp",
+      "image": "https://genshin-guess-who.com/genshin/char_icons_4star/Shikanoin_Heizou.webp",
       "hasImage": true,
       "source": "manual"
     },
@@ -4365,8 +4365,8 @@
       "animeName": "Genshin Impact",
       "name": "Unknown God",
       "anilist": null,
-      "resolvedName": null,
-      "image": "https://static.wikia.nocookie.net/gensin-impact/images/1/1f/Wanderer%27s_Trail_Battle_Against_Asmoday.png/revision/latest/scale-to-width-down/185?cb=20260126142834",
+      "resolvedName": "Unknown God",
+      "image": "https://img.gamewith.net/article/thumbnail/rectangle/29914.png",
       "hasImage": true,
       "source": "manual"
     },
@@ -4486,7 +4486,7 @@
       "name": "Yae Miko",
       "anilist": null,
       "resolvedName": "Yae Miko",
-      "image": "https://genshin-guess-who.com/genshin/char_icons_5star/Yae%20Miko.webp",
+      "image": "https://genshin-guess-who.com/genshin/char_icons_5star/Yae_Miko.webp",
       "hasImage": true,
       "source": "manual"
     },
@@ -4536,7 +4536,7 @@
       "name": "Yumemizuki Mizuki",
       "anilist": null,
       "resolvedName": "Yumemizuki Mizuki",
-      "image": "https://genshin-guess-who.com/genshin/char_icons_5star/Yumemizuki%20Mizuki.webp",
+      "image": "https://genshin-guess-who.com/genshin/char_icons_5star/Yumemizuki_Mizuki.webp",
       "hasImage": true,
       "source": "manual"
     },
@@ -4546,7 +4546,7 @@
       "name": "Yun Jin",
       "anilist": null,
       "resolvedName": "Yun Jin",
-      "image": "https://genshin-guess-who.com/genshin/char_icons_4star/Yun%20Jin.webp",
+      "image": "https://genshin-guess-who.com/genshin/char_icons_4star/Yun_Jin.webp",
       "hasImage": true,
       "source": "manual"
     },
@@ -4578,7 +4578,7 @@
       "resolvedName": "Akinori Konoha",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/b137480-FNUMTKjHNT2W.jpg",
       "hasImage": true,
-      "source": "search"
+      "source": "id"
     },
     {
       "animeId": "haikyuu",
@@ -4598,7 +4598,7 @@
       "resolvedName": "Aran Ojiro",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/b139485-ZvLouwJUj40R.png",
       "hasImage": true,
-      "source": "search"
+      "source": "id"
     },
     {
       "animeId": "haikyuu",
@@ -4618,7 +4618,7 @@
       "resolvedName": "Atsumu Miya",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/b139486-pc8YX5srjNy4.png",
       "hasImage": true,
-      "source": "search"
+      "source": "id"
     },
     {
       "animeId": "haikyuu",
@@ -4648,7 +4648,7 @@
       "resolvedName": "Eita Semi",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/b137535-VpffRHdhc1Mg.png",
       "hasImage": true,
-      "source": "search"
+      "source": "id"
     },
     {
       "animeId": "haikyuu",
@@ -4668,7 +4668,7 @@
       "resolvedName": "Haruki Komi",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/b137477-YrXzkalmN8xQ.jpg",
       "hasImage": true,
-      "source": "search"
+      "source": "id"
     },
     {
       "animeId": "haikyuu",
@@ -4678,7 +4678,7 @@
       "resolvedName": "Hayato Yamagata",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/b137540-AMcj6ZjYtMJC.png",
       "hasImage": true,
-      "source": "search"
+      "source": "id"
     },
     {
       "animeId": "haikyuu",
@@ -4728,7 +4728,7 @@
       "resolvedName": "Keiji Akaashi",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/b88938-MQdQoMzEigo1.png",
       "hasImage": true,
-      "source": "search"
+      "source": "id"
     },
     {
       "animeId": "haikyuu",
@@ -4788,7 +4788,7 @@
       "resolvedName": "Kiyoomi Sakusa",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/b139475-csWgqpN3rZEe.jpg",
       "hasImage": true,
-      "source": "search"
+      "source": "id"
     },
     {
       "animeId": "haikyuu",
@@ -4838,7 +4838,7 @@
       "resolvedName": "Michinari Akagi",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/b139491-CddurxuA220b.png",
       "hasImage": true,
-      "source": "search"
+      "source": "id"
     },
     {
       "animeId": "haikyuu",
@@ -4878,7 +4878,7 @@
       "resolvedName": "Osamu Miya",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/b139492-PxFYUO2Mtt4j.png",
       "hasImage": true,
-      "source": "search"
+      "source": "id"
     },
     {
       "animeId": "haikyuu",
@@ -4938,7 +4938,7 @@
       "resolvedName": "Satori Tendou",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/b126073-iGqIQigXLkge.png",
       "hasImage": true,
-      "source": "search"
+      "source": "id"
     },
     {
       "animeId": "haikyuu",
@@ -4958,7 +4958,7 @@
       "resolvedName": "Shinsuke Kita",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/b167515-szUsIBmdBmun.png",
       "hasImage": true,
-      "source": "search"
+      "source": "id"
     },
     {
       "animeId": "haikyuu",
@@ -5008,7 +5008,7 @@
       "resolvedName": "Taichi Kawanishi",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/b137538-eQWHMMnUkfj2.png",
       "hasImage": true,
-      "source": "search"
+      "source": "id"
     },
     {
       "animeId": "haikyuu",
@@ -5028,7 +5028,7 @@
       "resolvedName": "Taketora Yamamoto",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/n73673-SbfcLzHol5y7.jpg",
       "hasImage": true,
-      "source": "anime"
+      "source": "id"
     },
     {
       "animeId": "haikyuu",
@@ -5038,7 +5038,7 @@
       "resolvedName": "Tanji Washijou",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/b137539-UYztRwNfKB26.png",
       "hasImage": true,
-      "source": "search"
+      "source": "id"
     },
     {
       "animeId": "haikyuu",
@@ -5048,7 +5048,7 @@
       "resolvedName": "Tatsuki Washio",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/b137474-oeVpGJAU6lqm.jpg",
       "hasImage": true,
-      "source": "search"
+      "source": "id"
     },
     {
       "animeId": "haikyuu",
@@ -5088,7 +5088,7 @@
       "resolvedName": "Tsutomu Goshiki",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/b137534-5xZ2PLMFH76M.png",
       "hasImage": true,
-      "source": "search"
+      "source": "id"
     },
     {
       "animeId": "haikyuu",
@@ -5098,7 +5098,7 @@
       "resolvedName": "Wakatoshi Ushijima",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/b76816-sS6LcPRxisQ9.png",
       "hasImage": true,
-      "source": "anime"
+      "source": "id"
     },
     {
       "animeId": "haikyuu",
@@ -5118,7 +5118,7 @@
       "resolvedName": "Wataru Onaga",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/b137479-tL7rokMWt0Wc.png",
       "hasImage": true,
-      "source": "search"
+      "source": "id"
     },
     {
       "animeId": "haikyuu",
@@ -5128,7 +5128,7 @@
       "resolvedName": "Yamato Sarukui",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/b137475-BOGocUABzVZG.jpg",
       "hasImage": true,
-      "source": "search"
+      "source": "id"
     },
     {
       "animeId": "haikyuu",
@@ -5218,7 +5218,7 @@
       "resolvedName": "Dagon",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/b204383-5oTlVPpaCnM2.jpg",
       "hasImage": true,
-      "source": "anime"
+      "source": "search"
     },
     {
       "animeId": "jjk",
@@ -5268,7 +5268,7 @@
       "resolvedName": "Garuda",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/b322043-50p14GPnxFqB.png",
       "hasImage": true,
-      "source": "anime"
+      "source": "search"
     },
     {
       "animeId": "jjk",
@@ -5298,7 +5298,7 @@
       "resolvedName": "Hanami",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/b172743-4Y5SXqED6A3G.jpg",
       "hasImage": true,
-      "source": "anime"
+      "source": "search"
     },
     {
       "animeId": "jjk",
@@ -5308,7 +5308,7 @@
       "resolvedName": "Haruta Shigemo",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/b209694-xSS6FxN4al3l.png",
       "hasImage": true,
-      "source": "anime"
+      "source": "search"
     },
     {
       "animeId": "jjk",
@@ -5378,7 +5378,7 @@
       "resolvedName": "Junpei Yoshino",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/b157214-ROBNoXVEXRNy.jpg",
       "hasImage": true,
-      "source": "anime"
+      "source": "search"
     },
     {
       "animeId": "jjk",
@@ -5398,7 +5398,7 @@
       "resolvedName": "Kasumi Miwa",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/b156848-Rf0tuoQCNyZV.png",
       "hasImage": true,
-      "source": "anime"
+      "source": "search"
     },
     {
       "animeId": "jjk",
@@ -5408,7 +5408,7 @@
       "resolvedName": "Kechizu",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/b210832-d1Fg0CePSU86.png",
       "hasImage": true,
-      "source": "anime"
+      "source": "search"
     },
     {
       "animeId": "jjk",
@@ -5418,7 +5418,7 @@
       "resolvedName": "Kenjaku",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/b289584-KndGudJZm5Ik.jpg",
       "hasImage": true,
-      "source": "anime"
+      "source": "search"
     },
     {
       "animeId": "jjk",
@@ -5428,7 +5428,7 @@
       "resolvedName": "Kento Nanami",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/b133704-8wLTGjc234q2.png",
       "hasImage": true,
-      "source": "anime"
+      "source": "search"
     },
     {
       "animeId": "jjk",
@@ -5438,7 +5438,7 @@
       "resolvedName": "Kinji Hakari",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/b197584-fK7Jc6DLfx7e.jpg",
       "hasImage": true,
-      "source": "anime"
+      "source": "search"
     },
     {
       "animeId": "jjk",
@@ -5458,7 +5458,7 @@
       "resolvedName": "Kiyotaka Ijichi",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/b189238-ItSLams6lRk9.png",
       "hasImage": true,
-      "source": "anime"
+      "source": "search"
     },
     {
       "animeId": "jjk",
@@ -5488,7 +5488,7 @@
       "resolvedName": "Mahito",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/b133702-Y7JRG5vAvjIL.png",
       "hasImage": true,
-      "source": "anime"
+      "source": "search"
     },
     {
       "animeId": "jjk",
@@ -5508,7 +5508,7 @@
       "resolvedName": "Mai Zenin",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/b134168-FdWz5w2LqpeF.jpg",
       "hasImage": true,
-      "source": "anime"
+      "source": "search"
     },
     {
       "animeId": "jjk",
@@ -5518,7 +5518,7 @@
       "resolvedName": "Maki Zenin",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/b134167-5TCytk45YByD.png",
       "hasImage": true,
-      "source": "anime"
+      "source": "search"
     },
     {
       "animeId": "jjk",
@@ -5528,7 +5528,7 @@
       "resolvedName": "Masamichi Yaga",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/b189237-ZxNJwVPL8DvW.png",
       "hasImage": true,
-      "source": "anime"
+      "source": "search"
     },
     {
       "animeId": "jjk",
@@ -5548,7 +5548,7 @@
       "resolvedName": "Megumi Fushiguro",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/b126635-L0y3I92JSUkN.png",
       "hasImage": true,
-      "source": "anime"
+      "source": "search"
     },
     {
       "animeId": "jjk",
@@ -5558,7 +5558,7 @@
       "resolvedName": "Mei Mei",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/b157215-I3TQJu8nkDwD.jpg",
       "hasImage": true,
-      "source": "anime"
+      "source": "search"
     },
     {
       "animeId": "jjk",
@@ -5588,7 +5588,7 @@
       "resolvedName": "Momo Nishimiya",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/b157868-Ui2Wht3M6tlM.png",
       "hasImage": true,
-      "source": "anime"
+      "source": "search"
     },
     {
       "animeId": "jjk",
@@ -5608,7 +5608,7 @@
       "resolvedName": "Naobito Zenin",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/b188432-WePQBJsEuSts.png",
       "hasImage": true,
-      "source": "anime"
+      "source": "search"
     },
     {
       "animeId": "jjk",
@@ -5628,7 +5628,7 @@
       "resolvedName": "Nobara Kugisaki",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/b133700-f6sOO3TcgLV6.png",
       "hasImage": true,
-      "source": "anime"
+      "source": "search"
     },
     {
       "animeId": "jjk",
@@ -5638,7 +5638,7 @@
       "resolvedName": "Noritoshi  Kamo",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/b157866-UWDtYBoG71PD.png",
       "hasImage": true,
-      "source": "anime"
+      "source": "search"
     },
     {
       "animeId": "jjk",
@@ -5668,7 +5668,7 @@
       "resolvedName": "Panda",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/b137974-9qnK3DPrvLKh.jpg",
       "hasImage": true,
-      "source": "anime"
+      "source": "search"
     },
     {
       "animeId": "jjk",
@@ -5738,7 +5738,7 @@
       "resolvedName": "Satoru Gojou",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/b127691-9zqh1xpIubn7.png",
       "hasImage": true,
-      "source": "anime"
+      "source": "search"
     },
     {
       "animeId": "jjk",
@@ -5778,7 +5778,7 @@
       "resolvedName": "Suguru Getou",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/b133699-FCnXaISgazAi.png",
       "hasImage": true,
-      "source": "anime"
+      "source": "search"
     },
     {
       "animeId": "jjk",
@@ -5798,7 +5798,7 @@
       "resolvedName": "Takuma Ino",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/b157865-X9ENX9OzWevS.jpg",
       "hasImage": true,
-      "source": "anime"
+      "source": "search"
     },
     {
       "animeId": "jjk",
@@ -5828,7 +5828,7 @@
       "resolvedName": "Toge Inumaki",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/b157115-kdhRYQdVhH95.png",
       "hasImage": true,
-      "source": "anime"
+      "source": "search"
     },
     {
       "animeId": "jjk",
@@ -5848,7 +5848,7 @@
       "resolvedName": "Tsumiki Fushiguro",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/b193479-aGNRmbU5jNwR.png",
       "hasImage": true,
-      "source": "anime"
+      "source": "search"
     },
     {
       "animeId": "jjk",
@@ -5868,7 +5868,7 @@
       "resolvedName": "Uraume",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/b210830-rJ8LVEvLUqjE.jpg",
       "hasImage": true,
-      "source": "anime"
+      "source": "search"
     },
     {
       "animeId": "jjk",
@@ -5878,7 +5878,7 @@
       "resolvedName": "Utahime Iori",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/b157864-rejVYNx0kQZr.jpg",
       "hasImage": true,
-      "source": "anime"
+      "source": "search"
     },
     {
       "animeId": "jjk",
@@ -5888,7 +5888,7 @@
       "resolvedName": "Yoshinobu Gakuganji",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/b157867-dHdd8ZECuzHx.png",
       "hasImage": true,
-      "source": "anime"
+      "source": "search"
     },
     {
       "animeId": "jjk",
@@ -5918,7 +5918,7 @@
       "resolvedName": "Yuki Tsukumo",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/b196502-aBvtPFr9lGm2.png",
       "hasImage": true,
-      "source": "anime"
+      "source": "search"
     },
     {
       "animeId": "jjk",
@@ -5938,7 +5938,7 @@
       "resolvedName": "Aoi Kaguragi",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/b308014-KPQRHExrChy5.png",
       "hasImage": true,
-      "source": "anime"
+      "source": "id"
     },
     {
       "animeId": "kaiju8",
@@ -5948,7 +5948,7 @@
       "resolvedName": "Eiji Hasegawa",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/b305764-fHFQmQZC3lQI.png",
       "hasImage": true,
-      "source": "search"
+      "source": "id"
     },
     {
       "animeId": "kaiju8",
@@ -5968,7 +5968,7 @@
       "resolvedName": "Hakua Igarashi",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/b311264-uQBs9uPGDvab.jpg",
       "hasImage": true,
-      "source": "anime"
+      "source": "id"
     },
     {
       "animeId": "kaiju8",
@@ -5978,7 +5978,7 @@
       "resolvedName": "Haruichi Izumo",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/b308023-QGhxAVn5vlXY.png",
       "hasImage": true,
-      "source": "anime"
+      "source": "id"
     },
     {
       "animeId": "kaiju8",
@@ -5998,7 +5998,7 @@
       "resolvedName": "Iharu Furuhashi",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/b308020-IeQN9Kr4qV2j.png",
       "hasImage": true,
-      "source": "anime"
+      "source": "id"
     },
     {
       "animeId": "kaiju8",
@@ -6138,7 +6138,7 @@
       "resolvedName": "Konomi Okonogi",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/b308027-CxQbW0wlmzLo.png",
       "hasImage": true,
-      "source": "anime"
+      "source": "id"
     },
     {
       "animeId": "kaiju8",
@@ -7188,7 +7188,7 @@
       "resolvedName": "A",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/b22894-KZQFgbnqUFrZ.png",
       "hasImage": true,
-      "source": "anime"
+      "source": "id"
     },
     {
       "animeId": "naruto",
@@ -7198,7 +7198,7 @@
       "resolvedName": "Akamaru",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/n4799-gwSQJlSqWnST.png",
       "hasImage": true,
-      "source": "anime"
+      "source": "id"
     },
     {
       "animeId": "naruto",
@@ -7208,7 +7208,7 @@
       "resolvedName": "Akatsuchi",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/b23473-l6TMcki5yyF9.png",
       "hasImage": true,
-      "source": "search"
+      "source": "id"
     },
     {
       "animeId": "naruto",
@@ -7218,7 +7218,7 @@
       "resolvedName": "Ameyuri Ringo",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/b64459-WNFQUsg8mPpN.png",
       "hasImage": true,
-      "source": "search"
+      "source": "id"
     },
     {
       "animeId": "naruto",
@@ -7228,7 +7228,7 @@
       "resolvedName": "Anko Mitarashi",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/b809-FhWTN0LFVzRa.png",
       "hasImage": true,
-      "source": "anime"
+      "source": "id"
     },
     {
       "animeId": "naruto",
@@ -7238,7 +7238,7 @@
       "resolvedName": "Ao",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/b23420-WdZBZUbtfp64.jpg",
       "hasImage": true,
-      "source": "anime"
+      "source": "id"
     },
     {
       "animeId": "naruto",
@@ -7248,7 +7248,7 @@
       "resolvedName": "Aoba Yamashiro",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/n17553-6W7jFheyT2Qd.png",
       "hasImage": true,
-      "source": "anime"
+      "source": "id"
     },
     {
       "animeId": "naruto",
@@ -7258,7 +7258,7 @@
       "resolvedName": "Aoda",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/b80581-vp8LzIVvLjiK.jpg",
       "hasImage": true,
-      "source": "search"
+      "source": "id"
     },
     {
       "animeId": "naruto",
@@ -7268,7 +7268,7 @@
       "resolvedName": "Asuma Sarutobi",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/b4775-skviHvjIQHiE.png",
       "hasImage": true,
-      "source": "anime"
+      "source": "id"
     },
     {
       "animeId": "naruto",
@@ -7288,7 +7288,7 @@
       "resolvedName": "Baki",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/n15081-Lu1emOxDIBl3.png",
       "hasImage": true,
-      "source": "anime"
+      "source": "id"
     },
     {
       "animeId": "naruto",
@@ -7318,7 +7318,7 @@
       "resolvedName": "Chiyo",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/b124091-0bWGmYly8EV6.png",
       "hasImage": true,
-      "source": "search"
+      "source": "id"
     },
     {
       "animeId": "naruto",
@@ -7328,7 +7328,7 @@
       "resolvedName": "Chojuro",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/23418.jpg",
       "hasImage": true,
-      "source": "search"
+      "source": "id"
     },
     {
       "animeId": "naruto",
@@ -7348,7 +7348,7 @@
       "resolvedName": "Chouji Akimichi",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/n2008-j1oCafEGZucg.png",
       "hasImage": true,
-      "source": "anime"
+      "source": "id"
     },
     {
       "animeId": "naruto",
@@ -7368,7 +7368,7 @@
       "resolvedName": "Dan Katou",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/n22876-k5juKBlTHdBu.png",
       "hasImage": true,
-      "source": "anime"
+      "source": "id"
     },
     {
       "animeId": "naruto",
@@ -7378,7 +7378,7 @@
       "resolvedName": "Danzou Shimura",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/b23424-JKRQwUL4qSWN.png",
       "hasImage": true,
-      "source": "anime"
+      "source": "id"
     },
     {
       "animeId": "naruto",
@@ -7388,7 +7388,7 @@
       "resolvedName": "Darui",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/b23476-f71q8pESrKjk.png",
       "hasImage": true,
-      "source": "search"
+      "source": "id"
     },
     {
       "animeId": "naruto",
@@ -7398,7 +7398,7 @@
       "resolvedName": "Deidara",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/b1902-JsEFRFwjmtZJ.png",
       "hasImage": true,
-      "source": "anime"
+      "source": "id"
     },
     {
       "animeId": "naruto",
@@ -7408,7 +7408,7 @@
       "resolvedName": "Dodai",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/77437.jpg",
       "hasImage": true,
-      "source": "search"
+      "source": "id"
     },
     {
       "animeId": "naruto",
@@ -7418,7 +7418,7 @@
       "resolvedName": "Dosu Kinuta",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/n9244-cGlkMVmH06yg.png",
       "hasImage": true,
-      "source": "anime"
+      "source": "id"
     },
     {
       "animeId": "naruto",
@@ -7428,7 +7428,7 @@
       "resolvedName": "Ebisu",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/n10791-YRA5IXwEQRsW.png",
       "hasImage": true,
-      "source": "anime"
+      "source": "id"
     },
     {
       "animeId": "naruto",
@@ -7448,7 +7448,7 @@
       "resolvedName": "Enma",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/n15757-VDI6rr31wwHD.png",
       "hasImage": true,
-      "source": "anime"
+      "source": "id"
     },
     {
       "animeId": "naruto",
@@ -7458,7 +7458,7 @@
       "resolvedName": "Fu Yamanaka",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/40403.jpg",
       "hasImage": true,
-      "source": "search"
+      "source": "id"
     },
     {
       "animeId": "naruto",
@@ -7468,7 +7468,7 @@
       "resolvedName": "Fugaku Uchiha",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/n16973-xTr9vfvx8QBR.png",
       "hasImage": true,
-      "source": "anime"
+      "source": "id"
     },
     {
       "animeId": "naruto",
@@ -7478,7 +7478,7 @@
       "resolvedName": "Fuguki Suikazan",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/40785.jpg",
       "hasImage": true,
-      "source": "search"
+      "source": "id"
     },
     {
       "animeId": "naruto",
@@ -7488,7 +7488,7 @@
       "resolvedName": "Fukasaku",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/24486.jpg",
       "hasImage": true,
-      "source": "search"
+      "source": "id"
     },
     {
       "animeId": "naruto",
@@ -7498,7 +7498,7 @@
       "resolvedName": "Fuu",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/23220.jpg",
       "hasImage": true,
-      "source": "anime"
+      "source": "id"
     },
     {
       "animeId": "naruto",
@@ -7508,7 +7508,7 @@
       "resolvedName": "Gaara",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/b1662-4E5J0LX9jZKZ.png",
       "hasImage": true,
-      "source": "anime"
+      "source": "id"
     },
     {
       "animeId": "naruto",
@@ -7518,7 +7518,7 @@
       "resolvedName": "Gamabunta",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/4223.jpg",
       "hasImage": true,
-      "source": "anime"
+      "source": "id"
     },
     {
       "animeId": "naruto",
@@ -7528,7 +7528,7 @@
       "resolvedName": "Gamaken",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/26933.jpg",
       "hasImage": true,
-      "source": "search"
+      "source": "id"
     },
     {
       "animeId": "naruto",
@@ -7538,7 +7538,7 @@
       "resolvedName": "Gamakichi",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/16999.jpg",
       "hasImage": true,
-      "source": "anime"
+      "source": "id"
     },
     {
       "animeId": "naruto",
@@ -7548,7 +7548,7 @@
       "resolvedName": "Gamatatsu",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/16952.jpg",
       "hasImage": true,
-      "source": "anime"
+      "source": "id"
     },
     {
       "animeId": "naruto",
@@ -7568,7 +7568,7 @@
       "resolvedName": "Genma Shiranui",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/n3735-IRx14wSYNVSE.png",
       "hasImage": true,
-      "source": "anime"
+      "source": "id"
     },
     {
       "animeId": "naruto",
@@ -7578,7 +7578,7 @@
       "resolvedName": "Guren",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/20013.jpg",
       "hasImage": true,
-      "source": "search"
+      "source": "id"
     },
     {
       "animeId": "naruto",
@@ -7588,7 +7588,7 @@
       "resolvedName": "Gyuki",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/16601.jpg",
       "hasImage": true,
-      "source": "search"
+      "source": "id"
     },
     {
       "animeId": "naruto",
@@ -7608,7 +7608,7 @@
       "resolvedName": "Haku",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/b2039-9NXBvh6H15LD.png",
       "hasImage": true,
-      "source": "anime"
+      "source": "id"
     },
     {
       "animeId": "naruto",
@@ -7628,7 +7628,7 @@
       "resolvedName": "Han",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/b23223-XdbDbvsVkbfd.png",
       "hasImage": true,
-      "source": "anime"
+      "source": "id"
     },
     {
       "animeId": "naruto",
@@ -7638,7 +7638,7 @@
       "resolvedName": "Hana Inuzuka",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/n15073-dT3K5G6US1ja.png",
       "hasImage": true,
-      "source": "anime"
+      "source": "id"
     },
     {
       "animeId": "naruto",
@@ -7648,7 +7648,7 @@
       "resolvedName": "Hanabi Hyuuga",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/b12563-RnwbLhX2RIAO.jpg",
       "hasImage": true,
-      "source": "anime"
+      "source": "id"
     },
     {
       "animeId": "naruto",
@@ -7668,7 +7668,7 @@
       "resolvedName": "Hashirama Senju",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/n12464-fcgqkCPZoREw.png",
       "hasImage": true,
-      "source": "anime"
+      "source": "id"
     },
     {
       "animeId": "naruto",
@@ -7678,7 +7678,7 @@
       "resolvedName": "Hayate Gekkou",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/n7738-jp6LVMZ3nwXR.png",
       "hasImage": true,
-      "source": "anime"
+      "source": "id"
     },
     {
       "animeId": "naruto",
@@ -7688,7 +7688,7 @@
       "resolvedName": "Hiashi Hyuuga",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/n15039-V0DzTR1IPkBb.png",
       "hasImage": true,
-      "source": "anime"
+      "source": "id"
     },
     {
       "animeId": "naruto",
@@ -7698,7 +7698,7 @@
       "resolvedName": "Hidan",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/b2792-lyvtbiT4COp0.jpg",
       "hasImage": true,
-      "source": "search"
+      "source": "id"
     },
     {
       "animeId": "naruto",
@@ -7708,7 +7708,7 @@
       "resolvedName": "Hinata Hyuuga",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/b1555-Q41GLTV3FvYF.png",
       "hasImage": true,
-      "source": "anime"
+      "source": "id"
     },
     {
       "animeId": "naruto",
@@ -7718,7 +7718,7 @@
       "resolvedName": "Hiruzen Sarutobi",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/n7571-fKldLuBWUtCO.png",
       "hasImage": true,
-      "source": "anime"
+      "source": "id"
     },
     {
       "animeId": "naruto",
@@ -7728,7 +7728,7 @@
       "resolvedName": "Hizashi Hyuuga",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/n22880-zetfiUvZtS7v.png",
       "hasImage": true,
-      "source": "anime"
+      "source": "id"
     },
     {
       "animeId": "naruto",
@@ -7738,7 +7738,7 @@
       "resolvedName": "Homura Mitokado",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/n22648-J9uhsMghIJaJ.png",
       "hasImage": true,
-      "source": "anime"
+      "source": "id"
     },
     {
       "animeId": "naruto",
@@ -7748,7 +7748,7 @@
       "resolvedName": "Ibiki Morino",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/n22923-oevCrDnszrEa.png",
       "hasImage": true,
-      "source": "anime"
+      "source": "id"
     },
     {
       "animeId": "naruto",
@@ -7768,7 +7768,7 @@
       "resolvedName": "Ino Yamanaka",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/b2009-H7n38Ns1fr0Y.jpg",
       "hasImage": true,
-      "source": "anime"
+      "source": "id"
     },
     {
       "animeId": "naruto",
@@ -7778,7 +7778,7 @@
       "resolvedName": "Inoichi Yamanaka",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/n15072-SLGhV8u4lAGp.png",
       "hasImage": true,
-      "source": "anime"
+      "source": "id"
     },
     {
       "animeId": "naruto",
@@ -7788,7 +7788,7 @@
       "resolvedName": "Iruka Umino",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/b2011-WUBm7wMCA6cE.png",
       "hasImage": true,
-      "source": "anime"
+      "source": "id"
     },
     {
       "animeId": "naruto",
@@ -7798,7 +7798,7 @@
       "resolvedName": "Isobu",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/57873.jpg",
       "hasImage": true,
-      "source": "search"
+      "source": "id"
     },
     {
       "animeId": "naruto",
@@ -7808,7 +7808,7 @@
       "resolvedName": "Itachi Uchiha",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/b14-9Kb1E5oel1ke.png",
       "hasImage": true,
-      "source": "anime"
+      "source": "id"
     },
     {
       "animeId": "naruto",
@@ -7818,7 +7818,7 @@
       "resolvedName": "Izumo Kamizuki",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/n14032-STqzPykXVWB3.png",
       "hasImage": true,
-      "source": "anime"
+      "source": "id"
     },
     {
       "animeId": "naruto",
@@ -7828,7 +7828,7 @@
       "resolvedName": "Izuna Uchiha",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/16406.jpg",
       "hasImage": true,
-      "source": "search"
+      "source": "id"
     },
     {
       "animeId": "naruto",
@@ -7838,7 +7838,7 @@
       "resolvedName": "Jinin Akebino",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/64461.jpg",
       "hasImage": true,
-      "source": "search"
+      "source": "id"
     },
     {
       "animeId": "naruto",
@@ -7848,7 +7848,7 @@
       "resolvedName": "Jinpachi Munashi",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/64457.jpg",
       "hasImage": true,
-      "source": "search"
+      "source": "id"
     },
     {
       "animeId": "naruto",
@@ -7858,7 +7858,7 @@
       "resolvedName": "Jiraiya",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/b2423-RO5MyoXSA9OL.png",
       "hasImage": true,
-      "source": "anime"
+      "source": "id"
     },
     {
       "animeId": "naruto",
@@ -7878,7 +7878,7 @@
       "resolvedName": "Juugo",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/b3152-h84OgoJk7oSi.png",
       "hasImage": true,
-      "source": "anime"
+      "source": "id"
     },
     {
       "animeId": "naruto",
@@ -7888,7 +7888,7 @@
       "resolvedName": "Kabuto Yakushi",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/b2405-CqbcGW2tfaMV.png",
       "hasImage": true,
-      "source": "anime"
+      "source": "id"
     },
     {
       "animeId": "naruto",
@@ -7918,7 +7918,7 @@
       "resolvedName": "Kakuzu",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/b3178-fCqs5wyV0dlJ.jpg",
       "hasImage": true,
-      "source": "search"
+      "source": "id"
     },
     {
       "animeId": "naruto",
@@ -7928,7 +7928,7 @@
       "resolvedName": "Kankuro",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/n4694-2brvNKpdqARU.png",
       "hasImage": true,
-      "source": "anime"
+      "source": "id"
     },
     {
       "animeId": "naruto",
@@ -7938,7 +7938,7 @@
       "resolvedName": "Karin",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/b3151-HDcp9mHbUvS7.png",
       "hasImage": true,
-      "source": "anime"
+      "source": "id"
     },
     {
       "animeId": "naruto",
@@ -7948,7 +7948,7 @@
       "resolvedName": "Karui",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/b22874-JTJz5TbuwIiA.png",
       "hasImage": true,
-      "source": "search"
+      "source": "id"
     },
     {
       "animeId": "naruto",
@@ -7958,7 +7958,7 @@
       "resolvedName": "Katsuyu",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/n7608-cFcxt6wyh4KF.png",
       "hasImage": true,
-      "source": "anime"
+      "source": "id"
     },
     {
       "animeId": "naruto",
@@ -7968,7 +7968,7 @@
       "resolvedName": "Kiba Inuzuka",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/n3495-dtw0gHa5SOo6.png",
       "hasImage": true,
-      "source": "anime"
+      "source": "id"
     },
     {
       "animeId": "naruto",
@@ -7978,7 +7978,7 @@
       "resolvedName": "Kidomaru",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/28928.jpg",
       "hasImage": true,
-      "source": "search"
+      "source": "id"
     },
     {
       "animeId": "naruto",
@@ -7988,7 +7988,7 @@
       "resolvedName": "Killer Bee",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/b18473-AiI3mk28a1Nm.png",
       "hasImage": true,
-      "source": "anime"
+      "source": "id"
     },
     {
       "animeId": "naruto",
@@ -7998,7 +7998,7 @@
       "resolvedName": "Kimimaro",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/53649.jpg",
       "hasImage": true,
-      "source": "search"
+      "source": "id"
     },
     {
       "animeId": "naruto",
@@ -8008,7 +8008,7 @@
       "resolvedName": "Kin Tsuchi",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/n9680-aQRdgV7hWnkE.png",
       "hasImage": true,
-      "source": "anime"
+      "source": "id"
     },
     {
       "animeId": "naruto",
@@ -8018,7 +8018,7 @@
       "resolvedName": "Kisame Hoshigaki",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/2672-oxbHx8n3N7WY.jpg",
       "hasImage": true,
-      "source": "anime"
+      "source": "id"
     },
     {
       "animeId": "naruto",
@@ -8028,7 +8028,7 @@
       "resolvedName": "Kitsuchi",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/62641.jpg",
       "hasImage": true,
-      "source": "search"
+      "source": "id"
     },
     {
       "animeId": "naruto",
@@ -8038,7 +8038,7 @@
       "resolvedName": "Koharu Utatane",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/n22649-bX4UcmJMKRaD.png",
       "hasImage": true,
-      "source": "anime"
+      "source": "id"
     },
     {
       "animeId": "naruto",
@@ -8058,7 +8058,7 @@
       "resolvedName": "Konan",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/3179-YVD5zJSYrnPg.jpg",
       "hasImage": true,
-      "source": "search"
+      "source": "id"
     },
     {
       "animeId": "naruto",
@@ -8068,7 +8068,7 @@
       "resolvedName": "Konohamaru Sarutobi",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/n3889-gCUewPsRY2kD.png",
       "hasImage": true,
-      "source": "anime"
+      "source": "id"
     },
     {
       "animeId": "naruto",
@@ -8078,7 +8078,7 @@
       "resolvedName": "Kotetsu Hagane",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/n16304-1PbvPoXDzjwW.png",
       "hasImage": true,
-      "source": "anime"
+      "source": "id"
     },
     {
       "animeId": "naruto",
@@ -8088,7 +8088,7 @@
       "resolvedName": "Kurama",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/b7407-D8MYzhbuy8zu.jpg",
       "hasImage": true,
-      "source": "anime"
+      "source": "id"
     },
     {
       "animeId": "naruto",
@@ -8098,7 +8098,7 @@
       "resolvedName": "Kurenai Yuuhi",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/n4773-mfDggINe9pMD.png",
       "hasImage": true,
-      "source": "anime"
+      "source": "id"
     },
     {
       "animeId": "naruto",
@@ -8108,7 +8108,7 @@
       "resolvedName": "Kurotsuchi",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/b23474-A2jtQe3eCGYF.jpg",
       "hasImage": true,
-      "source": "search"
+      "source": "id"
     },
     {
       "animeId": "naruto",
@@ -8118,7 +8118,7 @@
       "resolvedName": "Kushimaru Kuriarare",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/64455.jpg",
       "hasImage": true,
-      "source": "search"
+      "source": "id"
     },
     {
       "animeId": "naruto",
@@ -8128,7 +8128,7 @@
       "resolvedName": "Kushina Uzumaki",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/b7302-KQ6ddZtOkvUf.png",
       "hasImage": true,
-      "source": "search"
+      "source": "id"
     },
     {
       "animeId": "naruto",
@@ -8138,7 +8138,7 @@
       "resolvedName": "Mabui",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/33736.jpg",
       "hasImage": true,
-      "source": "search"
+      "source": "id"
     },
     {
       "animeId": "naruto",
@@ -8148,7 +8148,7 @@
       "resolvedName": "Madara Uchiha",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/b53901-HnRKSoHMG5Vg.png",
       "hasImage": true,
-      "source": "search"
+      "source": "id"
     },
     {
       "animeId": "naruto",
@@ -8158,7 +8158,7 @@
       "resolvedName": "Manda",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/n37929-pewxLnzzHI8U.png",
       "hasImage": true,
-      "source": "anime"
+      "source": "id"
     },
     {
       "animeId": "naruto",
@@ -8168,7 +8168,7 @@
       "resolvedName": "Mangetsu Hozuki",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/62775.jpg",
       "hasImage": true,
-      "source": "search"
+      "source": "id"
     },
     {
       "animeId": "naruto",
@@ -8178,7 +8178,7 @@
       "resolvedName": "Matatabi",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/57871.jpg",
       "hasImage": true,
-      "source": "search"
+      "source": "id"
     },
     {
       "animeId": "naruto",
@@ -8188,7 +8188,7 @@
       "resolvedName": "Mei Terumi",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/b23478-U7n8YUe2gFDW.png",
       "hasImage": true,
-      "source": "search"
+      "source": "id"
     },
     {
       "animeId": "naruto",
@@ -8198,7 +8198,7 @@
       "resolvedName": "Mifune",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/b12982-oqu0ldRYGmCZ.png",
       "hasImage": true,
-      "source": "search"
+      "source": "id"
     },
     {
       "animeId": "naruto",
@@ -8208,7 +8208,7 @@
       "resolvedName": "Might Guy",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/b307-xieUEdhdTVwQ.png",
       "hasImage": true,
-      "source": "anime"
+      "source": "id"
     },
     {
       "animeId": "naruto",
@@ -8218,7 +8218,7 @@
       "resolvedName": "Mikoto Uchiha",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/n21122-blSqxSAMDwXf.png",
       "hasImage": true,
-      "source": "anime"
+      "source": "id"
     },
     {
       "animeId": "naruto",
@@ -8228,7 +8228,7 @@
       "resolvedName": "Minato Namikaze",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/b2535-Xq9WKNPJQEt3.png",
       "hasImage": true,
-      "source": "anime"
+      "source": "id"
     },
     {
       "animeId": "naruto",
@@ -8238,7 +8238,7 @@
       "resolvedName": "Mito Uzumaki",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/b56691-WkpdKOoETJWo.png",
       "hasImage": true,
-      "source": "search"
+      "source": "id"
     },
     {
       "animeId": "naruto",
@@ -8248,7 +8248,7 @@
       "resolvedName": "Moegi Kazamatsuri",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/n13454-1vA2oHYalYIe.png",
       "hasImage": true,
-      "source": "anime"
+      "source": "id"
     },
     {
       "animeId": "naruto",
@@ -8258,7 +8258,7 @@
       "resolvedName": "Muu",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/64453.jpg",
       "hasImage": true,
-      "source": "anime"
+      "source": "id"
     },
     {
       "animeId": "naruto",
@@ -8278,7 +8278,7 @@
       "resolvedName": "Nawaki",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/n22884-JFSLDfwpdakg.png",
       "hasImage": true,
-      "source": "anime"
+      "source": "id"
     },
     {
       "animeId": "naruto",
@@ -8288,7 +8288,7 @@
       "resolvedName": "Neji Hyuuga",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/b1694-TL4obouDwJ7k.jpg",
       "hasImage": true,
-      "source": "anime"
+      "source": "id"
     },
     {
       "animeId": "naruto",
@@ -8298,7 +8298,7 @@
       "resolvedName": "Omoi",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/b22872-Yrgn2o1Esb4V.png",
       "hasImage": true,
-      "source": "search"
+      "source": "id"
     },
     {
       "animeId": "naruto",
@@ -8308,7 +8308,7 @@
       "resolvedName": "Oonoki",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/b23475-OXJU3W3rmDQZ.png",
       "hasImage": true,
-      "source": "anime"
+      "source": "id"
     },
     {
       "animeId": "naruto",
@@ -8318,7 +8318,7 @@
       "resolvedName": "Orochimaru",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/n2455-V9tLMS3TIgJW.png",
       "hasImage": true,
-      "source": "anime"
+      "source": "id"
     },
     {
       "animeId": "naruto",
@@ -8328,7 +8328,7 @@
       "resolvedName": "Pain",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/b3180-ITMGBLWNBOgV.png",
       "hasImage": true,
-      "source": "anime"
+      "source": "id"
     },
     {
       "animeId": "naruto",
@@ -8338,7 +8338,7 @@
       "resolvedName": "Pakkun",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/n2766-kJfGu56HevA0.png",
       "hasImage": true,
-      "source": "anime"
+      "source": "id"
     },
     {
       "animeId": "naruto",
@@ -8348,7 +8348,7 @@
       "resolvedName": "Pakura",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/63791.jpg",
       "hasImage": true,
-      "source": "search"
+      "source": "id"
     },
     {
       "animeId": "naruto",
@@ -8358,7 +8358,7 @@
       "resolvedName": "Rasa",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/n22920-MZPUrxk6WQ8V.png",
       "hasImage": true,
-      "source": "anime"
+      "source": "id"
     },
     {
       "animeId": "naruto",
@@ -8368,7 +8368,7 @@
       "resolvedName": "Rin Nohara",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/b14082-AAP0WNST5DRO.jpg",
       "hasImage": true,
-      "source": "search"
+      "source": "id"
     },
     {
       "animeId": "naruto",
@@ -8378,7 +8378,7 @@
       "resolvedName": "Rock Lee",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/b306-oUTOO45xInXt.png",
       "hasImage": true,
-      "source": "anime"
+      "source": "id"
     },
     {
       "animeId": "naruto",
@@ -8398,7 +8398,7 @@
       "resolvedName": "Sai",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/b1901-vJRGRONNpaiG.jpg",
       "hasImage": true,
-      "source": "anime"
+      "source": "id"
     },
     {
       "animeId": "naruto",
@@ -8408,7 +8408,7 @@
       "resolvedName": "Saiken",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/57875.jpg",
       "hasImage": true,
-      "source": "search"
+      "source": "id"
     },
     {
       "animeId": "naruto",
@@ -8418,7 +8418,7 @@
       "resolvedName": "Sakon",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/n8760-q4mTvHasjDud.png",
       "hasImage": true,
-      "source": "anime"
+      "source": "id"
     },
     {
       "animeId": "naruto",
@@ -8428,7 +8428,7 @@
       "resolvedName": "Sakura Haruno",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/b145-IorfpI8arxeX.png",
       "hasImage": true,
-      "source": "anime"
+      "source": "id"
     },
     {
       "animeId": "naruto",
@@ -8438,7 +8438,7 @@
       "resolvedName": "Samui",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/b22873-xiuMAVpFZqrH.png",
       "hasImage": true,
-      "source": "search"
+      "source": "id"
     },
     {
       "animeId": "naruto",
@@ -8448,7 +8448,7 @@
       "resolvedName": "Sasori",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/b1900-Dpd9wVWtlvIx.png",
       "hasImage": true,
-      "source": "search"
+      "source": "id"
     },
     {
       "animeId": "naruto",
@@ -8468,7 +8468,7 @@
       "resolvedName": "Shibi Aburame",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/n10697-do0MOW9cKUnY.png",
       "hasImage": true,
-      "source": "anime"
+      "source": "id"
     },
     {
       "animeId": "naruto",
@@ -8478,7 +8478,7 @@
       "resolvedName": "Shikaku Nara",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/n18056-fCHMXALzWvOL.png",
       "hasImage": true,
-      "source": "anime"
+      "source": "id"
     },
     {
       "animeId": "naruto",
@@ -8488,7 +8488,7 @@
       "resolvedName": "Shikamaru Nara",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/b2007-QaesJlIZDifj.jpg",
       "hasImage": true,
-      "source": "anime"
+      "source": "id"
     },
     {
       "animeId": "naruto",
@@ -8498,7 +8498,7 @@
       "resolvedName": "Shima",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/24487.jpg",
       "hasImage": true,
-      "source": "anime"
+      "source": "id"
     },
     {
       "animeId": "naruto",
@@ -8508,7 +8508,7 @@
       "resolvedName": "Shino Aburame",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/n3428-KVeHMgx0xMqO.png",
       "hasImage": true,
-      "source": "anime"
+      "source": "id"
     },
     {
       "animeId": "naruto",
@@ -8518,7 +8518,7 @@
       "resolvedName": "Shisui Uchiha",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/b22893-j0SxfY656SKv.jpg",
       "hasImage": true,
-      "source": "search"
+      "source": "id"
     },
     {
       "animeId": "naruto",
@@ -8528,7 +8528,7 @@
       "resolvedName": "Shizune",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/n4643-tnv8Gc4Uvvui.png",
       "hasImage": true,
-      "source": "anime"
+      "source": "id"
     },
     {
       "animeId": "naruto",
@@ -8538,7 +8538,7 @@
       "resolvedName": "Shukaku",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/11813.jpg",
       "hasImage": true,
-      "source": "anime"
+      "source": "id"
     },
     {
       "animeId": "naruto",
@@ -8548,7 +8548,7 @@
       "resolvedName": "Son Goku",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/57877.jpg",
       "hasImage": true,
-      "source": "search"
+      "source": "id"
     },
     {
       "animeId": "naruto",
@@ -8568,7 +8568,7 @@
       "resolvedName": "Tayuya",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/n3052-1V7iclO45tia.png",
       "hasImage": true,
-      "source": "anime"
+      "source": "id"
     },
     {
       "animeId": "naruto",
@@ -8578,7 +8578,7 @@
       "resolvedName": "Temari",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/b2174-XTX0TtzkZCnO.png",
       "hasImage": true,
-      "source": "anime"
+      "source": "id"
     },
     {
       "animeId": "naruto",
@@ -8598,7 +8598,7 @@
       "resolvedName": "Tenten",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/b3710-OmDNYKi0Xfjk.png",
       "hasImage": true,
-      "source": "anime"
+      "source": "id"
     },
     {
       "animeId": "naruto",
@@ -8608,7 +8608,7 @@
       "resolvedName": "Third Raikage",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/65133.jpg",
       "hasImage": true,
-      "source": "search"
+      "source": "id"
     },
     {
       "animeId": "naruto",
@@ -8618,7 +8618,7 @@
       "resolvedName": "Tobi",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/b3149-j6cl8A9yup51.png",
       "hasImage": true,
-      "source": "anime"
+      "source": "id"
     },
     {
       "animeId": "naruto",
@@ -8628,7 +8628,7 @@
       "resolvedName": "Tobirama Senju",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/n12465-y8ByDAvzC5cA.png",
       "hasImage": true,
-      "source": "anime"
+      "source": "id"
     },
     {
       "animeId": "naruto",
@@ -8648,7 +8648,7 @@
       "resolvedName": "Tonton",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/b192707-Mw6i6wPWkBoZ.jpg",
       "hasImage": true,
-      "source": "anime"
+      "source": "id"
     },
     {
       "animeId": "naruto",
@@ -8658,7 +8658,7 @@
       "resolvedName": "Torune Aburame",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/23647.jpg",
       "hasImage": true,
-      "source": "search"
+      "source": "id"
     },
     {
       "animeId": "naruto",
@@ -8668,7 +8668,7 @@
       "resolvedName": "Tsume Inuzuka",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/n15074-3k7I9cFLWUjz.png",
       "hasImage": true,
-      "source": "anime"
+      "source": "id"
     },
     {
       "animeId": "naruto",
@@ -8678,7 +8678,7 @@
       "resolvedName": "Tsunade",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/b155934-xFVBNIEABEN7.png",
       "hasImage": true,
-      "source": "search"
+      "source": "id"
     },
     {
       "animeId": "naruto",
@@ -8698,7 +8698,7 @@
       "resolvedName": "Ukon",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/n41366-yIvp4naJdd4T.png",
       "hasImage": true,
-      "source": "anime"
+      "source": "id"
     },
     {
       "animeId": "naruto",
@@ -8708,7 +8708,7 @@
       "resolvedName": "Utakata",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/b23219-eEWDh3idJwit.jpg",
       "hasImage": true,
-      "source": "search"
+      "source": "id"
     },
     {
       "animeId": "naruto",
@@ -8738,7 +8738,7 @@
       "resolvedName": "Yahiko",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/b23050-4PPhGLw40Lij.jpg",
       "hasImage": true,
-      "source": "search"
+      "source": "id"
     },
     {
       "animeId": "naruto",
@@ -8748,7 +8748,7 @@
       "resolvedName": "Yamato",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/b2006-FTCz2Eu3cXsI.png",
       "hasImage": true,
-      "source": "anime"
+      "source": "id"
     },
     {
       "animeId": "naruto",
@@ -8758,7 +8758,7 @@
       "resolvedName": "Yashamaru",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/n13017-dAkTOY5P6jMs.png",
       "hasImage": true,
-      "source": "anime"
+      "source": "id"
     },
     {
       "animeId": "naruto",
@@ -8768,7 +8768,7 @@
       "resolvedName": "Yugao Uzuki",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/n15045-E9QvPryIQgJX.png",
       "hasImage": true,
-      "source": "anime"
+      "source": "id"
     },
     {
       "animeId": "naruto",
@@ -8778,7 +8778,7 @@
       "resolvedName": "Yugito Nii",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/15362.jpg",
       "hasImage": true,
-      "source": "search"
+      "source": "id"
     },
     {
       "animeId": "naruto",
@@ -8788,7 +8788,7 @@
       "resolvedName": "Yukimaru",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/20621.jpg",
       "hasImage": true,
-      "source": "search"
+      "source": "id"
     },
     {
       "animeId": "naruto",
@@ -8798,7 +8798,7 @@
       "resolvedName": "Zabuza Momochi",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/b728-zHw77BzLzQKT.jpg",
       "hasImage": true,
-      "source": "anime"
+      "source": "id"
     },
     {
       "animeId": "naruto",
@@ -8808,7 +8808,7 @@
       "resolvedName": "Zaku Abumi",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/n8997-rKFqlm35weig.png",
       "hasImage": true,
-      "source": "anime"
+      "source": "id"
     },
     {
       "animeId": "naruto",
@@ -8818,7 +8818,7 @@
       "resolvedName": "Zetsu",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/3150.jpg",
       "hasImage": true,
-      "source": "anime"
+      "source": "id"
     },
     {
       "animeId": "onepiece",
@@ -8848,7 +8848,7 @@
       "resolvedName": "Apoo Scratchmen",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/b20288-7ccM0oyUvyLu.jpg",
       "hasImage": true,
-      "source": "search"
+      "source": "id"
     },
     {
       "animeId": "onepiece",
@@ -8858,7 +8858,7 @@
       "resolvedName": "Aramaki",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/b271788-IkVQTycoaNPY.png",
       "hasImage": true,
-      "source": "anime"
+      "source": "id"
     },
     {
       "animeId": "onepiece",
@@ -8888,7 +8888,7 @@
       "resolvedName": "Augur Van",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/b9325-Ev3MbRVNYXIt.png",
       "hasImage": true,
-      "source": "anime"
+      "source": "search"
     },
     {
       "animeId": "onepiece",
@@ -8898,7 +8898,7 @@
       "resolvedName": "Avalo Pizarro",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/b31182-pJB5DBtafLRS.jpg",
       "hasImage": true,
-      "source": "anime"
+      "source": "search"
     },
     {
       "animeId": "onepiece",
@@ -8918,7 +8918,7 @@
       "resolvedName": "Basil Hawkins",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/b20293-37ifsaMz7Kgx.png",
       "hasImage": true,
-      "source": "search"
+      "source": "id"
     },
     {
       "animeId": "onepiece",
@@ -8928,7 +8928,7 @@
       "resolvedName": "Bege Capone",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/b20292-6aIlR9qqSj1f.png",
       "hasImage": true,
-      "source": "search"
+      "source": "id"
     },
     {
       "animeId": "onepiece",
@@ -8958,7 +8958,7 @@
       "resolvedName": "Bepo",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/b17492-PCFNvded635o.png",
       "hasImage": true,
-      "source": "search"
+      "source": "id"
     },
     {
       "animeId": "onepiece",
@@ -8978,7 +8978,7 @@
       "resolvedName": "Blueno",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/b11394-hQsNGXPOw0m0.png",
       "hasImage": true,
-      "source": "search"
+      "source": "id"
     },
     {
       "animeId": "onepiece",
@@ -8988,7 +8988,7 @@
       "resolvedName": "Borsalino",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/b21093-Pc4kOjUn3ZkZ.png",
       "hasImage": true,
-      "source": "anime"
+      "source": "id"
     },
     {
       "animeId": "onepiece",
@@ -9014,11 +9014,11 @@
       "animeId": "onepiece",
       "animeName": "One Piece",
       "name": "Caesar Clown",
-      "anilist": 163836,
-      "resolvedName": null,
-      "image": null,
-      "hasImage": false,
-      "source": "none"
+      "anilist": 61603,
+      "resolvedName": "Caesar Clown",
+      "image": "https://s4.anilist.co/file/anilistcdn/character/large/b61603-x8RTOk7DIFIZ.jpg",
+      "hasImage": true,
+      "source": "search"
     },
     {
       "animeId": "onepiece",
@@ -9048,7 +9048,7 @@
       "resolvedName": "Catarina Devon",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/b31181-02FkFHTCEZd1.jpg",
       "hasImage": true,
-      "source": "anime"
+      "source": "search"
     },
     {
       "animeId": "onepiece",
@@ -9068,7 +9068,7 @@
       "resolvedName": "Chaka",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/b21220-iqzvJufyR8x8.jpg",
       "hasImage": true,
-      "source": "search"
+      "source": "id"
     },
     {
       "animeId": "onepiece",
@@ -9088,7 +9088,7 @@
       "resolvedName": "Chopper Tony Tony",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/b309-H64NhbJ2ywIQ.jpg",
       "hasImage": true,
-      "source": "search"
+      "source": "id"
     },
     {
       "animeId": "onepiece",
@@ -9108,7 +9108,7 @@
       "resolvedName": "Cracker Charlotte",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/b136035-OWcGohs8YDwH.jpg",
       "hasImage": true,
-      "source": "search"
+      "source": "id"
     },
     {
       "animeId": "onepiece",
@@ -9119,16 +9119,6 @@
       "image": null,
       "hasImage": false,
       "source": "none"
-    },
-    {
-      "animeId": "onepiece",
-      "animeName": "One Piece",
-      "name": "Crocodile / Sir Crocodile",
-      "anilist": 61,
-      "resolvedName": "Robin Nico",
-      "image": "https://s4.anilist.co/file/anilistcdn/character/large/b61-ywXUyyocEEqt.png",
-      "hasImage": true,
-      "source": "search"
     },
     {
       "animeId": "onepiece",
@@ -9154,19 +9144,9 @@
       "animeId": "onepiece",
       "animeName": "One Piece",
       "name": "Donquixote Doflamingo",
-      "anilist": 62,
-      "resolvedName": null,
-      "image": null,
-      "hasImage": false,
-      "source": "none"
-    },
-    {
-      "animeId": "onepiece",
-      "animeName": "One Piece",
-      "name": "Donquixote Doflamingo",
-      "anilist": 62,
-      "resolvedName": "Zoro Roronoa",
-      "image": "https://s4.anilist.co/file/anilistcdn/character/large/b62-S7oAeA9WInjV.png",
+      "anilist": 2754,
+      "resolvedName": "Doflamingo Donquixote",
+      "image": "https://s4.anilist.co/file/anilistcdn/character/large/b2754-B4gGSlNYgsyh.jpg",
       "hasImage": true,
       "source": "search"
     },
@@ -9198,7 +9178,7 @@
       "resolvedName": "Drake X.",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/b20289-2bumPKcGsWhU.jpg",
       "hasImage": true,
-      "source": "search"
+      "source": "id"
     },
     {
       "animeId": "onepiece",
@@ -9243,6 +9223,16 @@
     {
       "animeId": "onepiece",
       "animeName": "One Piece",
+      "name": "Franky",
+      "anilist": 64,
+      "resolvedName": "Franky",
+      "image": "https://s4.anilist.co/file/anilistcdn/character/large/n64-ChX6ZzHHjXqA.png",
+      "hasImage": true,
+      "source": "search"
+    },
+    {
+      "animeId": "onepiece",
+      "animeName": "One Piece",
       "name": "Genzo",
       "anilist": 4892,
       "resolvedName": "Genzo",
@@ -9278,7 +9268,7 @@
       "resolvedName": "Hancock Boa",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/b16342-kVOF6V5Q94go.png",
       "hasImage": true,
-      "source": "search"
+      "source": "id"
     },
     {
       "animeId": "onepiece",
@@ -9308,17 +9298,17 @@
       "resolvedName": "Igaram",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/b5415-pIQGogXQgOLf.png",
       "hasImage": true,
-      "source": "search"
+      "source": "id"
     },
     {
       "animeId": "onepiece",
       "animeName": "One Piece",
       "name": "Imu",
       "anilist": 128130,
-      "resolvedName": "Imu",
-      "image": "https://s4.anilist.co/file/anilistcdn/character/large/b128130-X9N46ajhSMOi.png",
-      "hasImage": true,
-      "source": "anime"
+      "resolvedName": null,
+      "image": null,
+      "hasImage": false,
+      "source": "none"
     },
     {
       "animeId": "onepiece",
@@ -9328,7 +9318,7 @@
       "resolvedName": "Inazuma",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/b22647-AGHL8f2Wf0yf.jpg",
       "hasImage": true,
-      "source": "search"
+      "source": "id"
     },
     {
       "animeId": "onepiece",
@@ -9358,17 +9348,17 @@
       "resolvedName": "Ivankov Emporio",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/22646.jpg",
       "hasImage": true,
-      "source": "search"
+      "source": "id"
     },
     {
       "animeId": "onepiece",
       "animeName": "One Piece",
       "name": "Jack",
       "anilist": 135949,
-      "resolvedName": "Jack",
-      "image": "https://s4.anilist.co/file/anilistcdn/character/large/b135949-CpN2RP72jA20.jpg",
-      "hasImage": true,
-      "source": "anime"
+      "resolvedName": null,
+      "image": null,
+      "hasImage": false,
+      "source": "none"
     },
     {
       "animeId": "onepiece",
@@ -9384,11 +9374,11 @@
       "animeId": "onepiece",
       "animeName": "One Piece",
       "name": "Jesus Burgess",
-      "anilist": null,
-      "resolvedName": null,
-      "image": null,
-      "hasImage": false,
-      "source": "none"
+      "anilist": 9324,
+      "resolvedName": "Burgess Jesus",
+      "image": "https://s4.anilist.co/file/anilistcdn/character/large/b9324-ZmlGx1pxRtYP.png",
+      "hasImage": true,
+      "source": "search"
     },
     {
       "animeId": "onepiece",
@@ -9398,7 +9388,7 @@
       "resolvedName": "Jewelry Bonney",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/b20295-LqpG4Y3HkKxu.png",
       "hasImage": true,
-      "source": "search"
+      "source": "id"
     },
     {
       "animeId": "onepiece",
@@ -9417,16 +9407,6 @@
       "anilist": 21559,
       "resolvedName": "Jozu",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/21559.jpg",
-      "hasImage": true,
-      "source": "anime"
-    },
-    {
-      "animeId": "onepiece",
-      "animeName": "One Piece",
-      "name": "Kaido",
-      "anilist": 64,
-      "resolvedName": "Franky",
-      "image": "https://s4.anilist.co/file/anilistcdn/character/large/n64-ChX6ZzHHjXqA.png",
       "hasImage": true,
       "source": "search"
     },
@@ -9448,7 +9428,7 @@
       "resolvedName": "Kaku",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/b131431-3i15UNwSbS95.png",
       "hasImage": true,
-      "source": "anime"
+      "source": "id"
     },
     {
       "animeId": "onepiece",
@@ -9458,7 +9438,7 @@
       "resolvedName": "Kalifa",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/b5910-Ec5mCnChAdBT.jpg",
       "hasImage": true,
-      "source": "search"
+      "source": "id"
     },
     {
       "animeId": "onepiece",
@@ -9478,7 +9458,7 @@
       "resolvedName": "Katakuri Charlotte",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/b124077-TODX2ThCdyx2.png",
       "hasImage": true,
-      "source": "search"
+      "source": "id"
     },
     {
       "animeId": "onepiece",
@@ -9498,7 +9478,7 @@
       "resolvedName": "Kid Eustass",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/b14989-uykLqnBTdAc2.jpg",
       "hasImage": true,
-      "source": "search"
+      "source": "id"
     },
     {
       "animeId": "onepiece",
@@ -9535,10 +9515,10 @@
       "animeName": "One Piece",
       "name": "King",
       "anilist": 130416,
-      "resolvedName": "King",
-      "image": "https://s4.anilist.co/file/anilistcdn/character/large/b130416-viDCE52yqITx.png",
-      "hasImage": true,
-      "source": "anime"
+      "resolvedName": null,
+      "image": null,
+      "hasImage": false,
+      "source": "none"
     },
     {
       "animeId": "onepiece",
@@ -9568,7 +9548,7 @@
       "resolvedName": "Komurasaki",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/b131435-9xVeZr0tDlyP.png",
       "hasImage": true,
-      "source": "anime"
+      "source": "search"
     },
     {
       "animeId": "onepiece",
@@ -9588,7 +9568,7 @@
       "resolvedName": "Kuma Bartholomew",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/b7453-c3MArieFBs9w.png",
       "hasImage": true,
-      "source": "search"
+      "source": "id"
     },
     {
       "animeId": "onepiece",
@@ -9628,7 +9608,7 @@
       "resolvedName": "Lafitte",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/b9327-LSoZrnwtFNDE.png",
       "hasImage": true,
-      "source": "anime"
+      "source": "search"
     },
     {
       "animeId": "onepiece",
@@ -9638,7 +9618,7 @@
       "resolvedName": "Law Trafalgar",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/b13767-U604OJN9dxCn.jpg",
       "hasImage": true,
-      "source": "search"
+      "source": "id"
     },
     {
       "animeId": "onepiece",
@@ -9658,7 +9638,7 @@
       "resolvedName": "Lucci Rob",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/b5677-ZrZunVe7Kq5P.png",
       "hasImage": true,
-      "source": "search"
+      "source": "id"
     },
     {
       "animeId": "onepiece",
@@ -9678,17 +9658,17 @@
       "resolvedName": "Luffy Monkey",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/b40-MNypXsxSRb1R.png",
       "hasImage": true,
-      "source": "search"
+      "source": "id"
     },
     {
       "animeId": "onepiece",
       "animeName": "One Piece",
       "name": "Marco",
-      "anilist": null,
-      "resolvedName": null,
-      "image": null,
-      "hasImage": false,
-      "source": "none"
+      "anilist": 9323,
+      "resolvedName": "Marco",
+      "image": "https://s4.anilist.co/file/anilistcdn/character/large/b9323-tGArly93xBZv.png",
+      "hasImage": true,
+      "source": "search"
     },
     {
       "animeId": "onepiece",
@@ -9748,7 +9728,7 @@
       "resolvedName": "Moria Gecko",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/b7454-WN77wNFvGtp8.png",
       "hasImage": true,
-      "source": "search"
+      "source": "id"
     },
     {
       "animeId": "onepiece",
@@ -9758,7 +9738,7 @@
       "resolvedName": "Nami",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/b723-vp5hPptgnNEC.png",
       "hasImage": true,
-      "source": "search"
+      "source": "id"
     },
     {
       "animeId": "onepiece",
@@ -9818,7 +9798,7 @@
       "resolvedName": "Pell",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/b9098-gsUJ1Zx5tYnA.png",
       "hasImage": true,
-      "source": "search"
+      "source": "id"
     },
     {
       "animeId": "onepiece",
@@ -9828,7 +9808,7 @@
       "resolvedName": "Perona",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/b7467-0xxnaxQGfhkY.jpg",
       "hasImage": true,
-      "source": "search"
+      "source": "id"
     },
     {
       "animeId": "onepiece",
@@ -9838,7 +9818,7 @@
       "resolvedName": "Perospero Charlotte",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/b181760-5H6hsVxrOSZk.jpg",
       "hasImage": true,
-      "source": "search"
+      "source": "id"
     },
     {
       "animeId": "onepiece",
@@ -9858,7 +9838,7 @@
       "resolvedName": "Prometheus",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/b233910-U7nXMyTw8BiM.png",
       "hasImage": true,
-      "source": "search"
+      "source": "id"
     },
     {
       "animeId": "onepiece",
@@ -9878,17 +9858,17 @@
       "resolvedName": "Q Doc",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/b9326-TG3CYbA4Q33y.png",
       "hasImage": true,
-      "source": "anime"
+      "source": "search"
     },
     {
       "animeId": "onepiece",
       "animeName": "One Piece",
       "name": "Queen",
       "anilist": 131427,
-      "resolvedName": "Queen",
-      "image": "https://s4.anilist.co/file/anilistcdn/character/large/b131427-nQfM4dHqP6Qw.jpg",
-      "hasImage": true,
-      "source": "anime"
+      "resolvedName": null,
+      "image": null,
+      "hasImage": false,
+      "source": "none"
     },
     {
       "animeId": "onepiece",
@@ -9908,7 +9888,7 @@
       "resolvedName": "Rayleigh Silvers",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/b17142-OXOpztWZIE2A.png",
       "hasImage": true,
-      "source": "search"
+      "source": "id"
     },
     {
       "animeId": "onepiece",
@@ -9923,12 +9903,22 @@
     {
       "animeId": "onepiece",
       "animeName": "One Piece",
+      "name": "Robin Nico",
+      "anilist": 61,
+      "resolvedName": "Robin Nico",
+      "image": "https://s4.anilist.co/file/anilistcdn/character/large/b61-ywXUyyocEEqt.png",
+      "hasImage": true,
+      "source": "id"
+    },
+    {
+      "animeId": "onepiece",
+      "animeName": "One Piece",
       "name": "Rosinante Donquixote",
       "anilist": 120536,
       "resolvedName": "Rosinante Donquixote",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/b120536-PxdNxEhQwE8d.png",
       "hasImage": true,
-      "source": "anime"
+      "source": "search"
     },
     {
       "animeId": "onepiece",
@@ -9998,7 +9988,7 @@
       "resolvedName": "Sanji",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/b305-6lisPmHtCnLT.png",
       "hasImage": true,
-      "source": "search"
+      "source": "id"
     },
     {
       "animeId": "onepiece",
@@ -10018,7 +10008,7 @@
       "resolvedName": "Sengoku",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/b13018-kJjHsIg6Zw7Q.png",
       "hasImage": true,
-      "source": "search"
+      "source": "id"
     },
     {
       "animeId": "onepiece",
@@ -10055,10 +10045,10 @@
       "animeName": "One Piece",
       "name": "Shinobu",
       "anilist": 128126,
-      "resolvedName": "Shinobu",
-      "image": "https://s4.anilist.co/file/anilistcdn/character/large/b128126-mykle13d1pMk.jpg",
-      "hasImage": true,
-      "source": "anime"
+      "resolvedName": null,
+      "image": null,
+      "hasImage": false,
+      "source": "none"
     },
     {
       "animeId": "onepiece",
@@ -10074,11 +10064,11 @@
       "animeId": "onepiece",
       "animeName": "One Piece",
       "name": "Shiryu",
-      "anilist": null,
-      "resolvedName": null,
-      "image": null,
-      "hasImage": false,
-      "source": "none"
+      "anilist": 5922,
+      "resolvedName": "Shiryu",
+      "image": "https://s4.anilist.co/file/anilistcdn/character/large/b5922-DzYFLk6qzQif.png",
+      "hasImage": true,
+      "source": "search"
     },
     {
       "animeId": "onepiece",
@@ -10098,7 +10088,7 @@
       "resolvedName": "Smoothie Charlotte",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/b136036-hWdz3OAupfri.jpg",
       "hasImage": true,
-      "source": "search"
+      "source": "id"
     },
     {
       "animeId": "onepiece",
@@ -10108,17 +10098,17 @@
       "resolvedName": "Spandam",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/b6551-szpvKXmtWqGX.png",
       "hasImage": true,
-      "source": "search"
+      "source": "id"
     },
     {
       "animeId": "onepiece",
       "animeName": "One Piece",
       "name": "Stronger",
-      "anilist": null,
-      "resolvedName": null,
-      "image": null,
-      "hasImage": false,
-      "source": "none"
+      "anilist": 307766,
+      "resolvedName": "Stronger",
+      "image": "https://s4.anilist.co/file/anilistcdn/character/large/b307766-A2ox8XuW5CxX.png",
+      "hasImage": true,
+      "source": "search"
     },
     {
       "animeId": "onepiece",
@@ -10135,20 +10125,20 @@
       "animeName": "One Piece",
       "name": "Sugar",
       "anilist": 88957,
-      "resolvedName": "Sugar",
-      "image": "https://s4.anilist.co/file/anilistcdn/character/large/b88957-75F3YtwJ8BOu.png",
-      "hasImage": true,
-      "source": "anime"
+      "resolvedName": null,
+      "image": null,
+      "hasImage": false,
+      "source": "none"
     },
     {
       "animeId": "onepiece",
       "animeName": "One Piece",
       "name": "Tama",
       "anilist": 127908,
-      "resolvedName": "Tama",
-      "image": "https://s4.anilist.co/file/anilistcdn/character/large/b127908-Uyvuogi5hPAE.png",
-      "hasImage": true,
-      "source": "anime"
+      "resolvedName": null,
+      "image": null,
+      "hasImage": false,
+      "source": "none"
     },
     {
       "animeId": "onepiece",
@@ -10185,10 +10175,10 @@
       "animeName": "One Piece",
       "name": "Ulti",
       "anilist": 172135,
-      "resolvedName": "Ulti",
-      "image": "https://s4.anilist.co/file/anilistcdn/character/large/b172135-YT7F61sARuG5.png",
-      "hasImage": true,
-      "source": "anime"
+      "resolvedName": null,
+      "image": null,
+      "hasImage": false,
+      "source": "none"
     },
     {
       "animeId": "onepiece",
@@ -10198,7 +10188,7 @@
       "resolvedName": "Urouge",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/b20294-6jBqrVoAQSaz.png",
       "hasImage": true,
-      "source": "search"
+      "source": "id"
     },
     {
       "animeId": "onepiece",
@@ -10208,7 +10198,7 @@
       "resolvedName": "Usopp",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/b724-GFGgI9AJQkfy.jpg",
       "hasImage": true,
-      "source": "search"
+      "source": "id"
     },
     {
       "animeId": "onepiece",
@@ -10238,7 +10228,7 @@
       "resolvedName": "Vista",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/b27202-0ck7epXFLmls.jpg",
       "hasImage": true,
-      "source": "anime"
+      "source": "search"
     },
     {
       "animeId": "onepiece",
@@ -10248,7 +10238,7 @@
       "resolvedName": "Vivi Nefertari",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/b726-DqAIpscMuYYx.png",
       "hasImage": true,
-      "source": "search"
+      "source": "id"
     },
     {
       "animeId": "onepiece",
@@ -10295,10 +10285,10 @@
       "animeName": "One Piece",
       "name": "York",
       "anilist": 326791,
-      "resolvedName": "York",
-      "image": "https://s4.anilist.co/file/anilistcdn/character/large/b326791-ansNLZI6K2AL.png",
-      "hasImage": true,
-      "source": "anime"
+      "resolvedName": null,
+      "image": null,
+      "hasImage": false,
+      "source": "none"
     },
     {
       "animeId": "onepiece",
@@ -10308,7 +10298,17 @@
       "resolvedName": "Zeus",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/b233909-4lP4cvnqgU98.png",
       "hasImage": true,
-      "source": "search"
+      "source": "id"
+    },
+    {
+      "animeId": "onepiece",
+      "animeName": "One Piece",
+      "name": "Zoro Roronoa",
+      "anilist": 62,
+      "resolvedName": "Zoro Roronoa",
+      "image": "https://s4.anilist.co/file/anilistcdn/character/large/b62-S7oAeA9WInjV.png",
+      "hasImage": true,
+      "source": "id"
     },
     {
       "animeId": "onepiece",
@@ -10338,7 +10338,7 @@
       "resolvedName": "Bakuzan",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/b327350-A19CT8DZAU99.png",
       "hasImage": true,
-      "source": "search"
+      "source": "id"
     },
     {
       "animeId": "opm",
@@ -10388,7 +10388,7 @@
       "resolvedName": "Blue Fire",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/b326805-GVtOkppVDhB6.png",
       "hasImage": true,
-      "source": "search"
+      "source": "id"
     },
     {
       "animeId": "opm",
@@ -10438,7 +10438,7 @@
       "resolvedName": "Bushidrill",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/b377195-t3GKIvYBi5EX.png",
       "hasImage": true,
-      "source": "search"
+      "source": "id"
     },
     {
       "animeId": "opm",
@@ -10478,7 +10478,7 @@
       "resolvedName": "Choze",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/b126978-XN2JE39hzS4f.png",
       "hasImage": true,
-      "source": "search"
+      "source": "id"
     },
     {
       "animeId": "opm",
@@ -10498,7 +10498,7 @@
       "resolvedName": "Death Gatling",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/b203397-2veYKOzKEmjC.png",
       "hasImage": true,
-      "source": "search"
+      "source": "id"
     },
     {
       "animeId": "opm",
@@ -10558,7 +10558,7 @@
       "resolvedName": "Fubuki",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/b81931-fmouMoprPVbV.png",
       "hasImage": true,
-      "source": "search"
+      "source": "anime"
     },
     {
       "animeId": "opm",
@@ -10588,7 +10588,7 @@
       "resolvedName": "Garou",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/b89277-xBGb4B5YISXg.png",
       "hasImage": true,
-      "source": "search"
+      "source": "anime"
     },
     {
       "animeId": "opm",
@@ -10598,7 +10598,7 @@
       "resolvedName": "Genos",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/b73979-tVi9maPID881.jpg",
       "hasImage": true,
-      "source": "search"
+      "source": "anime"
     },
     {
       "animeId": "opm",
@@ -10608,7 +10608,7 @@
       "resolvedName": "Geryuganshoop",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/b208320-G10rPdd364NZ.jpg",
       "hasImage": true,
-      "source": "search"
+      "source": "id"
     },
     {
       "animeId": "opm",
@@ -10628,7 +10628,7 @@
       "resolvedName": "Gouketsu",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/b327339-WpYfdaJVXy0w.png",
       "hasImage": true,
-      "source": "search"
+      "source": "id"
     },
     {
       "animeId": "opm",
@@ -10638,7 +10638,7 @@
       "resolvedName": "Groribas",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/b247693-SdPVtv0qH2lS.jpg",
       "hasImage": true,
-      "source": "search"
+      "source": "id"
     },
     {
       "animeId": "opm",
@@ -10688,7 +10688,7 @@
       "resolvedName": "Iaian",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/b165855-0YK8GfxwyOg3.png",
       "hasImage": true,
-      "source": "search"
+      "source": "id"
     },
     {
       "animeId": "opm",
@@ -10728,7 +10728,7 @@
       "resolvedName": "Manako",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/b208572-mjVpKzRRQRAQ.png",
       "hasImage": true,
-      "source": "search"
+      "source": "id"
     },
     {
       "animeId": "opm",
@@ -10738,7 +10738,7 @@
       "resolvedName": "Melzargard",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/b156124-5BfTBuiOPHna.jpg",
       "hasImage": true,
-      "source": "search"
+      "source": "anime"
     },
     {
       "animeId": "opm",
@@ -10788,7 +10788,7 @@
       "resolvedName": "Okamaitachi",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/b377194-OoJkUk5S1vpY.png",
       "hasImage": true,
-      "source": "search"
+      "source": "id"
     },
     {
       "animeId": "opm",
@@ -10798,7 +10798,7 @@
       "resolvedName": "Orochi ",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/b195425-Gfo2cxluWVRy.png",
       "hasImage": true,
-      "source": "search"
+      "source": "id"
     },
     {
       "animeId": "opm",
@@ -10838,7 +10838,7 @@
       "resolvedName": "Psykos",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/b165607-JTY8yaLUax5L.png",
       "hasImage": true,
-      "source": "search"
+      "source": "id"
     },
     {
       "animeId": "opm",
@@ -10848,7 +10848,7 @@
       "resolvedName": "Puri-Puri Prisoner",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/n86029-iomUtQtGfJOU.png",
       "hasImage": true,
-      "source": "search"
+      "source": "anime"
     },
     {
       "animeId": "opm",
@@ -10878,7 +10878,7 @@
       "resolvedName": "Saitama",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/b73935-ON5d0mAcrItd.jpg",
       "hasImage": true,
-      "source": "search"
+      "source": "anime"
     },
     {
       "animeId": "opm",
@@ -10888,7 +10888,7 @@
       "resolvedName": "Sekingar",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/b307003-zfN8qAKhnlXb.png",
       "hasImage": true,
-      "source": "search"
+      "source": "id"
     },
     {
       "animeId": "opm",
@@ -10898,7 +10898,7 @@
       "resolvedName": "Smile Man",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/b326813-8rsnJ5bdRVtZ.png",
       "hasImage": true,
-      "source": "search"
+      "source": "id"
     },
     {
       "animeId": "opm",
@@ -10928,7 +10928,7 @@
       "resolvedName": "Stinger",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/b86033-UZZHzaDBf7AC.png",
       "hasImage": true,
-      "source": "search"
+      "source": "id"
     },
     {
       "animeId": "opm",
@@ -10938,7 +10938,7 @@
       "resolvedName": "Suiryu",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/b132939-DLMpET3S5YG6.png",
       "hasImage": true,
-      "source": "search"
+      "source": "id"
     },
     {
       "animeId": "opm",
@@ -10958,7 +10958,7 @@
       "resolvedName": "Tanktop Master",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/b156125-xkTuQF1zpOuw.png",
       "hasImage": true,
-      "source": "search"
+      "source": "anime"
     },
     {
       "animeId": "opm",
@@ -10968,7 +10968,7 @@
       "resolvedName": "Tatsumaki",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/b81929-WPVp2LQoWgkc.png",
       "hasImage": true,
-      "source": "search"
+      "source": "anime"
     },
     {
       "animeId": "opm",
@@ -10978,7 +10978,7 @@
       "resolvedName": "Vaccine Man",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/b13125-LU5mxTholX4R.jpg",
       "hasImage": true,
-      "source": "search"
+      "source": "id"
     },
     {
       "animeId": "opm",
@@ -10998,7 +10998,7 @@
       "resolvedName": "Zombieman",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/n133835-7dbqvi4YzpRC.png",
       "hasImage": true,
-      "source": "search"
+      "source": "anime"
     },
     {
       "animeId": "sololeveling",
@@ -11008,7 +11008,7 @@
       "resolvedName": "Antares",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/b253680-bwoS2mJpmKGN.png",
       "hasImage": true,
-      "source": "search"
+      "source": "id"
     },
     {
       "animeId": "sololeveling",
@@ -11018,7 +11018,7 @@
       "resolvedName": "Architect",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/b121481-XslPUqspDuOl.png",
       "hasImage": true,
-      "source": "search"
+      "source": "id"
     },
     {
       "animeId": "sololeveling",
@@ -11028,7 +11028,7 @@
       "resolvedName": "Ashborn",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/b198257-qi06d0qgcX1Y.png",
       "hasImage": true,
-      "source": "search"
+      "source": "id"
     },
     {
       "animeId": "sololeveling",
@@ -11048,7 +11048,7 @@
       "resolvedName": "Baran",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/b155917-yyLZnbHBcVkf.png",
       "hasImage": true,
-      "source": "search"
+      "source": "id"
     },
     {
       "animeId": "sololeveling",
@@ -11058,7 +11058,7 @@
       "resolvedName": "Bellion",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/b249400-qE9nSrstYOHp.jpg",
       "hasImage": true,
-      "source": "search"
+      "source": "id"
     },
     {
       "animeId": "sololeveling",
@@ -11068,7 +11068,7 @@
       "resolvedName": "Beru ",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/b159849-p0Szb7KzD2DD.png",
       "hasImage": true,
-      "source": "search"
+      "source": "id"
     },
     {
       "animeId": "sololeveling",
@@ -11078,7 +11078,7 @@
       "resolvedName": "Cerberus",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/b2897-Ckmv1Y2i9hZZ.jpg",
       "hasImage": true,
-      "source": "search"
+      "source": "id"
     },
     {
       "animeId": "sololeveling",
@@ -11088,7 +11088,7 @@
       "resolvedName": "Chi-Yul Song",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/b136073-0hZNgsWB9ZLH.png",
       "hasImage": true,
-      "source": "anime"
+      "source": "id"
     },
     {
       "animeId": "sololeveling",
@@ -11098,7 +11098,7 @@
       "resolvedName": "Christopher Reed",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/b208458-p4bX3kbfUl1N.jpg",
       "hasImage": true,
-      "source": "search"
+      "source": "id"
     },
     {
       "animeId": "sololeveling",
@@ -11108,7 +11108,7 @@
       "resolvedName": "Dong-Suk Hwang",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/b306666-k7s0nluzaWod.png",
       "hasImage": true,
-      "source": "anime"
+      "source": "id"
     },
     {
       "animeId": "sololeveling",
@@ -11118,7 +11118,7 @@
       "resolvedName": "Dong-Suk Hwang",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/b306666-k7s0nluzaWod.png",
       "hasImage": true,
-      "source": "anime"
+      "source": "id"
     },
     {
       "animeId": "sololeveling",
@@ -11128,7 +11128,7 @@
       "resolvedName": "Dong-Suk Hwang",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/b306666-k7s0nluzaWod.png",
       "hasImage": true,
-      "source": "anime"
+      "source": "id"
     },
     {
       "animeId": "sololeveling",
@@ -11138,7 +11138,7 @@
       "resolvedName": "Esil Radiru",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/b164675-ZrAxmOOwGSa6.png",
       "hasImage": true,
-      "source": "search"
+      "source": "id"
     },
     {
       "animeId": "sololeveling",
@@ -11158,7 +11158,7 @@
       "resolvedName": "Goto Ryuji",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/b181154-cYOPK6mij2kI.png",
       "hasImage": true,
-      "source": "search"
+      "source": "id"
     },
     {
       "animeId": "sololeveling",
@@ -11168,7 +11168,7 @@
       "resolvedName": "Hae-In Cha",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/b138789-AhE8m0LWjE7E.png",
       "hasImage": true,
-      "source": "anime"
+      "source": "id"
     },
     {
       "animeId": "sololeveling",
@@ -11178,7 +11178,7 @@
       "resolvedName": "Igris",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/b145722-qSJ71S6vpeeM.png",
       "hasImage": true,
-      "source": "anime"
+      "source": "id"
     },
     {
       "animeId": "sololeveling",
@@ -11188,7 +11188,7 @@
       "resolvedName": "Il-Hwan Seong",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/b138790-i3DFMscWID9D.jpg",
       "hasImage": true,
-      "source": "search"
+      "source": "id"
     },
     {
       "animeId": "sololeveling",
@@ -11198,7 +11198,7 @@
       "resolvedName": "Iron",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/b184956-uy2dOVHacMsf.png",
       "hasImage": true,
-      "source": "anime"
+      "source": "id"
     },
     {
       "animeId": "sololeveling",
@@ -11218,7 +11218,7 @@
       "resolvedName": "Jong-In Choi",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/b138794-dZNdO0pvZ659.png",
       "hasImage": true,
-      "source": "anime"
+      "source": "id"
     },
     {
       "animeId": "sololeveling",
@@ -11228,7 +11228,7 @@
       "resolvedName": "Kaisel",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/b184546-7auQqtPuhlUO.png",
       "hasImage": true,
-      "source": "search"
+      "source": "id"
     },
     {
       "animeId": "sololeveling",
@@ -11258,7 +11258,7 @@
       "resolvedName": "Legia",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/b209184-w70Ft3HJEgRd.png",
       "hasImage": true,
-      "source": "search"
+      "source": "id"
     },
     {
       "animeId": "sololeveling",
@@ -11318,7 +11318,7 @@
       "resolvedName": "Tae-Shik Kang",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/b181155-IkXnHuzG6he9.png",
       "hasImage": true,
-      "source": "anime"
+      "source": "id"
     },
     {
       "animeId": "sololeveling",
@@ -11328,7 +11328,7 @@
       "resolvedName": "Tank",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/b184545-zoRmBPp8l7Mi.png",
       "hasImage": true,
-      "source": "search"
+      "source": "id"
     },
     {
       "animeId": "sololeveling",
@@ -11348,7 +11348,7 @@
       "resolvedName": "Thomas Andre",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/b184540-JNscGAnjHExA.png",
       "hasImage": true,
-      "source": "search"
+      "source": "id"
     },
     {
       "animeId": "sololeveling",
@@ -11358,7 +11358,7 @@
       "resolvedName": "Tusk",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/b184957-b9X1TeiuteqR.png",
       "hasImage": true,
-      "source": "search"
+      "source": "id"
     },
     {
       "animeId": "sololeveling",
@@ -11398,7 +11398,7 @@
       "resolvedName": "Yuri Orloff",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/b306507-hp6pITfsTVwu.png",
       "hasImage": true,
-      "source": "search"
+      "source": "id"
     },
     {
       "animeId": "sololeveling",
@@ -11408,7 +11408,7 @@
       "resolvedName": "Zhigang Liu",
       "image": "https://s4.anilist.co/file/anilistcdn/character/large/b184553-8dz0Dw1bvQ8G.png",
       "hasImage": true,
-      "source": "search"
+      "source": "id"
     },
     {
       "animeId": "valorant",
@@ -11417,16 +11417,6 @@
       "anilist": null,
       "resolvedName": "Aftershock (Breach)",
       "image": "https://media.valorant-api.com/agents/5f8d3a7f-467b-97f3-062c-13acf203c006/abilities/grenade/displayicon.png",
-      "hasImage": true,
-      "source": "manual"
-    },
-    {
-      "animeId": "valorant",
-      "animeName": "VALORANT",
-      "name": "ALARMBOT (Killjoy)",
-      "anilist": null,
-      "resolvedName": "Alarmbot",
-      "image": "https://media.valorant-api.com/agents/1e58de9c-4950-5125-93e9-a0aee9f98746/abilities/ability1/displayicon.png",
       "hasImage": true,
       "source": "manual"
     },
@@ -11557,16 +11547,6 @@
       "anilist": null,
       "resolvedName": "BLINDSIDE (Yoru)",
       "image": "https://media.valorant-api.com/agents/7f94d92c-4234-0a36-9646-3a87eb8b5c89/abilities/ability1/displayicon.png",
-      "hasImage": true,
-      "source": "manual"
-    },
-    {
-      "animeId": "valorant",
-      "animeName": "VALORANT",
-      "name": "Boom Bot (Raze)",
-      "anilist": null,
-      "resolvedName": "Boom Bot",
-      "image": "https://media.valorant-api.com/agents/f94c3b30-42be-e959-889c-5aa313dba261/abilities/grenade/displayicon.png",
       "hasImage": true,
       "source": "manual"
     },
@@ -11757,16 +11737,6 @@
       "anilist": null,
       "resolvedName": "Dismiss (Reyna)",
       "image": "https://media.valorant-api.com/agents/a3bfb853-43b2-7238-a4f1-ad90e9e46bcc/abilities/ability2/displayicon.png",
-      "hasImage": true,
-      "source": "manual"
-    },
-    {
-      "animeId": "valorant",
-      "animeName": "VALORANT",
-      "name": "Dizzy (Gekko)",
-      "anilist": null,
-      "resolvedName": "Dizzy",
-      "image": "https://media.valorant-api.com/agents/e370fa57-4757-3604-3648-499e1f642d3f/abilities/ability2/displayicon.png",
       "hasImage": true,
       "source": "manual"
     },
@@ -12145,16 +12115,6 @@
       "animeName": "VALORANT",
       "name": "Lockdown (Killjoy)",
       "anilist": null,
-      "resolvedName": "Lockdown",
-      "image": "https://media.valorant-api.com/agents/1e58de9c-4950-5125-93e9-a0aee9f98746/abilities/ultimate/displayicon.png",
-      "hasImage": true,
-      "source": "manual"
-    },
-    {
-      "animeId": "valorant",
-      "animeName": "VALORANT",
-      "name": "Lockdown (Killjoy)",
-      "anilist": null,
       "resolvedName": "Lockdown (Killjoy)",
       "image": "https://media.valorant-api.com/agents/1e58de9c-4950-5125-93e9-a0aee9f98746/abilities/ultimate/displayicon.png",
       "hasImage": true,
@@ -12167,16 +12127,6 @@
       "anilist": null,
       "resolvedName": "Meddle (Clove)",
       "image": "https://media.valorant-api.com/agents/1dbf2edd-4729-0984-3115-daa5eed44993/abilities/ability1/displayicon.png",
-      "hasImage": true,
-      "source": "manual"
-    },
-    {
-      "animeId": "valorant",
-      "animeName": "VALORANT",
-      "name": "Mosh Pit (Gekko)",
-      "anilist": null,
-      "resolvedName": "Mosh",
-      "image": "https://media.valorant-api.com/agents/e370fa57-4757-3604-3648-499e1f642d3f/abilities/grenade/displayicon.png",
       "hasImage": true,
       "source": "manual"
     },
@@ -12305,16 +12255,6 @@
       "animeName": "VALORANT",
       "name": "Owl Drone (Sova)",
       "anilist": null,
-      "resolvedName": "Owl Drone",
-      "image": "https://media.valorant-api.com/agents/320b2a48-4d9b-a075-30f1-1f93a9b638fa/abilities/grenade/displayicon.png",
-      "hasImage": true,
-      "source": "manual"
-    },
-    {
-      "animeId": "valorant",
-      "animeName": "VALORANT",
-      "name": "Owl Drone (Sova)",
-      "anilist": null,
       "resolvedName": "Owl Drone (Sova)",
       "image": "https://media.valorant-api.com/agents/320b2a48-4d9b-a075-30f1-1f93a9b638fa/abilities/grenade/displayicon.png",
       "hasImage": true,
@@ -12367,16 +12307,6 @@
       "anilist": null,
       "resolvedName": "Poison Cloud (Viper)",
       "image": "https://media.valorant-api.com/agents/707eab51-4836-f488-046a-cda6bf494859/abilities/ability1/displayicon.png",
-      "hasImage": true,
-      "source": "manual"
-    },
-    {
-      "animeId": "valorant",
-      "animeName": "VALORANT",
-      "name": "Prowler (Fade)",
-      "anilist": null,
-      "resolvedName": "Prowler",
-      "image": "https://media.valorant-api.com/agents/dade69b4-4f5a-8528-247b-219e5a1facd6/abilities/grenade/displayicon.png",
       "hasImage": true,
       "source": "manual"
     },
@@ -12545,16 +12475,6 @@
       "animeName": "VALORANT",
       "name": "Seekers (Skye)",
       "anilist": null,
-      "resolvedName": "Seekers",
-      "image": "https://media.valorant-api.com/agents/6f2a04ca-43e0-be17-7f36-b3908627744d/abilities/ultimate/displayicon.png",
-      "hasImage": true,
-      "source": "manual"
-    },
-    {
-      "animeId": "valorant",
-      "animeName": "VALORANT",
-      "name": "Seekers (Skye)",
-      "anilist": null,
       "resolvedName": "Seekers (Skye)",
       "image": "https://media.valorant-api.com/agents/6f2a04ca-43e0-be17-7f36-b3908627744d/abilities/ultimate/displayicon.png",
       "hasImage": true,
@@ -12685,16 +12605,6 @@
       "animeName": "VALORANT",
       "name": "Spycam (Cypher)",
       "anilist": null,
-      "resolvedName": "Spycam",
-      "image": "https://media.valorant-api.com/agents/117ed9e3-49f3-6512-3ccf-0cada7e3823b/abilities/ability2/displayicon.png",
-      "hasImage": true,
-      "source": "manual"
-    },
-    {
-      "animeId": "valorant",
-      "animeName": "VALORANT",
-      "name": "Spycam (Cypher)",
-      "anilist": null,
       "resolvedName": "Spycam (Cypher)",
       "image": "https://media.valorant-api.com/agents/117ed9e3-49f3-6512-3ccf-0cada7e3823b/abilities/ability2/displayicon.png",
       "hasImage": true,
@@ -12765,16 +12675,6 @@
       "animeName": "VALORANT",
       "name": "Thrash (Gekko)",
       "anilist": null,
-      "resolvedName": "Thrash",
-      "image": "https://media.valorant-api.com/agents/e370fa57-4757-3604-3648-499e1f642d3f/abilities/ultimate/displayicon.png",
-      "hasImage": true,
-      "source": "manual"
-    },
-    {
-      "animeId": "valorant",
-      "animeName": "VALORANT",
-      "name": "Thrash (Gekko)",
-      "anilist": null,
       "resolvedName": "Thrash (Gekko)",
       "image": "https://media.valorant-api.com/agents/e370fa57-4757-3604-3648-499e1f642d3f/abilities/ultimate/displayicon.png",
       "hasImage": true,
@@ -12815,28 +12715,8 @@
       "animeName": "VALORANT",
       "name": "Trademark (Chamber)",
       "anilist": null,
-      "resolvedName": "Trademark",
-      "image": "https://media.valorant-api.com/agents/22697a3d-45bf-8dd7-4fec-84a9e28c69d7/abilities/grenade/displayicon.png",
-      "hasImage": true,
-      "source": "manual"
-    },
-    {
-      "animeId": "valorant",
-      "animeName": "VALORANT",
-      "name": "Trademark (Chamber)",
-      "anilist": null,
       "resolvedName": "Trademark (Chamber)",
       "image": "https://media.valorant-api.com/agents/22697a3d-45bf-8dd7-4fec-84a9e28c69d7/abilities/grenade/displayicon.png",
-      "hasImage": true,
-      "source": "manual"
-    },
-    {
-      "animeId": "valorant",
-      "animeName": "VALORANT",
-      "name": "Trailblazer (Skye)",
-      "anilist": null,
-      "resolvedName": "Trailblazer",
-      "image": "https://media.valorant-api.com/agents/6f2a04ca-43e0-be17-7f36-b3908627744d/abilities/ability1/displayicon.png",
       "hasImage": true,
       "source": "manual"
     },
@@ -12855,28 +12735,8 @@
       "animeName": "VALORANT",
       "name": "Trapwire (Cypher)",
       "anilist": null,
-      "resolvedName": "Trapwire",
-      "image": "https://media.valorant-api.com/agents/117ed9e3-49f3-6512-3ccf-0cada7e3823b/abilities/grenade/displayicon.png",
-      "hasImage": true,
-      "source": "manual"
-    },
-    {
-      "animeId": "valorant",
-      "animeName": "VALORANT",
-      "name": "Trapwire (Cypher)",
-      "anilist": null,
       "resolvedName": "Trapwire (Cypher)",
       "image": "https://media.valorant-api.com/agents/117ed9e3-49f3-6512-3ccf-0cada7e3823b/abilities/grenade/displayicon.png",
-      "hasImage": true,
-      "source": "manual"
-    },
-    {
-      "animeId": "valorant",
-      "animeName": "VALORANT",
-      "name": "TURRET (Killjoy)",
-      "anilist": null,
-      "resolvedName": "Turret",
-      "image": "https://media.valorant-api.com/agents/1e58de9c-4950-5125-93e9-a0aee9f98746/abilities/ability2/displayicon.png",
       "hasImage": true,
       "source": "manual"
     },
@@ -12967,16 +12827,6 @@
       "anilist": null,
       "resolvedName": "Waylay",
       "image": "https://trackercdn.com/cdn/tracker.gg/valorant/db/agents/waylay_portrait.png",
-      "hasImage": true,
-      "source": "manual"
-    },
-    {
-      "animeId": "valorant",
-      "animeName": "VALORANT",
-      "name": "Wingman (Gekko)",
-      "anilist": null,
-      "resolvedName": "Wingman",
-      "image": "https://media.valorant-api.com/agents/e370fa57-4757-3604-3648-499e1f642d3f/abilities/ability1/displayicon.png",
       "hasImage": true,
       "source": "manual"
     },

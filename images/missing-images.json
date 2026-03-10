@@ -1,8 +1,8 @@
 {
   "version": 1,
-  "generatedAt": "2026-03-10T18:07:36.361Z",
+  "generatedAt": "2026-03-10T19:26:47.725Z",
   "sourceDataset": "images/character-image-dataset.json",
-  "totalMissing": 328,
+  "totalMissing": 317,
   "items": [
     {
       "animeId": "aot",
@@ -61,15 +61,6 @@
     {
       "animeId": "aot",
       "animeName": "Attack on Titan",
-      "name": "Dina Fritz",
-      "anilist": 85384,
-      "resolvedName": null,
-      "image": null,
-      "notes": ""
-    },
-    {
-      "animeId": "aot",
-      "animeName": "Attack on Titan",
       "name": "Dot Pyxis",
       "anilist": 85380,
       "resolvedName": null,
@@ -106,35 +97,8 @@
     {
       "animeId": "aot",
       "animeName": "Attack on Titan",
-      "name": "Floch Forster",
-      "anilist": 85370,
-      "resolvedName": null,
-      "image": null,
-      "notes": ""
-    },
-    {
-      "animeId": "aot",
-      "animeName": "Attack on Titan",
       "name": "Founding Titan",
       "anilist": null,
-      "resolvedName": null,
-      "image": null,
-      "notes": ""
-    },
-    {
-      "animeId": "aot",
-      "animeName": "Attack on Titan",
-      "name": "Frieda Reiss",
-      "anilist": null,
-      "resolvedName": null,
-      "image": null,
-      "notes": ""
-    },
-    {
-      "animeId": "aot",
-      "animeName": "Attack on Titan",
-      "name": "Furlan Church",
-      "anilist": 85390,
       "resolvedName": null,
       "image": null,
       "notes": ""
@@ -151,35 +115,8 @@
     {
       "animeId": "aot",
       "animeName": "Attack on Titan",
-      "name": "Ilse Langnar",
-      "anilist": 85388,
-      "resolvedName": null,
-      "image": null,
-      "notes": ""
-    },
-    {
-      "animeId": "aot",
-      "animeName": "Attack on Titan",
-      "name": "Isabel Magnolia",
-      "anilist": 85389,
-      "resolvedName": null,
-      "image": null,
-      "notes": ""
-    },
-    {
-      "animeId": "aot",
-      "animeName": "Attack on Titan",
       "name": "Jaw Titan",
       "anilist": null,
-      "resolvedName": null,
-      "image": null,
-      "notes": ""
-    },
-    {
-      "animeId": "aot",
-      "animeName": "Attack on Titan",
-      "name": "Kenny Ackerman",
-      "anilist": 85383,
       "resolvedName": null,
       "image": null,
       "notes": ""
@@ -205,15 +142,6 @@
     {
       "animeId": "aot",
       "animeName": "Attack on Titan",
-      "name": "Nifa",
-      "anilist": 85395,
-      "resolvedName": null,
-      "image": null,
-      "notes": ""
-    },
-    {
-      "animeId": "aot",
-      "animeName": "Attack on Titan",
       "name": "Oluo Bozado",
       "anilist": 40897,
       "resolvedName": null,
@@ -223,26 +151,8 @@
     {
       "animeId": "aot",
       "animeName": "Attack on Titan",
-      "name": "Onyankopon",
-      "anilist": 85378,
-      "resolvedName": null,
-      "image": null,
-      "notes": ""
-    },
-    {
-      "animeId": "aot",
-      "animeName": "Attack on Titan",
       "name": "Pure Titan",
       "anilist": null,
-      "resolvedName": null,
-      "image": null,
-      "notes": ""
-    },
-    {
-      "animeId": "aot",
-      "animeName": "Attack on Titan",
-      "name": "Rod Reiss",
-      "anilist": 85382,
       "resolvedName": null,
       "image": null,
       "notes": ""
@@ -268,34 +178,7 @@
     {
       "animeId": "aot",
       "animeName": "Attack on Titan",
-      "name": "Uri Reiss",
-      "anilist": null,
-      "resolvedName": null,
-      "image": null,
-      "notes": ""
-    },
-    {
-      "animeId": "aot",
-      "animeName": "Attack on Titan",
       "name": "War Hammer Titan",
-      "anilist": null,
-      "resolvedName": null,
-      "image": null,
-      "notes": ""
-    },
-    {
-      "animeId": "aot",
-      "animeName": "Attack on Titan",
-      "name": "Yelena",
-      "anilist": 85377,
-      "resolvedName": null,
-      "image": null,
-      "notes": ""
-    },
-    {
-      "animeId": "aot",
-      "animeName": "Attack on Titan",
-      "name": "Ymir Fritz",
       "anilist": null,
       "resolvedName": null,
       "image": null,
@@ -306,15 +189,6 @@
       "animeName": "Attack on Titan",
       "name": "Zeke Yeager",
       "anilist": 85373,
-      "resolvedName": null,
-      "image": null,
-      "notes": ""
-    },
-    {
-      "animeId": "aot",
-      "animeName": "Attack on Titan",
-      "name": "Zofia",
-      "anilist": 85406,
       "resolvedName": null,
       "image": null,
       "notes": ""
@@ -2203,15 +2077,6 @@
     {
       "animeId": "onepiece",
       "animeName": "One Piece",
-      "name": "Caesar Clown",
-      "anilist": 163836,
-      "resolvedName": null,
-      "image": null,
-      "notes": ""
-    },
-    {
-      "animeId": "onepiece",
-      "animeName": "One Piece",
       "name": "Camie",
       "anilist": null,
       "resolvedName": null,
@@ -2232,15 +2097,6 @@
       "animeName": "One Piece",
       "name": "Crocodile / Sir Crocodile",
       "anilist": 61,
-      "resolvedName": null,
-      "image": null,
-      "notes": ""
-    },
-    {
-      "animeId": "onepiece",
-      "animeName": "One Piece",
-      "name": "Donquixote Doflamingo",
-      "anilist": 62,
       "resolvedName": null,
       "image": null,
       "notes": ""
@@ -2293,6 +2149,15 @@
     {
       "animeId": "onepiece",
       "animeName": "One Piece",
+      "name": "Imu",
+      "anilist": 128130,
+      "resolvedName": null,
+      "image": null,
+      "notes": ""
+    },
+    {
+      "animeId": "onepiece",
+      "animeName": "One Piece",
       "name": "Issho / Fujitora",
       "anilist": 163877,
       "resolvedName": null,
@@ -2302,8 +2167,8 @@
     {
       "animeId": "onepiece",
       "animeName": "One Piece",
-      "name": "Jesus Burgess",
-      "anilist": null,
+      "name": "Jack",
+      "anilist": 135949,
       "resolvedName": null,
       "image": null,
       "notes": ""
@@ -2356,6 +2221,15 @@
     {
       "animeId": "onepiece",
       "animeName": "One Piece",
+      "name": "King",
+      "anilist": 130416,
+      "resolvedName": null,
+      "image": null,
+      "notes": ""
+    },
+    {
+      "animeId": "onepiece",
+      "animeName": "One Piece",
       "name": "Kozuki Oden",
       "anilist": null,
       "resolvedName": null,
@@ -2367,15 +2241,6 @@
       "animeName": "One Piece",
       "name": "Kuzan / Aokiji",
       "anilist": 71,
-      "resolvedName": null,
-      "image": null,
-      "notes": ""
-    },
-    {
-      "animeId": "onepiece",
-      "animeName": "One Piece",
-      "name": "Marco",
-      "anilist": null,
       "resolvedName": null,
       "image": null,
       "notes": ""
@@ -2412,6 +2277,15 @@
       "animeName": "One Piece",
       "name": "Monkey D. Garp",
       "anilist": 56,
+      "resolvedName": null,
+      "image": null,
+      "notes": ""
+    },
+    {
+      "animeId": "onepiece",
+      "animeName": "One Piece",
+      "name": "Queen",
+      "anilist": 131427,
       "resolvedName": null,
       "image": null,
       "notes": ""
@@ -2473,8 +2347,8 @@
     {
       "animeId": "onepiece",
       "animeName": "One Piece",
-      "name": "Shiryu",
-      "anilist": null,
+      "name": "Shinobu",
+      "anilist": 128126,
       "resolvedName": null,
       "image": null,
       "notes": ""
@@ -2482,8 +2356,17 @@
     {
       "animeId": "onepiece",
       "animeName": "One Piece",
-      "name": "Stronger",
-      "anilist": null,
+      "name": "Sugar",
+      "anilist": 88957,
+      "resolvedName": null,
+      "image": null,
+      "notes": ""
+    },
+    {
+      "animeId": "onepiece",
+      "animeName": "One Piece",
+      "name": "Tama",
+      "anilist": 127908,
       "resolvedName": null,
       "image": null,
       "notes": ""
@@ -2500,8 +2383,26 @@
     {
       "animeId": "onepiece",
       "animeName": "One Piece",
+      "name": "Ulti",
+      "anilist": 172135,
+      "resolvedName": null,
+      "image": null,
+      "notes": ""
+    },
+    {
+      "animeId": "onepiece",
+      "animeName": "One Piece",
       "name": "Wyper",
       "anilist": null,
+      "resolvedName": null,
+      "image": null,
+      "notes": ""
+    },
+    {
+      "animeId": "onepiece",
+      "animeName": "One Piece",
+      "name": "York",
+      "anilist": 326791,
       "resolvedName": null,
       "image": null,
       "notes": ""
